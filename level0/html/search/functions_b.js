@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writeaudio',['WriteAudio',['../group__audio__group.html#gaf55add952fe04c4b2758d18db17c8c91',1,'AstUtils0.h']]],
-  ['writeimage',['WriteImage',['../group__graphics__group.html#ga7a92adcfb955193d1a9e91891cd390e0',1,'AstUtils0.h']]]
+  ['todegrees',['ToDegrees',['../group__math__group.html#gab6efcc6e24e777db0fe5e0d0955c2b2d',1,'AstUtils0.h']]],
+  ['toradians',['ToRadians',['../group__math__group.html#gafdd4eddaf6eadf34406a865e0cf6a30a',1,'AstUtils0.h']]]
 ];

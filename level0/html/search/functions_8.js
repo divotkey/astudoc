@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readaudio',['ReadAudio',['../group__audio__group.html#gac361b2470f0258861b9e34deffc8852a',1,'AstUtils0.h']]],
-  ['roundtoint',['RoundToInt',['../group__math__group.html#ga06bd02ff0de83d2713683574ac288fb3',1,'AstUtils0.h']]]
+  ['quitapp',['QuitApp',['../group__sdl__group.html#gaf4cba1685a7c46bccc7bbdf863114cee',1,'SdlApplication.h']]]
 ];

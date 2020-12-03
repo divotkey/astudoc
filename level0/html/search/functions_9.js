@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['saydouble',['SayDouble',['../group__io__group.html#ga6af59270fa536fa4c3e9f8434a8fb4a0',1,'AstUtils0.h']]],
-  ['sayelapsedtime',['SayElapsedTime',['../group__io__group.html#ga9988545ab3fddd93e05654323cdb1f4b',1,'AstUtils0.h']]],
-  ['sayhello',['SayHello',['../group__io__group.html#ga43fd6e7b7a627ba82ff93795559479f8',1,'AstUtils0.h']]],
-  ['sayint',['SayInt',['../group__io__group.html#gaa78da65e44d9ab5e70c79ed77f62b86a',1,'AstUtils0.h']]],
-  ['saytext',['SayText',['../group__io__group.html#ga82cdf45375c3b92b2a60c3d9b55d682f',1,'AstUtils0.h']]],
-  ['sayversion',['SayVersion',['../group__io__group.html#gaccd19a10653fad0734fe384cd6d7ba53',1,'AstUtils0.h']]],
-  ['setbit',['SetBit',['../group__math__group.html#ga8c8748fbb1d3e99db79f20fc17d4e63b',1,'AstUtils0.h']]],
-  ['seterrordetails',['SetErrorDetails',['../group__error__group.html#gac4c413604bb98cf7bb6befe53e748b63',1,'AstUtils0.h']]],
-  ['setlasterror',['SetLastError',['../group__error__group.html#ga042670233cf17b3bfb1412a37e7dfd59',1,'AstUtils0.h']]],
-  ['shuffle',['Shuffle',['../group__math__group.html#ga9dffb844db4ac8823c6c957448576ed8',1,'AstUtils0.h']]],
-  ['starttimer',['StartTimer',['../group__timer__group.html#ga66509b494102a5c28ba6c8be3eab7733',1,'AstUtils0.h']]],
-  ['stoptimer',['StopTimer',['../group__timer__group.html#gaf3619f34a9bc0184b4578e5337069856',1,'AstUtils0.h']]]
+  ['readaudio',['ReadAudio',['../group__audio__group.html#gac361b2470f0258861b9e34deffc8852a',1,'AstUtils0.h']]],
+  ['renderline',['RenderLine',['../group__sdl__group.html#gade420aec0a7492d5ac5f320b1ff4a814',1,'SdlApplication.h']]],
+  ['renderpoint',['RenderPoint',['../group__sdl__group.html#gadd510400a2614b9b8fd8afbe368fc795',1,'SdlApplication.h']]],
+  ['renderrectangle',['RenderRectangle',['../group__sdl__group.html#gaa5b815a9fcac2b1be46a5957bdbfd13f',1,'SdlApplication.h']]],
+  ['resetabsolutetime',['ResetAbsoluteTime',['../group__sdl__group.html#ga5b39467f3664fad21ce3c0f14c4506ff',1,'SdlApplication.h']]],
+  ['roundtoint',['RoundToInt',['../group__math__group.html#ga06bd02ff0de83d2713683574ac288fb3',1,'AstUtils0.h']]]
 ];
