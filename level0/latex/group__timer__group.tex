@@ -1,0 +1,94 @@
+\hypertarget{group__timer__group}{}\section{Timer}
+\label{group__timer__group}\index{Timer@{Timer}}
+
+
+The function in this module are dedicated to time measurement.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{Start\+Timer} ()
+\item 
+void \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{Stop\+Timer} ()
+\item 
+int \hyperlink{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}{Get\+Milliseconds} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The function in this module are dedicated to time measurement. 
+
+This module uses an internal representation of the currently measured time. According to A\+P\+I-\/\+Level 0 this module does not expose any functions or structures from the used C++ Standard Library. However, the current implementation uses the high performance timer offered by the {\ttfamily $<$chrono$>$} header of the C++ Standard library.
+
+This module offers only one timer and hence cannot be used to measure the duration of calculation at once. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}\label{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}} 
+\index{Timer@{Timer}!Get\+Milliseconds@{Get\+Milliseconds}}
+\index{Get\+Milliseconds@{Get\+Milliseconds}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Get\+Milliseconds()}{GetMilliseconds()}}
+{\footnotesize\ttfamily int Get\+Milliseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the elapsed milliseconds. This function returns the milliseconds elapsed between the two consecutive calls to \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{Start\+Timer()} and \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{Stop\+Timer()}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{Say\+Elapsed\+Time()}
+\end{DoxySeeAlso}
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <iostream>}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{StartTimer}();
+  CalculateSomething();
+  \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{StopTimer}();
+
+  std::cout << \textcolor{stringliteral}{"Required time "} << \hyperlink{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}{GetMilliseconds}() << \textcolor{stringliteral}{" ms"} << std::endl;
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}\label{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}} 
+\index{Timer@{Timer}!Start\+Timer@{Start\+Timer}}
+\index{Start\+Timer@{Start\+Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Start\+Timer()}{StartTimer()}}
+{\footnotesize\ttfamily void Start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the internal timer. When this function is called, the internal time measurement is reset to zero and the timer is started. This function is used in combination with \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{Stop\+Timer()}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}{Get\+Milliseconds()}
+\end{DoxySeeAlso}
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{StartTimer}();
+  CalculateSomething();
+  \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{StopTimer}();
+
+  \textcolor{comment}{// TODO output the elapsed time.}
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}\label{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}} 
+\index{Timer@{Timer}!Stop\+Timer@{Stop\+Timer}}
+\index{Stop\+Timer@{Stop\+Timer}!Timer@{Timer}}
+\subsubsection{\texorpdfstring{Stop\+Timer()}{StopTimer()}}
+{\footnotesize\ttfamily void Stop\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stops the internal timer. Calling this function will stop the internal timer.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{Start\+Timer()} 
+\end{DoxySeeAlso}

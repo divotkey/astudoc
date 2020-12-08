@@ -1,0 +1,154 @@
+\hypertarget{SdlApplication_8h}{}\section{include/\+Sdl\+Application.h File Reference}
+\label{SdlApplication_8h}\index{include/\+Sdl\+Application.\+h@{include/\+Sdl\+Application.\+h}}
+
+
+This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{SdlApplication_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}{Init\+App} (int width, int height, const char title\mbox{[}$\,$\mbox{]}=\char`\"{}A\+S\+TU/S\+DL Application\char`\"{}, bool vsync=true)
+\item 
+void \hyperlink{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}{Quit\+App} ()
+\item 
+int \hyperlink{group__sdl__group_ga6dfd8bbc85eeeee6922576be9ae65e29}{Set\+Window\+Title} (const char title\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}{Update\+App} ()
+\item 
+bool \hyperlink{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}{Is\+App\+Terminated} ()
+\item 
+int \hyperlink{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}{Clear\+Canvas} ()
+\item 
+int \hyperlink{group__sdl__group_gade420aec0a7492d5ac5f320b1ff4a814}{Render\+Line} (double x1, double y1, double x2, double y2)
+\item 
+int \hyperlink{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}{Render\+Point} (double x, double y)
+\item 
+int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rectangle} (double x, double y, double w, double h, bool filled=false)
+\item 
+int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
+\item 
+int \hyperlink{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}{Set\+Render\+Color} (int argb)
+\item 
+int \hyperlink{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}{Set\+Background\+Color} (int r, int g, int b)
+\item 
+int \hyperlink{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}{Set\+Background\+Color} (int rgb)
+\item 
+int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window\+Width} ()
+\item 
+int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
+\item 
+int \hyperlink{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}{Get\+CursorX} ()
+\item 
+int \hyperlink{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}{Get\+CursorY} ()
+\item 
+bool \hyperlink{SdlApplication_8h_a2537bad9d6f115fee49a741e7e2623a6}{Is\+Mouse\+Button\+Pressed} (int button)
+\item 
+double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
+\item 
+double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Absolute\+Time} ()
+\item 
+void \hyperlink{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}{Reset\+Absolute\+Time} ()
+\item 
+double \hyperlink{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}{Get\+Fps} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}\label{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+CursorX@{Get\+CursorX}}
+\index{Get\+CursorX@{Get\+CursorX}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+X()}{GetCursorX()}}
+{\footnotesize\ttfamily int Get\+CursorX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the x-\/coordinate of the mouse cursor.
+
+\begin{DoxyReturn}{Returns}
+the x-\/coordinate of the mouse cursor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}\label{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+CursorY@{Get\+CursorY}}
+\index{Get\+CursorY@{Get\+CursorY}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+Y()}{GetCursorY()}}
+{\footnotesize\ttfamily int Get\+CursorY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the y-\/coordinate of the mouse cursor.
+
+\begin{DoxyReturn}{Returns}
+the y-\/coordinate of the mouse cursor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}\label{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+Fps@{Get\+Fps}}
+\index{Get\+Fps@{Get\+Fps}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
+{\footnotesize\ttfamily double Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the average frames per seconds (F\+PS).
+
+\begin{DoxyReturn}{Returns}
+the frames per seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SdlApplication_8h_a2537bad9d6f115fee49a741e7e2623a6}\label{SdlApplication_8h_a2537bad9d6f115fee49a741e7e2623a6}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}}
+\index{Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Is\+Mouse\+Button\+Pressed()}{IsMouseButtonPressed()}}
+{\footnotesize\ttfamily bool Is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+Tests whether a certain mouse button is currently pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the index of the button to be queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the mouse button is pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}\label{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily int Set\+Background\+Color (\begin{DoxyParamCaption}\item[{int}]{rgb }\end{DoxyParamCaption})}
+
+Sets the background color of the application window.
+
+The background color does not have an alpha channel and cannot be transparent.
+
+This function can be used to set the background color using the usual hex-\/triplet notation which is a six-\/digit, three-\/byte hexadecimal number used int H\+T\+ML, C\+SS, S\+VG etc. \mbox{\Hypertarget{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}\label{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}} 
+\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Set\+Render\+Color@{Set\+Render\+Color}}
+\index{Set\+Render\+Color@{Set\+Render\+Color}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
+\subsubsection{\texorpdfstring{Set\+Render\+Color()}{SetRenderColor()}}
+{\footnotesize\ttfamily int Set\+Render\+Color (\begin{DoxyParamCaption}\item[{int}]{argb }\end{DoxyParamCaption})}
+
+Sets the render color for subsequent render calls.
+\begin{DoxyItemize}
+\item This function can be used to set the background color using the usual hex-\/triplet notation which is a six-\/digit, three-\/byte hexadecimal number used int H\+T\+ML, C\+SS, S\+VG etc.
+\end{DoxyItemize}
+
+{\bfseries Example Usage}
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Set render color to orange, full opaque.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0xFFFFA500);
+
+\textcolor{comment}{// Set render color to yellow, 50% transparent.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0x80ffff00);
+
+\textcolor{comment}{// Set render color to white, full opaque.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0xffffffff);
+\end{DoxyCode}
+ 

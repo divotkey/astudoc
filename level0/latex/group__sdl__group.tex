@@ -1,0 +1,349 @@
+\hypertarget{group__sdl__group}{}\section{S\+DL Application}
+\label{group__sdl__group}\index{S\+D\+L Application@{S\+D\+L Application}}
+
+
+Functions to write (simple) S\+D\+L-\/based applications.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}{Init\+App} (int width, int height, const char title\mbox{[}$\,$\mbox{]}=\char`\"{}A\+S\+TU/S\+DL Application\char`\"{}, bool vsync=true)
+\item 
+void \hyperlink{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}{Quit\+App} ()
+\item 
+int \hyperlink{group__sdl__group_ga6dfd8bbc85eeeee6922576be9ae65e29}{Set\+Window\+Title} (const char title\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}{Update\+App} ()
+\item 
+bool \hyperlink{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}{Is\+App\+Terminated} ()
+\item 
+int \hyperlink{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}{Clear\+Canvas} ()
+\item 
+int \hyperlink{group__sdl__group_gade420aec0a7492d5ac5f320b1ff4a814}{Render\+Line} (double x1, double y1, double x2, double y2)
+\item 
+int \hyperlink{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}{Render\+Point} (double x, double y)
+\item 
+int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rectangle} (double x, double y, double w, double h, bool filled=false)
+\item 
+int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
+\item 
+int \hyperlink{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}{Set\+Background\+Color} (int r, int g, int b)
+\item 
+int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window\+Width} ()
+\item 
+int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
+\item 
+double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
+\item 
+double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Absolute\+Time} ()
+\item 
+void \hyperlink{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}{Reset\+Absolute\+Time} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to write (simple) S\+D\+L-\/based applications. 
+
+Simple Direct\+Media Layer (S\+DL) is a cross-\/platform development library providing low level access to audio, keyboard, mouse, joystick, and graphics hardware. The developer versions of the S\+DL library must be installed separately, although the procedure differs for the different operating systems. The developer versions of the S\+DL library are available here\+: \href{https://www.libsdl.org/}{\tt https\+://www.\+libsdl.\+org/}\hypertarget{group__sdl__group_sdl_example_sect}{}\subsection{Minimal S\+D\+L-\/based Application}\label{group__sdl__group_sdl_example_sect}
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <iostream>}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{void} ReportError()
+\{
+    std::cout << \textcolor{stringliteral}{"An error has occurred: "} << \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}() << std::endl;
+    std::cout << \hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{GetErrorDetails}() << std::endl;
+\}
+
+\textcolor{keywordtype}{int} main()
+\{
+    \textcolor{keywordflow}{if} (\hyperlink{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}{InitApp}(640, 480) != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{NO\_ERROR}) \{
+        ReportError();
+        \textcolor{keywordflow}{return} -1;
+    \}
+
+    \textcolor{keywordflow}{while}(!\hyperlink{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}{IsAppTerminated}()) \{
+        \hyperlink{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}{ClearCanvas}();
+        \hyperlink{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}{UpdateApp}();
+    \}
+
+    \hyperlink{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}{QuitApp}();
+\} 
+\end{DoxyCode}
+ 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}\label{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Clear\+Canvas@{Clear\+Canvas}}
+\index{Clear\+Canvas@{Clear\+Canvas}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Clear\+Canvas()}{ClearCanvas()}}
+{\footnotesize\ttfamily int Clear\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the canvas of the application window.
+
+\begin{DoxyReturn}{Returns}
+an error code in case the canvas could not be cleared, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}\label{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Absolute\+Time@{Get\+Absolute\+Time}}
+\index{Get\+Absolute\+Time@{Get\+Absolute\+Time}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Absolute\+Time()}{GetAbsoluteTime()}}
+{\footnotesize\ttfamily double Get\+Absolute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the absolute running time since the application has been started.
+
+{\bfseries Note\+:} The returned time represents the summed up delta times and is no extremely accurate over a long period.
+
+\begin{DoxyReturn}{Returns}
+the absolute time seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}\label{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Delta\+Time@{Get\+Delta\+Time}}
+\index{Get\+Delta\+Time@{Get\+Delta\+Time}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Delta\+Time()}{GetDeltaTime()}}
+{\footnotesize\ttfamily double Get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the epalsed time since the last update.
+
+This method returns the elapsed time since the last call to Update\+App.
+
+\begin{DoxyReturn}{Returns}
+the delta time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}\label{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Window\+Height@{Get\+Window\+Height}}
+\index{Get\+Window\+Height@{Get\+Window\+Height}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Window\+Height()}{GetWindowHeight()}}
+{\footnotesize\ttfamily int Get\+Window\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the height of the application window.
+
+\begin{DoxyReturn}{Returns}
+the height of the application window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}\label{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Window\+Width@{Get\+Window\+Width}}
+\index{Get\+Window\+Width@{Get\+Window\+Width}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Window\+Width()}{GetWindowWidth()}}
+{\footnotesize\ttfamily int Get\+Window\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the width of the application window.
+
+\begin{DoxyReturn}{Returns}
+the width of the application window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}\label{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Init\+App@{Init\+App}}
+\index{Init\+App@{Init\+App}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Init\+App()}{InitApp()}}
+{\footnotesize\ttfamily int Init\+App (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{const char}]{title\mbox{[}$\,$\mbox{]} = {\ttfamily \char`\"{}ASTU/SDL~Application\char`\"{}},  }\item[{bool}]{vsync = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Initializes the S\+D\+L-\/based application.
+
+This function opens the main appplication window and carries out some internal initializaiton procedures and acquire required resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the main window in pixels \\
+\hline
+{\em height} & the width of the main window in pixels \\
+\hline
+{\em title} & the title of the application window \\
+\hline
+{\em vsync} & whether to use vertical synchronization or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the application could not be initialized, zero otherwise
+\end{DoxyReturn}
+{\bfseries Example Usage}
+
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\hyperlink{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}{InitApp}(640, 480) != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{NO\_ERROR}) \{
+  \textcolor{comment}{// TODO report error}
+  \textcolor{keywordflow}{return} -1;
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}\label{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Is\+App\+Terminated@{Is\+App\+Terminated}}
+\index{Is\+App\+Terminated@{Is\+App\+Terminated}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Is\+App\+Terminated()}{IsAppTerminated()}}
+{\footnotesize\ttfamily bool Is\+App\+Terminated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns {\ttfamily true} in case the user want\textquotesingle{}s to terminate the application.
+
+On most plattform the request to terminate the application happens e.\+g., by pressing the close button of the application window.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the application should be terminated, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}\label{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Quit\+App@{Quit\+App}}
+\index{Quit\+App@{Quit\+App}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Quit\+App()}{QuitApp()}}
+{\footnotesize\ttfamily void Quit\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Terminates the application.
+
+This functions closes the main window and releases all aquired resources. In case the application hast not been initialized, this function has no effect \mbox{\Hypertarget{group__sdl__group_gade420aec0a7492d5ac5f320b1ff4a814}\label{group__sdl__group_gade420aec0a7492d5ac5f320b1ff4a814}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Render\+Line@{Render\+Line}}
+\index{Render\+Line@{Render\+Line}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Render\+Line()}{RenderLine()}}
+{\footnotesize\ttfamily int Render\+Line (\begin{DoxyParamCaption}\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{x2,  }\item[{double}]{y2 }\end{DoxyParamCaption})}
+
+Renders a line between two points sing the current render color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the first point \\
+\hline
+{\em y1} & the y-\/coordinate of the first point \\
+\hline
+{\em x2} & the x-\/coordinate of the second point \\
+\hline
+{\em y2} & the y-\/coordinate of the second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the line could not be rendered, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}\label{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Render\+Point@{Render\+Point}}
+\index{Render\+Point@{Render\+Point}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Render\+Point()}{RenderPoint()}}
+{\footnotesize\ttfamily int Render\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Renders a point using the current render color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the point \\
+\hline
+{\em y} & the y-\/coordinate of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the line could not be rendered, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}\label{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Render\+Rectangle@{Render\+Rectangle}}
+\index{Render\+Rectangle@{Render\+Rectangle}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Render\+Rectangle()}{RenderRectangle()}}
+{\footnotesize\ttfamily int Render\+Rectangle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{w,  }\item[{double}]{h,  }\item[{bool}]{filled = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Renders a rectangle using the current render color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the center of the rectangle \\
+\hline
+{\em y} & the y-\/coordinate of the center of the rectangle \\
+\hline
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+{\em filled} & whether the rectangle shoudl be rendered filled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}\label{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Reset\+Absolute\+Time@{Reset\+Absolute\+Time}}
+\index{Reset\+Absolute\+Time@{Reset\+Absolute\+Time}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Reset\+Absolute\+Time()}{ResetAbsoluteTime()}}
+{\footnotesize\ttfamily void Reset\+Absolute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the absolute time to zero. \mbox{\Hypertarget{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}\label{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily int Set\+Background\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Sets the background color of the application window.
+
+The background color does not have an alpha channel and cannot be transparent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the red component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+{\em g} & the green component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+{\em b} & the blue component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the color could not be set, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}\label{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Set\+Render\+Color@{Set\+Render\+Color}}
+\index{Set\+Render\+Color@{Set\+Render\+Color}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Set\+Render\+Color()}{SetRenderColor()}}
+{\footnotesize\ttfamily int Set\+Render\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a = {\ttfamily 255} }\end{DoxyParamCaption})}
+
+Sets the render color for subsequent render calls.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the red component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+{\em g} & the green component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+{\em b} & the blue component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+{\em a} & the alpha component of the render color \mbox{[}0, 255\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the color could not be set, zero otherwise
+\end{DoxyReturn}
+{\bfseries Example Usage}
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Set render color to orange, full opaque.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(255, 165, 0, 255);
+
+\textcolor{comment}{// Set render color to yellow, 50% transparent.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(255, 255, 0, 128);
+
+\textcolor{comment}{// Set render color to white, full opaque.}
+\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(255, 255, 255);
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__sdl__group_ga6dfd8bbc85eeeee6922576be9ae65e29}\label{group__sdl__group_ga6dfd8bbc85eeeee6922576be9ae65e29}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Set\+Window\+Title@{Set\+Window\+Title}}
+\index{Set\+Window\+Title@{Set\+Window\+Title}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Set\+Window\+Title()}{SetWindowTitle()}}
+{\footnotesize\ttfamily int Set\+Window\+Title (\begin{DoxyParamCaption}\item[{const char}]{title\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Sets the title of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the window title \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the title could not be set, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}\label{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Update\+App@{Update\+App}}
+\index{Update\+App@{Update\+App}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Update\+App()}{UpdateApp()}}
+{\footnotesize\ttfamily void Update\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the application.
+
+This function must be called repeatedly in a loop until the application is terminated by the user. Use Is\+App\+Terminated to query whether the user has requested to close the application window.
+
+{\bfseries Example Usage}
+
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{while} ( !\hyperlink{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}{IsAppTerminated}() ) \{
+  \hyperlink{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}{UpdateApp}();
+\}
+\end{DoxyCode}
+ 

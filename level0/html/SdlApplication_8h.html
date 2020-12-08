@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities - API Level 0
-   &#160;<span id="projectnumber">0.4.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -106,8 +106,12 @@ Functions</h2></td></tr>
 <tr class="separator:gaa5b815a9fcac2b1be46a5957bdbfd13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab01fa8f79d94269a5b9a1cb7d2e51843"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdl__group.html#gab01fa8f79d94269a5b9a1cb7d2e51843">SetRenderColor</a> (int r, int g, int b, int a=255)</td></tr>
 <tr class="separator:gab01fa8f79d94269a5b9a1cb7d2e51843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d7cbe37155c107f35dfc13403c6c05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SdlApplication_8h.html#a56d7cbe37155c107f35dfc13403c6c05">SetRenderColor</a> (int argb)</td></tr>
+<tr class="separator:a56d7cbe37155c107f35dfc13403c6c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga540012b7df5eddd0b109543deaa66a22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdl__group.html#ga540012b7df5eddd0b109543deaa66a22">SetBackgroundColor</a> (int r, int g, int b)</td></tr>
 <tr class="separator:ga540012b7df5eddd0b109543deaa66a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80de83a7c03984305662ae0ca5daa05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SdlApplication_8h.html#aa80de83a7c03984305662ae0ca5daa05">SetBackgroundColor</a> (int rgb)</td></tr>
+<tr class="separator:aa80de83a7c03984305662ae0ca5daa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa938d3f784d26ccd4ed8c2d83bbc6ab4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdl__group.html#gaa938d3f784d26ccd4ed8c2d83bbc6ab4">GetWindowWidth</a> ()</td></tr>
 <tr class="separator:gaa938d3f784d26ccd4ed8c2d83bbc6ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac27ddd893a70056c55278b33d7bd2c62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sdl__group.html#gac27ddd893a70056c55278b33d7bd2c62">GetWindowHeight</a> ()</td></tr>
@@ -211,6 +215,49 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the mouse button is pressed </dd></dl>
 
+</div>
+</div>
+<a id="aa80de83a7c03984305662ae0ca5daa05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80de83a7c03984305662ae0ca5daa05">&#9670;&nbsp;</a></span>SetBackgroundColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SetBackgroundColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rgb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the background color of the application window.</p>
+<p>The background color does not have an alpha channel and cannot be transparent.</p>
+<p>This function can be used to set the background color using the usual hex-triplet notation which is a six-digit, three-byte hexadecimal number used int HTML, CSS, SVG etc. </p>
+
+</div>
+</div>
+<a id="a56d7cbe37155c107f35dfc13403c6c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d7cbe37155c107f35dfc13403c6c05">&#9670;&nbsp;</a></span>SetRenderColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SetRenderColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the render color for subsequent render calls.</p><ul>
+<li>This function can be used to set the background color using the usual hex-triplet notation which is a six-digit, three-byte hexadecimal number used int HTML, CSS, SVG etc.</li>
+</ul>
+<p><b>Example Usage</b></p>
+<div class="fragment"><div class="line"><span class="comment">// Set render color to orange, full opaque.</span></div><div class="line"><a class="code" href="group__sdl__group.html#gab01fa8f79d94269a5b9a1cb7d2e51843">SetRenderColor</a>(0xFFFFA500);</div><div class="line"></div><div class="line"><span class="comment">// Set render color to yellow, 50% transparent.</span></div><div class="line"><a class="code" href="group__sdl__group.html#gab01fa8f79d94269a5b9a1cb7d2e51843">SetRenderColor</a>(0x80ffff00);</div><div class="line"></div><div class="line"><span class="comment">// Set render color to white, full opaque.</span></div><div class="line"><a class="code" href="group__sdl__group.html#gab01fa8f79d94269a5b9a1cb7d2e51843">SetRenderColor</a>(0xffffffff);</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

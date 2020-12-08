@@ -1,0 +1,164 @@
+\hypertarget{AstUtils0_8h}{}\section{include/\+Ast\+Utils0.h File Reference}
+\label{AstUtils0_8h}\index{include/\+Ast\+Utils0.\+h@{include/\+Ast\+Utils0.\+h}}
+
+
+This file defines public functions offered by A\+ST utilities A\+P\+I-\/\+Level 0.  
+
+
+{\ttfamily \#include \char`\"{}Vector2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sdl\+Application.\+h\char`\"{}}\newline
+Include dependency graph for Ast\+Utils0.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{AstUtils0_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using {\bfseries Vector2d} = astu\+::\+Vector2$<$ double $>$
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}{Error\+Code} \{ \newline
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{N\+O\+\_\+\+E\+R\+R\+OR} = 0x0000, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}, 
+\newline
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, 
+\newline
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}{S\+D\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}{A\+P\+P\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}{Say\+Hello} ()
+\item 
+void \hyperlink{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}{Say\+Error} ()
+\item 
+void \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{Say\+Text} (const char $\ast$text=nullptr, bool eol=true)
+\item 
+void \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{Say\+Int} (int value, bool eol=true)
+\item 
+void \hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{Say\+Double} (double value, bool eol=true)
+\item 
+void \hyperlink{group__io__group_gaccd19a10653fad0734fe384cd6d7ba53}{Say\+Version} ()
+\item 
+void \hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{Say\+Elapsed\+Time} (const char $\ast$text=nullptr)
+\item 
+int \hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{Ask\+Int} (const char $\ast$text=nullptr)
+\item 
+double \hyperlink{group__io__group_ga2ecfe90c9b28dec6725b8df1a0013d0d}{Ask\+Double} (const char $\ast$text=nullptr)
+\item 
+float \hyperlink{group__io__group_ga973515b754711fc89a018ce64f980c74}{Ask\+Float} (const char $\ast$text=nullptr)
+\item 
+const char $\ast$ \hyperlink{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}{Ask\+String} (const char $\ast$text=nullptr)
+\item 
+int {\bfseries Open\+File} (const char $\ast$filename, bool open\+For\+Reading=true)
+\item 
+const char $\ast$ {\bfseries Read\+String} ()
+\item 
+double {\bfseries Read\+Double} ()
+\item 
+int {\bfseries Read\+Int} ()
+\item 
+int {\bfseries Close\+File} ()
+\item 
+char {\bfseries Read\+Char} ()
+\item 
+int {\bfseries Skip\+Line} ()
+\item 
+bool {\bfseries Readable} ()
+\item 
+bool {\bfseries Compare\+String} (const char $\ast$s1, const char $\ast$s2)
+\item 
+double \hyperlink{group__math__group_gafdd4eddaf6eadf34406a865e0cf6a30a}{To\+Radians} (double deg)
+\item 
+double \hyperlink{group__math__group_gab6efcc6e24e777db0fe5e0d0955c2b2d}{To\+Degrees} (double rad)
+\item 
+int \hyperlink{group__math__group_ga3b74a8d5a155a56580ecd5617cacb4b1}{Minimum} (int a, int b)
+\item 
+int \hyperlink{group__math__group_gac4c560cadf6af2e052f767eb02d982c0}{Minimum} (int a, int b, int c)
+\item 
+int {\bfseries Maximum} (int a, int b)
+\item 
+int {\bfseries Maximum} (int a, int b, int c)
+\item 
+double \hyperlink{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}{Get\+Random\+Double} (double min\+Value=0.\+0, double max\+Value=1.\+0)
+\item 
+int \hyperlink{group__math__group_gab82c25b1da5feec79806fe080becf2c3}{Get\+Random\+Int} (int min\+Value=0, int max\+Value=32767)
+\item 
+int \hyperlink{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}{Round\+To\+Int} (double value)
+\item 
+int \hyperlink{group__math__group_gaaf5732ddb11cda2a05f0f978265a114e}{Greatest\+Common\+Divisor} (int a, int b)
+\item 
+int \hyperlink{group__math__group_ga322fe1f4e7738ff3234fe70d04daeafe}{Lowest\+Common\+Multiple} (int a, int b)
+\item 
+void \hyperlink{group__math__group_ga9dffb844db4ac8823c6c957448576ed8}{Shuffle} (int $\ast$values, int num\+Values)
+\item 
+bool \hyperlink{group__math__group_ga1fbbb8c0c7c30db6995b5a4fa82e1754}{Is\+Bit\+Set} (int value, int bit)
+\item 
+int \hyperlink{group__math__group_ga8c8748fbb1d3e99db79f20fc17d4e63b}{Set\+Bit} (int value, int bit)
+\item 
+int \hyperlink{group__math__group_ga4ce9c5e2cee3bf609fcfba01c0f8e6a7}{Clear\+Bit} (int value, int bit)
+\item 
+void \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{Start\+Timer} ()
+\item 
+void \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{Stop\+Timer} ()
+\item 
+int \hyperlink{group__timer__group_ga0c820f6552d69b3cdaac23e6b4662d7a}{Get\+Milliseconds} ()
+\item 
+int \hyperlink{group__audio__group_gaf55add952fe04c4b2758d18db17c8c91}{Write\+Audio} (const char $\ast$filename, float $\ast$data, int size, int sample\+Rate=44100, int channels=1)
+\item 
+float $\ast$ \hyperlink{group__audio__group_gac361b2470f0258861b9e34deffc8852a}{Read\+Audio} (const char $\ast$filename, int $\ast$size, int $\ast$sample\+Rate, int $\ast$num\+Channels)
+\item 
+float $\ast$ \hyperlink{group__audio__group_gabf6e39c7686cd89ddc45a0b6be943279}{Extract\+Channel} (float $\ast$data, int size, int num\+Channels, int channel, int $\ast$result\+Size=nullptr)
+\item 
+float $\ast$ \hyperlink{group__audio__group_ga701f2f439ffe751ed1a5f0b26d23e1c4}{Interleave\+Channels} (float $\ast$ch1\+Data, float $\ast$ch2\+Data, int size, int $\ast$result\+Size=nullptr)
+\item 
+float $\ast$ \hyperlink{group__audio__group_ga1f60f80cc1589adf04e9b253a5b872b8}{Convert\+Sample\+Rate} (float $\ast$data, int size, int src\+Rate, int dst\+Rate, int $\ast$result\+Size=nullptr)
+\item 
+int \hyperlink{group__graphics__group_ga8462a895186f3534786c30df8fd9747e}{Create\+Image} (int w, int h)
+\item 
+void \hyperlink{group__graphics__group_gaf45b0118bad60d88a6c50d841106bc4a}{Clear\+Image} ()
+\item 
+int \hyperlink{group__graphics__group_ga7a92adcfb955193d1a9e91891cd390e0}{Write\+Image} (const char $\ast$filename)
+\item 
+void {\bfseries Set\+Draw\+Color} (int r, int g, int b, int a=255)
+\item 
+void {\bfseries Set\+Clear\+Color} (int r, int g, int b)
+\item 
+void {\bfseries Draw\+Line} (double x0, double y0, double x1, double y1, double w=1)
+\item 
+void {\bfseries Draw\+Circle} (double x, double y, double r)
+\item 
+int \hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{Get\+Last\+Error} ()
+\item 
+void \hyperlink{group__error__group_ga042670233cf17b3bfb1412a37e7dfd59}{Set\+Last\+Error} (int error\+Code)
+\item 
+bool \hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{Has\+Error} ()
+\item 
+const char $\ast$ \hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{Get\+Error\+Message} (int error\+Code)
+\item 
+const char $\ast$ \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{Get\+Last\+Error\+Message} ()
+\item 
+const char $\ast$ \hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{Get\+Error\+Details} ()
+\item 
+void \hyperlink{group__error__group_gac4c413604bb98cf7bb6befe53e748b63}{Set\+Error\+Details} (const char $\ast$text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines public functions offered by A\+ST utilities A\+P\+I-\/\+Level 0. 
+

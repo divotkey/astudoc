@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities - API Level 0
-   &#160;<span id="projectnumber">0.4.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -74,6 +74,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:ga43fd6e7b7a627ba82ff93795559479f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__group.html#ga43fd6e7b7a627ba82ff93795559479f8">SayHello</a> ()</td></tr>
 <tr class="separator:ga43fd6e7b7a627ba82ff93795559479f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8fd8044fbf35d58e73087b6399cd82a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__group.html#gaa8fd8044fbf35d58e73087b6399cd82a">SayError</a> ()</td></tr>
+<tr class="separator:gaa8fd8044fbf35d58e73087b6399cd82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82cdf45375c3b92b2a60c3d9b55d682f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__group.html#ga82cdf45375c3b92b2a60c3d9b55d682f">SayText</a> (const char *text=nullptr, bool eol=true)</td></tr>
 <tr class="separator:ga82cdf45375c3b92b2a60c3d9b55d682f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa78da65e44d9ab5e70c79ed77f62b86a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__group.html#gaa78da65e44d9ab5e70c79ed77f62b86a">SayInt</a> (int value, bool eol=true)</td></tr>
@@ -270,6 +272,25 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__timer__group.html" title="The function in this module are dedicated to time measurement. ">Timer</a></dd></dl>
 <p><b>Example</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;AstUtils.h&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  <span class="comment">// Measure required time to calculate something.</span></div><div class="line">  <a class="code" href="group__timer__group.html#ga66509b494102a5c28ba6c8be3eab7733">StartTimer</a>();</div><div class="line">  CalculateSomething();</div><div class="line">  <a class="code" href="group__timer__group.html#gaf3619f34a9bc0184b4578e5337069856">StopTimer</a>();</div><div class="line"></div><div class="line">  <span class="comment">// Output required time.</span></div><div class="line">  <a class="code" href="group__io__group.html#ga9988545ab3fddd93e05654323cdb1f4b">SayElapsedTime</a>(<span class="stringliteral">&quot;Required Time&quot;</span>);</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p> Possible output: </p><div class="fragment"><div class="line">Required Time 2 min 55 sec 84 ms</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="gaa8fd8044fbf35d58e73087b6399cd82a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa8fd8044fbf35d58e73087b6399cd82a">&#9670;&nbsp;</a></span>SayError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SayError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Outputs the last error message including error details.</p>
+<p>This is only a convenience function for error output. The same result could also be achieved with the method for error retrieval and the Standard C++ library. An implementation of this function could look like this:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;AstUtils.h&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a class="code" href="group__io__group.html#gaa8fd8044fbf35d58e73087b6399cd82a">SayError</a>()</div><div class="line">{</div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;An error has occurred: &quot;</span> &lt;&lt; <a class="code" href="group__error__group.html#gac9be83c8ac2a5d80a2be46487c596eab">GetLastErrorMessage</a>() &lt;&lt; std::endl;</div><div class="line">  std::cout &lt;&lt; <a class="code" href="group__error__group.html#ga8258f5044a56ed71aeed5633fc8341b6">GetErrorDetails</a>() &lt;&lt; std::endl;</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga43fd6e7b7a627ba82ff93795559479f8"></a>

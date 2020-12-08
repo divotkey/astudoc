@@ -1,0 +1,392 @@
+\hypertarget{group__math__group}{}\section{Mathematics}
+\label{group__math__group}\index{Mathematics@{Mathematics}}
+
+
+A collection of functions dedicated to mathematical calculations.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__math__group_ga04b5b280f94e1b680b1c831c1df168bd}\label{group__math__group_ga04b5b280f94e1b680b1c831c1df168bd}} 
+using {\bfseries Vector2d} = astu\+::\+Vector2$<$ double $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{group__math__group_gafdd4eddaf6eadf34406a865e0cf6a30a}{To\+Radians} (double deg)
+\item 
+double \hyperlink{group__math__group_gab6efcc6e24e777db0fe5e0d0955c2b2d}{To\+Degrees} (double rad)
+\item 
+int \hyperlink{group__math__group_ga3b74a8d5a155a56580ecd5617cacb4b1}{Minimum} (int a, int b)
+\item 
+int \hyperlink{group__math__group_gac4c560cadf6af2e052f767eb02d982c0}{Minimum} (int a, int b, int c)
+\item 
+\mbox{\Hypertarget{group__math__group_ga9afd8a6d559a06465541ce2c6f99fc1d}\label{group__math__group_ga9afd8a6d559a06465541ce2c6f99fc1d}} 
+int {\bfseries Maximum} (int a, int b)
+\item 
+\mbox{\Hypertarget{group__math__group_ga4c9a564a95fdd10c4ac6998afe8e3743}\label{group__math__group_ga4c9a564a95fdd10c4ac6998afe8e3743}} 
+int {\bfseries Maximum} (int a, int b, int c)
+\item 
+double \hyperlink{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}{Get\+Random\+Double} (double min\+Value=0.\+0, double max\+Value=1.\+0)
+\item 
+int \hyperlink{group__math__group_gab82c25b1da5feec79806fe080becf2c3}{Get\+Random\+Int} (int min\+Value=0, int max\+Value=32767)
+\item 
+int \hyperlink{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}{Round\+To\+Int} (double value)
+\item 
+int \hyperlink{group__math__group_gaaf5732ddb11cda2a05f0f978265a114e}{Greatest\+Common\+Divisor} (int a, int b)
+\item 
+int \hyperlink{group__math__group_ga322fe1f4e7738ff3234fe70d04daeafe}{Lowest\+Common\+Multiple} (int a, int b)
+\item 
+void \hyperlink{group__math__group_ga9dffb844db4ac8823c6c957448576ed8}{Shuffle} (int $\ast$values, int num\+Values)
+\item 
+bool \hyperlink{group__math__group_ga1fbbb8c0c7c30db6995b5a4fa82e1754}{Is\+Bit\+Set} (int value, int bit)
+\item 
+int \hyperlink{group__math__group_ga8c8748fbb1d3e99db79f20fc17d4e63b}{Set\+Bit} (int value, int bit)
+\item 
+int \hyperlink{group__math__group_ga4ce9c5e2cee3bf609fcfba01c0f8e6a7}{Clear\+Bit} (int value, int bit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of functions dedicated to mathematical calculations. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__math__group_ga4ce9c5e2cee3bf609fcfba01c0f8e6a7}\label{group__math__group_ga4ce9c5e2cee3bf609fcfba01c0f8e6a7}} 
+\index{Mathematics@{Mathematics}!Clear\+Bit@{Clear\+Bit}}
+\index{Clear\+Bit@{Clear\+Bit}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Clear\+Bit()}{ClearBit()}}
+{\footnotesize\ttfamily int Clear\+Bit (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{bit }\end{DoxyParamCaption})}
+
+Clears a certain bit within an integer value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the integer value \\
+\hline
+{\em bit} & the n-\/th bit to clear \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the modified integer value with the bit cleared 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}\label{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}} 
+\index{Mathematics@{Mathematics}!Get\+Random\+Double@{Get\+Random\+Double}}
+\index{Get\+Random\+Double@{Get\+Random\+Double}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Get\+Random\+Double()}{GetRandomDouble()}}
+{\footnotesize\ttfamily double Get\+Random\+Double (\begin{DoxyParamCaption}\item[{double}]{min\+Value = {\ttfamily 0.0},  }\item[{double}]{max\+Value = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Returns a random number within the specified range. This function will generate a random number using a pseudo random number generator.
+
+The generated numbers are of type {\ttfamily double} and lie within the interval of \mbox{[}min\+Value, max\+Value).
+
+{\itshape Note\+:} the notation for the interval {\itshape \mbox{[}min\+Value, max\+Value)} means that {\ttfamily min\+Value} is included but {\ttfamily max\+Value} is not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & the minimum value \\
+\hline
+{\em max\+Value} & the minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new random number
+\end{DoxyReturn}
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{comment}{// Generates a random number in the interval of [100, 200).}
+  \textcolor{keywordtype}{double} x1 = \hyperlink{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}{GetRandomDouble}(100, 200);
+
+  \textcolor{comment}{// Generates a random number in the interval of [0, 1).}
+  \textcolor{keywordtype}{double} x2 = \hyperlink{group__math__group_ga298f9ccec14d3ea06c05ccd1e1e062ac}{GetRandomDouble}();
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__math__group_gab82c25b1da5feec79806fe080becf2c3}\label{group__math__group_gab82c25b1da5feec79806fe080becf2c3}} 
+\index{Mathematics@{Mathematics}!Get\+Random\+Int@{Get\+Random\+Int}}
+\index{Get\+Random\+Int@{Get\+Random\+Int}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Get\+Random\+Int()}{GetRandomInt()}}
+{\footnotesize\ttfamily int Get\+Random\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Value = {\ttfamily 0},  }\item[{int}]{max\+Value = {\ttfamily 32767} }\end{DoxyParamCaption})}
+
+Returns a random number within the specified range. This function will generate a random number using a pseudo random number generator.
+
+The generated numbers are of type {\ttfamily int} and lie within the interval of \mbox{[}min\+Value, max\+Value).
+
+{\itshape Note\+:} the notation for the interval {\itshape \mbox{[}min\+Value, max\+Value)} means that {\ttfamily min\+Value} is included but {\ttfamily max\+Value} is not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & the minimum value \\
+\hline
+{\em max\+Value} & the minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_gaaf5732ddb11cda2a05f0f978265a114e}\label{group__math__group_gaaf5732ddb11cda2a05f0f978265a114e}} 
+\index{Mathematics@{Mathematics}!Greatest\+Common\+Divisor@{Greatest\+Common\+Divisor}}
+\index{Greatest\+Common\+Divisor@{Greatest\+Common\+Divisor}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Greatest\+Common\+Divisor()}{GreatestCommonDivisor()}}
+{\footnotesize\ttfamily int Greatest\+Common\+Divisor (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Returns the greatest common divisor (gcd) of two numbers. Both number must be greater or equal to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first number \\
+\hline
+{\em b} & the second number \\
+\hline
+{\em the} & gcd of the two numbers \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__math__group_ga1fbbb8c0c7c30db6995b5a4fa82e1754}\label{group__math__group_ga1fbbb8c0c7c30db6995b5a4fa82e1754}} 
+\index{Mathematics@{Mathematics}!Is\+Bit\+Set@{Is\+Bit\+Set}}
+\index{Is\+Bit\+Set@{Is\+Bit\+Set}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Is\+Bit\+Set()}{IsBitSet()}}
+{\footnotesize\ttfamily bool Is\+Bit\+Set (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{bit }\end{DoxyParamCaption})}
+
+Tests whether a certain bit is set within an integer.
+
+{\bfseries Using plain C++ without the Standard Library or A\+S\+TU}
+
+Testing whether a certain bit is set can be achieved by bit shifting the value 1 (which has the first bit set and all others set to zero) to the left, according to the bit to test. This new value can now be processed with a bitwise A\+ND operator (\&) and the result will be something other than zero if the bit is set. The entire function could be implemented like this\+:
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} \hyperlink{group__math__group_ga1fbbb8c0c7c30db6995b5a4fa82e1754}{IsBitSet}(\textcolor{keywordtype}{int} value, \textcolor{keywordtype}{int} bit)
+\{
+  \textcolor{keywordflow}{return} value & (1 << bit);
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the integer value to test \\
+\hline
+{\em bit} & the n-\/th bit to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the bit is set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_ga322fe1f4e7738ff3234fe70d04daeafe}\label{group__math__group_ga322fe1f4e7738ff3234fe70d04daeafe}} 
+\index{Mathematics@{Mathematics}!Lowest\+Common\+Multiple@{Lowest\+Common\+Multiple}}
+\index{Lowest\+Common\+Multiple@{Lowest\+Common\+Multiple}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Lowest\+Common\+Multiple()}{LowestCommonMultiple()}}
+{\footnotesize\ttfamily int Lowest\+Common\+Multiple (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Returns the lowest common multiple (lcm) of two numbers. Both number must be greater or equal to zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first number \\
+\hline
+{\em b} & the second number \\
+\hline
+{\em the} & lcm of the two numbers \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__math__group_ga3b74a8d5a155a56580ecd5617cacb4b1}\label{group__math__group_ga3b74a8d5a155a56580ecd5617cacb4b1}} 
+\index{Mathematics@{Mathematics}!Minimum@{Minimum}}
+\index{Minimum@{Minimum}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Minimum()}{Minimum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Minimum (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+Returns the smaller of the given values.
+
+{\bfseries Using plain C++ without the Standard Library or A\+S\+TU}
+
+The same result can be achieved without A\+S\+TU using plain C++ and the {\ttfamily $<$algorithm$>$} header.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <iostream>}
+\textcolor{preprocessor}{#include <algorithm>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{keywordtype}{int} a = 42;
+  \textcolor{keywordtype}{int} b = 17;
+  \textcolor{keywordtype}{int} c = std::min(a, b);
+
+  std::cout << \textcolor{stringliteral}{"the minimum of "} << a << \textcolor{stringliteral}{" and "} << b \textcolor{stringliteral}{" is "} << c << std::endl;
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first value \\
+\hline
+{\em b} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The smaller of a and b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_gac4c560cadf6af2e052f767eb02d982c0}\label{group__math__group_gac4c560cadf6af2e052f767eb02d982c0}} 
+\index{Mathematics@{Mathematics}!Minimum@{Minimum}}
+\index{Minimum@{Minimum}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Minimum()}{Minimum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Minimum (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Returns the smaller of the given values.
+
+The same result can be achieved without A\+S\+TU using plain C++ and the {\ttfamily $<$algorithm$>$} header by chaining {\ttfamily std\+::min()} like this\+:
+
+
+\begin{DoxyCode}
+std::min(a, std::min(a, b))
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first value \\
+\hline
+{\em b} & the second value \\
+\hline
+{\em c} & the third value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the smaller of a, b and c 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}\label{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}} 
+\index{Mathematics@{Mathematics}!Round\+To\+Int@{Round\+To\+Int}}
+\index{Round\+To\+Int@{Round\+To\+Int}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Round\+To\+Int()}{RoundToInt()}}
+{\footnotesize\ttfamily int Round\+To\+Int (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+Returns the given double value to the nearest integer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the double value to be rounded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the rounded integer value
+\end{DoxyReturn}
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(\textcolor{stringliteral}{"The floating point value 17.3 is rounded to"});
+  \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}( \hyperlink{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}{RoundToInt}(17.3) );
+  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}();
+
+  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(\textcolor{stringliteral}{"The floating point value 17.8 is rounded to"});
+  \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}( \hyperlink{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}{RoundToInt}(17.8) );
+  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}();
+
+  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(\textcolor{stringliteral}{"The floating point value 17.5 is rounded to"});
+  \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}( \hyperlink{group__math__group_ga06bd02ff0de83d2713683574ac288fb3}{RoundToInt}(17.5) );
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+Output\+: 
+\begin{DoxyCode}
+The floating point value 17.3 is rounded to
+17
+The floating point value 17.8 is rounded to
+18
+The floating point value 17.5 is rounded to
+18
+\end{DoxyCode}
+ {\bfseries Using plain C++ without the Standard Library or A\+S\+TU}
+
+The same result can be achieved without A\+S\+TU using plain C++. Rounding a floating-\/point value to an integer can be done by casting the floating-\/point value to an int data type while adding 0.\+5.
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{double} f = 17.7;
+\textcolor{keywordtype}{int} i = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(f + 0.5);
+\end{DoxyCode}
+
+
+The cast will always truncate the floating-\/point value to an integer, ignoring the fractional part number. In case the fractional part of the floating-\/point value is below 0.\+5, adding 0.\+5 will not change the result. In case the number\textquotesingle{}s fractional part is more than 0.\+5, adding 0.\+5 will change the number\textquotesingle{}s integer part to the next higher value. For example, 17.\+7 + 0.\+5 results in 18.\+2, and casting away the fractional part results in 18. \mbox{\Hypertarget{group__math__group_ga8c8748fbb1d3e99db79f20fc17d4e63b}\label{group__math__group_ga8c8748fbb1d3e99db79f20fc17d4e63b}} 
+\index{Mathematics@{Mathematics}!Set\+Bit@{Set\+Bit}}
+\index{Set\+Bit@{Set\+Bit}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Set\+Bit()}{SetBit()}}
+{\footnotesize\ttfamily int Set\+Bit (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{bit }\end{DoxyParamCaption})}
+
+Sets a certain bit within an integer value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the integer value \\
+\hline
+{\em bit} & the n-\/th bit to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the modified value with the bit set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_ga9dffb844db4ac8823c6c957448576ed8}\label{group__math__group_ga9dffb844db4ac8823c6c957448576ed8}} 
+\index{Mathematics@{Mathematics}!Shuffle@{Shuffle}}
+\index{Shuffle@{Shuffle}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{Shuffle()}{Shuffle()}}
+{\footnotesize\ttfamily void Shuffle (\begin{DoxyParamCaption}\item[{int $\ast$}]{values,  }\item[{int}]{num\+Values }\end{DoxyParamCaption})}
+
+Randomly rearrange array of integers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & the array of integers to be shuffled \\
+\hline
+{\em num\+Values} & the number of integers \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__math__group_gab6efcc6e24e777db0fe5e0d0955c2b2d}\label{group__math__group_gab6efcc6e24e777db0fe5e0d0955c2b2d}} 
+\index{Mathematics@{Mathematics}!To\+Degrees@{To\+Degrees}}
+\index{To\+Degrees@{To\+Degrees}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{To\+Degrees()}{ToDegrees()}}
+{\footnotesize\ttfamily double To\+Degrees (\begin{DoxyParamCaption}\item[{double}]{rad }\end{DoxyParamCaption})}
+
+Converts radians to degrees.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rad} & the angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the angle in degrees 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__math__group_gafdd4eddaf6eadf34406a865e0cf6a30a}\label{group__math__group_gafdd4eddaf6eadf34406a865e0cf6a30a}} 
+\index{Mathematics@{Mathematics}!To\+Radians@{To\+Radians}}
+\index{To\+Radians@{To\+Radians}!Mathematics@{Mathematics}}
+\subsubsection{\texorpdfstring{To\+Radians()}{ToRadians()}}
+{\footnotesize\ttfamily double To\+Radians (\begin{DoxyParamCaption}\item[{double}]{deg }\end{DoxyParamCaption})}
+
+Converts degrees to radians.
+
+
+\begin{DoxyParams}{Parameters}
+{\em deg} & the angle in degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the angle in radians 
+\end{DoxyReturn}

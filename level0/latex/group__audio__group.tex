@@ -1,0 +1,180 @@
+\hypertarget{group__audio__group}{}\section{Audio}
+\label{group__audio__group}\index{Audio@{Audio}}
+
+
+Functions to import, export and manipulate audio data.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__audio__group_gaf55add952fe04c4b2758d18db17c8c91}{Write\+Audio} (const char $\ast$filename, float $\ast$data, int size, int sample\+Rate=44100, int channels=1)
+\item 
+float $\ast$ \hyperlink{group__audio__group_gac361b2470f0258861b9e34deffc8852a}{Read\+Audio} (const char $\ast$filename, int $\ast$size, int $\ast$sample\+Rate, int $\ast$num\+Channels)
+\item 
+float $\ast$ \hyperlink{group__audio__group_gabf6e39c7686cd89ddc45a0b6be943279}{Extract\+Channel} (float $\ast$data, int size, int num\+Channels, int channel, int $\ast$result\+Size=nullptr)
+\item 
+float $\ast$ \hyperlink{group__audio__group_ga701f2f439ffe751ed1a5f0b26d23e1c4}{Interleave\+Channels} (float $\ast$ch1\+Data, float $\ast$ch2\+Data, int size, int $\ast$result\+Size=nullptr)
+\item 
+float $\ast$ \hyperlink{group__audio__group_ga1f60f80cc1589adf04e9b253a5b872b8}{Convert\+Sample\+Rate} (float $\ast$data, int size, int src\+Rate, int dst\+Rate, int $\ast$result\+Size=nullptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to import, export and manipulate audio data. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__audio__group_ga1f60f80cc1589adf04e9b253a5b872b8}\label{group__audio__group_ga1f60f80cc1589adf04e9b253a5b872b8}} 
+\index{Audio@{Audio}!Convert\+Sample\+Rate@{Convert\+Sample\+Rate}}
+\index{Convert\+Sample\+Rate@{Convert\+Sample\+Rate}!Audio@{Audio}}
+\subsubsection{\texorpdfstring{Convert\+Sample\+Rate()}{ConvertSampleRate()}}
+{\footnotesize\ttfamily float$\ast$ Convert\+Sample\+Rate (\begin{DoxyParamCaption}\item[{float $\ast$}]{data,  }\item[{int}]{size,  }\item[{int}]{src\+Rate,  }\item[{int}]{dst\+Rate,  }\item[{int $\ast$}]{result\+Size = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Converts the sample rate of audio data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the audio samples to convert \\
+\hline
+{\em size} & the number of audio samples \\
+\hline
+{\em src\+Rate} & the source sampling rate of the audio samples \\
+\hline
+{\em dst\+Rate} & the destination sampling rate \\
+\hline
+{\em result\+Size} & receives the number of audio samples of converted data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the audio data with the new sampling rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__audio__group_gabf6e39c7686cd89ddc45a0b6be943279}\label{group__audio__group_gabf6e39c7686cd89ddc45a0b6be943279}} 
+\index{Audio@{Audio}!Extract\+Channel@{Extract\+Channel}}
+\index{Extract\+Channel@{Extract\+Channel}!Audio@{Audio}}
+\subsubsection{\texorpdfstring{Extract\+Channel()}{ExtractChannel()}}
+{\footnotesize\ttfamily float$\ast$ Extract\+Channel (\begin{DoxyParamCaption}\item[{float $\ast$}]{data,  }\item[{int}]{size,  }\item[{int}]{num\+Channels,  }\item[{int}]{channel,  }\item[{int $\ast$}]{result\+Size = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Extracts the an audio channel from given sample data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the audio samples with interleaved channels \\
+\hline
+{\em size} & the total number of samples including all channels \\
+\hline
+{\em num\+Channels} & the number of channel \\
+\hline
+{\em channel} & the channel to extract \\
+\hline
+{\em result\+Size} & receives the number of samples of the extracted channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the extracted samples of the channel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__audio__group_ga701f2f439ffe751ed1a5f0b26d23e1c4}\label{group__audio__group_ga701f2f439ffe751ed1a5f0b26d23e1c4}} 
+\index{Audio@{Audio}!Interleave\+Channels@{Interleave\+Channels}}
+\index{Interleave\+Channels@{Interleave\+Channels}!Audio@{Audio}}
+\subsubsection{\texorpdfstring{Interleave\+Channels()}{InterleaveChannels()}}
+{\footnotesize\ttfamily float$\ast$ Interleave\+Channels (\begin{DoxyParamCaption}\item[{float $\ast$}]{ch1\+Data,  }\item[{float $\ast$}]{ch2\+Data,  }\item[{int}]{size,  }\item[{int $\ast$}]{result\+Size = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Interleaves data of two audio channels to one channel. The two provided audio channels must contain the same number of audio samples.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch1\+Data} & the audio samples of the first audio channel \\
+\hline
+{\em ch2\+Data} & the audio samples of the second audio channel \\
+\hline
+{\em size} & the number of samples of both audio channels \\
+\hline
+{\em result\+Size} & receives the number of audio samples of the interleaved channels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the interleaved audio data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__audio__group_gac361b2470f0258861b9e34deffc8852a}\label{group__audio__group_gac361b2470f0258861b9e34deffc8852a}} 
+\index{Audio@{Audio}!Read\+Audio@{Read\+Audio}}
+\index{Read\+Audio@{Read\+Audio}!Audio@{Audio}}
+\subsubsection{\texorpdfstring{Read\+Audio()}{ReadAudio()}}
+{\footnotesize\ttfamily float$\ast$ Read\+Audio (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{int $\ast$}]{size,  }\item[{int $\ast$}]{sample\+Rate,  }\item[{int $\ast$}]{num\+Channels }\end{DoxyParamCaption})}
+
+Reads an audio file.
+
+The pointer for the {\ttfamily size} parameter receives the number of samples.
+
+The pointer to {\ttfamily sampel\+Reate} parameter receives the sample rate of the audio file.
+
+Accepted file formats\+:
+
+
+\begin{DoxyItemize}
+\item Waveform Audio File Format (.wav)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename including the path \\
+\hline
+{\em size} & receives the number of floating point values (samples) \\
+\hline
+{\em sample\+Rate} & receives the sample rate \\
+\hline
+{\em num\+Channels} & receives the number of channels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the raw audio data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__audio__group_gaf55add952fe04c4b2758d18db17c8c91}\label{group__audio__group_gaf55add952fe04c4b2758d18db17c8c91}} 
+\index{Audio@{Audio}!Write\+Audio@{Write\+Audio}}
+\index{Write\+Audio@{Write\+Audio}!Audio@{Audio}}
+\subsubsection{\texorpdfstring{Write\+Audio()}{WriteAudio()}}
+{\footnotesize\ttfamily int Write\+Audio (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{float $\ast$}]{data,  }\item[{int}]{size,  }\item[{int}]{sample\+Rate = {\ttfamily 44100},  }\item[{int}]{channels = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Writes the given raw audio data to an file using the Waveform Audio File format. The Waveform Audio File format usually has the extension .wav.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file name including the path \\
+\hline
+{\em data} & the audio data, 32-\/bit float values per channel \\
+\hline
+{\em size} & the number of float values \\
+\hline
+{\em sample\+Rate} & the number of samples per second \\
+\hline
+{\em channels} & the number of channels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, error code otherwise
+\end{DoxyReturn}
+{\bfseries Example} This example generates an audio file containing half a second of silence using a sample rate of 48000 samples per second and one audio channel.
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{preprocessor}{#define SAMPLE\_RATE 44100}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{keywordtype}{int} numSamples = SAMPLE\_RATE / 2;
+  \textcolor{keywordtype}{float}* samples = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[numSamples];
+
+  \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numSamples; ++i) \{
+    samples[i] = 0.0;
+  \}
+
+  \textcolor{keywordtype}{int} err = \hyperlink{group__audio__group_gaf55add952fe04c4b2758d18db17c8c91}{WriteAudio}(\textcolor{stringliteral}{"silence.wav"}, samples, numSamples, SAMPLE\_RATE);
+
+  \textcolor{keywordflow}{if} (err != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}) \{
+    \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}( \hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{GetErrorMessage}(err) );
+  \}
+\} 
+\end{DoxyCode}
+ 

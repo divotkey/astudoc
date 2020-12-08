@@ -1,0 +1,92 @@
+\hypertarget{group__graphics__group}{}\section{Graphics}
+\label{group__graphics__group}\index{Graphics@{Graphics}}
+
+
+This module offers functions to graphical operations.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__graphics__group_ga8462a895186f3534786c30df8fd9747e}{Create\+Image} (int w, int h)
+\item 
+void \hyperlink{group__graphics__group_gaf45b0118bad60d88a6c50d841106bc4a}{Clear\+Image} ()
+\item 
+int \hyperlink{group__graphics__group_ga7a92adcfb955193d1a9e91891cd390e0}{Write\+Image} (const char $\ast$filename)
+\item 
+\mbox{\Hypertarget{group__graphics__group_ga1173670691ccdb478d5a23e4e40e9370}\label{group__graphics__group_ga1173670691ccdb478d5a23e4e40e9370}} 
+void {\bfseries Set\+Draw\+Color} (int r, int g, int b, int a=255)
+\item 
+\mbox{\Hypertarget{group__graphics__group_ga3bb72e859437ed28549062ac7be27d8d}\label{group__graphics__group_ga3bb72e859437ed28549062ac7be27d8d}} 
+void {\bfseries Set\+Clear\+Color} (int r, int g, int b)
+\item 
+\mbox{\Hypertarget{group__graphics__group_ga78d85558d42849decf7f85ae93b42044}\label{group__graphics__group_ga78d85558d42849decf7f85ae93b42044}} 
+void {\bfseries Draw\+Line} (double x0, double y0, double x1, double y1, double w=1)
+\item 
+\mbox{\Hypertarget{group__graphics__group_gae85b79bdf3eca6e115ca27ab9d4a3fcc}\label{group__graphics__group_gae85b79bdf3eca6e115ca27ab9d4a3fcc}} 
+void {\bfseries Draw\+Circle} (double x, double y, double r)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module offers functions to graphical operations. 
+
+It offers functions to load, store, create and manipulate images. Currently only B\+MP files are supported. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__graphics__group_gaf45b0118bad60d88a6c50d841106bc4a}\label{group__graphics__group_gaf45b0118bad60d88a6c50d841106bc4a}} 
+\index{Graphics@{Graphics}!Clear\+Image@{Clear\+Image}}
+\index{Clear\+Image@{Clear\+Image}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Clear\+Image()}{ClearImage()}}
+{\footnotesize\ttfamily void Clear\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the image using the current clear color. \mbox{\Hypertarget{group__graphics__group_ga8462a895186f3534786c30df8fd9747e}\label{group__graphics__group_ga8462a895186f3534786c30df8fd9747e}} 
+\index{Graphics@{Graphics}!Create\+Image@{Create\+Image}}
+\index{Create\+Image@{Create\+Image}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Create\+Image()}{CreateImage()}}
+{\footnotesize\ttfamily int Create\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Creates a new image with the specified width and height. The new image is created internally and can be accessed using other functions within this module. Any image which might have been created or loaded before is deleted by calling this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width of the image in pixel \\
+\hline
+{\em h} & the height of the image in pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error\+Code\+::\+N\+O\+\_\+\+E\+R\+R\+OR on success, the error code otherwise
+\end{DoxyReturn}
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <AstUtils.h>}
+
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{comment}{// Create a new image using Full HD resolution.}
+  createImage(1920, 1080);
+
+  \textcolor{comment}{// TODO draw something, store the image.}
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__graphics__group_ga7a92adcfb955193d1a9e91891cd390e0}\label{group__graphics__group_ga7a92adcfb955193d1a9e91891cd390e0}} 
+\index{Graphics@{Graphics}!Write\+Image@{Write\+Image}}
+\index{Write\+Image@{Write\+Image}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Write\+Image()}{WriteImage()}}
+{\footnotesize\ttfamily int Write\+Image (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Writes the current image data to a bitmap file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of the image including the path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error\+Code\+::\+N\+O\+\_\+\+E\+R\+R\+OR on success, the error code otherwise 
+\end{DoxyReturn}
