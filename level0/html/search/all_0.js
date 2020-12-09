@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['angle',['Angle',['../classastu_1_1Vector2.html#af44c9648648cb03637f520669e9a2d8e',1,'astu::Vector2']]],
   ['app_5ferror',['APP_ERROR',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96',1,'AstUtils0.h']]],
   ['askdouble',['AskDouble',['../group__io__group.html#ga2ecfe90c9b28dec6725b8df1a0013d0d',1,'AstUtils0.h']]],
   ['askfloat',['AskFloat',['../group__io__group.html#ga973515b754711fc89a018ce64f980c74',1,'AstUtils0.h']]],

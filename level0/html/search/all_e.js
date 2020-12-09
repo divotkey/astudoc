@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['timer',['Timer',['../group__timer__group.html',1,'']]],
-  ['todegrees',['ToDegrees',['../group__math__group.html#gab6efcc6e24e777db0fe5e0d0955c2b2d',1,'AstUtils0.h']]],
-  ['toradians',['ToRadians',['../group__math__group.html#gafdd4eddaf6eadf34406a865e0cf6a30a',1,'AstUtils0.h']]]
+  ['readaudio',['ReadAudio',['../group__audio__group.html#gac361b2470f0258861b9e34deffc8852a',1,'AstUtils0.h']]],
+  ['renderline',['RenderLine',['../group__sdl__group.html#gade420aec0a7492d5ac5f320b1ff4a814',1,'SdlApplication.h']]],
+  ['renderpoint',['RenderPoint',['../group__sdl__group.html#gadd510400a2614b9b8fd8afbe368fc795',1,'SdlApplication.h']]],
+  ['renderrectangle',['RenderRectangle',['../group__sdl__group.html#gaa5b815a9fcac2b1be46a5957bdbfd13f',1,'SdlApplication.h']]],
+  ['resetabsolutetime',['ResetAbsoluteTime',['../group__sdl__group.html#ga5b39467f3664fad21ce3c0f14c4506ff',1,'SdlApplication.h']]],
+  ['rotate',['Rotate',['../classastu_1_1Vector2.html#ac2b10a554fede91faa5a0668ebe76697',1,'astu::Vector2']]],
+  ['roundtoint',['RoundToInt',['../group__math__group.html#ga06bd02ff0de83d2713683574ac288fb3',1,'AstUtils0.h']]]
 ];
