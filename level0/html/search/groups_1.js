@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['graphics',['Graphics',['../group__gfx__group.html',1,'']]]
+  ['error_20handling',['Error Handling',['../group__error__group.html',1,'']]]
 ];

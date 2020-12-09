@@ -1,9 +1,0 @@
-<map id="include/AstService.h" name="include/AstService.h">
-<area shape="rect" id="node2" href="$Service_8h_source.html" title="Service.h" alt="" coords="355,244,432,271"/>
-<area shape="rect" id="node4" href="$ServiceManager_8h_source.html" title="ServiceManager.h" alt="" coords="254,319,381,345"/>
-<area shape="rect" id="node8" href="$UpdateService_8h_source.html" title="UpdateService.h" alt="" coords="732,169,850,196"/>
-<area shape="rect" id="node14" href="$StateService_8h_source.html" title="StateService.h" alt="" coords="446,169,554,196"/>
-<area shape="rect" id="node16" href="$SignalService_8h_source.html" title="SignalService.h" alt="" coords="984,87,1097,114"/>
-<area shape="rect" id="node19" href="$ITimeService_8h_source.html" title="ITimeService.h" alt="" coords="1121,87,1232,114"/>
-<area shape="rect" id="node20" href="$IWindowManager_8h_source.html" title="IWindowManager.h" alt="" coords="44,319,178,345"/>
-</map>

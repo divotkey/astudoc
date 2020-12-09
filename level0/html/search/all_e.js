@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['queryint',['QueryInt',['../AstIO_8h.html#ad54c0019fb3e7671e9b32db9cb3d7ebe',1,'astu']]],
-  ['querystring',['QueryString',['../AstIO_8h.html#ac80dcbf4d76b7e0f3b4e44617e005608',1,'astu']]],
-  ['queuesignal',['QueueSignal',['../classastu_1_1SignalService.html#aa028a039b066a779af3834ffb3bdaa18',1,'astu::SignalService']]]
+  ['timer',['Timer',['../group__timer__group.html',1,'']]],
+  ['todegrees',['ToDegrees',['../group__math__group.html#gab6efcc6e24e777db0fe5e0d0955c2b2d',1,'AstUtils0.h']]],
+  ['toradians',['ToRadians',['../group__math__group.html#gafdd4eddaf6eadf34406a865e0cf6a30a',1,'AstUtils0.h']]]
 ];

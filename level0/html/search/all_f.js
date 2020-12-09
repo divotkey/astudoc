@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['r',['r',['../classastu_1_1Color.html#ae1714e0caca40451f75a6b31648c6fee',1,'astu::Color']]],
-  ['red',['Red',['../group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457',1,'astu']]],
-  ['removeall',['RemoveAll',['../classastu_1_1EntityService.html#a1b21cf207324748c13c34568d3c1513e',1,'astu::EntityService']]],
-  ['removeentity',['RemoveEntity',['../classastu_1_1EntityService.html#a748a71e470d5bb51bb650b15e0a78c63',1,'astu::EntityService::RemoveEntity(std::shared_ptr&lt; Entity &gt; entity)'],['../classastu_1_1EntityService.html#a56effcd0e2c79f6b2030207541085bb5',1,'astu::EntityService::RemoveEntity(Entity &amp;e)']]],
-  ['removeentitylistener',['RemoveEntityListener',['../classastu_1_1EntityService.html#a4ecee40a8872203bf75c6ddbf67a05c1',1,'astu::EntityService']]],
-  ['removelayer',['RemoveLayer',['../classastu_1_1SdlRenderService.html#a88ffe81ca6348b12b0185310932bd4ee',1,'astu::SdlRenderService']]],
-  ['removelistener',['RemoveListener',['../classastu_1_1SignalService.html#aea0777f0393a7f3c4dafff9d58934194',1,'astu::SignalService']]],
-  ['removeservice',['RemoveService',['../classastu_1_1ServiceManager.html#afdf1a0f9645daf376b094f8fb5c203c1',1,'astu::ServiceManager']]],
-  ['removeupdatable',['RemoveUpdatable',['../classastu_1_1UpdateService.html#a04911354dbfbf3849fafda10209710b6',1,'astu::UpdateService']]]
+  ['unable_5fto_5fimport_5ffile',['UNABLE_TO_IMPORT_FILE',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57',1,'AstUtils0.h']]],
+  ['unable_5fto_5fopen_5ffile_5ffor_5freading',['UNABLE_TO_OPEN_FILE_FOR_READING',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced',1,'AstUtils0.h']]],
+  ['unable_5fto_5fopen_5ffile_5ffor_5fwriting',['UNABLE_TO_OPEN_FILE_FOR_WRITING',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6',1,'AstUtils0.h']]],
+  ['unable_5fto_5fread_5ffile',['UNABLE_TO_READ_FILE',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903',1,'AstUtils0.h']]],
+  ['unknown_5ferror_5fcode',['UNKNOWN_ERROR_CODE',['../group__error__group.html#gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a',1,'AstUtils0.h']]],
+  ['updateapp',['UpdateApp',['../group__sdl__group.html#ga9bf9bfe01e7d336c3a3b13cc923ff850',1,'SdlApplication.h']]]
 ];

@@ -1,8 +1,0 @@
-<map id="astu::IUpdatable" name="astu::IUpdatable">
-<area shape="rect" id="node2" href="$classastu_1_1UpdatableBaseService.html" title="astu::UpdatableBaseService" alt="" coords="172,107,360,133"/>
-<area shape="rect" id="node3" href="$classastu_1_1EntityService.html" title="astu::EntityService" alt="" coords="425,5,558,32"/>
-<area shape="rect" id="node4" href="$classastu_1_1SdlEventService.html" title="astu::SdlEventService" alt="" coords="415,56,567,83"/>
-<area shape="rect" id="node5" href="$classastu_1_1SdlRenderService.html" title="astu::SdlRenderService" alt="" coords="411,107,571,133"/>
-<area shape="rect" id="node6" href="$classastu_1_1SdlTimeService.html" title="astu::SdlTimeService" alt="" coords="418,157,565,184"/>
-<area shape="rect" id="node7" href="$classastu_1_1SignalService.html" title="astu::SignalService\&lt; T \&gt;" alt="" coords="408,208,575,235"/>
-</map>

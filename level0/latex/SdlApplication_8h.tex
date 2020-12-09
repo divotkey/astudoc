@@ -5,8 +5,7 @@
 This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0.  
 
 
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,11 +35,11 @@ int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rec
 \item 
 int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
 \item 
-int \hyperlink{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}{Set\+Render\+Color} (int argb)
+int \hyperlink{group__sdl__group_gaa5ac5769b86fd14f41fc2421e8e029bc}{Set\+Render\+Color} (int rgba)
 \item 
 int \hyperlink{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}{Set\+Background\+Color} (int r, int g, int b)
 \item 
-int \hyperlink{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}{Set\+Background\+Color} (int rgb)
+int \hyperlink{group__sdl__group_gaa80de83a7c03984305662ae0ca5daa05}{Set\+Background\+Color} (int rgb)
 \item 
 int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window\+Width} ()
 \item 
@@ -117,38 +116,3 @@ Tests whether a certain mouse button is currently pressed.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the mouse button is pressed 
 \end{DoxyReturn}
-\mbox{\Hypertarget{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}\label{SdlApplication_8h_aa80de83a7c03984305662ae0ca5daa05}} 
-\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Set\+Background\+Color@{Set\+Background\+Color}}
-\index{Set\+Background\+Color@{Set\+Background\+Color}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
-\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
-{\footnotesize\ttfamily int Set\+Background\+Color (\begin{DoxyParamCaption}\item[{int}]{rgb }\end{DoxyParamCaption})}
-
-Sets the background color of the application window.
-
-The background color does not have an alpha channel and cannot be transparent.
-
-This function can be used to set the background color using the usual hex-\/triplet notation which is a six-\/digit, three-\/byte hexadecimal number used int H\+T\+ML, C\+SS, S\+VG etc. \mbox{\Hypertarget{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}\label{SdlApplication_8h_a56d7cbe37155c107f35dfc13403c6c05}} 
-\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Set\+Render\+Color@{Set\+Render\+Color}}
-\index{Set\+Render\+Color@{Set\+Render\+Color}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
-\subsubsection{\texorpdfstring{Set\+Render\+Color()}{SetRenderColor()}}
-{\footnotesize\ttfamily int Set\+Render\+Color (\begin{DoxyParamCaption}\item[{int}]{argb }\end{DoxyParamCaption})}
-
-Sets the render color for subsequent render calls.
-\begin{DoxyItemize}
-\item This function can be used to set the background color using the usual hex-\/triplet notation which is a six-\/digit, three-\/byte hexadecimal number used int H\+T\+ML, C\+SS, S\+VG etc.
-\end{DoxyItemize}
-
-{\bfseries Example Usage}
-
-
-\begin{DoxyCode}
-\textcolor{comment}{// Set render color to orange, full opaque.}
-\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0xFFFFA500);
-
-\textcolor{comment}{// Set render color to yellow, 50% transparent.}
-\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0x80ffff00);
-
-\textcolor{comment}{// Set render color to white, full opaque.}
-\hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{SetRenderColor}(0xffffffff);
-\end{DoxyCode}
- 

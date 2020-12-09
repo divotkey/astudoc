@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['b',['b',['../classastu_1_1Color.html#a3eaf42ee466c2e128373f5ddcb12d34c',1,'astu::Color']]],
-  ['basesdlrenderlayer',['BaseSdlRenderLayer',['../classastu_1_1BaseSdlRenderLayer.html',1,'astu::BaseSdlRenderLayer'],['../classastu_1_1BaseSdlRenderLayer.html#a9fc94044d6b75261798b1a1ead9e561d',1,'astu::BaseSdlRenderLayer::BaseSdlRenderLayer()']]],
-  ['baseservice',['BaseService',['../classastu_1_1BaseService.html',1,'astu::BaseService'],['../classastu_1_1BaseService.html#ab155c73d180c22dab7cf8aff1514b2b5',1,'astu::BaseService::BaseService()']]],
-  ['black',['Black',['../group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca',1,'astu']]],
-  ['blend',['Blend',['../classastu_1_1Color.html#a3e246cf7b52ffda0f76a4fa0e7810763',1,'astu::Color']]],
-  ['blue',['Blue',['../group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde',1,'astu']]]
+  ['clearbit',['ClearBit',['../group__math__group.html#ga4ce9c5e2cee3bf609fcfba01c0f8e6a7',1,'AstUtils0.h']]],
+  ['clearcanvas',['ClearCanvas',['../group__sdl__group.html#ga4cc0ada571b47d2b809d441fa6766b52',1,'SdlApplication.h']]],
+  ['clearimage',['ClearImage',['../group__graphics__group.html#gaf45b0118bad60d88a6c50d841106bc4a',1,'AstUtils0.h']]],
+  ['convertsamplerate',['ConvertSampleRate',['../group__audio__group.html#ga1f60f80cc1589adf04e9b253a5b872b8',1,'AstUtils0.h']]],
+  ['createimage',['CreateImage',['../group__graphics__group.html#ga8462a895186f3534786c30df8fd9747e',1,'AstUtils0.h']]]
 ];
