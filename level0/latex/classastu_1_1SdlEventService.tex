@@ -1,0 +1,131 @@
+\hypertarget{classastu_1_1SdlEventService}{}\section{astu\+:\+:Sdl\+Event\+Service Class Reference}
+\label{classastu_1_1SdlEventService}\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+
+
+{\ttfamily \#include $<$Sdl\+Event\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Event\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlEventService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Event\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlEventService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}{Sdl\+Event\+Service} (int priority=0)
+\item 
+\hyperlink{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}{$\sim$\+Sdl\+Event\+Service} ()
+\item 
+bool \hyperlink{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}{Is\+Quit} () const
+\item 
+void \hyperlink{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}{Clear\+Quit} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1SdlEventService_a71805a124600a23e48158daa5dc57fff}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlEventService_a0163bd191605b5068d93cd6c8f26da0c}{On\+Shutdown} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}{On\+Update} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Initializes the S\+DL event submodule.
+
+This service processes the S\+DL event queue and distributes the events through the various abstractions layers (input, window-\/handling, etc.). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}\label{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Sdl\+Event\+Service@{Sdl\+Event\+Service}}
+\index{Sdl\+Event\+Service@{Sdl\+Event\+Service}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Sdl\+Event\+Service()}{SdlEventService()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Event\+Service\+::\+Sdl\+Event\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority} & the priority used to update this service \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}\label{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!````~Sdl\+Event\+Service@{$\sim$\+Sdl\+Event\+Service}}
+\index{````~Sdl\+Event\+Service@{$\sim$\+Sdl\+Event\+Service}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Sdl\+Event\+Service()}{~SdlEventService()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Event\+Service\+::$\sim$\+Sdl\+Event\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}\label{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Clear\+Quit@{Clear\+Quit}}
+\index{Clear\+Quit@{Clear\+Quit}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Clear\+Quit()}{ClearQuit()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Clear\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the quit-\/signal if set. \mbox{\Hypertarget{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}\label{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Is\+Quit@{Is\+Quit}}
+\index{Is\+Quit@{Is\+Quit}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Is\+Quit()}{IsQuit()}}
+{\footnotesize\ttfamily bool astu\+::\+Sdl\+Event\+Service\+::\+Is\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return whether a quit-\/signal has been detected.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a quit-\/signal has been detected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a0163bd191605b5068d93cd6c8f26da0c}\label{classastu_1_1SdlEventService_a0163bd191605b5068d93cd6c8f26da0c}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on shutdown.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a71805a124600a23e48158daa5dc57fff}\label{classastu_1_1SdlEventService_a71805a124600a23e48158daa5dc57fff}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on startup.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}\label{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when this updatable gets updated. 
+
+Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Sdl\+Event\+Service.\+h\end{DoxyCompactItemize}

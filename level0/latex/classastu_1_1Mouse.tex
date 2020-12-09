@@ -1,0 +1,57 @@
+\hypertarget{classastu_1_1Mouse}{}\section{astu\+:\+:Mouse Class Reference}
+\label{classastu_1_1Mouse}\index{astu\+::\+Mouse@{astu\+::\+Mouse}}
+
+
+{\ttfamily \#include $<$Mouse.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classastu_1_1Mouse_a1f60d23fe113d85a80569a5a3539eabf}{Set\+Button} (int button, bool pressed)
+\item 
+bool \hyperlink{classastu_1_1Mouse_a400f6483be85ac0e4694806bdd22e25a}{Is\+Pressed} (int button) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides access to mouse input.
+
+This class is realized using the Monostate design pattern. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Mouse_a400f6483be85ac0e4694806bdd22e25a}\label{classastu_1_1Mouse_a400f6483be85ac0e4694806bdd22e25a}} 
+\index{astu\+::\+Mouse@{astu\+::\+Mouse}!Is\+Pressed@{Is\+Pressed}}
+\index{Is\+Pressed@{Is\+Pressed}!astu\+::\+Mouse@{astu\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Is\+Pressed()}{IsPressed()}}
+{\footnotesize\ttfamily bool astu\+::\+Mouse\+::\+Is\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption}) const}
+
+Returns whether a button is currently pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the index of the button to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the button is currently pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Mouse_a1f60d23fe113d85a80569a5a3539eabf}\label{classastu_1_1Mouse_a1f60d23fe113d85a80569a5a3539eabf}} 
+\index{astu\+::\+Mouse@{astu\+::\+Mouse}!Set\+Button@{Set\+Button}}
+\index{Set\+Button@{Set\+Button}!astu\+::\+Mouse@{astu\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Set\+Button()}{SetButton()}}
+{\footnotesize\ttfamily void astu\+::\+Mouse\+::\+Set\+Button (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{bool}]{pressed }\end{DoxyParamCaption})}
+
+Sets the state of a button.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the index of the button to set \\
+\hline
+{\em pressed} & set to {\ttfamily true} to marked the button as pressed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Mouse.\+h\end{DoxyCompactItemize}

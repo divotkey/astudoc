@@ -1,0 +1,223 @@
+\hypertarget{classastu_1_1Image}{}\section{astu\+:\+:Image Class Reference}
+\label{classastu_1_1Image}\index{astu\+::\+Image@{astu\+::\+Image}}
+
+
+{\ttfamily \#include $<$Image.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Image_a930c3dfe86d60d209199cf27d2102446}{Image} (int w, int h)
+\item 
+int \hyperlink{classastu_1_1Image_a654888b88e109da1099ade3ec54f0520}{Get\+Width} () const
+\item 
+int \hyperlink{classastu_1_1Image_ad64d3b2abc18e54ba8beb4e212a75a10}{Get\+Height} () const
+\item 
+double \hyperlink{classastu_1_1Image_a06bdd931e5090f1eca62bd305b83cfd5}{Get\+Aspect\+Ratio} () const
+\item 
+const \hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}{Get\+Pixel} (int x, int y) const
+\item 
+void \hyperlink{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}{Set\+Pixel} (int x, int y, const \hyperlink{classastu_1_1Color}{Color} \&c)
+\item 
+const \hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}{Get\+Pixel} (size\+\_\+t idx) const
+\item 
+void \hyperlink{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}{Set\+Pixel} (size\+\_\+t idx, const \hyperlink{classastu_1_1Color}{Color} \&c)
+\item 
+size\+\_\+t \hyperlink{classastu_1_1Image_a53c53ecc0210786efa7f514966ad406b}{Number\+Of\+Pixels} () const
+\item 
+\hyperlink{classastu_1_1Color}{Color} $\ast$ \hyperlink{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}{Get\+Pixels} ()
+\item 
+const \hyperlink{classastu_1_1Color}{Color} $\ast$ \hyperlink{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}{Get\+Pixels} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents an image where each individual pixel is represented as instances of the class \hyperlink{classastu_1_1Color}{Color}. The \hyperlink{classastu_1_1Color}{Color} class represents a pixel as R\+G\+BA (red, green, blue and alpha channel) floating-\/point components.
+
+Representing an image this way offers a convenient and straightforward way and maintains high color precision. However, memory consumption and performance might suffer. This class is preferably used for image synthesis and analysis. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Image_a930c3dfe86d60d209199cf27d2102446}\label{classastu_1_1Image_a930c3dfe86d60d209199cf27d2102446}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Image@{Image}}
+\index{Image@{Image}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Image()}{Image()}}
+{\footnotesize\ttfamily astu\+::\+Image\+::\+Image (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width of the image in pixels \\
+\hline
+{\em h} & the height of the image in pixels \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the width or height is \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Image_a06bdd931e5090f1eca62bd305b83cfd5}\label{classastu_1_1Image_a06bdd931e5090f1eca62bd305b83cfd5}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Aspect\+Ratio@{Get\+Aspect\+Ratio}}
+\index{Get\+Aspect\+Ratio@{Get\+Aspect\+Ratio}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Aspect\+Ratio()}{GetAspectRatio()}}
+{\footnotesize\ttfamily double astu\+::\+Image\+::\+Get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the aspect ratio of this image.
+
+\begin{DoxyReturn}{Returns}
+the aspect ratio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_ad64d3b2abc18e54ba8beb4e212a75a10}\label{classastu_1_1Image_ad64d3b2abc18e54ba8beb4e212a75a10}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int astu\+::\+Image\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the height of this image
+
+\begin{DoxyReturn}{Returns}
+the height of this image in pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}\label{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+Returns the color of a pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the pixel \\
+\hline
+{\em y} & the y-\/coordinate of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the color at the specified location 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the coordinates are invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}\label{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixel@{Get\+Pixel}}
+\index{Get\+Pixel@{Get\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const}
+
+Returns the color of a pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the linear index of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the color of the pixel at the specified location 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the index is invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}\label{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixels@{Get\+Pixels}}
+\index{Get\+Pixels@{Get\+Pixels}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Pixels()}{GetPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method provides raw access to the pixel colors, use with care.
+
+\begin{DoxyReturn}{Returns}
+pointer to the linear array of pixel colors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}\label{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixels@{Get\+Pixels}}
+\index{Get\+Pixels@{Get\+Pixels}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Pixels()}{GetPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+This method provides raw access to the pixel colors, use with care.
+
+This version returns a const pointer to the array and does not allow the modify the color values.
+
+\begin{DoxyReturn}{Returns}
+pointer to the linear array of pixel colors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_a654888b88e109da1099ade3ec54f0520}\label{classastu_1_1Image_a654888b88e109da1099ade3ec54f0520}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int astu\+::\+Image\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the width of this image
+
+\begin{DoxyReturn}{Returns}
+the width of this image in pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_a53c53ecc0210786efa7f514966ad406b}\label{classastu_1_1Image_a53c53ecc0210786efa7f514966ad406b}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Number\+Of\+Pixels@{Number\+Of\+Pixels}}
+\index{Number\+Of\+Pixels@{Number\+Of\+Pixels}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Number\+Of\+Pixels()}{NumberOfPixels()}}
+{\footnotesize\ttfamily size\+\_\+t astu\+::\+Image\+::\+Number\+Of\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of pixels of this image.
+
+The number of pixels equals width times height of this image.
+
+\begin{DoxyReturn}{Returns}
+the number of pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}\label{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the color of a pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the pixel \\
+\hline
+{\em y} & the y-\/coordinate of the pixel \\
+\hline
+{\em c} & the new color \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the coordinates are invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}\label{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}} 
+\index{astu\+::\+Image@{astu\+::\+Image}!Set\+Pixel@{Set\+Pixel}}
+\index{Set\+Pixel@{Set\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
+\subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the color of a pixel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the linear index of the pixel \\
+\hline
+{\em c} & the new color of the pixel at the specified location \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Image.\+h\end{DoxyCompactItemize}

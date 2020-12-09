@@ -1,0 +1,170 @@
+\hypertarget{group__gfx__group}{}\section{Graphics}
+\label{group__gfx__group}\index{Graphics@{Graphics}}
+
+
+This module contains classes and functions dedicated to graphics.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classastu_1_1Image}{astu\+::\+Image}
+\item 
+class \hyperlink{classastu_1_1Color}{astu\+::\+Color}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}{astu\+::\+Web\+Colors} \{ \newline
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}{astu\+::\+White} = 0x\+F\+F\+F\+F\+FF, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}{astu\+::\+Silver} = 0x\+C0\+C0\+C0, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}{astu\+::\+Gray} = 0x808080, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}{astu\+::\+Black} = 0x000000, 
+\newline
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}{astu\+::\+Red} = 0x\+F\+F0000, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}{astu\+::\+Maroon} = 0x800000, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}{astu\+::\+Yellow} = 0x\+F\+F\+F\+F00, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}{astu\+::\+Olive} = 0x808000, 
+\newline
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}{astu\+::\+Lime} = 0x00\+F\+F00, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}{astu\+::\+Green} = 0x008000, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}{astu\+::\+Aqua} = 0x00\+F\+F\+FF, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}{astu\+::\+Teal} = 0x008080, 
+\newline
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}{astu\+::\+Blue} = 0x0000\+FF, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}{astu\+::\+Navy} = 0x000080, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}{astu\+::\+Fuchsia} = 0x\+F\+F00\+FF, 
+\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}{astu\+::\+Purple} = 0x800080
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__gfx__group_gaca5f9cb8047c60049300242c20d30cd6}{astu\+::\+Store\+Image} (const \hyperlink{classastu_1_1Image}{Image} \&image, const std\+::string \&filename)
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1Image}{Image} $>$ \hyperlink{group__gfx__group_ga46ac561eac42d4ace785797db8bc89a0}{astu\+::\+Load\+Image} (const std\+::string \&filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module contains classes and functions dedicated to graphics. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}\label{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}} 
+\index{Graphics@{Graphics}!Web\+Colors@{Web\+Colors}}
+\index{Web\+Colors@{Web\+Colors}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Web\+Colors}{WebColors}}
+{\footnotesize\ttfamily enum \hyperlink{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}{astu\+::\+Web\+Colors}}
+
+This enumeration defines values for color names according to the W3C specification. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{White@{White}!Graphics@{Graphics}}\index{Graphics@{Graphics}!White@{White}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}} 
+White&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape White} (0x\+F\+F\+F\+F\+FF). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Silver@{Silver}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Silver@{Silver}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}} 
+Silver&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Silver} (0x\+C0\+C0\+C0). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray@{Gray}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Gray@{Gray}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}} 
+Gray&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Gray} (0x808080). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Black@{Black}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Black@{Black}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}} 
+Black&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Black} (0x000000). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Red@{Red}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Red@{Red}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}} 
+Red&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Red} (0x\+F\+F0000). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Maroon@{Maroon}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Maroon@{Maroon}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}} 
+Maroon&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Maroon} (0x800000). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Yellow@{Yellow}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Yellow@{Yellow}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}} 
+Yellow&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Yellow} (0x\+F\+F\+F\+F00). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Olive@{Olive}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Olive@{Olive}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}} 
+Olive&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Olive} (0x808000). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Lime@{Lime}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Lime@{Lime}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}} 
+Lime&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Lime} (0x00\+F\+F00). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Green@{Green}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Green@{Green}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}} 
+Green&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Green} (0x008000). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Aqua@{Aqua}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Aqua@{Aqua}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}} 
+Aqua&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Aqua} (0x00\+F\+F\+FF). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Teal@{Teal}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Teal@{Teal}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}} 
+Teal&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Teal} (0x008080). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Blue@{Blue}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Blue@{Blue}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}} 
+Blue&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Blue} (0x0000\+FF). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Navy@{Navy}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Navy@{Navy}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}} 
+Navy&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Navy} (0x000080). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fuchsia@{Fuchsia}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Fuchsia@{Fuchsia}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}} 
+Fuchsia&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Fuchsia} (0x\+F\+F00\+FF). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Purple@{Purple}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Purple@{Purple}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}} 
+Purple&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Purple} (0x800080). \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gfx__group_ga46ac561eac42d4ace785797db8bc89a0}\label{group__gfx__group_ga46ac561eac42d4ace785797db8bc89a0}} 
+\index{Graphics@{Graphics}!Load\+Image@{Load\+Image}}
+\index{Load\+Image@{Load\+Image}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Load\+Image()}{LoadImage()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classastu_1_1Image}{Image}$>$ astu\+::\+Load\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Loads an B\+MP image from file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename including the path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the loaded image 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & in case of an I/O error \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{group__gfx__group_gaca5f9cb8047c60049300242c20d30cd6}\label{group__gfx__group_gaca5f9cb8047c60049300242c20d30cd6}} 
+\index{Graphics@{Graphics}!Store\+Image@{Store\+Image}}
+\index{Store\+Image@{Store\+Image}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Store\+Image()}{StoreImage()}}
+{\footnotesize\ttfamily void astu\+::\+Store\+Image (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Image}{Image} \&}]{image,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Stores an image as B\+MP file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the the image to be stored \\
+\hline
+{\em filename} & the filename including the path \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & in case of an I/O error \\
+\hline
+\end{DoxyExceptions}
