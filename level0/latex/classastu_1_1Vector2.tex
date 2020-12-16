@@ -58,6 +58,10 @@ const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_
 \item 
 \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Vector2_a7022d1b830ee06d272a05d7d52c93a53}{operator-\/=} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&right)
 \item 
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Vector2_a5ee8479488e6da2a82110f2ac62d386f}{operator$\ast$} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&right) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Vector2_a3416fb656aef7113d0261533f5a8a4aa}{operator$\ast$=} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&right)
+\item 
 \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Vector2_a9f9362218a0d011032324cbc7a9a85a1}{operator/=} (T s)
 \item 
 \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Vector2_af2852a5bb5295f1a510e507bc554863d}{operator/} (T s) const
@@ -334,10 +338,29 @@ Binary non-\/equality operator comparing two vectors.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the specified vector is not equal to this vector 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Vector2_a5ee8479488e6da2a82110f2ac62d386f}\label{classastu_1_1Vector2_a5ee8479488e6da2a82110f2ac62d386f}} 
+\index{astu\+::\+Vector2@{astu\+::\+Vector2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!astu\+::\+Vector2@{astu\+::\+Vector2}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{right }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary multiplication operator for two vectors.
+
+This operator does a component-\/wise multiplication of the two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the right hand-\/side vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new vector representing the result of the operation 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1Vector2_aa9cd4d74e0174cb0995613f989e42f12}\label{classastu_1_1Vector2_aa9cd4d74e0174cb0995613f989e42f12}} 
 \index{astu\+::\+Vector2@{astu\+::\+Vector2}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!astu\+::\+Vector2@{astu\+::\+Vector2}}
-\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{T}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -351,10 +374,29 @@ Binary multiplication operator with a scalar value
 \begin{DoxyReturn}{Returns}
 a new vector representing the result of the operation 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Vector2_a3416fb656aef7113d0261533f5a8a4aa}\label{classastu_1_1Vector2_a3416fb656aef7113d0261533f5a8a4aa}} 
+\index{astu\+::\+Vector2@{astu\+::\+Vector2}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!astu\+::\+Vector2@{astu\+::\+Vector2}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compound multiplication and subtraction operator for two vectors.
+
+This operator does a component-\/wise multiplication of the two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em right} & the right hand-\/side vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this vector 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1Vector2_a3a4e11dd85fbd0e1cda4e8b38b9aea6a}\label{classastu_1_1Vector2_a3a4e11dd85fbd0e1cda4e8b38b9aea6a}} 
 \index{astu\+::\+Vector2@{astu\+::\+Vector2}!operator$\ast$=@{operator$\ast$=}}
 \index{operator$\ast$=@{operator$\ast$=}!astu\+::\+Vector2@{astu\+::\+Vector2}}
-\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{T}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities - API Level 0
-   &#160;<span id="projectnumber">0.5.1</span>
+   &#160;<span id="projectnumber">0.5.2</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -125,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a694ff874fcdb2118ed665a7cb28978e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7022d1b830ee06d272a05d7d52c93a53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Vector2.html#a7022d1b830ee06d272a05d7d52c93a53">operator-=</a> (const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="separator:a7022d1b830ee06d272a05d7d52c93a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee8479488e6da2a82110f2ac62d386f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Vector2.html#a5ee8479488e6da2a82110f2ac62d386f">operator*</a> (const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right) const</td></tr>
+<tr class="separator:a5ee8479488e6da2a82110f2ac62d386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3416fb656aef7113d0261533f5a8a4aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Vector2.html#a3416fb656aef7113d0261533f5a8a4aa">operator*=</a> (const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="separator:a3416fb656aef7113d0261533f5a8a4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9362218a0d011032324cbc7a9a85a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Vector2.html#a9f9362218a0d011032324cbc7a9a85a1">operator/=</a> (T s)</td></tr>
 <tr class="separator:a9f9362218a0d011032324cbc7a9a85a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2852a5bb5295f1a510e507bc554863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Vector2.html#af2852a5bb5295f1a510e507bc554863d">operator/</a> (T s) const</td></tr>
@@ -701,8 +705,45 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="a5ee8479488e6da2a82110f2ac62d386f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee8479488e6da2a82110f2ac62d386f">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt;T&gt; <a class="el" href="classastu_1_1Vector2.html">astu::Vector2</a>&lt; T &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Binary multiplication operator for two vectors.</p>
+<p>This operator does a component-wise multiplication of the two vectors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">right</td><td>the right hand-side vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new vector representing the result of the operation </dd></dl>
+
+</div>
+</div>
 <a id="aa9cd4d74e0174cb0995613f989e42f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9cd4d74e0174cb0995613f989e42f12">&#9670;&nbsp;</a></span>operator*()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9cd4d74e0174cb0995613f989e42f12">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,8 +778,45 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
+<a id="a3416fb656aef7113d0261533f5a8a4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3416fb656aef7113d0261533f5a8a4aa">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Vector2.html">astu::Vector2</a>&lt; T &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Vector2.html">Vector2</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compound multiplication and subtraction operator for two vectors.</p>
+<p>This operator does a component-wise multiplication of the two vectors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">right</td><td>the right hand-side vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this vector </dd></dl>
+
+</div>
+</div>
 <a id="a3a4e11dd85fbd0e1cda4e8b38b9aea6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a4e11dd85fbd0e1cda4e8b38b9aea6a">&#9670;&nbsp;</a></span>operator*=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4e11dd85fbd0e1cda4e8b38b9aea6a">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

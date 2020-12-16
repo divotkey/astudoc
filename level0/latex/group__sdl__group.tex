@@ -38,6 +38,8 @@ int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window
 \item 
 int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
 \item 
+bool \hyperlink{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}{Is\+Mouse\+Button\+Pressed} (int button)
+\item 
 double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
 \item 
 double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Absolute\+Time} ()
@@ -183,6 +185,22 @@ On most plattform the request to terminate the application happens e.\+g., by pr
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the application should be terminated, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}\label{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}}
+\index{Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Is\+Mouse\+Button\+Pressed()}{IsMouseButtonPressed()}}
+{\footnotesize\ttfamily bool Is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+Tests whether a certain mouse button is currently pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the index of the button to be queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the mouse button is pressed 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}\label{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}} 
 \index{S\+D\+L Application@{S\+D\+L Application}!Quit\+App@{Quit\+App}}
