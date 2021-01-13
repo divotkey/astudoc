@@ -33,6 +33,8 @@ int \hyperlink{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}{Render\+Poi
 \item 
 int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rectangle} (double x, double y, double w, double h, bool filled=false)
 \item 
+int \hyperlink{group__sdl__group_ga639ecb3c5d86733ee9b38dcdf49c723f}{Render\+Regular\+Polygon} (double x, double y, double r, unsigned int n, double angle=0)
+\item 
 int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
 \item 
 int \hyperlink{group__sdl__group_gaa5ac5769b86fd14f41fc2421e8e029bc}{Set\+Render\+Color} (int rgba)
@@ -45,11 +47,13 @@ int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window
 \item 
 int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
 \item 
-int \hyperlink{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}{Get\+CursorX} ()
+int \hyperlink{group__sdl__group_ga7c508c83150dcd127156d9c4e2436a8e}{Get\+CursorX} ()
 \item 
-int \hyperlink{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}{Get\+CursorY} ()
+int \hyperlink{group__sdl__group_ga4769e37502d12fbc431ace1a32749bc8}{Get\+CursorY} ()
 \item 
 bool \hyperlink{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}{Is\+Mouse\+Button\+Pressed} (int button)
+\item 
+bool \hyperlink{group__sdl__group_ga8f17cac7776ed1c12041101c8abb740b}{Is\+Mouse\+Button\+Clicked} (int button)
 \item 
 double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
 \item 
@@ -57,46 +61,12 @@ double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Abs
 \item 
 void \hyperlink{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}{Reset\+Absolute\+Time} ()
 \item 
-double \hyperlink{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}{Get\+Fps} ()
+double \hyperlink{group__sdl__group_gaa48ddc248a57dfa1e4afdd6be2a76531}{Get\+Fps} ()
+\item 
+const char $\ast$ \hyperlink{group__sdl__group_ga236d5b80ee4ca0a1abe0ae054f7fbe2f}{Get\+Fps\+String} (const char $\ast$text=nullptr, int precision=3)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0. 
 
-
-
-\subsection{Function Documentation}
-\mbox{\Hypertarget{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}\label{SdlApplication_8h_a7c508c83150dcd127156d9c4e2436a8e}} 
-\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+CursorX@{Get\+CursorX}}
-\index{Get\+CursorX@{Get\+CursorX}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
-\subsubsection{\texorpdfstring{Get\+Cursor\+X()}{GetCursorX()}}
-{\footnotesize\ttfamily int Get\+CursorX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Returns the x-\/coordinate of the mouse cursor.
-
-\begin{DoxyReturn}{Returns}
-the x-\/coordinate of the mouse cursor 
-\end{DoxyReturn}
-\mbox{\Hypertarget{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}\label{SdlApplication_8h_a4769e37502d12fbc431ace1a32749bc8}} 
-\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+CursorY@{Get\+CursorY}}
-\index{Get\+CursorY@{Get\+CursorY}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
-\subsubsection{\texorpdfstring{Get\+Cursor\+Y()}{GetCursorY()}}
-{\footnotesize\ttfamily int Get\+CursorY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Returns the y-\/coordinate of the mouse cursor.
-
-\begin{DoxyReturn}{Returns}
-the y-\/coordinate of the mouse cursor 
-\end{DoxyReturn}
-\mbox{\Hypertarget{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}\label{SdlApplication_8h_aa48ddc248a57dfa1e4afdd6be2a76531}} 
-\index{Sdl\+Application.\+h@{Sdl\+Application.\+h}!Get\+Fps@{Get\+Fps}}
-\index{Get\+Fps@{Get\+Fps}!Sdl\+Application.\+h@{Sdl\+Application.\+h}}
-\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
-{\footnotesize\ttfamily double Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Returns the average frames per seconds (F\+PS).
-
-\begin{DoxyReturn}{Returns}
-the frames per seconds 
-\end{DoxyReturn}

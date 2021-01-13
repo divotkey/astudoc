@@ -26,6 +26,8 @@ int \hyperlink{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}{Render\+Poi
 \item 
 int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rectangle} (double x, double y, double w, double h, bool filled=false)
 \item 
+int \hyperlink{group__sdl__group_ga639ecb3c5d86733ee9b38dcdf49c723f}{Render\+Regular\+Polygon} (double x, double y, double r, unsigned int n, double angle=0)
+\item 
 int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
 \item 
 int \hyperlink{group__sdl__group_gaa5ac5769b86fd14f41fc2421e8e029bc}{Set\+Render\+Color} (int rgba)
@@ -38,13 +40,23 @@ int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window
 \item 
 int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
 \item 
+int \hyperlink{group__sdl__group_ga7c508c83150dcd127156d9c4e2436a8e}{Get\+CursorX} ()
+\item 
+int \hyperlink{group__sdl__group_ga4769e37502d12fbc431ace1a32749bc8}{Get\+CursorY} ()
+\item 
 bool \hyperlink{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}{Is\+Mouse\+Button\+Pressed} (int button)
+\item 
+bool \hyperlink{group__sdl__group_ga8f17cac7776ed1c12041101c8abb740b}{Is\+Mouse\+Button\+Clicked} (int button)
 \item 
 double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
 \item 
 double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Absolute\+Time} ()
 \item 
 void \hyperlink{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}{Reset\+Absolute\+Time} ()
+\item 
+double \hyperlink{group__sdl__group_gaa48ddc248a57dfa1e4afdd6be2a76531}{Get\+Fps} ()
+\item 
+const char $\ast$ \hyperlink{group__sdl__group_ga236d5b80ee4ca0a1abe0ae054f7fbe2f}{Get\+Fps\+String} (const char $\ast$text=nullptr, int precision=3)
 \end{DoxyCompactItemize}
 
 
@@ -76,6 +88,7 @@ Simple Direct\+Media Layer (S\+DL) is a cross-\/platform development library pro
     \}
 
     \hyperlink{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}{QuitApp}();
+    \textcolor{keywordflow}{return} 0;
 \} 
 \end{DoxyCode}
  
@@ -105,6 +118,28 @@ Returns the absolute running time since the application has been started.
 \begin{DoxyReturn}{Returns}
 the absolute time seconds 
 \end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga7c508c83150dcd127156d9c4e2436a8e}\label{group__sdl__group_ga7c508c83150dcd127156d9c4e2436a8e}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+CursorX@{Get\+CursorX}}
+\index{Get\+CursorX@{Get\+CursorX}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+X()}{GetCursorX()}}
+{\footnotesize\ttfamily int Get\+CursorX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the x-\/coordinate of the mouse cursor.
+
+\begin{DoxyReturn}{Returns}
+the x-\/coordinate of the mouse cursor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga4769e37502d12fbc431ace1a32749bc8}\label{group__sdl__group_ga4769e37502d12fbc431ace1a32749bc8}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+CursorY@{Get\+CursorY}}
+\index{Get\+CursorY@{Get\+CursorY}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+Y()}{GetCursorY()}}
+{\footnotesize\ttfamily int Get\+CursorY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the y-\/coordinate of the mouse cursor.
+
+\begin{DoxyReturn}{Returns}
+the y-\/coordinate of the mouse cursor 
+\end{DoxyReturn}
 \mbox{\Hypertarget{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}\label{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}} 
 \index{S\+D\+L Application@{S\+D\+L Application}!Get\+Delta\+Time@{Get\+Delta\+Time}}
 \index{Get\+Delta\+Time@{Get\+Delta\+Time}!S\+D\+L Application@{S\+D\+L Application}}
@@ -117,6 +152,35 @@ This method returns the elapsed time since the last call to Update\+App.
 
 \begin{DoxyReturn}{Returns}
 the delta time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_gaa48ddc248a57dfa1e4afdd6be2a76531}\label{group__sdl__group_gaa48ddc248a57dfa1e4afdd6be2a76531}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Fps@{Get\+Fps}}
+\index{Get\+Fps@{Get\+Fps}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
+{\footnotesize\ttfamily double Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the average frames per seconds (F\+PS).
+
+\begin{DoxyReturn}{Returns}
+the frames per seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga236d5b80ee4ca0a1abe0ae054f7fbe2f}\label{group__sdl__group_ga236d5b80ee4ca0a1abe0ae054f7fbe2f}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Get\+Fps\+String@{Get\+Fps\+String}}
+\index{Get\+Fps\+String@{Get\+Fps\+String}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Get\+Fps\+String()}{GetFpsString()}}
+{\footnotesize\ttfamily const char$\ast$ Get\+Fps\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr},  }\item[{int}]{precision = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+Returns the average frames per second (F\+PS) as string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & preceding text added F\+PS value \\
+\hline
+{\em precision} & decimal precision for F\+PS \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the frames per second as string 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}\label{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}} 
 \index{S\+D\+L Application@{S\+D\+L Application}!Get\+Window\+Height@{Get\+Window\+Height}}
@@ -186,13 +250,29 @@ On most plattform the request to terminate the application happens e.\+g., by pr
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the application should be terminated, {\ttfamily false} otherwise 
 \end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga8f17cac7776ed1c12041101c8abb740b}\label{group__sdl__group_ga8f17cac7776ed1c12041101c8abb740b}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Is\+Mouse\+Button\+Clicked@{Is\+Mouse\+Button\+Clicked}}
+\index{Is\+Mouse\+Button\+Clicked@{Is\+Mouse\+Button\+Clicked}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Is\+Mouse\+Button\+Clicked()}{IsMouseButtonClicked()}}
+{\footnotesize\ttfamily bool Is\+Mouse\+Button\+Clicked (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+Tests whether a mouse button has been clicked.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the index of the button to be queried \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the mouse button has been clicked 
+\end{DoxyReturn}
 \mbox{\Hypertarget{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}\label{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}} 
 \index{S\+D\+L Application@{S\+D\+L Application}!Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}}
 \index{Is\+Mouse\+Button\+Pressed@{Is\+Mouse\+Button\+Pressed}!S\+D\+L Application@{S\+D\+L Application}}
 \subsubsection{\texorpdfstring{Is\+Mouse\+Button\+Pressed()}{IsMouseButtonPressed()}}
 {\footnotesize\ttfamily bool Is\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
 
-Tests whether a certain mouse button is currently pressed.
+Tests whether a mouse button is currently pressed.
 
 
 \begin{DoxyParams}{Parameters}
@@ -268,9 +348,36 @@ Renders a rectangle using the current render color.
 \hline
 {\em h} & the height of the rectangle \\
 \hline
-{\em filled} & whether the rectangle shoudl be rendered filled \\
+{\em filled} & whether the rectangle should be rendered filled \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the rectangle could not be rendered, zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sdl__group_ga639ecb3c5d86733ee9b38dcdf49c723f}\label{group__sdl__group_ga639ecb3c5d86733ee9b38dcdf49c723f}} 
+\index{S\+D\+L Application@{S\+D\+L Application}!Render\+Regular\+Polygon@{Render\+Regular\+Polygon}}
+\index{Render\+Regular\+Polygon@{Render\+Regular\+Polygon}!S\+D\+L Application@{S\+D\+L Application}}
+\subsubsection{\texorpdfstring{Render\+Regular\+Polygon()}{RenderRegularPolygon()}}
+{\footnotesize\ttfamily int Render\+Regular\+Polygon (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r,  }\item[{unsigned int}]{n,  }\item[{double}]{angle = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Renders a regular polygon (n-\/gon).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the center of the n-\/gon \\
+\hline
+{\em y} & the y-\/coordinate of the center of the n-\/gon \\
+\hline
+{\em r} & the radius of the n-\/gon \\
+\hline
+{\em n} & the number of vertices (and edges) \\
+\hline
+{\em angle} & the rotation angle of the n-\/gon in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error code in case the polygon could not be rendered, zero otherwise 
+\end{DoxyReturn}
 \mbox{\Hypertarget{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}\label{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}} 
 \index{S\+D\+L Application@{S\+D\+L Application}!Reset\+Absolute\+Time@{Reset\+Absolute\+Time}}
 \index{Reset\+Absolute\+Time@{Reset\+Absolute\+Time}!S\+D\+L Application@{S\+D\+L Application}}

@@ -18,6 +18,8 @@ Collaboration diagram for astu\+:\+:Vector2$<$ T $>$\+:\nopagebreak
 \item 
 \hyperlink{classastu_1_1Vector2_a021ec0e80fa7ca80921a17172e30fe29}{Vector2} (T \hyperlink{classastu_1_1Vector2_aa60c30b27742255fbe7053b07a7e76ba}{x}=0, T \hyperlink{classastu_1_1Vector2_a6718f5a7005c38830dbd31283a87f5c9}{y}=0)
 \item 
+\hyperlink{classastu_1_1Vector2}{Vector2} \& \hyperlink{classastu_1_1Vector2_a303494be2ce5f334571f6f284ad13e28}{Set} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&o)
+\item 
 \hyperlink{classastu_1_1Vector2}{Vector2} \& \hyperlink{classastu_1_1Vector2_a44e396e8e35cf3c4d1cc50de70b70220}{Set} (T \hyperlink{classastu_1_1Vector2_aa60c30b27742255fbe7053b07a7e76ba}{x}, T \hyperlink{classastu_1_1Vector2_a6718f5a7005c38830dbd31283a87f5c9}{y})
 \item 
 \hyperlink{classastu_1_1Vector2}{Vector2} \& \hyperlink{classastu_1_1Vector2_adf5c57f8b6f337a4aa6eb79c0506d074}{SetX} (T \hyperlink{classastu_1_1Vector2_aa60c30b27742255fbe7053b07a7e76ba}{x})
@@ -39,6 +41,8 @@ T \hyperlink{classastu_1_1Vector2_a504029e7043988ec1e697b1a1e2cfb78}{Distance} (
 T \hyperlink{classastu_1_1Vector2_ac60cbccfefd62216f648c388c5025649}{Distance\+Squared} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&o) const
 \item 
 \hyperlink{classastu_1_1Vector2}{Vector2} \& \hyperlink{classastu_1_1Vector2_ac2b10a554fede91faa5a0668ebe76697}{Rotate} (T phi)
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2} \& \hyperlink{classastu_1_1Vector2_a85d7593d86a8b74bb3a0a07b3d734ccd}{Rotate\+Deg} (T phi)
 \item 
 T \hyperlink{classastu_1_1Vector2_a44f449c9f23b8e5aa2739c3a50b57ceb}{Dot} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&o) const
 \item 
@@ -558,10 +562,44 @@ Rotates this vector in-\/place.
 \begin{DoxyReturn}{Returns}
 reference to this vector for method chaining 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Vector2_a85d7593d86a8b74bb3a0a07b3d734ccd}\label{classastu_1_1Vector2_a85d7593d86a8b74bb3a0a07b3d734ccd}} 
+\index{astu\+::\+Vector2@{astu\+::\+Vector2}!Rotate\+Deg@{Rotate\+Deg}}
+\index{Rotate\+Deg@{Rotate\+Deg}!astu\+::\+Vector2@{astu\+::\+Vector2}}
+\subsubsection{\texorpdfstring{Rotate\+Deg()}{RotateDeg()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}\& \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::Rotate\+Deg (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rotates this vector in-\/place.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this vector for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Vector2_a303494be2ce5f334571f6f284ad13e28}\label{classastu_1_1Vector2_a303494be2ce5f334571f6f284ad13e28}} 
+\index{astu\+::\+Vector2@{astu\+::\+Vector2}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Vector2@{astu\+::\+Vector2}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}\& \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::Set (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets thsi vector to the coordinates of another vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other vector which coordinates to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this vector for method chaining 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1Vector2_a44e396e8e35cf3c4d1cc50de70b70220}\label{classastu_1_1Vector2_a44e396e8e35cf3c4d1cc50de70b70220}} 
 \index{astu\+::\+Vector2@{astu\+::\+Vector2}!Set@{Set}}
 \index{Set@{Set}!astu\+::\+Vector2@{astu\+::\+Vector2}}
-\subsubsection{\texorpdfstring{Set()}{Set()}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
 \hyperlink{classastu_1_1Vector2}{Vector2}\& \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$\+::Set (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 

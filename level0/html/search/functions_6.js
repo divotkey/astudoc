@@ -4,5 +4,6 @@ var searchData=
   ['interleavechannels',['InterleaveChannels',['../group__audio__group.html#ga701f2f439ffe751ed1a5f0b26d23e1c4',1,'AstUtils0.h']]],
   ['isappterminated',['IsAppTerminated',['../group__sdl__group.html#ga6d29aa641d22a0299da4710022c8c96b',1,'SdlApplication.h']]],
   ['isbitset',['IsBitSet',['../group__math__group.html#ga1fbbb8c0c7c30db6995b5a4fa82e1754',1,'AstUtils0.h']]],
+  ['ismousebuttonclicked',['IsMouseButtonClicked',['../group__sdl__group.html#ga8f17cac7776ed1c12041101c8abb740b',1,'SdlApplication.h']]],
   ['ismousebuttonpressed',['IsMouseButtonPressed',['../group__sdl__group.html#ga2537bad9d6f115fee49a741e7e2623a6',1,'SdlApplication.h']]]
 ];

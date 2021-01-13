@@ -7,5 +7,6 @@ var searchData=
   ['i_2fo_20functions',['I/O Functions',['../group__io__group.html',1,'']]],
   ['isappterminated',['IsAppTerminated',['../group__sdl__group.html#ga6d29aa641d22a0299da4710022c8c96b',1,'SdlApplication.h']]],
   ['isbitset',['IsBitSet',['../group__math__group.html#ga1fbbb8c0c7c30db6995b5a4fa82e1754',1,'AstUtils0.h']]],
+  ['ismousebuttonclicked',['IsMouseButtonClicked',['../group__sdl__group.html#ga8f17cac7776ed1c12041101c8abb740b',1,'SdlApplication.h']]],
   ['ismousebuttonpressed',['IsMouseButtonPressed',['../group__sdl__group.html#ga2537bad9d6f115fee49a741e7e2623a6',1,'SdlApplication.h']]]
 ];
