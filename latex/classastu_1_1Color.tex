@@ -1,0 +1,537 @@
+\hypertarget{classastu_1_1Color}{}\section{astu\+:\+:Color Class Reference}
+\label{classastu_1_1Color}\index{astu\+::\+Color@{astu\+::\+Color}}
+
+
+{\ttfamily \#include $<$Color.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} (double red=0, double green=0, double blue=0, double alpha=1)
+\item 
+\hyperlink{classastu_1_1Color_a5056ade3f6bf10a72056ffcb3d2e1f42}{Color} (int rgb)
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_afdc4eaa4609f192757c8cfa6ec51f110}{Set\+Alpha} (double \hyperlink{classastu_1_1Color_a001a2dcf8f1f0d4abb97f8c158bfddec}{a})
+\item 
+void \hyperlink{classastu_1_1Color_a709d6f647c38187f1d4028810dfa363e}{Set} (double red, double green, double blue, double alpha=1)
+\item 
+int \hyperlink{classastu_1_1Color_aa9ad15d1137f9a6243373a687faa101c}{To\+Rgba} () const
+\item 
+double \hyperlink{classastu_1_1Color_a2a897cfc4a5706a7c3ab8562adb217d8}{Distance\+Without\+Alpha} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+double \hyperlink{classastu_1_1Color_a04fc869504fd1f14d4c27d257ac0a121}{Distance\+Squared\+Without\+Alpha} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+double \hyperlink{classastu_1_1Color_a53b134d44a2fba57ed560f00ce55a471}{Distance} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+double \hyperlink{classastu_1_1Color_af57011227eea623101859b95127e364c}{Distance\+Squared} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+\hyperlink{classastu_1_1Color}{Color} \hyperlink{classastu_1_1Color_a0dc0303a14adf0712e12e756bde1b365}{Lerp} (const \hyperlink{classastu_1_1Color}{Color} \&o, double t) const
+\item 
+int \hyperlink{classastu_1_1Color_a6e8ee28f89245f4e8d96c8c62144854f}{Get\+A\+R\+GB} () const
+\item 
+void \hyperlink{classastu_1_1Color_a612db0af9e13a8c64f1c215964d4d88f}{Saturate} ()
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_a3e246cf7b52ffda0f76a4fa0e7810763}{Blend} (const \hyperlink{classastu_1_1Color}{Color} \&o)
+\item 
+\hyperlink{classastu_1_1Color}{Color} \hyperlink{classastu_1_1Color_aca7e48a64d881e1287805f52b81a7066}{operator+} (const \hyperlink{classastu_1_1Color}{Color} \&rhs) const
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_af4c777a4e4cf3a7770d8499c4fa10c3e}{operator+=} (const \hyperlink{classastu_1_1Color}{Color} \&o)
+\item 
+\hyperlink{classastu_1_1Color}{Color} \hyperlink{classastu_1_1Color_ad9b6a108bc2d6581ad97057a00d2008f}{operator-\/} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_ab80bfd9e234b9caed6900afea9a0ea2e}{operator-\/=} (const \hyperlink{classastu_1_1Color}{Color} \&o)
+\item 
+\hyperlink{classastu_1_1Color}{Color} \hyperlink{classastu_1_1Color_a287594eff638030b35765bfe00e76606}{operator$\ast$} (double s) const
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_adf79aa3c1511b986cb7ac14d32524ad4}{operator$\ast$=} (double s)
+\item 
+\hyperlink{classastu_1_1Color}{Color} \hyperlink{classastu_1_1Color_a9be3b7a9a3773bc7f82a2cd6ac6badbf}{operator/} (double s) const
+\item 
+\hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Color_afd37b7940911dd15ef36bae5a046033c}{operator/=} (double s)
+\item 
+bool \hyperlink{classastu_1_1Color_aa1b234404e692bd343d026f03c7b9832}{operator==} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+bool \hyperlink{classastu_1_1Color_ad55ea16978ae52e3feb77109865921bd}{operator!=} (const \hyperlink{classastu_1_1Color}{Color} \&o) const
+\item 
+bool \hyperlink{classastu_1_1Color_a23c1c73e9815bdbae91de67d54f25cb8}{operator$<$} (const \hyperlink{classastu_1_1Color}{Color} \&rhs) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1Color_a4cec5d96b38d05757c0ead266e591397}\label{classastu_1_1Color_a4cec5d96b38d05757c0ead266e591397}} 
+static \hyperlink{classastu_1_1Color}{Color} {\bfseries Create\+From\+Rgb} (int red, int green, int blue, int alpha=255)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classastu_1_1Color_ae1714e0caca40451f75a6b31648c6fee}{r}
+\item 
+double \hyperlink{classastu_1_1Color_a513c1a3bd9b8c4268efafba56bda0823}{g}
+\item 
+double \hyperlink{classastu_1_1Color_a3eaf42ee466c2e128373f5ddcb12d34c}{b}
+\item 
+double \hyperlink{classastu_1_1Color_a001a2dcf8f1f0d4abb97f8c158bfddec}{a}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a color value in R\+GB color space.
+
+A color is described using four color channels\+: red, green, blue and alpha. The alpha channel represents transparency. The color channels are represents as floating-\/point values which normally lie within the interval \mbox{[}0, 1\mbox{]}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}\label{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Color@{Color}}
+\index{Color@{Color}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily astu\+::\+Color\+::\+Color (\begin{DoxyParamCaption}\item[{double}]{red = {\ttfamily 0},  }\item[{double}]{green = {\ttfamily 0},  }\item[{double}]{blue = {\ttfamily 0},  }\item[{double}]{alpha = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & the red color component \\
+\hline
+{\em green} & the green color component \\
+\hline
+{\em blue} & the blue color component \\
+\hline
+{\em alpha} & the alpha color component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Color_a5056ade3f6bf10a72056ffcb3d2e1f42}\label{classastu_1_1Color_a5056ade3f6bf10a72056ffcb3d2e1f42}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Color@{Color}}
+\index{Color@{Color}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Color()}{Color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily astu\+::\+Color\+::\+Color (\begin{DoxyParamCaption}\item[{int}]{rgb }\end{DoxyParamCaption})}
+
+Constructor.
+
+This constructor can be used to create colors using the usual hex-\/triplet notation which is a six-\/digit, three-\/byte hexadecimal number used int H\+T\+ML, C\+SS, S\+VG etc.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} mediumAquamarine(0x66cdaa);
+\end{DoxyCode}
+
+
+The enum Web\+Colors defines integer constants according to the color names defined by the W3C standards. These constants can be used to initialize colors using this constructor.
+
+
+\begin{DoxyCode}
+\hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} redColor(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}{WebColors::Red});
+\hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} PurpleColor(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}{WebColors::Purple});
+\end{DoxyCode}
+
+
+This constructor also functions as automatic conversion constructor which allows C++ to automatically convert integers to objects of class \hyperlink{classastu_1_1Color}{Color}. This makes it particularly easy to use the Web\+Color constants to initialize colors\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} redColor = \hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}{WebColors::Red};
+\end{DoxyCode}
+
+
+or even as function arguments of type color
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <Color.h>}
+
+\textcolor{keywordtype}{void} SomeFunction(\textcolor{keyword}{const} \hyperlink{classastu_1_1Color_a3b4505ef24790685a5e22bde22ff5b05}{Color} & c) \{
+ \textcolor{comment}{// Does something with c...}
+\}
+
+\textcolor{keywordtype}{int} main() \{
+  SomeFunction(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}{WebColors::Aqua});
+
+  \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em rgb} & the rgb color components encoded within in an integer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Color_a3e246cf7b52ffda0f76a4fa0e7810763}\label{classastu_1_1Color_a3e246cf7b52ffda0f76a4fa0e7810763}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Blend@{Blend}}
+\index{Blend@{Blend}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Blend()}{Blend()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::\+Blend (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption})}
+
+Blends this color with another color respecting the alpha channel.
+
+This method changes this color and leaves the other color untouched, which is the most common usage of this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color to blend with this color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color used for method chaining etc. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a53b134d44a2fba57ed560f00ce55a471}\label{classastu_1_1Color_a53b134d44a2fba57ed560f00ce55a471}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Distance@{Distance}}
+\index{Distance@{Distance}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Calculates the Euclidean in R\+G\+BA color space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance to the other color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_af57011227eea623101859b95127e364c}\label{classastu_1_1Color_af57011227eea623101859b95127e364c}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Distance\+Squared@{Distance\+Squared}}
+\index{Distance\+Squared@{Distance\+Squared}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Distance\+Squared()}{DistanceSquared()}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::\+Distance\+Squared (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Calculates the Euclidean squared in R\+G\+BA color space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance to the other color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a04fc869504fd1f14d4c27d257ac0a121}\label{classastu_1_1Color_a04fc869504fd1f14d4c27d257ac0a121}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Distance\+Squared\+Without\+Alpha@{Distance\+Squared\+Without\+Alpha}}
+\index{Distance\+Squared\+Without\+Alpha@{Distance\+Squared\+Without\+Alpha}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Distance\+Squared\+Without\+Alpha()}{DistanceSquaredWithoutAlpha()}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::\+Distance\+Squared\+Without\+Alpha (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Calculates the Euclidean squared in R\+GB color space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance to the other color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a2a897cfc4a5706a7c3ab8562adb217d8}\label{classastu_1_1Color_a2a897cfc4a5706a7c3ab8562adb217d8}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Distance\+Without\+Alpha@{Distance\+Without\+Alpha}}
+\index{Distance\+Without\+Alpha@{Distance\+Without\+Alpha}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Distance\+Without\+Alpha()}{DistanceWithoutAlpha()}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::\+Distance\+Without\+Alpha (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Calculates the Euclidean distance in R\+GB color space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance to the other color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a6e8ee28f89245f4e8d96c8c62144854f}\label{classastu_1_1Color_a6e8ee28f89245f4e8d96c8c62144854f}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Get\+A\+R\+GB@{Get\+A\+R\+GB}}
+\index{Get\+A\+R\+GB@{Get\+A\+R\+GB}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Get\+A\+R\+G\+B()}{GetARGB()}}
+{\footnotesize\ttfamily int astu\+::\+Color\+::\+Get\+A\+R\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Converts this color to an integer value.
+
+\begin{DoxyReturn}{Returns}
+the integer representation of this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a0dc0303a14adf0712e12e756bde1b365}\label{classastu_1_1Color_a0dc0303a14adf0712e12e756bde1b365}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color} astu\+::\+Color\+::\+Lerp (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o,  }\item[{double}]{t }\end{DoxyParamCaption}) const}
+
+Does a linear interpolation between this and the specified color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other color \\
+\hline
+{\em t} & the interpolation position in the interval \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new interpolated color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_ad55ea16978ae52e3feb77109865921bd}\label{classastu_1_1Color_ad55ea16978ae52e3feb77109865921bd}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool astu\+::\+Color\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary non-\/equality operator comparing two colors.
+
+Note\+: following common practice, this operator simply relied on the binary equality operator and reverses the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the right-\/hand side color is not equal to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a287594eff638030b35765bfe00e76606}\label{classastu_1_1Color_a287594eff638030b35765bfe00e76606}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color} astu\+::\+Color\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption}) const}
+
+Binary multiplication operator for a color and a scalar value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the right-\/hand side scalar value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new color representing the result of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_adf79aa3c1511b986cb7ac14d32524ad4}\label{classastu_1_1Color_adf79aa3c1511b986cb7ac14d32524ad4}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
+
+Compound assignment and multiplication operator for a color and a scalar value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the right-\/hand side scalar value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_aca7e48a64d881e1287805f52b81a7066}\label{classastu_1_1Color_aca7e48a64d881e1287805f52b81a7066}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator+@{operator+}}
+\index{operator+@{operator+}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color} astu\+::\+Color\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Binary addition operator for two colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new color representing the result of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_af4c777a4e4cf3a7770d8499c4fa10c3e}\label{classastu_1_1Color_af4c777a4e4cf3a7770d8499c4fa10c3e}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption})}
+
+Compound assignment and addition operator for two colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_ad9b6a108bc2d6581ad97057a00d2008f}\label{classastu_1_1Color_ad9b6a108bc2d6581ad97057a00d2008f}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color} astu\+::\+Color\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Binary subtraction operator for two colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new color representing the result of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_ab80bfd9e234b9caed6900afea9a0ea2e}\label{classastu_1_1Color_ab80bfd9e234b9caed6900afea9a0ea2e}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption})}
+
+Compound assignment and subtraction operator for two colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a9be3b7a9a3773bc7f82a2cd6ac6badbf}\label{classastu_1_1Color_a9be3b7a9a3773bc7f82a2cd6ac6badbf}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator/@{operator/}}
+\index{operator/@{operator/}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color} astu\+::\+Color\+::operator/ (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption}) const}
+
+Binary division operator for a color and a scalar value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the right-\/hand side scalar value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new color representing the result of the operation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_afd37b7940911dd15ef36bae5a046033c}\label{classastu_1_1Color_afd37b7940911dd15ef36bae5a046033c}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::operator/= (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption})}
+
+Compound assignment and division operator for a color and a scalar value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the right-\/hand side scalar value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a23c1c73e9815bdbae91de67d54f25cb8}\label{classastu_1_1Color_a23c1c73e9815bdbae91de67d54f25cb8}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool astu\+::\+Color\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Binary less-\/than operator comparing two colors.
+
+This operator is required to have colors as keys within std\+::map containers and in order to be able to \textquotesingle{}sort\textquotesingle{} colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this color evaluates as \textquotesingle{}less than\textquotesingle{} compared to the right-\/hand side color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_aa1b234404e692bd343d026f03c7b9832}\label{classastu_1_1Color_aa1b234404e692bd343d026f03c7b9832}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!operator==@{operator==}}
+\index{operator==@{operator==}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool astu\+::\+Color\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{o }\end{DoxyParamCaption}) const}
+
+Binary equality operator comparing two colors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the right-\/hand side color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the right-\/hand side color is equal to this color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_a612db0af9e13a8c64f1c215964d4d88f}\label{classastu_1_1Color_a612db0af9e13a8c64f1c215964d4d88f}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Saturate@{Saturate}}
+\index{Saturate@{Saturate}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Saturate()}{Saturate()}}
+{\footnotesize\ttfamily void astu\+::\+Color\+::\+Saturate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clamps all color components within the range of 0 to 1. \mbox{\Hypertarget{classastu_1_1Color_a709d6f647c38187f1d4028810dfa363e}\label{classastu_1_1Color_a709d6f647c38187f1d4028810dfa363e}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void astu\+::\+Color\+::\+Set (\begin{DoxyParamCaption}\item[{double}]{red,  }\item[{double}]{green,  }\item[{double}]{blue,  }\item[{double}]{alpha = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Assigns a color using R\+G\+BA values within the range \mbox{[}0, 1\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & the red color component \\
+\hline
+{\em green} & the green color component \\
+\hline
+{\em blue} & the blue color component \\
+\hline
+{\em alpha} & the alpha color component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Color_afdc4eaa4609f192757c8cfa6ec51f110}\label{classastu_1_1Color_afdc4eaa4609f192757c8cfa6ec51f110}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!Set\+Alpha@{Set\+Alpha}}
+\index{Set\+Alpha@{Set\+Alpha}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{Set\+Alpha()}{SetAlpha()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Color\+::\+Set\+Alpha (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the alpha channel of this color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the alpha channel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this color for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Color_aa9ad15d1137f9a6243373a687faa101c}\label{classastu_1_1Color_aa9ad15d1137f9a6243373a687faa101c}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!To\+Rgba@{To\+Rgba}}
+\index{To\+Rgba@{To\+Rgba}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{To\+Rgba()}{ToRgba()}}
+{\footnotesize\ttfamily int astu\+::\+Color\+::\+To\+Rgba (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts this color to an R\+G\+BA integer.
+
+\begin{DoxyReturn}{Returns}
+the R\+G\+BA integer representing this color 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1Color_a001a2dcf8f1f0d4abb97f8c158bfddec}\label{classastu_1_1Color_a001a2dcf8f1f0d4abb97f8c158bfddec}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!a@{a}}
+\index{a@{a}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::a}
+
+The alpha color component. \mbox{\Hypertarget{classastu_1_1Color_a3eaf42ee466c2e128373f5ddcb12d34c}\label{classastu_1_1Color_a3eaf42ee466c2e128373f5ddcb12d34c}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!b@{b}}
+\index{b@{b}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::b}
+
+The blue color component. \mbox{\Hypertarget{classastu_1_1Color_a513c1a3bd9b8c4268efafba56bda0823}\label{classastu_1_1Color_a513c1a3bd9b8c4268efafba56bda0823}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!g@{g}}
+\index{g@{g}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::g}
+
+The green color component. \mbox{\Hypertarget{classastu_1_1Color_ae1714e0caca40451f75a6b31648c6fee}\label{classastu_1_1Color_ae1714e0caca40451f75a6b31648c6fee}} 
+\index{astu\+::\+Color@{astu\+::\+Color}!r@{r}}
+\index{r@{r}!astu\+::\+Color@{astu\+::\+Color}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily double astu\+::\+Color\+::r}
+
+The red color component. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Color.\+h\end{DoxyCompactItemize}

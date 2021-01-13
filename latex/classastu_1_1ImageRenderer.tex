@@ -1,0 +1,305 @@
+\hypertarget{classastu_1_1ImageRenderer}{}\section{astu\+:\+:Image\+Renderer Class Reference}
+\label{classastu_1_1ImageRenderer}\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+
+
+{\ttfamily \#include $<$Image\+Renderer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1ImageRenderer_a88dc5f8ff5aa6a039c1c77c31bd5bb89}{Image\+Renderer} ()
+\item 
+\hyperlink{classastu_1_1ImageRenderer_ac35d79e814253e2a2755da114e05d05c}{$\sim$\+Image\+Renderer} ()
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_ae81b23f9e19254a7923cadf2a9e081a3}{Clear} ()
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}{Set\+Draw\+Color} (const \hyperlink{classastu_1_1Color}{Color} \&c)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_acfb25962b67295325e9209759fcabe2b}{Set\+Background\+Color} (const \hyperlink{classastu_1_1Color}{Color} \&c)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a903b1b78edee5f09b9ee1f604d762c28}{Draw\+Circle} (double cx, double cy, double r)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a914047284fae6e8f58614018c8575f4e}{Draw\+Circle} (const Vector2$<$ double $>$ \&c, double r)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a968b3ac1ef2611e149494d0855fbab85}{Draw\+Line} (const Vector2$<$ double $>$ \&p0, const Vector2$<$ double $>$ \&p1, double w=1)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_ae9e54c2f75cc76b9d45216df81b92aa4}{Draw\+Line} (double x0, double y0, double x1, double y1, double w=1)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}{Draw\+Rectangle} (double cx, double cy, double w, double h, double angle\+Deg=0)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a43f82202ac8ffdeba33fd5ecc600c267}{Draw\+Rectangle} (const Vector2$<$ double $>$ \&center, double w, double h, double angle\+Deg=0)
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a154491f8ef39881eeaba56f9d8ca24e8}{Set\+Render\+Quality} (\hyperlink{group__gfx__group_gac3b4955f341cea44f53f8446d734cd54}{Render\+Quality} quality)
+\item 
+\hyperlink{group__gfx__group_gac3b4955f341cea44f53f8446d734cd54}{Render\+Quality} \hyperlink{classastu_1_1ImageRenderer_a7f3f1cc8129dd8e40dea73e7f1333769}{Get\+Render\+Quality} () const
+\item 
+void \hyperlink{classastu_1_1ImageRenderer_a55172edcac396d7840da655697d57e28}{Render} (\hyperlink{classastu_1_1Image}{Image} \&img)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class can be used to render geometric primitives in an resolution independent way. The output of the rendering will be an \hyperlink{classastu_1_1Image}{Image}.
+
+{\bfseries Example Usage}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <stdexcept>}
+\textcolor{preprocessor}{#include <iostream>}
+\textcolor{preprocessor}{#include <\hyperlink{AstGraphics_8h}{AstGraphics.h}>}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+\textcolor{keyword}{using namespace }\hyperlink{namespaceastu}{astu};
+
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{keyword}{const} \textcolor{keywordtype}{int} kWidth = 512;
+  \textcolor{keyword}{const} \textcolor{keywordtype}{int} kHeight = 512;
+
+  \hyperlink{classastu_1_1ImageRenderer}{ImageRenderer} renderer;
+
+  \textcolor{comment}{// Create some graphical elements.}
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}{SetDrawColor}(\hyperlink{classastu_1_1Color}{Color}(1.0, 0.8, 0.5, 0.5));
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}{DrawRectangle}(kWidth / 2.0, kHeight / 2.0, kHeight, 50);
+
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}{SetDrawColor}(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}{WebColors::Red});
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a903b1b78edee5f09b9ee1f604d762c28}{DrawCircle}(kWidth / 2.0, kHeight / 2.0, 100.0);
+
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}{SetDrawColor}(\hyperlink{classastu_1_1Color}{Color}(1.0, 0.8, 0.5, 0.5));
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}{DrawRectangle}(kWidth / 2.0, kHeight / 2.0, 50, kWidth);
+
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}{SetDrawColor}(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}{WebColors::Green});
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}{DrawRectangle}(kWidth / 4.0, kHeight / 4.0, 50, 50, 45);
+
+  \textcolor{comment}{// Background can be defined at any time.}
+  renderer.\hyperlink{classastu_1_1ImageRenderer_acfb25962b67295325e9209759fcabe2b}{SetBackgroundColor}(\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}{WebColors::White});
+
+
+  \textcolor{comment}{// Render Image }
+  \hyperlink{classastu_1_1Image}{Image} image(kWidth, kHeight);
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a154491f8ef39881eeaba56f9d8ca24e8}{SetRenderQuality}(\hyperlink{group__gfx__group_ggac3b4955f341cea44f53f8446d734cd54a0c6ad70beb3a7e76c3fc7adab7c46acc}{RenderQuality::Good});
+  std::cout << \textcolor{stringliteral}{"Rendering image"} << std::endl;
+  renderer.\hyperlink{classastu_1_1ImageRenderer_a55172edcac396d7840da655697d57e28}{Render}(image);
+
+  \textcolor{comment}{// Store image to file, might cause an exception in case}
+  \textcolor{comment}{// of an I/O error.}
+  \textcolor{keywordflow}{try} \{
+    \hyperlink{group__gfx__group_gaca5f9cb8047c60049300242c20d30cd6}{StoreImage}(image, \textcolor{stringliteral}{"output.bmp"});
+  \} \textcolor{keywordflow}{catch} (std::runtime\_error & e) \{
+    std::cout << \textcolor{stringliteral}{"Error storing image: "} << e.what() << std::endl;
+    \textcolor{keywordflow}{return} -1;
+  \}
+
+  \textcolor{keywordflow}{return} 0;
+\}     
+\end{DoxyCode}
+
+
+This code will generate this image\+:
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a88dc5f8ff5aa6a039c1c77c31bd5bb89}\label{classastu_1_1ImageRenderer_a88dc5f8ff5aa6a039c1c77c31bd5bb89}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Image\+Renderer@{Image\+Renderer}}
+\index{Image\+Renderer@{Image\+Renderer}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Image\+Renderer()}{ImageRenderer()}}
+{\footnotesize\ttfamily astu\+::\+Image\+Renderer\+::\+Image\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1ImageRenderer_ac35d79e814253e2a2755da114e05d05c}\label{classastu_1_1ImageRenderer_ac35d79e814253e2a2755da114e05d05c}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!````~Image\+Renderer@{$\sim$\+Image\+Renderer}}
+\index{````~Image\+Renderer@{$\sim$\+Image\+Renderer}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Image\+Renderer()}{~ImageRenderer()}}
+{\footnotesize\ttfamily astu\+::\+Image\+Renderer\+::$\sim$\+Image\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_ae81b23f9e19254a7923cadf2a9e081a3}\label{classastu_1_1ImageRenderer_ae81b23f9e19254a7923cadf2a9e081a3}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Clear@{Clear}}
+\index{Clear@{Clear}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the output rendering. \mbox{\Hypertarget{classastu_1_1ImageRenderer_a903b1b78edee5f09b9ee1f604d762c28}\label{classastu_1_1ImageRenderer_a903b1b78edee5f09b9ee1f604d762c28}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Circle@{Draw\+Circle}}
+\index{Draw\+Circle@{Draw\+Circle}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Circle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{double}]{cx,  }\item[{double}]{cy,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+Draws a filled circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & the x-\/coordinate of the center of the circle \\
+\hline
+{\em cy} & the y-\/coordinate of the center of the circle \\
+\hline
+{\em r} & the radius of the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a914047284fae6e8f58614018c8575f4e}\label{classastu_1_1ImageRenderer_a914047284fae6e8f58614018c8575f4e}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Circle@{Draw\+Circle}}
+\index{Draw\+Circle@{Draw\+Circle}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Circle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{const Vector2$<$ double $>$ \&}]{c,  }\item[{double}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws a filled circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the center of the circle \\
+\hline
+{\em r} & the radius of the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a968b3ac1ef2611e149494d0855fbab85}\label{classastu_1_1ImageRenderer_a968b3ac1ef2611e149494d0855fbab85}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{const Vector2$<$ double $>$ \&}]{p0,  }\item[{const Vector2$<$ double $>$ \&}]{p1,  }\item[{double}]{w = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws a line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p0} & the start point of the line \\
+\hline
+{\em p1} & the end point of the line \\
+\hline
+{\em w} & the width of the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_ae9e54c2f75cc76b9d45216df81b92aa4}\label{classastu_1_1ImageRenderer_ae9e54c2f75cc76b9d45216df81b92aa4}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{double}]{x0,  }\item[{double}]{y0,  }\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{w = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Draws a line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & the x-\/coordinate of the start point of the line \\
+\hline
+{\em y0} & the y-\/coordinate of the start point of the line \\
+\hline
+{\em x1} & the x-\/coordinate of the end point of the line \\
+\hline
+{\em y1} & the y-\/coordinate of the end point of the line \\
+\hline
+{\em w} & the width of the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}\label{classastu_1_1ImageRenderer_a95ed0bcec030e0ab17d0c6abc104eac3}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Rectangle@{Draw\+Rectangle}}
+\index{Draw\+Rectangle@{Draw\+Rectangle}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Rectangle()}{DrawRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{double}]{cx,  }\item[{double}]{cy,  }\item[{double}]{w,  }\item[{double}]{h,  }\item[{double}]{angle\+Deg = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Draws a filled rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & the the x-\/coordinate of the rectangle\textquotesingle{}s center \\
+\hline
+{\em cy} & the the y-\/coordinate of the rectangle\textquotesingle{}s center \\
+\hline
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+{\em angle\+Deg} & the rotation angle in degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a43f82202ac8ffdeba33fd5ecc600c267}\label{classastu_1_1ImageRenderer_a43f82202ac8ffdeba33fd5ecc600c267}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Draw\+Rectangle@{Draw\+Rectangle}}
+\index{Draw\+Rectangle@{Draw\+Rectangle}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Rectangle()}{DrawRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{const Vector2$<$ double $>$ \&}]{center,  }\item[{double}]{w,  }\item[{double}]{h,  }\item[{double}]{angle\+Deg = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws a rectangle with the current draw color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & the center of the rectangle \\
+\hline
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+{\em angle\+Deg} & the rotation angle in degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a7f3f1cc8129dd8e40dea73e7f1333769}\label{classastu_1_1ImageRenderer_a7f3f1cc8129dd8e40dea73e7f1333769}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Get\+Render\+Quality@{Get\+Render\+Quality}}
+\index{Get\+Render\+Quality@{Get\+Render\+Quality}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Get\+Render\+Quality()}{GetRenderQuality()}}
+{\footnotesize\ttfamily \hyperlink{group__gfx__group_gac3b4955f341cea44f53f8446d734cd54}{Render\+Quality} astu\+::\+Image\+Renderer\+::\+Get\+Render\+Quality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the currently set render quality.
+
+\begin{DoxyReturn}{Returns}
+quality 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a55172edcac396d7840da655697d57e28}\label{classastu_1_1ImageRenderer_a55172edcac396d7840da655697d57e28}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Render@{Render}}
+\index{Render@{Render}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Image}{Image} \&}]{img }\end{DoxyParamCaption})}
+
+Renders the image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & image used to store the resulting rendering \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_acfb25962b67295325e9209759fcabe2b}\label{classastu_1_1ImageRenderer_acfb25962b67295325e9209759fcabe2b}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the background color.
+
+The background color can be set anytime, even after rendering of graphical elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the background color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}\label{classastu_1_1ImageRenderer_a902cdac5634067b5e78de3f91667d1b9}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Set\+Draw\+Color@{Set\+Draw\+Color}}
+\index{Set\+Draw\+Color@{Set\+Draw\+Color}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Draw\+Color()}{SetDrawColor()}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Set\+Draw\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the current draw color.
+
+Subsequent rendering calls will be using the current draw color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ImageRenderer_a154491f8ef39881eeaba56f9d8ca24e8}\label{classastu_1_1ImageRenderer_a154491f8ef39881eeaba56f9d8ca24e8}} 
+\index{astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}!Set\+Render\+Quality@{Set\+Render\+Quality}}
+\index{Set\+Render\+Quality@{Set\+Render\+Quality}!astu\+::\+Image\+Renderer@{astu\+::\+Image\+Renderer}}
+\subsubsection{\texorpdfstring{Set\+Render\+Quality()}{SetRenderQuality()}}
+{\footnotesize\ttfamily void astu\+::\+Image\+Renderer\+::\+Set\+Render\+Quality (\begin{DoxyParamCaption}\item[{\hyperlink{group__gfx__group_gac3b4955f341cea44f53f8446d734cd54}{Render\+Quality}}]{quality }\end{DoxyParamCaption})}
+
+Sets the render quality used to create the image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quality} & the render quality \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Image\+Renderer.\+h\end{DoxyCompactItemize}

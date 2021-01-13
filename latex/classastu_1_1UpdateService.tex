@@ -1,0 +1,103 @@
+\hypertarget{classastu_1_1UpdateService}{}\section{astu\+:\+:Update\+Service Class Reference}
+\label{classastu_1_1UpdateService}\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+
+
+{\ttfamily \#include $<$Update\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Update\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classastu_1_1UpdateService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Update\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classastu_1_1UpdateService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1UpdateService_ae4d88fb4772931e35f7c46b7d756b4c8}{Update\+Service} ()
+\item 
+void \hyperlink{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}{Add\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+\item 
+void \hyperlink{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}{Remove\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+\item 
+bool \hyperlink{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}{Has\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+\item 
+\mbox{\Hypertarget{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}\label{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}} 
+void {\bfseries Update\+All} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This service manages and updates {\ttfamily Updatables}.
+
+To update the {\ttfamily Updatables}, this service\textquotesingle{}s method {\ttfamily Update\+All} must be called within the simulation respectively game loop. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1UpdateService_ae4d88fb4772931e35f7c46b7d756b4c8}\label{classastu_1_1UpdateService_ae4d88fb4772931e35f7c46b7d756b4c8}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Update\+Service@{Update\+Service}}
+\index{Update\+Service@{Update\+Service}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Update\+Service()}{UpdateService()}}
+{\footnotesize\ttfamily astu\+::\+Update\+Service\+::\+Update\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}\label{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Add\+Updatable@{Add\+Updatable}}
+\index{Add\+Updatable@{Add\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Add\+Updatable()}{AddUpdatable()}}
+{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Add\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+
+Adds an updatable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em updatable} & the updatable to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}\label{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Has\+Updatable@{Has\+Updatable}}
+\index{Has\+Updatable@{Has\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Has\+Updatable()}{HasUpdatable()}}
+{\footnotesize\ttfamily bool astu\+::\+Update\+Service\+::\+Has\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+
+Tests whether a specific updatablel has already been added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em updatable} & the updatable to be tested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the updatale has already beed added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}\label{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Remove\+Updatable@{Remove\+Updatable}}
+\index{Remove\+Updatable@{Remove\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Updatable()}{RemoveUpdatable()}}
+{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Remove\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+
+Removes an updatable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em updatable} & the updatable to be removed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Update\+Service.\+h\end{DoxyCompactItemize}

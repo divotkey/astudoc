@@ -1,0 +1,131 @@
+\hypertarget{classastu_1_1IWindowManager}{}\section{astu\+:\+:I\+Window\+Manager Class Reference}
+\label{classastu_1_1IWindowManager}\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+
+
+{\ttfamily \#include $<$I\+Window\+Manager.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:I\+Window\+Manager\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1IWindowManager__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1IWindowManager_a45f1d28db89ccec4e773aaaf891d9d7b}{$\sim$\+I\+Window\+Manager} ()
+\item 
+virtual void \hyperlink{classastu_1_1IWindowManager_aca77eeecb7c790fa3c1d58c20dd7294f}{Set\+Size} (int width, int height)=0
+\item 
+virtual int \hyperlink{classastu_1_1IWindowManager_a6f818a88754bde33c3121e7413d3a554}{Get\+Width} () const =0
+\item 
+virtual int \hyperlink{classastu_1_1IWindowManager_a80a146779e21437e8c6ef78889389dfc}{Get\+Height} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1IWindowManager_ae75ef0ce5ff6943712b9aa55cbfaadf8}{Set\+Title} (const std\+::string \&title)=0
+\item 
+virtual const std\+::string \& \hyperlink{classastu_1_1IWindowManager_aa5733f1ceda60796f6e35f5f7b79ffa9}{Get\+Title} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for an services which manages application windows. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1IWindowManager_a45f1d28db89ccec4e773aaaf891d9d7b}\label{classastu_1_1IWindowManager_a45f1d28db89ccec4e773aaaf891d9d7b}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!````~I\+Window\+Manager@{$\sim$\+I\+Window\+Manager}}
+\index{````~I\+Window\+Manager@{$\sim$\+I\+Window\+Manager}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Window\+Manager()}{~IWindowManager()}}
+{\footnotesize\ttfamily virtual astu\+::\+I\+Window\+Manager\+::$\sim$\+I\+Window\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1IWindowManager_a80a146779e21437e8c6ef78889389dfc}\label{classastu_1_1IWindowManager_a80a146779e21437e8c6ef78889389dfc}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily virtual int astu\+::\+I\+Window\+Manager\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the height of the window in pixels.
+
+\begin{DoxyReturn}{Returns}
+the height in pixls 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a76d0f56254c9545d4d9762349133d4af}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IWindowManager_aa5733f1ceda60796f6e35f5f7b79ffa9}\label{classastu_1_1IWindowManager_aa5733f1ceda60796f6e35f5f7b79ffa9}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!Get\+Title@{Get\+Title}}
+\index{Get\+Title@{Get\+Title}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Title()}{GetTitle()}}
+{\footnotesize\ttfamily virtual const std\+::string\& astu\+::\+I\+Window\+Manager\+::\+Get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current window title.
+
+\begin{DoxyReturn}{Returns}
+the window title 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_ad6ee7f7a409960e91ddd77bbcea6432f}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IWindowManager_a6f818a88754bde33c3121e7413d3a554}\label{classastu_1_1IWindowManager_a6f818a88754bde33c3121e7413d3a554}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily virtual int astu\+::\+I\+Window\+Manager\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the width of the window in pixels.
+
+\begin{DoxyReturn}{Returns}
+the width in pixls 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a45c3181611e718bcfe44862baed6d520}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IWindowManager_aca77eeecb7c790fa3c1d58c20dd7294f}\label{classastu_1_1IWindowManager_aca77eeecb7c790fa3c1d58c20dd7294f}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Window\+Manager\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the dimension of the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the window in pixels \\
+\hline
+{\em height} & the height of the window in pixels \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a1c8d729ef42024bc0cc5065ecc6631c8}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IWindowManager_ae75ef0ce5ff6943712b9aa55cbfaadf8}\label{classastu_1_1IWindowManager_ae75ef0ce5ff6943712b9aa55cbfaadf8}} 
+\index{astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}!Set\+Title@{Set\+Title}}
+\index{Set\+Title@{Set\+Title}!astu\+::\+I\+Window\+Manager@{astu\+::\+I\+Window\+Manager}}
+\subsubsection{\texorpdfstring{Set\+Title()}{SetTitle()}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Window\+Manager\+::\+Set\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the window title.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the title of the window \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_aad3c873db481dd622d6ddcea70b279af}{astu\+::\+Sdl\+Video\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/I\+Window\+Manager.\+h\end{DoxyCompactItemize}

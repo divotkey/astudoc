@@ -1,0 +1,206 @@
+\hypertarget{classastu_1_1StateService}{}\section{astu\+:\+:State\+Service Class Reference}
+\label{classastu_1_1StateService}\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+
+
+{\ttfamily \#include $<$State\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:State\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classastu_1_1StateService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:State\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classastu_1_1StateService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1StateService_ae8be300ce5fd92351d52fc7162ce9793}{State\+Service} ()
+\item 
+\hyperlink{classastu_1_1StateService_a27bbe3ef0f9a4600c559ca9f6def3f5f}{$\sim$\+State\+Service} ()
+\item 
+void \hyperlink{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}{Add\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ srv)
+\item 
+bool \hyperlink{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}{Has\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ srv) const
+\item 
+bool \hyperlink{classastu_1_1StateService_adfd94f9b5d622131a1fdcc4dcf5ef51d}{Has\+State} (const std\+::string \&state) const
+\item 
+void \hyperlink{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}{Create\+State} (const std\+::string \&state)
+\item 
+void \hyperlink{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}{Switch\+State} (const std\+::string \&state)
+\item 
+const std\+::string \& \hyperlink{classastu_1_1StateService_ac643aebb1bfe9880db1bac7533e0ec75}{Get\+Current\+State} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1StateService_a06419feca958b72db99dde6eda301f86}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1StateService_ad8fa5b6d52bd795ebba450f119540d87}{On\+Shutdown} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The state service manages a set of states.
+
+Each of these states contains a list of services that are added to the active services when the state is activated. As soon as the state is changed, the services of the current state are removed and those of the new state are added accordingly. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1StateService_ae8be300ce5fd92351d52fc7162ce9793}\label{classastu_1_1StateService_ae8be300ce5fd92351d52fc7162ce9793}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!State\+Service@{State\+Service}}
+\index{State\+Service@{State\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{State\+Service()}{StateService()}}
+{\footnotesize\ttfamily astu\+::\+State\+Service\+::\+State\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1StateService_a27bbe3ef0f9a4600c559ca9f6def3f5f}\label{classastu_1_1StateService_a27bbe3ef0f9a4600c559ca9f6def3f5f}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!````~State\+Service@{$\sim$\+State\+Service}}
+\index{````~State\+Service@{$\sim$\+State\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+State\+Service()}{~StateService()}}
+{\footnotesize\ttfamily astu\+::\+State\+Service\+::$\sim$\+State\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}\label{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Add\+Service@{Add\+Service}}
+\index{Add\+Service@{Add\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Add\+Service()}{AddService()}}
+{\footnotesize\ttfamily void astu\+::\+State\+Service\+::\+Add\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{srv }\end{DoxyParamCaption})}
+
+Adds a service to a state.
+
+If the state does not yet exist, it will be created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the name of the state \\
+\hline
+{\em srv} & the service to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the service has already beed added \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}\label{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Create\+State@{Create\+State}}
+\index{Create\+State@{Create\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Create\+State()}{CreateState()}}
+{\footnotesize\ttfamily void astu\+::\+State\+Service\+::\+Create\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state }\end{DoxyParamCaption})}
+
+Creates a new empty state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the name of the state \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the state name is ambiguous \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1StateService_ac643aebb1bfe9880db1bac7533e0ec75}\label{classastu_1_1StateService_ac643aebb1bfe9880db1bac7533e0ec75}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Get\+Current\+State@{Get\+Current\+State}}
+\index{Get\+Current\+State@{Get\+Current\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Get\+Current\+State()}{GetCurrentState()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::\+State\+Service\+::\+Get\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of the current state.
+
+\begin{DoxyReturn}{Returns}
+the current state name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}\label{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Has\+Service@{Has\+Service}}
+\index{Has\+Service@{Has\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Has\+Service()}{HasService()}}
+{\footnotesize\ttfamily bool astu\+::\+State\+Service\+::\+Has\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{srv }\end{DoxyParamCaption}) const}
+
+Tests whether a service has already been added to a state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the name of the state \\
+\hline
+{\em srv} & the service to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the service has already been added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1StateService_adfd94f9b5d622131a1fdcc4dcf5ef51d}\label{classastu_1_1StateService_adfd94f9b5d622131a1fdcc4dcf5ef51d}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Has\+State@{Has\+State}}
+\index{Has\+State@{Has\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Has\+State()}{HasState()}}
+{\footnotesize\ttfamily bool astu\+::\+State\+Service\+::\+Has\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state }\end{DoxyParamCaption}) const}
+
+Tests whether a state exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the name of the state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the state exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1StateService_ad8fa5b6d52bd795ebba450f119540d87}\label{classastu_1_1StateService_ad8fa5b6d52bd795ebba450f119540d87}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+State\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on shutdown.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1StateService_a06419feca958b72db99dde6eda301f86}\label{classastu_1_1StateService_a06419feca958b72db99dde6eda301f86}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+State\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on startup.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}\label{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Switch\+State@{Switch\+State}}
+\index{Switch\+State@{Switch\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Switch\+State()}{SwitchState()}}
+{\footnotesize\ttfamily void astu\+::\+State\+Service\+::\+Switch\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state }\end{DoxyParamCaption})}
+
+Switches to a certain state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the name of the state to switch \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the state is unknown \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/State\+Service.\+h\end{DoxyCompactItemize}

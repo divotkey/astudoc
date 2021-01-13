@@ -1,0 +1,90 @@
+\hypertarget{classastu_1_1SdlService}{}\section{astu\+:\+:Sdl\+Service Class Reference}
+\label{classastu_1_1SdlService}\index{astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}}
+
+
+{\ttfamily \#include $<$Sdl\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classastu_1_1SdlService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classastu_1_1SdlService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlService_a9c962eefae3de4c6bb1e64458b6ebb95}{Sdl\+Service} (bool debug=false, bool verbose=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1SdlService_a2fcb46537de794ab6e4f5e043b26ff60}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlService_a20d53237efd1c717d773a8ff121b093b}{On\+Shutdown} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides core functionality for S\+DL. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlService_a9c962eefae3de4c6bb1e64458b6ebb95}\label{classastu_1_1SdlService_a9c962eefae3de4c6bb1e64458b6ebb95}} 
+\index{astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}!Sdl\+Service@{Sdl\+Service}}
+\index{Sdl\+Service@{Sdl\+Service}!astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}}
+\subsubsection{\texorpdfstring{Sdl\+Service()}{SdlService()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Service\+::\+Sdl\+Service (\begin{DoxyParamCaption}\item[{bool}]{debug = {\ttfamily false},  }\item[{bool}]{verbose = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em debug} & fosters debugging, enables debug log messages, etc. \\
+\hline
+{\em verbose} & enables verbose log messages, only effective, when debug is true \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlService_a20d53237efd1c717d773a8ff121b093b}\label{classastu_1_1SdlService_a20d53237efd1c717d773a8ff121b093b}} 
+\index{astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on shutdown.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlService_a2fcb46537de794ab6e4f5e043b26ff60}\label{classastu_1_1SdlService_a2fcb46537de794ab6e4f5e043b26ff60}} 
+\index{astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class on startup.
+
+Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}} method is maintaining the running-\/state of this service. 
+
+Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Sdl\+Service.\+h\end{DoxyCompactItemize}

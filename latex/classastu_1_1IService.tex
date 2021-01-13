@@ -1,0 +1,119 @@
+\hypertarget{classastu_1_1IService}{}\section{astu\+:\+:I\+Service Class Reference}
+\label{classastu_1_1IService}\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+
+
+{\ttfamily \#include $<$Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:I\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1IService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:I\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classastu_1_1IService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1IService_abf42fedf905da617ad881d3fd28a9d7e}{$\sim$\+I\+Service} ()
+\item 
+virtual const std\+::string \& \hyperlink{classastu_1_1IService_a7bfb508c07816c701ceaa72928213380}{Get\+Name} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1IService_a7a09e485d116659f174aca9a8494fa55}{Startup} ()=0
+\item 
+virtual void \hyperlink{classastu_1_1IService_a67643385e7cc17c31e0b3b49672b5856}{Shutdown} ()=0
+\item 
+virtual bool \hyperlink{classastu_1_1IService_ab69225f6a613c8829c45d23158fba775}{Is\+Running} () const =0
+\item 
+\mbox{\Hypertarget{classastu_1_1IService_a32626c25d07a29697a6f965d7861c03d}\label{classastu_1_1IService_a32626c25d07a29697a6f965d7861c03d}} 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ {\bfseries shared\+\_\+as} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for services. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1IService_abf42fedf905da617ad881d3fd28a9d7e}\label{classastu_1_1IService_abf42fedf905da617ad881d3fd28a9d7e}} 
+\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}!````~I\+Service@{$\sim$\+I\+Service}}
+\index{````~I\+Service@{$\sim$\+I\+Service}!astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Service()}{~IService()}}
+{\footnotesize\ttfamily virtual astu\+::\+I\+Service\+::$\sim$\+I\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1IService_a7bfb508c07816c701ceaa72928213380}\label{classastu_1_1IService_a7bfb508c07816c701ceaa72928213380}} 
+\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily virtual const std\+::string\& astu\+::\+I\+Service\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the name of this service.
+
+\begin{DoxyReturn}{Returns}
+this service\textquotesingle{}s name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1BaseService_a42eb6e0d667215ef635682d2a12e1631}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IService_ab69225f6a613c8829c45d23158fba775}\label{classastu_1_1IService_ab69225f6a613c8829c45d23158fba775}} 
+\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}!Is\+Running@{Is\+Running}}
+\index{Is\+Running@{Is\+Running}!astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+\subsubsection{\texorpdfstring{Is\+Running()}{IsRunning()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+I\+Service\+::\+Is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns {\ttfamily true} if this service is running.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this service is running 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1BaseService_af6f4641c045343d329a0fc1ecc6a9778}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IService_a67643385e7cc17c31e0b3b49672b5856}\label{classastu_1_1IService_a67643385e7cc17c31e0b3b49672b5856}} 
+\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+\subsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Service\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Stops this service.
+
+In case this service is currently not running, calling this method has no effect. 
+
+Implemented in \hyperlink{classastu_1_1BaseSdlRenderLayer_a786ae49f41873d498ae0d22a0f3a5349}{astu\+::\+Base\+Sdl\+Render\+Layer}, \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{astu\+::\+Updatable\+Base\+Service}, and \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{astu\+::\+Base\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1IService_a7a09e485d116659f174aca9a8494fa55}\label{classastu_1_1IService_a7a09e485d116659f174aca9a8494fa55}} 
+\index{astu\+::\+I\+Service@{astu\+::\+I\+Service}!Startup@{Startup}}
+\index{Startup@{Startup}!astu\+::\+I\+Service@{astu\+::\+I\+Service}}
+\subsubsection{\texorpdfstring{Startup()}{Startup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Service\+::\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Starts this service.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case this service is already running \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classastu_1_1BaseSdlRenderLayer_a0f4fbd9bbd5613589a8f1ce39d8b6340}{astu\+::\+Base\+Sdl\+Render\+Layer}, \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{astu\+::\+Updatable\+Base\+Service}, and \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{astu\+::\+Base\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Service.\+h\end{DoxyCompactItemize}
