@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insane',['Insane',['../group__gfx__group.html#ggac3b4955f341cea44f53f8446d734cd54a77529ad508ab7d3b5a99adc7e711040b',1,'astu::Insane()'],['../group__gfx__group.html#gga7bcac32f8bae9bfd1f21655d4734efe8a77529ad508ab7d3b5a99adc7e711040b',1,'astu::Insane()']]]
+  ['emeraldgreen',['EmeraldGreen',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034ae961059011c8565a7c9b658f4d09d6bd',1,'astu::RalColors']]]
 ];

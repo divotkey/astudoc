@@ -1,0 +1,103 @@
+\hypertarget{classastu_1_1suite2d_1_1CCircleCollider}{}\section{astu\+:\+:suite2d\+:\+:C\+Circle\+Collider Class Reference}
+\label{classastu_1_1suite2d_1_1CCircleCollider}\index{astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}}
+
+
+{\ttfamily \#include $<$C\+Colliders.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Circle\+Collider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classastu_1_1suite2d_1_1CCircleCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Circle\+Collider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classastu_1_1suite2d_1_1CCircleCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CCircleCollider_a724afec3b0f2b48e93bd0844bae5c951}{C\+Circle\+Collider} ()
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1CCircleCollider_a7ec8a6c889a1502e9c650be905cd7aea}{Get\+Radius} () const
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CCircleCollider_a0f064219591b23beace315bb58f26c78}{Set\+Radius} (float r)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CCircleCollider_aa77499480ca5f7d49f6331986b675a46}{On\+Added\+To\+Entity} (\hyperlink{classastu_1_1Entity}{Entity} \&entity)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Circular collider. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CCircleCollider_a724afec3b0f2b48e93bd0844bae5c951}\label{classastu_1_1suite2d_1_1CCircleCollider_a724afec3b0f2b48e93bd0844bae5c951}} 
+\index{astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}!C\+Circle\+Collider@{C\+Circle\+Collider}}
+\index{C\+Circle\+Collider@{C\+Circle\+Collider}!astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}}
+\subsubsection{\texorpdfstring{C\+Circle\+Collider()}{CCircleCollider()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Circle\+Collider\+::\+C\+Circle\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CCircleCollider_a7ec8a6c889a1502e9c650be905cd7aea}\label{classastu_1_1suite2d_1_1CCircleCollider_a7ec8a6c889a1502e9c650be905cd7aea}} 
+\index{astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}!Get\+Radius@{Get\+Radius}}
+\index{Get\+Radius@{Get\+Radius}!astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}}
+\subsubsection{\texorpdfstring{Get\+Radius()}{GetRadius()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+C\+Circle\+Collider\+::\+Get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the radius of this circle collider.
+
+\begin{DoxyReturn}{Returns}
+the radius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CCircleCollider_aa77499480ca5f7d49f6331986b675a46}\label{classastu_1_1suite2d_1_1CCircleCollider_aa77499480ca5f7d49f6331986b675a46}} 
+\index{astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}!On\+Added\+To\+Entity@{On\+Added\+To\+Entity}}
+\index{On\+Added\+To\+Entity@{On\+Added\+To\+Entity}!astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}}
+\subsubsection{\texorpdfstring{On\+Added\+To\+Entity()}{OnAddedToEntity()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Circle\+Collider\+::\+On\+Added\+To\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called when added to an entity.
+
+Most components do not need to override this method. Is is used occasionally to register additional interfaces a component implements. Registering implemented interfaces is necessary in order to make a component accessible via this interface and not just by the component type itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity this component has been added to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1EntityComponent_a8736f12dc9d2be7d2569408fc1040480}{astu\+::\+Entity\+Component}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CCircleCollider_a0f064219591b23beace315bb58f26c78}\label{classastu_1_1suite2d_1_1CCircleCollider_a0f064219591b23beace315bb58f26c78}} 
+\index{astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}!Set\+Radius@{Set\+Radius}}
+\index{Set\+Radius@{Set\+Radius}!astu\+::suite2d\+::\+C\+Circle\+Collider@{astu\+::suite2d\+::\+C\+Circle\+Collider}}
+\subsubsection{\texorpdfstring{Set\+Radius()}{SetRadius()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Circle\+Collider\+::\+Set\+Radius (\begin{DoxyParamCaption}\item[{float}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the radius of this circle collider.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of this collider \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the radius is less or equal zero \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Colliders.\+h\end{DoxyCompactItemize}

@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['yellow',['Yellow',['../group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203',1,'astu']]]
+  ['oceanblue',['OceanBlue',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034ae36876789cc48e9b523acdddefadf1ed',1,'astu::RalColors']]],
+  ['ochrebrown',['OchreBrown',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034afc2f09d4b36259f0b17dc01c7818aec1',1,'astu::RalColors']]],
+  ['ochreyellow',['OchreYellow',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a98af4e5ef24e36cbb3e92a67797cef40',1,'astu::RalColors']]],
+  ['oldlace',['OldLace',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a0c9a266f150ca260de99c82d2564ae77',1,'astu::WebColors']]],
+  ['olive',['Olive',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98aa450e06f21ba448a5d77103ef0f09344',1,'astu::WebColors']]],
+  ['olivebrown',['OliveBrown',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034ac93eb25e542bf38138279b9d936c1b87',1,'astu::RalColors']]],
+  ['olivedrab',['OliveDrab',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a16eff879e9c49a54ce9fa2eb6f459a09',1,'astu::RalColors::OliveDrab()'],['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a87ea9373298164c71f952284c396d688',1,'astu::WebColors::OliveDrab()']]],
+  ['olivegreen',['OliveGreen',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a958271e05c9e2b7e5968c680eae128b3',1,'astu::RalColors']]],
+  ['olivegrey',['OliveGrey',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034aa122d45df5cd9dc406f4cc8f19248a2a',1,'astu::RalColors']]],
+  ['oliveyellow',['OliveYellow',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a4debe1dec2de8a624a37a71e3dbac457',1,'astu::RalColors']]],
+  ['opalgreen',['OpalGreen',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a9e073ded04e6d234187eb40f54ef8ade',1,'astu::RalColors']]],
+  ['orange',['Orange',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a9f67080f4f4126170ceeb41a31f88d22',1,'astu::WebColors']]],
+  ['orangebrown',['OrangeBrown',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a7578dc053a2e784afc8d85c343886f88',1,'astu::RalColors']]],
+  ['orangered',['OrangeRed',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a5ccb26e5b44e0179e5d92bcdbc7633c7',1,'astu::WebColors']]],
+  ['orchid',['Orchid',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a5771d8e3efcc3ad9cdf7a5516e24b33c',1,'astu::WebColors']]],
+  ['orientred',['OrientRed',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a1b2b9338c10b38c840b5683e03fe9a84',1,'astu::RalColors']]],
+  ['oxidered',['OxideRed',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034ae471489a68cb74c221b79c9d61a402b9',1,'astu::RalColors']]],
+  ['oysterwhite',['OysterWhite',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a27fbc42a26d79818176db5c0793a60bd',1,'astu::RalColors']]]
 ];

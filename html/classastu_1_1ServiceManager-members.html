@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -71,15 +71,16 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a7c6743f699e8468c2102d2f84745de97">AddService</a>(std::shared_ptr&lt; IService &gt; service)</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a274475bef03cea4810f98082cdb24295">AddService</a>(std::shared_ptr&lt; Service &gt; service)</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#acef5ab6b48a9811b810851c69751f71a">FindService</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a26941fe98ea3f2792deca62e4124bf15">GetInstance</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a751f5f152803ee0327ab315cd5088414">GetService</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a34ae8a9d52eadd07571610502d20ba88">HasService</a>(std::shared_ptr&lt; IService &gt; service) const</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a3000933260f102748f75c9b4064fd119">FindService</a>(std::shared_ptr&lt; T &gt; defaultResult)</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a26941fe98ea3f2792deca62e4124bf15">GetInstance</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#ab8af7a024cea64d9f4f4431360641b16">HasService</a>(std::shared_ptr&lt; Service &gt; service) const</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a64cea7132b9be6521a9af6f76009e5d4">IsRunning</a>() const</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#afdf1a0f9645daf376b094f8fb5c203c1">RemoveService</a>(std::shared_ptr&lt; IService &gt; service)</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a0ec3c06392ae4e7dab8d4b550bed1699">ShutdownAll</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a7d4918c435a26a4212902ade5f9829b6">StartupAll</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#ad94c3984be162a0d4e3633abd8b81099">RemoveAllServices</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#adbab5f4a6e042604e2c51eefcf69f7b5">RemoveService</a>(std::shared_ptr&lt; Service &gt; service)</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a0ec3c06392ae4e7dab8d4b550bed1699">ShutdownAll</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html#a7d4918c435a26a4212902ade5f9829b6">StartupAll</a>()</td><td class="entry"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,486 @@
+\hypertarget{classastu_1_1suite2d_1_1ShapeGenerator}{}\section{astu\+:\+:suite2d\+:\+:Shape\+Generator Class Reference}
+\label{classastu_1_1suite2d_1_1ShapeGenerator}\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+
+
+{\ttfamily \#include $<$Shape\+Generator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a56c9de00ce73e09b63a122fa34561490}{Shape\+Generator} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_abbc75734a94b70f5be3db4cc1829494a}{Vertex\+Buffer\+Builder} (std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}{Vertex\+Buffer\+Builder2f} $>$ builder)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_aafbe132e9fa8b459377e34fc384db6ae}{Offset} (const \hyperlink{classastu_1_1Vector2}{Vector2f} o)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a9d9b5606c488f7179349ead083e79a7d}{Offset} (float ox, float oy)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a86ebc573fad6a23691c62f0a34a6ba87}{Polygone\+Mode} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a7e1aa918a8a81b9e55c9d784ee6d38e8}{Polyline\+Mode} ()
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a6dd93b603ec632e6ff800bc1fcd223a9}{Is\+Polyline\+Mode} () const
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a3cb3a9b392451d077d1c670347bb4b93}{Is\+Polygone\+Mode} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_aaed9d207daf5a4a2943c494f8a69259b}{Gen\+Line\+Vb} (float x1, float y1, float x2, float y2) const
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a902ee3986ee54a357e449004d8504e23}{Gen\+Line} (float x1, float y1, float x2, float y2) const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a3b9a8e17a85ae7ba4ac40c40de8074d6}{Gen\+Circle\+Vb} (float r, unsigned int n=24) const
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a5d608ccbe9df8bf25d5b044147d9f699}{Gen\+Circle} (float r, unsigned int n=24) const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a4430884bf8387a304ef97a5ab3f3b217}{Gen\+Rectangle\+Vb} (float w, float h) const
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_acfc3b5e95ba9680ed33988b65bb4a36a}{Gen\+Rectangle} (float w, float h) const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a8f60eae937399f59d2ff2be56f91a6cd}{Gen\+Square\+Vb} (float a) const
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_ae75b45a6f4d2d1512bfc43138f485870}{Gen\+Square} (float a) const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a2be269018caaf6abb76dfb01efccfb1f}{Gen\+Triangle\+Vb} (float r, const \hyperlink{classastu_1_1Vector2}{Vector2f} \&d=\hyperlink{classastu_1_1Vector2}{Vector2f}(0, -\/1))
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a4a0a3b20943d68839fa8ec9153c6c8fe}{Gen\+Triangle} (float r, const \hyperlink{classastu_1_1Vector2}{Vector2f} \&d=\hyperlink{classastu_1_1Vector2}{Vector2f}(0, -\/1))
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_aeafd7037c8e24ab68a66dd2f778078b8}{Gen\+Star\+Vb} (float r, int n=5, const \hyperlink{classastu_1_1Vector2}{Vector2f} \&d=\hyperlink{classastu_1_1Vector2}{Vector2f}(0, -\/1))
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a58c9369dfe59e735b8eba6b5ef994598}{Gen\+Star} (float r, int n=5, const \hyperlink{classastu_1_1Vector2}{Vector2f} \&d=\hyperlink{classastu_1_1Vector2}{Vector2f}(0, -\/1))
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_ab390c2586ac298fd27a1095181427620}{Gen\+Cross\+Vb} (float s, float th=0.\+381967f)
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a6307265bf97cd225a00ddfffd26cba5f}{Gen\+Cross} (float s, float th=0.\+381967f)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a8ce8a804d10cdb10622f48c104f9da77}{Gen\+Arrow\+Vb} (float l, float th=0.\+381967f, const Vector2f \&d=\+Vector2f(1, 0))
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_a9b409aad15a54495aed52482e2292970}{Gen\+Arrow} (float l, float th=0.\+381967f, const Vector2f \&d=\+Vector2f(1, 0))
+\item 
+\hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator} \& \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator_ac34af94d641b17d67e6fa08ead679d84}{Reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class used to generate two-\/dimensional basic geometric shapes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a56c9de00ce73e09b63a122fa34561490}\label{classastu_1_1suite2d_1_1ShapeGenerator_a56c9de00ce73e09b63a122fa34561490}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Shape\+Generator@{Shape\+Generator}}
+\index{Shape\+Generator@{Shape\+Generator}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Shape\+Generator()}{ShapeGenerator()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Shape\+Generator\+::\+Shape\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a9b409aad15a54495aed52482e2292970}\label{classastu_1_1suite2d_1_1ShapeGenerator_a9b409aad15a54495aed52482e2292970}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Arrow@{Gen\+Arrow}}
+\index{Gen\+Arrow@{Gen\+Arrow}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Arrow()}{GenArrow()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Arrow (\begin{DoxyParamCaption}\item[{float}]{l,  }\item[{float}]{th = {\ttfamily 0.381967f},  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(1,~0)} }\end{DoxyParamCaption})}
+
+Generates an arrow.
+
+The thickness paramter must be within in the range (0, 1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & the length of the arrow \\
+\hline
+{\em th} & determines the thickness of the arrow (0, 1) \\
+\hline
+{\em d} & the direction in which the arrow points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a8ce8a804d10cdb10622f48c104f9da77}\label{classastu_1_1suite2d_1_1ShapeGenerator_a8ce8a804d10cdb10622f48c104f9da77}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Arrow\+Vb@{Gen\+Arrow\+Vb}}
+\index{Gen\+Arrow\+Vb@{Gen\+Arrow\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Arrow\+Vb()}{GenArrowVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Arrow\+Vb (\begin{DoxyParamCaption}\item[{float}]{l,  }\item[{float}]{th = {\ttfamily 0.381967f},  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(1,~0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an arrow.
+
+The thickness paramter must be within in the range (0, 1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & the length of the arrow \\
+\hline
+{\em th} & determines the thickness of the arrow (0, 1) \\
+\hline
+{\em d} & the direction in which the arrow points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a5d608ccbe9df8bf25d5b044147d9f699}\label{classastu_1_1suite2d_1_1ShapeGenerator_a5d608ccbe9df8bf25d5b044147d9f699}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Circle@{Gen\+Circle}}
+\index{Gen\+Circle@{Gen\+Circle}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Circle()}{GenCircle()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Circle (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{unsigned int}]{n = {\ttfamily 24} }\end{DoxyParamCaption}) const}
+
+Generates a circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the circle \\
+\hline
+{\em n} & the number of segments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a3b9a8e17a85ae7ba4ac40c40de8074d6}\label{classastu_1_1suite2d_1_1ShapeGenerator_a3b9a8e17a85ae7ba4ac40c40de8074d6}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Circle\+Vb@{Gen\+Circle\+Vb}}
+\index{Gen\+Circle\+Vb@{Gen\+Circle\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Circle\+Vb()}{GenCircleVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Circle\+Vb (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{unsigned int}]{n = {\ttfamily 24} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates a circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the circle \\
+\hline
+{\em n} & the number of segments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a6307265bf97cd225a00ddfffd26cba5f}\label{classastu_1_1suite2d_1_1ShapeGenerator_a6307265bf97cd225a00ddfffd26cba5f}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Cross@{Gen\+Cross}}
+\index{Gen\+Cross@{Gen\+Cross}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Cross()}{GenCross()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Cross (\begin{DoxyParamCaption}\item[{float}]{s,  }\item[{float}]{th = {\ttfamily 0.381967f} }\end{DoxyParamCaption})}
+
+Generates a cross.
+
+The thickness paramter must be within in the range (0, 1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the size of the cross \\
+\hline
+{\em th} & determines the thickness of the cross (0, 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_ab390c2586ac298fd27a1095181427620}\label{classastu_1_1suite2d_1_1ShapeGenerator_ab390c2586ac298fd27a1095181427620}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Cross\+Vb@{Gen\+Cross\+Vb}}
+\index{Gen\+Cross\+Vb@{Gen\+Cross\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Cross\+Vb()}{GenCrossVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Cross\+Vb (\begin{DoxyParamCaption}\item[{float}]{s,  }\item[{float}]{th = {\ttfamily 0.381967f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates a cross.
+
+The thickness paramter must be within in the range (0, 1).
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the size of the cross \\
+\hline
+{\em th} & determines the thickness of the cross (0, 1) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a902ee3986ee54a357e449004d8504e23}\label{classastu_1_1suite2d_1_1ShapeGenerator_a902ee3986ee54a357e449004d8504e23}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Line@{Gen\+Line}}
+\index{Gen\+Line@{Gen\+Line}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Line()}{GenLine()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Line (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption}) const}
+
+Generats a line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the start point \\
+\hline
+{\em y1} & the y-\/coordinate of the start point \\
+\hline
+{\em x2} & the x-\/coordinate of the start point \\
+\hline
+{\em y2} & the y-\/coordinate of the start point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_aaed9d207daf5a4a2943c494f8a69259b}\label{classastu_1_1suite2d_1_1ShapeGenerator_aaed9d207daf5a4a2943c494f8a69259b}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Line\+Vb@{Gen\+Line\+Vb}}
+\index{Gen\+Line\+Vb@{Gen\+Line\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Line\+Vb()}{GenLineVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Line\+Vb (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generats a line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the start point \\
+\hline
+{\em y1} & the y-\/coordinate of the start point \\
+\hline
+{\em x2} & the x-\/coordinate of the start point \\
+\hline
+{\em y2} & the y-\/coordinate of the start point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_acfc3b5e95ba9680ed33988b65bb4a36a}\label{classastu_1_1suite2d_1_1ShapeGenerator_acfc3b5e95ba9680ed33988b65bb4a36a}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Rectangle@{Gen\+Rectangle}}
+\index{Gen\+Rectangle@{Gen\+Rectangle}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Rectangle()}{GenRectangle()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption}) const}
+
+Generates an axis aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a4430884bf8387a304ef97a5ab3f3b217}\label{classastu_1_1suite2d_1_1ShapeGenerator_a4430884bf8387a304ef97a5ab3f3b217}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Rectangle\+Vb@{Gen\+Rectangle\+Vb}}
+\index{Gen\+Rectangle\+Vb@{Gen\+Rectangle\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Rectangle\+Vb()}{GenRectangleVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Rectangle\+Vb (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an axis aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_ae75b45a6f4d2d1512bfc43138f485870}\label{classastu_1_1suite2d_1_1ShapeGenerator_ae75b45a6f4d2d1512bfc43138f485870}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Square@{Gen\+Square}}
+\index{Gen\+Square@{Gen\+Square}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Square()}{GenSquare()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Square (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an axis aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the side length of the square. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a8f60eae937399f59d2ff2be56f91a6cd}\label{classastu_1_1suite2d_1_1ShapeGenerator_a8f60eae937399f59d2ff2be56f91a6cd}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Square\+Vb@{Gen\+Square\+Vb}}
+\index{Gen\+Square\+Vb@{Gen\+Square\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Square\+Vb()}{GenSquareVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Square\+Vb (\begin{DoxyParamCaption}\item[{float}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an axis aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the side length of the square. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a58c9369dfe59e735b8eba6b5ef994598}\label{classastu_1_1suite2d_1_1ShapeGenerator_a58c9369dfe59e735b8eba6b5ef994598}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Star@{Gen\+Star}}
+\index{Gen\+Star@{Gen\+Star}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Star()}{GenStar()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Star (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{int}]{n = {\ttfamily 5},  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(0,~-\/1)} }\end{DoxyParamCaption})}
+
+Generates a star.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the star. \\
+\hline
+{\em n} & determines the number of point the star should have \\
+\hline
+{\em d} & the direction in which the star points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_aeafd7037c8e24ab68a66dd2f778078b8}\label{classastu_1_1suite2d_1_1ShapeGenerator_aeafd7037c8e24ab68a66dd2f778078b8}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Star\+Vb@{Gen\+Star\+Vb}}
+\index{Gen\+Star\+Vb@{Gen\+Star\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Star\+Vb()}{GenStarVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Star\+Vb (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{int}]{n = {\ttfamily 5},  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(0,~-\/1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates a star.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the star. \\
+\hline
+{\em n} & determines the number of point the star should have \\
+\hline
+{\em d} & the direction in which the star points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a4a0a3b20943d68839fa8ec9153c6c8fe}\label{classastu_1_1suite2d_1_1ShapeGenerator_a4a0a3b20943d68839fa8ec9153c6c8fe}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Triangle@{Gen\+Triangle}}
+\index{Gen\+Triangle@{Gen\+Triangle}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Triangle()}{GenTriangle()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2f}$>$\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Triangle (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(0,~-\/1)} }\end{DoxyParamCaption})}
+
+Generates an equilateral triangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the equilateral triangle \\
+\hline
+{\em d} & the direction in which the triangle points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a2be269018caaf6abb76dfb01efccfb1f}\label{classastu_1_1suite2d_1_1ShapeGenerator_a2be269018caaf6abb76dfb01efccfb1f}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Gen\+Triangle\+Vb@{Gen\+Triangle\+Vb}}
+\index{Gen\+Triangle\+Vb@{Gen\+Triangle\+Vb}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Gen\+Triangle\+Vb()}{GenTriangleVb()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}$>$ astu\+::suite2d\+::\+Shape\+Generator\+::\+Gen\+Triangle\+Vb (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{d = {\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f}(0,~-\/1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an equilateral triangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the radius of the equilateral triangle \\
+\hline
+{\em d} & the direction in which the triangle points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vertex buffer containing the generated vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a3cb3a9b392451d077d1c670347bb4b93}\label{classastu_1_1suite2d_1_1ShapeGenerator_a3cb3a9b392451d077d1c670347bb4b93}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Is\+Polygone\+Mode@{Is\+Polygone\+Mode}}
+\index{Is\+Polygone\+Mode@{Is\+Polygone\+Mode}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Is\+Polygone\+Mode()}{IsPolygoneMode()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Shape\+Generator\+::\+Is\+Polygone\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this generator is in polygon mode.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this generator is in polygon mode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a6dd93b603ec632e6ff800bc1fcd223a9}\label{classastu_1_1suite2d_1_1ShapeGenerator_a6dd93b603ec632e6ff800bc1fcd223a9}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Is\+Polyline\+Mode@{Is\+Polyline\+Mode}}
+\index{Is\+Polyline\+Mode@{Is\+Polyline\+Mode}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Is\+Polyline\+Mode()}{IsPolylineMode()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Shape\+Generator\+::\+Is\+Polyline\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this generator is in polyline mode.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this generator is in polyline mode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_aafbe132e9fa8b459377e34fc384db6ae}\label{classastu_1_1suite2d_1_1ShapeGenerator_aafbe132e9fa8b459377e34fc384db6ae}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Offset@{Offset}}
+\index{Offset@{Offset}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Offset()}{Offset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Offset (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the offset from the center used to generate shapes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the offset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this generator for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a9d9b5606c488f7179349ead083e79a7d}\label{classastu_1_1suite2d_1_1ShapeGenerator_a9d9b5606c488f7179349ead083e79a7d}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Offset@{Offset}}
+\index{Offset@{Offset}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Offset()}{Offset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Offset (\begin{DoxyParamCaption}\item[{float}]{ox,  }\item[{float}]{oy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the offset from the center used to generate shapes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ox} & the x-\/coordinate of the offset \\
+\hline
+{\em oy} & the y-\/coordinate of the offset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this generator for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a86ebc573fad6a23691c62f0a34a6ba87}\label{classastu_1_1suite2d_1_1ShapeGenerator_a86ebc573fad6a23691c62f0a34a6ba87}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Polygone\+Mode@{Polygone\+Mode}}
+\index{Polygone\+Mode@{Polygone\+Mode}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Polygone\+Mode()}{PolygoneMode()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Polygone\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Swichtes this shape generator to polyline mode.
+
+\hyperlink{classastu_1_1suite2d_1_1Polyline}{Polyline} mode will close the shaped by duplicating the first vertex. \mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_a7e1aa918a8a81b9e55c9d784ee6d38e8}\label{classastu_1_1suite2d_1_1ShapeGenerator_a7e1aa918a8a81b9e55c9d784ee6d38e8}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Polyline\+Mode@{Polyline\+Mode}}
+\index{Polyline\+Mode@{Polyline\+Mode}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Polyline\+Mode()}{PolylineMode()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Polyline\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Swichtes this shape generator to polygon mode.
+
+\hyperlink{classastu_1_1suite2d_1_1Polyline}{Polyline} mode asumes that the created polygone is closed automatically. \mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_ac34af94d641b17d67e6fa08ead679d84}\label{classastu_1_1suite2d_1_1ShapeGenerator_ac34af94d641b17d67e6fa08ead679d84}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this generator to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this generator for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1ShapeGenerator_abbc75734a94b70f5be3db4cc1829494a}\label{classastu_1_1suite2d_1_1ShapeGenerator_abbc75734a94b70f5be3db4cc1829494a}} 
+\index{astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}!Vertex\+Buffer\+Builder@{Vertex\+Buffer\+Builder}}
+\index{Vertex\+Buffer\+Builder@{Vertex\+Buffer\+Builder}!astu\+::suite2d\+::\+Shape\+Generator@{astu\+::suite2d\+::\+Shape\+Generator}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer\+Builder()}{VertexBufferBuilder()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1ShapeGenerator}{Shape\+Generator}\& astu\+::suite2d\+::\+Shape\+Generator\+::\+Vertex\+Buffer\+Builder (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}{Vertex\+Buffer\+Builder2f} $>$}]{builder }\end{DoxyParamCaption})}
+
+Specifies the vertex buffer builder to be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & the vertex buffer builder to be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this generator for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Shape\+Generator.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classastu_1_1SdlJoystickService}{}\section{astu\+:\+:Sdl\+Joystick\+Service Class Reference}
+\label{classastu_1_1SdlJoystickService}\index{astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}}
+
+
+{\ttfamily \#include $<$Sdl\+Joystick\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Joystick\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classastu_1_1SdlJoystickService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Joystick\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classastu_1_1SdlJoystickService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlJoystickService_a87c82eadafbfa154f2530050dd75257e}{Sdl\+Joystick\+Service} (float default\+Dead\+Zone=0.\+25f)
+\item 
+virtual \hyperlink{classastu_1_1SdlJoystickService_ae30060b4090e8a16b0cc73596d923ce0}{$\sim$\+Sdl\+Joystick\+Service} ()
+\item 
+void \hyperlink{classastu_1_1SdlJoystickService_aed9cd0e2cd443e5592f74133df36ed68}{Set\+Axis\+Deadzone} (const \hyperlink{classastu_1_1Key}{Key} \&key, float deadzone)
+\item 
+float \hyperlink{classastu_1_1SdlJoystickService_a4f0681331183b7744e8cf78f6ddb4da4}{Get\+Axis\+Deadzone} (const \hyperlink{classastu_1_1Key}{Key} \&key) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Uses activates the S\+DL joystick subsystem and processes the events. This service needs to be added in order to use gamepads etc. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlJoystickService_a87c82eadafbfa154f2530050dd75257e}\label{classastu_1_1SdlJoystickService_a87c82eadafbfa154f2530050dd75257e}} 
+\index{astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}!Sdl\+Joystick\+Service@{Sdl\+Joystick\+Service}}
+\index{Sdl\+Joystick\+Service@{Sdl\+Joystick\+Service}!astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}}
+\subsubsection{\texorpdfstring{Sdl\+Joystick\+Service()}{SdlJoystickService()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Joystick\+Service\+::\+Sdl\+Joystick\+Service (\begin{DoxyParamCaption}\item[{float}]{default\+Dead\+Zone = {\ttfamily 0.25f} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Dead\+Zone} & the default dead zone for control axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlJoystickService_ae30060b4090e8a16b0cc73596d923ce0}\label{classastu_1_1SdlJoystickService_ae30060b4090e8a16b0cc73596d923ce0}} 
+\index{astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}!````~Sdl\+Joystick\+Service@{$\sim$\+Sdl\+Joystick\+Service}}
+\index{````~Sdl\+Joystick\+Service@{$\sim$\+Sdl\+Joystick\+Service}!astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Sdl\+Joystick\+Service()}{~SdlJoystickService()}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Joystick\+Service\+::$\sim$\+Sdl\+Joystick\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlJoystickService_a4f0681331183b7744e8cf78f6ddb4da4}\label{classastu_1_1SdlJoystickService_a4f0681331183b7744e8cf78f6ddb4da4}} 
+\index{astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}!Get\+Axis\+Deadzone@{Get\+Axis\+Deadzone}}
+\index{Get\+Axis\+Deadzone@{Get\+Axis\+Deadzone}!astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}}
+\subsubsection{\texorpdfstring{Get\+Axis\+Deadzone()}{GetAxisDeadzone()}}
+{\footnotesize\ttfamily float astu\+::\+Sdl\+Joystick\+Service\+::\+Get\+Axis\+Deadzone (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key }\end{DoxyParamCaption}) const}
+
+Returns the deadzone for an axis control.
+
+\begin{DoxyReturn}{Returns}
+the deadzone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlJoystickService_aed9cd0e2cd443e5592f74133df36ed68}\label{classastu_1_1SdlJoystickService_aed9cd0e2cd443e5592f74133df36ed68}} 
+\index{astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}!Set\+Axis\+Deadzone@{Set\+Axis\+Deadzone}}
+\index{Set\+Axis\+Deadzone@{Set\+Axis\+Deadzone}!astu\+::\+Sdl\+Joystick\+Service@{astu\+::\+Sdl\+Joystick\+Service}}
+\subsubsection{\texorpdfstring{Set\+Axis\+Deadzone()}{SetAxisDeadzone()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Joystick\+Service\+::\+Set\+Axis\+Deadzone (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key,  }\item[{float}]{deadzone }\end{DoxyParamCaption})}
+
+Sets the deadzone of the specified axis control.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the axis control \\
+\hline
+{\em deadzone} & the deadzone within the range \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the deadzone is out of range \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Sdl\+Joystick\+Service.\+h\end{DoxyCompactItemize}

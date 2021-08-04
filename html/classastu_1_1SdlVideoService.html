@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classastu_1_1SdlVideoService-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">astu::SdlVideoService Class Reference<div class="ingroups"><a class="el" href="group__sdl__group.html">Simple Direct Layer</a></div></div>  </div>
+<div class="title">astu::SdlVideoService Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__sdl__group.html">Simple Direct Layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -79,9 +79,9 @@ Inheritance diagram for astu::SdlVideoService:</div>
 <div class="dyncontent">
 <div class="center"><img src="classastu_1_1SdlVideoService__inherit__graph.png" border="0" usemap="#astu_1_1SdlVideoService_inherit__map" alt="Inheritance graph"/></div>
 <map name="astu_1_1SdlVideoService_inherit__map" id="astu_1_1SdlVideoService_inherit__map">
-<area shape="rect" id="node2" href="classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="18,169,147,196"/>
-<area shape="rect" id="node3" href="classastu_1_1IService.html" title="astu::IService" alt="" coords="31,95,134,121"/>
-<area shape="rect" id="node5" href="classastu_1_1IWindowManager.html" title="astu::IWindowManager" alt="" coords="171,169,327,196"/>
+<area shape="rect" id="node2" href="classastu_1_1Service.html" title="astu::Service" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="classastu_1_1WindowService.html" title="astu::WindowService" alt="" coords="128,5,275,32"/>
+<area shape="rect" id="node4" href="classastu_1_1ISdlResizeListener.html" title="astu::ISdlResizeListener" alt="" coords="299,5,464,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -89,11 +89,11 @@ Collaboration diagram for astu::SdlVideoService:</div>
 <div class="dyncontent">
 <div class="center"><img src="classastu_1_1SdlVideoService__coll__graph.png" border="0" usemap="#astu_1_1SdlVideoService_coll__map" alt="Collaboration graph"/></div>
 <map name="astu_1_1SdlVideoService_coll__map" id="astu_1_1SdlVideoService_coll__map">
-<area shape="rect" id="node2" href="classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="89,185,218,212"/>
-<area shape="rect" id="node3" href="classastu_1_1IService.html" title="astu::IService" alt="" coords="45,96,147,123"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="196,96,276,123"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="185,5,311,47"/>
-<area shape="rect" id="node7" href="classastu_1_1IWindowManager.html" title="astu::IWindowManager" alt="" coords="242,185,398,212"/>
+<area shape="rect" id="node2" href="classastu_1_1Service.html" title="astu::Service" alt="" coords="19,185,118,212"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="29,96,109,123"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="5,5,132,47"/>
+<area shape="rect" id="node5" href="classastu_1_1WindowService.html" title="astu::WindowService" alt="" coords="142,185,289,212"/>
+<area shape="rect" id="node6" href="classastu_1_1ISdlResizeListener.html" title="astu::ISdlResizeListener" alt="" coords="313,185,478,212"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -107,8 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0282450cc95c0cbc2a6add84603dd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40bb996597ad6c1005ce9dfd632cf28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#aa40bb996597ad6c1005ce9dfd632cf28">IsVulkanSupportEnabled</a> () const</td></tr>
 <tr class="separator:aa40bb996597ad6c1005ce9dfd632cf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33679f9d46b5aa38c0b75b3b7f16705d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a33679f9d46b5aa38c0b75b3b7f16705d">EnableVulkanSupport</a> (bool b)</td></tr>
-<tr class="separator:a33679f9d46b5aa38c0b75b3b7f16705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffb1c36698630d153b50b37cb1bcaee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1SdlVideoService.html">SdlVideoService</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a1ffb1c36698630d153b50b37cb1bcaee">EnableVulkanSupport</a> (bool b)</td></tr>
+<tr class="separator:a1ffb1c36698630d153b50b37cb1bcaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fe8816a8975a2d6cd7311bdbd46167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1SdlVideoService.html">SdlVideoService</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a46fe8816a8975a2d6cd7311bdbd46167">SetDisplay</a> (int idx)</td></tr>
+<tr class="separator:a46fe8816a8975a2d6cd7311bdbd46167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c8d729ef42024bc0cc5065ecc6631c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a1c8d729ef42024bc0cc5065ecc6631c8">SetSize</a> (int width, int height) override</td></tr>
 <tr class="separator:a1c8d729ef42024bc0cc5065ecc6631c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c3181611e718bcfe44862baed6d520"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a45c3181611e718bcfe44862baed6d520">GetWidth</a> () const override</td></tr>
@@ -119,27 +121,50 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad3c873db481dd622d6ddcea70b279af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ee7f7a409960e91ddd77bbcea6432f"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#ad6ee7f7a409960e91ddd77bbcea6432f">GetTitle</a> () const override</td></tr>
 <tr class="separator:ad6ee7f7a409960e91ddd77bbcea6432f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:ab155c73d180c22dab7cf8aff1514b2b5 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#ab155c73d180c22dab7cf8aff1514b2b5">BaseService</a> (const std::string &amp;name=<a class="el" href="classastu_1_1BaseService.html#a9483b26ad631bd14646ef2d2170cd828">DEFAULT_NAME</a>)</td></tr>
-<tr class="separator:ab155c73d180c22dab7cf8aff1514b2b5 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42eb6e0d667215ef635682d2a12e1631 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a42eb6e0d667215ef635682d2a12e1631">GetName</a> () const final override</td></tr>
-<tr class="separator:a42eb6e0d667215ef635682d2a12e1631 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59dade033dcb44dd32155c526a3a58e2 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a59dade033dcb44dd32155c526a3a58e2">Startup</a> () override</td></tr>
-<tr class="separator:a59dade033dcb44dd32155c526a3a58e2 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7095888244052db294d58738c0d187fb inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a7095888244052db294d58738c0d187fb">Shutdown</a> () override</td></tr>
-<tr class="separator:a7095888244052db294d58738c0d187fb inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f4641c045343d329a0fc1ecc6a9778 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#af6f4641c045343d329a0fc1ecc6a9778">IsRunning</a> () const override</td></tr>
-<tr class="separator:af6f4641c045343d329a0fc1ecc6a9778 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classastu_1_1IService"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1IService')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1IService.html">astu::IService</a></td></tr>
-<tr class="memitem:abf42fedf905da617ad881d3fd28a9d7e inherit pub_methods_classastu_1_1IService"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IService.html#abf42fedf905da617ad881d3fd28a9d7e">~IService</a> ()</td></tr>
-<tr class="separator:abf42fedf905da617ad881d3fd28a9d7e inherit pub_methods_classastu_1_1IService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memTemplParams" colspan="2"><a id="a32626c25d07a29697a6f965d7861c03d"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_as</b> ()</td></tr>
-<tr class="separator:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classastu_1_1IWindowManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1IWindowManager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1IWindowManager.html">astu::IWindowManager</a></td></tr>
-<tr class="memitem:a45f1d28db89ccec4e773aaaf891d9d7b inherit pub_methods_classastu_1_1IWindowManager"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IWindowManager.html#a45f1d28db89ccec4e773aaaf891d9d7b">~IWindowManager</a> ()</td></tr>
-<tr class="separator:a45f1d28db89ccec4e773aaaf891d9d7b inherit pub_methods_classastu_1_1IWindowManager"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50969b38dedf29146704898a74df5ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#ab50969b38dedf29146704898a74df5ae">SetResizable</a> (bool b) override</td></tr>
+<tr class="separator:ab50969b38dedf29146704898a74df5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335762da99b341205b8bf759a0b57c64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a335762da99b341205b8bf759a0b57c64">IsResizable</a> () const override</td></tr>
+<tr class="separator:a335762da99b341205b8bf759a0b57c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aefc8ab3780a23cdef8780e42436fd5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a3aefc8ab3780a23cdef8780e42436fd5">NumDisplays</a> () const override</td></tr>
+<tr class="separator:a3aefc8ab3780a23cdef8780e42436fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a37b4958f6e77e22ffa55699a171ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a45a37b4958f6e77e22ffa55699a171ef">SetFullscreen</a> (bool b) override</td></tr>
+<tr class="separator:a45a37b4958f6e77e22ffa55699a171ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2be9aedf021799802cf7d1feaef7dfc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#ae2be9aedf021799802cf7d1feaef7dfc">IsFullscreen</a> () const override</td></tr>
+<tr class="separator:ae2be9aedf021799802cf7d1feaef7dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a152543ef7853c19f6e1ea8cfee293edf inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a152543ef7853c19f6e1ea8cfee293edf">Service</a> (const std::string &amp;name=<a class="el" href="classastu_1_1Service.html#a8bb66bb984aa9490026232b193896634">DEFAULT_NAME</a>)</td></tr>
+<tr class="separator:a152543ef7853c19f6e1ea8cfee293edf inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b2642db2ba704a5a33d0ec7735cfca inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#aa5b2642db2ba704a5a33d0ec7735cfca">~Service</a> ()=0</td></tr>
+<tr class="separator:aa5b2642db2ba704a5a33d0ec7735cfca inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9933498d88c92b649a551d341e657a inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#afa9933498d88c92b649a551d341e657a">GetName</a> () const</td></tr>
+<tr class="separator:afa9933498d88c92b649a551d341e657a inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4764263b2e7417a6e0ad3bc4f4950a inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371e">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a1b4764263b2e7417a6e0ad3bc4f4950a">GetStatus</a> () const</td></tr>
+<tr class="separator:a1b4764263b2e7417a6e0ad3bc4f4950a inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4a5e418992839d78a2062ad9ecb288 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a8a4a5e418992839d78a2062ad9ecb288">AddStartupHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a8a4a5e418992839d78a2062ad9ecb288 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd15c531e0298f898192f4a1cdfa2a2d inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#afd15c531e0298f898192f4a1cdfa2a2d">AddShutdownHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:afd15c531e0298f898192f4a1cdfa2a2d inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362265b0bb1d26f9a18c882a9c6985bb inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a362265b0bb1d26f9a18c882a9c6985bb">AddPauseHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a362265b0bb1d26f9a18c882a9c6985bb inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7ab8ad94185d1a30e04a84afbfa6c6 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5c7ab8ad94185d1a30e04a84afbfa6c6">AddResumeHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a5c7ab8ad94185d1a30e04a84afbfa6c6 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52f8c56e0d3081a704e22ae2a8c5c7e inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ab52f8c56e0d3081a704e22ae2a8c5c7e">Startup</a> ()</td></tr>
+<tr class="separator:ab52f8c56e0d3081a704e22ae2a8c5c7e inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada193e446024b2ac886ba2954cd5d3b3 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ada193e446024b2ac886ba2954cd5d3b3">Shutdown</a> ()</td></tr>
+<tr class="separator:ada193e446024b2ac886ba2954cd5d3b3 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818001c0eea6dbde944c2aa28c206c99 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a818001c0eea6dbde944c2aa28c206c99">Pause</a> ()</td></tr>
+<tr class="separator:a818001c0eea6dbde944c2aa28c206c99 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307be9a1bff02c13431ec5edcc777f97 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a307be9a1bff02c13431ec5edcc777f97">IsPaused</a> () const</td></tr>
+<tr class="separator:a307be9a1bff02c13431ec5edcc777f97 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a5c6e1584aca9c8f02364f84bb325e inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a55a5c6e1584aca9c8f02364f84bb325e">IsStarted</a> () const</td></tr>
+<tr class="separator:a55a5c6e1584aca9c8f02364f84bb325e inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e90531095fddccdc48648c7ce5ebe70 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5e90531095fddccdc48648c7ce5ebe70">Resume</a> ()</td></tr>
+<tr class="separator:a5e90531095fddccdc48648c7ce5ebe70 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classastu_1_1WindowService"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1WindowService')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1WindowService.html">astu::WindowService</a></td></tr>
+<tr class="memitem:afa84180c2149454f5062608b468e7b51 inherit pub_methods_classastu_1_1WindowService"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1WindowService.html#afa84180c2149454f5062608b468e7b51">~WindowService</a> ()</td></tr>
+<tr class="separator:afa84180c2149454f5062608b468e7b51 inherit pub_methods_classastu_1_1WindowService"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344f90996e33b7861aa8870860ddd38f inherit pub_methods_classastu_1_1WindowService"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1WindowService.html#a344f90996e33b7861aa8870860ddd38f">SetSize</a> (<a class="el" href="group__srv__group.html#ga68a91c7015964dbdea802829ae5ccb3c">Resolution</a> res)</td></tr>
+<tr class="separator:a344f90996e33b7861aa8870860ddd38f inherit pub_methods_classastu_1_1WindowService"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -147,15 +172,23 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:add229ac2af59a4aea090e4de4c67e530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6085e9ff213c5d41546d604ff53e92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SdlVideoService.html#a6d6085e9ff213c5d41546d604ff53e92">OnShutdown</a> () override</td></tr>
 <tr class="separator:a6d6085e9ff213c5d41546d604ff53e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:a646b6c83a9ebd26fe4e7796b5afde612 inherit pro_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1ServiceManager.html">ServiceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a646b6c83a9ebd26fe4e7796b5afde612">GetSM</a> ()</td></tr>
-<tr class="separator:a646b6c83a9ebd26fe4e7796b5afde612 inherit pro_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:af6795fd14c86f340dd5e46e667ffae75 inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#af6795fd14c86f340dd5e46e667ffae75">OnPaused</a> ()</td></tr>
+<tr class="separator:af6795fd14c86f340dd5e46e667ffae75 inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2817af2aa2f3a51ca230b9438d8f192 inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ac2817af2aa2f3a51ca230b9438d8f192">OnResumed</a> ()</td></tr>
+<tr class="separator:ac2817af2aa2f3a51ca230b9438d8f192 inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_attribs_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:a9483b26ad631bd14646ef2d2170cd828 inherit pub_static_attribs_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a9483b26ad631bd14646ef2d2170cd828">DEFAULT_NAME</a></td></tr>
-<tr class="separator:a9483b26ad631bd14646ef2d2170cd828 inherit pub_static_attribs_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a5ef3b0bb1fb8a504afe708ee4dd8371e inherit pub_types_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371e">Status</a> { <a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371ea540be62ed0d93807434c4aead2df4403">Stopped</a>, 
+<a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371eab7d0f17617156ca782dda5cdf218e536">Paused</a>, 
+<a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371ea76f0ad4a03398154d25817e5aae795c0">Running</a>
+ }</td></tr>
+<tr class="separator:a5ef3b0bb1fb8a504afe708ee4dd8371e inherit pub_types_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a8bb66bb984aa9490026232b193896634 inherit pub_static_attribs_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a8bb66bb984aa9490026232b193896634">DEFAULT_NAME</a></td></tr>
+<tr class="separator:a8bb66bb984aa9490026232b193896634 inherit pub_static_attribs_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Initializes and opens the SDL-based main application window.</p>
@@ -206,14 +239,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a33679f9d46b5aa38c0b75b3b7f16705d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33679f9d46b5aa38c0b75b3b7f16705d">&#9670;&nbsp;</a></span>EnableVulkanSupport()</h2>
+<a id="a1ffb1c36698630d153b50b37cb1bcaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ffb1c36698630d153b50b37cb1bcaee">&#9670;&nbsp;</a></span>EnableVulkanSupport()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void astu::SdlVideoService::EnableVulkanSupport </td>
+          <td class="memname"><a class="el" href="classastu_1_1SdlVideoService.html">SdlVideoService</a>&amp; astu::SdlVideoService::EnableVulkanSupport </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
@@ -228,6 +261,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to this service for method chaining </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::logic_error</td><td>in case this service is already running </td></tr>
@@ -262,7 +296,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the height of the window in pixels.</p>
 <dl class="section return"><dt>Returns</dt><dd>the height in pixls </dd></dl>
 
-<p>Implements <a class="el" href="classastu_1_1IWindowManager.html#a80a146779e21437e8c6ef78889389dfc">astu::IWindowManager</a>.</p>
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a16d1880606a2c597162d8c80bed9d1a2">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -311,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the current window title.</p>
 <dl class="section return"><dt>Returns</dt><dd>the window title </dd></dl>
 
-<p>Implements <a class="el" href="classastu_1_1IWindowManager.html#aa5733f1ceda60796f6e35f5f7b79ffa9">astu::IWindowManager</a>.</p>
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a54815692f9d3086673dd2694d75dcb65">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -340,7 +374,65 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the width of the window in pixels.</p>
 <dl class="section return"><dt>Returns</dt><dd>the width in pixls </dd></dl>
 
-<p>Implements <a class="el" href="classastu_1_1IWindowManager.html#a6f818a88754bde33c3121e7413d3a554">astu::IWindowManager</a>.</p>
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#ad2e75e91b0d72afb92c980fcbd8f227a">astu::WindowService</a>.</p>
+
+</div>
+</div>
+<a id="ae2be9aedf021799802cf7d1feaef7dfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2be9aedf021799802cf7d1feaef7dfc">&#9670;&nbsp;</a></span>IsFullscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool astu::SdlVideoService::IsFullscreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether fullscreen mode is currently activated.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if fulscreen mode is activated </dd></dl>
+
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#aa94ce60d1e8dd7484d364b65c25be1ca">astu::WindowService</a>.</p>
+
+</div>
+</div>
+<a id="a335762da99b341205b8bf759a0b57c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335762da99b341205b8bf759a0b57c64">&#9670;&nbsp;</a></span>IsResizable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool astu::SdlVideoService::IsResizable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the window is resizable.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the window is resizable </dd></dl>
+
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a277954f71dd019b3ffc5d37df3f8b3af">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -360,6 +452,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns whether Vulkan support has been enabled.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if support for Vulkan has been enabled </dd></dl>
+
+</div>
+</div>
+<a id="a3aefc8ab3780a23cdef8780e42436fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aefc8ab3780a23cdef8780e42436fd5">&#9670;&nbsp;</a></span>NumDisplays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int astu::SdlVideoService::NumDisplays </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of available displays. </p>
+
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#ad773e0c567946e06ace76c016bb16349">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -385,10 +505,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by this base class on shutdown.</p>
-<p>Derived classes should override this method rather than <code><a class="el" href="classastu_1_1BaseService.html#a7095888244052db294d58738c0d187fb">Shutdown()</a></code>. The <code><a class="el" href="classastu_1_1BaseService.html#a7095888244052db294d58738c0d187fb">Shutdown()</a></code> method is maintaining the running-state of this service. </p>
+<p>Called by the service base method on shutdown.</p>
+<p>Derived can override this method for de-initialization purposes, e.g., releasing resources, etc. </p>
 
-<p>Reimplemented from <a class="el" href="classastu_1_1BaseService.html#aeb5003f7c5efe5412725ac4c66942d03">astu::BaseService</a>.</p>
+<p>Reimplemented from <a class="el" href="classastu_1_1Service.html#a1e1dff727df791c57fae782d8a613c5f">astu::Service</a>.</p>
 
 </div>
 </div>
@@ -414,10 +534,106 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called by this base class on startup.</p>
-<p>Derived classes should override this method rather than <code><a class="el" href="classastu_1_1BaseService.html#a59dade033dcb44dd32155c526a3a58e2">Startup()</a></code>. The <code><a class="el" href="classastu_1_1BaseService.html#a59dade033dcb44dd32155c526a3a58e2">Startup()</a></code> method is maintaining the running-state of this service. </p>
+<p>Called by the service base class on startup.</p>
+<p>Derived can override this method for initialization purposes. </p>
 
-<p>Reimplemented from <a class="el" href="classastu_1_1BaseService.html#ac8710cd2d6dcc990db65e7c8ccfbc5ff">astu::BaseService</a>.</p>
+<p>Reimplemented from <a class="el" href="classastu_1_1Service.html#a357dc663e000b1f086f681ec3c459bfe">astu::Service</a>.</p>
+
+</div>
+</div>
+<a id="a46fe8816a8975a2d6cd7311bdbd46167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fe8816a8975a2d6cd7311bdbd46167">&#9670;&nbsp;</a></span>SetDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classastu_1_1SdlVideoService.html">SdlVideoService</a>&amp; astu::SdlVideoService::SetDisplay </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the index of the display used to open the window.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>the index of the display. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to this service for method chaining </dd></dl>
+
+</div>
+</div>
+<a id="a45a37b4958f6e77e22ffa55699a171ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a37b4958f6e77e22ffa55699a171ef">&#9670;&nbsp;</a></span>SetFullscreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void astu::SdlVideoService::SetFullscreen </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enableFullscreen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Activates or deactivates fullscreen mode.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enableFullscreen</td><td>set to <code>true</code> to activate fullscreen mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#abe2ef0eb9f42078676318945e15d2dce">astu::WindowService</a>.</p>
+
+</div>
+</div>
+<a id="ab50969b38dedf29146704898a74df5ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50969b38dedf29146704898a74df5ae">&#9670;&nbsp;</a></span>SetResizable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void astu::SdlVideoService::SetResizable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Specifies whether the window should be resizable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>the <code>true</code> if the window should be resizable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a78bee95831f4497fcee7b8d10575f0d8">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -463,7 +679,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classastu_1_1IWindowManager.html#aca77eeecb7c790fa3c1d58c20dd7294f">astu::IWindowManager</a>.</p>
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a77fb8b7272b58e39c7d003923034eedf">astu::WindowService</a>.</p>
 
 </div>
 </div>
@@ -498,12 +714,12 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classastu_1_1IWindowManager.html#ae75ef0ce5ff6943712b9aa55cbfaadf8">astu::IWindowManager</a>.</p>
+<p>Implements <a class="el" href="classastu_1_1WindowService.html#a298dcaad372f611f14edb4ad33044efd">astu::WindowService</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="SdlVideoService_8h_source.html">SdlVideoService.h</a></li>
+<li>include/SuiteSDL/<a class="el" href="SdlVideoService_8h_source.html">SdlVideoService.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

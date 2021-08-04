@@ -1,0 +1,68 @@
+\hypertarget{classastu_1_1TaskBuilder}{}\section{astu\+:\+:Task\+Builder$<$ T $>$ Class Template Reference}
+\label{classastu_1_1TaskBuilder}\index{astu\+::\+Task\+Builder$<$ T $>$@{astu\+::\+Task\+Builder$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Task\+Service.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \& \hyperlink{classastu_1_1TaskBuilder_ab5537f6a3551aaa12378b88cbb402738}{Name} (const std\+::string \&name)
+\item 
+T \& \hyperlink{classastu_1_1TaskBuilder_ad55c0a226930055fce5c50e6a8ed0325}{Reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classastu_1_1TaskBuilder_a4254a515845e5f751bb7ec0a5c90cde7}{Build} (\hyperlink{classastu_1_1Task}{Task} \&task)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Task\+Builder$<$ T $>$}
+
+Base class for task builders. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1TaskBuilder_a4254a515845e5f751bb7ec0a5c90cde7}\label{classastu_1_1TaskBuilder_a4254a515845e5f751bb7ec0a5c90cde7}} 
+\index{astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classastu_1_1TaskBuilder}{astu\+::\+Task\+Builder}$<$ T $>$\+::Build (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Task}{Task} \&}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Called by derived classes \mbox{\Hypertarget{classastu_1_1TaskBuilder_ab5537f6a3551aaa12378b88cbb402738}\label{classastu_1_1TaskBuilder_ab5537f6a3551aaa12378b88cbb402738}} 
+\index{astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}!Name@{Name}}
+\index{Name@{Name}!astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1TaskBuilder}{astu\+::\+Task\+Builder}$<$ T $>$\+::Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the name of the task to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the task \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1TaskBuilder_ad55c0a226930055fce5c50e6a8ed0325}\label{classastu_1_1TaskBuilder_ad55c0a226930055fce5c50e6a8ed0325}} 
+\index{astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Task\+Builder@{astu\+::\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1TaskBuilder}{astu\+::\+Task\+Builder}$<$ T $>$\+::Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this builder to its initial condition.
+
+\begin{DoxyReturn}{Returns}
+a reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Task\+Service.\+h\end{DoxyCompactItemize}

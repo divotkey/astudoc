@@ -19,13 +19,11 @@ Inheritance diagram for astu\+:\+:I\+Updatable\+:\nopagebreak
 virtual \hyperlink{classastu_1_1IUpdatable_ae0ba3ec6b901ef3dd3692471222180e6}{$\sim$\+I\+Updatable} ()
 \item 
 virtual void \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{On\+Update} ()=0
-\item 
-virtual int \hyperlink{classastu_1_1IUpdatable_a1bf76b0fce2360b8ade25ef9ae9e3065}{Get\+Update\+Priority} () const =0
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Interface for anything which is updatable and should be managed by the {\ttfamily \hyperlink{classastu_1_1UpdateService}{Update\+Service}}. 
+Interface for items that can be updated. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classastu_1_1IUpdatable_ae0ba3ec6b901ef3dd3692471222180e6}\label{classastu_1_1IUpdatable_ae0ba3ec6b901ef3dd3692471222180e6}} 
@@ -37,35 +35,18 @@ Interface for anything which is updatable and should be managed by the {\ttfamil
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1IUpdatable_a1bf76b0fce2360b8ade25ef9ae9e3065}\label{classastu_1_1IUpdatable_a1bf76b0fce2360b8ade25ef9ae9e3065}} 
-\index{astu\+::\+I\+Updatable@{astu\+::\+I\+Updatable}!Get\+Update\+Priority@{Get\+Update\+Priority}}
-\index{Get\+Update\+Priority@{Get\+Update\+Priority}!astu\+::\+I\+Updatable@{astu\+::\+I\+Updatable}}
-\subsubsection{\texorpdfstring{Get\+Update\+Priority()}{GetUpdatePriority()}}
-{\footnotesize\ttfamily virtual int astu\+::\+I\+Updatable\+::\+Get\+Update\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-Returns the update priority.
-
-Updatables with lower priorities get updated before updatables with higher priorities.
-
-\begin{DoxyReturn}{Returns}
-the update priority 
-\end{DoxyReturn}
-
-
-Implemented in \hyperlink{classastu_1_1UpdatableBaseService_a22a9824510d94fa97efb962ae38be945}{astu\+::\+Updatable\+Base\+Service}.
-
 \mbox{\Hypertarget{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}\label{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}} 
 \index{astu\+::\+I\+Updatable@{astu\+::\+I\+Updatable}!On\+Update@{On\+Update}}
 \index{On\+Update@{On\+Update}!astu\+::\+I\+Updatable@{astu\+::\+I\+Updatable}}
 \subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
 {\footnotesize\ttfamily virtual void astu\+::\+I\+Updatable\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Called when this updatable gets updated. 
+Called when an update is due. 
 
-Implemented in \hyperlink{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc10e0}{astu\+::\+Entity\+Service}, \hyperlink{classastu_1_1SdlRenderService_af109517e98ab8bce1e625122a441fb75}{astu\+::\+Sdl\+Render\+Service}, \hyperlink{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}{astu\+::\+Sdl\+Event\+Service}, and \hyperlink{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b76302}{astu\+::\+Sdl\+Time\+Service}.
+Implemented in \hyperlink{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc10e0}{astu\+::\+Entity\+Service}, \hyperlink{classastu_1_1IteratingEntitySystem_a7534ceb189ea282024bb9917cc244e94}{astu\+::\+Iterating\+Entity\+System}, \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}, \hyperlink{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}{astu\+::\+Sdl\+Event\+Service}, \hyperlink{classastu_1_1SdlSceneGraph2D_add3a6e67064379389068659addad0920}{astu\+::\+Sdl\+Scene\+Graph2D}, \hyperlink{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b76302}{astu\+::\+Sdl\+Time\+Service}, and \hyperlink{classastu_1_1suite2d_1_1CameraControlService_ab547e4f6103448db59d1350695bed4e8}{astu\+::suite2d\+::\+Camera\+Control\+Service}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Update\+Service.\+h\end{DoxyCompactItemize}
+include/\+Service/Update\+Service.\+h\end{DoxyCompactItemize}

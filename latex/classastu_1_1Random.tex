@@ -1,0 +1,213 @@
+\hypertarget{classastu_1_1Random}{}\section{astu\+:\+:Random Class Reference}
+\label{classastu_1_1Random}\index{astu\+::\+Random@{astu\+::\+Random}}
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classastu_1_1Random_afd6e22a3a407fc9db132178a0bd66179}{Next\+Double} ()
+\item 
+double \hyperlink{classastu_1_1Random_a5413d4f6db045cb272bee7f419847c6f}{Next\+Double} (double min\+Value, double max\+Value)
+\item 
+float \hyperlink{classastu_1_1Random_aac568f26a878a1dc7facc767c0977713}{Next\+Float} ()
+\item 
+float \hyperlink{classastu_1_1Random_aedc793a4f422aed4ac49c8e3cde9d3b9}{Next\+Float} (float min\+Value, float max\+Value)
+\item 
+int \hyperlink{classastu_1_1Random_ae45b2a5f53c1ecc833a6144af345d2fb}{Next\+Int} ()
+\item 
+int \hyperlink{classastu_1_1Random_a92a532121f8edfb954b548c3c74a6a9c}{Next\+Int} (int min\+Value, int max\+Value)
+\item 
+bool \hyperlink{classastu_1_1Random_a897ae008b0ecaa39ae970f794431b3ac}{Next\+Bool} ()
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1Random_a52486fe2236c1e052bdafdd5072c5cab}{Next\+Vector2f} (float length=1.\+0f)
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2d} \hyperlink{classastu_1_1Random_a4a01ced84c1d07d593adbdbfbdf65f3a}{Next\+Vector2d} (double length=1.\+0)
+\item 
+void \hyperlink{classastu_1_1Random_a2bbce78e953c8c272d947cda155302c2}{Set\+Seed} (unsigned int value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classastu_1_1Random}{Random} \& \hyperlink{classastu_1_1Random_ab11313efe9636e69c15df5dd1cf90124}{Get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create random numbers.
+
+All generated pseudo random number are distributed uniformly over the specified range. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Random_ab11313efe9636e69c15df5dd1cf90124}\label{classastu_1_1Random_ab11313efe9636e69c15df5dd1cf90124}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classastu_1_1Random}{Random}\& astu\+::\+Random\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the one and only instance of this class.
+
+\begin{DoxyReturn}{Returns}
+the instance of this class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a897ae008b0ecaa39ae970f794431b3ac}\label{classastu_1_1Random_a897ae008b0ecaa39ae970f794431b3ac}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Bool@{Next\+Bool}}
+\index{Next\+Bool@{Next\+Bool}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Bool()}{NextBool()}}
+{\footnotesize\ttfamily bool astu\+::\+Random\+::\+Next\+Bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a random boolean value. This method will generate a random number using Next\+Double method.
+
+\begin{DoxyReturn}{Returns}
+the new random boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_afd6e22a3a407fc9db132178a0bd66179}\label{classastu_1_1Random_afd6e22a3a407fc9db132178a0bd66179}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Double@{Next\+Double}}
+\index{Next\+Double@{Next\+Double}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Double()}{NextDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double astu\+::\+Random\+::\+Next\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a random number within the range \mbox{[}0, 1).
+
+\begin{DoxyReturn}{Returns}
+the next random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a5413d4f6db045cb272bee7f419847c6f}\label{classastu_1_1Random_a5413d4f6db045cb272bee7f419847c6f}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Double@{Next\+Double}}
+\index{Next\+Double@{Next\+Double}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Double()}{NextDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double astu\+::\+Random\+::\+Next\+Double (\begin{DoxyParamCaption}\item[{double}]{min\+Value,  }\item[{double}]{max\+Value }\end{DoxyParamCaption})}
+
+Returns a random number within the specified range. This method will generate a random number using a pseudo random number generator.
+
+The generated numbers are of type {\ttfamily double} and lie within the interval of \mbox{[}min\+Value, max\+Value).
+
+{\itshape Note\+:} the notation for the interval {\itshape \mbox{[}min\+Value, max\+Value)} means that {\ttfamily min\+Value} is included but {\ttfamily max\+Value} is not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & the minimum value \\
+\hline
+{\em max\+Value} & the minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_aac568f26a878a1dc7facc767c0977713}\label{classastu_1_1Random_aac568f26a878a1dc7facc767c0977713}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Float@{Next\+Float}}
+\index{Next\+Float@{Next\+Float}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Float()}{NextFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float astu\+::\+Random\+::\+Next\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a random number within the range \mbox{[}0, 1).
+
+\begin{DoxyReturn}{Returns}
+the next random number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_aedc793a4f422aed4ac49c8e3cde9d3b9}\label{classastu_1_1Random_aedc793a4f422aed4ac49c8e3cde9d3b9}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Float@{Next\+Float}}
+\index{Next\+Float@{Next\+Float}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Float()}{NextFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float astu\+::\+Random\+::\+Next\+Float (\begin{DoxyParamCaption}\item[{float}]{min\+Value,  }\item[{float}]{max\+Value }\end{DoxyParamCaption})}
+
+Returns a random number within the specified range. This method will generate a random number using a pseudo random number generator.
+
+The generated numbers are of type {\ttfamily float} and lie within the interval of \mbox{[}min\+Value, max\+Value).
+
+{\itshape Note\+:} the notation for the interval {\itshape \mbox{[}min\+Value, max\+Value)} means that {\ttfamily min\+Value} is included but {\ttfamily max\+Value} is not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & the minimum value \\
+\hline
+{\em max\+Value} & the minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_ae45b2a5f53c1ecc833a6144af345d2fb}\label{classastu_1_1Random_ae45b2a5f53c1ecc833a6144af345d2fb}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Int@{Next\+Int}}
+\index{Next\+Int@{Next\+Int}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Int()}{NextInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int astu\+::\+Random\+::\+Next\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a random integer number within the range \mbox{[}0, I\+N\+T\+\_\+\+M\+AX\mbox{]}.
+
+\begin{DoxyReturn}{Returns}
+the next random integer number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a92a532121f8edfb954b548c3c74a6a9c}\label{classastu_1_1Random_a92a532121f8edfb954b548c3c74a6a9c}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Int@{Next\+Int}}
+\index{Next\+Int@{Next\+Int}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Int()}{NextInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int astu\+::\+Random\+::\+Next\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Value,  }\item[{int}]{max\+Value }\end{DoxyParamCaption})}
+
+Returns a random number within the specified range. This method will generate a random number using a pseudo random number generator.
+
+The generated numbers are of type {\ttfamily int} and lie within the interval of \mbox{[}min\+Value, max\+Value).
+
+{\itshape Note\+:} the notation for the interval {\itshape \mbox{[}min\+Value, max\+Value)} means that {\ttfamily min\+Value} is included but {\ttfamily max\+Value} is not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & the minimum value \\
+\hline
+{\em max\+Value} & the minimum value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new random number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a4a01ced84c1d07d593adbdbfbdf65f3a}\label{classastu_1_1Random_a4a01ced84c1d07d593adbdbfbdf65f3a}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Vector2d@{Next\+Vector2d}}
+\index{Next\+Vector2d@{Next\+Vector2d}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Vector2d()}{NextVector2d()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2d} astu\+::\+Random\+::\+Next\+Vector2d (\begin{DoxyParamCaption}\item[{double}]{length = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Returns a ranfom vector with the specified length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & the length of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector pointing in a random direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a52486fe2236c1e052bdafdd5072c5cab}\label{classastu_1_1Random_a52486fe2236c1e052bdafdd5072c5cab}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Next\+Vector2f@{Next\+Vector2f}}
+\index{Next\+Vector2f@{Next\+Vector2f}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Next\+Vector2f()}{NextVector2f()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::\+Random\+::\+Next\+Vector2f (\begin{DoxyParamCaption}\item[{float}]{length = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+Returns a ranfom vector with the specified length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & the length of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector pointing in a random direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Random_a2bbce78e953c8c272d947cda155302c2}\label{classastu_1_1Random_a2bbce78e953c8c272d947cda155302c2}} 
+\index{astu\+::\+Random@{astu\+::\+Random}!Set\+Seed@{Set\+Seed}}
+\index{Set\+Seed@{Set\+Seed}!astu\+::\+Random@{astu\+::\+Random}}
+\subsubsection{\texorpdfstring{Set\+Seed()}{SetSeed()}}
+{\footnotesize\ttfamily void astu\+::\+Random\+::\+Set\+Seed (\begin{DoxyParamCaption}\item[{unsigned int}]{value }\end{DoxyParamCaption})}
+
+Sets the seed of the random number generator used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the new seed value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Random.\+h\end{DoxyCompactItemize}

@@ -1,3 +1,5 @@
 <map id="astu::ISdlRenderLayer" name="astu::ISdlRenderLayer">
-<area shape="rect" id="node2" href="$classastu_1_1BaseSdlRenderLayer.html" title="astu::BaseSdlRenderLayer" alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node2" href="$classastu_1_1SdlRenderLayer.html" title="astu::SdlRenderLayer" alt="" coords="97,80,245,107"/>
+<area shape="rect" id="node3" href="$classastu_1_1SdlLineRenderer.html" title="astu::SdlLineRenderer" alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node4" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="181,155,343,181"/>
 </map>

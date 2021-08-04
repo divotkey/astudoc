@@ -1,0 +1,153 @@
+\hypertarget{classastu_1_1Keyboard}{}\section{astu\+:\+:Keyboard Class Reference}
+\label{classastu_1_1Keyboard}\index{astu\+::\+Keyboard@{astu\+::\+Keyboard}}
+
+
+{\ttfamily \#include $<$Keyboard.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classastu_1_1Keyboard_ac6ac295b9ef757f13ad8a70e3c38bc8c}{Keycodes} \{ \newline
+{\bfseries K\+E\+Y\+\_\+\+U\+N\+K\+N\+O\+WN} = 0, 
+{\bfseries K\+E\+Y\+\_\+A} = 4, 
+{\bfseries K\+E\+Y\+\_\+B} = 5, 
+{\bfseries K\+E\+Y\+\_\+C} = 6, 
+\newline
+{\bfseries K\+E\+Y\+\_\+D} = 7, 
+{\bfseries K\+E\+Y\+\_\+E} = 8, 
+{\bfseries K\+E\+Y\+\_\+F} = 9, 
+{\bfseries K\+E\+Y\+\_\+G} = 10, 
+\newline
+{\bfseries K\+E\+Y\+\_\+H} = 11, 
+{\bfseries K\+E\+Y\+\_\+I} = 12, 
+{\bfseries K\+E\+Y\+\_\+J} = 13, 
+{\bfseries K\+E\+Y\+\_\+K} = 14, 
+\newline
+{\bfseries K\+E\+Y\+\_\+L} = 15, 
+{\bfseries K\+E\+Y\+\_\+M} = 16, 
+{\bfseries K\+E\+Y\+\_\+N} = 17, 
+{\bfseries K\+E\+Y\+\_\+O} = 18, 
+\newline
+{\bfseries K\+E\+Y\+\_\+P} = 19, 
+{\bfseries K\+E\+Y\+\_\+Q} = 20, 
+{\bfseries K\+E\+Y\+\_\+R} = 21, 
+{\bfseries K\+E\+Y\+\_\+S} = 22, 
+\newline
+{\bfseries K\+E\+Y\+\_\+T} = 23, 
+{\bfseries K\+E\+Y\+\_\+U} = 24, 
+{\bfseries K\+E\+Y\+\_\+V} = 25, 
+{\bfseries K\+E\+Y\+\_\+W} = 26, 
+\newline
+{\bfseries K\+E\+Y\+\_\+X} = 27, 
+{\bfseries K\+E\+Y\+\_\+Y} = 28, 
+{\bfseries K\+E\+Y\+\_\+Z} = 29, 
+{\bfseries K\+E\+Y\+\_\+1} = 30, 
+\newline
+{\bfseries K\+E\+Y\+\_\+2} = 31, 
+{\bfseries K\+E\+Y\+\_\+3} = 32, 
+{\bfseries K\+E\+Y\+\_\+4} = 33, 
+{\bfseries K\+E\+Y\+\_\+5} = 34, 
+\newline
+{\bfseries K\+E\+Y\+\_\+6} = 35, 
+{\bfseries K\+E\+Y\+\_\+7} = 36, 
+{\bfseries K\+E\+Y\+\_\+8} = 37, 
+{\bfseries K\+E\+Y\+\_\+9} = 38, 
+\newline
+{\bfseries K\+E\+Y\+\_\+0} = 39, 
+{\bfseries K\+E\+Y\+\_\+\+R\+E\+T\+U\+RN} = 40, 
+{\bfseries K\+E\+Y\+\_\+\+B\+R\+E\+AK} = 72, 
+{\bfseries K\+E\+Y\+\_\+\+H\+O\+ME} = 74, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+D\+E\+L\+E\+TE} = 76, 
+{\bfseries K\+E\+Y\+\_\+\+E\+S\+C\+A\+PE} = 41, 
+{\bfseries K\+E\+Y\+\_\+\+B\+A\+C\+K\+S\+P\+A\+CE} = 42, 
+{\bfseries K\+E\+Y\+\_\+\+T\+AB} = 43, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+S\+P\+A\+CE} = 44, 
+{\bfseries K\+E\+Y\+\_\+\+M\+I\+N\+US} = 45, 
+{\bfseries K\+E\+Y\+\_\+\+E\+Q\+U\+A\+LS} = 46, 
+{\bfseries K\+E\+Y\+\_\+\+R\+I\+G\+HT} = 79, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+L\+E\+FT} = 80, 
+{\bfseries K\+E\+Y\+\_\+\+D\+O\+WN} = 81, 
+{\bfseries K\+E\+Y\+\_\+\+UP} = 82, 
+{\bfseries K\+E\+Y\+\_\+\+L\+C\+T\+RL} = 224, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+R\+C\+T\+RL} = 228, 
+{\bfseries K\+E\+Y\+\_\+\+F1} = 58, 
+{\bfseries K\+E\+Y\+\_\+\+F2} = 59, 
+{\bfseries K\+E\+Y\+\_\+\+F3} = 60, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+F4} = 61, 
+{\bfseries K\+E\+Y\+\_\+\+F5} = 62, 
+{\bfseries K\+E\+Y\+\_\+\+F6} = 63, 
+{\bfseries K\+E\+Y\+\_\+\+F7} = 64, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+F8} = 65, 
+{\bfseries K\+E\+Y\+\_\+\+F9} = 66, 
+{\bfseries K\+E\+Y\+\_\+\+F10} = 67, 
+{\bfseries K\+E\+Y\+\_\+\+F11} = 68, 
+\newline
+{\bfseries K\+E\+Y\+\_\+\+F12} = 69
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classastu_1_1Keyboard_ad664e339aaba324018cedbab3efac9b3}{Set\+Key} (int keycode, bool pressed)
+\item 
+bool \hyperlink{classastu_1_1Keyboard_ac084da5fb7d052612fed0d465048835e}{Is\+Pressed} (int keycode) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides access to keyboard input.
+
+This class is realized using the Monostate design pattern. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classastu_1_1Keyboard_ac6ac295b9ef757f13ad8a70e3c38bc8c}\label{classastu_1_1Keyboard_ac6ac295b9ef757f13ad8a70e3c38bc8c}} 
+\index{astu\+::\+Keyboard@{astu\+::\+Keyboard}!Keycodes@{Keycodes}}
+\index{Keycodes@{Keycodes}!astu\+::\+Keyboard@{astu\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Keycodes}{Keycodes}}
+{\footnotesize\ttfamily enum \hyperlink{classastu_1_1Keyboard_ac6ac295b9ef757f13ad8a70e3c38bc8c}{astu\+::\+Keyboard\+::\+Keycodes}}
+
+The enumeration of keycodes. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Keyboard_ac084da5fb7d052612fed0d465048835e}\label{classastu_1_1Keyboard_ac084da5fb7d052612fed0d465048835e}} 
+\index{astu\+::\+Keyboard@{astu\+::\+Keyboard}!Is\+Pressed@{Is\+Pressed}}
+\index{Is\+Pressed@{Is\+Pressed}!astu\+::\+Keyboard@{astu\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Is\+Pressed()}{IsPressed()}}
+{\footnotesize\ttfamily bool astu\+::\+Keyboard\+::\+Is\+Pressed (\begin{DoxyParamCaption}\item[{int}]{keycode }\end{DoxyParamCaption}) const}
+
+Returns whether a key is currently pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & the keycode of the key to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the key is currently pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Keyboard_ad664e339aaba324018cedbab3efac9b3}\label{classastu_1_1Keyboard_ad664e339aaba324018cedbab3efac9b3}} 
+\index{astu\+::\+Keyboard@{astu\+::\+Keyboard}!Set\+Key@{Set\+Key}}
+\index{Set\+Key@{Set\+Key}!astu\+::\+Keyboard@{astu\+::\+Keyboard}}
+\subsubsection{\texorpdfstring{Set\+Key()}{SetKey()}}
+{\footnotesize\ttfamily void astu\+::\+Keyboard\+::\+Set\+Key (\begin{DoxyParamCaption}\item[{int}]{keycode,  }\item[{bool}]{pressed }\end{DoxyParamCaption})}
+
+Sets the state of a key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & the keycode of the key to set \\
+\hline
+{\em pressed} & set to {\ttfamily true} to marked the key as pressed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Keyboard.\+h\end{DoxyCompactItemize}

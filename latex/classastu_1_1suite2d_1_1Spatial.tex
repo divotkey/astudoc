@@ -1,0 +1,338 @@
+\hypertarget{classastu_1_1suite2d_1_1Spatial}{}\section{astu\+:\+:suite2d\+:\+:Spatial Class Reference}
+\label{classastu_1_1suite2d_1_1Spatial}\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Spatial\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classastu_1_1suite2d_1_1Spatial__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Spatial\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classastu_1_1suite2d_1_1Spatial__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1suite2d_1_1Spatial_ac6205d841cc2547b55061505b3326ff0}{$\sim$\+Spatial} ()
+\item 
+const std\+::string \& \hyperlink{classastu_1_1suite2d_1_1Spatial_a53456f456c3cccccd5d96be74f751622}{Get\+Name} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Spatial_a938e9e652d177955245a8ce92e1133cb}{Set\+Name} (const std\+::string \&\+\_\+name)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Spatial_a3cf75241f2921077a66810175e5f6071}{Set\+Local\+Transform} (const \hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f} \&tx)
+\item 
+\hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f} \& \hyperlink{classastu_1_1suite2d_1_1Spatial_a54e6c7004f30b5cf4fa75dd105c22052}{Get\+Local\+Transform} ()
+\item 
+const \hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f} \& \hyperlink{classastu_1_1suite2d_1_1Spatial_a9865215a9b5ed5ebe76fa04ec01220c7}{Get\+Local\+Transform} () const
+\item 
+const \hyperlink{classastu_1_1Matrix3}{Matrix3f} \& \hyperlink{classastu_1_1suite2d_1_1Spatial_a4dbd0d78ad2b6921c9b4067e7ce07465}{Get\+World\+Matrix} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Spatial_aca3b41b57739b71d27f50a38517cd30b}{Update} (double dt)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1Spatial_afaf7797d00a432012298535ba11348b7}{Render} (\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&renderer, float \hyperlink{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}{alpha})=0
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1Spatial_a0bc597fb32a23dab3a63b3d4cdd3567a}{Has\+Parent} () const
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Node}{Node} $\ast$ \hyperlink{classastu_1_1suite2d_1_1Spatial_ad16fc3b6a6f31a15606953499de058bc}{Get\+Parent} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Spatial_a24f5b6f78fa3b70f865369b71bb15910}{Set\+Transparance} (float \hyperlink{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}{alpha})
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Spatial_ac7face6d319542d0b9061b0d26c3bc2d}{Get\+Transparency} () const
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1Spatial_a5c058079c94b0e8d7590e70ca2159bd1}{Clone} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Spatial_a5b989b593ce75f86c1c12059b22ec350}{Spatial} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Spatial_af05646464cc9dcf5add392d13dd55e3a}{Spatial} (const \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} \&o)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1Spatial_a9c612ec47fd9d621aca423822b2b6132}{Update\+Transform} (double dt)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Spatial_ab3772e36188589159bc76bcbaf3dd828}{Set\+Parent} (\hyperlink{classastu_1_1suite2d_1_1Node}{Node} $\ast$new\+Parent)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Node}{Node} $\ast$ \hyperlink{classastu_1_1suite2d_1_1Spatial_a5437ad18bb6b8752711ee229bafe6f46}{parent}
+\item 
+std\+::string \hyperlink{classastu_1_1suite2d_1_1Spatial_af317fff32a847e427f675d564a17e65a}{name}
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}{alpha}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a6db9d28bd448a131448276ee03de1e6d}\label{classastu_1_1suite2d_1_1Spatial_a6db9d28bd448a131448276ee03de1e6d}} 
+class {\bfseries Node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} represents the basic scene graph element. The main property of a \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} is that it contains a transformation, that describes the position, orientation ans scaling of this scene graph element. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_ac6205d841cc2547b55061505b3326ff0}\label{classastu_1_1suite2d_1_1Spatial_ac6205d841cc2547b55061505b3326ff0}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!````~Spatial@{$\sim$\+Spatial}}
+\index{````~Spatial@{$\sim$\+Spatial}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{$\sim$\+Spatial()}{~Spatial()}}
+{\footnotesize\ttfamily virtual astu\+::suite2d\+::\+Spatial\+::$\sim$\+Spatial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a5b989b593ce75f86c1c12059b22ec350}\label{classastu_1_1suite2d_1_1Spatial_a5b989b593ce75f86c1c12059b22ec350}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Spatial@{Spatial}}
+\index{Spatial@{Spatial}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Spatial()}{Spatial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Spatial\+::\+Spatial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_af05646464cc9dcf5add392d13dd55e3a}\label{classastu_1_1suite2d_1_1Spatial_af05646464cc9dcf5add392d13dd55e3a}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Spatial@{Spatial}}
+\index{Spatial@{Spatial}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Spatial()}{Spatial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Spatial\+::\+Spatial (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copy constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the other spatial from which to copy \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a5c058079c94b0e8d7590e70ca2159bd1}\label{classastu_1_1suite2d_1_1Spatial_a5c058079c94b0e8d7590e70ca2159bd1}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+Spatial\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creats a copy of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the copy 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1suite2d_1_1Polyline_acdced9a02e4f789ff04feca46bdb297c}{astu\+::suite2d\+::\+Polyline}, and \hyperlink{classastu_1_1suite2d_1_1Node_a50803fe4a2182ca7320cd2f161873c51}{astu\+::suite2d\+::\+Node}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a54e6c7004f30b5cf4fa75dd105c22052}\label{classastu_1_1suite2d_1_1Spatial_a54e6c7004f30b5cf4fa75dd105c22052}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+Local\+Transform@{Get\+Local\+Transform}}
+\index{Get\+Local\+Transform@{Get\+Local\+Transform}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+Local\+Transform()}{GetLocalTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f}\& astu\+::suite2d\+::\+Spatial\+::\+Get\+Local\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves the local transformation matrix of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the local transformation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a9865215a9b5ed5ebe76fa04ec01220c7}\label{classastu_1_1suite2d_1_1Spatial_a9865215a9b5ed5ebe76fa04ec01220c7}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+Local\+Transform@{Get\+Local\+Transform}}
+\index{Get\+Local\+Transform@{Get\+Local\+Transform}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+Local\+Transform()}{GetLocalTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f}\& astu\+::suite2d\+::\+Spatial\+::\+Get\+Local\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves the local transormation matrix of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the local transformation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a53456f456c3cccccd5d96be74f751622}\label{classastu_1_1suite2d_1_1Spatial_a53456f456c3cccccd5d96be74f751622}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::suite2d\+::\+Spatial\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name of this spatial.
+
+\begin{DoxyReturn}{Returns}
+name; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_ad16fc3b6a6f31a15606953499de058bc}\label{classastu_1_1suite2d_1_1Spatial_ad16fc3b6a6f31a15606953499de058bc}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+Parent()}{GetParent()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Node}{Node}$\ast$ astu\+::suite2d\+::\+Spatial\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the parent of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the parent or nullptr if this patial has not parrent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_ac7face6d319542d0b9061b0d26c3bc2d}\label{classastu_1_1suite2d_1_1Spatial_ac7face6d319542d0b9061b0d26c3bc2d}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+Transparency@{Get\+Transparency}}
+\index{Get\+Transparency@{Get\+Transparency}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+Transparency()}{GetTransparency()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Spatial\+::\+Get\+Transparency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the transparency of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the transparency within the range \mbox{[}0, 1\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a4dbd0d78ad2b6921c9b4067e7ce07465}\label{classastu_1_1suite2d_1_1Spatial_a4dbd0d78ad2b6921c9b4067e7ce07465}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Get\+World\+Matrix@{Get\+World\+Matrix}}
+\index{Get\+World\+Matrix@{Get\+World\+Matrix}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Get\+World\+Matrix()}{GetWorldMatrix()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Matrix3}{Matrix3f}\& astu\+::suite2d\+::\+Spatial\+::\+Get\+World\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the world transformation matrix of this spatial. The world transformation matrix is only valid after the \hyperlink{classastu_1_1suite2d_1_1Spatial_aca3b41b57739b71d27f50a38517cd30b}{Update()} method has been called.
+
+\begin{DoxyReturn}{Returns}
+the world transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a0bc597fb32a23dab3a63b3d4cdd3567a}\label{classastu_1_1suite2d_1_1Spatial_a0bc597fb32a23dab3a63b3d4cdd3567a}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Has\+Parent@{Has\+Parent}}
+\index{Has\+Parent@{Has\+Parent}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Has\+Parent()}{HasParent()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Spatial\+::\+Has\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this spatial has a parent.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this spatial has a parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_afaf7797d00a432012298535ba11348b7}\label{classastu_1_1suite2d_1_1Spatial_afaf7797d00a432012298535ba11348b7}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Render@{Render}}
+\index{Render@{Render}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Spatial\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&}]{renderer,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Renders this spacial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the renderer to be used \\
+\hline
+{\em alpha} & the transparancy \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1suite2d_1_1Polyline_ad4aef126b57b93beba4ab03c01403406}{astu\+::suite2d\+::\+Polyline}, and \hyperlink{classastu_1_1suite2d_1_1Node_a01bac6ed4eab4a6c77e1dac7d30d09e6}{astu\+::suite2d\+::\+Node}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a3cf75241f2921077a66810175e5f6071}\label{classastu_1_1suite2d_1_1Spatial_a3cf75241f2921077a66810175e5f6071}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Set\+Local\+Transform@{Set\+Local\+Transform}}
+\index{Set\+Local\+Transform@{Set\+Local\+Transform}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Set\+Local\+Transform()}{SetLocalTransform()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Spatial\+::\+Set\+Local\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{group__math__group_gac67b5e9d27308a01ea8190ecb15e08fa}{Transform2f} \&}]{tx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the local transformation of this spatial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & the transformation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a938e9e652d177955245a8ce92e1133cb}\label{classastu_1_1suite2d_1_1Spatial_a938e9e652d177955245a8ce92e1133cb}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Set\+Name@{Set\+Name}}
+\index{Set\+Name@{Set\+Name}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Set\+Name()}{SetName()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Spatial\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the name of this spatial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & then name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_ab3772e36188589159bc76bcbaf3dd828}\label{classastu_1_1suite2d_1_1Spatial_ab3772e36188589159bc76bcbaf3dd828}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Set\+Parent@{Set\+Parent}}
+\index{Set\+Parent@{Set\+Parent}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Set\+Parent()}{SetParent()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Spatial\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1Node}{Node} $\ast$}]{new\+Parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the parent of this spatial.
+
+Do not call this method directly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Parent} & the parent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a24f5b6f78fa3b70f865369b71bb15910}\label{classastu_1_1suite2d_1_1Spatial_a24f5b6f78fa3b70f865369b71bb15910}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Set\+Transparance@{Set\+Transparance}}
+\index{Set\+Transparance@{Set\+Transparance}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Set\+Transparance()}{SetTransparance()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Spatial\+::\+Set\+Transparance (\begin{DoxyParamCaption}\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+Sets the transparance of this spatial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & the transparance within the range \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_aca3b41b57739b71d27f50a38517cd30b}\label{classastu_1_1suite2d_1_1Spatial_aca3b41b57739b71d27f50a38517cd30b}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Update@{Update}}
+\index{Update@{Update}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Spatial\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Updates the geometric state.
+
+This method updates attached controllers, computes world transformations etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since the last update in seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a9c612ec47fd9d621aca423822b2b6132}\label{classastu_1_1suite2d_1_1Spatial_a9c612ec47fd9d621aca423822b2b6132}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!Update\+Transform@{Update\+Transform}}
+\index{Update\+Transform@{Update\+Transform}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{Update\+Transform()}{UpdateTransform()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Spatial\+::\+Update\+Transform (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Updates the world transformation of this spatial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since the last update in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classastu_1_1suite2d_1_1Node_af3fbe9c9588b3f20a1d58645fd2371e0}{astu\+::suite2d\+::\+Node}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}\label{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!alpha@{alpha}}
+\index{alpha@{alpha}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Spatial\+::alpha\hspace{0.3cm}{\ttfamily [protected]}}
+
+The transparancy. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_af317fff32a847e427f675d564a17e65a}\label{classastu_1_1suite2d_1_1Spatial_af317fff32a847e427f675d564a17e65a}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!name@{name}}
+\index{name@{name}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string astu\+::suite2d\+::\+Spatial\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of this spatial. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Spatial_a5437ad18bb6b8752711ee229bafe6f46}\label{classastu_1_1suite2d_1_1Spatial_a5437ad18bb6b8752711ee229bafe6f46}} 
+\index{astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}!parent@{parent}}
+\index{parent@{parent}!astu\+::suite2d\+::\+Spatial@{astu\+::suite2d\+::\+Spatial}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Node}{Node}$\ast$ astu\+::suite2d\+::\+Spatial\+::parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+The parent of this spatial. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Scene.\+h\end{DoxyCompactItemize}

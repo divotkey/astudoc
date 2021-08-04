@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Entity\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{classastu_1_1EntityService__inherit__graph}
+\includegraphics[width=262pt]{classastu_1_1EntityService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,29 +19,31 @@ Collaboration diagram for astu\+:\+:Entity\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=347pt]{classastu_1_1EntityService__coll__graph}
+\includegraphics[width=309pt]{classastu_1_1EntityService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classastu_1_1EntityService_af52258e21a92cd45a68482d0654fe0c7}{Entity\+Service} (int update\+Priority=0)
+\hyperlink{classastu_1_1EntityService_a74fc8d1e8b7aadf0899142c248cb2211}{Entity\+Service} (int update\+Priority=Priority\+::\+Normal)
 \item 
 void \hyperlink{classastu_1_1EntityService_ad6c6cb81dc8c48c7688f438571ee5da8}{Add\+Entity} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ entity)
 \item 
 void \hyperlink{classastu_1_1EntityService_a748a71e470d5bb51bb650b15e0a78c63}{Remove\+Entity} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ entity)
 \item 
-void \hyperlink{classastu_1_1EntityService_a56effcd0e2c79f6b2030207541085bb5}{Remove\+Entity} (\hyperlink{classastu_1_1Entity}{Entity} \&e)
+bool \hyperlink{classastu_1_1EntityService_a4a3c14fd7aa8edf4263913046744f277}{Has\+Entity} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ entity) const
+\item 
+void \hyperlink{classastu_1_1EntityService_ac543fe51a3d1c9784bcab5775f5d388d}{Remove\+Entity} (\hyperlink{classastu_1_1Entity}{Entity} \&entity)
 \item 
 void \hyperlink{classastu_1_1EntityService_a1b21cf207324748c13c34568d3c1513e}{Remove\+All} ()
 \item 
-const std\+::shared\+\_\+ptr$<$ Entity\+View $>$ \hyperlink{classastu_1_1EntityService_aa295c07eb6a5c5321cf5820c9e41d008}{Get\+Entity\+View} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family)
+const std\+::shared\+\_\+ptr$<$ \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View} $>$ \hyperlink{classastu_1_1EntityService_aa295c07eb6a5c5321cf5820c9e41d008}{Get\+Entity\+View} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family)
 \item 
-bool \hyperlink{classastu_1_1EntityService_a333b2d932a0ce15687c76b6c361a7e82}{Has\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$ listener) const
+bool \hyperlink{classastu_1_1EntityService_a57fa7f62f90b8ecf4513045d7be9f15c}{Has\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&listener) const
 \item 
-void \hyperlink{classastu_1_1EntityService_aa611795e8eca81a83909c9a71551a981}{Add\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$ listener)
+void \hyperlink{classastu_1_1EntityService_ab338b1904b61dfe71c2b3bbcb390ada1}{Add\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&listener)
 \item 
-void \hyperlink{classastu_1_1EntityService_a4ecee40a8872203bf75c6ddbf67a05c1}{Remove\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$ listener)
+void \hyperlink{classastu_1_1EntityService_af9b12ecd243f0b0f98799fa2d147fecb}{Remove\+Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&listener)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -59,11 +61,11 @@ virtual void \hyperlink{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc
 The core service of the E\+CS, manages entities and entity listeners. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classastu_1_1EntityService_af52258e21a92cd45a68482d0654fe0c7}\label{classastu_1_1EntityService_af52258e21a92cd45a68482d0654fe0c7}} 
+\mbox{\Hypertarget{classastu_1_1EntityService_a74fc8d1e8b7aadf0899142c248cb2211}\label{classastu_1_1EntityService_a74fc8d1e8b7aadf0899142c248cb2211}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Entity\+Service@{Entity\+Service}}
 \index{Entity\+Service@{Entity\+Service}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Entity\+Service()}{EntityService()}}
-{\footnotesize\ttfamily astu\+::\+Entity\+Service\+::\+Entity\+Service (\begin{DoxyParamCaption}\item[{int}]{update\+Priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily astu\+::\+Entity\+Service\+::\+Entity\+Service (\begin{DoxyParamCaption}\item[{int}]{update\+Priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
 
 Constructor.
 
@@ -88,11 +90,11 @@ Adds an entity to this service.
 {\em entity} & the entity to add \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1EntityService_aa611795e8eca81a83909c9a71551a981}\label{classastu_1_1EntityService_aa611795e8eca81a83909c9a71551a981}} 
+\mbox{\Hypertarget{classastu_1_1EntityService_ab338b1904b61dfe71c2b3bbcb390ada1}\label{classastu_1_1EntityService_ab338b1904b61dfe71c2b3bbcb390ada1}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Add\+Entity\+Listener@{Add\+Entity\+Listener}}
 \index{Add\+Entity\+Listener@{Add\+Entity\+Listener}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Add\+Entity\+Listener()}{AddEntityListener()}}
-{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Add\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$}]{listener }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Add\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{\hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&}]{listener }\end{DoxyParamCaption})}
 
 Adds an entity listener to this service.
 
@@ -107,7 +109,7 @@ Adds an entity listener to this service.
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Get\+Entity\+View@{Get\+Entity\+View}}
 \index{Get\+Entity\+View@{Get\+Entity\+View}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Get\+Entity\+View()}{GetEntityView()}}
-{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$Entity\+View$>$ astu\+::\+Entity\+Service\+::\+Get\+Entity\+View (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View}$>$ astu\+::\+Entity\+Service\+::\+Get\+Entity\+View (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family }\end{DoxyParamCaption})}
 
 Returns a view to a certain family of entities.
 
@@ -116,11 +118,22 @@ Any caller of this method can keep the returned pointer to the entity view. The 
 \begin{DoxyReturn}{Returns}
 the entity view 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1EntityService_a333b2d932a0ce15687c76b6c361a7e82}\label{classastu_1_1EntityService_a333b2d932a0ce15687c76b6c361a7e82}} 
+\mbox{\Hypertarget{classastu_1_1EntityService_a4a3c14fd7aa8edf4263913046744f277}\label{classastu_1_1EntityService_a4a3c14fd7aa8edf4263913046744f277}} 
+\index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Has\+Entity@{Has\+Entity}}
+\index{Has\+Entity@{Has\+Entity}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
+\subsubsection{\texorpdfstring{Has\+Entity()}{HasEntity()}}
+{\footnotesize\ttfamily bool astu\+::\+Entity\+Service\+::\+Has\+Entity (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$}]{entity }\end{DoxyParamCaption}) const}
+
+Tests whether the specified entity exists.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the entity exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityService_a57fa7f62f90b8ecf4513045d7be9f15c}\label{classastu_1_1EntityService_a57fa7f62f90b8ecf4513045d7be9f15c}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Has\+Entity\+Listener@{Has\+Entity\+Listener}}
 \index{Has\+Entity\+Listener@{Has\+Entity\+Listener}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Has\+Entity\+Listener()}{HasEntityListener()}}
-{\footnotesize\ttfamily bool astu\+::\+Entity\+Service\+::\+Has\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$}]{listener }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool astu\+::\+Entity\+Service\+::\+Has\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{\hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&}]{listener }\end{DoxyParamCaption}) const}
 
 Tests whether an entity listener has already been added.
 
@@ -137,11 +150,11 @@ Tests whether an entity listener has already been added.
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Entity\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1EntityService_a293ff7c8b84837b08cdabe98ed8a23ea}\label{classastu_1_1EntityService_a293ff7c8b84837b08cdabe98ed8a23ea}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!On\+Startup@{On\+Startup}}
@@ -149,11 +162,11 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Entity\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc10e0}\label{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc10e0}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!On\+Update@{On\+Update}}
@@ -161,9 +174,9 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8
 \subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Entity\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called when this updatable gets updated. 
+Called when an update is due. 
 
-Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+Reimplemented from \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}.
 
 \mbox{\Hypertarget{classastu_1_1EntityService_a1b21cf207324748c13c34568d3c1513e}\label{classastu_1_1EntityService_a1b21cf207324748c13c34568d3c1513e}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Remove\+All@{Remove\+All}}
@@ -184,11 +197,11 @@ Removes an entity from this service.
 {\em entity} & the entity to remove \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1EntityService_a56effcd0e2c79f6b2030207541085bb5}\label{classastu_1_1EntityService_a56effcd0e2c79f6b2030207541085bb5}} 
+\mbox{\Hypertarget{classastu_1_1EntityService_ac543fe51a3d1c9784bcab5775f5d388d}\label{classastu_1_1EntityService_ac543fe51a3d1c9784bcab5775f5d388d}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Remove\+Entity@{Remove\+Entity}}
 \index{Remove\+Entity@{Remove\+Entity}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Remove\+Entity()}{RemoveEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Remove\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{Entity} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Remove\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Removes an entity from this service.
 
@@ -197,11 +210,11 @@ Removes an entity from this service.
 {\em entity} & the entity to remove \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1EntityService_a4ecee40a8872203bf75c6ddbf67a05c1}\label{classastu_1_1EntityService_a4ecee40a8872203bf75c6ddbf67a05c1}} 
+\mbox{\Hypertarget{classastu_1_1EntityService_af9b12ecd243f0b0f98799fa2d147fecb}\label{classastu_1_1EntityService_af9b12ecd243f0b0f98799fa2d147fecb}} 
 \index{astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}!Remove\+Entity\+Listener@{Remove\+Entity\+Listener}}
 \index{Remove\+Entity\+Listener@{Remove\+Entity\+Listener}!astu\+::\+Entity\+Service@{astu\+::\+Entity\+Service}}
 \subsubsection{\texorpdfstring{Remove\+Entity\+Listener()}{RemoveEntityListener()}}
-{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Remove\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} $>$}]{listener }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Service\+::\+Remove\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{\hyperlink{classastu_1_1IEntityListener}{I\+Entity\+Listener} \&}]{listener }\end{DoxyParamCaption})}
 
 Removes an entity listener to from service.
 
@@ -216,4 +229,4 @@ Removes an entity listener to from service.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Entity\+Service.\+h\end{DoxyCompactItemize}
+include/\+E\+C\+S/Entity\+Service.\+h\end{DoxyCompactItemize}

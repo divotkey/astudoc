@@ -1,0 +1,212 @@
+\hypertarget{classastu_1_1Palette}{}\section{astu\+:\+:Palette Class Reference}
+\label{classastu_1_1Palette}\index{astu\+::\+Palette@{astu\+::\+Palette}}
+
+
+{\ttfamily \#include $<$Palette.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Palette_af3a2786903a43f82307b4e47a424cc38}{Palette} (const \hyperlink{classastu_1_1Color}{Color4d} \&start=\hyperlink{classastu_1_1WebColors_ac75482e858498b1b3fa521ba93fcda98a915454255bdc03ff9d0fadee51ba3d50}{Web\+Colors\+::\+Black}, const \hyperlink{classastu_1_1Color}{Color4d} \&end=\hyperlink{classastu_1_1WebColors_ac75482e858498b1b3fa521ba93fcda98acc916d617a3ce8d3e4b9716bbdc231e5}{Web\+Colors\+::\+White})
+\item 
+\hyperlink{classastu_1_1Palette}{Palette} \& \hyperlink{classastu_1_1Palette_af32e6e54d464b2d999472ec1e39828c7}{Set\+Start\+Color} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1Palette_aaee594ef9056e05b7032714e7de810a6}{Get\+Start\+Color} () const
+\item 
+\hyperlink{classastu_1_1Palette}{Palette} \& \hyperlink{classastu_1_1Palette_a6eadba10ea3611ce4c54129df75eadc7}{Set\+End\+Color} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1Palette_aa67126acdc862688518f3aca13ecc80b}{Get\+End\+Color} () const
+\item 
+\hyperlink{classastu_1_1Palette}{Palette} \& \hyperlink{classastu_1_1Palette_a742c7531ae21206738af971d1987cb36}{Add\+Color} (const \hyperlink{classastu_1_1Color}{Color4d} \&c, double p)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1Palette_afc6cac18675f8441307b895dfcd0282e}{Get\+Color} (double pos) const
+\item 
+size\+\_\+t \hyperlink{classastu_1_1Palette_af99ff2f3a95466072070d6bb2b401587}{Num\+Colors} () const
+\item 
+size\+\_\+t \hyperlink{classastu_1_1Palette_a966a720d7f24685c88c8a711ad284488}{size} () const
+\item 
+const \hyperlink{classastu_1_1Color}{Color4d} \& \hyperlink{classastu_1_1Palette_a5cf0b8043184527e3a7ead5c03f1f741}{at} (size\+\_\+t idx) const
+\item 
+const \hyperlink{classastu_1_1Color}{Color4d} \& \hyperlink{classastu_1_1Palette_a1dccfd3d766edbbf64dabb010f9679e0}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t idx) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classastu_1_1Palette}{Palette} represents a set of colors used to create color transitions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Palette_af3a2786903a43f82307b4e47a424cc38}\label{classastu_1_1Palette_af3a2786903a43f82307b4e47a424cc38}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Palette@{Palette}}
+\index{Palette@{Palette}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Palette()}{Palette()}}
+{\footnotesize\ttfamily astu\+::\+Palette\+::\+Palette (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{start = {\ttfamily \hyperlink{classastu_1_1WebColors_ac75482e858498b1b3fa521ba93fcda98a915454255bdc03ff9d0fadee51ba3d50}{Web\+Colors\+::\+Black}},  }\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{end = {\ttfamily \hyperlink{classastu_1_1WebColors_ac75482e858498b1b3fa521ba93fcda98acc916d617a3ce8d3e4b9716bbdc231e5}{Web\+Colors\+::\+White}} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & the start color of this palette \\
+\hline
+{\em end} & the end color of thsi palette \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Palette_a742c7531ae21206738af971d1987cb36}\label{classastu_1_1Palette_a742c7531ae21206738af971d1987cb36}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Add\+Color@{Add\+Color}}
+\index{Add\+Color@{Add\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Add\+Color()}{AddColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Palette}{Palette}\& astu\+::\+Palette\+::\+Add\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c,  }\item[{double}]{p }\end{DoxyParamCaption})}
+
+Adds a color to this palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the color to add \\
+\hline
+{\em p} & the position within the palette \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the position is out of range \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1Palette_a5cf0b8043184527e3a7ead5c03f1f741}\label{classastu_1_1Palette_a5cf0b8043184527e3a7ead5c03f1f741}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!at@{at}}
+\index{at@{at}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4d}\& astu\+::\+Palette\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const}
+
+Returns the color with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the color to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested color 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the index is invalid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1Palette_afc6cac18675f8441307b895dfcd0282e}\label{classastu_1_1Palette_afc6cac18675f8441307b895dfcd0282e}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Get\+Color@{Get\+Color}}
+\index{Get\+Color@{Get\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Get\+Color()}{GetColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Palette\+::\+Get\+Color (\begin{DoxyParamCaption}\item[{double}]{pos }\end{DoxyParamCaption}) const}
+
+Extracts a color from this palette.
+
+The specified position gets clamped to the range \mbox{[}0, 1\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the the position within this palette \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_aa67126acdc862688518f3aca13ecc80b}\label{classastu_1_1Palette_aa67126acdc862688518f3aca13ecc80b}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Get\+End\+Color@{Get\+End\+Color}}
+\index{Get\+End\+Color@{Get\+End\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Get\+End\+Color()}{GetEndColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Palette\+::\+Get\+End\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the end color of this palette.
+
+\begin{DoxyReturn}{Returns}
+the end color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_aaee594ef9056e05b7032714e7de810a6}\label{classastu_1_1Palette_aaee594ef9056e05b7032714e7de810a6}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Get\+Start\+Color@{Get\+Start\+Color}}
+\index{Get\+Start\+Color@{Get\+Start\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Get\+Start\+Color()}{GetStartColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Palette\+::\+Get\+Start\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the start color of this palette.
+
+\begin{DoxyReturn}{Returns}
+the start color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_af99ff2f3a95466072070d6bb2b401587}\label{classastu_1_1Palette_af99ff2f3a95466072070d6bb2b401587}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Num\+Colors@{Num\+Colors}}
+\index{Num\+Colors@{Num\+Colors}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Num\+Colors()}{NumColors()}}
+{\footnotesize\ttfamily size\+\_\+t astu\+::\+Palette\+::\+Num\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of colors in this palette.
+
+\begin{DoxyReturn}{Returns}
+number of color including start end end color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_a1dccfd3d766edbbf64dabb010f9679e0}\label{classastu_1_1Palette_a1dccfd3d766edbbf64dabb010f9679e0}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4d}\& astu\+::\+Palette\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const}
+
+Subscript operator for this palette.
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em idx} & index of the color to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested color 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classastu_1_1Palette_a6eadba10ea3611ce4c54129df75eadc7}\label{classastu_1_1Palette_a6eadba10ea3611ce4c54129df75eadc7}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Set\+End\+Color@{Set\+End\+Color}}
+\index{Set\+End\+Color@{Set\+End\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Set\+End\+Color()}{SetEndColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Palette}{Palette}\& astu\+::\+Palette\+::\+Set\+End\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the end color of this palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the start color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this palette for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_af32e6e54d464b2d999472ec1e39828c7}\label{classastu_1_1Palette_af32e6e54d464b2d999472ec1e39828c7}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!Set\+Start\+Color@{Set\+Start\+Color}}
+\index{Set\+Start\+Color@{Set\+Start\+Color}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{Set\+Start\+Color()}{SetStartColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Palette}{Palette}\& astu\+::\+Palette\+::\+Set\+Start\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the start color of this palette.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the start color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this palette for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Palette_a966a720d7f24685c88c8a711ad284488}\label{classastu_1_1Palette_a966a720d7f24685c88c8a711ad284488}} 
+\index{astu\+::\+Palette@{astu\+::\+Palette}!size@{size}}
+\index{size@{size}!astu\+::\+Palette@{astu\+::\+Palette}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t astu\+::\+Palette\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of colors in this palette.
+
+\begin{DoxyReturn}{Returns}
+number of color including start end end color 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Graphics/Palette.\+h\end{DoxyCompactItemize}

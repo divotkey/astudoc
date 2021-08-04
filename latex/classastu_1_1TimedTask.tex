@@ -1,0 +1,133 @@
+\hypertarget{classastu_1_1TimedTask}{}\section{astu\+:\+:Timed\+Task Class Reference}
+\label{classastu_1_1TimedTask}\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+
+
+{\ttfamily \#include $<$Tasks.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Timed\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classastu_1_1TimedTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Timed\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classastu_1_1TimedTask__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1TimedTask_a5e850f0352294d2c9b302e1a56c6eb09}{Update} (double dt) override
+\item 
+virtual void \hyperlink{classastu_1_1TimedTask_ac885f7d65aab450125fc4e00eb045a82}{Reset} () override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1TimedTask_ac1ad06e4f881253f519859b2e54731f9}{Timed\+Task} ()
+\item 
+void \hyperlink{classastu_1_1TimedTask_a69dbe9174c108800f8a882d43c37c53a}{Set\+Duration} (double duration)
+\item 
+double \hyperlink{classastu_1_1TimedTask_a3eedd7872b46eaf8d2c14bee13435354}{Get\+Duration} () const
+\item 
+virtual void \hyperlink{classastu_1_1TimedTask_a10e9c957bb0fa2013d2d1ca04a0e0b55}{Process} (double t)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for timed tasks.
+
+Timed tasks are tasks that last only a certain amount of time. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1TimedTask_ac1ad06e4f881253f519859b2e54731f9}\label{classastu_1_1TimedTask_ac1ad06e4f881253f519859b2e54731f9}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Timed\+Task@{Timed\+Task}}
+\index{Timed\+Task@{Timed\+Task}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Timed\+Task()}{TimedTask()}}
+{\footnotesize\ttfamily astu\+::\+Timed\+Task\+::\+Timed\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1TimedTask_a3eedd7872b46eaf8d2c14bee13435354}\label{classastu_1_1TimedTask_a3eedd7872b46eaf8d2c14bee13435354}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Get\+Duration@{Get\+Duration}}
+\index{Get\+Duration@{Get\+Duration}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Get\+Duration()}{GetDuration()}}
+{\footnotesize\ttfamily double astu\+::\+Timed\+Task\+::\+Get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the duration of this timed task.
+
+\begin{DoxyReturn}{Returns}
+the duration in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1TimedTask_a10e9c957bb0fa2013d2d1ca04a0e0b55}\label{classastu_1_1TimedTask_a10e9c957bb0fa2013d2d1ca04a0e0b55}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Process@{Process}}
+\index{Process@{Process}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Timed\+Task\+::\+Process (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Called by this base class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & percentage time value in the range \mbox{[}0, 1\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1TimedTask_ac885f7d65aab450125fc4e00eb045a82}\label{classastu_1_1TimedTask_ac885f7d65aab450125fc4e00eb045a82}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Timed\+Task\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this task to its initial condition. 
+
+Reimplemented from \hyperlink{classastu_1_1Task_af68025df1de6ad31882f0ccee5ccb100}{astu\+::\+Task}.
+
+\mbox{\Hypertarget{classastu_1_1TimedTask_a69dbe9174c108800f8a882d43c37c53a}\label{classastu_1_1TimedTask_a69dbe9174c108800f8a882d43c37c53a}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Set\+Duration@{Set\+Duration}}
+\index{Set\+Duration@{Set\+Duration}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Set\+Duration()}{SetDuration()}}
+{\footnotesize\ttfamily void astu\+::\+Timed\+Task\+::\+Set\+Duration (\begin{DoxyParamCaption}\item[{double}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the duration of this timed task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the duration in seconds \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain} & error in case the duration is less than zero \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1TimedTask_a5e850f0352294d2c9b302e1a56c6eb09}\label{classastu_1_1TimedTask_a5e850f0352294d2c9b302e1a56c6eb09}} 
+\index{astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}!Update@{Update}}
+\index{Update@{Update}!astu\+::\+Timed\+Task@{astu\+::\+Timed\+Task}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Timed\+Task\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates this task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since tha last update in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1Task_a2bcec3cc42b46cfcb03422e029577c0a}{astu\+::\+Task}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Tasks.\+h\end{DoxyCompactItemize}

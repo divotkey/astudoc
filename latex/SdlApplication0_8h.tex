@@ -1,0 +1,65 @@
+\hypertarget{SdlApplication0_8h}{}\section{include/\+Suite\+S\+D\+L/\+Sdl\+Application0.h File Reference}
+\label{SdlApplication0_8h}\index{include/\+Suite\+S\+D\+L/\+Sdl\+Application0.\+h@{include/\+Suite\+S\+D\+L/\+Sdl\+Application0.\+h}}
+
+
+This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__sdl__group_ga8f43e7993cf196bb0af33a60bc93aa75}{Init\+App} (int width, int height, const char title\mbox{[}$\,$\mbox{]}=\char`\"{}A\+S\+TU/S\+DL Application\char`\"{}, bool vsync=true)
+\item 
+void \hyperlink{group__sdl__group_gaf4cba1685a7c46bccc7bbdf863114cee}{Quit\+App} ()
+\item 
+int \hyperlink{group__sdl__group_ga6dfd8bbc85eeeee6922576be9ae65e29}{Set\+Window\+Title} (const char title\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{group__sdl__group_ga9bf9bfe01e7d336c3a3b13cc923ff850}{Update\+App} ()
+\item 
+bool \hyperlink{group__sdl__group_ga6d29aa641d22a0299da4710022c8c96b}{Is\+App\+Terminated} ()
+\item 
+int \hyperlink{group__sdl__group_ga4cc0ada571b47d2b809d441fa6766b52}{Clear\+Canvas} ()
+\item 
+int \hyperlink{group__sdl__group_gade420aec0a7492d5ac5f320b1ff4a814}{Render\+Line} (double x1, double y1, double x2, double y2)
+\item 
+int \hyperlink{group__sdl__group_gadd510400a2614b9b8fd8afbe368fc795}{Render\+Point} (double x, double y)
+\item 
+int \hyperlink{group__sdl__group_gaa5b815a9fcac2b1be46a5957bdbfd13f}{Render\+Rectangle} (double x, double y, double w, double h, bool filled=false)
+\item 
+int \hyperlink{group__sdl__group_ga639ecb3c5d86733ee9b38dcdf49c723f}{Render\+Regular\+Polygon} (double x, double y, double r, unsigned int n, double angle=0)
+\item 
+int \hyperlink{group__sdl__group_gab01fa8f79d94269a5b9a1cb7d2e51843}{Set\+Render\+Color} (int r, int g, int b, int a=255)
+\item 
+int \hyperlink{group__sdl__group_gaa5ac5769b86fd14f41fc2421e8e029bc}{Set\+Render\+Color} (int rgba)
+\item 
+int \hyperlink{group__sdl__group_ga540012b7df5eddd0b109543deaa66a22}{Set\+Background\+Color} (int r, int g, int b)
+\item 
+int \hyperlink{group__sdl__group_gaa80de83a7c03984305662ae0ca5daa05}{Set\+Background\+Color} (int rgb)
+\item 
+int \hyperlink{group__sdl__group_gaa938d3f784d26ccd4ed8c2d83bbc6ab4}{Get\+Window\+Width} ()
+\item 
+int \hyperlink{group__sdl__group_gac27ddd893a70056c55278b33d7bd2c62}{Get\+Window\+Height} ()
+\item 
+int \hyperlink{group__sdl__group_ga7c508c83150dcd127156d9c4e2436a8e}{Get\+CursorX} ()
+\item 
+int \hyperlink{group__sdl__group_ga4769e37502d12fbc431ace1a32749bc8}{Get\+CursorY} ()
+\item 
+bool \hyperlink{group__sdl__group_ga2537bad9d6f115fee49a741e7e2623a6}{Is\+Mouse\+Button\+Pressed} (int button)
+\item 
+bool \hyperlink{group__sdl__group_ga8f17cac7776ed1c12041101c8abb740b}{Is\+Mouse\+Button\+Clicked} (int button)
+\item 
+double \hyperlink{group__sdl__group_gaf9e3349b29171ad58521f5a7a6238fca}{Get\+Delta\+Time} ()
+\item 
+double \hyperlink{group__sdl__group_ga9b9387d774c6bc63e5e3c6c91296dedb}{Get\+Absolute\+Time} ()
+\item 
+void \hyperlink{group__sdl__group_ga5b39467f3664fad21ce3c0f14c4506ff}{Reset\+Absolute\+Time} ()
+\item 
+double \hyperlink{group__sdl__group_gaa48ddc248a57dfa1e4afdd6be2a76531}{Get\+Fps} ()
+\item 
+const char $\ast$ \hyperlink{group__sdl__group_ga236d5b80ee4ca0a1abe0ae054f7fbe2f}{Get\+Fps\+String} (const char $\ast$text=nullptr, int precision=3)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines public functions related to S\+D\+L-\/based applications using A\+ST utilities A\+P\+I-\/\+Level 0. 
+

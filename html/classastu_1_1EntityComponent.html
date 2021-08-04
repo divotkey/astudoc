@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -66,13 +66,28 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classastu_1_1EntityComponent-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">astu::EntityComponent Class Reference<div class="ingroups"><a class="el" href="group__ecs__group.html">Entity component system</a></div></div>  </div>
+<div class="title">astu::EntityComponent Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__ecs__group.html">Entity component system</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="EntityService_8h_source.html">EntityService.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for astu::EntityComponent:</div>
+<div class="dyncontent">
+<div class="center"><img src="classastu_1_1EntityComponent__inherit__graph.png" border="0" usemap="#astu_1_1EntityComponent_inherit__map" alt="Inheritance graph"/></div>
+<map name="astu_1_1EntityComponent_inherit__map" id="astu_1_1EntityComponent_inherit__map">
+<area shape="rect" id="node2" href="classastu_1_1suite2d_1_1CAutoRotate.html" title="astu::suite2d::CAutoRotate" alt="" coords="213,5,395,32"/>
+<area shape="rect" id="node3" href="classastu_1_1suite2d_1_1CBody.html" title="astu::suite2d::CBody" alt="" coords="231,56,377,83"/>
+<area shape="rect" id="node4" href="classastu_1_1suite2d_1_1CBodyCollider.html" title="astu::suite2d::CBodyCollider" alt="" coords="209,107,399,133"/>
+<area shape="rect" id="node7" href="classastu_1_1suite2d_1_1CPose.html" title="astu::suite2d::CPose" alt="" coords="231,157,377,184"/>
+<area shape="rect" id="node8" href="classastu_1_1suite2d_1_1CScene.html" title="astu::suite2d::CScene" alt="" coords="228,208,380,235"/>
+<area shape="rect" id="node5" href="classastu_1_1suite2d_1_1CCircleCollider.html" title="astu::suite2d::CCircleCollider" alt="" coords="453,81,647,108"/>
+<area shape="rect" id="node6" href="classastu_1_1suite2d_1_1CPolygonCollider.html" title="astu::suite2d::CPolygonCollider" alt="" coords="447,132,653,159"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -80,10 +95,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bb95d7ddc55093fd86e04d5b6aa98ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17295f763e201247c22bc677541646e5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#a17295f763e201247c22bc677541646e5">~EntityComponent</a> ()</td></tr>
 <tr class="separator:a17295f763e201247c22bc677541646e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeddb5a899d831255a9a4f07269f3b2d"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#afeddb5a899d831255a9a4f07269f3b2d">Clone</a> ()=0</td></tr>
+<tr class="separator:afeddb5a899d831255a9a4f07269f3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8736f12dc9d2be7d2569408fc1040480"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#a8736f12dc9d2be7d2569408fc1040480">OnAddedToEntity</a> (<a class="el" href="classastu_1_1Entity.html">astu::Entity</a> &amp;entity)</td></tr>
+<tr class="separator:a8736f12dc9d2be7d2569408fc1040480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f03e175444f5ca650775fb89963925"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#a84f03e175444f5ca650775fb89963925">HasParent</a> () const</td></tr>
+<tr class="separator:a84f03e175444f5ca650775fb89963925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c2dc735241902588358b933a786603"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classastu_1_1Entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#ae3c2dc735241902588358b933a786603">GetParent</a> ()</td></tr>
+<tr class="separator:ae3c2dc735241902588358b933a786603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a590990c23ca5bfa8d555b526d7a39"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="classastu_1_1Entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html#a33a590990c23ca5bfa8d555b526d7a39">GetParent</a> () const</td></tr>
+<tr class="separator:a33a590990c23ca5bfa8d555b526d7a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a614439ccac0344926adc4c0165d64060"><td class="memItemLeft" align="right" valign="top"><a id="a614439ccac0344926adc4c0165d64060"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b></td></tr>
+<tr class="separator:a614439ccac0344926adc4c0165d64060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for all entity components. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Base class for all entity components.</p>
+<p><b>Example Header-File for custom entity components</b> </p><div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div><div class="line"></div><div class="line"><span class="comment">// AST Utilities includes</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="AstuECS_8h.html">AstuECS.h</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>CMyComponent : <span class="keyword">public</span> <a class="code" href="classastu_1_1EntityComponent.html">astu::EntityComponent</a> {</div><div class="line"><span class="keyword">public</span>: </div><div class="line">    <span class="comment">// Add component data member here...</span></div><div class="line"></div><div class="line">    CMyComponent() {</div><div class="line">        <span class="comment">// Intentionally left empty.        </span></div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// Inherited via EntityComponent</span></div><div class="line">    <span class="keyword">virtual</span> std::shared_ptr&lt;EntityComponent&gt; <a class="code" href="classastu_1_1EntityComponent.html#afeddb5a899d831255a9a4f07269f3b2d">Clone</a>()<span class="keyword"> override </span>{</div><div class="line">        <span class="comment">// Create copy using copy-constructor.</span></div><div class="line">        <span class="keywordflow">return</span> std::make_shared&lt;CMyComponent&gt;(*this);</div><div class="line">    }    </div><div class="line">};</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9bb95d7ddc55093fd86e04d5b6aa98ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bb95d7ddc55093fd86e04d5b6aa98ec">&#9670;&nbsp;</a></span>EntityComponent()</h2>
 
@@ -136,8 +167,155 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afeddb5a899d831255a9a4f07269f3b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeddb5a899d831255a9a4f07269f3b2d">&#9670;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a>&gt; astu::EntityComponent::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a copy of this entity component.</p>
+<dl class="section return"><dt>Returns</dt><dd>a copy of this componend </dd></dl>
+
+<p>Implemented in <a class="el" href="classastu_1_1suite2d_1_1CPose.html#a90d4fb820221ddabf9c95d5a10796359">astu::suite2d::CPose</a>, <a class="el" href="classastu_1_1suite2d_1_1CScene.html#ae8dad316175ec4bbfbdb7fff3c736cd3">astu::suite2d::CScene</a>, and <a class="el" href="classastu_1_1suite2d_1_1CAutoRotate.html#af130721018671489c7de3f652ffcc8cf">astu::suite2d::CAutoRotate</a>.</p>
+
+</div>
+</div>
+<a id="ae3c2dc735241902588358b933a786603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3c2dc735241902588358b933a786603">&#9670;&nbsp;</a></span>GetParent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classastu_1_1Entity.html">Entity</a>&gt; astu::EntityComponent::GetParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the parent entity of this component.</p>
+<dl class="section return"><dt>Returns</dt><dd>the parent entity </dd></dl>
+
+</div>
+</div>
+<a id="a33a590990c23ca5bfa8d555b526d7a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a590990c23ca5bfa8d555b526d7a39">&#9670;&nbsp;</a></span>GetParent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;const <a class="el" href="classastu_1_1Entity.html">Entity</a>&gt; astu::EntityComponent::GetParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the parent entity of this component.</p>
+<dl class="section return"><dt>Returns</dt><dd>the parent entity </dd></dl>
+
+</div>
+</div>
+<a id="a84f03e175444f5ca650775fb89963925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f03e175444f5ca650775fb89963925">&#9670;&nbsp;</a></span>HasParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool astu::EntityComponent::HasParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tests whether this component has been attached to an entity.</p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if this component has a parent entity </dd></dl>
+
+</div>
+</div>
+<a id="a8736f12dc9d2be7d2569408fc1040480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8736f12dc9d2be7d2569408fc1040480">&#9670;&nbsp;</a></span>OnAddedToEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void astu::EntityComponent::OnAddedToEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a> &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when added to an entity.</p>
+<p>Most components do not need to override this method. Is is used occasionally to register additional interfaces a component implements. Registering implemented interfaces is necessary in order to make a component accessible via this interface and not just by the component type itself.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>the entity this component has been added to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classastu_1_1suite2d_1_1CPolygonCollider.html#ac30165a676e92f89e1a840f858d9a050">astu::suite2d::CPolygonCollider</a>, and <a class="el" href="classastu_1_1suite2d_1_1CCircleCollider.html#aa77499480ca5f7d49f6331986b675a46">astu::suite2d::CCircleCollider</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="EntityService_8h_source.html">EntityService.h</a></li>
+<li>include/ECS/<a class="el" href="EntityService_8h_source.html">EntityService.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

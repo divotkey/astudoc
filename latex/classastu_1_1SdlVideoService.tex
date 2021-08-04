@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Sdl\+Video\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=322pt]{classastu_1_1SdlVideoService__inherit__graph}
+\includegraphics[width=350pt]{classastu_1_1SdlVideoService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -33,7 +33,9 @@ S\+D\+L\+\_\+\+Window $\ast$ \hyperlink{classastu_1_1SdlVideoService_af0282450cc
 \item 
 bool \hyperlink{classastu_1_1SdlVideoService_aa40bb996597ad6c1005ce9dfd632cf28}{Is\+Vulkan\+Support\+Enabled} () const
 \item 
-void \hyperlink{classastu_1_1SdlVideoService_a33679f9d46b5aa38c0b75b3b7f16705d}{Enable\+Vulkan\+Support} (bool b)
+\hyperlink{classastu_1_1SdlVideoService}{Sdl\+Video\+Service} \& \hyperlink{classastu_1_1SdlVideoService_a1ffb1c36698630d153b50b37cb1bcaee}{Enable\+Vulkan\+Support} (bool b)
+\item 
+\hyperlink{classastu_1_1SdlVideoService}{Sdl\+Video\+Service} \& \hyperlink{classastu_1_1SdlVideoService_a46fe8816a8975a2d6cd7311bdbd46167}{Set\+Display} (int idx)
 \item 
 virtual void \hyperlink{classastu_1_1SdlVideoService_a1c8d729ef42024bc0cc5065ecc6631c8}{Set\+Size} (int width, int height) override
 \item 
@@ -44,6 +46,16 @@ virtual int \hyperlink{classastu_1_1SdlVideoService_a76d0f56254c9545d4d976234913
 virtual void \hyperlink{classastu_1_1SdlVideoService_aad3c873db481dd622d6ddcea70b279af}{Set\+Title} (const std\+::string \&title) override
 \item 
 virtual const std\+::string \& \hyperlink{classastu_1_1SdlVideoService_ad6ee7f7a409960e91ddd77bbcea6432f}{Get\+Title} () const override
+\item 
+virtual void \hyperlink{classastu_1_1SdlVideoService_ab50969b38dedf29146704898a74df5ae}{Set\+Resizable} (bool b) override
+\item 
+virtual bool \hyperlink{classastu_1_1SdlVideoService_a335762da99b341205b8bf759a0b57c64}{Is\+Resizable} () const override
+\item 
+virtual int \hyperlink{classastu_1_1SdlVideoService_a3aefc8ab3780a23cdef8780e42436fd5}{Num\+Displays} () const override
+\item 
+virtual void \hyperlink{classastu_1_1SdlVideoService_a45a37b4958f6e77e22ffa55699a171ef}{Set\+Fullscreen} (bool b) override
+\item 
+virtual bool \hyperlink{classastu_1_1SdlVideoService_ae2be9aedf021799802cf7d1feaef7dfc}{Is\+Fullscreen} () const override
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -76,11 +88,11 @@ Constructor. \mbox{\Hypertarget{classastu_1_1SdlVideoService_a5ab48fd8569c517151
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1SdlVideoService_a33679f9d46b5aa38c0b75b3b7f16705d}\label{classastu_1_1SdlVideoService_a33679f9d46b5aa38c0b75b3b7f16705d}} 
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_a1ffb1c36698630d153b50b37cb1bcaee}\label{classastu_1_1SdlVideoService_a1ffb1c36698630d153b50b37cb1bcaee}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Enable\+Vulkan\+Support@{Enable\+Vulkan\+Support}}
 \index{Enable\+Vulkan\+Support@{Enable\+Vulkan\+Support}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
 \subsubsection{\texorpdfstring{Enable\+Vulkan\+Support()}{EnableVulkanSupport()}}
-{\footnotesize\ttfamily void astu\+::\+Sdl\+Video\+Service\+::\+Enable\+Vulkan\+Support (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1SdlVideoService}{Sdl\+Video\+Service}\& astu\+::\+Sdl\+Video\+Service\+::\+Enable\+Vulkan\+Support (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
 
 Enables or disables Vulkan support.
 
@@ -89,6 +101,9 @@ Enables or disables Vulkan support.
 {\em b} & set to {\ttfamily true} to enable Vulkan \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this service for method chaining 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em std\+::logic\+\_\+error} & in case this service is already running \\
@@ -107,7 +122,7 @@ the height in pixls
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classastu_1_1IWindowManager_a80a146779e21437e8c6ef78889389dfc}{astu\+::\+I\+Window\+Manager}.
+Implements \hyperlink{classastu_1_1WindowService_a16d1880606a2c597162d8c80bed9d1a2}{astu\+::\+Window\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_af0282450cc95c0cbc2a6add84603dd7a}\label{classastu_1_1SdlVideoService_af0282450cc95c0cbc2a6add84603dd7a}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Get\+Sdl\+Window@{Get\+Sdl\+Window}}
@@ -135,7 +150,7 @@ the window title
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classastu_1_1IWindowManager_aa5733f1ceda60796f6e35f5f7b79ffa9}{astu\+::\+I\+Window\+Manager}.
+Implements \hyperlink{classastu_1_1WindowService_a54815692f9d3086673dd2694d75dcb65}{astu\+::\+Window\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_a45c3181611e718bcfe44862baed6d520}\label{classastu_1_1SdlVideoService_a45c3181611e718bcfe44862baed6d520}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Get\+Width@{Get\+Width}}
@@ -150,7 +165,37 @@ the width in pixls
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classastu_1_1IWindowManager_a6f818a88754bde33c3121e7413d3a554}{astu\+::\+I\+Window\+Manager}.
+Implements \hyperlink{classastu_1_1WindowService_ad2e75e91b0d72afb92c980fcbd8f227a}{astu\+::\+Window\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_ae2be9aedf021799802cf7d1feaef7dfc}\label{classastu_1_1SdlVideoService_ae2be9aedf021799802cf7d1feaef7dfc}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Is\+Fullscreen@{Is\+Fullscreen}}
+\index{Is\+Fullscreen@{Is\+Fullscreen}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Is\+Fullscreen()}{IsFullscreen()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Sdl\+Video\+Service\+::\+Is\+Fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns whether fullscreen mode is currently activated.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if fulscreen mode is activated 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1WindowService_aa94ce60d1e8dd7484d364b65c25be1ca}{astu\+::\+Window\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_a335762da99b341205b8bf759a0b57c64}\label{classastu_1_1SdlVideoService_a335762da99b341205b8bf759a0b57c64}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Is\+Resizable@{Is\+Resizable}}
+\index{Is\+Resizable@{Is\+Resizable}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Is\+Resizable()}{IsResizable()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Sdl\+Video\+Service\+::\+Is\+Resizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns whether the window is resizable.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the window is resizable 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1WindowService_a277954f71dd019b3ffc5d37df3f8b3af}{astu\+::\+Window\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_aa40bb996597ad6c1005ce9dfd632cf28}\label{classastu_1_1SdlVideoService_aa40bb996597ad6c1005ce9dfd632cf28}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Is\+Vulkan\+Support\+Enabled@{Is\+Vulkan\+Support\+Enabled}}
@@ -163,17 +208,27 @@ Returns whether Vulkan support has been enabled.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if support for Vulkan has been enabled 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_a3aefc8ab3780a23cdef8780e42436fd5}\label{classastu_1_1SdlVideoService_a3aefc8ab3780a23cdef8780e42436fd5}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Num\+Displays@{Num\+Displays}}
+\index{Num\+Displays@{Num\+Displays}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Num\+Displays()}{NumDisplays()}}
+{\footnotesize\ttfamily virtual int astu\+::\+Sdl\+Video\+Service\+::\+Num\+Displays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the number of available displays. 
+
+Implements \hyperlink{classastu_1_1WindowService_ad773e0c567946e06ace76c016bb16349}{astu\+::\+Window\+Service}.
+
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_a6d6085e9ff213c5d41546d604ff53e92}\label{classastu_1_1SdlVideoService_a6d6085e9ff213c5d41546d604ff53e92}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!On\+Shutdown@{On\+Shutdown}}
 \index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Video\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_add229ac2af59a4aea090e4de4c67e530}\label{classastu_1_1SdlVideoService_add229ac2af59a4aea090e4de4c67e530}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!On\+Startup@{On\+Startup}}
@@ -181,11 +236,61 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Video\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_a46fe8816a8975a2d6cd7311bdbd46167}\label{classastu_1_1SdlVideoService_a46fe8816a8975a2d6cd7311bdbd46167}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Set\+Display@{Set\+Display}}
+\index{Set\+Display@{Set\+Display}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Set\+Display()}{SetDisplay()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1SdlVideoService}{Sdl\+Video\+Service}\& astu\+::\+Sdl\+Video\+Service\+::\+Set\+Display (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+Sets the index of the display used to open the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the display. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this service for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_a45a37b4958f6e77e22ffa55699a171ef}\label{classastu_1_1SdlVideoService_a45a37b4958f6e77e22ffa55699a171ef}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Set\+Fullscreen@{Set\+Fullscreen}}
+\index{Set\+Fullscreen@{Set\+Fullscreen}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Set\+Fullscreen()}{SetFullscreen()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Video\+Service\+::\+Set\+Fullscreen (\begin{DoxyParamCaption}\item[{bool}]{enable\+Fullscreen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Activates or deactivates fullscreen mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+Fullscreen} & set to {\ttfamily true} to activate fullscreen mode \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1WindowService_abe2ef0eb9f42078676318945e15d2dce}{astu\+::\+Window\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlVideoService_ab50969b38dedf29146704898a74df5ae}\label{classastu_1_1SdlVideoService_ab50969b38dedf29146704898a74df5ae}} 
+\index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Set\+Resizable@{Set\+Resizable}}
+\index{Set\+Resizable@{Set\+Resizable}!astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}}
+\subsubsection{\texorpdfstring{Set\+Resizable()}{SetResizable()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Video\+Service\+::\+Set\+Resizable (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Specifies whether the window should be resizable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the {\ttfamily true} if the window should be resizable \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1WindowService_a78bee95831f4497fcee7b8d10575f0d8}{astu\+::\+Window\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_a1c8d729ef42024bc0cc5065ecc6631c8}\label{classastu_1_1SdlVideoService_a1c8d729ef42024bc0cc5065ecc6631c8}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Set\+Size@{Set\+Size}}
@@ -204,7 +309,7 @@ Sets the dimension of the window.
 \end{DoxyParams}
 
 
-Implements \hyperlink{classastu_1_1IWindowManager_aca77eeecb7c790fa3c1d58c20dd7294f}{astu\+::\+I\+Window\+Manager}.
+Implements \hyperlink{classastu_1_1WindowService_a77fb8b7272b58e39c7d003923034eedf}{astu\+::\+Window\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlVideoService_aad3c873db481dd622d6ddcea70b279af}\label{classastu_1_1SdlVideoService_aad3c873db481dd622d6ddcea70b279af}} 
 \index{astu\+::\+Sdl\+Video\+Service@{astu\+::\+Sdl\+Video\+Service}!Set\+Title@{Set\+Title}}
@@ -221,10 +326,10 @@ Sets the window title.
 \end{DoxyParams}
 
 
-Implements \hyperlink{classastu_1_1IWindowManager_ae75ef0ce5ff6943712b9aa55cbfaadf8}{astu\+::\+I\+Window\+Manager}.
+Implements \hyperlink{classastu_1_1WindowService_a298dcaad372f611f14edb4ad33044efd}{astu\+::\+Window\+Service}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Sdl\+Video\+Service.\+h\end{DoxyCompactItemize}
+include/\+Suite\+S\+D\+L/Sdl\+Video\+Service.\+h\end{DoxyCompactItemize}

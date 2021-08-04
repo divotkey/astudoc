@@ -1,3 +1,129 @@
+\section*{Version 0.\+10.\+0}
+
+{\itshape Date\+: 2021-\/08-\/02}
+
+This version has undergone extensive adjustments. The source code was restructured and many names were changed for better consistency and understanding.
+
+
+\begin{DoxyItemize}
+\item Added application classes which simplify configuration of services.
+\item Renamed input events to input signals.
+\item Added header files to include categories of features.
+\item Improved documentation.
+\item Added support for full-\/screen mode.
+\item Extended functiuonality `\+Line\+Renderer\textquotesingle{}.
+\item Polyline scene graph objects can now be closed (e.\+g., polygons) or open.
+\item Changed order of include files to mach Unreal Engine requirements.
+\end{DoxyItemize}
+
+\section*{Version 0.\+9.\+3}
+
+{\itshape Date\+: 2021-\/07-\/08}
+
+
+\begin{DoxyItemize}
+\item Improved compatibility with G\+NU C++ Compiler
+\item Added input mapping service.
+\item Added task service.
+\item Added {\ttfamily Get\+Random\+Bool()} function.
+\item Renamed classed and structures for 2D environments to new naming convention.
+\item Added service to control 2D cameras with mouse and keyboard ({\ttfamily Camera\+Control\+Service2D}).
+\item Improved 2D scene graph.
+\item Improved E\+CS to use component interfaces in order to support derived components as well.
+\item Started to restructured source code structure.
+\item Extended random number generator class and made public.
+\item Added option to pause services.
+\item Added mathematical utility class {\ttfamily Segment1}.
+\end{DoxyItemize}
+
+\section*{Version 0.\+9.\+2}
+
+{\itshape Date\+: 2021-\/06-\/06}
+\begin{DoxyItemize}
+\item Added {\ttfamily Entity\+Factory\+Service} and extended {\ttfamily Entity} and {\ttfamily Entity\+Component} class.
+\end{DoxyItemize}
+
+\section*{Version 0.\+9.\+1}
+
+{\itshape Date\+: 2021-\/05-\/26}
+
+
+\begin{DoxyItemize}
+\item Improved service macros.
+\item Improved Camera2d.
+\item Added {\ttfamily I\+Render\+Service} interface to set background color.
+\item Added additional color constants.
+\item Added signal for mouse movement.
+\end{DoxyItemize}
+
+\section*{Version 0.\+9.\+0}
+
+{\itshape Date\+: 2021-\/05-\/24}
+
+
+\begin{DoxyItemize}
+\item Renamed {\ttfamily Mouse\+Button\+Listener} alias to {\ttfamily I\+Mouse\+Button\+Listener}.
+\item Renamed {\ttfamily Keystroke\+Listener} alias to {\ttfamily I\+Keystroke\+Listener}.
+\item Renamed {\ttfamily I\+Time\+Service} to {\ttfamily I\+Time\+Manager}.
+\item Improved A\+PI of {\ttfamily Service\+Manager}.
+\item Improved configuration of service features by inheritance (experimental).
+\item Improved {\ttfamily Vector2$<$T$>$} template class.
+\item Added scene graph for two-\/dimensional renderings.
+\item Improved/added {\ttfamily Math\+Utils} class.
+\item Improved signal facility.
+\end{DoxyItemize}
+
+\section*{Version 0.\+8.\+0}
+
+{\itshape Date\+: 2021-\/04-\/07}
+
+
+\begin{DoxyItemize}
+\item Added interface {\ttfamily I\+Line\+Renderer} and to graphics module.
+\item Added S\+D\+L-\/based implementations of {\ttfamily I\+Line\+Renderer} interface.
+\item Added parameter to {\ttfamily Say\+Version} and {\ttfamily Say\+Copyright} to add an empty line after the output.
+\end{DoxyItemize}
+
+\section*{Version 0.\+7.\+0}
+
+{\itshape Date\+: 2021-\/03-\/01}
+
+
+\begin{DoxyItemize}
+\item Added {\ttfamily Get\+Microseconds()} in addition to {\ttfamily Get\+Milliseconds()}.
+\item Added functions to query copyright information.
+\end{DoxyItemize}
+
+\section*{Version 0.\+6.\+4}
+
+{\itshape Date\+: 2021-\/02-\/02}
+
+
+\begin{DoxyItemize}
+\item Fixed missing {\ttfamily \#pragma once} in \hyperlink{ImageRenderer_8h_source}{Image\+Renderer.\+h}
+\end{DoxyItemize}
+
+\section*{Version 0.\+6.\+3}
+
+{\itshape Date\+: 2021-\/01-\/20}
+
+
+\begin{DoxyItemize}
+\item Changed Matrix3 class to be a template and moved it to public include folder.
+\item Improved {\ttfamily Palette} class.
+\item Extended and improved {\ttfamily Image\+Renderer} class.
+\item The documentation of the Full A\+PI has been updated and slightly extended.
+\end{DoxyItemize}
+
+\section*{Version 0.\+6.\+1}
+
+{\itshape Date\+: 2021-\/01-\/14}
+
+
+\begin{DoxyItemize}
+\item Added option to specify the maximum recursion depth the the scene quadtree in {\ttfamily Image\+Renderer} class.
+\end{DoxyItemize}
+
 \section*{Version 0.\+6.\+0}
 
 {\itshape Date\+: 2021-\/01-\/13}
@@ -37,7 +163,7 @@
 \begin{DoxyItemize}
 \item Added convenient function {\ttfamily Say\+Error()} for easy error output.
 \item Refactored {\ttfamily Vector2} class to be a template class.
-\item Added {\ttfamily Vector2d} alias for {\ttfamily astu\+::\+Vector2$<$double$>$}.
+\item Added {\ttfamily Vector2d} alias for {\ttfamily \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$double$>$}.
 \item Improved support for S\+D\+L-\/based applications using A\+P\+I-\/level 0.
 \end{DoxyItemize}
 

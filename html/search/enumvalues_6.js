@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['maroon',['Maroon',['../group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2',1,'astu']]]
+  ['gainsboro',['Gainsboro',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a7b4825bab2c426069a459e56b78a6465',1,'astu::WebColors']]],
+  ['gentianblue',['GentianBlue',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a777d55110e8c48ca1e713acd9804de39',1,'astu::RalColors']]],
+  ['ghostwhite',['GhostWhite',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98acba2e89b770eb60f29bab6069ceda0bf',1,'astu::WebColors']]],
+  ['gold',['Gold',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a6cf7484070e668dc13528b55b812237e',1,'astu::WebColors']]],
+  ['goldenrod',['Goldenrod',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98af7d1cb835e6495540e0cf34b0788af23',1,'astu::WebColors']]],
+  ['goldenyellow',['GoldenYellow',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a577b6801f0871e6fa21f72dfeeefe3a2',1,'astu::RalColors']]],
+  ['good',['Good',['../group__gfx__group.html#ggac3b4955f341cea44f53f8446d734cd54a0c6ad70beb3a7e76c3fc7adab7c46acc',1,'astu::Good()'],['../group__gfx__group.html#gga7bcac32f8bae9bfd1f21655d4734efe8a0c6ad70beb3a7e76c3fc7adab7c46acc',1,'astu::Good()']]],
+  ['granitegrey',['GraniteGrey',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a7f792302518ee8a3fd2fa5dd8c172119',1,'astu::RalColors']]],
+  ['graphiteblack',['GraphiteBlack',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034adcf3e025c5d339449b802d233409aa21',1,'astu::RalColors']]],
+  ['graphitegrey',['GraphiteGrey',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034ad9d1ca090a26f231e1aef3706b4002b8',1,'astu::RalColors']]],
+  ['grassgreen',['GrassGreen',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034aa63fed3be450afb8520e9bc130d99c87',1,'astu::RalColors']]],
+  ['gray',['Gray',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98add07bc347ec478e93387a904d0fe9b58',1,'astu::WebColors']]],
+  ['green',['Green',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a938abc8e640528db0015428eb2f02648',1,'astu::WebColors']]],
+  ['greenbeige',['GreenBeige',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a2adb0574db534d6445ad8551bf974f0d',1,'astu::RalColors']]],
+  ['greenblue',['GreenBlue',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a41d07588232591571549990b52838307',1,'astu::RalColors']]],
+  ['greenbrown',['GreenBrown',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a5ed64708e428ebc4a9a0f0b5a203c7b2',1,'astu::RalColors']]],
+  ['greengrey',['GreenGrey',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034afec861723ac13c1176ee5cf5ce2e399c',1,'astu::RalColors']]],
+  ['greenyellow',['GreenYellow',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a877681e327826b9c533f63c4fc5fddce',1,'astu::WebColors']]],
+  ['greyaluminium',['GreyAluminium',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034aa5419b15485347a287cc78100e9995bd',1,'astu::RalColors']]],
+  ['greybeige',['GreyBeige',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034af0ade6de0287726529dc9735d152e867',1,'astu::RalColors']]],
+  ['greyblue',['GreyBlue',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a1f5dbfbafcd72cd7cf61cf057a634a1e',1,'astu::RalColors']]],
+  ['greybrown',['GreyBrown',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a93ebd230517f059d0867840a99b67116',1,'astu::RalColors']]],
+  ['greyolive',['GreyOlive',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a7f548e36617eae2ed693bf93e17f0557',1,'astu::RalColors']]],
+  ['greywhite',['GreyWhite',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a202063929d2539be7e1332752394948f',1,'astu::RalColors']]]
 ];

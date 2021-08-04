@@ -1,0 +1,337 @@
+\hypertarget{classastu_1_1Application}{}\section{astu\+:\+:Application Class Reference}
+\label{classastu_1_1Application}\index{astu\+::\+Application@{astu\+::\+Application}}
+
+
+{\ttfamily \#include $<$Application.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Application_a8fd6025d4412ece9dc752a4a988f833f}{Application} ()
+\item 
+virtual \hyperlink{classastu_1_1Application_a9f165c3c8eba9eb7e09949aab426d653}{$\sim$\+Application} ()
+\item 
+void \hyperlink{classastu_1_1Application_a6d991cdd5263dd9d1a08218c84e70a24}{Set\+Width} (int w)
+\item 
+void \hyperlink{classastu_1_1Application_a192e4c7ccec81846119762f30aceaf12}{Set\+Height} (int h)
+\item 
+int \hyperlink{classastu_1_1Application_af6f316ed892f9bf487d49d5ba1309e3f}{Get\+Width} () const
+\item 
+int \hyperlink{classastu_1_1Application_aacee0ec39dbde4c506987abe4be99099}{Get\+Height} () const
+\item 
+void \hyperlink{classastu_1_1Application_ab1563999702c9d6ae6e707c4cd2c80c6}{Set\+Background\+Color} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1Application_ab033ca3bac5e8423638c118e5f92c62b}{Get\+Background\+Color} () const
+\item 
+void \hyperlink{classastu_1_1Application_aa311d33c9784e7326a9633336176fe05}{Set\+Draw\+Color} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1Application_a0b019c1dc5797d4ee5e604ed5cd831ed}{Get\+Draw\+Color} () const
+\item 
+void \hyperlink{classastu_1_1Application_afd2e771d8bfd2b1a55e11f62c099078a}{Draw\+Rectangle} (int x, int y, int w, int h, bool filled=true)
+\item 
+void \hyperlink{classastu_1_1Application_ade2136cdf7123cade44d9f8701018878}{Draw\+Line} (int x1, int y1, int x2, int y2)
+\item 
+void \hyperlink{classastu_1_1Application_af26daac7b639690cd2682b2b33b77218}{Draw\+Pixel} (int x, int y)
+\item 
+void \hyperlink{classastu_1_1Application_ae9d3de234f6abde882816e9866bd07bc}{Clear} ()
+\item 
+void \hyperlink{classastu_1_1Application_a497dd50375ba6694479e0c57c8e32ffd}{Run} ()
+\item 
+double \hyperlink{classastu_1_1Application_a54815b8eb1210d2a4da6f3f439741a4d}{Get\+Delta\+Time} () const
+\item 
+double \hyperlink{classastu_1_1Application_afd91358b09a41d418bc1776befdb0fd7}{Get\+Time} () const
+\item 
+void \hyperlink{classastu_1_1Application_a823b362755043240ba83b785038720ac}{Reset\+Time} (double t=0)
+\item 
+double \hyperlink{classastu_1_1Application_a500d7e7a9c0100b8a4e1df2f80f85da9}{Get\+Fps} () const
+\item 
+void \hyperlink{classastu_1_1Application_aa5336d4fa0fff6231b4260888cb04440}{Set\+Title} (const std\+::string \&title)
+\item 
+std\+::string \hyperlink{classastu_1_1Application_a7456b7ba3af6c3d984d6f4e40b268426}{Get\+Title} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1Application_ae7eb0ef242caceca38890f78ddb85718}{On\+Render} ()
+\item 
+virtual void \hyperlink{classastu_1_1Application_a337064e8db0320f0ffe23ed98fc9fd85}{On\+Startup} ()
+\item 
+virtual void \hyperlink{classastu_1_1Application_a1894a6f4aca54dd7a4c063b614832f3e}{On\+Shutdown} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+D\+L-\/based applications can be developed with the help of this class. This implementation represents an intermediate step between A\+S\+T-\/\+Utilities A\+PI Level 0 and Full-\/\+A\+PI. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Application_a8fd6025d4412ece9dc752a4a988f833f}\label{classastu_1_1Application_a8fd6025d4412ece9dc752a4a988f833f}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Application@{Application}}
+\index{Application@{Application}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily astu\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1Application_a9f165c3c8eba9eb7e09949aab426d653}\label{classastu_1_1Application_a9f165c3c8eba9eb7e09949aab426d653}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!````~Application@{$\sim$\+Application}}
+\index{````~Application@{$\sim$\+Application}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{$\sim$\+Application()}{~Application()}}
+{\footnotesize\ttfamily virtual astu\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Application_ae9d3de234f6abde882816e9866bd07bc}\label{classastu_1_1Application_ae9d3de234f6abde882816e9866bd07bc}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Clear@{Clear}}
+\index{Clear@{Clear}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the canvas using the current clear color. \mbox{\Hypertarget{classastu_1_1Application_ade2136cdf7123cade44d9f8701018878}\label{classastu_1_1Application_ade2136cdf7123cade44d9f8701018878}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+Draws a line with the current draw color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the start point \\
+\hline
+{\em y1} & the y-\/coordinate of the start point \\
+\hline
+{\em x2} & the x-\/coordinate of the end point \\
+\hline
+{\em y2} & the y-\/coordinate of the end point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_af26daac7b639690cd2682b2b33b77218}\label{classastu_1_1Application_af26daac7b639690cd2682b2b33b77218}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Draw\+Pixel@{Draw\+Pixel}}
+\index{Draw\+Pixel@{Draw\+Pixel}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Draw\+Pixel()}{DrawPixel()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Draw\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Draws a pixel with the current draw color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the start point \\
+\hline
+{\em y} & the y-\/coordinate of the start point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_afd2e771d8bfd2b1a55e11f62c099078a}\label{classastu_1_1Application_afd2e771d8bfd2b1a55e11f62c099078a}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Draw\+Rectangle@{Draw\+Rectangle}}
+\index{Draw\+Rectangle@{Draw\+Rectangle}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Draw\+Rectangle()}{DrawRectangle()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{bool}]{filled = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Draws a rectangle with the current draw color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the upper left corner \\
+\hline
+{\em y} & the y location of the upper left corner \\
+\hline
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+{\em filled} & {\ttfamily true} to render the rectangle filled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_ab033ca3bac5e8423638c118e5f92c62b}\label{classastu_1_1Application_ab033ca3bac5e8423638c118e5f92c62b}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Background\+Color@{Get\+Background\+Color}}
+\index{Get\+Background\+Color@{Get\+Background\+Color}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Background\+Color()}{GetBackgroundColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Application\+::\+Get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the background color for the application window.
+
+\begin{DoxyReturn}{Returns}
+the current background color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_a54815b8eb1210d2a4da6f3f439741a4d}\label{classastu_1_1Application_a54815b8eb1210d2a4da6f3f439741a4d}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Delta\+Time@{Get\+Delta\+Time}}
+\index{Get\+Delta\+Time@{Get\+Delta\+Time}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Delta\+Time()}{GetDeltaTime()}}
+{\footnotesize\ttfamily double astu\+::\+Application\+::\+Get\+Delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the elapsed time since the last update.
+
+\begin{DoxyReturn}{Returns}
+the elapsed time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_a0b019c1dc5797d4ee5e604ed5cd831ed}\label{classastu_1_1Application_a0b019c1dc5797d4ee5e604ed5cd831ed}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Draw\+Color@{Get\+Draw\+Color}}
+\index{Get\+Draw\+Color@{Get\+Draw\+Color}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Color()}{GetDrawColor()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Application\+::\+Get\+Draw\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the draw color for the application window.
+
+\begin{DoxyReturn}{Returns}
+the current draw color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_a500d7e7a9c0100b8a4e1df2f80f85da9}\label{classastu_1_1Application_a500d7e7a9c0100b8a4e1df2f80f85da9}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Fps@{Get\+Fps}}
+\index{Get\+Fps@{Get\+Fps}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Fps()}{GetFps()}}
+{\footnotesize\ttfamily double astu\+::\+Application\+::\+Get\+Fps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the average frames per seconds (F\+PS).
+
+\begin{DoxyReturn}{Returns}
+the F\+PS in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_aacee0ec39dbde4c506987abe4be99099}\label{classastu_1_1Application_aacee0ec39dbde4c506987abe4be99099}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily int astu\+::\+Application\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the width of the application window.
+
+\begin{DoxyReturn}{Returns}
+the height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_afd91358b09a41d418bc1776befdb0fd7}\label{classastu_1_1Application_afd91358b09a41d418bc1776befdb0fd7}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily double astu\+::\+Application\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the absolute time.
+
+\begin{DoxyReturn}{Returns}
+the absolute time in seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_a7456b7ba3af6c3d984d6f4e40b268426}\label{classastu_1_1Application_a7456b7ba3af6c3d984d6f4e40b268426}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Title@{Get\+Title}}
+\index{Get\+Title@{Get\+Title}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Title()}{GetTitle()}}
+{\footnotesize\ttfamily std\+::string astu\+::\+Application\+::\+Get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the title of the application window.
+
+\begin{DoxyReturn}{Returns}
+the title of the application window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_af6f316ed892f9bf487d49d5ba1309e3f}\label{classastu_1_1Application_af6f316ed892f9bf487d49d5ba1309e3f}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily int astu\+::\+Application\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the width of the application window.
+
+\begin{DoxyReturn}{Returns}
+the width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Application_ae7eb0ef242caceca38890f78ddb85718}\label{classastu_1_1Application_ae7eb0ef242caceca38890f78ddb85718}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!On\+Render@{On\+Render}}
+\index{On\+Render@{On\+Render}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{On\+Render()}{OnRender()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Application\+::\+On\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class to render application specific content. \mbox{\Hypertarget{classastu_1_1Application_a1894a6f4aca54dd7a4c063b614832f3e}\label{classastu_1_1Application_a1894a6f4aca54dd7a4c063b614832f3e}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Application\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class when the application is shutdown. \mbox{\Hypertarget{classastu_1_1Application_a337064e8db0320f0ffe23ed98fc9fd85}\label{classastu_1_1Application_a337064e8db0320f0ffe23ed98fc9fd85}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Application\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class when the application is started. \mbox{\Hypertarget{classastu_1_1Application_a823b362755043240ba83b785038720ac}\label{classastu_1_1Application_a823b362755043240ba83b785038720ac}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Reset\+Time@{Reset\+Time}}
+\index{Reset\+Time@{Reset\+Time}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Reset\+Time()}{ResetTime()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Reset\+Time (\begin{DoxyParamCaption}\item[{double}]{t = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Resets the absolute time to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the absolute time in seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_a497dd50375ba6694479e0c57c8e32ffd}\label{classastu_1_1Application_a497dd50375ba6694479e0c57c8e32ffd}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Run@{Run}}
+\index{Run@{Run}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts this application. \mbox{\Hypertarget{classastu_1_1Application_ab1563999702c9d6ae6e707c4cd2c80c6}\label{classastu_1_1Application_ab1563999702c9d6ae6e707c4cd2c80c6}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the background color of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the background color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_aa311d33c9784e7326a9633336176fe05}\label{classastu_1_1Application_aa311d33c9784e7326a9633336176fe05}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Set\+Draw\+Color@{Set\+Draw\+Color}}
+\index{Set\+Draw\+Color@{Set\+Draw\+Color}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Set\+Draw\+Color()}{SetDrawColor()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Set\+Draw\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
+
+Sets the draw color of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the draw color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_a192e4c7ccec81846119762f30aceaf12}\label{classastu_1_1Application_a192e4c7ccec81846119762f30aceaf12}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Set\+Height@{Set\+Height}}
+\index{Set\+Height@{Set\+Height}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Set\+Height()}{SetHeight()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+Sets the height of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & the height in pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_aa5336d4fa0fff6231b4260888cb04440}\label{classastu_1_1Application_aa5336d4fa0fff6231b4260888cb04440}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Set\+Title@{Set\+Title}}
+\index{Set\+Title@{Set\+Title}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Set\+Title()}{SetTitle()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Set\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})}
+
+Sets the title of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the title of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Application_a6d991cdd5263dd9d1a08218c84e70a24}\label{classastu_1_1Application_a6d991cdd5263dd9d1a08218c84e70a24}} 
+\index{astu\+::\+Application@{astu\+::\+Application}!Set\+Width@{Set\+Width}}
+\index{Set\+Width@{Set\+Width}!astu\+::\+Application@{astu\+::\+Application}}
+\subsubsection{\texorpdfstring{Set\+Width()}{SetWidth()}}
+{\footnotesize\ttfamily void astu\+::\+Application\+::\+Set\+Width (\begin{DoxyParamCaption}\item[{int}]{w }\end{DoxyParamCaption})}
+
+Sets the width of the application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the width in pixels \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Application.\+h\end{DoxyCompactItemize}

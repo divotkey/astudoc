@@ -1,0 +1,422 @@
+\hypertarget{classastu_1_1suite2d_1_1CBody}{}\section{astu\+:\+:suite2d\+:\+:C\+Body Class Reference}
+\label{classastu_1_1suite2d_1_1CBody}\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+
+
+{\ttfamily \#include $<$C\+Body.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1suite2d_1_1CBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1suite2d_1_1CBody__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{Type} \{ \hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64af11e421e6150d5b5ca5d6acd23a5788c}{Static}, 
+\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a56e490d706815393fb1366fc216fc335}{Kinematic}, 
+\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a2b0c48f2b7bcf72769f693727d77f029}{Dynamic}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBody_adbd7ed8d654abbd79242f7979d31e2d0}{C\+Body} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{Type} \hyperlink{classastu_1_1suite2d_1_1CBody_a78f429bf50e5ece567478212cad5e652}{Get\+Type} () const
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_a7bc4b66e64442095a7b5ef4c689e6ccd}{Set\+Type} (\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{Type} body\+Type)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_a6c05f3452c985e94b78e198ea8b78c98}{Set\+Linear\+Velocity} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&v)
+\item 
+virtual \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} \& \hyperlink{classastu_1_1suite2d_1_1CBody_a782e16301f7268e7a511df7cdf39e168}{Set\+Linear\+Velocity} (float vx, float vy)
+\item 
+virtual \hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a210a80c6f3e024b98dd367a35415cc86}{Get\+Linear\+Velocity} () const
+\item 
+virtual \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} \& \hyperlink{classastu_1_1suite2d_1_1CBody_aa99d91083ba8072acab5d1d042882d8a}{Set\+Angular\+Velocity} (float av)
+\item 
+virtual float \hyperlink{classastu_1_1suite2d_1_1CBody_a8b29b3752942062468e9f91f6b72430d}{Get\+Angular\+Velocity} () const
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1CBody_ac76f056ff08398c9057563e0d67a5f00}{Get\+Linear\+Damping} () const
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_a078a4f6dbcad8717341a7ebb861a8fb2}{Set\+Linear\+Damping} (float damping)
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1CBody_a29017bd14847bdc5f8075de0a519938e}{Get\+Angular\+Damping} () const
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_ac0edc18b2988e0ea50466dd373a61856}{Set\+Angular\+Damping} (float damping)
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a1ea8700e76d0c4f46aeb0c60bc0ea2c0}{Get\+World\+Vector} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&local\+Vector)
+\item 
+virtual \hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a50fb6c9131bd42e20def02619526fdff}{Get\+World\+Vector} (float lvx, float lvy)=0
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a05b6ac1a2b425cf4dad2924204707029}{Get\+World\+Point} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&local\+Point)
+\item 
+virtual \hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a65c7a152ab2666e355bad3116c8f910b}{Get\+World\+Point} (float lpx, float lpy)=0
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a0a03263c71e5d82a26b7e20f5cf99d5d}{Get\+Local\+Vector} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&world\+Vector)
+\item 
+virtual \hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a9c1d354449c29648dc07640c7853c37d}{Get\+Local\+Vector} (float wvx, float wvy)=0
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_a76733d539daf6c60c595586bc72db5b7}{Get\+Local\+Point} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&world\+Point)
+\item 
+virtual \hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1suite2d_1_1CBody_ab8945dc57ee548799613860ebac8b87c}{Get\+Local\+Point} (float wpx, float wpy)=0
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_a12f4b86353c5ed3adabbd900f2c43dba}{Apply\+Torque} (float torque)=0
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CBody_a093468615f7e9de0b55e7af7aca2cf5e}{Apply\+Force} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&force)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for physics based point masses in two-\/dimensional worlds. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}\label{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Type@{Type}}
+\index{Type@{Type}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{astu\+::suite2d\+::\+C\+Body\+::\+Type}}
+
+Enumeration describing the type of physics bodies. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Static@{Static}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Static@{Static}}}\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64af11e421e6150d5b5ca5d6acd23a5788c}\label{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64af11e421e6150d5b5ca5d6acd23a5788c}} 
+Static&Static bodies that never move. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Kinematic@{Kinematic}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Kinematic@{Kinematic}}}\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a56e490d706815393fb1366fc216fc335}\label{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a56e490d706815393fb1366fc216fc335}} 
+Kinematic&Kinematic bodies can be moved by the game logic. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dynamic@{Dynamic}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Dynamic@{Dynamic}}}\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a2b0c48f2b7bcf72769f693727d77f029}\label{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64a2b0c48f2b7bcf72769f693727d77f029}} 
+Dynamic&Dynamic bodies get moved by the physics system. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_adbd7ed8d654abbd79242f7979d31e2d0}\label{classastu_1_1suite2d_1_1CBody_adbd7ed8d654abbd79242f7979d31e2d0}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!C\+Body@{C\+Body}}
+\index{C\+Body@{C\+Body}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{C\+Body()}{CBody()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Body\+::\+C\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a093468615f7e9de0b55e7af7aca2cf5e}\label{classastu_1_1suite2d_1_1CBody_a093468615f7e9de0b55e7af7aca2cf5e}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Apply\+Force@{Apply\+Force}}
+\index{Apply\+Force@{Apply\+Force}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Apply\+Force()}{ApplyForce()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Apply\+Force (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Applies a force at the center of mass.
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & the force vector in world space, usually in Newtons \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a12f4b86353c5ed3adabbd900f2c43dba}\label{classastu_1_1suite2d_1_1CBody_a12f4b86353c5ed3adabbd900f2c43dba}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Apply\+Torque@{Apply\+Torque}}
+\index{Apply\+Torque@{Apply\+Torque}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Apply\+Torque()}{ApplyTorque()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Apply\+Torque (\begin{DoxyParamCaption}\item[{float}]{torque }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Applies a torque to this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em torque} & the torque to apply, usually in N-\/m. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a29017bd14847bdc5f8075de0a519938e}\label{classastu_1_1suite2d_1_1CBody_a29017bd14847bdc5f8075de0a519938e}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Angular\+Damping@{Get\+Angular\+Damping}}
+\index{Get\+Angular\+Damping@{Get\+Angular\+Damping}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Angular\+Damping()}{GetAngularDamping()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+C\+Body\+::\+Get\+Angular\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the angular damping of this body.
+
+\begin{DoxyReturn}{Returns}
+the angular damping 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a8b29b3752942062468e9f91f6b72430d}\label{classastu_1_1suite2d_1_1CBody_a8b29b3752942062468e9f91f6b72430d}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Angular\+Velocity@{Get\+Angular\+Velocity}}
+\index{Get\+Angular\+Velocity@{Get\+Angular\+Velocity}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Angular\+Velocity()}{GetAngularVelocity()}}
+{\footnotesize\ttfamily virtual float astu\+::suite2d\+::\+C\+Body\+::\+Get\+Angular\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the angular velocity of this body.
+
+\begin{DoxyReturn}{Returns}
+the angular velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_ac76f056ff08398c9057563e0d67a5f00}\label{classastu_1_1suite2d_1_1CBody_ac76f056ff08398c9057563e0d67a5f00}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Linear\+Damping@{Get\+Linear\+Damping}}
+\index{Get\+Linear\+Damping@{Get\+Linear\+Damping}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Linear\+Damping()}{GetLinearDamping()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+C\+Body\+::\+Get\+Linear\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the linear damping of this body.
+
+\begin{DoxyReturn}{Returns}
+the linear damping 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a210a80c6f3e024b98dd367a35415cc86}\label{classastu_1_1suite2d_1_1CBody_a210a80c6f3e024b98dd367a35415cc86}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Linear\+Velocity@{Get\+Linear\+Velocity}}
+\index{Get\+Linear\+Velocity@{Get\+Linear\+Velocity}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Linear\+Velocity()}{GetLinearVelocity()}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Linear\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the linear velocity at the center of mass.
+
+\begin{DoxyReturn}{Returns}
+the linear velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a76733d539daf6c60c595586bc72db5b7}\label{classastu_1_1suite2d_1_1CBody_a76733d539daf6c60c595586bc72db5b7}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Local\+Point@{Get\+Local\+Point}}
+\index{Get\+Local\+Point@{Get\+Local\+Point}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Local\+Point()}{GetLocalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Local\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{world\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts a point from world space to local space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Point} & the point in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed point in local space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_ab8945dc57ee548799613860ebac8b87c}\label{classastu_1_1suite2d_1_1CBody_ab8945dc57ee548799613860ebac8b87c}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Local\+Point@{Get\+Local\+Point}}
+\index{Get\+Local\+Point@{Get\+Local\+Point}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Local\+Point()}{GetLocalPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Local\+Point (\begin{DoxyParamCaption}\item[{float}]{wpx,  }\item[{float}]{wpy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Converts a point from world space to local space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em wpx} & the x-\/componnent of the point in world space \\
+\hline
+{\em wpy} & the y-\/componnent of the point in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed point in local space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a0a03263c71e5d82a26b7e20f5cf99d5d}\label{classastu_1_1suite2d_1_1CBody_a0a03263c71e5d82a26b7e20f5cf99d5d}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Local\+Vector@{Get\+Local\+Vector}}
+\index{Get\+Local\+Vector@{Get\+Local\+Vector}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Local\+Vector()}{GetLocalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Local\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{world\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts a vector from world space to local space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Vector} & the vector in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed vector in local space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a9c1d354449c29648dc07640c7853c37d}\label{classastu_1_1suite2d_1_1CBody_a9c1d354449c29648dc07640c7853c37d}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Local\+Vector@{Get\+Local\+Vector}}
+\index{Get\+Local\+Vector@{Get\+Local\+Vector}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Local\+Vector()}{GetLocalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Local\+Vector (\begin{DoxyParamCaption}\item[{float}]{wvx,  }\item[{float}]{wvy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Converts a vector from world space to local space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em wvx} & the x-\/componnent of the vector in world space \\
+\hline
+{\em wvy} & the y-\/componnent of the vector in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed vector in local space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a78f429bf50e5ece567478212cad5e652}\label{classastu_1_1suite2d_1_1CBody_a78f429bf50e5ece567478212cad5e652}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+Type()}{GetType()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{Type} astu\+::suite2d\+::\+C\+Body\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the type of this body.
+
+\begin{DoxyReturn}{Returns}
+the type of this body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a05b6ac1a2b425cf4dad2924204707029}\label{classastu_1_1suite2d_1_1CBody_a05b6ac1a2b425cf4dad2924204707029}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+World\+Point@{Get\+World\+Point}}
+\index{Get\+World\+Point@{Get\+World\+Point}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+World\+Point()}{GetWorldPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+World\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{local\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts a point from local space to world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Point} & the point in local space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed point in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a65c7a152ab2666e355bad3116c8f910b}\label{classastu_1_1suite2d_1_1CBody_a65c7a152ab2666e355bad3116c8f910b}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+World\+Point@{Get\+World\+Point}}
+\index{Get\+World\+Point@{Get\+World\+Point}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+World\+Point()}{GetWorldPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+World\+Point (\begin{DoxyParamCaption}\item[{float}]{lpx,  }\item[{float}]{lpy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Converts a point from local space to world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lpx} & the x-\/componnent of the point in local space \\
+\hline
+{\em lpy} & the y-\/componnent of the point in local space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed point in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a1ea8700e76d0c4f46aeb0c60bc0ea2c0}\label{classastu_1_1suite2d_1_1CBody_a1ea8700e76d0c4f46aeb0c60bc0ea2c0}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+World\+Vector@{Get\+World\+Vector}}
+\index{Get\+World\+Vector@{Get\+World\+Vector}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+World\+Vector()}{GetWorldVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+World\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{local\+Vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts a vector from local space to world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Vector} & the vector in local space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed vector in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a50fb6c9131bd42e20def02619526fdff}\label{classastu_1_1suite2d_1_1CBody_a50fb6c9131bd42e20def02619526fdff}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Get\+World\+Vector@{Get\+World\+Vector}}
+\index{Get\+World\+Vector@{Get\+World\+Vector}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Get\+World\+Vector()}{GetWorldVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::suite2d\+::\+C\+Body\+::\+Get\+World\+Vector (\begin{DoxyParamCaption}\item[{float}]{lvx,  }\item[{float}]{lvy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Converts a vector from local space to world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvx} & the x-\/componnent of the vector in local space \\
+\hline
+{\em lvy} & the y-\/componnent of the vector in local space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tranformed vector in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_ac0edc18b2988e0ea50466dd373a61856}\label{classastu_1_1suite2d_1_1CBody_ac0edc18b2988e0ea50466dd373a61856}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Angular\+Damping@{Set\+Angular\+Damping}}
+\index{Set\+Angular\+Damping@{Set\+Angular\+Damping}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Angular\+Damping()}{SetAngularDamping()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Set\+Angular\+Damping (\begin{DoxyParamCaption}\item[{float}]{damping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the angular damping of this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em damping} & the damping for rotational movement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_aa99d91083ba8072acab5d1d042882d8a}\label{classastu_1_1suite2d_1_1CBody_aa99d91083ba8072acab5d1d042882d8a}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Angular\+Velocity@{Set\+Angular\+Velocity}}
+\index{Set\+Angular\+Velocity@{Set\+Angular\+Velocity}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Angular\+Velocity()}{SetAngularVelocity()}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body}\& astu\+::suite2d\+::\+C\+Body\+::\+Set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{float}]{av }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the angular velocity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & the angular velocity in radians per second \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a078a4f6dbcad8717341a7ebb861a8fb2}\label{classastu_1_1suite2d_1_1CBody_a078a4f6dbcad8717341a7ebb861a8fb2}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Linear\+Damping@{Set\+Linear\+Damping}}
+\index{Set\+Linear\+Damping@{Set\+Linear\+Damping}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Linear\+Damping()}{SetLinearDamping()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Set\+Linear\+Damping (\begin{DoxyParamCaption}\item[{float}]{damping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the linear damping of this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em damping} & the damping for linear movement \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a6c05f3452c985e94b78e198ea8b78c98}\label{classastu_1_1suite2d_1_1CBody_a6c05f3452c985e94b78e198ea8b78c98}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Linear\+Velocity@{Set\+Linear\+Velocity}}
+\index{Set\+Linear\+Velocity@{Set\+Linear\+Velocity}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Linear\+Velocity()}{SetLinearVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Set\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the linear velocity of this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the linear velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a782e16301f7268e7a511df7cdf39e168}\label{classastu_1_1suite2d_1_1CBody_a782e16301f7268e7a511df7cdf39e168}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Linear\+Velocity@{Set\+Linear\+Velocity}}
+\index{Set\+Linear\+Velocity@{Set\+Linear\+Velocity}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Linear\+Velocity()}{SetLinearVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body}\& astu\+::suite2d\+::\+C\+Body\+::\+Set\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the linear velocity of this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx} & the x-\/component of the linear velocity \\
+\hline
+{\em vy} & the y-\/component of the linear velocity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this body for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBody_a7bc4b66e64442095a7b5ef4c689e6ccd}\label{classastu_1_1suite2d_1_1CBody_a7bc4b66e64442095a7b5ef4c689e6ccd}} 
+\index{astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}!Set\+Type@{Set\+Type}}
+\index{Set\+Type@{Set\+Type}!astu\+::suite2d\+::\+C\+Body@{astu\+::suite2d\+::\+C\+Body}}
+\subsubsection{\texorpdfstring{Set\+Type()}{SetType()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Body\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{Type}}]{body\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the type of this body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em body\+Type} & the type of this body \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Body.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{classastu_1_1TaskService}{}\section{astu\+:\+:Task\+Service Class Reference}
+\label{classastu_1_1TaskService}\index{astu\+::\+Task\+Service@{astu\+::\+Task\+Service}}
+
+
+{\ttfamily \#include $<$Task\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Task\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classastu_1_1TaskService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Task\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classastu_1_1TaskService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1TaskService_a5c0c76497313bcaf6d54042efa834ad6}{Task\+Service} (int update\+Priority=Priority\+::\+Normal)
+\item 
+void \hyperlink{classastu_1_1TaskService_ac2458d90fef0ce197459247a6b720850}{Add\+Task} (std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1Task}{Task} $>$ task)
+\item 
+void \hyperlink{classastu_1_1TaskService_af86998c6284f9c682d0bbc1681b7592a}{Remove\+All} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This service executes is the main facility for Tasks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1TaskService_a5c0c76497313bcaf6d54042efa834ad6}\label{classastu_1_1TaskService_a5c0c76497313bcaf6d54042efa834ad6}} 
+\index{astu\+::\+Task\+Service@{astu\+::\+Task\+Service}!Task\+Service@{Task\+Service}}
+\index{Task\+Service@{Task\+Service}!astu\+::\+Task\+Service@{astu\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Task\+Service()}{TaskService()}}
+{\footnotesize\ttfamily astu\+::\+Task\+Service\+::\+Task\+Service (\begin{DoxyParamCaption}\item[{int}]{update\+Priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+Priority} & the priority to update this service \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1TaskService_ac2458d90fef0ce197459247a6b720850}\label{classastu_1_1TaskService_ac2458d90fef0ce197459247a6b720850}} 
+\index{astu\+::\+Task\+Service@{astu\+::\+Task\+Service}!Add\+Task@{Add\+Task}}
+\index{Add\+Task@{Add\+Task}!astu\+::\+Task\+Service@{astu\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Add\+Task()}{AddTask()}}
+{\footnotesize\ttfamily void astu\+::\+Task\+Service\+::\+Add\+Task (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1Task}{Task} $>$}]{task }\end{DoxyParamCaption})}
+
+Adds a task for execution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & the task to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1TaskService_af86998c6284f9c682d0bbc1681b7592a}\label{classastu_1_1TaskService_af86998c6284f9c682d0bbc1681b7592a}} 
+\index{astu\+::\+Task\+Service@{astu\+::\+Task\+Service}!Remove\+All@{Remove\+All}}
+\index{Remove\+All@{Remove\+All}!astu\+::\+Task\+Service@{astu\+::\+Task\+Service}}
+\subsubsection{\texorpdfstring{Remove\+All()}{RemoveAll()}}
+{\footnotesize\ttfamily void astu\+::\+Task\+Service\+::\+Remove\+All (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Removes all tasks with the specified name. This method must not be called by a task, executed by this service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if this service is currently updating \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Task\+Service.\+h\end{DoxyCompactItemize}

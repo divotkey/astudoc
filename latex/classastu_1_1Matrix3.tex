@@ -1,0 +1,594 @@
+\hypertarget{classastu_1_1Matrix3}{}\section{astu\+:\+:Matrix3$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Matrix3}\index{astu\+::\+Matrix3$<$ T $>$@{astu\+::\+Matrix3$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Matrix3.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Matrix3_a0f2aa5af3f3ddfce06f307cfd939916b}{Matrix3} ()
+\item 
+\hyperlink{classastu_1_1Matrix3_a787ffd4295914696ee0b65b2b18f1b22}{Matrix3} (T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_af0933df691bce16e5be30853cb0dd3a5}{Set} (T m0, T m1, T m2, T m3, T m4, T m5, T m6, T m7, T m8)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a69c25bd7e2e01152b8e4cfc6193927dc}{Set\+To\+Identity} ()
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a670c75846f8edc570d19186226e8f0a6}{Set\+To\+Translate} (T tx, T ty)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a3f29a9be6a1e77e81fc12bfb2bcd595c}{Set\+To\+Translate} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&v)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a9b06117981102b5fbf4b0b8fc61e697c}{Translate} (T tx, T ty)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a75cee163cb06cdc5ef63dbac70e54250}{Translate} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&v)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a042ee30172de0de71590161d4439073e}{Set\+To\+Scale} (T sx, T sy)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_aab4690e7e0896d86726b982095b6a603}{Set\+To\+Scale} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&v)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_aaf8d53bb087155b957c360692a08a441}{Scale} (T sx, T sy)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_ab8f629433a5f3cae4da890b1e22dd4f4}{Scale} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&v)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_aba79cb7b9d74b6baff4c02ad79d19944}{Set\+To\+Rotate} (T phi)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_aa4a5c1751182cc20eeefa337d13fbceb}{Set\+To\+Rotate\+Deg} (T phi)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a8169f310b4eabb938e0cf388569cd88d}{Rotate} (T phi)
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_aa621d700116ea799d236edf376586fb0}{Rotate\+Deg} (T phi)
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Matrix3_a5a241d1002dbf9cb9505f314d9ed92ff}{Transform\+Point} (T x, T y) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Matrix3_a3e2c8ac9bae632e01f29dfc06fdf32dd}{Transform\+Point} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Matrix3_a8b3caf37d3ce5df9b7d7f42b5ec02cd4}{Transform\+Vector} (T x, T y) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Matrix3_a5f64a156008433283fc2de9ee54604da}{Transform\+Vector} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&v) const
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a8cfa018da9fa68ea48c42e1100110a07}{Transpose} ()
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_a759cae68ce89b24da8fe1d79bae88e37}{Invert} ()
+\item 
+const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \hyperlink{classastu_1_1Matrix3_a2fef9723742fe842623d1a0309db45ab}{operator$\ast$} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&rhs) const
+\item 
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1Matrix3_ab3637ea5a1f5fe0cb68264475a7814e8}{operator$\ast$=} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&rhs)
+\item 
+bool \hyperlink{classastu_1_1Matrix3_a45bc188bb2d2580b6a379e209cd92303}{operator==} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&rhs) const
+\item 
+bool \hyperlink{classastu_1_1Matrix3_a3e60f2c37f594244cdb23994c27b264e}{operator!=} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ rhs) const
+\item 
+T \& \hyperlink{classastu_1_1Matrix3_ac9516bdeb2c41154a7014664061e507d}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t idx)
+\item 
+const T \& \hyperlink{classastu_1_1Matrix3_ad9594a29b27e29bdfdd4b8e0f6138c42}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t idx) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Matrix3$<$ T $>$}
+
+A column-\/major order 3x3 matrix. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a0f2aa5af3f3ddfce06f307cfd939916b}\label{classastu_1_1Matrix3_a0f2aa5af3f3ddfce06f307cfd939916b}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Matrix3@{Matrix3}}
+\index{Matrix3@{Matrix3}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Matrix3()}{Matrix3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::\hyperlink{classastu_1_1Matrix3}{Matrix3} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+The matrix will be set to the identity. \mbox{\Hypertarget{classastu_1_1Matrix3_a787ffd4295914696ee0b65b2b18f1b22}\label{classastu_1_1Matrix3_a787ffd4295914696ee0b65b2b18f1b22}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Matrix3@{Matrix3}}
+\index{Matrix3@{Matrix3}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Matrix3()}{Matrix3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::\hyperlink{classastu_1_1Matrix3}{Matrix3} (\begin{DoxyParamCaption}\item[{T}]{m0,  }\item[{T}]{m1,  }\item[{T}]{m2,  }\item[{T}]{m3,  }\item[{T}]{m4,  }\item[{T}]{m5,  }\item[{T}]{m6,  }\item[{T}]{m7,  }\item[{T}]{m8 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+Initializes the matrix with the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & the first value \\
+\hline
+{\em m1} & the second value \\
+\hline
+{\em m2} & the third value \\
+\hline
+{\em m3} & the fourth value \\
+\hline
+{\em m4} & the fifth value \\
+\hline
+{\em m5} & the sixth value \\
+\hline
+{\em m6} & the seventh value \\
+\hline
+{\em m7} & the eighth value \\
+\hline
+{\em m8} & the ninth value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a759cae68ce89b24da8fe1d79bae88e37}\label{classastu_1_1Matrix3_a759cae68ce89b24da8fe1d79bae88e37}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Invert@{Invert}}
+\index{Invert@{Invert}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Invert()}{Invert()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Invert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inverts this matrix.
+
+If no inverse is possible, the matrix is set to identity matrix.
+
+\begin{DoxyReturn}{Returns}
+reference to this (now inverted) matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a3e60f2c37f594244cdb23994c27b264e}\label{classastu_1_1Matrix3_a3e60f2c37f594244cdb23994c27b264e}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary non-\/equality operator comparing two matrices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right hand side matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the specified matrix is not equal to this matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a2fef9723742fe842623d1a0309db45ab}\label{classastu_1_1Matrix3_a2fef9723742fe842623d1a0309db45ab}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$ \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary multiply operator for matrices. This operator multiplies this matrix with the right-\/hand side matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_ab3637ea5a1f5fe0cb68264475a7814e8}\label{classastu_1_1Matrix3_ab3637ea5a1f5fe0cb68264475a7814e8}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compound assignment and multiply operator for matrices. This operator multiplies this matrix with the right-\/hand side matrix and stores the result in this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right-\/hand side \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a45bc188bb2d2580b6a379e209cd92303}\label{classastu_1_1Matrix3_a45bc188bb2d2580b6a379e209cd92303}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator==@{operator==}}
+\index{operator==@{operator==}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary equality operator comparing two matrices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & right hand side matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the specified matrix is equal to this matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_ac9516bdeb2c41154a7014664061e507d}\label{classastu_1_1Matrix3_ac9516bdeb2c41154a7014664061e507d}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subscript operator for this matrix. The specified index must be within the range \mbox{[}0, 8\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & index of the matrix value to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_ad9594a29b27e29bdfdd4b8e0f6138c42}\label{classastu_1_1Matrix3_ad9594a29b27e29bdfdd4b8e0f6138c42}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subscript operator for this matrix. The specified index must be within the range \mbox{[}0, 8\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & index of the matrix value to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a8169f310b4eabb938e0cf388569cd88d}\label{classastu_1_1Matrix3_a8169f310b4eabb938e0cf388569cd88d}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Rotate (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a counter-\/clock wise rotation by the specified angle. This method creates a rotation matrix M\textsubscript{r} and pre-\/multiplies the rotation matrix with this matrix\+: M = M\textsubscript{r} \textperiodcentered{} M.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_aa621d700116ea799d236edf376586fb0}\label{classastu_1_1Matrix3_aa621d700116ea799d236edf376586fb0}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Rotate\+Deg@{Rotate\+Deg}}
+\index{Rotate\+Deg@{Rotate\+Deg}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Rotate\+Deg()}{RotateDeg()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Rotate\+Deg (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a counter-\/clock wise rotation by the specified angle. This method creates a rotation matrix M\textsubscript{r} and pre-\/multiplies the rotation matrix with this matrix\+: M = M\textsubscript{r} \textperiodcentered{} M.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & rotation angle in degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_aaf8d53bb087155b957c360692a08a441}\label{classastu_1_1Matrix3_aaf8d53bb087155b957c360692a08a441}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Scale@{Scale}}
+\index{Scale@{Scale}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Scale()}{Scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Scale (\begin{DoxyParamCaption}\item[{T}]{sx,  }\item[{T}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a scaling by the specified scaling factors.
+
+This method pre-\/multiplies a scaling matrix \textquotesingle{}Ms\textquotesingle{} with this matrix and stores the result in this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & scaling factor along the x-\/axis \\
+\hline
+{\em sy} & scaling factor along the y-\/axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_ab8f629433a5f3cae4da890b1e22dd4f4}\label{classastu_1_1Matrix3_ab8f629433a5f3cae4da890b1e22dd4f4}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Scale@{Scale}}
+\index{Scale@{Scale}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Scale()}{Scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Scale (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a scaling by the specified scaling vector.
+
+This method pre-\/multiplies a scaling matrix \textquotesingle{}Ms\textquotesingle{} with this matrix and stores the result in this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the scaling vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_af0933df691bce16e5be30853cb0dd3a5}\label{classastu_1_1Matrix3_af0933df691bce16e5be30853cb0dd3a5}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set (\begin{DoxyParamCaption}\item[{T}]{m0,  }\item[{T}]{m1,  }\item[{T}]{m2,  }\item[{T}]{m3,  }\item[{T}]{m4,  }\item[{T}]{m5,  }\item[{T}]{m6,  }\item[{T}]{m7,  }\item[{T}]{m8 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to the specified values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & the first value \\
+\hline
+{\em m1} & the second value \\
+\hline
+{\em m2} & the third value \\
+\hline
+{\em m3} & the fourth value \\
+\hline
+{\em m4} & the fifth value \\
+\hline
+{\em m5} & the sixth value \\
+\hline
+{\em m6} & the seventh value \\
+\hline
+{\em m7} & the eighth value \\
+\hline
+{\em m8} & the ninth value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a69c25bd7e2e01152b8e4cfc6193927dc}\label{classastu_1_1Matrix3_a69c25bd7e2e01152b8e4cfc6193927dc}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Identity@{Set\+To\+Identity}}
+\index{Set\+To\+Identity@{Set\+To\+Identity}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Identity()}{SetToIdentity()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Identity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to identity.
+
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_aba79cb7b9d74b6baff4c02ad79d19944}\label{classastu_1_1Matrix3_aba79cb7b9d74b6baff4c02ad79d19944}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Rotate@{Set\+To\+Rotate}}
+\index{Set\+To\+Rotate@{Set\+To\+Rotate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Rotate()}{SetToRotate()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Rotate (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a rotate matrix with the specified angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & rotation angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_aa4a5c1751182cc20eeefa337d13fbceb}\label{classastu_1_1Matrix3_aa4a5c1751182cc20eeefa337d13fbceb}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Rotate\+Deg@{Set\+To\+Rotate\+Deg}}
+\index{Set\+To\+Rotate\+Deg@{Set\+To\+Rotate\+Deg}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Rotate\+Deg()}{SetToRotateDeg()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Rotate\+Deg (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a rotate matrix with the specified angle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & rotation angle in degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a042ee30172de0de71590161d4439073e}\label{classastu_1_1Matrix3_a042ee30172de0de71590161d4439073e}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Scale@{Set\+To\+Scale}}
+\index{Set\+To\+Scale@{Set\+To\+Scale}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Scale()}{SetToScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Scale (\begin{DoxyParamCaption}\item[{T}]{sx,  }\item[{T}]{sy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a scale matrix with the specified scaling factors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & scaling factor for the x-\/axis \\
+\hline
+{\em sy} & scaling factor for the y-\/axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_aab4690e7e0896d86726b982095b6a603}\label{classastu_1_1Matrix3_aab4690e7e0896d86726b982095b6a603}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Scale@{Set\+To\+Scale}}
+\index{Set\+To\+Scale@{Set\+To\+Scale}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Scale()}{SetToScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Scale (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a scale matrix with the specified scaling factors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the scaling vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a670c75846f8edc570d19186226e8f0a6}\label{classastu_1_1Matrix3_a670c75846f8edc570d19186226e8f0a6}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Translate@{Set\+To\+Translate}}
+\index{Set\+To\+Translate@{Set\+To\+Translate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Translate()}{SetToTranslate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Translate (\begin{DoxyParamCaption}\item[{T}]{tx,  }\item[{T}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a translation matrix with specified translation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & the distance to translate in the x-\/axis direction \\
+\hline
+{\em ty} & the distance to translate in the y-\/axis direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a3f29a9be6a1e77e81fc12bfb2bcd595c}\label{classastu_1_1Matrix3_a3f29a9be6a1e77e81fc12bfb2bcd595c}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Set\+To\+Translate@{Set\+To\+Translate}}
+\index{Set\+To\+Translate@{Set\+To\+Translate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Set\+To\+Translate()}{SetToTranslate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Set\+To\+Translate (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this matrix to a translation matrix with specified translation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the translation vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a5a241d1002dbf9cb9505f314d9ed92ff}\label{classastu_1_1Matrix3_a5a241d1002dbf9cb9505f314d9ed92ff}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Transform\+Point@{Transform\+Point}}
+\index{Transform\+Point@{Transform\+Point}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Transform\+Point()}{TransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Transform\+Point (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms the specified point.
+
+The specified vector is considered to be a row vector and hence multiplied from the right side. The missing fourth element of the required four component vector is assumed to be one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the point \\
+\hline
+{\em y} & the y-\/coordinate of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a3e2c8ac9bae632e01f29dfc06fdf32dd}\label{classastu_1_1Matrix3_a3e2c8ac9bae632e01f29dfc06fdf32dd}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Transform\+Point@{Transform\+Point}}
+\index{Transform\+Point@{Transform\+Point}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Transform\+Point()}{TransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Transform\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms the specified point.
+
+The specified vector is considered to be a row vector and hence multiplied from the right side. The missing fourth element of the required four component vector is assumed to be one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a8b3caf37d3ce5df9b7d7f42b5ec02cd4}\label{classastu_1_1Matrix3_a8b3caf37d3ce5df9b7d7f42b5ec02cd4}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Transform\+Vector@{Transform\+Vector}}
+\index{Transform\+Vector@{Transform\+Vector}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Transform\+Vector()}{TransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Transform\+Vector (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms the specified row vector.
+
+The specified vector is considered to be a row vector and hence multiplied from the right side. The missing fourth element of the required four component vector is assumed to be zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the vector \\
+\hline
+{\em y} & the y-\/coordinate of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a5f64a156008433283fc2de9ee54604da}\label{classastu_1_1Matrix3_a5f64a156008433283fc2de9ee54604da}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Transform\+Vector@{Transform\+Vector}}
+\index{Transform\+Vector@{Transform\+Vector}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Transform\+Vector()}{TransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Transform\+Vector (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms the specified row vector.
+
+The specified vector is considered to be a row vector and hence multiplied from the right side. The missing fourth element of the required four component vector is assumed to be zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the vector to transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the transformed point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a9b06117981102b5fbf4b0b8fc61e697c}\label{classastu_1_1Matrix3_a9b06117981102b5fbf4b0b8fc61e697c}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Translate@{Translate}}
+\index{Translate@{Translate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Translate (\begin{DoxyParamCaption}\item[{T}]{tx,  }\item[{T}]{ty }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a translation by the specified translation vector.
+
+This method pre-\/multiplies a translation matrix \textquotesingle{}Mt\textquotesingle{} with this matrix and stores the result in this matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & x-\/component of the translation vector \\
+\hline
+{\em ty} & y-\/component of the translation vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a75cee163cb06cdc5ef63dbac70e54250}\label{classastu_1_1Matrix3_a75cee163cb06cdc5ef63dbac70e54250}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Translate@{Translate}}
+\index{Translate@{Translate}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Translate (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies a translation by the specified translation vector.
+
+This method pre-\/multiplies a translation matrix \textquotesingle{}Mt\textquotesingle{} with this matrix and stores the result in this matr $\ast$ 
+\begin{DoxyParams}{Parameters}
+{\em v} & the translation vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Matrix3_a8cfa018da9fa68ea48c42e1100110a07}\label{classastu_1_1Matrix3_a8cfa018da9fa68ea48c42e1100110a07}} 
+\index{astu\+::\+Matrix3@{astu\+::\+Matrix3}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!astu\+::\+Matrix3@{astu\+::\+Matrix3}}
+\subsubsection{\texorpdfstring{Transpose()}{Transpose()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1Matrix3}{astu\+::\+Matrix3}$<$ T $>$\+::Transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transposes this matrix.
+
+\begin{DoxyReturn}{Returns}
+reference to this matrix for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Matrix3.\+h\end{DoxyCompactItemize}

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -68,7 +68,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classastu_1_1UpdateService-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">astu::UpdateService Class Reference<div class="ingroups"><a class="el" href="group__srv__group.html">Service</a></div></div>  </div>
+<div class="title">astu::UpdateService Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__srv__group.html">Service</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -78,8 +78,7 @@ Inheritance diagram for astu::UpdateService:</div>
 <div class="dyncontent">
 <div class="center"><img src="classastu_1_1UpdateService__inherit__graph.png" border="0" usemap="#astu_1_1UpdateService_inherit__map" alt="Inheritance graph"/></div>
 <map name="astu_1_1UpdateService_inherit__map" id="astu_1_1UpdateService_inherit__map">
-<area shape="rect" id="node2" href="classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="18,169,147,196"/>
-<area shape="rect" id="node3" href="classastu_1_1IService.html" title="astu::IService" alt="" coords="31,95,134,121"/>
+<area shape="rect" id="node2" href="classastu_1_1Service.html" title="astu::Service" alt="" coords="27,5,125,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -87,10 +86,9 @@ Collaboration diagram for astu::UpdateService:</div>
 <div class="dyncontent">
 <div class="center"><img src="classastu_1_1UpdateService__coll__graph.png" border="0" usemap="#astu_1_1UpdateService_coll__map" alt="Collaboration graph"/></div>
 <map name="astu_1_1UpdateService_coll__map" id="astu_1_1UpdateService_coll__map">
-<area shape="rect" id="node2" href="classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="89,185,218,212"/>
-<area shape="rect" id="node3" href="classastu_1_1IService.html" title="astu::IService" alt="" coords="45,96,147,123"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="196,96,276,123"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="185,5,311,47"/>
+<area shape="rect" id="node2" href="classastu_1_1Service.html" title="astu::Service" alt="" coords="27,185,125,212"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="36,96,116,123"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="13,5,139,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -98,49 +96,69 @@ Collaboration diagram for astu::UpdateService:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4d88fb4772931e35f7c46b7d756b4c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#ae4d88fb4772931e35f7c46b7d756b4c8">UpdateService</a> ()</td></tr>
 <tr class="separator:ae4d88fb4772931e35f7c46b7d756b4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ff161f4280681a50b728e2ac157cf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#a83ff161f4280681a50b728e2ac157cf6">AddUpdatable</a> (std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt; updatable)</td></tr>
-<tr class="separator:a83ff161f4280681a50b728e2ac157cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04911354dbfbf3849fafda10209710b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#a04911354dbfbf3849fafda10209710b6">RemoveUpdatable</a> (std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt; updatable)</td></tr>
-<tr class="separator:a04911354dbfbf3849fafda10209710b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffeece0ab9fd8fff1020763cd72de13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#aaffeece0ab9fd8fff1020763cd72de13">HasUpdatable</a> (std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt; updatable)</td></tr>
-<tr class="separator:aaffeece0ab9fd8fff1020763cd72de13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee615ce365e1910446a2646b0a2ad9a"><td class="memItemLeft" align="right" valign="top"><a id="a9ee615ce365e1910446a2646b0a2ad9a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAll</b> ()</td></tr>
+<tr class="memitem:aeccc68d2764d15d0bc78c25b83bb2510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#aeccc68d2764d15d0bc78c25b83bb2510">AddUpdatable</a> (<a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;updatable, int priority=Priority::Normal)</td></tr>
+<tr class="separator:aeccc68d2764d15d0bc78c25b83bb2510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa861a19c8b3fe72b45b8f886f3d945db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#aa861a19c8b3fe72b45b8f886f3d945db">RemoveUpdatable</a> (<a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;updatable)</td></tr>
+<tr class="separator:aa861a19c8b3fe72b45b8f886f3d945db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76b0993cefac357bc37e690c75bfdee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#ab76b0993cefac357bc37e690c75bfdee">HasUpdatable</a> (<a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;updatable) const</td></tr>
+<tr class="separator:ab76b0993cefac357bc37e690c75bfdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8d2c8cd7238349f3a10a8d2c3ebe32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#a7e8d2c8cd7238349f3a10a8d2c3ebe32">GetUpdatePriority</a> (<a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;updatable) const</td></tr>
+<tr class="separator:a7e8d2c8cd7238349f3a10a8d2c3ebe32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee615ce365e1910446a2646b0a2ad9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html#a9ee615ce365e1910446a2646b0a2ad9a">UpdateAll</a> ()</td></tr>
 <tr class="separator:a9ee615ce365e1910446a2646b0a2ad9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:ab155c73d180c22dab7cf8aff1514b2b5 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#ab155c73d180c22dab7cf8aff1514b2b5">BaseService</a> (const std::string &amp;name=<a class="el" href="classastu_1_1BaseService.html#a9483b26ad631bd14646ef2d2170cd828">DEFAULT_NAME</a>)</td></tr>
-<tr class="separator:ab155c73d180c22dab7cf8aff1514b2b5 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42eb6e0d667215ef635682d2a12e1631 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a42eb6e0d667215ef635682d2a12e1631">GetName</a> () const final override</td></tr>
-<tr class="separator:a42eb6e0d667215ef635682d2a12e1631 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59dade033dcb44dd32155c526a3a58e2 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a59dade033dcb44dd32155c526a3a58e2">Startup</a> () override</td></tr>
-<tr class="separator:a59dade033dcb44dd32155c526a3a58e2 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7095888244052db294d58738c0d187fb inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a7095888244052db294d58738c0d187fb">Shutdown</a> () override</td></tr>
-<tr class="separator:a7095888244052db294d58738c0d187fb inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f4641c045343d329a0fc1ecc6a9778 inherit pub_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#af6f4641c045343d329a0fc1ecc6a9778">IsRunning</a> () const override</td></tr>
-<tr class="separator:af6f4641c045343d329a0fc1ecc6a9778 inherit pub_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classastu_1_1IService"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1IService')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1IService.html">astu::IService</a></td></tr>
-<tr class="memitem:abf42fedf905da617ad881d3fd28a9d7e inherit pub_methods_classastu_1_1IService"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IService.html#abf42fedf905da617ad881d3fd28a9d7e">~IService</a> ()</td></tr>
-<tr class="separator:abf42fedf905da617ad881d3fd28a9d7e inherit pub_methods_classastu_1_1IService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memTemplParams" colspan="2"><a id="a32626c25d07a29697a6f965d7861c03d"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_as</b> ()</td></tr>
-<tr class="separator:a32626c25d07a29697a6f965d7861c03d inherit pub_methods_classastu_1_1IService"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a152543ef7853c19f6e1ea8cfee293edf inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a152543ef7853c19f6e1ea8cfee293edf">Service</a> (const std::string &amp;name=<a class="el" href="classastu_1_1Service.html#a8bb66bb984aa9490026232b193896634">DEFAULT_NAME</a>)</td></tr>
+<tr class="separator:a152543ef7853c19f6e1ea8cfee293edf inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b2642db2ba704a5a33d0ec7735cfca inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#aa5b2642db2ba704a5a33d0ec7735cfca">~Service</a> ()=0</td></tr>
+<tr class="separator:aa5b2642db2ba704a5a33d0ec7735cfca inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9933498d88c92b649a551d341e657a inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#afa9933498d88c92b649a551d341e657a">GetName</a> () const</td></tr>
+<tr class="separator:afa9933498d88c92b649a551d341e657a inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4764263b2e7417a6e0ad3bc4f4950a inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371e">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a1b4764263b2e7417a6e0ad3bc4f4950a">GetStatus</a> () const</td></tr>
+<tr class="separator:a1b4764263b2e7417a6e0ad3bc4f4950a inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4a5e418992839d78a2062ad9ecb288 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a8a4a5e418992839d78a2062ad9ecb288">AddStartupHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a8a4a5e418992839d78a2062ad9ecb288 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd15c531e0298f898192f4a1cdfa2a2d inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#afd15c531e0298f898192f4a1cdfa2a2d">AddShutdownHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:afd15c531e0298f898192f4a1cdfa2a2d inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362265b0bb1d26f9a18c882a9c6985bb inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a362265b0bb1d26f9a18c882a9c6985bb">AddPauseHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a362265b0bb1d26f9a18c882a9c6985bb inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7ab8ad94185d1a30e04a84afbfa6c6 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5c7ab8ad94185d1a30e04a84afbfa6c6">AddResumeHook</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a5c7ab8ad94185d1a30e04a84afbfa6c6 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52f8c56e0d3081a704e22ae2a8c5c7e inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ab52f8c56e0d3081a704e22ae2a8c5c7e">Startup</a> ()</td></tr>
+<tr class="separator:ab52f8c56e0d3081a704e22ae2a8c5c7e inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada193e446024b2ac886ba2954cd5d3b3 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ada193e446024b2ac886ba2954cd5d3b3">Shutdown</a> ()</td></tr>
+<tr class="separator:ada193e446024b2ac886ba2954cd5d3b3 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818001c0eea6dbde944c2aa28c206c99 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a818001c0eea6dbde944c2aa28c206c99">Pause</a> ()</td></tr>
+<tr class="separator:a818001c0eea6dbde944c2aa28c206c99 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307be9a1bff02c13431ec5edcc777f97 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a307be9a1bff02c13431ec5edcc777f97">IsPaused</a> () const</td></tr>
+<tr class="separator:a307be9a1bff02c13431ec5edcc777f97 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a5c6e1584aca9c8f02364f84bb325e inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a55a5c6e1584aca9c8f02364f84bb325e">IsStarted</a> () const</td></tr>
+<tr class="separator:a55a5c6e1584aca9c8f02364f84bb325e inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e90531095fddccdc48648c7ce5ebe70 inherit pub_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5e90531095fddccdc48648c7ce5ebe70">Resume</a> ()</td></tr>
+<tr class="separator:a5e90531095fddccdc48648c7ce5ebe70 inherit pub_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_attribs_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:a9483b26ad631bd14646ef2d2170cd828 inherit pub_static_attribs_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a9483b26ad631bd14646ef2d2170cd828">DEFAULT_NAME</a></td></tr>
-<tr class="separator:a9483b26ad631bd14646ef2d2170cd828 inherit pub_static_attribs_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classastu_1_1BaseService"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classastu_1_1BaseService')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
-<tr class="memitem:ac8710cd2d6dcc990db65e7c8ccfbc5ff inherit pro_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#ac8710cd2d6dcc990db65e7c8ccfbc5ff">OnStartup</a> ()</td></tr>
-<tr class="separator:ac8710cd2d6dcc990db65e7c8ccfbc5ff inherit pro_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5003f7c5efe5412725ac4c66942d03 inherit pro_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#aeb5003f7c5efe5412725ac4c66942d03">OnShutdown</a> ()</td></tr>
-<tr class="separator:aeb5003f7c5efe5412725ac4c66942d03 inherit pro_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646b6c83a9ebd26fe4e7796b5afde612 inherit pro_methods_classastu_1_1BaseService"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1ServiceManager.html">ServiceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html#a646b6c83a9ebd26fe4e7796b5afde612">GetSM</a> ()</td></tr>
-<tr class="separator:a646b6c83a9ebd26fe4e7796b5afde612 inherit pro_methods_classastu_1_1BaseService"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a5ef3b0bb1fb8a504afe708ee4dd8371e inherit pub_types_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371e">Status</a> { <a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371ea540be62ed0d93807434c4aead2df4403">Stopped</a>, 
+<a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371eab7d0f17617156ca782dda5cdf218e536">Paused</a>, 
+<a class="el" href="classastu_1_1Service.html#a5ef3b0bb1fb8a504afe708ee4dd8371ea76f0ad4a03398154d25817e5aae795c0">Running</a>
+ }</td></tr>
+<tr class="separator:a5ef3b0bb1fb8a504afe708ee4dd8371e inherit pub_types_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a8bb66bb984aa9490026232b193896634 inherit pub_static_attribs_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">static const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a8bb66bb984aa9490026232b193896634">DEFAULT_NAME</a></td></tr>
+<tr class="separator:a8bb66bb984aa9490026232b193896634 inherit pub_static_attribs_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classastu_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classastu_1_1Service')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
+<tr class="memitem:a357dc663e000b1f086f681ec3c459bfe inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a357dc663e000b1f086f681ec3c459bfe">OnStartup</a> ()</td></tr>
+<tr class="separator:a357dc663e000b1f086f681ec3c459bfe inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1dff727df791c57fae782d8a613c5f inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#a1e1dff727df791c57fae782d8a613c5f">OnShutdown</a> ()</td></tr>
+<tr class="separator:a1e1dff727df791c57fae782d8a613c5f inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6795fd14c86f340dd5e46e667ffae75 inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#af6795fd14c86f340dd5e46e667ffae75">OnPaused</a> ()</td></tr>
+<tr class="separator:af6795fd14c86f340dd5e46e667ffae75 inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2817af2aa2f3a51ca230b9438d8f192 inherit pro_methods_classastu_1_1Service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html#ac2817af2aa2f3a51ca230b9438d8f192">OnResumed</a> ()</td></tr>
+<tr class="separator:ac2817af2aa2f3a51ca230b9438d8f192 inherit pro_methods_classastu_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This service manages and updates <code>Updatables</code>.</p>
+<div class="textblock"><p>The update service updates registered <code>Updatables</code> and maintains the update priority.</p>
 <p>To update the <code>Updatables</code>, this service's method <code>UpdateAll</code> must be called within the simulation respectively game loop. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae4d88fb4772931e35f7c46b7d756b4c8"></a>
@@ -162,8 +180,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a83ff161f4280681a50b728e2ac157cf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83ff161f4280681a50b728e2ac157cf6">&#9670;&nbsp;</a></span>AddUpdatable()</h2>
+<a id="aeccc68d2764d15d0bc78c25b83bb2510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccc68d2764d15d0bc78c25b83bb2510">&#9670;&nbsp;</a></span>AddUpdatable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,9 +189,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void astu::UpdateService::AddUpdatable </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt;&#160;</td>
-          <td class="paramname"><em>updatable</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;&#160;</td>
+          <td class="paramname"><em>updatable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>priority</em> = <code>Priority::Normal</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,14 +209,46 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">updatable</td><td>the updatable to be added </td></tr>
+    <tr><td class="paramname">priority</td><td>the update priority to be used </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aaffeece0ab9fd8fff1020763cd72de13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffeece0ab9fd8fff1020763cd72de13">&#9670;&nbsp;</a></span>HasUpdatable()</h2>
+<a id="a7e8d2c8cd7238349f3a10a8d2c3ebe32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8d2c8cd7238349f3a10a8d2c3ebe32">&#9670;&nbsp;</a></span>GetUpdatePriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int astu::UpdateService::GetUpdatePriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;&#160;</td>
+          <td class="paramname"><em>updatable</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the update priority of an updatable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updatable</td><td>which updater priority should be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>in case the updatable is unknown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab76b0993cefac357bc37e690c75bfdee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76b0993cefac357bc37e690c75bfdee">&#9670;&nbsp;</a></span>HasUpdatable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,25 +256,25 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool astu::UpdateService::HasUpdatable </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;&#160;</td>
           <td class="paramname"><em>updatable</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Tests whether a specific updatablel has already been added.</p>
+<p>Tests whether a specific updatable has already been added.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">updatable</td><td>the updatable to be tested </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the updatale has already beed added </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the updatable has already been added </dd></dl>
 
 </div>
 </div>
-<a id="a04911354dbfbf3849fafda10209710b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04911354dbfbf3849fafda10209710b6">&#9670;&nbsp;</a></span>RemoveUpdatable()</h2>
+<a id="aa861a19c8b3fe72b45b8f886f3d945db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa861a19c8b3fe72b45b8f886f3d945db">&#9670;&nbsp;</a></span>RemoveUpdatable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void astu::UpdateService::RemoveUpdatable </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1IUpdatable.html">IUpdatable</a> &amp;&#160;</td>
           <td class="paramname"><em>updatable</em></td><td>)</td>
           <td></td>
         </tr>
@@ -238,8 +298,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9ee615ce365e1910446a2646b0a2ad9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee615ce365e1910446a2646b0a2ad9a">&#9670;&nbsp;</a></span>UpdateAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void astu::UpdateService::UpdateAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates all registered updatables. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="UpdateService_8h_source.html">UpdateService.h</a></li>
+<li>include/Service/<a class="el" href="UpdateService_8h_source.html">UpdateService.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

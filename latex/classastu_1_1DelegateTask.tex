@@ -1,0 +1,151 @@
+\hypertarget{classastu_1_1DelegateTask}{}\section{astu\+:\+:Delegate\+Task Class Reference}
+\label{classastu_1_1DelegateTask}\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+
+
+{\ttfamily \#include $<$Tasks.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Delegate\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classastu_1_1DelegateTask__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Delegate\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classastu_1_1DelegateTask__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate} = std\+::function$<$ void(void)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1DelegateTask_a948c5a93de18e5c9b6eafd247cdc849b}{$\sim$\+Delegate\+Task} ()
+\item 
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a28429114340e8b692f8cc32ef65a8199}\label{classastu_1_1DelegateTask_a28429114340e8b692f8cc32ef65a8199}} 
+{\bfseries Delegate\+Task} (const \hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} \&)=delete
+\item 
+\mbox{\Hypertarget{classastu_1_1DelegateTask_ae0b4c2af0b5fd25270cc0e35784dc4ab}\label{classastu_1_1DelegateTask_ae0b4c2af0b5fd25270cc0e35784dc4ab}} 
+\hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} \& {\bfseries operator=} (const \hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} \&)=delete
+\item 
+virtual void \hyperlink{classastu_1_1DelegateTask_a48755ab30194963c37e22ed118423704}{Update} (double dt) override
+\item 
+virtual void \hyperlink{classastu_1_1DelegateTask_a8bc7364937a4af2173e066174733e1d1}{Reset} () override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} $>$ \hyperlink{classastu_1_1DelegateTask_a3d27b0336f3f0ff70acef517312d9d37}{Create} (\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate} delegate, double \hyperlink{classastu_1_1DelegateTask_a448096d7fea7f9a18490fbaa05616995}{delay}=1)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classastu_1_1DelegateTask_a448096d7fea7f9a18490fbaa05616995}{delay}
+\item 
+double \hyperlink{classastu_1_1DelegateTask_ae192279cf06935c58ad19c28ac674e18}{elapsed\+Time}
+\item 
+\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate} \hyperlink{classastu_1_1DelegateTask_a9dc938c77515b4be4501df66f8cb260c}{delegate\+Func}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Calls a delegate after a specific amount of time. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}\label{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{Delegate}{Delegate}}
+{\footnotesize\ttfamily using \hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{astu\+::\+Delegate\+Task\+::\+Delegate} =  std\+::function$<$void (void)$>$}
+
+Type alias for delegate functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a948c5a93de18e5c9b6eafd247cdc849b}\label{classastu_1_1DelegateTask_a948c5a93de18e5c9b6eafd247cdc849b}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!````~Delegate\+Task@{$\sim$\+Delegate\+Task}}
+\index{````~Delegate\+Task@{$\sim$\+Delegate\+Task}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{$\sim$\+Delegate\+Task()}{~DelegateTask()}}
+{\footnotesize\ttfamily virtual astu\+::\+Delegate\+Task\+::$\sim$\+Delegate\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a3d27b0336f3f0ff70acef517312d9d37}\label{classastu_1_1DelegateTask_a3d27b0336f3f0ff70acef517312d9d37}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!Create@{Create}}
+\index{Create@{Create}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static std\+::unique\+\_\+ptr$<$\hyperlink{classastu_1_1DelegateTask}{Delegate\+Task}$>$ astu\+::\+Delegate\+Task\+::\+Create (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate}}]{delegate,  }\item[{double}]{delay = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a new delegate instnace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & the delegate to call \\
+\hline
+{\em delay} & the time to wait in seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a8bc7364937a4af2173e066174733e1d1}\label{classastu_1_1DelegateTask_a8bc7364937a4af2173e066174733e1d1}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Delegate\+Task\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this task to its initial condition. 
+
+Reimplemented from \hyperlink{classastu_1_1Task_af68025df1de6ad31882f0ccee5ccb100}{astu\+::\+Task}.
+
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a48755ab30194963c37e22ed118423704}\label{classastu_1_1DelegateTask_a48755ab30194963c37e22ed118423704}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!Update@{Update}}
+\index{Update@{Update}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Delegate\+Task\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates this task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since tha last update in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1Task_a2bcec3cc42b46cfcb03422e029577c0a}{astu\+::\+Task}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTask_a448096d7fea7f9a18490fbaa05616995}\label{classastu_1_1DelegateTask_a448096d7fea7f9a18490fbaa05616995}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!delay@{delay}}
+\index{delay@{delay}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily double astu\+::\+Delegate\+Task\+::delay}
+
+The duration to wait before to call the delegate. \mbox{\Hypertarget{classastu_1_1DelegateTask_a9dc938c77515b4be4501df66f8cb260c}\label{classastu_1_1DelegateTask_a9dc938c77515b4be4501df66f8cb260c}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!delegate\+Func@{delegate\+Func}}
+\index{delegate\+Func@{delegate\+Func}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{delegate\+Func}{delegateFunc}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate} astu\+::\+Delegate\+Task\+::delegate\+Func}
+
+The delegate function to be called. \mbox{\Hypertarget{classastu_1_1DelegateTask_ae192279cf06935c58ad19c28ac674e18}\label{classastu_1_1DelegateTask_ae192279cf06935c58ad19c28ac674e18}} 
+\index{astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}!elapsed\+Time@{elapsed\+Time}}
+\index{elapsed\+Time@{elapsed\+Time}!astu\+::\+Delegate\+Task@{astu\+::\+Delegate\+Task}}
+\subsubsection{\texorpdfstring{elapsed\+Time}{elapsedTime}}
+{\footnotesize\ttfamily double astu\+::\+Delegate\+Task\+::elapsed\+Time}
+
+The elapsed time since the tasks has been reseted. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Tasks.\+h\end{DoxyCompactItemize}

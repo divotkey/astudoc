@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:State\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{classastu_1_1StateService__inherit__graph}
+\includegraphics[width=300pt]{classastu_1_1StateService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,7 +19,7 @@ Collaboration diagram for astu\+:\+:State\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=310pt]{classastu_1_1StateService__coll__graph}
+\includegraphics[width=330pt]{classastu_1_1StateService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -29,13 +29,17 @@ Collaboration diagram for astu\+:\+:State\+Service\+:\nopagebreak
 \item 
 \hyperlink{classastu_1_1StateService_a27bbe3ef0f9a4600c559ca9f6def3f5f}{$\sim$\+State\+Service} ()
 \item 
-void \hyperlink{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}{Add\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ srv)
+\hyperlink{classastu_1_1StateService}{State\+Service} \& \hyperlink{classastu_1_1StateService_aab296d0077f23deef7e0bd383516019a}{Enable\+Reenter\+Mode} (bool b)
 \item 
-bool \hyperlink{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}{Has\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ srv) const
+bool \hyperlink{classastu_1_1StateService_ac52be3ad8918ef9fe5e64ffbdbdcda94}{Is\+Reenter\+Mode} () const
+\item 
+\hyperlink{classastu_1_1StateService}{State\+Service} \& \hyperlink{classastu_1_1StateService_aed603f7dca136364b7a6ff815ccb44e0}{Add\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$ srv)
+\item 
+bool \hyperlink{classastu_1_1StateService_ad32ec7a0c3afe7e902aa85de8b4fed15}{Has\+Service} (const std\+::string \&state, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$ srv) const
 \item 
 bool \hyperlink{classastu_1_1StateService_adfd94f9b5d622131a1fdcc4dcf5ef51d}{Has\+State} (const std\+::string \&state) const
 \item 
-void \hyperlink{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}{Create\+State} (const std\+::string \&state)
+\hyperlink{classastu_1_1StateService}{State\+Service} \& \hyperlink{classastu_1_1StateService_a62ddc47e0c0ed7232e672c995a978a71}{Create\+State} (const std\+::string \&state)
 \item 
 void \hyperlink{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}{Switch\+State} (const std\+::string \&state)
 \item 
@@ -72,11 +76,11 @@ Constructor. \mbox{\Hypertarget{classastu_1_1StateService_a27bbe3ef0f9a4600c559c
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}\label{classastu_1_1StateService_a5b6125be259b52bf9f3e80453def9e21}} 
+\mbox{\Hypertarget{classastu_1_1StateService_aed603f7dca136364b7a6ff815ccb44e0}\label{classastu_1_1StateService_aed603f7dca136364b7a6ff815ccb44e0}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Add\+Service@{Add\+Service}}
 \index{Add\+Service@{Add\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
 \subsubsection{\texorpdfstring{Add\+Service()}{AddService()}}
-{\footnotesize\ttfamily void astu\+::\+State\+Service\+::\+Add\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{srv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1StateService}{State\+Service}\& astu\+::\+State\+Service\+::\+Add\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$}]{srv }\end{DoxyParamCaption})}
 
 Adds a service to a state.
 
@@ -89,16 +93,19 @@ If the state does not yet exist, it will be created.
 {\em srv} & the service to add \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this service for method chaining 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std\+::logic\+\_\+error} & in case the service has already beed added \\
+{\em std\+::logic\+\_\+error} & in case the service has already been added \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}\label{classastu_1_1StateService_ae1916f97f8f386b6f4ac42d58c0ae97f}} 
+\mbox{\Hypertarget{classastu_1_1StateService_a62ddc47e0c0ed7232e672c995a978a71}\label{classastu_1_1StateService_a62ddc47e0c0ed7232e672c995a978a71}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Create\+State@{Create\+State}}
 \index{Create\+State@{Create\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
 \subsubsection{\texorpdfstring{Create\+State()}{CreateState()}}
-{\footnotesize\ttfamily void astu\+::\+State\+Service\+::\+Create\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1StateService}{State\+Service}\& astu\+::\+State\+Service\+::\+Create\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state }\end{DoxyParamCaption})}
 
 Creates a new empty state.
 
@@ -107,11 +114,32 @@ Creates a new empty state.
 {\em state} & the name of the state \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this service for method chaining 
+\end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
 {\em std\+::logic\+\_\+error} & in case the state name is ambiguous \\
 \hline
 \end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1StateService_aab296d0077f23deef7e0bd383516019a}\label{classastu_1_1StateService_aab296d0077f23deef7e0bd383516019a}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Enable\+Reenter\+Mode@{Enable\+Reenter\+Mode}}
+\index{Enable\+Reenter\+Mode@{Enable\+Reenter\+Mode}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Enable\+Reenter\+Mode()}{EnableReenterMode()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1StateService}{State\+Service}\& astu\+::\+State\+Service\+::\+Enable\+Reenter\+Mode (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+Enables or disables reenter mode.
+
+If reenter mode is enabled, state switches to the current state will exit and re-\/enter the state. If reenter mode is disabled, state swichtes the to current state will be ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & whether to enable reenter mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this service for method chaining 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1StateService_ac643aebb1bfe9880db1bac7533e0ec75}\label{classastu_1_1StateService_ac643aebb1bfe9880db1bac7533e0ec75}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Get\+Current\+State@{Get\+Current\+State}}
 \index{Get\+Current\+State@{Get\+Current\+State}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
@@ -123,11 +151,11 @@ Returns the name of the current state.
 \begin{DoxyReturn}{Returns}
 the current state name 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}\label{classastu_1_1StateService_a611255de384fd0e53fccf30cb53662b6}} 
+\mbox{\Hypertarget{classastu_1_1StateService_ad32ec7a0c3afe7e902aa85de8b4fed15}\label{classastu_1_1StateService_ad32ec7a0c3afe7e902aa85de8b4fed15}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Has\+Service@{Has\+Service}}
 \index{Has\+Service@{Has\+Service}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
 \subsubsection{\texorpdfstring{Has\+Service()}{HasService()}}
-{\footnotesize\ttfamily bool astu\+::\+State\+Service\+::\+Has\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{srv }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool astu\+::\+State\+Service\+::\+Has\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{state,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$}]{srv }\end{DoxyParamCaption}) const}
 
 Tests whether a service has already been added to a state.
 
@@ -157,17 +185,28 @@ Tests whether a state exists.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the state exists 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1StateService_ac52be3ad8918ef9fe5e64ffbdbdcda94}\label{classastu_1_1StateService_ac52be3ad8918ef9fe5e64ffbdbdcda94}} 
+\index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Is\+Reenter\+Mode@{Is\+Reenter\+Mode}}
+\index{Is\+Reenter\+Mode@{Is\+Reenter\+Mode}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
+\subsubsection{\texorpdfstring{Is\+Reenter\+Mode()}{IsReenterMode()}}
+{\footnotesize\ttfamily bool astu\+::\+State\+Service\+::\+Is\+Reenter\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether reenter mode is enabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if reenter mode is enabled 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1StateService_ad8fa5b6d52bd795ebba450f119540d87}\label{classastu_1_1StateService_ad8fa5b6d52bd795ebba450f119540d87}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!On\+Shutdown@{On\+Shutdown}}
 \index{On\+Shutdown@{On\+Shutdown}!astu\+::\+State\+Service@{astu\+::\+State\+Service}}
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+State\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1StateService_a06419feca958b72db99dde6eda301f86}\label{classastu_1_1StateService_a06419feca958b72db99dde6eda301f86}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!On\+Startup@{On\+Startup}}
@@ -175,11 +214,11 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+State\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}\label{classastu_1_1StateService_a3396bad71a626dd749295375759015d3}} 
 \index{astu\+::\+State\+Service@{astu\+::\+State\+Service}!Switch\+State@{Switch\+State}}
@@ -203,4 +242,4 @@ Switches to a certain state.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/State\+Service.\+h\end{DoxyCompactItemize}
+include/\+Service/State\+Service.\+h\end{DoxyCompactItemize}

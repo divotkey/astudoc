@@ -1,0 +1,12 @@
+<map id="include/AstuGraphics.h" name="include/AstuGraphics.h">
+<area shape="rect" id="node4" href="$Color_8h_source.html" title="Graphics/Color.h" alt="" coords="520,229,640,256"/>
+<area shape="rect" id="node7" href="$ColorHsv_8h_source.html" title="Graphics/ColorHsv.h" alt="" coords="5,155,149,181"/>
+<area shape="rect" id="node10" href="$WebColors_8h_source.html" title="Graphics/WebColors.h" alt="" coords="224,155,379,181"/>
+<area shape="rect" id="node11" href="$RalColors_8h_source.html" title="Graphics/RalColors.h" alt="" coords="435,80,581,107"/>
+<area shape="rect" id="node12" href="$Palette_8h_source.html" title="Graphics/Palette.h" alt="" coords="280,80,411,107"/>
+<area shape="rect" id="node14" href="$Image_8h_source.html" title="Graphics/Image.h" alt="" coords="845,155,971,181"/>
+<area shape="rect" id="node15" href="$ImageRenderer_8h_source.html" title="Graphics/ImageRenderer.h" alt="" coords="676,80,855,107"/>
+<area shape="rect" id="node16" href="$Vector2_8h_source.html" title="Math/Vector2.h" alt="" coords="995,155,1106,181"/>
+<area shape="rect" id="node18" href="$RenderQuality_8h_source.html" title="Graphics/RenderQuality.h" alt="" coords="598,155,770,181"/>
+<area shape="rect" id="node17" href="$MathUtils_8h_source.html" title="MathUtils.h" alt="" coords="995,229,1085,256"/>
+</map>

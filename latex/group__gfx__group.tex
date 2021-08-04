@@ -8,36 +8,37 @@ This module contains classes and functions dedicated to graphics.
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classastu_1_1Color}{astu\+::\+Color$<$ T $>$}
+\item 
+class \hyperlink{classastu_1_1ColorHsv}{astu\+::\+Color\+Hsv}
+\item 
 class \hyperlink{classastu_1_1Image}{astu\+::\+Image}
 \item 
-class \hyperlink{classastu_1_1Color}{astu\+::\+Color}
-\item 
 class \hyperlink{classastu_1_1ImageRenderer}{astu\+::\+Image\+Renderer}
+\item 
+class \hyperlink{classastu_1_1Palette}{astu\+::\+Palette}
+\item 
+class \hyperlink{classastu_1_1RalColors}{astu\+::\+Ral\+Colors}
+\item 
+class \hyperlink{classastu_1_1VertexBuffer2}{astu\+::\+Vertex\+Buffer2$<$ T $>$}
+\item 
+class \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2$<$ T $>$}
+\item 
+class \hyperlink{classastu_1_1WebColors}{astu\+::\+Web\+Colors}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{group__gfx__group_ga0984042ea57451b25cc703c049481e98}{astu\+::\+Vertex\+Buffer2d} = \hyperlink{classastu_1_1VertexBuffer2}{astu\+::\+Vertex\+Buffer2}$<$ double $>$
+\item 
+using \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{astu\+::\+Vertex\+Buffer2f} = \hyperlink{classastu_1_1VertexBuffer2}{astu\+::\+Vertex\+Buffer2}$<$ float $>$
+\item 
+using \hyperlink{group__gfx__group_ga91f7837593de4dabdf0abf59d5fa1889}{astu\+::\+Vertex\+Buffer\+Builder2d} = \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ double $>$
+\item 
+using \hyperlink{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}{astu\+::\+Vertex\+Buffer\+Builder2f} = \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ float $>$
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
-\item 
-enum \hyperlink{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}{astu\+::\+Web\+Colors} \{ \newline
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}{astu\+::\+White} = 0x\+F\+F\+F\+F\+FF, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}{astu\+::\+Silver} = 0x\+C0\+C0\+C0, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}{astu\+::\+Gray} = 0x808080, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}{astu\+::\+Black} = 0x000000, 
-\newline
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}{astu\+::\+Red} = 0x\+F\+F0000, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}{astu\+::\+Maroon} = 0x800000, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}{astu\+::\+Yellow} = 0x\+F\+F\+F\+F00, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}{astu\+::\+Olive} = 0x808000, 
-\newline
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}{astu\+::\+Lime} = 0x00\+F\+F00, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}{astu\+::\+Green} = 0x008000, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}{astu\+::\+Aqua} = 0x00\+F\+F\+FF, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}{astu\+::\+Teal} = 0x008080, 
-\newline
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}{astu\+::\+Blue} = 0x0000\+FF, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}{astu\+::\+Navy} = 0x000080, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}{astu\+::\+Fuchsia} = 0x\+F\+F00\+FF, 
-\hyperlink{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}{astu\+::\+Purple} = 0x800080
- \}
 \item 
 enum \hyperlink{group__gfx__group_gac3b4955f341cea44f53f8446d734cd54}{astu\+::\+Render\+Quality} \{ \newline
 \hyperlink{group__gfx__group_ggac3b4955f341cea44f53f8446d734cd54ae16b5b7f26f54214445cbe38d72c2828}{astu\+::\+Render\+Quality\+::\+Fast}, 
@@ -67,6 +68,33 @@ std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1Image}{Image} $>$ \hyperlink{g
 This module contains classes and functions dedicated to graphics. 
 
 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__gfx__group_ga0984042ea57451b25cc703c049481e98}\label{group__gfx__group_ga0984042ea57451b25cc703c049481e98}} 
+\index{Graphics@{Graphics}!Vertex\+Buffer2d@{Vertex\+Buffer2d}}
+\index{Vertex\+Buffer2d@{Vertex\+Buffer2d}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer2d}{VertexBuffer2d}}
+{\footnotesize\ttfamily using \hyperlink{group__gfx__group_ga0984042ea57451b25cc703c049481e98}{astu\+::\+Vertex\+Buffer2d} = typedef \hyperlink{classastu_1_1VertexBuffer2}{astu\+::\+Vertex\+Buffer2}$<$double$>$}
+
+Type alias for \hyperlink{classastu_1_1VertexBuffer2}{Vertex\+Buffer2} template using double as data type. \mbox{\Hypertarget{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}\label{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}} 
+\index{Graphics@{Graphics}!Vertex\+Buffer2f@{Vertex\+Buffer2f}}
+\index{Vertex\+Buffer2f@{Vertex\+Buffer2f}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer2f}{VertexBuffer2f}}
+{\footnotesize\ttfamily using \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{astu\+::\+Vertex\+Buffer2f} = typedef \hyperlink{classastu_1_1VertexBuffer2}{astu\+::\+Vertex\+Buffer2}$<$float$>$}
+
+Type alias for \hyperlink{classastu_1_1VertexBuffer2}{Vertex\+Buffer2} template using float as data type. \mbox{\Hypertarget{group__gfx__group_ga91f7837593de4dabdf0abf59d5fa1889}\label{group__gfx__group_ga91f7837593de4dabdf0abf59d5fa1889}} 
+\index{Graphics@{Graphics}!Vertex\+Buffer\+Builder2d@{Vertex\+Buffer\+Builder2d}}
+\index{Vertex\+Buffer\+Builder2d@{Vertex\+Buffer\+Builder2d}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer\+Builder2d}{VertexBufferBuilder2d}}
+{\footnotesize\ttfamily using \hyperlink{group__gfx__group_ga91f7837593de4dabdf0abf59d5fa1889}{astu\+::\+Vertex\+Buffer\+Builder2d} = typedef \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$double$>$}
+
+Type alias for \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} template using double as data type. \mbox{\Hypertarget{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}\label{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}} 
+\index{Graphics@{Graphics}!Vertex\+Buffer\+Builder2f@{Vertex\+Buffer\+Builder2f}}
+\index{Vertex\+Buffer\+Builder2f@{Vertex\+Buffer\+Builder2f}!Graphics@{Graphics}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer\+Builder2f}{VertexBufferBuilder2f}}
+{\footnotesize\ttfamily using \hyperlink{group__gfx__group_ga45033e159deced790d4dc3968ad8e878}{astu\+::\+Vertex\+Buffer\+Builder2f} = typedef \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$float$>$}
+
+Type alias for \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} template using float as data type. 
 
 \subsection{Enumeration Type Documentation}
 \mbox{\Hypertarget{group__gfx__group_ga7bcac32f8bae9bfd1f21655d4734efe8}\label{group__gfx__group_ga7bcac32f8bae9bfd1f21655d4734efe8}} 
@@ -118,78 +146,6 @@ Beautiful&Use for high quality renderings, final releases, etc. \\
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Insane@{Insane}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Insane@{Insane}}}\mbox{\Hypertarget{group__gfx__group_ggac3b4955f341cea44f53f8446d734cd54a77529ad508ab7d3b5a99adc7e711040b}\label{group__gfx__group_ggac3b4955f341cea44f53f8446d734cd54a77529ad508ab7d3b5a99adc7e711040b}} 
 Insane&Very slow rendering but highest output quality (placebo?). \\
-\hline
-
-\end{DoxyEnumFields}
-\mbox{\Hypertarget{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}\label{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}} 
-\index{Graphics@{Graphics}!Web\+Colors@{Web\+Colors}}
-\index{Web\+Colors@{Web\+Colors}!Graphics@{Graphics}}
-\subsubsection{\texorpdfstring{Web\+Colors}{WebColors}}
-{\footnotesize\ttfamily enum \hyperlink{group__gfx__group_ga6f6f9db1751e96b647084ecaedff2409}{astu\+::\+Web\+Colors}}
-
-This enumeration defines values for color names according to the W3C specification. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{White@{White}!Graphics@{Graphics}}\index{Graphics@{Graphics}!White@{White}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae2e0a544fd90f604852d4c9564d64b36}} 
-White&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape White} (0x\+F\+F\+F\+F\+FF). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Silver@{Silver}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Silver@{Silver}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409af510d993381a675f551ace1700916ff1}} 
-Silver&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Silver} (0x\+C0\+C0\+C0). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray@{Gray}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Gray@{Gray}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a0e53834dc3a9a5407fa424d1c8f9b325}} 
-Gray&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Gray} (0x808080). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Black@{Black}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Black@{Black}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a5272315baf30235883a6d57cb9786bca}} 
-Black&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Black} (0x000000). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Red@{Red}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Red@{Red}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457}} 
-Red&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Red} (0x\+F\+F0000). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Maroon@{Maroon}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Maroon@{Maroon}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3b3b99e98efd19f316be1cd810845ab2}} 
-Maroon&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Maroon} (0x800000). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Yellow@{Yellow}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Yellow@{Yellow}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ad312129d450abe89b55e91a47f21d203}} 
-Yellow&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Yellow} (0x\+F\+F\+F\+F00). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Olive@{Olive}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Olive@{Olive}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a6f2b9ebe3c0ed5395cb551a5650e7b05}} 
-Olive&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Olive} (0x808000). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Lime@{Lime}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Lime@{Lime}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a865298380f9bd689bbec416267a56580}} 
-Lime&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Lime} (0x00\+F\+F00). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Green@{Green}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Green@{Green}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a384d49f1ac85f826658bccf8f6c778f9}} 
-Green&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Green} (0x008000). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Aqua@{Aqua}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Aqua@{Aqua}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56}} 
-Aqua&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Aqua} (0x00\+F\+F\+FF). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Teal@{Teal}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Teal@{Teal}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a1d6dc387dfdc24340027139fa56c8bbd}} 
-Teal&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Teal} (0x008080). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Blue@{Blue}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Blue@{Blue}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a62679f040a4e55584b1bf519be06fbde}} 
-Blue&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Blue} (0x0000\+FF). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Navy@{Navy}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Navy@{Navy}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a97810f1c2418830c1e7f556c2a63e9e5}} 
-Navy&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Navy} (0x000080). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Fuchsia@{Fuchsia}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Fuchsia@{Fuchsia}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409ae7ff5f29f6e8830d96b791c698b57f18}} 
-Fuchsia&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Fuchsia} (0x\+F\+F00\+FF). \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{Purple@{Purple}!Graphics@{Graphics}}\index{Graphics@{Graphics}!Purple@{Purple}}}\mbox{\Hypertarget{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}\label{group__gfx__group_gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52}} 
-Purple&\hyperlink{classastu_1_1Color}{Color} constant for the color {\itshape Purple} (0x800080). \\
 \hline
 
 \end{DoxyEnumFields}

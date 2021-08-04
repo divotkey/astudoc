@@ -1,0 +1,136 @@
+\hypertarget{classastu_1_1ColorHsv}{}\section{astu\+:\+:Color\+Hsv Class Reference}
+\label{classastu_1_1ColorHsv}\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+
+
+{\ttfamily \#include $<$Color\+Hsv.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1ColorHsv_ab19f575051a7b2a5ddb1a5033adff845}{Color\+Hsv} (double \hyperlink{classastu_1_1ColorHsv_a4622776730a1656b8fa078d302243ec0}{h}=0, double \hyperlink{classastu_1_1ColorHsv_a4935b897136129b2ec75bebd437d227e}{s}=0, double \hyperlink{classastu_1_1ColorHsv_a05e185fc6498318cb461941a8ca40ec2}{v}=0)
+\item 
+\hyperlink{classastu_1_1ColorHsv_a8ef91414fc6a68539ece9953ebf6124d}{Color\+Hsv} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1ColorHsv}{Color\+Hsv} \& \hyperlink{classastu_1_1ColorHsv_aa42f86bf03a392ff274d1a1f0ec92ca0}{Set} (double \hyperlink{classastu_1_1ColorHsv_a4622776730a1656b8fa078d302243ec0}{h}, double \hyperlink{classastu_1_1ColorHsv_a4935b897136129b2ec75bebd437d227e}{s}, double \hyperlink{classastu_1_1ColorHsv_a05e185fc6498318cb461941a8ca40ec2}{v})
+\item 
+\hyperlink{classastu_1_1ColorHsv}{Color\+Hsv} \& \hyperlink{classastu_1_1ColorHsv_a5ff673f9c2ad37aac3dcda76e5bf1f94}{Set} (const \hyperlink{classastu_1_1Color}{Color4d} \&c)
+\item 
+\hyperlink{classastu_1_1Color}{Color4d} \hyperlink{classastu_1_1ColorHsv_a296b1f9beccd3c5b34d84f8b3fc83375}{To\+Rgb} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classastu_1_1ColorHsv_a4622776730a1656b8fa078d302243ec0}{h}
+\item 
+double \hyperlink{classastu_1_1ColorHsv_a4935b897136129b2ec75bebd437d227e}{s}
+\item 
+double \hyperlink{classastu_1_1ColorHsv_a05e185fc6498318cb461941a8ca40ec2}{v}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a color value in H\+SV (H\+SB) color space.
+
+A color is described using four color channels\+: hue, saturation and value (brightness). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_ab19f575051a7b2a5ddb1a5033adff845}\label{classastu_1_1ColorHsv_ab19f575051a7b2a5ddb1a5033adff845}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!Color\+Hsv@{Color\+Hsv}}
+\index{Color\+Hsv@{Color\+Hsv}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{Color\+Hsv()}{ColorHsv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily astu\+::\+Color\+Hsv\+::\+Color\+Hsv (\begin{DoxyParamCaption}\item[{double}]{h = {\ttfamily 0},  }\item[{double}]{s = {\ttfamily 0},  }\item[{double}]{v = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & the hue component of this color \\
+\hline
+{\em s} & the saturation component of this color \\
+\hline
+{\em v} & the brightness component of this color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_a8ef91414fc6a68539ece9953ebf6124d}\label{classastu_1_1ColorHsv_a8ef91414fc6a68539ece9953ebf6124d}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!Color\+Hsv@{Color\+Hsv}}
+\index{Color\+Hsv@{Color\+Hsv}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{Color\+Hsv()}{ColorHsv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily astu\+::\+Color\+Hsv\+::\+Color\+Hsv (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the rgb color to initialize this color \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_aa42f86bf03a392ff274d1a1f0ec92ca0}\label{classastu_1_1ColorHsv_aa42f86bf03a392ff274d1a1f0ec92ca0}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1ColorHsv}{Color\+Hsv}\& astu\+::\+Color\+Hsv\+::\+Set (\begin{DoxyParamCaption}\item[{double}]{h,  }\item[{double}]{s,  }\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the components of this color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & the hue component of this color \\
+\hline
+{\em s} & the saturation component of this color \\
+\hline
+{\em v} & the brightness component of this color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_a5ff673f9c2ad37aac3dcda76e5bf1f94}\label{classastu_1_1ColorHsv_a5ff673f9c2ad37aac3dcda76e5bf1f94}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1ColorHsv}{Color\+Hsv}\& astu\+::\+Color\+Hsv\+::\+Set (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets this color to the specified color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the color in R\+GB color space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_a296b1f9beccd3c5b34d84f8b3fc83375}\label{classastu_1_1ColorHsv_a296b1f9beccd3c5b34d84f8b3fc83375}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!To\+Rgb@{To\+Rgb}}
+\index{To\+Rgb@{To\+Rgb}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{To\+Rgb()}{ToRgb()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d} astu\+::\+Color\+Hsv\+::\+To\+Rgb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts this H\+SV color to an R\+GB color.
+
+\begin{DoxyReturn}{Returns}
+the corresponding R\+GB color. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1ColorHsv_a4622776730a1656b8fa078d302243ec0}\label{classastu_1_1ColorHsv_a4622776730a1656b8fa078d302243ec0}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!h@{h}}
+\index{h@{h}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily double astu\+::\+Color\+Hsv\+::h}
+
+The hue component of this color. \mbox{\Hypertarget{classastu_1_1ColorHsv_a4935b897136129b2ec75bebd437d227e}\label{classastu_1_1ColorHsv_a4935b897136129b2ec75bebd437d227e}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!s@{s}}
+\index{s@{s}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily double astu\+::\+Color\+Hsv\+::s}
+
+The saturation component of this color. \mbox{\Hypertarget{classastu_1_1ColorHsv_a05e185fc6498318cb461941a8ca40ec2}\label{classastu_1_1ColorHsv_a05e185fc6498318cb461941a8ca40ec2}} 
+\index{astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}!v@{v}}
+\index{v@{v}!astu\+::\+Color\+Hsv@{astu\+::\+Color\+Hsv}}
+\subsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily double astu\+::\+Color\+Hsv\+::v}
+
+The brightness component of this color. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Graphics/Color\+Hsv.\+h\end{DoxyCompactItemize}

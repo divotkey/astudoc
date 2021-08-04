@@ -1,0 +1,419 @@
+\hypertarget{classastu_1_1suite2d_1_1LineRendererClient}{}\section{astu\+:\+:suite2d\+:\+:Line\+Renderer\+Client$<$ T $>$ Class Template Reference}
+\label{classastu_1_1suite2d_1_1LineRendererClient}\index{astu\+::suite2d\+::\+Line\+Renderer\+Client$<$ T $>$@{astu\+::suite2d\+::\+Line\+Renderer\+Client$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Line\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Line\+Renderer\+Client$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classastu_1_1suite2d_1_1LineRendererClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Line\+Renderer\+Client$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classastu_1_1suite2d_1_1LineRendererClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1LineRendererClient_aaa642bb6ae37511a6d337969d2cef4da}{Line\+Renderer\+Client} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1LineRenderer}{Line\+Renderer}$<$ T $>$ \& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a54c67e38264a5bcad98953f97037e6ce}{Get\+Line\+Renderer} ()
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a8377c0e0d4427efdedbc4360677bda38}{Set\+View\+Transform} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&m)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a6970478206086858fdbd3e7f61e58dce}{Reset\+Transform} ()
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_aa53ada81a5ffff517341318588cdf329}{Set\+Transform} (const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&m)
+\item 
+const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a55152a0ad8132995d930bb57429b05d3}{Get\+Transform} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a0cab0b0c3b4666ba9c7cd6fa238a0ec8}{Translate} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&delta)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a983316c99756edd2033161b36eec0a4a}{Rotate} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&delta\+Phi)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_af4c5038b72648837eedc0b564e14665e}{Rotate\+Deg} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&delta\+Phi)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a58ef9f84ea71a512f5c1324ee47e40ee}{Scale} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&delta\+Scale)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_af8761439ae1a93bfe3c11d298e356182}{Push\+Transform} ()
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_ade57ff3efe68be03d83203890e4aa64a}{Pop\+Transform} ()
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_af1cd4a97304108a78db34861f8d40c2a}{Set\+Draw\+Color} (const \hyperlink{classastu_1_1Color}{Color}$<$ T $>$ \&c)
+\item 
+const \hyperlink{classastu_1_1Color}{Color}$<$ T $>$ \& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a68715addd34ead52f809c8eb6b555442}{Get\+Draw\+Color} ()
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_aec1c6210cceed2997951390e16ffb574}{Draw\+Line} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p1, const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p2)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a82d60fdaacacc9fff598193537df1dd8}{Draw\+Line} (T x1, T y1, T x2, T y2)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_aa4753afaef212ae29751ea9b82f3147b}{Draw\+Lines} (const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&vertices)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a092fe14fdfebc4270fa0784018fa03d1}{Draw\+Rectangle} (T cx, T cy, T w, T h)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a80c9ecfc19f5496531d0aee3bb19f645}{Draw\+Rectangle} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&c, const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&s)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a228f44ab66118de486978a467608e82e}{Draw\+Circle} (T cx, T cy, T r, unsigned int segments=24)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_a6a195d17c31ba5d209cc3041aa9e9e3c}{Draw\+Circle} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&c, T r, unsigned int segments=24)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_ac8cfa3e2e94d0bb5e787191146f043ed}{Draw\+Polygon} (const \hyperlink{classastu_1_1Polygon}{Polygon}$<$ T $>$ \&poly)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient_af90e47acfd9aff3137395120e12ad77f}{Draw\+Polygon\+Normals} (const \hyperlink{classastu_1_1Polygon}{Polygon}$<$ T $>$ \&poly, T normal\+Scale)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::suite2d\+::\+Line\+Renderer\+Client$<$ T $>$}
+
+Serices can derive from this class to use a line renderer in a convenient way. This class fetches a line renderer and also replicates its method for convenient usage. It also provides a matrix transformation stack.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical data type used for rendering \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_aaa642bb6ae37511a6d337969d2cef4da}\label{classastu_1_1suite2d_1_1LineRendererClient_aaa642bb6ae37511a6d337969d2cef4da}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Line\+Renderer\+Client@{Line\+Renderer\+Client}}
+\index{Line\+Renderer\+Client@{Line\+Renderer\+Client}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Line\+Renderer\+Client()}{LineRendererClient()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::\hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{Line\+Renderer\+Client} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a228f44ab66118de486978a467608e82e}\label{classastu_1_1suite2d_1_1LineRendererClient_a228f44ab66118de486978a467608e82e}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Circle@{Draw\+Circle}}
+\index{Draw\+Circle@{Draw\+Circle}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Circle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Circle (\begin{DoxyParamCaption}\item[{T}]{cx,  }\item[{T}]{cy,  }\item[{T}]{r,  }\item[{unsigned int}]{segments = {\ttfamily 24} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws a circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & the x-\/coordinate of the center of the circle \\
+\hline
+{\em cy} & the y-\/coordinate of the center of the circle \\
+\hline
+{\em r} & the radius of the circle \\
+\hline
+{\em segments} & the number of line segments used to draw the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a6a195d17c31ba5d209cc3041aa9e9e3c}\label{classastu_1_1suite2d_1_1LineRendererClient_a6a195d17c31ba5d209cc3041aa9e9e3c}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Circle@{Draw\+Circle}}
+\index{Draw\+Circle@{Draw\+Circle}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Circle()}{DrawCircle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Circle (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{c,  }\item[{T}]{r,  }\item[{unsigned int}]{segments = {\ttfamily 24} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws a circle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the center of the circle \\
+\hline
+{\em r} & the radius of the circle \\
+\hline
+{\em segments} & the number of line segments used to draw the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_aec1c6210cceed2997951390e16ffb574}\label{classastu_1_1suite2d_1_1LineRendererClient_aec1c6210cceed2997951390e16ffb574}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Line (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p1,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws a line between two points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & the first point of the line \\
+\hline
+{\em p2} & the second point of the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a82d60fdaacacc9fff598193537df1dd8}\label{classastu_1_1suite2d_1_1LineRendererClient_a82d60fdaacacc9fff598193537df1dd8}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Line (\begin{DoxyParamCaption}\item[{T}]{x1,  }\item[{T}]{y1,  }\item[{T}]{x2,  }\item[{T}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws a line between two points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the first point of the line \\
+\hline
+{\em y1} & the y-\/coordinate of the first point of the line \\
+\hline
+{\em x2} & the x-\/coordinate of the second point of the line \\
+\hline
+{\em y2} & the y-\/coordinate of the second point of the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_aa4753afaef212ae29751ea9b82f3147b}\label{classastu_1_1suite2d_1_1LineRendererClient_aa4753afaef212ae29751ea9b82f3147b}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Lines@{Draw\+Lines}}
+\index{Draw\+Lines@{Draw\+Lines}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Lines()}{DrawLines()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Lines (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draw a series of connected lines.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & the points along the lines \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_ac8cfa3e2e94d0bb5e787191146f043ed}\label{classastu_1_1suite2d_1_1LineRendererClient_ac8cfa3e2e94d0bb5e787191146f043ed}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Polygon@{Draw\+Polygon}}
+\index{Draw\+Polygon@{Draw\+Polygon}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Polygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Polygon (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Polygon}{Polygon}$<$ T $>$ \&}]{poly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws a polygon.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & the polygon to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_af90e47acfd9aff3137395120e12ad77f}\label{classastu_1_1suite2d_1_1LineRendererClient_af90e47acfd9aff3137395120e12ad77f}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Polygon\+Normals@{Draw\+Polygon\+Normals}}
+\index{Draw\+Polygon\+Normals@{Draw\+Polygon\+Normals}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Polygon\+Normals()}{DrawPolygonNormals()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Polygon\+Normals (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Polygon}{Polygon}$<$ T $>$ \&}]{poly,  }\item[{T}]{normal\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws the normals of a polygon.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & the polygon \\
+\hline
+{\em normal\+Scale} & the scaling factor used to render the normals \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a092fe14fdfebc4270fa0784018fa03d1}\label{classastu_1_1suite2d_1_1LineRendererClient_a092fe14fdfebc4270fa0784018fa03d1}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Rectangle@{Draw\+Rectangle}}
+\index{Draw\+Rectangle@{Draw\+Rectangle}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Rectangle()}{DrawRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Rectangle (\begin{DoxyParamCaption}\item[{T}]{cx,  }\item[{T}]{cy,  }\item[{T}]{w,  }\item[{T}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws an axis-\/aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cx} & the x-\/coordinate of the center of the rectangle \\
+\hline
+{\em cy} & the y-\/coordinate of the center of the rectangle \\
+\hline
+{\em w} & the width of the rectangle \\
+\hline
+{\em h} & the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a80c9ecfc19f5496531d0aee3bb19f645}\label{classastu_1_1suite2d_1_1LineRendererClient_a80c9ecfc19f5496531d0aee3bb19f645}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Draw\+Rectangle@{Draw\+Rectangle}}
+\index{Draw\+Rectangle@{Draw\+Rectangle}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Draw\+Rectangle()}{DrawRectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Draw\+Rectangle (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{c,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Draws an axis-\/aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the center of the rectangle \\
+\hline
+{\em s} & the dimensions of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a68715addd34ead52f809c8eb6b555442}\label{classastu_1_1suite2d_1_1LineRendererClient_a68715addd34ead52f809c8eb6b555442}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Get\+Draw\+Color@{Get\+Draw\+Color}}
+\index{Get\+Draw\+Color@{Get\+Draw\+Color}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Get\+Draw\+Color()}{GetDrawColor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const \hyperlink{classastu_1_1Color}{Color}$<$T$>$\& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Get\+Draw\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the current draw color.
+
+\begin{DoxyReturn}{Returns}
+the current draw color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a54c67e38264a5bcad98953f97037e6ce}\label{classastu_1_1suite2d_1_1LineRendererClient_a54c67e38264a5bcad98953f97037e6ce}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Get\+Line\+Renderer@{Get\+Line\+Renderer}}
+\index{Get\+Line\+Renderer@{Get\+Line\+Renderer}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Get\+Line\+Renderer()}{GetLineRenderer()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classastu_1_1suite2d_1_1LineRenderer}{Line\+Renderer}$<$T$>$\& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Get\+Line\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the line renderer.
+
+\begin{DoxyReturn}{Returns}
+the line renderer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a55152a0ad8132995d930bb57429b05d3}\label{classastu_1_1suite2d_1_1LineRendererClient_a55152a0ad8132995d930bb57429b05d3}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Get\+Transform@{Get\+Transform}}
+\index{Get\+Transform@{Get\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Get\+Transform()}{GetTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$T$>$\& \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the current transformation matrix.
+
+\begin{DoxyReturn}{Returns}
+the transformation matrix currently used. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_ade57ff3efe68be03d83203890e4aa64a}\label{classastu_1_1suite2d_1_1LineRendererClient_ade57ff3efe68be03d83203890e4aa64a}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Pop\+Transform@{Pop\+Transform}}
+\index{Pop\+Transform@{Pop\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Pop\+Transform()}{PopTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Pop\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Restores the last pushed transform from the transformation stack. \mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_af8761439ae1a93bfe3c11d298e356182}\label{classastu_1_1suite2d_1_1LineRendererClient_af8761439ae1a93bfe3c11d298e356182}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Push\+Transform@{Push\+Transform}}
+\index{Push\+Transform@{Push\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Push\+Transform()}{PushTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Push\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Pushes the current transform on the transfomation stack. \mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a6970478206086858fdbd3e7f61e58dce}\label{classastu_1_1suite2d_1_1LineRendererClient_a6970478206086858fdbd3e7f61e58dce}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Reset\+Transform@{Reset\+Transform}}
+\index{Reset\+Transform@{Reset\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Reset\+Transform()}{ResetTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Reset\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Resetns the current transfomation to identity. \mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a983316c99756edd2033161b36eec0a4a}\label{classastu_1_1suite2d_1_1LineRendererClient_a983316c99756edd2033161b36eec0a4a}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Rotate (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{delta\+Phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a rotation to the current transfromation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Phi} & the rotation angle in radians \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_af4c5038b72648837eedc0b564e14665e}\label{classastu_1_1suite2d_1_1LineRendererClient_af4c5038b72648837eedc0b564e14665e}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Rotate\+Deg@{Rotate\+Deg}}
+\index{Rotate\+Deg@{Rotate\+Deg}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Rotate\+Deg()}{RotateDeg()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Rotate\+Deg (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{delta\+Phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a rotation to the current transfromation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Phi} & the rotation angle in degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a58ef9f84ea71a512f5c1324ee47e40ee}\label{classastu_1_1suite2d_1_1LineRendererClient_a58ef9f84ea71a512f5c1324ee47e40ee}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Scale@{Scale}}
+\index{Scale@{Scale}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Scale (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{delta\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a scaling to the corrent transformation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Scale} & the scaling factors in x and y dimensions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_af1cd4a97304108a78db34861f8d40c2a}\label{classastu_1_1suite2d_1_1LineRendererClient_af1cd4a97304108a78db34861f8d40c2a}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Set\+Draw\+Color@{Set\+Draw\+Color}}
+\index{Set\+Draw\+Color@{Set\+Draw\+Color}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Set\+Draw\+Color()}{SetDrawColor()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Set\+Draw\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color}$<$ T $>$ \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current drawing color used for all subsequent drawing calls.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the new drawing color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_aa53ada81a5ffff517341318588cdf329}\label{classastu_1_1suite2d_1_1LineRendererClient_aa53ada81a5ffff517341318588cdf329}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Set\+Transform@{Set\+Transform}}
+\index{Set\+Transform@{Set\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Set\+Transform()}{SetTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Set\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the transformation matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the transformation matrix to become the current one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a8377c0e0d4427efdedbc4360677bda38}\label{classastu_1_1suite2d_1_1LineRendererClient_a8377c0e0d4427efdedbc4360677bda38}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Set\+View\+Transform@{Set\+View\+Transform}}
+\index{Set\+View\+Transform@{Set\+View\+Transform}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Set\+View\+Transform()}{SetViewTransform()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Set\+View\+Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Matrix3}{Matrix3}$<$ T $>$ \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the view tranformation.
+
+The view transformation matrix is typically provieded by a camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the view transformation matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1LineRendererClient_a0cab0b0c3b4666ba9c7cd6fa238a0ec8}\label{classastu_1_1suite2d_1_1LineRendererClient_a0cab0b0c3b4666ba9c7cd6fa238a0ec8}} 
+\index{astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}!Translate@{Translate}}
+\index{Translate@{Translate}!astu\+::suite2d\+::\+Line\+Renderer\+Client@{astu\+::suite2d\+::\+Line\+Renderer\+Client}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1LineRendererClient}{astu\+::suite2d\+::\+Line\+Renderer\+Client}$<$ T $>$\+::Translate (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds a translation to the current transfromation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & the delta movement \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Line\+Renderer.\+h\end{DoxyCompactItemize}

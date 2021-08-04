@@ -1,0 +1,141 @@
+\hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{}\section{astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider\+Builder Class Reference}
+\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder}\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+
+
+{\ttfamily \#include $<$C\+Colliders.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classastu_1_1suite2d_1_1CPolygonColliderBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classastu_1_1suite2d_1_1CPolygonColliderBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_aea66d3118aedf7748ccb3bd6115f2961}{C\+Polygon\+Collider\+Builder} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderFactory}{C\+Polygon\+Collider\+Factory} $>$ collider\+Factory=nullptr)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a5b4a20190025ac8a54e4c6da2ef55cf7}{Polygon} (std\+::shared\+\_\+ptr$<$ const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f} $>$ poly)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a11e3b9cace57e712bfae12de926458bb}{Polygon} (const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \&vertices)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a05b7196e63bc3466a31fefc6df121a58}{Make\+Rectangle} (float width, float height)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_ac8d3cf69f1fc687ab4aef32aa12383df}{Reset} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider}{C\+Polygon\+Collider} $>$ \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a0ddc14822d47cf0fe115ed47d7c3095e}{Build} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Builds \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider}{C\+Polygon\+Collider} instances. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_aea66d3118aedf7748ccb3bd6115f2961}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_aea66d3118aedf7748ccb3bd6115f2961}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!C\+Polygon\+Collider\+Builder@{C\+Polygon\+Collider\+Builder}}
+\index{C\+Polygon\+Collider\+Builder@{C\+Polygon\+Collider\+Builder}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{C\+Polygon\+Collider\+Builder()}{CPolygonColliderBuilder()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+C\+Polygon\+Collider\+Builder (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderFactory}{C\+Polygon\+Collider\+Factory} $>$}]{collider\+Factory = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructor.
+
+If the specified collider factory is null a service which implements the collider factory interface will be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider\+Factory} & the factory used to create new instances \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a0ddc14822d47cf0fe115ed47d7c3095e}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a0ddc14822d47cf0fe115ed47d7c3095e}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1CPolygonCollider}{C\+Polygon\+Collider}$>$ astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Builds a new polygon collider according to the current configuration.
+
+\begin{DoxyReturn}{Returns}
+the newly created polygon collider 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a05b7196e63bc3466a31fefc6df121a58}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a05b7196e63bc3466a31fefc6df121a58}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!Make\+Rectangle@{Make\+Rectangle}}
+\index{Make\+Rectangle@{Make\+Rectangle}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Make\+Rectangle()}{MakeRectangle()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder}\& astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+Make\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+Set the polygon to an axis aligned rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the rectangle \\
+\hline
+{\em height} & the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a5b4a20190025ac8a54e4c6da2ef55cf7}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a5b4a20190025ac8a54e4c6da2ef55cf7}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder}\& astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+Polygon (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f} $>$}]{poly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the polygon of the polygon collider to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & the polygon of the collider \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a11e3b9cace57e712bfae12de926458bb}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_a11e3b9cace57e712bfae12de926458bb}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder}\& astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2f} $>$ \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the polygon of the polygon collider to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & the vertices that make up the polygon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonColliderBuilder_ac8d3cf69f1fc687ab4aef32aa12383df}\label{classastu_1_1suite2d_1_1CPolygonColliderBuilder_ac8d3cf69f1fc687ab4aef32aa12383df}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CPolygonColliderBuilder}{C\+Polygon\+Collider\+Builder}\& astu\+::suite2d\+::\+C\+Polygon\+Collider\+Builder\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this builder to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Colliders.\+h\end{DoxyCompactItemize}

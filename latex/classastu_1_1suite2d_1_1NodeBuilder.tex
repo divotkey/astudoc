@@ -1,0 +1,94 @@
+\hypertarget{classastu_1_1suite2d_1_1NodeBuilder}{}\section{astu\+:\+:suite2d\+:\+:Node\+Builder Class Reference}
+\label{classastu_1_1suite2d_1_1NodeBuilder}\index{astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Node\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classastu_1_1suite2d_1_1NodeBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Node\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classastu_1_1suite2d_1_1NodeBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1NodeBuilder_a546a7e4396fd4b639bfcfdf6210b4d18}{Node\+Builder} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1NodeBuilder}{Node\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1NodeBuilder_a27c7bef4a7b0206f5b348a966dd1bf65}{Attach\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ child)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1NodeBuilder}{Node\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1NodeBuilder_aa4cc219e5a695416b00b860bb56f5133}{Reset} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Node}{Node} $>$ \hyperlink{classastu_1_1suite2d_1_1NodeBuilder_aa6fe121083b0772242e6e38d2a109970}{Build} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is used to build new nodes for the scene graph. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1NodeBuilder_a546a7e4396fd4b639bfcfdf6210b4d18}\label{classastu_1_1suite2d_1_1NodeBuilder_a546a7e4396fd4b639bfcfdf6210b4d18}} 
+\index{astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}!Node\+Builder@{Node\+Builder}}
+\index{Node\+Builder@{Node\+Builder}!astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}}
+\subsubsection{\texorpdfstring{Node\+Builder()}{NodeBuilder()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Node\+Builder\+::\+Node\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1NodeBuilder_a27c7bef4a7b0206f5b348a966dd1bf65}\label{classastu_1_1suite2d_1_1NodeBuilder_a27c7bef4a7b0206f5b348a966dd1bf65}} 
+\index{astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}!Attach\+Child@{Attach\+Child}}
+\index{Attach\+Child@{Attach\+Child}!astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}}
+\subsubsection{\texorpdfstring{Attach\+Child()}{AttachChild()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1NodeBuilder}{Node\+Builder}\& astu\+::suite2d\+::\+Node\+Builder\+::\+Attach\+Child (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a new child to be attached to the node to create.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & the child \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1NodeBuilder_aa6fe121083b0772242e6e38d2a109970}\label{classastu_1_1suite2d_1_1NodeBuilder_aa6fe121083b0772242e6e38d2a109970}} 
+\index{astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Node}{Node}$>$ astu\+::suite2d\+::\+Node\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new node according to the current configuration.
+
+\begin{DoxyReturn}{Returns}
+the newly created polyline 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1NodeBuilder_aa4cc219e5a695416b00b860bb56f5133}\label{classastu_1_1suite2d_1_1NodeBuilder_aa4cc219e5a695416b00b860bb56f5133}} 
+\index{astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+Node\+Builder@{astu\+::suite2d\+::\+Node\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1NodeBuilder}{Node\+Builder}\& astu\+::suite2d\+::\+Node\+Builder\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this builder to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Scene.\+h\end{DoxyCompactItemize}

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -65,6 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classastu_1_1Mouse-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,6 +75,19 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="Mouse_8h_source.html">Mouse.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a18205a089111599d94479bfecc5ca7ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Mouse.html#a18205a089111599d94479bfecc5ca7ec">Button</a> { <br />
+&#160;&#160;<b>LEFT</b> = 1, 
+<b>MIDDLE</b> = 2, 
+<b>RIGHT</b> = 3, 
+<b>SIDE_1</b> = 4, 
+<br />
+&#160;&#160;<b>SIDE_2</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a18205a089111599d94479bfecc5ca7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f60d23fe113d85a80569a5a3539eabf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Mouse.html#a1f60d23fe113d85a80569a5a3539eabf">SetButton</a> (int button, bool pressed)</td></tr>
@@ -86,11 +100,55 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a22202c4dec1e13df857a524df45b4fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f008ad4c4a9cba165ff74e44b0bdb17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Mouse.html#a8f008ad4c4a9cba165ff74e44b0bdb17">GetCursorY</a> () const</td></tr>
 <tr class="separator:a8f008ad4c4a9cba165ff74e44b0bdb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b27c582a681a9328c9d36367a62183f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Mouse.html#a7b27c582a681a9328c9d36367a62183f">GetCursorInWorldspace</a> (const <a class="el" href="classastu_1_1suite2d_1_1Camera.html">suite2d::Camera</a> &amp;camera)</td></tr>
+<tr class="separator:a7b27c582a681a9328c9d36367a62183f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides access to mouse input.</p>
 <p>This class is realized using the Monostate design pattern. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a18205a089111599d94479bfecc5ca7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18205a089111599d94479bfecc5ca7ec">&#9670;&nbsp;</a></span>Button</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classastu_1_1Mouse.html#a18205a089111599d94479bfecc5ca7ec">astu::Mouse::Button</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enum constants for mouse buttons. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7b27c582a681a9328c9d36367a62183f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b27c582a681a9328c9d36367a62183f">&#9670;&nbsp;</a></span>GetCursorInWorldspace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classastu_1_1Vector2.html">Vector2f</a> astu::Mouse::GetCursorInWorldspace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1suite2d_1_1Camera.html">suite2d::Camera</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the cursor position in world space.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>the camera used to transform screen space coords </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the cursor position in world space </dd></dl>
+
+</div>
+</div>
 <a id="a22202c4dec1e13df857a524df45b4fc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22202c4dec1e13df857a524df45b4fc0">&#9670;&nbsp;</a></span>GetCursorX()</h2>
 
@@ -228,7 +286,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="Mouse_8h_source.html">Mouse.h</a></li>
+<li>include/Input/<a class="el" href="Mouse_8h_source.html">Mouse.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

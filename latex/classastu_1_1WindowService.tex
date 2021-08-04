@@ -1,0 +1,230 @@
+\hypertarget{classastu_1_1WindowService}{}\section{astu\+:\+:Window\+Service Class Reference}
+\label{classastu_1_1WindowService}\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+
+
+{\ttfamily \#include $<$Window\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Window\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classastu_1_1WindowService__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1WindowService_afa84180c2149454f5062608b468e7b51}{$\sim$\+Window\+Service} ()
+\item 
+virtual void \hyperlink{classastu_1_1WindowService_a77fb8b7272b58e39c7d003923034eedf}{Set\+Size} (int width, int height)=0
+\item 
+void \hyperlink{classastu_1_1WindowService_a344f90996e33b7861aa8870860ddd38f}{Set\+Size} (\hyperlink{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}{Resolution} res)
+\item 
+virtual int \hyperlink{classastu_1_1WindowService_ad2e75e91b0d72afb92c980fcbd8f227a}{Get\+Width} () const =0
+\item 
+virtual int \hyperlink{classastu_1_1WindowService_a16d1880606a2c597162d8c80bed9d1a2}{Get\+Height} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1WindowService_a298dcaad372f611f14edb4ad33044efd}{Set\+Title} (const std\+::string \&title)=0
+\item 
+virtual const std\+::string \& \hyperlink{classastu_1_1WindowService_a54815692f9d3086673dd2694d75dcb65}{Get\+Title} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1WindowService_a78bee95831f4497fcee7b8d10575f0d8}{Set\+Resizable} (bool b)=0
+\item 
+virtual bool \hyperlink{classastu_1_1WindowService_a277954f71dd019b3ffc5d37df3f8b3af}{Is\+Resizable} () const =0
+\item 
+virtual int \hyperlink{classastu_1_1WindowService_ad773e0c567946e06ace76c016bb16349}{Num\+Displays} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1WindowService_abe2ef0eb9f42078676318945e15d2dce}{Set\+Fullscreen} (bool enable\+Fullscreen)=0
+\item 
+virtual bool \hyperlink{classastu_1_1WindowService_aa94ce60d1e8dd7484d364b65c25be1ca}{Is\+Fullscreen} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for an services which manages application windows. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1WindowService_afa84180c2149454f5062608b468e7b51}\label{classastu_1_1WindowService_afa84180c2149454f5062608b468e7b51}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!````~Window\+Service@{$\sim$\+Window\+Service}}
+\index{````~Window\+Service@{$\sim$\+Window\+Service}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Window\+Service()}{~WindowService()}}
+{\footnotesize\ttfamily virtual astu\+::\+Window\+Service\+::$\sim$\+Window\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1WindowService_a16d1880606a2c597162d8c80bed9d1a2}\label{classastu_1_1WindowService_a16d1880606a2c597162d8c80bed9d1a2}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Get\+Height@{Get\+Height}}
+\index{Get\+Height@{Get\+Height}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Get\+Height()}{GetHeight()}}
+{\footnotesize\ttfamily virtual int astu\+::\+Window\+Service\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the height of the window in pixels.
+
+\begin{DoxyReturn}{Returns}
+the height in pixls 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a76d0f56254c9545d4d9762349133d4af}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_a54815692f9d3086673dd2694d75dcb65}\label{classastu_1_1WindowService_a54815692f9d3086673dd2694d75dcb65}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Get\+Title@{Get\+Title}}
+\index{Get\+Title@{Get\+Title}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Get\+Title()}{GetTitle()}}
+{\footnotesize\ttfamily virtual const std\+::string\& astu\+::\+Window\+Service\+::\+Get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the current window title.
+
+\begin{DoxyReturn}{Returns}
+the window title 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_ad6ee7f7a409960e91ddd77bbcea6432f}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_ad2e75e91b0d72afb92c980fcbd8f227a}\label{classastu_1_1WindowService_ad2e75e91b0d72afb92c980fcbd8f227a}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Get\+Width@{Get\+Width}}
+\index{Get\+Width@{Get\+Width}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Get\+Width()}{GetWidth()}}
+{\footnotesize\ttfamily virtual int astu\+::\+Window\+Service\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the width of the window in pixels.
+
+\begin{DoxyReturn}{Returns}
+the width in pixls 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a45c3181611e718bcfe44862baed6d520}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_aa94ce60d1e8dd7484d364b65c25be1ca}\label{classastu_1_1WindowService_aa94ce60d1e8dd7484d364b65c25be1ca}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Is\+Fullscreen@{Is\+Fullscreen}}
+\index{Is\+Fullscreen@{Is\+Fullscreen}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Is\+Fullscreen()}{IsFullscreen()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Window\+Service\+::\+Is\+Fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns whether fullscreen mode is currently activated.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if fulscreen mode is activated 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_ae2be9aedf021799802cf7d1feaef7dfc}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_a277954f71dd019b3ffc5d37df3f8b3af}\label{classastu_1_1WindowService_a277954f71dd019b3ffc5d37df3f8b3af}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Is\+Resizable@{Is\+Resizable}}
+\index{Is\+Resizable@{Is\+Resizable}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Is\+Resizable()}{IsResizable()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Window\+Service\+::\+Is\+Resizable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns whether the window is resizable.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the window is resizable 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a335762da99b341205b8bf759a0b57c64}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_ad773e0c567946e06ace76c016bb16349}\label{classastu_1_1WindowService_ad773e0c567946e06ace76c016bb16349}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Num\+Displays@{Num\+Displays}}
+\index{Num\+Displays@{Num\+Displays}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Num\+Displays()}{NumDisplays()}}
+{\footnotesize\ttfamily virtual int astu\+::\+Window\+Service\+::\+Num\+Displays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of available displays. 
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a3aefc8ab3780a23cdef8780e42436fd5}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_abe2ef0eb9f42078676318945e15d2dce}\label{classastu_1_1WindowService_abe2ef0eb9f42078676318945e15d2dce}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Set\+Fullscreen@{Set\+Fullscreen}}
+\index{Set\+Fullscreen@{Set\+Fullscreen}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Set\+Fullscreen()}{SetFullscreen()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Window\+Service\+::\+Set\+Fullscreen (\begin{DoxyParamCaption}\item[{bool}]{enable\+Fullscreen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Activates or deactivates fullscreen mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+Fullscreen} & set to {\ttfamily true} to activate fullscreen mode \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a45a37b4958f6e77e22ffa55699a171ef}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_a78bee95831f4497fcee7b8d10575f0d8}\label{classastu_1_1WindowService_a78bee95831f4497fcee7b8d10575f0d8}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Set\+Resizable@{Set\+Resizable}}
+\index{Set\+Resizable@{Set\+Resizable}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Set\+Resizable()}{SetResizable()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Window\+Service\+::\+Set\+Resizable (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Specifies whether the window should be resizable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the {\ttfamily true} if the window should be resizable \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_ab50969b38dedf29146704898a74df5ae}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_a77fb8b7272b58e39c7d003923034eedf}\label{classastu_1_1WindowService_a77fb8b7272b58e39c7d003923034eedf}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void astu\+::\+Window\+Service\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the dimension of the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the window in pixels \\
+\hline
+{\em height} & the height of the window in pixels \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_a1c8d729ef42024bc0cc5065ecc6631c8}{astu\+::\+Sdl\+Video\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1WindowService_a344f90996e33b7861aa8870860ddd38f}\label{classastu_1_1WindowService_a344f90996e33b7861aa8870860ddd38f}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Set\+Size@{Set\+Size}}
+\index{Set\+Size@{Set\+Size}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Set\+Size()}{SetSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Window\+Service\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{\hyperlink{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}{Resolution}}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the dimension of the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em res} & the window resolution \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1WindowService_a298dcaad372f611f14edb4ad33044efd}\label{classastu_1_1WindowService_a298dcaad372f611f14edb4ad33044efd}} 
+\index{astu\+::\+Window\+Service@{astu\+::\+Window\+Service}!Set\+Title@{Set\+Title}}
+\index{Set\+Title@{Set\+Title}!astu\+::\+Window\+Service@{astu\+::\+Window\+Service}}
+\subsubsection{\texorpdfstring{Set\+Title()}{SetTitle()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Window\+Service\+::\+Set\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the window title.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the title of the window \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVideoService_aad3c873db481dd622d6ddcea70b279af}{astu\+::\+Sdl\+Video\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Window\+Service.\+h\end{DoxyCompactItemize}

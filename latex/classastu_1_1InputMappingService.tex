@@ -1,0 +1,227 @@
+\hypertarget{classastu_1_1InputMappingService}{}\section{astu\+:\+:Input\+Mapping\+Service Class Reference}
+\label{classastu_1_1InputMappingService}\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+
+
+{\ttfamily \#include $<$Input\+Mapping\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Input\+Mapping\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classastu_1_1InputMappingService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Input\+Mapping\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classastu_1_1InputMappingService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1InputMappingService_a0d099c093d399b34bde9e3baa2e7c3b8}{Input\+Mapping\+Service} (\hyperlink{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}{Priority} update\+Priority=Priority\+::\+Normal)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_adbb1babb001f3ec6477dd8b75440e0d0}{Add\+Action\+Mapping} (const std\+::string \&action\+Name, const \hyperlink{classastu_1_1Key}{Key} \&key)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a0cb02984dc3f9f675375bde109f06537}{Add\+Action\+Mapping} (const \hyperlink{classastu_1_1ActionMapping}{Action\+Mapping} \&mapping)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ActionBinding}{Action\+Binding} $>$ \hyperlink{classastu_1_1InputMappingService_a419969331a282af1cb7c9bab967dfc3a}{Bind\+Action} (const std\+::string \&action\+Name, \hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{Action\+Binding\+::\+Delegate} delegate=nullptr)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a9c516a3fc0689d768b87156e599b9bde}{Remove\+Action\+Binding} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ActionBinding}{Action\+Binding} $>$ binding)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a7ef299540b06586bcd12a06a5bd99abc}{Add\+Axis\+Mapping} (const std\+::string \&axis\+Name, const \hyperlink{classastu_1_1Key}{Key} \&key, float scale=1.\+0f)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_af9135167e139c262b2f63d40d00f5da2}{Add\+Axis\+Mapping} (const \hyperlink{classastu_1_1AxisMapping}{Axis\+Mapping} \&mapping)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1AxisBinding}{Axis\+Binding} $>$ \hyperlink{classastu_1_1InputMappingService_a749a68156e22418458ef0b36a6c6911b}{Bind\+Axis} (const std\+::string \&axis\+Name, \hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{Axis\+Binding\+::\+Delegate} delegate=nullptr)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a453aa6c1e6bc45478d7c988c8a6128f8}{Remove\+Axis\+Binding} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1AxisBinding}{Axis\+Binding} $>$ binding)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a88ec7a02d2e76d62033491d8c70610fc}{Process\+Key} (const \hyperlink{classastu_1_1Key}{Key} \&key, bool pressed)
+\item 
+void \hyperlink{classastu_1_1InputMappingService_a1779fb5dee6693257710f887b1287be8}{Process\+Axis} (const \hyperlink{classastu_1_1Key}{Key} \&key, float value)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This service mapps input events to game actions or axis. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a0d099c093d399b34bde9e3baa2e7c3b8}\label{classastu_1_1InputMappingService_a0d099c093d399b34bde9e3baa2e7c3b8}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Input\+Mapping\+Service@{Input\+Mapping\+Service}}
+\index{Input\+Mapping\+Service@{Input\+Mapping\+Service}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Input\+Mapping\+Service()}{InputMappingService()}}
+{\footnotesize\ttfamily astu\+::\+Input\+Mapping\+Service\+::\+Input\+Mapping\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}{Priority}}]{update\+Priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+Priority} & the update priority of this \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_adbb1babb001f3ec6477dd8b75440e0d0}\label{classastu_1_1InputMappingService_adbb1babb001f3ec6477dd8b75440e0d0}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Add\+Action\+Mapping@{Add\+Action\+Mapping}}
+\index{Add\+Action\+Mapping@{Add\+Action\+Mapping}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Add\+Action\+Mapping()}{AddActionMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Add\+Action\+Mapping (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Name,  }\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds mapping for an acton to an input key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & the name of the action \\
+\hline
+{\em key} & the input key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a0cb02984dc3f9f675375bde109f06537}\label{classastu_1_1InputMappingService_a0cb02984dc3f9f675375bde109f06537}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Add\+Action\+Mapping@{Add\+Action\+Mapping}}
+\index{Add\+Action\+Mapping@{Add\+Action\+Mapping}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Add\+Action\+Mapping()}{AddActionMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Add\+Action\+Mapping (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1ActionMapping}{Action\+Mapping} \&}]{mapping }\end{DoxyParamCaption})}
+
+Creates a new action binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping} & the action mapping to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a7ef299540b06586bcd12a06a5bd99abc}\label{classastu_1_1InputMappingService_a7ef299540b06586bcd12a06a5bd99abc}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Add\+Axis\+Mapping@{Add\+Axis\+Mapping}}
+\index{Add\+Axis\+Mapping@{Add\+Axis\+Mapping}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Add\+Axis\+Mapping()}{AddAxisMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Add\+Axis\+Mapping (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{axis\+Name,  }\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key,  }\item[{float}]{scale = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds an axis mapping.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Name} & the unique name of the action \\
+\hline
+{\em key} & the key of this axis binding \\
+\hline
+{\em scale} & the multiplier on the axis value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_af9135167e139c262b2f63d40d00f5da2}\label{classastu_1_1InputMappingService_af9135167e139c262b2f63d40d00f5da2}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Add\+Axis\+Mapping@{Add\+Axis\+Mapping}}
+\index{Add\+Axis\+Mapping@{Add\+Axis\+Mapping}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Add\+Axis\+Mapping()}{AddAxisMapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Add\+Axis\+Mapping (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1AxisMapping}{Axis\+Mapping} \&}]{mapping }\end{DoxyParamCaption})}
+
+Adds an axis mapping.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapping} & the axis mapping \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a419969331a282af1cb7c9bab967dfc3a}\label{classastu_1_1InputMappingService_a419969331a282af1cb7c9bab967dfc3a}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Bind\+Action@{Bind\+Action}}
+\index{Bind\+Action@{Bind\+Action}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Bind\+Action()}{BindAction()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1ActionBinding}{Action\+Binding}$>$ astu\+::\+Input\+Mapping\+Service\+::\+Bind\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action\+Name,  }\item[{\hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{Action\+Binding\+::\+Delegate}}]{delegate = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Creates a new action binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action\+Name} & the name of the action to bind to \\
+\hline
+{\em delegate} & the delegate function of the action binding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the action binding 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a749a68156e22418458ef0b36a6c6911b}\label{classastu_1_1InputMappingService_a749a68156e22418458ef0b36a6c6911b}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Bind\+Axis@{Bind\+Axis}}
+\index{Bind\+Axis@{Bind\+Axis}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Bind\+Axis()}{BindAxis()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1AxisBinding}{Axis\+Binding}$>$ astu\+::\+Input\+Mapping\+Service\+::\+Bind\+Axis (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{axis\+Name,  }\item[{\hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{Axis\+Binding\+::\+Delegate}}]{delegate = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Creates a new axis binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Name} & the name of the axis to bind to \\
+\hline
+{\em delegate} & the delegate function of the action binding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the action binding 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a1779fb5dee6693257710f887b1287be8}\label{classastu_1_1InputMappingService_a1779fb5dee6693257710f887b1287be8}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Process\+Axis@{Process\+Axis}}
+\index{Process\+Axis@{Process\+Axis}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Process\+Axis()}{ProcessAxis()}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Process\+Axis (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+Processes a axis input event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a88ec7a02d2e76d62033491d8c70610fc}\label{classastu_1_1InputMappingService_a88ec7a02d2e76d62033491d8c70610fc}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Process\+Key@{Process\+Key}}
+\index{Process\+Key@{Process\+Key}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Process\+Key()}{ProcessKey()}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Process\+Key (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{key,  }\item[{bool}]{pressed }\end{DoxyParamCaption})}
+
+Processes a key event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & of the key event \\
+\hline
+{\em pressed} & whether the key has been pressed or released \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a9c516a3fc0689d768b87156e599b9bde}\label{classastu_1_1InputMappingService_a9c516a3fc0689d768b87156e599b9bde}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Remove\+Action\+Binding@{Remove\+Action\+Binding}}
+\index{Remove\+Action\+Binding@{Remove\+Action\+Binding}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Action\+Binding()}{RemoveActionBinding()}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Remove\+Action\+Binding (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ActionBinding}{Action\+Binding} $>$}]{binding }\end{DoxyParamCaption})}
+
+Removes an action binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em binding} & the binding to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1InputMappingService_a453aa6c1e6bc45478d7c988c8a6128f8}\label{classastu_1_1InputMappingService_a453aa6c1e6bc45478d7c988c8a6128f8}} 
+\index{astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}!Remove\+Axis\+Binding@{Remove\+Axis\+Binding}}
+\index{Remove\+Axis\+Binding@{Remove\+Axis\+Binding}!astu\+::\+Input\+Mapping\+Service@{astu\+::\+Input\+Mapping\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Axis\+Binding()}{RemoveAxisBinding()}}
+{\footnotesize\ttfamily void astu\+::\+Input\+Mapping\+Service\+::\+Remove\+Axis\+Binding (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1AxisBinding}{Axis\+Binding} $>$}]{binding }\end{DoxyParamCaption})}
+
+Removes an axis binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em binding} & the binding to remove \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Input\+Mapping\+Service.\+h\end{DoxyCompactItemize}

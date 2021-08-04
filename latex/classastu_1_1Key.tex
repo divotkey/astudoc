@@ -1,0 +1,81 @@
+\hypertarget{classastu_1_1Key}{}\section{astu\+:\+:Key Class Reference}
+\label{classastu_1_1Key}\index{astu\+::\+Key@{astu\+::\+Key}}
+
+
+{\ttfamily \#include $<$Input\+Mapping\+Service.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Key_a0fda6560cc7930eeda90cb20686ff3a2}{Key} (const std\+::string \&name=\char`\"{}U\+N\+K\+N\+O\+WN\char`\"{})
+\item 
+const std\+::string \& \hyperlink{classastu_1_1Key_a15315633ef2aaec706ed6fce7fa6ef09}{Get\+Name} () const
+\item 
+const bool \hyperlink{classastu_1_1Key_a6a139937577f2902bbff264741db0abb}{operator$<$} (const \hyperlink{classastu_1_1Key}{Key} \&rhs) const
+\item 
+bool \hyperlink{classastu_1_1Key_a7955f202afbf7e947639fc2553b6db53}{operator==} (const \hyperlink{classastu_1_1Key}{Key} \&rhs) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classastu_1_1Keys}{Keys} represent input controlls and are caleld \hyperlink{classastu_1_1Keys}{Keys} for the sake of shortness. A \hyperlink{classastu_1_1Key}{Key} can be an actuall key on the keyboard but also a button on the gamepad or mouse etc. \hyperlink{classastu_1_1Keys}{Keys} are used to define input mapping in the context of the \hyperlink{classastu_1_1InputMappingService}{Input\+Mapping\+Service}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Key_a0fda6560cc7930eeda90cb20686ff3a2}\label{classastu_1_1Key_a0fda6560cc7930eeda90cb20686ff3a2}} 
+\index{astu\+::\+Key@{astu\+::\+Key}!Key@{Key}}
+\index{Key@{Key}!astu\+::\+Key@{astu\+::\+Key}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily astu\+::\+Key\+::\+Key (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}UNKNOWN\char`\"{}} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of this key \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Key_a15315633ef2aaec706ed6fce7fa6ef09}\label{classastu_1_1Key_a15315633ef2aaec706ed6fce7fa6ef09}} 
+\index{astu\+::\+Key@{astu\+::\+Key}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!astu\+::\+Key@{astu\+::\+Key}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::\+Key\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the name of this key.
+
+\begin{DoxyReturn}{Returns}
+the name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Key_a6a139937577f2902bbff264741db0abb}\label{classastu_1_1Key_a6a139937577f2902bbff264741db0abb}} 
+\index{astu\+::\+Key@{astu\+::\+Key}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!astu\+::\+Key@{astu\+::\+Key}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily const bool astu\+::\+Key\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Less than operator on keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right hand side \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Key_a7955f202afbf7e947639fc2553b6db53}\label{classastu_1_1Key_a7955f202afbf7e947639fc2553b6db53}} 
+\index{astu\+::\+Key@{astu\+::\+Key}!operator==@{operator==}}
+\index{operator==@{operator==}!astu\+::\+Key@{astu\+::\+Key}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool astu\+::\+Key\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Key}{Key} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Binary equality operator comparing two vectors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & the right hand side \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Input\+Mapping\+Service.\+h\end{DoxyCompactItemize}

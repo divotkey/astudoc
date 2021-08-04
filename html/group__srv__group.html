@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -61,7 +61,9 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Service</div>  </div>
 </div><!--header-->
@@ -72,31 +74,452 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IService.html">astu::IService</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ActionSignalService.html">astu::ActionSignalService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1InteractiveApplication.html">astu::InteractiveApplication</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1RenderService.html">astu::RenderService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Service.html">astu::Service</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1BaseService.html">astu::BaseService</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IWindowManager.html">astu::IWindowManager</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ISignalListener.html">astu::ISignalListener&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SignalService.html">astu::SignalService&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ServiceManager.html">astu::ServiceManager</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ITimeService.html">astu::ITimeService</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1SignalListener.html">astu::SignalListener&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1StateService.html">astu::StateService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1TimedTask.html">astu::TimedTask</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1DelegateTaskBuilder.html">astu::DelegateTaskBuilder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Task.html">astu::Task</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1TaskBuilder.html">astu::TaskBuilder&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1TaskService.html">astu::TaskService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1TimeService.html">astu::TimeService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1TimeClient.html">astu::TimeClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IUpdatable.html">astu::IUpdatable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdateService.html">astu::UpdateService</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1UpdatableBaseService.html">astu::UpdatableBaseService</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Updatable.html">astu::Updatable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1WindowService.html">astu::WindowService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga5216c57cf872d6a0c05d0e6f33c66fc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>()&#160;&#160;&#160;<a class="el" href="classastu_1_1ServiceManager.html#a26941fe98ea3f2792deca62e4124bf15">astu::ServiceManager::GetInstance</a>()</td></tr>
+<tr class="separator:ga5216c57cf872d6a0c05d0e6f33c66fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42575546f01bf92989d08916564ffc66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga42575546f01bf92989d08916564ffc66">ASTU_SERVICE</a>(type)&#160;&#160;&#160;(*<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;())</td></tr>
+<tr class="separator:ga42575546f01bf92989d08916564ffc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42e4ee34b527cd82ba6c0013b5d1441e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga42e4ee34b527cd82ba6c0013b5d1441e">ASTU_GET_SERVICE</a>(type)&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;()</td></tr>
+<tr class="separator:ga42e4ee34b527cd82ba6c0013b5d1441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd58983b12766275d79b748307fcd637"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#gadd58983b12766275d79b748307fcd637">ASTU_GET_SERVICE_OR_DEFAULT</a>(type,  b)&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;(b)</td></tr>
+<tr class="separator:gadd58983b12766275d79b748307fcd637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga223765690bb6ade99e1e5f954f096cfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga223765690bb6ade99e1e5f954f096cfb">ASTU_GET_SERVICE_OR_NULL</a>(type)&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;(nullptr)</td></tr>
+<tr class="separator:ga223765690bb6ade99e1e5f954f096cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b3cd4edfd24593b12bc662acf62e9a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga8b3cd4edfd24593b12bc662acf62e9a1">ASTU_HAS_SERVICE</a>(type)&#160;&#160;&#160;(<a class="el" href="group__srv__group.html#ga223765690bb6ade99e1e5f954f096cfb">ASTU_GET_SERVICE_OR_NULL</a>(type) != nullptr)</td></tr>
+<tr class="separator:ga8b3cd4edfd24593b12bc662acf62e9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga640af14a801ce66a6286ca8bc4862473"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga640af14a801ce66a6286ca8bc4862473">ASTU_REMOVE_ALL_SERVICES</a>()&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().RemoveAllServices()</td></tr>
+<tr class="separator:ga640af14a801ce66a6286ca8bc4862473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab16fd0e9f158b318812197ee283a8484"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#gab16fd0e9f158b318812197ee283a8484">ASTU_STARTUP_SERVICES</a>()&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().StartupAll()</td></tr>
+<tr class="separator:gab16fd0e9f158b318812197ee283a8484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97369e673940c499b1cd623c76aaafe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga97369e673940c499b1cd623c76aaafe5">ASTU_SHUTDOWN_SERVICES</a>()&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().ShutdownAll()</td></tr>
+<tr class="separator:ga97369e673940c499b1cd623c76aaafe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6572c2ee70b67d9dda0b8b0d77a7d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga8c6572c2ee70b67d9dda0b8b0d77a7d2">ASTU_ADD_SERVICE</a>(srv)&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().AddService(srv)</td></tr>
+<tr class="separator:ga8c6572c2ee70b67d9dda0b8b0d77a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91256015ad12618b8eda42106056a927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga91256015ad12618b8eda42106056a927">ASTU_CREATE_AND_ADD_SERVICE</a>(srvType, ...)&#160;&#160;&#160;if(!<a class="el" href="group__srv__group.html#ga8b3cd4edfd24593b12bc662acf62e9a1">ASTU_HAS_SERVICE</a>(srvType)) <a class="el" href="group__srv__group.html#ga8c6572c2ee70b67d9dda0b8b0d77a7d2">ASTU_ADD_SERVICE</a>(std::make_shared&lt;srvType&gt;(__VA_ARGS__) )</td></tr>
+<tr class="separator:ga91256015ad12618b8eda42106056a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:gaf164c3f1c393e1f240458ae4fcd484a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#gaf164c3f1c393e1f240458ae4fcd484a0">astu::Priority</a> { <br />
+&#160;&#160;<b>VeryHigh</b> = 0, 
+<b>High</b> = 500, 
+<b>Normal</b> = 1000, 
+<b>Low</b> = 1500, 
+<br />
+&#160;&#160;<b>VeryLow</b> = 2000
+<br />
+ }</td></tr>
+<tr class="separator:gaf164c3f1c393e1f240458ae4fcd484a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68a91c7015964dbdea802829ae5ccb3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__srv__group.html#ga68a91c7015964dbdea802829ae5ccb3c">astu::Resolution</a> { <br />
+&#160;&#160;<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca55a1cd59378161f3d8d162f7ab3c688c">astu::Resolution::SVGA</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca8d1b2ed4d604a6be96ad2f218592b98e">astu::Resolution::XGA</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca521265ba830a9825dd75ac96bffc3c04">astu::Resolution::WXGA</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca0b8f37f43da5e66c4bd58165b40b76f3">astu::Resolution::SXGA</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca5f825911c42fe77eab9de44602f7080e">astu::Resolution::HD_1</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca0019cdc8d430b07dccbbe6453de8f244">astu::Resolution::HD_2</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca188ce673037fb8cc15ef18b2db6b470b">astu::Resolution::WXGA_PLUS</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca95c1d10ada9f6c64467275175334744b">astu::Resolution::WSXGA_PLUS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca7ff9eb087b5873e5245422ffc8e6f054">astu::Resolution::FHD</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca512db9ef494be9c910409a51fbc9eb9c">astu::Resolution::QHD</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3cab61f857a573f21f72e277339f072402b">astu::Resolution::WIDE_SCREEN</a>, 
+<a class="el" href="group__srv__group.html#gga68a91c7015964dbdea802829ae5ccb3ca9a4d0ff86f135b89378b858a0d947483">astu::Resolution::UHD_4K</a>
+<br />
+ }</td></tr>
+<tr class="separator:ga68a91c7015964dbdea802829ae5ccb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains templates, classes and functions dedicated to services. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga8c6572c2ee70b67d9dda0b8b0d77a7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c6572c2ee70b67d9dda0b8b0d77a7d2">&#9670;&nbsp;</a></span>ASTU_ADD_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_ADD_SERVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">srv</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().AddService(srv)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a new service to the service manager.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line"><a class="code" href="group__srv__group.html#ga8c6572c2ee70b67d9dda0b8b0d77a7d2">ASTU_ADD_SERVICE</a>( std::make_shared&lt;SignalService&lt;int&gt;&gt;() );</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srv</td><td>the service to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>in case the service has alerady been added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga91256015ad12618b8eda42106056a927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91256015ad12618b8eda42106056a927">&#9670;&nbsp;</a></span>ASTU_CREATE_AND_ADD_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_CREATE_AND_ADD_SERVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">srvType, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;if(!<a class="el" href="group__srv__group.html#ga8b3cd4edfd24593b12bc662acf62e9a1">ASTU_HAS_SERVICE</a>(srvType)) <a class="el" href="group__srv__group.html#ga8c6572c2ee70b67d9dda0b8b0d77a7d2">ASTU_ADD_SERVICE</a>(std::make_shared&lt;srvType&gt;(__VA_ARGS__) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a new service to the service manager.</p>
+<p>This macro will create a new dynamic instance of the specified service type and adds it to the service manager.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line"><a class="code" href="group__srv__group.html#ga91256015ad12618b8eda42106056a927">ASTU_CREATE_AND_ADD_SERVICE</a>( SignalService&lt;int&gt; );</div><div class="line"><a class="code" href="group__srv__group.html#ga91256015ad12618b8eda42106056a927">ASTU_CREATE_AND_ADD_SERVICE</a>( CameraControlService, Priority::HIGH ); * </div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srvType</td><td>the type service to add </td></tr>
+    <tr><td class="paramname">...</td><td>the optional constructor parameters for the service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>in case the service has alerady been added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga42e4ee34b527cd82ba6c0013b5d1441e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42e4ee34b527cd82ba6c0013b5d1441e">&#9670;&nbsp;</a></span>ASTU_GET_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_GET_SERVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a (smart-) pointer to a service.</p>
+<p>Getting a pointer to a service is used to store this pointer for later use. Keeping a pointer of a service is preferable if a service is accessed several times in sequence or, e.g., in each cycle of the game loop.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line">std::shared_ptr&lt;TimeService&gt; timeSrv = <a class="code" href="group__srv__group.html#ga42e4ee34b527cd82ba6c0013b5d1441e">ASTU_GET_SERVICE</a>(TimeService);</div><div class="line"><span class="keywordtype">double</span> dt = timeSrv-&gt;GetElapsedTime();</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the requested service </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>in case the requested service is unknown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gadd58983b12766275d79b748307fcd637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd58983b12766275d79b748307fcd637">&#9670;&nbsp;</a></span>ASTU_GET_SERVICE_OR_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_GET_SERVICE_OR_DEFAULT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;(b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a (smart-) pointer to a service.</p>
+<p>This macro will return a the requested service or the specified default service in case the service does not exist.</p>
+<dl class="section return"><dt>Returns</dt><dd>the requested service or the specified default service </dd></dl>
+
+</div>
+</div>
+<a id="ga223765690bb6ade99e1e5f954f096cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga223765690bb6ade99e1e5f954f096cfb">&#9670;&nbsp;</a></span>ASTU_GET_SERVICE_OR_NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_GET_SERVICE_OR_NULL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;(nullptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a (smart-) pointer to a service.</p>
+<p>This macro will return a the requested service or <code>nullptr</code> if the service does not exist. In case the existence of a service is optional, it is faster to query the pointer to a service and then if this pointer is <code>nullptr</code> or not, than using calling <code>ASTU_HAS_SERVCIE</code> and then calling <code>ASTU_GET_SERVICE</code>.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line">std::shared_ptr&lt;SignalService&lt;int&gt;&gt; intSignals = <a class="code" href="group__srv__group.html#ga223765690bb6ade99e1e5f954f096cfb">ASTU_GET_SERVICE_OR_NULL</a>(SignalService&lt;int&gt;);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (intSignals) {</div><div class="line">  intSignals-&gt;QueueSignal(42);</div><div class="line"></div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the requested service or <code>nullptr</code> if the service does not exist </dd></dl>
+
+</div>
+</div>
+<a id="ga8b3cd4edfd24593b12bc662acf62e9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b3cd4edfd24593b12bc662acf62e9a1">&#9670;&nbsp;</a></span>ASTU_HAS_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_HAS_SERVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="group__srv__group.html#ga223765690bb6ade99e1e5f954f096cfb">ASTU_GET_SERVICE_OR_NULL</a>(type) != nullptr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether a certain service exists</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line">std::shared_ptr&lt;SignalService&lt;int&gt;&gt; intSignals = <a class="code" href="group__srv__group.html#ga223765690bb6ade99e1e5f954f096cfb">ASTU_GET_SERVICE_OR_NULL</a>(SignalService&lt;int&gt;);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="group__srv__group.html#ga8b3cd4edfd24593b12bc662acf62e9a1">ASTU_HAS_SERVICE</a>(SignalService&lt;int&gt;)) {</div><div class="line">  <a class="code" href="group__srv__group.html#ga42575546f01bf92989d08916564ffc66">ASTU_SERVICE</a>(SignalService&lt;int&gt;).QueueSignal(42);</div><div class="line">}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd><code>true</code> if the requested service exists </dd></dl>
+
+</div>
+</div>
+<a id="ga640af14a801ce66a6286ca8bc4862473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga640af14a801ce66a6286ca8bc4862473">&#9670;&nbsp;</a></span>ASTU_REMOVE_ALL_SERVICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_REMOVE_ALL_SERVICES</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().RemoveAllServices()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes all previously added services. </p>
+
+</div>
+</div>
+<a id="ga42575546f01bf92989d08916564ffc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42575546f01bf92989d08916564ffc66">&#9670;&nbsp;</a></span>ASTU_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_SERVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type</td><td>)</td>
+          <td>&#160;&#160;&#160;(*<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().FindService&lt;type&gt;())</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a reference to a service.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> dt = <a class="code" href="group__srv__group.html#ga42575546f01bf92989d08916564ffc66">ASTU_SERVICE</a>(TimeService).GetElapsedTime();</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the requested service </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>in case the requested service is unknown </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5216c57cf872d6a0c05d0e6f33c66fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5216c57cf872d6a0c05d0e6f33c66fc7">&#9670;&nbsp;</a></span>ASTU_SERVICE_MANAGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_SERVICE_MANAGER</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="classastu_1_1ServiceManager.html#a26941fe98ea3f2792deca62e4124bf15">astu::ServiceManager::GetInstance</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the instance of the service manager.</p>
+<p><b>Example</b></p>
+<div class="fragment"><div class="line"><a class="code" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>.RemoveAllServices();</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the service manager instance </dd></dl>
+
+</div>
+</div>
+<a id="ga97369e673940c499b1cd623c76aaafe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97369e673940c499b1cd623c76aaafe5">&#9670;&nbsp;</a></span>ASTU_SHUTDOWN_SERVICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_SHUTDOWN_SERVICES</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().ShutdownAll()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shuts down all services. </p>
+
+</div>
+</div>
+<a id="gab16fd0e9f158b318812197ee283a8484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab16fd0e9f158b318812197ee283a8484">&#9670;&nbsp;</a></span>ASTU_STARTUP_SERVICES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASTU_STARTUP_SERVICES</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="group__srv__group.html#ga5216c57cf872d6a0c05d0e6f33c66fc7">ASTU_SERVICE_MANAGER</a>().StartupAll()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Starts up all services. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="gaf164c3f1c393e1f240458ae4fcd484a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf164c3f1c393e1f240458ae4fcd484a0">&#9670;&nbsp;</a></span>Priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__srv__group.html#gaf164c3f1c393e1f240458ae4fcd484a0">astu::Priority</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Priorities define the seqeuence services get started, updated, etc. </p>
+
+</div>
+</div>
+<a id="ga68a91c7015964dbdea802829ae5ccb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68a91c7015964dbdea802829ae5ccb3c">&#9670;&nbsp;</a></span>Resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__srv__group.html#ga68a91c7015964dbdea802829ae5ccb3c">astu::Resolution</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Describes common resoutions for application windows. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca55a1cd59378161f3d8d162f7ab3c688c"></a>SVGA&#160;</td><td class="fielddoc"><p>Aspect ratio 4:3, pixels 800 x 600. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca8d1b2ed4d604a6be96ad2f218592b98e"></a>XGA&#160;</td><td class="fielddoc"><p>Aspect ratio 4:3, pixels 1024 x 768. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca521265ba830a9825dd75ac96bffc3c04"></a>WXGA&#160;</td><td class="fielddoc"><p>Aspect ratio 16:9, pixels 1280 x 720. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca0b8f37f43da5e66c4bd58165b40b76f3"></a>SXGA&#160;</td><td class="fielddoc"><p>Aspect ratio 5:4, pixels 1280 x 1024. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca5f825911c42fe77eab9de44602f7080e"></a>HD_1&#160;</td><td class="fielddoc"><p>Aspect ratio ~16:9, pixels 1360 x 768. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca0019cdc8d430b07dccbbe6453de8f244"></a>HD_2&#160;</td><td class="fielddoc"><p>Aspect ratio ~16:9, pixels 1366 x 768. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca188ce673037fb8cc15ef18b2db6b470b"></a>WXGA_PLUS&#160;</td><td class="fielddoc"><p>Aspect ratio 16:10, pixels 1440 x 900. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca95c1d10ada9f6c64467275175334744b"></a>WSXGA_PLUS&#160;</td><td class="fielddoc"><p>Aspect ratio 16:10, pixels 1680 x 1050. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca7ff9eb087b5873e5245422ffc8e6f054"></a>FHD&#160;</td><td class="fielddoc"><p>Aspect ratio 16:9, pixels 1920 x 1080. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca512db9ef494be9c910409a51fbc9eb9c"></a>QHD&#160;</td><td class="fielddoc"><p>Aspect ratio 16:9, pixels 2560 x 1440. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3cab61f857a573f21f72e277339f072402b"></a>WIDE_SCREEN&#160;</td><td class="fielddoc"><p>Aspect ratio 21:9, pixels 3440 x 1440. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga68a91c7015964dbdea802829ae5ccb3ca9a4d0ff86f135b89378b858a0d947483"></a>UHD_4K&#160;</td><td class="fielddoc"><p>Aspect ratio 16:9, pixels 3840 x 2160. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

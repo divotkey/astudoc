@@ -1,0 +1,164 @@
+\hypertarget{classastu_1_1suite2d_1_1Polyline}{}\section{astu\+:\+:suite2d\+:\+:Polyline Class Reference}
+\label{classastu_1_1suite2d_1_1Polyline}\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Polyline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classastu_1_1suite2d_1_1Polyline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Polyline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classastu_1_1suite2d_1_1Polyline__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Polyline_a051bca4fde4c41e93462d229b17fa370}{Polyline} (std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ vertex\+Buffer)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Polyline_a2fb760ad09c0dbcfc9128a8b04bb312f}{Set\+Color} (const \hyperlink{classastu_1_1Color}{Color4f} \&color)
+\item 
+const \hyperlink{classastu_1_1Color}{Color4f} \& \hyperlink{classastu_1_1suite2d_1_1Polyline_a6d75bf4ea2c4ff03260f336fe27541a7}{Get\+Color} () const
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1Polyline_a3785365e970d6bf6c083730458569e79}{Is\+Closed} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Polyline_a92eb9c238bcdcf9c826f609c3ffa357d}{Set\+Closed} (bool b)
+\item 
+\hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} \& \hyperlink{classastu_1_1suite2d_1_1Polyline_aeb8d924a70278166a553d099cec2f5fe}{Get\+Vertex\+Buffer} ()
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1Polyline_ad4aef126b57b93beba4ab03c01403406}{Render} (\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&renderer, float \hyperlink{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}{alpha}) override
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1Polyline_acdced9a02e4f789ff04feca46bdb297c}{Clone} () const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Virtual destructor. The polyline class represents a leaf element within the scene graph. It consists of contiguous lines that do not need to be closed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_a051bca4fde4c41e93462d229b17fa370}\label{classastu_1_1suite2d_1_1Polyline_a051bca4fde4c41e93462d229b17fa370}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Polyline@{Polyline}}
+\index{Polyline@{Polyline}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Polyline()}{Polyline()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Polyline\+::\+Polyline (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$}]{vertex\+Buffer }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Buffer} & the vertex data \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_acdced9a02e4f789ff04feca46bdb297c}\label{classastu_1_1suite2d_1_1Polyline_acdced9a02e4f789ff04feca46bdb297c}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+Polyline\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creats a copy of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the copy 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1suite2d_1_1Spatial_a5c058079c94b0e8d7590e70ca2159bd1}{astu\+::suite2d\+::\+Spatial}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_a6d75bf4ea2c4ff03260f336fe27541a7}\label{classastu_1_1suite2d_1_1Polyline_a6d75bf4ea2c4ff03260f336fe27541a7}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Get\+Color@{Get\+Color}}
+\index{Get\+Color@{Get\+Color}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Get\+Color()}{GetColor()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4f}\& astu\+::suite2d\+::\+Polyline\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the color of this polyline.
+
+\begin{DoxyReturn}{Returns}
+this polyline\textquotesingle{}s color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_aeb8d924a70278166a553d099cec2f5fe}\label{classastu_1_1suite2d_1_1Polyline_aeb8d924a70278166a553d099cec2f5fe}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Get\+Vertex\+Buffer@{Get\+Vertex\+Buffer}}
+\index{Get\+Vertex\+Buffer@{Get\+Vertex\+Buffer}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Buffer()}{GetVertexBuffer()}}
+{\footnotesize\ttfamily \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f}\& astu\+::suite2d\+::\+Polyline\+::\+Get\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vertex buffer of this polyline.
+
+\begin{DoxyReturn}{Returns}
+the vertex buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_a3785365e970d6bf6c083730458569e79}\label{classastu_1_1suite2d_1_1Polyline_a3785365e970d6bf6c083730458569e79}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Is\+Closed@{Is\+Closed}}
+\index{Is\+Closed@{Is\+Closed}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Is\+Closed()}{IsClosed()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Polyline\+::\+Is\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the polyline is rendered as closed shape.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the polyline si rendered as closed shape 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_ad4aef126b57b93beba4ab03c01403406}\label{classastu_1_1suite2d_1_1Polyline_ad4aef126b57b93beba4ab03c01403406}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Render@{Render}}
+\index{Render@{Render}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Polyline\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&}]{renderer,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Renders this spacial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the renderer to be used \\
+\hline
+{\em alpha} & the transparancy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1suite2d_1_1Spatial_afaf7797d00a432012298535ba11348b7}{astu\+::suite2d\+::\+Spatial}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_a92eb9c238bcdcf9c826f609c3ffa357d}\label{classastu_1_1suite2d_1_1Polyline_a92eb9c238bcdcf9c826f609c3ffa357d}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Set\+Closed@{Set\+Closed}}
+\index{Set\+Closed@{Set\+Closed}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Set\+Closed()}{SetClosed()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Polyline\+::\+Set\+Closed (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+Defines whether the polyline is renderer as line or as closed shape.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & set to {\ttfamily true} to render the polyline as closed shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Polyline_a2fb760ad09c0dbcfc9128a8b04bb312f}\label{classastu_1_1suite2d_1_1Polyline_a2fb760ad09c0dbcfc9128a8b04bb312f}} 
+\index{astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!astu\+::suite2d\+::\+Polyline@{astu\+::suite2d\+::\+Polyline}}
+\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Polyline\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4f} \&}]{color }\end{DoxyParamCaption})}
+
+Sets the color of this polyline.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Scene.\+h\end{DoxyCompactItemize}

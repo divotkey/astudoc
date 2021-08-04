@@ -1,0 +1,104 @@
+\hypertarget{classastu_1_1SdlApplication}{}\section{astu\+:\+:Sdl\+Application Class Reference}
+\label{classastu_1_1SdlApplication}\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+
+
+{\ttfamily \#include $<$Sdl\+Application.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Application\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classastu_1_1SdlApplication__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Application\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classastu_1_1SdlApplication__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlApplication_a152247944516cc54cc54792f09b8bf23}{Sdl\+Application} ()
+\item 
+void \hyperlink{classastu_1_1SdlApplication_af07d362aa65b3e973c14e05f5079e4cd}{Add\+Services2D} (bool b)
+\item 
+bool \hyperlink{classastu_1_1SdlApplication_a9eff9632914987b4f7998e341d203b4b}{Is\+Services2D} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1SdlApplication_af309f097b9ec604101d9c0cbd66e8ba1}{Configure\+Application} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlApplication_adbe5cb831451f65b635d37f57bacef3f}{Cleanup} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simplified the requried startup code for S\+D\+L-\/based interactive applications. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlApplication_a152247944516cc54cc54792f09b8bf23}\label{classastu_1_1SdlApplication_a152247944516cc54cc54792f09b8bf23}} 
+\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}!Sdl\+Application@{Sdl\+Application}}
+\index{Sdl\+Application@{Sdl\+Application}!astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+\subsubsection{\texorpdfstring{Sdl\+Application()}{SdlApplication()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Application\+::\+Sdl\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlApplication_af07d362aa65b3e973c14e05f5079e4cd}\label{classastu_1_1SdlApplication_af07d362aa65b3e973c14e05f5079e4cd}} 
+\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}!Add\+Services2D@{Add\+Services2D}}
+\index{Add\+Services2D@{Add\+Services2D}!astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+\subsubsection{\texorpdfstring{Add\+Services2\+D()}{AddServices2D()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Application\+::\+Add\+Services2D (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+Specifies whetehr to add services required for 2D renderings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & set to {\ttfamily true} to add 2D services \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlApplication_adbe5cb831451f65b635d37f57bacef3f}\label{classastu_1_1SdlApplication_adbe5cb831451f65b635d37f57bacef3f}} 
+\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+\subsubsection{\texorpdfstring{Cleanup()}{Cleanup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Application\+::\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Releases resources, de-\/registers as listener etc. 
+
+Reimplemented from \hyperlink{classastu_1_1InteractiveApplication_a70f5e175ae42b4063358db3787db6bab}{astu\+::\+Interactive\+Application}.
+
+\mbox{\Hypertarget{classastu_1_1SdlApplication_af309f097b9ec604101d9c0cbd66e8ba1}\label{classastu_1_1SdlApplication_af309f097b9ec604101d9c0cbd66e8ba1}} 
+\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}!Configure\+Application@{Configure\+Application}}
+\index{Configure\+Application@{Configure\+Application}!astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+\subsubsection{\texorpdfstring{Configure\+Application()}{ConfigureApplication()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Application\+::\+Configure\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Configures services according to application specific settings. 
+
+Reimplemented from \hyperlink{classastu_1_1InteractiveApplication_abec13f308f2a707764a322ecd1bba42d}{astu\+::\+Interactive\+Application}.
+
+\mbox{\Hypertarget{classastu_1_1SdlApplication_a9eff9632914987b4f7998e341d203b4b}\label{classastu_1_1SdlApplication_a9eff9632914987b4f7998e341d203b4b}} 
+\index{astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}!Is\+Services2D@{Is\+Services2D}}
+\index{Is\+Services2D@{Is\+Services2D}!astu\+::\+Sdl\+Application@{astu\+::\+Sdl\+Application}}
+\subsubsection{\texorpdfstring{Is\+Services2\+D()}{IsServices2D()}}
+{\footnotesize\ttfamily bool astu\+::\+Sdl\+Application\+::\+Is\+Services2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether services required for 2D renderings will be added.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if 2D services will be added 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Sdl\+Application.\+h\end{DoxyCompactItemize}

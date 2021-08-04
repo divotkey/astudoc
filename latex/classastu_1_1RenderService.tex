@@ -1,0 +1,131 @@
+\hypertarget{classastu_1_1RenderService}{}\section{astu\+:\+:Render\+Service Class Reference}
+\label{classastu_1_1RenderService}\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+
+
+{\ttfamily \#include $<$Render\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Render\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classastu_1_1RenderService__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1RenderService_a76df2f3da25b9df58a6f4d93ae2720e5}{$\sim$\+Render\+Service} ()
+\item 
+virtual const \hyperlink{classastu_1_1Color}{Color4f} \& \hyperlink{classastu_1_1RenderService_a5491abad694b7d662f67b4d4bc858e87}{Get\+Background\+Color} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1RenderService_acae1a271e76761320a95d5664ce5b134}{Set\+Background\+Color} (const \hyperlink{classastu_1_1Color}{Color4f} \&bg)=0
+\item 
+virtual size\+\_\+t \hyperlink{classastu_1_1RenderService_a2347b2ac2b5f57b79bad63de9b8e6841}{Num\+Render\+Layers} () const =0
+\item 
+virtual void \hyperlink{classastu_1_1RenderService_af13a90300b42075e26c998d19332eff6}{Set\+V\+Sync} (bool vsync)=0
+\item 
+virtual bool \hyperlink{classastu_1_1RenderService_a63ee728bf462dcd71821b2104a1d631a}{Is\+Vsync} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This interface is part of the graphics abstraction layer.
+
+The graphics abstraction layer offers various possibilities for rendering graphics output and provides various interfaces for this (Line\+Renderer, Scene\+Graph, etc.). These interfaces are organized in render layers and are managed by a central render mechanism. Access to this central render mechanism is provided by this interface. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1RenderService_a76df2f3da25b9df58a6f4d93ae2720e5}\label{classastu_1_1RenderService_a76df2f3da25b9df58a6f4d93ae2720e5}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!````~Render\+Service@{$\sim$\+Render\+Service}}
+\index{````~Render\+Service@{$\sim$\+Render\+Service}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Render\+Service()}{~RenderService()}}
+{\footnotesize\ttfamily virtual astu\+::\+Render\+Service\+::$\sim$\+Render\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1RenderService_a5491abad694b7d662f67b4d4bc858e87}\label{classastu_1_1RenderService_a5491abad694b7d662f67b4d4bc858e87}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!Get\+Background\+Color@{Get\+Background\+Color}}
+\index{Get\+Background\+Color@{Get\+Background\+Color}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{Get\+Background\+Color()}{GetBackgroundColor()}}
+{\footnotesize\ttfamily virtual const \hyperlink{classastu_1_1Color}{Color4f}\& astu\+::\+Render\+Service\+::\+Get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the background color.
+
+\begin{DoxyReturn}{Returns}
+the current background color 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlRenderService_ae6e14e9be46ab88a1e04fa6ac7c5aa2c}{astu\+::\+Sdl\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1RenderService_a63ee728bf462dcd71821b2104a1d631a}\label{classastu_1_1RenderService_a63ee728bf462dcd71821b2104a1d631a}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!Is\+Vsync@{Is\+Vsync}}
+\index{Is\+Vsync@{Is\+Vsync}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{Is\+Vsync()}{IsVsync()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Render\+Service\+::\+Is\+Vsync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns whether vertical synchronization is enabled.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if vertical synchronization is enabled 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlRenderService_a3bcc49339bca8cd388c16caefb18cadf}{astu\+::\+Sdl\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1RenderService_a2347b2ac2b5f57b79bad63de9b8e6841}\label{classastu_1_1RenderService_a2347b2ac2b5f57b79bad63de9b8e6841}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!Num\+Render\+Layers@{Num\+Render\+Layers}}
+\index{Num\+Render\+Layers@{Num\+Render\+Layers}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{Num\+Render\+Layers()}{NumRenderLayers()}}
+{\footnotesize\ttfamily virtual size\+\_\+t astu\+::\+Render\+Service\+::\+Num\+Render\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of render layers.
+
+\begin{DoxyReturn}{Returns}
+the number of render layers 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlRenderService_a45305851abdc94c0d9c8441822a59cd2}{astu\+::\+Sdl\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1RenderService_acae1a271e76761320a95d5664ce5b134}\label{classastu_1_1RenderService_acae1a271e76761320a95d5664ce5b134}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Render\+Service\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4f} \&}]{bg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the background color of the main application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bg} & the background color \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlRenderService_a1b92671271fa91f44e7b3e6c57bebe54}{astu\+::\+Sdl\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1RenderService_af13a90300b42075e26c998d19332eff6}\label{classastu_1_1RenderService_af13a90300b42075e26c998d19332eff6}} 
+\index{astu\+::\+Render\+Service@{astu\+::\+Render\+Service}!Set\+V\+Sync@{Set\+V\+Sync}}
+\index{Set\+V\+Sync@{Set\+V\+Sync}!astu\+::\+Render\+Service@{astu\+::\+Render\+Service}}
+\subsubsection{\texorpdfstring{Set\+V\+Sync()}{SetVSync()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Render\+Service\+::\+Set\+V\+Sync (\begin{DoxyParamCaption}\item[{bool}]{vsync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enables or disables vertical synchronization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vsync} & set to {\ttfamily true} to enable vertical synchronization \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1SdlRenderService_a4887120e1595f4b257e4813e09121e89}{astu\+::\+Sdl\+Render\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Render\+Service.\+h\end{DoxyCompactItemize}

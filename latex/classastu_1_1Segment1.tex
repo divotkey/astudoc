@@ -1,0 +1,306 @@
+\hypertarget{classastu_1_1Segment1}{}\section{astu\+:\+:Segment1$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Segment1}\index{astu\+::\+Segment1$<$ T $>$@{astu\+::\+Segment1$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Segment1.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Segment1_a259c9cbda64ad57694e33eb5509b52b8}{Segment1} ()
+\item 
+\hyperlink{classastu_1_1Segment1_a0a1a68b25f64a088e83abb73511c887b}{Segment1} (T x0, T x1)
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_a772bf5f74555481a8e9e8dd562169ae8}{Set} (T x0, T x1)
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_aa7e8932625f352606726e966c1d38ba4}{Set} (T x)
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_abc994f244b4bdf33c979301af2559f84}{Set\+Safe} (T \+\_\+x0, T \+\_\+x1)
+\item 
+T \hyperlink{classastu_1_1Segment1_aa89676784e95c095b99408437f524d11}{Length} ()
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_a7d71518f6990e41c6103b2a51864d95d}{Extend} (T x)
+\item 
+T \hyperlink{classastu_1_1Segment1_ac7daaba222bb4669afd375a113a8669e}{Get\+X0} () const
+\item 
+T \hyperlink{classastu_1_1Segment1_a04f54b79380ec77d7e0f66c4c3ed06b1}{Get\+X1} () const
+\item 
+bool \hyperlink{classastu_1_1Segment1_a75937f0b835432e56b620b506d61d137}{Is\+Intersecting} (const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&other)
+\item 
+T \hyperlink{classastu_1_1Segment1_a329ce84a2bc6a9cfeea1d44495e14d8f}{Calc\+Overlap} (const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&other)
+\item 
+T \hyperlink{classastu_1_1Segment1_a414a486080dc65ffce284aea931ddea3}{Calc\+Separation\+Distance} (const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&other)
+\item 
+T \hyperlink{classastu_1_1Segment1_a13e7485b944e90e4ce4767710a5d97cd}{Calc\+Minimum\+Separation\+Distance} (const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&other)
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_aff508149bdb4dc360d733903d01d396d}{Translate} (T delta)
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1} \& \hyperlink{classastu_1_1Segment1_a8d762aaefb9b496edb08fd5bccb59b2b}{operator+=} (T delta)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Segment1$<$ T $>$}
+
+A one-\/dimensional line segment.
+
+This class is a mathematical utility class to carry out some tests with one-\/dimensional segments.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical data type used for this segment \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Segment1_a259c9cbda64ad57694e33eb5509b52b8}\label{classastu_1_1Segment1_a259c9cbda64ad57694e33eb5509b52b8}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Segment1@{Segment1}}
+\index{Segment1@{Segment1}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Segment1()}{Segment1()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::\hyperlink{classastu_1_1Segment1}{Segment1} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1Segment1_a0a1a68b25f64a088e83abb73511c887b}\label{classastu_1_1Segment1_a0a1a68b25f64a088e83abb73511c887b}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Segment1@{Segment1}}
+\index{Segment1@{Segment1}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Segment1()}{Segment1()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::\hyperlink{classastu_1_1Segment1}{Segment1} (\begin{DoxyParamCaption}\item[{T}]{x0,  }\item[{T}]{x1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & the starting point of this segment \\
+\hline
+{\em x1} & the end point of this segment \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Segment1_a13e7485b944e90e4ce4767710a5d97cd}\label{classastu_1_1Segment1_a13e7485b944e90e4ce4767710a5d97cd}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Calc\+Minimum\+Separation\+Distance@{Calc\+Minimum\+Separation\+Distance}}
+\index{Calc\+Minimum\+Separation\+Distance@{Calc\+Minimum\+Separation\+Distance}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Calc\+Minimum\+Separation\+Distance()}{CalcMinimumSeparationDistance()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Calc\+Minimum\+Separation\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the minimum separation distance to the specified segment.
+
+The returned distance will always gerater or equal zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the separation distance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a329ce84a2bc6a9cfeea1d44495e14d8f}\label{classastu_1_1Segment1_a329ce84a2bc6a9cfeea1d44495e14d8f}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Calc\+Overlap@{Calc\+Overlap}}
+\index{Calc\+Overlap@{Calc\+Overlap}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Calc\+Overlap()}{CalcOverlap()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Calc\+Overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the overlap of this segment with the specified segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the overlap distance or zero there is no overlap 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a414a486080dc65ffce284aea931ddea3}\label{classastu_1_1Segment1_a414a486080dc65ffce284aea931ddea3}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Calc\+Separation\+Distance@{Calc\+Separation\+Distance}}
+\index{Calc\+Separation\+Distance@{Calc\+Separation\+Distance}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Calc\+Separation\+Distance()}{CalcSeparationDistance()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Calc\+Separation\+Distance (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the separation distance with respect to the other segment.
+
+The returned distance is the distance this segment must be moved forward in order to separate the two segments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the separation distance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a7d71518f6990e41c6103b2a51864d95d}\label{classastu_1_1Segment1_a7d71518f6990e41c6103b2a51864d95d}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Extend@{Extend}}
+\index{Extend@{Extend}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Extend()}{Extend()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Extend (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Extends this segment to include the specified point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the point to include \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this segment for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_ac7daaba222bb4669afd375a113a8669e}\label{classastu_1_1Segment1_ac7daaba222bb4669afd375a113a8669e}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Get\+X0@{Get\+X0}}
+\index{Get\+X0@{Get\+X0}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Get\+X0()}{GetX0()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Get\+X0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the start point of this segment.
+
+\begin{DoxyReturn}{Returns}
+the start point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a04f54b79380ec77d7e0f66c4c3ed06b1}\label{classastu_1_1Segment1_a04f54b79380ec77d7e0f66c4c3ed06b1}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Get\+X1@{Get\+X1}}
+\index{Get\+X1@{Get\+X1}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Get\+X1()}{GetX1()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Get\+X1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the end point of this segment.
+
+\begin{DoxyReturn}{Returns}
+the end point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a75937f0b835432e56b620b506d61d137}\label{classastu_1_1Segment1_a75937f0b835432e56b620b506d61d137}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Is\+Intersecting@{Is\+Intersecting}}
+\index{Is\+Intersecting@{Is\+Intersecting}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Is\+Intersecting()}{IsIntersecting()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Is\+Intersecting (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this segments intersects with the specified segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the two segments intersect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_aa89676784e95c095b99408437f524d11}\label{classastu_1_1Segment1_aa89676784e95c095b99408437f524d11}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Length@{Length}}
+\index{Length@{Length}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the length of this segment.
+
+\begin{DoxyReturn}{Returns}
+the length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a8d762aaefb9b496edb08fd5bccb59b2b}\label{classastu_1_1Segment1_a8d762aaefb9b496edb08fd5bccb59b2b}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{T}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compound assignment and addition operator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & the delta movement to the segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to this vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_a772bf5f74555481a8e9e8dd562169ae8}\label{classastu_1_1Segment1_a772bf5f74555481a8e9e8dd562169ae8}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Set (\begin{DoxyParamCaption}\item[{T}]{x0,  }\item[{T}]{x1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the start point and end point of this segment.
+
+If the start point is greater than the end point, the behaviour is undefined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & the start point \\
+\hline
+{\em x1} & the end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this segment for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_aa7e8932625f352606726e966c1d38ba4}\label{classastu_1_1Segment1_aa7e8932625f352606726e966c1d38ba4}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Set@{Set}}
+\index{Set@{Set}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Set (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the start point and end point to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the new start and end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this segment for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_abc994f244b4bdf33c979301af2559f84}\label{classastu_1_1Segment1_abc994f244b4bdf33c979301af2559f84}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Set\+Safe@{Set\+Safe}}
+\index{Set\+Safe@{Set\+Safe}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Set\+Safe()}{SetSafe()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Set\+Safe (\begin{DoxyParamCaption}\item[{T}]{\+\_\+x0,  }\item[{T}]{\+\_\+x1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the start point and end point of this segment.
+
+This setter will swap start and end point in case the start point is greater than the end point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x0} & the start point \\
+\hline
+{\em \+\_\+x1} & the end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this segment for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment1_aff508149bdb4dc360d733903d01d396d}\label{classastu_1_1Segment1_aff508149bdb4dc360d733903d01d396d}} 
+\index{astu\+::\+Segment1@{astu\+::\+Segment1}!Translate@{Translate}}
+\index{Translate@{Translate}!astu\+::\+Segment1@{astu\+::\+Segment1}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}\& \hyperlink{classastu_1_1Segment1}{astu\+::\+Segment1}$<$ T $>$\+::Translate (\begin{DoxyParamCaption}\item[{T}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Translates this segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & the delta movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this segment for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Segment1.\+h\end{DoxyCompactItemize}

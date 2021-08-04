@@ -15,19 +15,19 @@ int \hyperlink{classastu_1_1Image_ad64d3b2abc18e54ba8beb4e212a75a10}{Get\+Height
 \item 
 double \hyperlink{classastu_1_1Image_a06bdd931e5090f1eca62bd305b83cfd5}{Get\+Aspect\+Ratio} () const
 \item 
-const \hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}{Get\+Pixel} (int x, int y) const
+const \hyperlink{classastu_1_1Color}{Color4d} \& \hyperlink{classastu_1_1Image_ab1e0df707f4ededc00ebf61388b661a3}{Get\+Pixel} (int x, int y) const
 \item 
-void \hyperlink{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}{Set\+Pixel} (int x, int y, const \hyperlink{classastu_1_1Color}{Color} \&c)
+void \hyperlink{classastu_1_1Image_ae9878863c584d4e848e645de82e4d746}{Set\+Pixel} (int x, int y, const \hyperlink{classastu_1_1Color}{Color4d} \&c)
 \item 
-const \hyperlink{classastu_1_1Color}{Color} \& \hyperlink{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}{Get\+Pixel} (size\+\_\+t idx) const
+const \hyperlink{classastu_1_1Color}{Color4d} \& \hyperlink{classastu_1_1Image_ab0edf3270d0e0e038f05cdea7ecc7ca3}{Get\+Pixel} (size\+\_\+t idx) const
 \item 
-void \hyperlink{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}{Set\+Pixel} (size\+\_\+t idx, const \hyperlink{classastu_1_1Color}{Color} \&c)
+void \hyperlink{classastu_1_1Image_aa3121a767b7ef35e3ea9d22d6d856f27}{Set\+Pixel} (size\+\_\+t idx, const \hyperlink{classastu_1_1Color}{Color4d} \&c)
 \item 
 size\+\_\+t \hyperlink{classastu_1_1Image_a53c53ecc0210786efa7f514966ad406b}{Number\+Of\+Pixels} () const
 \item 
-\hyperlink{classastu_1_1Color}{Color} $\ast$ \hyperlink{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}{Get\+Pixels} ()
+\hyperlink{classastu_1_1Color}{Color4d} $\ast$ \hyperlink{classastu_1_1Image_ae5f383d05ec314b828d005041c53c583}{Get\+Pixels} ()
 \item 
-const \hyperlink{classastu_1_1Color}{Color} $\ast$ \hyperlink{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}{Get\+Pixels} () const
+const \hyperlink{classastu_1_1Color}{Color4d} $\ast$ \hyperlink{classastu_1_1Image_a6f4f7b5a1ccfac64a7d4d902b428717f}{Get\+Pixels} () const
 \end{DoxyCompactItemize}
 
 
@@ -82,11 +82,11 @@ Returns the height of this image
 \begin{DoxyReturn}{Returns}
 the height of this image in pixel 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}\label{classastu_1_1Image_a8a31850315f2c74bc90627f4a292a10d}} 
+\mbox{\Hypertarget{classastu_1_1Image_ab1e0df707f4ededc00ebf61388b661a3}\label{classastu_1_1Image_ab1e0df707f4ededc00ebf61388b661a3}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixel@{Get\+Pixel}}
 \index{Get\+Pixel@{Get\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4d}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
 
 Returns the color of a pixel.
 
@@ -105,11 +105,11 @@ the color at the specified location
 {\em std\+::out\+\_\+of\+\_\+range} & in case the coordinates are invalid \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}\label{classastu_1_1Image_a0ff83b1620356fdbe3ee3771d8a3ddb2}} 
+\mbox{\Hypertarget{classastu_1_1Image_ab0edf3270d0e0e038f05cdea7ecc7ca3}\label{classastu_1_1Image_ab0edf3270d0e0e038f05cdea7ecc7ca3}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixel@{Get\+Pixel}}
 \index{Get\+Pixel@{Get\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Get\+Pixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4d}\& astu\+::\+Image\+::\+Get\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const}
 
 Returns the color of a pixel.
 
@@ -126,22 +126,22 @@ the color of the pixel at the specified location
 {\em std\+::out\+\_\+of\+\_\+range} & in case the index is invalid \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}\label{classastu_1_1Image_a3ce797d40010a7536662562c5f2e52da}} 
+\mbox{\Hypertarget{classastu_1_1Image_ae5f383d05ec314b828d005041c53c583}\label{classastu_1_1Image_ae5f383d05ec314b828d005041c53c583}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixels@{Get\+Pixels}}
 \index{Get\+Pixels@{Get\+Pixels}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Get\+Pixels()}{GetPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Color}{Color4d}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 This method provides raw access to the pixel colors, use with care.
 
 \begin{DoxyReturn}{Returns}
 pointer to the linear array of pixel colors 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}\label{classastu_1_1Image_ad2f3de6cc397bbc924c3718e54b1182f}} 
+\mbox{\Hypertarget{classastu_1_1Image_a6f4f7b5a1ccfac64a7d4d902b428717f}\label{classastu_1_1Image_a6f4f7b5a1ccfac64a7d4d902b428717f}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Get\+Pixels@{Get\+Pixels}}
 \index{Get\+Pixels@{Get\+Pixels}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Get\+Pixels()}{GetPixels()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Color}{Color4d}$\ast$ astu\+::\+Image\+::\+Get\+Pixels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 This method provides raw access to the pixel colors, use with care.
 
@@ -174,11 +174,11 @@ The number of pixels equals width times height of this image.
 \begin{DoxyReturn}{Returns}
 the number of pixels 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}\label{classastu_1_1Image_a3c4770367d30abf8cefaa5cf777501a4}} 
+\mbox{\Hypertarget{classastu_1_1Image_ae9878863c584d4e848e645de82e4d746}\label{classastu_1_1Image_ae9878863c584d4e848e645de82e4d746}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Set\+Pixel@{Set\+Pixel}}
 \index{Set\+Pixel@{Set\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
 
 Sets the color of a pixel.
 
@@ -196,11 +196,11 @@ Sets the color of a pixel.
 {\em std\+::out\+\_\+of\+\_\+range} & in case the coordinates are invalid \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}\label{classastu_1_1Image_a1c2f1673fbba03abc50101c2d75ef12e}} 
+\mbox{\Hypertarget{classastu_1_1Image_aa3121a767b7ef35e3ea9d22d6d856f27}\label{classastu_1_1Image_aa3121a767b7ef35e3ea9d22d6d856f27}} 
 \index{astu\+::\+Image@{astu\+::\+Image}!Set\+Pixel@{Set\+Pixel}}
 \index{Set\+Pixel@{Set\+Pixel}!astu\+::\+Image@{astu\+::\+Image}}
 \subsubsection{\texorpdfstring{Set\+Pixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{const \hyperlink{classastu_1_1Color}{Color} \&}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Image\+::\+Set\+Pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{const \hyperlink{classastu_1_1Color}{Color4d} \&}]{c }\end{DoxyParamCaption})}
 
 Sets the color of a pixel.
 
@@ -220,4 +220,4 @@ Sets the color of a pixel.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Image.\+h\end{DoxyCompactItemize}
+include/\+Graphics/Image.\+h\end{DoxyCompactItemize}

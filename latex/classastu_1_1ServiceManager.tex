@@ -7,11 +7,13 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classastu_1_1ServiceManager_a7c6743f699e8468c2102d2f84745de97}{Add\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ service)
+void \hyperlink{classastu_1_1ServiceManager_a274475bef03cea4810f98082cdb24295}{Add\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$ service)
 \item 
-void \hyperlink{classastu_1_1ServiceManager_afdf1a0f9645daf376b094f8fb5c203c1}{Remove\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ service)
+void \hyperlink{classastu_1_1ServiceManager_adbab5f4a6e042604e2c51eefcf69f7b5}{Remove\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$ service)
 \item 
-bool \hyperlink{classastu_1_1ServiceManager_a34ae8a9d52eadd07571610502d20ba88}{Has\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$ service) const
+void \hyperlink{classastu_1_1ServiceManager_ad94c3984be162a0d4e3633abd8b81099}{Remove\+All\+Services} ()
+\item 
+bool \hyperlink{classastu_1_1ServiceManager_ab8af7a024cea64d9f4f4431360641b16}{Has\+Service} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$ service) const
 \item 
 void \hyperlink{classastu_1_1ServiceManager_a7d4918c435a26a4212902ade5f9829b6}{Startup\+All} ()
 \item 
@@ -19,9 +21,9 @@ void \hyperlink{classastu_1_1ServiceManager_a0ec3c06392ae4e7dab8d4b550bed1699}{S
 \item 
 bool \hyperlink{classastu_1_1ServiceManager_a64cea7132b9be6521a9af6f76009e5d4}{Is\+Running} () const
 \item 
-{\footnotesize template$<$typename T $>$ }\\T \& \hyperlink{classastu_1_1ServiceManager_a751f5f152803ee0327ab315cd5088414}{Get\+Service} ()
-\item 
 {\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \hyperlink{classastu_1_1ServiceManager_acef5ab6b48a9811b810851c69751f71a}{Find\+Service} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \hyperlink{classastu_1_1ServiceManager_a3000933260f102748f75c9b4064fd119}{Find\+Service} (std\+::shared\+\_\+ptr$<$ T $>$ default\+Result)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -31,16 +33,16 @@ static \hyperlink{classastu_1_1ServiceManager}{Service\+Manager} \& \hyperlink{c
 
 
 \subsection{Detailed Description}
-Service manager is used administer essential application-\/wide services.
+\hyperlink{classastu_1_1Service}{Service} manager is used administer essential application-\/wide services.
 
 This implementation realizes the service manager as a singleton. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1ServiceManager_a7c6743f699e8468c2102d2f84745de97}\label{classastu_1_1ServiceManager_a7c6743f699e8468c2102d2f84745de97}} 
+\mbox{\Hypertarget{classastu_1_1ServiceManager_a274475bef03cea4810f98082cdb24295}\label{classastu_1_1ServiceManager_a274475bef03cea4810f98082cdb24295}} 
 \index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Add\+Service@{Add\+Service}}
 \index{Add\+Service@{Add\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
 \subsubsection{\texorpdfstring{Add\+Service()}{AddService()}}
-{\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Add\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{service }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Add\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$}]{service }\end{DoxyParamCaption})}
 
 Adds a service to this manager.
 
@@ -51,13 +53,13 @@ Adds a service to this manager.
 \end{DoxyParams}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std\+::logic\+\_\+error} & in case the service has already been added. \\
+{\em std\+::logic\+\_\+error} & in case the service has already been added \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classastu_1_1ServiceManager_acef5ab6b48a9811b810851c69751f71a}\label{classastu_1_1ServiceManager_acef5ab6b48a9811b810851c69751f71a}} 
 \index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Find\+Service@{Find\+Service}}
 \index{Find\+Service@{Find\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
-\subsubsection{\texorpdfstring{Find\+Service()}{FindService()}}
+\subsubsection{\texorpdfstring{Find\+Service()}{FindService()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
 std\+::shared\+\_\+ptr$<$T$>$ astu\+::\+Service\+Manager\+::\+Find\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -70,62 +72,12 @@ Searches for a service of a certain type.
 \textcolor{comment}{// Fetch reference to the one and only service manager.}
 \textcolor{keyword}{auto} & sm = \hyperlink{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}{ServiceManager::GetInstance}();
 
-\textcolor{comment}{// Get (smart) pointer to a service whith implements a certain interface,}
-\textcolor{comment}{// in this case the ITimeManager interface.}
-\textcolor{keyword}{auto} pTimeSrv = sm.FindService<ITimeManager>();
-
-\textcolor{comment}{// Verify that the requested service actually exists}
-\textcolor{keywordflow}{if} (pTimeSrv == \textcolor{keyword}{nullptr}) \{
-  ReportError(\textcolor{stringliteral}{"ITimeService required"});
-  \textcolor{keywordflow}{return};
-\}
+\textcolor{comment}{// Get a (smart-) pointer to a service which implements a certain}
+\textcolor{comment}{// interface, in this case the TimeService interface.}
+\textcolor{keyword}{auto} timeSrv = sm.FindService<TimeService>();
 
 \textcolor{comment}{// Use the time service.}
 \textcolor{keywordtype}{double} dt = timeSrv->GetElapsedTime();
-\end{DoxyCode}
-
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em T} & the type of service to look for \\
-\hline
-\end{DoxyTemplParams}
-\begin{DoxyReturn}{Returns}
-the requested service of {\ttfamily nullptr} if no appropriate service could be found 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}\label{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}} 
-\index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Get\+Instance@{Get\+Instance}}
-\index{Get\+Instance@{Get\+Instance}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
-{\footnotesize\ttfamily static \hyperlink{classastu_1_1ServiceManager}{Service\+Manager}\& astu\+::\+Service\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-Returns the one and only instnace of the service manager.
-
-\begin{DoxyReturn}{Returns}
-the one and only service managanger 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1ServiceManager_a751f5f152803ee0327ab315cd5088414}\label{classastu_1_1ServiceManager_a751f5f152803ee0327ab315cd5088414}} 
-\index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Get\+Service@{Get\+Service}}
-\index{Get\+Service@{Get\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
-\subsubsection{\texorpdfstring{Get\+Service()}{GetService()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-T\& astu\+::\+Service\+Manager\+::\+Get\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Returns a service of a certain type.
-
-{\bfseries Example}
-
-
-\begin{DoxyCode}
-\textcolor{comment}{// Fetch reference to the one and only service manager.}
-\textcolor{keyword}{auto} & sm = \hyperlink{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}{ServiceManager::GetInstance}();
-
-\textcolor{comment}{// Fetch reference to a service whith implements a certain interface,}
-\textcolor{comment}{// in this case the ITimeManager interface.}
-\textcolor{keyword}{auto} & timeSrv = sm.GetService<ITimeManager>();
-
-\textcolor{comment}{// Use the time service.}
-\textcolor{keywordtype}{double} dt = timeSrv.GetElapsedTime();
 \end{DoxyCode}
 
 
@@ -142,11 +94,44 @@ the requested service
 {\em std\+::logic\+\_\+error} & in case the service could not be found \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classastu_1_1ServiceManager_a34ae8a9d52eadd07571610502d20ba88}\label{classastu_1_1ServiceManager_a34ae8a9d52eadd07571610502d20ba88}} 
+\mbox{\Hypertarget{classastu_1_1ServiceManager_a3000933260f102748f75c9b4064fd119}\label{classastu_1_1ServiceManager_a3000933260f102748f75c9b4064fd119}} 
+\index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Find\+Service@{Find\+Service}}
+\index{Find\+Service@{Find\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
+\subsubsection{\texorpdfstring{Find\+Service()}{FindService()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ astu\+::\+Service\+Manager\+::\+Find\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T $>$}]{default\+Result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches for a service of a certain type.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of service to look for \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Result} & the default value if no appropriate service could be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested service or the specified default value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}\label{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}} 
+\index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classastu_1_1ServiceManager}{Service\+Manager}\& astu\+::\+Service\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the one and only instance of the service manager.
+
+\begin{DoxyReturn}{Returns}
+the one and only service manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1ServiceManager_ab8af7a024cea64d9f4f4431360641b16}\label{classastu_1_1ServiceManager_ab8af7a024cea64d9f4f4431360641b16}} 
 \index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Has\+Service@{Has\+Service}}
 \index{Has\+Service@{Has\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
 \subsubsection{\texorpdfstring{Has\+Service()}{HasService()}}
-{\footnotesize\ttfamily bool astu\+::\+Service\+Manager\+::\+Has\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{service }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool astu\+::\+Service\+Manager\+::\+Has\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$}]{service }\end{DoxyParamCaption}) const}
 
 Tests whether the specified services has already been added.
 
@@ -169,11 +154,17 @@ Returns whether the services have been started.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the services have been started 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1ServiceManager_afdf1a0f9645daf376b094f8fb5c203c1}\label{classastu_1_1ServiceManager_afdf1a0f9645daf376b094f8fb5c203c1}} 
+\mbox{\Hypertarget{classastu_1_1ServiceManager_ad94c3984be162a0d4e3633abd8b81099}\label{classastu_1_1ServiceManager_ad94c3984be162a0d4e3633abd8b81099}} 
+\index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Remove\+All\+Services@{Remove\+All\+Services}}
+\index{Remove\+All\+Services@{Remove\+All\+Services}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
+\subsubsection{\texorpdfstring{Remove\+All\+Services()}{RemoveAllServices()}}
+{\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Remove\+All\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all services. \mbox{\Hypertarget{classastu_1_1ServiceManager_adbab5f4a6e042604e2c51eefcf69f7b5}\label{classastu_1_1ServiceManager_adbab5f4a6e042604e2c51eefcf69f7b5}} 
 \index{astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}!Remove\+Service@{Remove\+Service}}
 \index{Remove\+Service@{Remove\+Service}!astu\+::\+Service\+Manager@{astu\+::\+Service\+Manager}}
 \subsubsection{\texorpdfstring{Remove\+Service()}{RemoveService()}}
-{\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Remove\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IService}{I\+Service} $>$}]{service }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Remove\+Service (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Service}{Service} $>$}]{service }\end{DoxyParamCaption})}
 
 Removes the specified service.
 
@@ -194,8 +185,8 @@ Shuts down all services. \mbox{\Hypertarget{classastu_1_1ServiceManager_a7d4918c
 \subsubsection{\texorpdfstring{Startup\+All()}{StartupAll()}}
 {\footnotesize\ttfamily void astu\+::\+Service\+Manager\+::\+Startup\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Starts up all servides. 
+Starts up all services. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Service\+Manager.\+h\end{DoxyCompactItemize}
+include/\+Service/Service\+Manager.\+h\end{DoxyCompactItemize}

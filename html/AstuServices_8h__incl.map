@@ -1,0 +1,23 @@
+<map id="include/AstuServices.h" name="include/AstuServices.h">
+<area shape="rect" id="node2" href="$Service_8h_source.html" title="Service/Service.h" alt="" coords="1209,528,1335,555"/>
+<area shape="rect" id="node3" href="$ServiceManager_8h_source.html" title="ServiceManager.h" alt="" coords="1107,603,1234,629"/>
+<area shape="rect" id="node9" href="$UpdateService_8h_source.html" title="Service/UpdateService.h" alt="" coords="735,453,902,480"/>
+<area shape="rect" id="node12" href="$SignalService_8h_source.html" title="Service/SignalService.h" alt="" coords="542,379,703,405"/>
+<area shape="rect" id="node15" href="$TaskService_8h_source.html" title="Service/TaskService.h" alt="" coords="917,155,1072,181"/>
+<area shape="rect" id="node16" href="$TimeService_8h_source.html" title="TimeService.h" alt="" coords="432,229,539,256"/>
+<area shape="rect" id="node25" href="$Tasks_8h_source.html" title="Service/Tasks.h" alt="" coords="1701,80,1819,107"/>
+<area shape="rect" id="node27" href="$StateService_8h_source.html" title="Service/StateService.h" alt="" coords="1198,304,1354,331"/>
+<area shape="rect" id="node29" href="$Resolution_8h_source.html" title="Service/Resolution.h" alt="" coords="1651,304,1794,331"/>
+<area shape="rect" id="node30" href="$WindowService_8h_source.html" title="Service/WindowService.h" alt="" coords="1522,229,1694,256"/>
+<area shape="rect" id="node32" href="$ActionSignalService_8h_source.html" title="Service/ActionSignalService.h" alt="" coords="1378,304,1577,331"/>
+<area shape="rect" id="node34" href="$RenderService_8h_source.html" title="Service/RenderService.h" alt="" coords="314,80,481,107"/>
+<area shape="rect" id="node35" href="$InteractiveApplication_8h_source.html" title="Service/InteractiveApplication.h" alt="" coords="614,229,821,256"/>
+<area shape="rect" id="node10" href="$Priority_8h_source.html" title="Priority.h" alt="" coords="755,528,829,555"/>
+<area shape="rect" id="node17" href="$InputSignals_8h_source.html" title="Input/InputSignals.h" alt="" coords="389,304,528,331"/>
+<area shape="rect" id="node18" href="$Mouse_8h_source.html" title="Input/Mouse.h" alt="" coords="315,379,421,405"/>
+<area shape="rect" id="node23" href="$Keyboard_8h_source.html" title="Input/Keyboard.h" alt="" coords="457,603,578,629"/>
+<area shape="rect" id="node19" href="$Vector2_8h_source.html" title="Math/Vector2.h" alt="" coords="129,453,239,480"/>
+<area shape="rect" id="node22" href="$MathUtils_8h_source.html" title="MathUtils.h" alt="" coords="94,528,183,555"/>
+<area shape="rect" id="node31" href="$Color_8h_source.html" title="Graphics/Color.h" alt="" coords="245,304,365,331"/>
+<area shape="rect" id="node33" href="$InputMappingService_8h_source.html" title="Input/InputMappingService.h" alt="" coords="1451,379,1639,405"/>
+</map>

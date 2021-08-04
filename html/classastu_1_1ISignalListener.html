@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -73,13 +73,32 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="SignalService_8h_source.html">SignalService.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for astu::ISignalListener&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classastu_1_1ISignalListener__inherit__graph.png" border="0" usemap="#astu_1_1ISignalListener_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="astu_1_1ISignalListener_3_01T_01_4_inherit__map" id="astu_1_1ISignalListener_3_01T_01_4_inherit__map">
+<area shape="rect" id="node2" href="classastu_1_1InteractiveApplication.html" title="astu::InteractiveApplication\l\&lt; KeystrokeSignal \&gt;" alt="" coords="227,5,407,47"/>
+<area shape="rect" id="node4" href="classastu_1_1InteractiveApplication.html" title="astu::InteractiveApplication\l\&lt; WindowState \&gt;" alt="" coords="227,71,407,112"/>
+<area shape="rect" id="node5" href="classastu_1_1KeystrokeListener.html" title="astu::KeystrokeListener\l\&lt; KeystrokeSignal \&gt;" alt="" coords="237,136,397,177"/>
+<area shape="rect" id="node7" href="classastu_1_1MouseButtonListener.html" title="astu::MouseButtonListener\l\&lt; MouseButtonSignal \&gt;" alt="" coords="227,201,406,243"/>
+<area shape="rect" id="node8" href="classastu_1_1MouseMoveListener.html" title="astu::MouseMoveListener\l\&lt; MouseMoveSignal \&gt;" alt="" coords="231,267,403,308"/>
+<area shape="rect" id="node9" href="classastu_1_1MouseWheelListener.html" title="astu::MouseWheelListener\l\&lt; MouseWheelSignal \&gt;" alt="" coords="228,332,405,373"/>
+<area shape="rect" id="node10" href="classastu_1_1ResizeListener.html" title="astu::ResizeListener\l\&lt; ResizeSignal \&gt;" alt="" coords="245,397,388,439"/>
+<area shape="rect" id="node12" href="classastu_1_1SignalListener.html" title="astu::SignalListener\&lt; T \&gt;" alt="" coords="232,463,401,490"/>
+<area shape="rect" id="node13" href="classastu_1_1suite2d_1_1CollisionListener.html" title="astu::suite2d::Collision\lListener\&lt; CollisionSignal \&gt;" alt="" coords="227,515,406,556"/>
+<area shape="rect" id="node3" href="classastu_1_1SdlApplication.html" title="astu::SdlApplication" alt="" coords="483,46,621,73"/>
+<area shape="rect" id="node6" href="classastu_1_1suite2d_1_1CameraControlService.html" title="astu::suite2d::CameraControl\lService" alt="" coords="455,201,649,243"/>
+<area shape="rect" id="node11" href="classastu_1_1suite2d_1_1CameraService.html" title="astu::suite2d::CameraService" alt="" coords="455,405,649,431"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8656a83d9ac0775640edb97e028c3fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ISignalListener.html#a8656a83d9ac0775640edb97e028c3fd9">~ISignalListener</a> ()</td></tr>
-<tr class="separator:a8656a83d9ac0775640edb97e028c3fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc538ead0f63533bc60ba0f931b2a5ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ISignalListener.html#abc538ead0f63533bc60ba0f931b2a5ce">OnSignal</a> (const T &amp;signal)=0</td></tr>
-<tr class="separator:abc538ead0f63533bc60ba0f931b2a5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08b22a5ecb4f1db39336ab0c3139c68"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ISignalListener.html#ae08b22a5ecb4f1db39336ab0c3139c68">~ISignalListener</a> ()</td></tr>
+<tr class="separator:ae08b22a5ecb4f1db39336ab0c3139c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae8168f23b6daa3416f6e5995fd5d31"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1ISignalListener.html#a2ae8168f23b6daa3416f6e5995fd5d31">OnSignal</a> (const T &amp;signal)=0</td></tr>
+<tr class="separator:a2ae8168f23b6daa3416f6e5995fd5d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -88,16 +107,16 @@ class astu::ISignalListener&lt; T &gt;</h3>
 <p>A template signal listeners of a certain type.</p>
 <p><b>Example</b></p>
 <p>This example shows a signal listener which is listening to <code>int</code> values.</p>
-<p>Header file: <em>MyListener.h</em> </p><div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;SignalService.h&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>MyListener : <span class="keyword">public</span> <a class="code" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt;int&gt; {</div><div class="line"><span class="keyword">public</span>:</div><div class="line"></div><div class="line">  <span class="comment">// Inheritred via ISignalListener</span></div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classastu_1_1ISignalListener.html#abc538ead0f63533bc60ba0f931b2a5ce">OnSignal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; signal) <span class="keyword">override</span>;    </div><div class="line">};</div></div><!-- fragment --><p>Implementation file: <em>MyListener.cpp</em></p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;MyListener.h&quot;</span></div><div class="line"></div><div class="line">MyListener::void <a class="code" href="classastu_1_1ISignalListener.html#abc538ead0f63533bc60ba0f931b2a5ce">OnSignal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; signal)</div><div class="line">{</div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;received signal &quot;</span> &lt;&lt; signal &lt;&lt; std::endl;</div><div class="line">}    </div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Header file: <em>MyListener.h</em> </p><div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;SignalService.h&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">class </span>MyListener : <span class="keyword">public</span> <a class="code" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt;int&gt; {</div><div class="line"><span class="keyword">public</span>:</div><div class="line"></div><div class="line">  <span class="comment">// Inheritred via ISignalListener</span></div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classastu_1_1ISignalListener.html#a2ae8168f23b6daa3416f6e5995fd5d31">OnSignal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; signal) <span class="keyword">override</span>;    </div><div class="line">};</div></div><!-- fragment --><p>Implementation file: <em>MyListener.cpp</em></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;MyListener.h&quot;</span></div><div class="line"></div><div class="line">MyListener::void <a class="code" href="classastu_1_1ISignalListener.html#a2ae8168f23b6daa3416f6e5995fd5d31">OnSignal</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp; signal)</div><div class="line">{</div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;received signal &quot;</span> &lt;&lt; signal &lt;&lt; std::endl;</div><div class="line">}    </div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type of signal this listeners is receiving </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8656a83d9ac0775640edb97e028c3fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8656a83d9ac0775640edb97e028c3fd9">&#9670;&nbsp;</a></span>~ISignalListener()</h2>
+<a id="ae08b22a5ecb4f1db39336ab0c3139c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08b22a5ecb4f1db39336ab0c3139c68">&#9670;&nbsp;</a></span>~ISignalListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -108,7 +127,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt; T &gt;::~<a class="el" href="classastu_1_1ISignalListener.html">ISignalListener</a> </td>
+          <td class="memname">virtual <a class="el" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt; T &gt;::~<a class="el" href="classastu_1_1ISignalListener.html">ISignalListener</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -116,7 +135,7 @@ template&lt;typename T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -125,8 +144,8 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abc538ead0f63533bc60ba0f931b2a5ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc538ead0f63533bc60ba0f931b2a5ce">&#9670;&nbsp;</a></span>OnSignal()</h2>
+<a id="a2ae8168f23b6daa3416f6e5995fd5d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae8168f23b6daa3416f6e5995fd5d31">&#9670;&nbsp;</a></span>OnSignal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +156,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt; T &gt;::OnSignal </td>
+          <td class="memname">virtual bool <a class="el" href="classastu_1_1ISignalListener.html">astu::ISignalListener</a>&lt; T &gt;::OnSignal </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>signal</em></td><td>)</td>
@@ -151,17 +170,21 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Called when a signal should be processed by this listener.</p>
+<p>The return value determines whether the signal has been consumed. A consumed signal will no longer be forwarded to other signal listeners.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signal</td><td>the signal </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the signal has been consumed </dd></dl>
+
+<p>Implemented in <a class="el" href="classastu_1_1SignalListener.html#afe6b444f1413f98e6ae4982b72a43b5d">astu::SignalListener&lt; T &gt;</a>, and <a class="el" href="classastu_1_1SignalListener.html#afe6b444f1413f98e6ae4982b72a43b5d">astu::SignalListener&lt; std::string &gt;</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="SignalService_8h_source.html">SignalService.h</a></li>
+<li>include/Service/<a class="el" href="SignalService_8h_source.html">SignalService.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

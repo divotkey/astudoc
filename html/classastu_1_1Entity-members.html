@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -72,12 +72,17 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classastu_1_1Entity.html">astu::Entity</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#ab8f47f4de88139f9202466b726e61aee">AddComponent</a>(std::shared_ptr&lt; EntityComponent &gt; cmp)</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#adc6d15be60fde34b516546bdc92ff13f">AddInterface</a>(EntityComponent &amp;cmp, const std::type_index &amp;type)</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#af7dc70da55f0110ffb340c839483debe">Clone</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#aed9aac4a995b5c044c0301302f2bd3d0">Entity</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#a3d9bb583859f1a941fdaad76f5093323">GetComponent</a>(const std::type_index &amp;type)</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#affe49f8c35d5b067f06803e27243189a">GetComponent</a>(const std::type_index &amp;type) const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#aeabb500a719de29039dd0fad4ea553c4">GetComponent</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#ad1ee4a4e617de7c40eb252413b9045a1">HasComponent</a>(const std::type_index &amp;type) const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#a80b75df1873d23f79f050bc6a178cd4c">HasComponent</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>EntityService</b> (defined in <a class="el" href="classastu_1_1Entity.html">astu::Entity</a>)</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#a3d9bb583859f1a941fdaad76f5093323">GetComponent</a>(const std::type_index &amp;type)</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#affe49f8c35d5b067f06803e27243189a">GetComponent</a>(const std::type_index &amp;type) const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#aeabb500a719de29039dd0fad4ea553c4">GetComponent</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#a140865878b65472e3c11fda593ef80ec">GetComponent</a>() const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#ab64fa42f507c05701afa182f1c08dc1d">GetId</a>() const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classastu_1_1Entity.html#ad1ee4a4e617de7c40eb252413b9045a1">HasComponent</a>(const std::type_index &amp;type) const</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classastu_1_1Entity.html#a80b75df1873d23f79f050bc6a178cd4c">HasComponent</a>()</td><td class="entry"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

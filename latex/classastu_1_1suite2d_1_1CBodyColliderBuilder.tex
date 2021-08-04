@@ -1,0 +1,199 @@
+\hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder}{}\section{astu\+:\+:suite2d\+:\+:C\+Body\+Collider\+Builder$<$ T $>$ Class Template Reference}
+\label{classastu_1_1suite2d_1_1CBodyColliderBuilder}\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder$<$ T $>$@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder$<$ T $>$}}
+
+
+{\ttfamily \#include $<$C\+Colliders.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_adca674222b712d757b7ecd0df366edb8}{$\sim$\+C\+Body\+Collider\+Builder} ()
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae56a7af01fd76c06336d812884b1789a}{Reset} ()
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_ac65b06a13c81a76e0aefbefd90993ba6}{Restitution} (float r)
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_a5d0fe75d5cc5cb4c3c1a6a503d34d641}{Friction} (float f)
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_a7bedba690f689f1da7650084975a339e}{Density} (float d)
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae4db29db8b6500a86b1a9b3b6419a00a}{Category\+Bits} (uint16\+\_\+t bits)
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_a20924e4c791d492ce399ac5a340a6fab}{Mask\+Bits} (uint16\+\_\+t bits)
+\item 
+T \& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_a2fb80e617b4125b355f2e207e9335640}{Offset} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&o)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder_a64b45a603701bd29ae6cb631258acfe7}{Configure} (\hyperlink{classastu_1_1suite2d_1_1CBodyCollider}{C\+Body\+Collider} \&collider)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::suite2d\+::\+C\+Body\+Collider\+Builder$<$ T $>$}
+
+Base class for collider builders. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_adca674222b712d757b7ecd0df366edb8}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_adca674222b712d757b7ecd0df366edb8}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!````~C\+Body\+Collider\+Builder@{$\sim$\+C\+Body\+Collider\+Builder}}
+\index{````~C\+Body\+Collider\+Builder@{$\sim$\+C\+Body\+Collider\+Builder}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Body\+Collider\+Builder()}{~CBodyColliderBuilder()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::$\sim$\hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{C\+Body\+Collider\+Builder} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae4db29db8b6500a86b1a9b3b6419a00a}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae4db29db8b6500a86b1a9b3b6419a00a}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Category\+Bits@{Category\+Bits}}
+\index{Category\+Bits@{Category\+Bits}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Category\+Bits()}{CategoryBits()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Category\+Bits (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the category bits used for collision filtering.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & the category bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_a64b45a603701bd29ae6cb631258acfe7}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_a64b45a603701bd29ae6cb631258acfe7}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Configure@{Configure}}
+\index{Configure@{Configure}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Configure()}{Configure()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Configure (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1CBodyCollider}{C\+Body\+Collider} \&}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Configures the specified collider.
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & the collider to configure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_a7bedba690f689f1da7650084975a339e}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_a7bedba690f689f1da7650084975a339e}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Density@{Density}}
+\index{Density@{Density}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Density()}{Density()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Density (\begin{DoxyParamCaption}\item[{float}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the density of the collider to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & the density, usually in kg/m$^\wedge$2 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the density is less than zero \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_a5d0fe75d5cc5cb4c3c1a6a503d34d641}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_a5d0fe75d5cc5cb4c3c1a6a503d34d641}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Friction@{Friction}}
+\index{Friction@{Friction}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Friction()}{Friction()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Friction (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the friction coefficient of the collider to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the friction coefficient \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the coefficient is less than zero \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_a20924e4c791d492ce399ac5a340a6fab}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_a20924e4c791d492ce399ac5a340a6fab}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Mask\+Bits@{Mask\+Bits}}
+\index{Mask\+Bits@{Mask\+Bits}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Mask\+Bits()}{MaskBits()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Mask\+Bits (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the mask bits used for collision filtering.
+
+This bitfield mask the categories that the collider does accept for collision.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & the mask bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_a2fb80e617b4125b355f2e207e9335640}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_a2fb80e617b4125b355f2e207e9335640}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Offset@{Offset}}
+\index{Offset@{Offset}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Offset()}{Offset()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Offset (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the offset of the collider to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & the offset relativ to the origin of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae56a7af01fd76c06336d812884b1789a}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_ae56a7af01fd76c06336d812884b1789a}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this builder to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyColliderBuilder_ac65b06a13c81a76e0aefbefd90993ba6}\label{classastu_1_1suite2d_1_1CBodyColliderBuilder_ac65b06a13c81a76e0aefbefd90993ba6}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}!Restitution@{Restitution}}
+\index{Restitution@{Restitution}!astu\+::suite2d\+::\+C\+Body\+Collider\+Builder@{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}}
+\subsubsection{\texorpdfstring{Restitution()}{Restitution()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classastu_1_1suite2d_1_1CBodyColliderBuilder}{astu\+::suite2d\+::\+C\+Body\+Collider\+Builder}$<$ T $>$\+::Restitution (\begin{DoxyParamCaption}\item[{float}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the the coefficient of restitution of the collider to build
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the the coefficient of restitution \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the coefficient is less than zero \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Colliders.\+h\end{DoxyCompactItemize}

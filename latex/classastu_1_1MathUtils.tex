@@ -1,0 +1,134 @@
+\hypertarget{classastu_1_1MathUtils}{}\section{astu\+:\+:Math\+Utils Class Reference}
+\label{classastu_1_1MathUtils}\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+
+
+{\ttfamily \#include $<$Math\+Utils.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classastu_1_1MathUtils_a7b41244cc494ec40a70a7519b43ad548}{To\+Radians} (T phi)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classastu_1_1MathUtils_a84496e413d854bafe2a88a12f7e473da}{To\+Degrees} (T phi)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classastu_1_1MathUtils_af1b78d1d769e7f46ff0e819ac11b269b}{Rect\+Diag2D} (T width, T height)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static T \hyperlink{classastu_1_1MathUtils_a635ccbb17b8e6ee4333ff8391b328ee0}{Snap} (T value, T grid\+Width)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{classastu_1_1MathUtils_a333f618d0f2a07c78ebddfcecc2dca2f}{P\+Id}
+\item 
+static const double \hyperlink{classastu_1_1MathUtils_ac646a16be0c1e1d8ce3ebcb9760d493c}{P\+I2d}
+\item 
+static const float \hyperlink{classastu_1_1MathUtils_a77d9d18581e2eb6aa0f3b79f455a9ed0}{P\+If}
+\item 
+static const float \hyperlink{classastu_1_1MathUtils_a94b505d6faeafedd5e882226f3cec47f}{P\+I2f}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides a collection of auxiliary mathematical functions and constants. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1MathUtils_af1b78d1d769e7f46ff0e819ac11b269b}\label{classastu_1_1MathUtils_af1b78d1d769e7f46ff0e819ac11b269b}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!Rect\+Diag2D@{Rect\+Diag2D}}
+\index{Rect\+Diag2D@{Rect\+Diag2D}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{Rect\+Diag2\+D()}{RectDiag2D()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T astu\+::\+Math\+Utils\+::\+Rect\+Diag2D (\begin{DoxyParamCaption}\item[{T}]{width,  }\item[{T}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Calculates the diagonal of a two dimensional square.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the square \\
+\hline
+{\em height} & the height of the square \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of the diagonal of the specified square 
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em the} & numerical type \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classastu_1_1MathUtils_a635ccbb17b8e6ee4333ff8391b328ee0}\label{classastu_1_1MathUtils_a635ccbb17b8e6ee4333ff8391b328ee0}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!Snap@{Snap}}
+\index{Snap@{Snap}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{Snap()}{Snap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T astu\+::\+Math\+Utils\+::\+Snap (\begin{DoxyParamCaption}\item[{T}]{value,  }\item[{T}]{grid\+Width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Snaps the specified value to a grid with given width.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to snap \\
+\hline
+{\em grid\+Width} & the width of the grid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1MathUtils_a84496e413d854bafe2a88a12f7e473da}\label{classastu_1_1MathUtils_a84496e413d854bafe2a88a12f7e473da}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!To\+Degrees@{To\+Degrees}}
+\index{To\+Degrees@{To\+Degrees}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{To\+Degrees()}{ToDegrees()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T astu\+::\+Math\+Utils\+::\+To\+Degrees (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Converts from radians to degrees.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in radians \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1MathUtils_a7b41244cc494ec40a70a7519b43ad548}\label{classastu_1_1MathUtils_a7b41244cc494ec40a70a7519b43ad548}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!To\+Radians@{To\+Radians}}
+\index{To\+Radians@{To\+Radians}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{To\+Radians()}{ToRadians()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T astu\+::\+Math\+Utils\+::\+To\+Radians (\begin{DoxyParamCaption}\item[{T}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Converts from degrees to radians.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in degrees \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1MathUtils_ac646a16be0c1e1d8ce3ebcb9760d493c}\label{classastu_1_1MathUtils_ac646a16be0c1e1d8ce3ebcb9760d493c}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!P\+I2d@{P\+I2d}}
+\index{P\+I2d@{P\+I2d}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{P\+I2d}{PI2d}}
+{\footnotesize\ttfamily const double astu\+::\+Math\+Utils\+::\+P\+I2d\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for PI times two with double precision. \mbox{\Hypertarget{classastu_1_1MathUtils_a94b505d6faeafedd5e882226f3cec47f}\label{classastu_1_1MathUtils_a94b505d6faeafedd5e882226f3cec47f}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!P\+I2f@{P\+I2f}}
+\index{P\+I2f@{P\+I2f}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{P\+I2f}{PI2f}}
+{\footnotesize\ttfamily const float astu\+::\+Math\+Utils\+::\+P\+I2f\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for PI times two with single precision. \mbox{\Hypertarget{classastu_1_1MathUtils_a333f618d0f2a07c78ebddfcecc2dca2f}\label{classastu_1_1MathUtils_a333f618d0f2a07c78ebddfcecc2dca2f}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!P\+Id@{P\+Id}}
+\index{P\+Id@{P\+Id}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{P\+Id}{PId}}
+{\footnotesize\ttfamily const double astu\+::\+Math\+Utils\+::\+P\+Id\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for PI with double precision. \mbox{\Hypertarget{classastu_1_1MathUtils_a77d9d18581e2eb6aa0f3b79f455a9ed0}\label{classastu_1_1MathUtils_a77d9d18581e2eb6aa0f3b79f455a9ed0}} 
+\index{astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}!P\+If@{P\+If}}
+\index{P\+If@{P\+If}!astu\+::\+Math\+Utils@{astu\+::\+Math\+Utils}}
+\subsubsection{\texorpdfstring{P\+If}{PIf}}
+{\footnotesize\ttfamily const float astu\+::\+Math\+Utils\+::\+P\+If\hspace{0.3cm}{\ttfamily [static]}}
+
+Constant for PI with single precision. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Math\+Utils.\+h\end{DoxyCompactItemize}

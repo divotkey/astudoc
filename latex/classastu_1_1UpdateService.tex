@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Update\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{classastu_1_1UpdateService__inherit__graph}
+\includegraphics[width=186pt]{classastu_1_1UpdateService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,7 +19,7 @@ Collaboration diagram for astu\+:\+:Update\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=310pt]{classastu_1_1UpdateService__coll__graph}
+\includegraphics[width=217pt]{classastu_1_1UpdateService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -27,20 +27,21 @@ Collaboration diagram for astu\+:\+:Update\+Service\+:\nopagebreak
 \item 
 \hyperlink{classastu_1_1UpdateService_ae4d88fb4772931e35f7c46b7d756b4c8}{Update\+Service} ()
 \item 
-void \hyperlink{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}{Add\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+void \hyperlink{classastu_1_1UpdateService_aeccc68d2764d15d0bc78c25b83bb2510}{Add\+Updatable} (\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&updatable, int priority=Priority\+::\+Normal)
 \item 
-void \hyperlink{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}{Remove\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+void \hyperlink{classastu_1_1UpdateService_aa861a19c8b3fe72b45b8f886f3d945db}{Remove\+Updatable} (\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&updatable)
 \item 
-bool \hyperlink{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}{Has\+Updatable} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$ updatable)
+bool \hyperlink{classastu_1_1UpdateService_ab76b0993cefac357bc37e690c75bfdee}{Has\+Updatable} (\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&updatable) const
 \item 
-\mbox{\Hypertarget{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}\label{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}} 
-void {\bfseries Update\+All} ()
+int \hyperlink{classastu_1_1UpdateService_a7e8d2c8cd7238349f3a10a8d2c3ebe32}{Get\+Update\+Priority} (\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&updatable) const
+\item 
+void \hyperlink{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}{Update\+All} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-This service manages and updates {\ttfamily Updatables}.
+The update service updates registered {\ttfamily Updatables} and maintains the update priority.
 
 To update the {\ttfamily Updatables}, this service\textquotesingle{}s method {\ttfamily Update\+All} must be called within the simulation respectively game loop. 
 
@@ -54,11 +55,11 @@ To update the {\ttfamily Updatables}, this service\textquotesingle{}s method {\t
 Constructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}\label{classastu_1_1UpdateService_a83ff161f4280681a50b728e2ac157cf6}} 
+\mbox{\Hypertarget{classastu_1_1UpdateService_aeccc68d2764d15d0bc78c25b83bb2510}\label{classastu_1_1UpdateService_aeccc68d2764d15d0bc78c25b83bb2510}} 
 \index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Add\+Updatable@{Add\+Updatable}}
 \index{Add\+Updatable@{Add\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
 \subsubsection{\texorpdfstring{Add\+Updatable()}{AddUpdatable()}}
-{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Add\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Add\+Updatable (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&}]{updatable,  }\item[{int}]{priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
 
 Adds an updatable.
 
@@ -66,14 +67,34 @@ Adds an updatable.
 \begin{DoxyParams}{Parameters}
 {\em updatable} & the updatable to be added \\
 \hline
+{\em priority} & the update priority to be used \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}\label{classastu_1_1UpdateService_aaffeece0ab9fd8fff1020763cd72de13}} 
+\mbox{\Hypertarget{classastu_1_1UpdateService_a7e8d2c8cd7238349f3a10a8d2c3ebe32}\label{classastu_1_1UpdateService_a7e8d2c8cd7238349f3a10a8d2c3ebe32}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Get\+Update\+Priority@{Get\+Update\+Priority}}
+\index{Get\+Update\+Priority@{Get\+Update\+Priority}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Get\+Update\+Priority()}{GetUpdatePriority()}}
+{\footnotesize\ttfamily int astu\+::\+Update\+Service\+::\+Get\+Update\+Priority (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&}]{updatable }\end{DoxyParamCaption}) const}
+
+Returns the update priority of an updatable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em updatable} & which updater priority should be returned \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the updatable is unknown \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1UpdateService_ab76b0993cefac357bc37e690c75bfdee}\label{classastu_1_1UpdateService_ab76b0993cefac357bc37e690c75bfdee}} 
 \index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Has\+Updatable@{Has\+Updatable}}
 \index{Has\+Updatable@{Has\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
 \subsubsection{\texorpdfstring{Has\+Updatable()}{HasUpdatable()}}
-{\footnotesize\ttfamily bool astu\+::\+Update\+Service\+::\+Has\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool astu\+::\+Update\+Service\+::\+Has\+Updatable (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&}]{updatable }\end{DoxyParamCaption}) const}
 
-Tests whether a specific updatablel has already been added.
+Tests whether a specific updatable has already been added.
 
 
 \begin{DoxyParams}{Parameters}
@@ -81,13 +102,13 @@ Tests whether a specific updatablel has already been added.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-{\ttfamily true} if the updatale has already beed added 
+{\ttfamily true} if the updatable has already been added 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}\label{classastu_1_1UpdateService_a04911354dbfbf3849fafda10209710b6}} 
+\mbox{\Hypertarget{classastu_1_1UpdateService_aa861a19c8b3fe72b45b8f886f3d945db}\label{classastu_1_1UpdateService_aa861a19c8b3fe72b45b8f886f3d945db}} 
 \index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Remove\+Updatable@{Remove\+Updatable}}
 \index{Remove\+Updatable@{Remove\+Updatable}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
 \subsubsection{\texorpdfstring{Remove\+Updatable()}{RemoveUpdatable()}}
-{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Remove\+Updatable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1IUpdatable}{I\+Updatable} $>$}]{updatable }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Remove\+Updatable (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1IUpdatable}{I\+Updatable} \&}]{updatable }\end{DoxyParamCaption})}
 
 Removes an updatable.
 
@@ -96,8 +117,14 @@ Removes an updatable.
 {\em updatable} & the updatable to be removed \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}\label{classastu_1_1UpdateService_a9ee615ce365e1910446a2646b0a2ad9a}} 
+\index{astu\+::\+Update\+Service@{astu\+::\+Update\+Service}!Update\+All@{Update\+All}}
+\index{Update\+All@{Update\+All}!astu\+::\+Update\+Service@{astu\+::\+Update\+Service}}
+\subsubsection{\texorpdfstring{Update\+All()}{UpdateAll()}}
+{\footnotesize\ttfamily void astu\+::\+Update\+Service\+::\+Update\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Updates all registered updatables. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Update\+Service.\+h\end{DoxyCompactItemize}
+include/\+Service/Update\+Service.\+h\end{DoxyCompactItemize}

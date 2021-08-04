@@ -1,0 +1,203 @@
+\hypertarget{classastu_1_1suite2d_1_1CameraService}{}\section{astu\+:\+:suite2d\+:\+:Camera\+Service Class Reference}
+\label{classastu_1_1suite2d_1_1CameraService}\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+
+
+{\ttfamily \#include $<$Camera\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Camera\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classastu_1_1suite2d_1_1CameraService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Camera\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classastu_1_1suite2d_1_1CameraService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CameraService_a2c77c9b8dbc01ef54797cb4c58569a50}{Camera\+Service} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} $>$ \hyperlink{classastu_1_1suite2d_1_1CameraService_a6a249aa14317fe758898db2114bd9848}{Create\+Camera} (const std\+::string \&cam\+Name)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} $>$ \hyperlink{classastu_1_1suite2d_1_1CameraService_a4ded9fceaa3da9f887f3de7810f301c7}{Get\+Camera} (const std\+::string \&cam\+Name=\hyperlink{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA})
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1CameraService_a00f6b9d4898b70f7412efb21acd91271}{Has\+Camera} (const std\+::string \&cam\+Name) const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} $>$ \hyperlink{classastu_1_1suite2d_1_1CameraService_aacd4b3d010851ebc0d3cce0453f87624}{Get\+Or\+Create\+Camera} (const std\+::string \&cam\+Name)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1CameraService_a7a7d3b4a1fcbfd7c1a3d2b6db1d33d82}{Destroy\+All} ()
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CameraService_ac86690e80a0d6805abde747e501460ee}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CameraService_ae820e7576e925c559b773bb0dbd5f091}{On\+Shutdown} () override
+\item 
+virtual bool \hyperlink{classastu_1_1suite2d_1_1CameraService_a4229a725df31a9e416240f4b32040cdd}{On\+Resize} (int width, int height) override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::string \hyperlink{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The camera service manages various camera objects. Cameras are created with a specific name and can be retrieved using this name. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a2c77c9b8dbc01ef54797cb4c58569a50}\label{classastu_1_1suite2d_1_1CameraService_a2c77c9b8dbc01ef54797cb4c58569a50}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Camera\+Service@{Camera\+Service}}
+\index{Camera\+Service@{Camera\+Service}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Camera\+Service()}{CameraService()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Camera\+Service\+::\+Camera\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a6a249aa14317fe758898db2114bd9848}\label{classastu_1_1suite2d_1_1CameraService_a6a249aa14317fe758898db2114bd9848}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Create\+Camera@{Create\+Camera}}
+\index{Create\+Camera@{Create\+Camera}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Create\+Camera()}{CreateCamera()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}$>$ astu\+::suite2d\+::\+Camera\+Service\+::\+Create\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cam\+Name }\end{DoxyParamCaption})}
+
+Creates a new camera with the specified name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam\+Name} & the name of the camera to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the newly created camera 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case a camera with that name already exists \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a7a7d3b4a1fcbfd7c1a3d2b6db1d33d82}\label{classastu_1_1suite2d_1_1CameraService_a7a7d3b4a1fcbfd7c1a3d2b6db1d33d82}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Destroy\+All@{Destroy\+All}}
+\index{Destroy\+All@{Destroy\+All}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Destroy\+All()}{DestroyAll()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Camera\+Service\+::\+Destroy\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroys all cameras. \mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a4ded9fceaa3da9f887f3de7810f301c7}\label{classastu_1_1suite2d_1_1CameraService_a4ded9fceaa3da9f887f3de7810f301c7}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}$>$ astu\+::suite2d\+::\+Camera\+Service\+::\+Get\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cam\+Name = {\ttfamily \hyperlink{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}} }\end{DoxyParamCaption})}
+
+Retrieves the camera with the specified name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam\+Name} & the name of the camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested camera 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the camera is unknown \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_aacd4b3d010851ebc0d3cce0453f87624}\label{classastu_1_1suite2d_1_1CameraService_aacd4b3d010851ebc0d3cce0453f87624}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Get\+Or\+Create\+Camera@{Get\+Or\+Create\+Camera}}
+\index{Get\+Or\+Create\+Camera@{Get\+Or\+Create\+Camera}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Get\+Or\+Create\+Camera()}{GetOrCreateCamera()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}$>$ astu\+::suite2d\+::\+Camera\+Service\+::\+Get\+Or\+Create\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cam\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves a camera with the specified name or creates it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam\+Name} & the name of the camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the retrieved or newly created camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a00f6b9d4898b70f7412efb21acd91271}\label{classastu_1_1suite2d_1_1CameraService_a00f6b9d4898b70f7412efb21acd91271}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!Has\+Camera@{Has\+Camera}}
+\index{Has\+Camera@{Has\+Camera}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{Has\+Camera()}{HasCamera()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Camera\+Service\+::\+Has\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cam\+Name }\end{DoxyParamCaption}) const}
+
+Tests whether a camera with the specified name exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam\+Name} & the name of the camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the camera exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_a4229a725df31a9e416240f4b32040cdd}\label{classastu_1_1suite2d_1_1CameraService_a4229a725df31a9e416240f4b32040cdd}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!On\+Resize@{On\+Resize}}
+\index{On\+Resize@{On\+Resize}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{On\+Resize()}{OnResize()}}
+{\footnotesize\ttfamily virtual bool astu\+::suite2d\+::\+Camera\+Service\+::\+On\+Resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by this base class when a resize signal has received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the new window width \\
+\hline
+{\em height} & the new window height \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1ResizeListener_a34f14538388fdd36713cd1097dcf5fb1}{astu\+::\+Resize\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_ae820e7576e925c559b773bb0dbd5f091}\label{classastu_1_1suite2d_1_1CameraService_ae820e7576e925c559b773bb0dbd5f091}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Camera\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base method on shutdown.
+
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_ac86690e80a0d6805abde747e501460ee}\label{classastu_1_1suite2d_1_1CameraService_ac86690e80a0d6805abde747e501460ee}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Camera\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base class on startup.
+
+Derived can override this method for initialization purposes. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}\label{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}} 
+\index{astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}!D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}!astu\+::suite2d\+::\+Camera\+Service@{astu\+::suite2d\+::\+Camera\+Service}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}{DEFAULT\_CAMERA}}
+{\footnotesize\ttfamily const std\+::string astu\+::suite2d\+::\+Camera\+Service\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA\hspace{0.3cm}{\ttfamily [static]}}
+
+The name of the default camera. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Camera\+Service.\+h\end{DoxyCompactItemize}

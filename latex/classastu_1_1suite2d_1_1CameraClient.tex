@@ -1,0 +1,120 @@
+\hypertarget{classastu_1_1suite2d_1_1CameraClient}{}\section{astu\+:\+:suite2d\+:\+:Camera\+Client Class Reference}
+\label{classastu_1_1suite2d_1_1CameraClient}\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+
+
+{\ttfamily \#include $<$Camera\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Camera\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1suite2d_1_1CameraClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Camera\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classastu_1_1suite2d_1_1CameraClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CameraClient_abed64b5a569bcdce2303bd929958eb8c}{Camera\+Client} (const std\+::string \&camera\+Name=\hyperlink{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}{Camera\+Service\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}, bool create\+Camera=false)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1CameraClient_ac305ddbdf19d60d260a0d8af57d8a1d0}{Get\+Camera} ()
+\item 
+const \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1CameraClient_ae5a13bfdb3cd466404c94546bb2aeaff}{Get\+Camera} () const
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1CameraClient_a729197722ac1f2d71f0f11708eef6204}{Use\+Camera} (const std\+::string \&cam\+Name, bool create=false)
+\item 
+const std\+::string \& \hyperlink{classastu_1_1suite2d_1_1CameraClient_a24450a64720a3f05ba457082171ee5f8}{Get\+Camera\+Name} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A service can derive from this class if it requires access to a two-\/dimensional camera object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraClient_abed64b5a569bcdce2303bd929958eb8c}\label{classastu_1_1suite2d_1_1CameraClient_abed64b5a569bcdce2303bd929958eb8c}} 
+\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}!Camera\+Client@{Camera\+Client}}
+\index{Camera\+Client@{Camera\+Client}!astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+\subsubsection{\texorpdfstring{Camera\+Client()}{CameraClient()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Camera\+Client\+::\+Camera\+Client (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{camera\+Name = {\ttfamily \hyperlink{classastu_1_1suite2d_1_1CameraService_ae92f5163a54b2ab8dd738cadee8f75eb}{Camera\+Service\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+A\+M\+E\+RA}},  }\item[{bool}]{create\+Camera = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Name} & the name of the camera to be used \\
+\hline
+{\em create\+Camera} & whether the camera should be created \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraClient_ac305ddbdf19d60d260a0d8af57d8a1d0}\label{classastu_1_1suite2d_1_1CameraClient_ac305ddbdf19d60d260a0d8af57d8a1d0}} 
+\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+Client\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returne the camera this client uses.
+
+\begin{DoxyReturn}{Returns}
+the used camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraClient_ae5a13bfdb3cd466404c94546bb2aeaff}\label{classastu_1_1suite2d_1_1CameraClient_ae5a13bfdb3cd466404c94546bb2aeaff}} 
+\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}!Get\+Camera@{Get\+Camera}}
+\index{Get\+Camera@{Get\+Camera}!astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+\subsubsection{\texorpdfstring{Get\+Camera()}{GetCamera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+Client\+::\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returne the camera this client uses.
+
+\begin{DoxyReturn}{Returns}
+the used camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraClient_a24450a64720a3f05ba457082171ee5f8}\label{classastu_1_1suite2d_1_1CameraClient_a24450a64720a3f05ba457082171ee5f8}} 
+\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}!Get\+Camera\+Name@{Get\+Camera\+Name}}
+\index{Get\+Camera\+Name@{Get\+Camera\+Name}!astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+\subsubsection{\texorpdfstring{Get\+Camera\+Name()}{GetCameraName()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::suite2d\+::\+Camera\+Client\+::\+Get\+Camera\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of the camera to be used.
+
+\begin{DoxyReturn}{Returns}
+the name of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraClient_a729197722ac1f2d71f0f11708eef6204}\label{classastu_1_1suite2d_1_1CameraClient_a729197722ac1f2d71f0f11708eef6204}} 
+\index{astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}!Use\+Camera@{Use\+Camera}}
+\index{Use\+Camera@{Use\+Camera}!astu\+::suite2d\+::\+Camera\+Client@{astu\+::suite2d\+::\+Camera\+Client}}
+\subsubsection{\texorpdfstring{Use\+Camera()}{UseCamera()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Camera\+Client\+::\+Use\+Camera (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cam\+Name,  }\item[{bool}]{create = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Specified which camera to use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cam\+Name} & the name of the camera \\
+\hline
+{\em create} & whether the camera should be created \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the camera is unknown \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Camera\+Service.\+h\end{DoxyCompactItemize}

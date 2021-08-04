@@ -1,0 +1,192 @@
+\hypertarget{classastu_1_1Interpolator1}{}\section{astu\+:\+:Interpolator1$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Interpolator1}\index{astu\+::\+Interpolator1$<$ T $>$@{astu\+::\+Interpolator1$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Interpolator.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Interpolator1$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classastu_1_1Interpolator1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Interpolator1$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classastu_1_1Interpolator1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Interpolator1_af077a8b4048006a60119677e08a0434f}{Interpolator1} (T initial\+Value)
+\item 
+void \hyperlink{classastu_1_1Interpolator1_a6fb6493a2c2b0dc3352ab1b515c0d114}{Set\+Target\+Value} (T new\+Target)
+\item 
+T \hyperlink{classastu_1_1Interpolator1_ad5d42155623ede0a32350444f401903a}{Get\+Target\+Value} () const
+\item 
+T \hyperlink{classastu_1_1Interpolator1_a82c6c0471a52339263d9584fe19fe112}{Get\+Current\+Value} () const
+\item 
+virtual void \hyperlink{classastu_1_1Interpolator1_ae74b46754efa0cb8a2c768b1b3a66881}{Reset} (T value)
+\item 
+virtual T \hyperlink{classastu_1_1Interpolator1_a3507ba0a1fcb2f38539793f1906d8000}{Update} (T dt)=0
+\item 
+T \hyperlink{classastu_1_1Interpolator1_ac4d4223cbcbe72fba1a8e6d1ae34edfd}{Set\+Target\+And\+Update} (T \hyperlink{classastu_1_1Interpolator1_a2809c5cc739cc96d3adb6d852fc54a15}{target\+Value}, T dt)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classastu_1_1Interpolator1_a31df825a086aed6ad861c308e6061513}{current\+Value}
+\item 
+T \hyperlink{classastu_1_1Interpolator1_a2809c5cc739cc96d3adb6d852fc54a15}{target\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Interpolator1$<$ T $>$}
+
+Interface for interpolators for one-\/dimensional values.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical type used for the values to interpolate \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_af077a8b4048006a60119677e08a0434f}\label{classastu_1_1Interpolator1_af077a8b4048006a60119677e08a0434f}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Interpolator1@{Interpolator1}}
+\index{Interpolator1@{Interpolator1}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Interpolator1()}{Interpolator1()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::\hyperlink{classastu_1_1Interpolator1}{Interpolator1} (\begin{DoxyParamCaption}\item[{T}]{initial\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Value} & used to initialize target and current value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_a82c6c0471a52339263d9584fe19fe112}\label{classastu_1_1Interpolator1_a82c6c0471a52339263d9584fe19fe112}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Get\+Current\+Value@{Get\+Current\+Value}}
+\index{Get\+Current\+Value@{Get\+Current\+Value}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Get\+Current\+Value()}{GetCurrentValue()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Get\+Current\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current value.
+
+\begin{DoxyReturn}{Returns}
+the current value based on target value and interpolation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_ad5d42155623ede0a32350444f401903a}\label{classastu_1_1Interpolator1_ad5d42155623ede0a32350444f401903a}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Get\+Target\+Value@{Get\+Target\+Value}}
+\index{Get\+Target\+Value@{Get\+Target\+Value}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Get\+Target\+Value()}{GetTargetValue()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Get\+Target\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the latest set target value.
+
+\begin{DoxyReturn}{Returns}
+the target value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_ae74b46754efa0cb8a2c768b1b3a66881}\label{classastu_1_1Interpolator1_ae74b46754efa0cb8a2c768b1b3a66881}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual void \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Reset (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Resets the current and target value to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value for target and current value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_ac4d4223cbcbe72fba1a8e6d1ae34edfd}\label{classastu_1_1Interpolator1_ac4d4223cbcbe72fba1a8e6d1ae34edfd}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Set\+Target\+And\+Update@{Set\+Target\+And\+Update}}
+\index{Set\+Target\+And\+Update@{Set\+Target\+And\+Update}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Set\+Target\+And\+Update()}{SetTargetAndUpdate()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Set\+Target\+And\+Update (\begin{DoxyParamCaption}\item[{T}]{target\+Value,  }\item[{T}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenient method to set the target value and update the current value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Value} & the new target value \\
+\hline
+{\em dt} & the elapsed time since the last update in seconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_a6fb6493a2c2b0dc3352ab1b515c0d114}\label{classastu_1_1Interpolator1_a6fb6493a2c2b0dc3352ab1b515c0d114}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Set\+Target\+Value@{Set\+Target\+Value}}
+\index{Set\+Target\+Value@{Set\+Target\+Value}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Set\+Target\+Value()}{SetTargetValue()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Set\+Target\+Value (\begin{DoxyParamCaption}\item[{T}]{new\+Target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the new target value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Target} & the new target value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_a3507ba0a1fcb2f38539793f1906d8000}\label{classastu_1_1Interpolator1_a3507ba0a1fcb2f38539793f1906d8000}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!Update@{Update}}
+\index{Update@{Update}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::Update (\begin{DoxyParamCaption}\item[{T}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates the current value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current value 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1LinearInterpolator1_a87cd49a1e029c8a4e7ca116c4dfae900}{astu\+::\+Linear\+Interpolator1$<$ T $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1Interpolator1_a31df825a086aed6ad861c308e6061513}\label{classastu_1_1Interpolator1_a31df825a086aed6ad861c308e6061513}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!current\+Value@{current\+Value}}
+\index{current\+Value@{current\+Value}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{current\+Value}{currentValue}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::current\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+The current value. \mbox{\Hypertarget{classastu_1_1Interpolator1_a2809c5cc739cc96d3adb6d852fc54a15}\label{classastu_1_1Interpolator1_a2809c5cc739cc96d3adb6d852fc54a15}} 
+\index{astu\+::\+Interpolator1@{astu\+::\+Interpolator1}!target\+Value@{target\+Value}}
+\index{target\+Value@{target\+Value}!astu\+::\+Interpolator1@{astu\+::\+Interpolator1}}
+\subsubsection{\texorpdfstring{target\+Value}{targetValue}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T \hyperlink{classastu_1_1Interpolator1}{astu\+::\+Interpolator1}$<$ T $>$\+::target\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+The target value. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Interpolator.\+h\end{DoxyCompactItemize}

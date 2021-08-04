@@ -1,0 +1,272 @@
+\hypertarget{classastu_1_1Polygon}{}\section{astu\+:\+:Polygon$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Polygon}\index{astu\+::\+Polygon$<$ T $>$@{astu\+::\+Polygon$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Polygon$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classastu_1_1Polygon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Polygon$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classastu_1_1Polygon__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Polygon_a673a02de1ae66a4c4d3d03c79a842467}{Polygon} (const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&vertices)
+\item 
+const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ $>$ \& \hyperlink{classastu_1_1Polygon_aa96aa72691eac81bf46d4e0ac2109a46}{Get\+Vertices} () const
+\item 
+size\+\_\+t \hyperlink{classastu_1_1Polygon_aaabad8e95da96f4fa2e8d0fd79804afa}{Num\+Vertices} () const
+\item 
+size\+\_\+t \hyperlink{classastu_1_1Polygon_a752836abe5a71f78c8a9debfcffc580e}{Num\+Edges} () const
+\item 
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Polygon_ad06d8f363e793f0b6b44af115330d26c}{Get\+Vertex} (size\+\_\+t idx) const
+\item 
+\hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \hyperlink{classastu_1_1Polygon_af52218667a41061353fb5b98b858d1da}{Get\+Edge\+As\+Segment} (size\+\_\+t idx) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Polygon_ac947a4d49a9b43c76169559c4475ef96}{Get\+Edge} (size\+\_\+t idx) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Polygon_a701964e09156820469360faa0eb70160}{Get\+Edge\+Center} (size\+\_\+t idx) const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \hyperlink{classastu_1_1Polygon_aeb8ca6b2c43a3b400e2cac7ec5d01770}{Get\+Edge\+Normal} (size\+\_\+t idx) const
+\item 
+bool \hyperlink{classastu_1_1Polygon_ae58759a339e629b9a0b2016f5a959cc1}{Is\+Inside} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p) const
+\item 
+\hyperlink{classastu_1_1Segment1}{Segment1}$<$ T $>$ \hyperlink{classastu_1_1Polygon_a5e449c044ceeeb1e459dbb00a301254c}{Project} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&axis) const
+\item 
+\hyperlink{classastu_1_1Polygon}{Polygon} \& \hyperlink{classastu_1_1Polygon_a9bf40bc43bd08d4293583c146bab4d68}{Transform} (const \hyperlink{classastu_1_1Transform2}{Transform2}$<$ T $>$ \&tx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Polygon$<$ T $>$}
+
+Mathematical utility class representing a polygon.
+
+In geometry, a polygon is a plane figure that is described by a finite number of straight line segments connected to form a closed polygonal chain (or polygonal circuit).
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical type used to represent this polygon \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Polygon_a673a02de1ae66a4c4d3d03c79a842467}\label{classastu_1_1Polygon_a673a02de1ae66a4c4d3d03c79a842467}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::\hyperlink{classastu_1_1Polygon}{Polygon} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a vector containing the vertices of this polygon \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the number of vertices is less than three. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Polygon_ac947a4d49a9b43c76169559c4475ef96}\label{classastu_1_1Polygon_ac947a4d49a9b43c76169559c4475ef96}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Edge@{Get\+Edge}}
+\index{Get\+Edge@{Get\+Edge}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Edge()}{GetEdge()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Edge (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the edge with the specified index.
+
+An edge is represented as the direction vector pointing from the start vertex of the edge to the end vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the edge index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the edge vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_af52218667a41061353fb5b98b858d1da}\label{classastu_1_1Polygon_af52218667a41061353fb5b98b858d1da}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Edge\+As\+Segment@{Get\+Edge\+As\+Segment}}
+\index{Get\+Edge\+As\+Segment@{Get\+Edge\+As\+Segment}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Edge\+As\+Segment()}{GetEdgeAsSegment()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment2}{Segment2}$<$T$>$ \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Edge\+As\+Segment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the with the specified index as two-\/dimensional segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the edge index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the segment representing the edge 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_a701964e09156820469360faa0eb70160}\label{classastu_1_1Polygon_a701964e09156820469360faa0eb70160}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Edge\+Center@{Get\+Edge\+Center}}
+\index{Get\+Edge\+Center@{Get\+Edge\+Center}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Edge\+Center()}{GetEdgeCenter()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Edge\+Center (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the center point of the edit with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the center point of the edge 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_aeb8ca6b2c43a3b400e2cac7ec5d01770}\label{classastu_1_1Polygon_aeb8ca6b2c43a3b400e2cac7ec5d01770}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Edge\+Normal@{Get\+Edge\+Normal}}
+\index{Get\+Edge\+Normal@{Get\+Edge\+Normal}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Edge\+Normal()}{GetEdgeNormal()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Edge\+Normal (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the normal vector of the edge with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the edge index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the normal vector of the edge 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_ad06d8f363e793f0b6b44af115330d26c}\label{classastu_1_1Polygon_ad06d8f363e793f0b6b44af115330d26c}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Vertex@{Get\+Vertex}}
+\index{Get\+Vertex@{Get\+Vertex}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Vertex()}{GetVertex()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Vertex (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vertex with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the vertex index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_aa96aa72691eac81bf46d4e0ac2109a46}\label{classastu_1_1Polygon_aa96aa72691eac81bf46d4e0ac2109a46}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Get\+Vertices@{Get\+Vertices}}
+\index{Get\+Vertices@{Get\+Vertices}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Get\+Vertices()}{GetVertices()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const std\+::vector$<$\hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$ $>$\& \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vertices of this polygon.
+
+\begin{DoxyReturn}{Returns}
+a vector containing the vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_ae58759a339e629b9a0b2016f5a959cc1}\label{classastu_1_1Polygon_ae58759a339e629b9a0b2016f5a959cc1}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Is\+Inside@{Is\+Inside}}
+\index{Is\+Inside@{Is\+Inside}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Is\+Inside()}{IsInside()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Is\+Inside (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether a point lies within this polygon.
+
+One simple way of finding whether the point is inside or outside a simple polygon is to test how many times a ray, starting from the point and going in any fixed direction, intersects the edges of the polygon. If the point is on the outside of the polygon the ray will intersect its edge an even number of times. If the point is on the inside of the polygon then it will intersect the edge an odd number of times. \href{https://en.wikipedia.org/wiki/Point_in_polygon}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Point\+\_\+in\+\_\+polygon}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the point to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the point lies within the polygon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_a752836abe5a71f78c8a9debfcffc580e}\label{classastu_1_1Polygon_a752836abe5a71f78c8a9debfcffc580e}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Num\+Edges@{Num\+Edges}}
+\index{Num\+Edges@{Num\+Edges}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Num\+Edges()}{NumEdges()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Num\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of edges of this polygon.
+
+\begin{DoxyReturn}{Returns}
+the number of edges 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_aaabad8e95da96f4fa2e8d0fd79804afa}\label{classastu_1_1Polygon_aaabad8e95da96f4fa2e8d0fd79804afa}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Num\+Vertices@{Num\+Vertices}}
+\index{Num\+Vertices@{Num\+Vertices}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Num\+Vertices()}{NumVertices()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Num\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of vertices of this polygon.
+
+\begin{DoxyReturn}{Returns}
+the number of vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_a5e449c044ceeeb1e459dbb00a301254c}\label{classastu_1_1Polygon_a5e449c044ceeeb1e459dbb00a301254c}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Project@{Project}}
+\index{Project@{Project}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Project()}{Project()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment1}{Segment1}$<$T$>$ \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Project (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{axis }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Projects this polygon on the specified axis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & the axis used to project this polygon \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the 1D segment representing the projected polygon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Polygon_a9bf40bc43bd08d4293583c146bab4d68}\label{classastu_1_1Polygon_a9bf40bc43bd08d4293583c146bab4d68}} 
+\index{astu\+::\+Polygon@{astu\+::\+Polygon}!Transform@{Transform}}
+\index{Transform@{Transform}!astu\+::\+Polygon@{astu\+::\+Polygon}}
+\subsubsection{\texorpdfstring{Transform()}{Transform()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Polygon}{Polygon}\& \hyperlink{classastu_1_1Polygon}{astu\+::\+Polygon}$<$ T $>$\+::Transform (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Transform2}{Transform2}$<$ T $>$ \&}]{tx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Transforms this polygon by the specified transformation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & the transfromation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this polygon for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Polygon.\+h\end{DoxyCompactItemize}

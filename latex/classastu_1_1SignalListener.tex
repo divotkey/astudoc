@@ -1,0 +1,89 @@
+\hypertarget{classastu_1_1SignalListener}{}\section{astu\+:\+:Signal\+Listener$<$ T $>$ Class Template Reference}
+\label{classastu_1_1SignalListener}\index{astu\+::\+Signal\+Listener$<$ T $>$@{astu\+::\+Signal\+Listener$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Signal\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Signal\+Listener$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classastu_1_1SignalListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Signal\+Listener$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classastu_1_1SignalListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}{On\+Signal} (const T \&signal) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Signal\+Listener$<$ T $>$}
+
+A template-\/based signal listener.
+
+\hyperlink{classastu_1_1Service}{Service} can derive from this class to become a signal listener of a certain type of signals.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{class }MyService
+  : \textcolor{keyword}{public} BaseService
+  , \textcolor{keyword}{private} SignalListener<std::string>
+\{
+\textcolor{keyword}{public}:
+
+  \textcolor{comment}{// Constructor}
+  MyService();
+
+\textcolor{keyword}{private}:
+  \textcolor{comment}{// Inherited via SignalListener}
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \hyperlink{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}{OnSignal}(\textcolor{keyword}{const} std::string & signal) \textcolor{keyword}{override};         
+\};
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}\label{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}} 
+\index{astu\+::\+Signal\+Listener@{astu\+::\+Signal\+Listener}!On\+Signal@{On\+Signal}}
+\index{On\+Signal@{On\+Signal}!astu\+::\+Signal\+Listener@{astu\+::\+Signal\+Listener}}
+\subsubsection{\texorpdfstring{On\+Signal()}{OnSignal()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual bool \hyperlink{classastu_1_1SignalListener}{astu\+::\+Signal\+Listener}$<$ T $>$\+::On\+Signal (\begin{DoxyParamCaption}\item[{const T \&}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when a signal should be processed by this listener.
+
+The return value determines whether the signal has been consumed. A consumed signal will no longer be forwarded to other signal listeners.
+
+
+\begin{DoxyParams}{Parameters}
+{\em signal} & the signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the signal has been consumed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}{astu\+::\+I\+Signal\+Listener$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Signal\+Service.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1MouseButtonListener}{}\section{astu\+:\+:Mouse\+Button\+Listener Class Reference}
+\label{classastu_1_1MouseButtonListener}\index{astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}}
+
+
+{\ttfamily \#include $<$Input\+Signals.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Mouse\+Button\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classastu_1_1MouseButtonListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Mouse\+Button\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classastu_1_1MouseButtonListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1MouseButtonListener_aa03dca2d88ad2de23a5e61eb14ac614c}{Mouse\+Button\+Listener} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classastu_1_1MouseButtonListener_abc95fea12cbecf9f8fc1f7ede14860e7}{On\+Mouse\+Button\+Pressed} (int button, int x, int y)
+\item 
+virtual bool \hyperlink{classastu_1_1MouseButtonListener_a14a97354c4f009c5f91f9877e00cef49}{On\+Mouse\+Button\+Released} (int button, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Services can derive from this class to process mouse button signals. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1MouseButtonListener_aa03dca2d88ad2de23a5e61eb14ac614c}\label{classastu_1_1MouseButtonListener_aa03dca2d88ad2de23a5e61eb14ac614c}} 
+\index{astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}!Mouse\+Button\+Listener@{Mouse\+Button\+Listener}}
+\index{Mouse\+Button\+Listener@{Mouse\+Button\+Listener}!astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}}
+\subsubsection{\texorpdfstring{Mouse\+Button\+Listener()}{MouseButtonListener()}}
+{\footnotesize\ttfamily astu\+::\+Mouse\+Button\+Listener\+::\+Mouse\+Button\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1MouseButtonListener_abc95fea12cbecf9f8fc1f7ede14860e7}\label{classastu_1_1MouseButtonListener_abc95fea12cbecf9f8fc1f7ede14860e7}} 
+\index{astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}!On\+Mouse\+Button\+Pressed@{On\+Mouse\+Button\+Pressed}}
+\index{On\+Mouse\+Button\+Pressed@{On\+Mouse\+Button\+Pressed}!astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Button\+Pressed()}{OnMouseButtonPressed()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Mouse\+Button\+Listener\+::\+On\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class when a mouse button has been pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button which has been pressed \\
+\hline
+{\em x} & the x-\/coordinate of the mouse course in screen space \\
+\hline
+{\em y} & the y-\/coordinate of the mouse course in screen space \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classastu_1_1suite2d_1_1CameraControlService_aecd396dc1d0731e9b21b9dc148e4b96b}{astu\+::suite2d\+::\+Camera\+Control\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1MouseButtonListener_a14a97354c4f009c5f91f9877e00cef49}\label{classastu_1_1MouseButtonListener_a14a97354c4f009c5f91f9877e00cef49}} 
+\index{astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}!On\+Mouse\+Button\+Released@{On\+Mouse\+Button\+Released}}
+\index{On\+Mouse\+Button\+Released@{On\+Mouse\+Button\+Released}!astu\+::\+Mouse\+Button\+Listener@{astu\+::\+Mouse\+Button\+Listener}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Button\+Released()}{OnMouseButtonReleased()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Mouse\+Button\+Listener\+::\+On\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class when a mouse button has been released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button which has been released \\
+\hline
+{\em x} & the x-\/coordinate of the mouse course in screen space \\
+\hline
+{\em y} & the y-\/coordinate of the mouse course in screen space \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classastu_1_1suite2d_1_1CameraControlService_a4d7ad40d697e2ee2a87303032ca19333}{astu\+::suite2d\+::\+Camera\+Control\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Input\+Signals.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="astu::suite2d::SceneSystem" name="astu::suite2d::SceneSystem">
+<area shape="rect" id="node2" href="$classastu_1_1Updatable.html" title="astu::Updatable" alt="" coords="388,261,503,288"/>
+<area shape="rect" id="node3" href="$classastu_1_1Service.html" title="astu::Service" alt="" coords="216,185,315,212"/>
+<area shape="rect" id="node7" href="$classastu_1_1OneFamilyEntitySystem.html" title="astu::OneFamilyEntitySystem" alt="" coords="167,261,364,288"/>
+<area shape="rect" id="node8" href="$classastu_1_1EntityListener.html" title="astu::EntityListener" alt="" coords="7,261,142,288"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="225,96,305,123"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="202,5,329,47"/>
+<area shape="rect" id="node6" href="$classastu_1_1IUpdatable.html" title="astu::IUpdatable" alt="" coords="386,185,505,212"/>
+<area shape="rect" id="node9" href="$classastu_1_1IEntityListener.html" title="astu::IEntityListener" alt="" coords="5,185,144,212"/>
+</map>

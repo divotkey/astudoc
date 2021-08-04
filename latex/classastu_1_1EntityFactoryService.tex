@@ -1,0 +1,133 @@
+\hypertarget{classastu_1_1EntityFactoryService}{}\section{astu\+:\+:Entity\+Factory\+Service Class Reference}
+\label{classastu_1_1EntityFactoryService}\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+
+
+{\ttfamily \#include $<$Entity\+Factory\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Entity\+Factory\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classastu_1_1EntityFactoryService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Entity\+Factory\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classastu_1_1EntityFactoryService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1EntityFactoryService_a7b88d3c794298156e1aacd60cc25e818}{Entity\+Factory\+Service} ()
+\item 
+bool \hyperlink{classastu_1_1EntityFactoryService_aa1b33aaf444b5d42e774522f0862df4a}{Has\+Prototype} (const std\+::string \&proto\+Name) const
+\item 
+void \hyperlink{classastu_1_1EntityFactoryService_ade1d8c60a6982c409501e58dcd8c2bc8}{Register\+Prototype} (const std\+::string \&proto\+Name, std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ proto)
+\item 
+void \hyperlink{classastu_1_1EntityFactoryService_a0256f46b4344c1f66d1d6ed947992c62}{Deregister\+Prototype} (const std\+::string \&proto\+Name)
+\item 
+void \hyperlink{classastu_1_1EntityFactoryService_a2ffee25bef45ed4b845dd2b9c852496d}{Deregister\+All\+Prototypes} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ \hyperlink{classastu_1_1EntityFactoryService_aef424f6a70cbc918bea4a7edd738877f}{Create\+Entity} (const std\+::string \&proto\+Name) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This entity factory is used to generate new entities, where entities are defined by prototypes that are cloned when new entities are created. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1EntityFactoryService_a7b88d3c794298156e1aacd60cc25e818}\label{classastu_1_1EntityFactoryService_a7b88d3c794298156e1aacd60cc25e818}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Entity\+Factory\+Service@{Entity\+Factory\+Service}}
+\index{Entity\+Factory\+Service@{Entity\+Factory\+Service}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Entity\+Factory\+Service()}{EntityFactoryService()}}
+{\footnotesize\ttfamily astu\+::\+Entity\+Factory\+Service\+::\+Entity\+Factory\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1EntityFactoryService_aef424f6a70cbc918bea4a7edd738877f}\label{classastu_1_1EntityFactoryService_aef424f6a70cbc918bea4a7edd738877f}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Create\+Entity@{Create\+Entity}}
+\index{Create\+Entity@{Create\+Entity}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Create\+Entity()}{CreateEntity()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1Entity}{Entity}$>$ astu\+::\+Entity\+Factory\+Service\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{proto\+Name }\end{DoxyParamCaption}) const}
+
+Creates a new entity based on a registered prototype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto\+Name} & the name of the prototype \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the given name is unknown \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1EntityFactoryService_a2ffee25bef45ed4b845dd2b9c852496d}\label{classastu_1_1EntityFactoryService_a2ffee25bef45ed4b845dd2b9c852496d}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Deregister\+All\+Prototypes@{Deregister\+All\+Prototypes}}
+\index{Deregister\+All\+Prototypes@{Deregister\+All\+Prototypes}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Deregister\+All\+Prototypes()}{DeregisterAllPrototypes()}}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Factory\+Service\+::\+Deregister\+All\+Prototypes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deregisters all prototypes. \mbox{\Hypertarget{classastu_1_1EntityFactoryService_a0256f46b4344c1f66d1d6ed947992c62}\label{classastu_1_1EntityFactoryService_a0256f46b4344c1f66d1d6ed947992c62}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Deregister\+Prototype@{Deregister\+Prototype}}
+\index{Deregister\+Prototype@{Deregister\+Prototype}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Deregister\+Prototype()}{DeregisterPrototype()}}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Factory\+Service\+::\+Deregister\+Prototype (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{proto\+Name }\end{DoxyParamCaption})}
+
+Deregisters an entityentity prototype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto\+Name} & the name of the prototype \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1EntityFactoryService_aa1b33aaf444b5d42e774522f0862df4a}\label{classastu_1_1EntityFactoryService_aa1b33aaf444b5d42e774522f0862df4a}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Has\+Prototype@{Has\+Prototype}}
+\index{Has\+Prototype@{Has\+Prototype}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Has\+Prototype()}{HasPrototype()}}
+{\footnotesize\ttfamily bool astu\+::\+Entity\+Factory\+Service\+::\+Has\+Prototype (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{proto\+Name }\end{DoxyParamCaption}) const}
+
+Tests whether a entity has been register.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto\+Name} & the name under which the entity has been registered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if an entity has been registered with the given name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityFactoryService_ade1d8c60a6982c409501e58dcd8c2bc8}\label{classastu_1_1EntityFactoryService_ade1d8c60a6982c409501e58dcd8c2bc8}} 
+\index{astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}!Register\+Prototype@{Register\+Prototype}}
+\index{Register\+Prototype@{Register\+Prototype}!astu\+::\+Entity\+Factory\+Service@{astu\+::\+Entity\+Factory\+Service}}
+\subsubsection{\texorpdfstring{Register\+Prototype()}{RegisterPrototype()}}
+{\footnotesize\ttfamily void astu\+::\+Entity\+Factory\+Service\+::\+Register\+Prototype (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{proto\+Name,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$}]{proto }\end{DoxyParamCaption})}
+
+Registers a new entity prototype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em proto\+Name} & the name of the prototype \\
+\hline
+{\em proto} & the entity prototype \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the given name is already used \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+E\+C\+S/Entity\+Factory\+Service.\+h\end{DoxyCompactItemize}

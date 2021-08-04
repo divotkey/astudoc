@@ -1,0 +1,194 @@
+\hypertarget{classastu_1_1Segment2}{}\section{astu\+:\+:Segment2$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Segment2}\index{astu\+::\+Segment2$<$ T $>$@{astu\+::\+Segment2$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Segment2.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Segment2_a2636e676fc9c3f57d23d07759ee5c933}{Segment2} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p0, const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p1)
+\item 
+const \hyperlink{classastu_1_1Vector2}{Vector2f} \& \hyperlink{classastu_1_1Segment2_ae970169b80e29939c7f0b84b5b614435}{Get\+Start\+Point} () const
+\item 
+const \hyperlink{classastu_1_1Vector2}{Vector2f} \& \hyperlink{classastu_1_1Segment2_aa54a8ea0be86e591d593e5412ed6bc05}{Get\+End\+Point} () const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1Segment2_a68bde513c070c248ddf69b1ebca1e7fc}{Get\+Direction} () const
+\item 
+bool \hyperlink{classastu_1_1Segment2_a88cf4a6cf9a15fe37fa5d43dd65267ed}{Is\+Intersecting} (const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&other) const
+\item 
+bool \hyperlink{classastu_1_1Segment2_a793214d60a3b15a08cfd505da4d24455}{Is\+Intersecting} (const \hyperlink{classastu_1_1Ray2}{Ray2}$<$ T $>$ \&ray) const
+\item 
+bool \hyperlink{classastu_1_1Segment2_a49888e46b2ea6005c60ecc95ff210cd2}{Intersect} (const \hyperlink{classastu_1_1Ray2}{Ray2}$<$ T $>$ \&ray, \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&out\+Point) const
+\item 
+std\+::optional$<$ \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$ T $>$ $>$ \hyperlink{classastu_1_1Segment2_a6be10f8a94f6cfe66d37d8204d8a1123}{Intersect} (const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&other) const
+\item 
+bool \hyperlink{classastu_1_1Segment2_a302700a61530a0bbe07058917a28cf30}{Intersect} (const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&other, \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&out\+Point) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Segment2$<$ T $>$}
+
+A two-\/dimensional line segment.
+
+This class is a mathematical utility class to carry out some tests with two-\/dimensional segments.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical data type used for this segment \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Segment2_a2636e676fc9c3f57d23d07759ee5c933}\label{classastu_1_1Segment2_a2636e676fc9c3f57d23d07759ee5c933}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Segment2@{Segment2}}
+\index{Segment2@{Segment2}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Segment2()}{Segment2()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::\hyperlink{classastu_1_1Segment2}{Segment2} (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p0,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p0} & the start point of this line segment \\
+\hline
+{\em p1} & the end point of this line segment \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Segment2_a68bde513c070c248ddf69b1ebca1e7fc}\label{classastu_1_1Segment2_a68bde513c070c248ddf69b1ebca1e7fc}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vector pointing from the start point to the end point.
+
+\begin{DoxyReturn}{Returns}
+the direction vector p1 -\/ p0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_aa54a8ea0be86e591d593e5412ed6bc05}\label{classastu_1_1Segment2_aa54a8ea0be86e591d593e5412ed6bc05}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Get\+End\+Point@{Get\+End\+Point}}
+\index{Get\+End\+Point@{Get\+End\+Point}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Get\+End\+Point()}{GetEndPoint()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2f}\& \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Get\+End\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the end point of this line segment.
+
+\begin{DoxyReturn}{Returns}
+the start point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_ae970169b80e29939c7f0b84b5b614435}\label{classastu_1_1Segment2_ae970169b80e29939c7f0b84b5b614435}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Get\+Start\+Point@{Get\+Start\+Point}}
+\index{Get\+Start\+Point@{Get\+Start\+Point}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Get\+Start\+Point()}{GetStartPoint()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2f}\& \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Get\+Start\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the start point of this line segment.
+
+\begin{DoxyReturn}{Returns}
+the start point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_a49888e46b2ea6005c60ecc95ff210cd2}\label{classastu_1_1Segment2_a49888e46b2ea6005c60ecc95ff210cd2}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Intersect (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Ray2}{Ray2}$<$ T $>$ \&}]{ray,  }\item[{\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{out\+Point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the intersection point with the specified ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & the ray to intersect with \\
+\hline
+{\em out\+Point} & receives the intersection point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if an intersection exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_a6be10f8a94f6cfe66d37d8204d8a1123}\label{classastu_1_1Segment2_a6be10f8a94f6cfe66d37d8204d8a1123}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::optional$<$\hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2}$<$T$>$ $>$ \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Intersect (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this line segments intersects with the given segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other line segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an optional value, if set, represents the point of intersection, if not set, the two line segments do not intersect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_a302700a61530a0bbe07058917a28cf30}\label{classastu_1_1Segment2_a302700a61530a0bbe07058917a28cf30}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Intersect()}{Intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Intersect (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&}]{other,  }\item[{\hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{out\+Point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this line segments intersects with the given segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other line segment \\
+\hline
+{\em out\+Point} & receives the intersection point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the two line segnents intersect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_a88cf4a6cf9a15fe37fa5d43dd65267ed}\label{classastu_1_1Segment2_a88cf4a6cf9a15fe37fa5d43dd65267ed}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Is\+Intersecting@{Is\+Intersecting}}
+\index{Is\+Intersecting@{Is\+Intersecting}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Is\+Intersecting()}{IsIntersecting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Is\+Intersecting (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Segment2}{Segment2}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this line segments intersects with the given segment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other line segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the two line segments intersect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Segment2_a793214d60a3b15a08cfd505da4d24455}\label{classastu_1_1Segment2_a793214d60a3b15a08cfd505da4d24455}} 
+\index{astu\+::\+Segment2@{astu\+::\+Segment2}!Is\+Intersecting@{Is\+Intersecting}}
+\index{Is\+Intersecting@{Is\+Intersecting}!astu\+::\+Segment2@{astu\+::\+Segment2}}
+\subsubsection{\texorpdfstring{Is\+Intersecting()}{IsIntersecting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classastu_1_1Segment2}{astu\+::\+Segment2}$<$ T $>$\+::Is\+Intersecting (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Ray2}{Ray2}$<$ T $>$ \&}]{ray }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this line segment intersects with the specified ray.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ray} & the ray to test with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this line segment intersects with the ray 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Segment2.\+h\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['renderquality',['RenderQuality',['../group__gfx__group.html#gac3b4955f341cea44f53f8446d734cd54',1,'astu']]]
+  ['button',['Button',['../classastu_1_1Mouse.html#a18205a089111599d94479bfecc5ca7ec',1,'astu::Mouse']]]
 ];

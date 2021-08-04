@@ -8,16 +8,70 @@ This module contains templates, classes and functions dedicated user input.
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classastu_1_1Mouse}{astu\+::\+Mouse}
+class \hyperlink{classastu_1_1Key}{astu\+::\+Key}
 \item 
-class \hyperlink{classastu_1_1MouseButtonEvent}{astu\+::\+Mouse\+Button\+Event}
+class \hyperlink{classastu_1_1ActionMapping}{astu\+::\+Action\+Mapping}
+\item 
+class \hyperlink{classastu_1_1ActionBinding}{astu\+::\+Action\+Binding}
+\item 
+class \hyperlink{classastu_1_1AxisMapping}{astu\+::\+Axis\+Mapping}
+\item 
+class \hyperlink{classastu_1_1AxisBinding}{astu\+::\+Axis\+Binding}
+\item 
+class \hyperlink{classastu_1_1InputMappingService}{astu\+::\+Input\+Mapping\+Service}
+\item 
+class \hyperlink{classastu_1_1MouseButtonSignal}{astu\+::\+Mouse\+Button\+Signal}
+\item 
+class \hyperlink{classastu_1_1MouseButtonListener}{astu\+::\+Mouse\+Button\+Listener}
+\item 
+class \hyperlink{classastu_1_1MouseWheelSignal}{astu\+::\+Mouse\+Wheel\+Signal}
+\item 
+class \hyperlink{classastu_1_1MouseWheelListener}{astu\+::\+Mouse\+Wheel\+Listener}
+\item 
+class \hyperlink{classastu_1_1MouseMoveSignal}{astu\+::\+Mouse\+Move\+Signal}
+\item 
+class \hyperlink{classastu_1_1MouseMoveListener}{astu\+::\+Mouse\+Move\+Listener}
+\item 
+class \hyperlink{classastu_1_1KeystrokeSignal}{astu\+::\+Keystroke\+Signal}
+\item 
+class \hyperlink{classastu_1_1ResizeSignal}{astu\+::\+Resize\+Signal}
+\item 
+class \hyperlink{classastu_1_1ResizeListener}{astu\+::\+Resize\+Listener}
+\item 
+class \hyperlink{classastu_1_1WindowState}{astu\+::\+Window\+State}
+\item 
+class \hyperlink{classastu_1_1Keyboard}{astu\+::\+Keyboard}
+\item 
+class \hyperlink{classastu_1_1Keys}{astu\+::\+Keys}
+\item 
+class \hyperlink{classastu_1_1Mouse}{astu\+::\+Mouse}
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-using \hyperlink{group__input__group_ga720d9f880198971a77aad9ba69cc3633}{astu\+::\+Mouse\+Button\+Event\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1MouseButtonEvent}{Mouse\+Button\+Event} $>$
+using \hyperlink{group__input__group_gaef177cf232be6c7241aa5666eda79fe2}{astu\+::\+Mouse\+Button\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1MouseButtonSignal}{Mouse\+Button\+Signal} $>$
 \item 
-using \hyperlink{group__input__group_ga4358d168fa211f641ec8176f279f421b}{astu\+::\+Mouse\+Button\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1MouseButtonEvent}{Mouse\+Button\+Event} $>$
+using \hyperlink{group__input__group_ga8a311a2e19975ce6dca1696de117bd61}{astu\+::\+I\+Mouse\+Button\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1MouseButtonSignal}{Mouse\+Button\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga96b8db1f382f5583478ba36333545c44}{astu\+::\+Mouse\+Wheel\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1MouseWheelSignal}{Mouse\+Wheel\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_gafca8f2a610ab238ce3601915b0ece9b6}{astu\+::\+I\+Mouse\+Wheel\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1MouseWheelSignal}{Mouse\+Wheel\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga030aa8acde5d1cbd13faeb15e487adaf}{astu\+::\+Mouse\+Move\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1MouseMoveSignal}{Mouse\+Move\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_gac96f23d186368c518ef6ad649a49204d}{astu\+::\+I\+Mouse\+Move\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1MouseMoveSignal}{Mouse\+Move\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_gaef1a6a6bcf29be13022699bae86ab903}{astu\+::\+Keystroke\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1KeystrokeSignal}{Keystroke\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga7eab1e88bb924ed418fa54cb663031e3}{astu\+::\+I\+Keystroke\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1KeystrokeSignal}{Keystroke\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga643e71e95d0724fed5787e35e83fc1dd}{astu\+::\+I\+Resize\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1ResizeSignal}{Resize\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga5949d03cd17e1fe53096ce501f2eb408}{astu\+::\+Resize\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1ResizeSignal}{Resize\+Signal} $>$
+\item 
+using \hyperlink{group__input__group_ga6552730babe8f256434adff50c8f5c7e}{astu\+::\+I\+Window\+State\+Listener} = \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$ \hyperlink{classastu_1_1WindowState}{Window\+State} $>$
+\item 
+using \hyperlink{group__input__group_ga6a683efe6c88e7ffcb0e912c5395bbc0}{astu\+::\+Window\+State\+Signal\+Service} = \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$ \hyperlink{classastu_1_1WindowState}{Window\+State} $>$
 \end{DoxyCompactItemize}
 
 
@@ -27,16 +81,76 @@ This module contains templates, classes and functions dedicated user input.
 
 
 \subsection{Typedef Documentation}
-\mbox{\Hypertarget{group__input__group_ga720d9f880198971a77aad9ba69cc3633}\label{group__input__group_ga720d9f880198971a77aad9ba69cc3633}} 
-\index{Input@{Input}!Mouse\+Button\+Event\+Service@{Mouse\+Button\+Event\+Service}}
-\index{Mouse\+Button\+Event\+Service@{Mouse\+Button\+Event\+Service}!Input@{Input}}
-\subsubsection{\texorpdfstring{Mouse\+Button\+Event\+Service}{MouseButtonEventService}}
-{\footnotesize\ttfamily using \hyperlink{group__input__group_ga720d9f880198971a77aad9ba69cc3633}{astu\+::\+Mouse\+Button\+Event\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1MouseButtonEvent}{Mouse\+Button\+Event}$>$}
+\mbox{\Hypertarget{group__input__group_ga7eab1e88bb924ed418fa54cb663031e3}\label{group__input__group_ga7eab1e88bb924ed418fa54cb663031e3}} 
+\index{Input@{Input}!I\+Keystroke\+Listener@{I\+Keystroke\+Listener}}
+\index{I\+Keystroke\+Listener@{I\+Keystroke\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Keystroke\+Listener}{IKeystrokeListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga7eab1e88bb924ed418fa54cb663031e3}{astu\+::\+I\+Keystroke\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1KeystrokeSignal}{Keystroke\+Signal}$>$}
 
-Type definition for signal services used to transmit mouse button events. \mbox{\Hypertarget{group__input__group_ga4358d168fa211f641ec8176f279f421b}\label{group__input__group_ga4358d168fa211f641ec8176f279f421b}} 
-\index{Input@{Input}!Mouse\+Button\+Listener@{Mouse\+Button\+Listener}}
-\index{Mouse\+Button\+Listener@{Mouse\+Button\+Listener}!Input@{Input}}
-\subsubsection{\texorpdfstring{Mouse\+Button\+Listener}{MouseButtonListener}}
-{\footnotesize\ttfamily using \hyperlink{group__input__group_ga4358d168fa211f641ec8176f279f421b}{astu\+::\+Mouse\+Button\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1MouseButtonEvent}{Mouse\+Button\+Event}$>$}
+Type definition for signal listeners which receive keystroke signals. \mbox{\Hypertarget{group__input__group_ga8a311a2e19975ce6dca1696de117bd61}\label{group__input__group_ga8a311a2e19975ce6dca1696de117bd61}} 
+\index{Input@{Input}!I\+Mouse\+Button\+Listener@{I\+Mouse\+Button\+Listener}}
+\index{I\+Mouse\+Button\+Listener@{I\+Mouse\+Button\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Mouse\+Button\+Listener}{IMouseButtonListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga8a311a2e19975ce6dca1696de117bd61}{astu\+::\+I\+Mouse\+Button\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1MouseButtonSignal}{Mouse\+Button\+Signal}$>$}
 
-Type definition for signal listeners which receive mouse button events. 
+Type definition for signal listeners which receive mouse button signals. \mbox{\Hypertarget{group__input__group_gac96f23d186368c518ef6ad649a49204d}\label{group__input__group_gac96f23d186368c518ef6ad649a49204d}} 
+\index{Input@{Input}!I\+Mouse\+Move\+Listener@{I\+Mouse\+Move\+Listener}}
+\index{I\+Mouse\+Move\+Listener@{I\+Mouse\+Move\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Mouse\+Move\+Listener}{IMouseMoveListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_gac96f23d186368c518ef6ad649a49204d}{astu\+::\+I\+Mouse\+Move\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1MouseMoveSignal}{Mouse\+Move\+Signal}$>$}
+
+Type definition for signal listeners which receive mouse wheel signals. \mbox{\Hypertarget{group__input__group_gafca8f2a610ab238ce3601915b0ece9b6}\label{group__input__group_gafca8f2a610ab238ce3601915b0ece9b6}} 
+\index{Input@{Input}!I\+Mouse\+Wheel\+Listener@{I\+Mouse\+Wheel\+Listener}}
+\index{I\+Mouse\+Wheel\+Listener@{I\+Mouse\+Wheel\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Mouse\+Wheel\+Listener}{IMouseWheelListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_gafca8f2a610ab238ce3601915b0ece9b6}{astu\+::\+I\+Mouse\+Wheel\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1MouseWheelSignal}{Mouse\+Wheel\+Signal}$>$}
+
+Type definition for signal listeners which receive mouse wheel signals. \mbox{\Hypertarget{group__input__group_ga643e71e95d0724fed5787e35e83fc1dd}\label{group__input__group_ga643e71e95d0724fed5787e35e83fc1dd}} 
+\index{Input@{Input}!I\+Resize\+Listener@{I\+Resize\+Listener}}
+\index{I\+Resize\+Listener@{I\+Resize\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Resize\+Listener}{IResizeListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga643e71e95d0724fed5787e35e83fc1dd}{astu\+::\+I\+Resize\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1ResizeSignal}{Resize\+Signal}$>$}
+
+Type definition for signal listeners which receive resize signals. \mbox{\Hypertarget{group__input__group_ga6552730babe8f256434adff50c8f5c7e}\label{group__input__group_ga6552730babe8f256434adff50c8f5c7e}} 
+\index{Input@{Input}!I\+Window\+State\+Listener@{I\+Window\+State\+Listener}}
+\index{I\+Window\+State\+Listener@{I\+Window\+State\+Listener}!Input@{Input}}
+\subsubsection{\texorpdfstring{I\+Window\+State\+Listener}{IWindowStateListener}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga6552730babe8f256434adff50c8f5c7e}{astu\+::\+I\+Window\+State\+Listener} = typedef \hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener}$<$\hyperlink{classastu_1_1WindowState}{Window\+State}$>$}
+
+Type definition for signal listeners which receive window signals. \mbox{\Hypertarget{group__input__group_gaef1a6a6bcf29be13022699bae86ab903}\label{group__input__group_gaef1a6a6bcf29be13022699bae86ab903}} 
+\index{Input@{Input}!Keystroke\+Signal\+Service@{Keystroke\+Signal\+Service}}
+\index{Keystroke\+Signal\+Service@{Keystroke\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Keystroke\+Signal\+Service}{KeystrokeSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_gaef1a6a6bcf29be13022699bae86ab903}{astu\+::\+Keystroke\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1KeystrokeSignal}{Keystroke\+Signal}$>$}
+
+Type definition for signal services that transmit keystroke signals. \mbox{\Hypertarget{group__input__group_gaef177cf232be6c7241aa5666eda79fe2}\label{group__input__group_gaef177cf232be6c7241aa5666eda79fe2}} 
+\index{Input@{Input}!Mouse\+Button\+Signal\+Service@{Mouse\+Button\+Signal\+Service}}
+\index{Mouse\+Button\+Signal\+Service@{Mouse\+Button\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Mouse\+Button\+Signal\+Service}{MouseButtonSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_gaef177cf232be6c7241aa5666eda79fe2}{astu\+::\+Mouse\+Button\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1MouseButtonSignal}{Mouse\+Button\+Signal}$>$}
+
+Type definition for signal services that transmit mouse button signals. \mbox{\Hypertarget{group__input__group_ga030aa8acde5d1cbd13faeb15e487adaf}\label{group__input__group_ga030aa8acde5d1cbd13faeb15e487adaf}} 
+\index{Input@{Input}!Mouse\+Move\+Signal\+Service@{Mouse\+Move\+Signal\+Service}}
+\index{Mouse\+Move\+Signal\+Service@{Mouse\+Move\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Mouse\+Move\+Signal\+Service}{MouseMoveSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga030aa8acde5d1cbd13faeb15e487adaf}{astu\+::\+Mouse\+Move\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1MouseMoveSignal}{Mouse\+Move\+Signal}$>$}
+
+Type definition for signal services that transmit mouse wheel signals. \mbox{\Hypertarget{group__input__group_ga96b8db1f382f5583478ba36333545c44}\label{group__input__group_ga96b8db1f382f5583478ba36333545c44}} 
+\index{Input@{Input}!Mouse\+Wheel\+Signal\+Service@{Mouse\+Wheel\+Signal\+Service}}
+\index{Mouse\+Wheel\+Signal\+Service@{Mouse\+Wheel\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Mouse\+Wheel\+Signal\+Service}{MouseWheelSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga96b8db1f382f5583478ba36333545c44}{astu\+::\+Mouse\+Wheel\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1MouseWheelSignal}{Mouse\+Wheel\+Signal}$>$}
+
+Type definition for signal services used to transmit mouse wheel signals. \mbox{\Hypertarget{group__input__group_ga5949d03cd17e1fe53096ce501f2eb408}\label{group__input__group_ga5949d03cd17e1fe53096ce501f2eb408}} 
+\index{Input@{Input}!Resize\+Signal\+Service@{Resize\+Signal\+Service}}
+\index{Resize\+Signal\+Service@{Resize\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Resize\+Signal\+Service}{ResizeSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga5949d03cd17e1fe53096ce501f2eb408}{astu\+::\+Resize\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1ResizeSignal}{Resize\+Signal}$>$}
+
+Type definition for signal services that transmit resize signals. \mbox{\Hypertarget{group__input__group_ga6a683efe6c88e7ffcb0e912c5395bbc0}\label{group__input__group_ga6a683efe6c88e7ffcb0e912c5395bbc0}} 
+\index{Input@{Input}!Window\+State\+Signal\+Service@{Window\+State\+Signal\+Service}}
+\index{Window\+State\+Signal\+Service@{Window\+State\+Signal\+Service}!Input@{Input}}
+\subsubsection{\texorpdfstring{Window\+State\+Signal\+Service}{WindowStateSignalService}}
+{\footnotesize\ttfamily using \hyperlink{group__input__group_ga6a683efe6c88e7ffcb0e912c5395bbc0}{astu\+::\+Window\+State\+Signal\+Service} = typedef \hyperlink{classastu_1_1SignalService}{Signal\+Service}$<$\hyperlink{classastu_1_1WindowState}{Window\+State}$>$}
+
+Type definition for signal services used to transmit window signals. 

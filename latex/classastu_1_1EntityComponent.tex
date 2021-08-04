@@ -4,17 +4,66 @@
 
 {\ttfamily \#include $<$Entity\+Service.\+h$>$}
 
+
+
+Inheritance diagram for astu\+:\+:Entity\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1EntityComponent__inherit__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classastu_1_1EntityComponent_a9bb95d7ddc55093fd86e04d5b6aa98ec}{Entity\+Component} ()=default
 \item 
 virtual \hyperlink{classastu_1_1EntityComponent_a17295f763e201247c22bc677541646e5}{$\sim$\+Entity\+Component} ()
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1EntityComponent}{Entity\+Component} $>$ \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{Clone} ()=0
+\item 
+virtual void \hyperlink{classastu_1_1EntityComponent_a8736f12dc9d2be7d2569408fc1040480}{On\+Added\+To\+Entity} (\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&entity)
+\item 
+bool \hyperlink{classastu_1_1EntityComponent_a84f03e175444f5ca650775fb89963925}{Has\+Parent} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ \hyperlink{classastu_1_1EntityComponent_ae3c2dc735241902588358b933a786603}{Get\+Parent} ()
+\item 
+std\+::shared\+\_\+ptr$<$ const \hyperlink{classastu_1_1Entity}{Entity} $>$ \hyperlink{classastu_1_1EntityComponent_a33a590990c23ca5bfa8d555b526d7a39}{Get\+Parent} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1EntityComponent_a614439ccac0344926adc4c0165d64060}\label{classastu_1_1EntityComponent_a614439ccac0344926adc4c0165d64060}} 
+class {\bfseries Entity}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Base class for all entity components. 
+Base class for all entity components.
+
+{\bfseries Example Header-\/\+File for custom entity components} 
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#pragma once}
+
+\textcolor{comment}{// AST Utilities includes}
+\textcolor{preprocessor}{#include <\hyperlink{AstuECS_8h}{AstuECS.h}>}
+
+\textcolor{keyword}{class }CMyComponent : \textcolor{keyword}{public} \hyperlink{classastu_1_1EntityComponent}{astu::EntityComponent} \{
+\textcolor{keyword}{public}: 
+    \textcolor{comment}{// Add component data member here...}
+
+    CMyComponent() \{
+        \textcolor{comment}{// Intentionally left empty.        }
+    \}
+
+    \textcolor{comment}{// Inherited via EntityComponent}
+    \textcolor{keyword}{virtual} std::shared\_ptr<EntityComponent> \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{Clone}()\textcolor{keyword}{ override }\{
+        \textcolor{comment}{// Create copy using copy-constructor.}
+        \textcolor{keywordflow}{return} std::make\_shared<CMyComponent>(*this);
+    \}    
+\};
+\end{DoxyCodeInclude}
+ 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classastu_1_1EntityComponent_a9bb95d7ddc55093fd86e04d5b6aa98ec}\label{classastu_1_1EntityComponent_a9bb95d7ddc55093fd86e04d5b6aa98ec}} 
@@ -31,6 +80,76 @@ Constructor. \mbox{\Hypertarget{classastu_1_1EntityComponent_a17295f763e201247c2
 
 Virtual destructor. 
 
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}\label{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}} 
+\index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1EntityComponent}{Entity\+Component}$>$ astu\+::\+Entity\+Component\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a copy of this entity component.
+
+\begin{DoxyReturn}{Returns}
+a copy of this componend 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}{astu\+::suite2d\+::\+C\+Pose}, \hyperlink{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}{astu\+::suite2d\+::\+C\+Scene}, and \hyperlink{classastu_1_1suite2d_1_1CAutoRotate_af130721018671489c7de3f652ffcc8cf}{astu\+::suite2d\+::\+C\+Auto\+Rotate}.
+
+\mbox{\Hypertarget{classastu_1_1EntityComponent_ae3c2dc735241902588358b933a786603}\label{classastu_1_1EntityComponent_ae3c2dc735241902588358b933a786603}} 
+\index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}}
+\subsubsection{\texorpdfstring{Get\+Parent()}{GetParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1Entity}{Entity}$>$ astu\+::\+Entity\+Component\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the parent entity of this component.
+
+\begin{DoxyReturn}{Returns}
+the parent entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityComponent_a33a590990c23ca5bfa8d555b526d7a39}\label{classastu_1_1EntityComponent_a33a590990c23ca5bfa8d555b526d7a39}} 
+\index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!Get\+Parent@{Get\+Parent}}
+\index{Get\+Parent@{Get\+Parent}!astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}}
+\subsubsection{\texorpdfstring{Get\+Parent()}{GetParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$const \hyperlink{classastu_1_1Entity}{Entity}$>$ astu\+::\+Entity\+Component\+::\+Get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the parent entity of this component.
+
+\begin{DoxyReturn}{Returns}
+the parent entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityComponent_a84f03e175444f5ca650775fb89963925}\label{classastu_1_1EntityComponent_a84f03e175444f5ca650775fb89963925}} 
+\index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!Has\+Parent@{Has\+Parent}}
+\index{Has\+Parent@{Has\+Parent}!astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}}
+\subsubsection{\texorpdfstring{Has\+Parent()}{HasParent()}}
+{\footnotesize\ttfamily bool astu\+::\+Entity\+Component\+::\+Has\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether this component has been attached to an entity.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this component has a parent entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityComponent_a8736f12dc9d2be7d2569408fc1040480}\label{classastu_1_1EntityComponent_a8736f12dc9d2be7d2569408fc1040480}} 
+\index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!On\+Added\+To\+Entity@{On\+Added\+To\+Entity}}
+\index{On\+Added\+To\+Entity@{On\+Added\+To\+Entity}!astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}}
+\subsubsection{\texorpdfstring{On\+Added\+To\+Entity()}{OnAddedToEntity()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Entity\+Component\+::\+On\+Added\+To\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called when added to an entity.
+
+Most components do not need to override this method. Is is used occasionally to register additional interfaces a component implements. Registering implemented interfaces is necessary in order to make a component accessible via this interface and not just by the component type itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity this component has been added to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider_ac30165a676e92f89e1a840f858d9a050}{astu\+::suite2d\+::\+C\+Polygon\+Collider}, and \hyperlink{classastu_1_1suite2d_1_1CCircleCollider_aa77499480ca5f7d49f6331986b675a46}{astu\+::suite2d\+::\+C\+Circle\+Collider}.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Entity\+Service.\+h\end{DoxyCompactItemize}
+include/\+E\+C\+S/Entity\+Service.\+h\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AST Utilities: astu::Color Class Reference</title>
+<title>AST Utilities: astu::Color&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -70,112 +70,128 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classastu_1_1Color-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">astu::Color Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__gfx__group.html">Graphics</a></div></div>  </div>
+<div class="title">astu::Color&lt; T &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__gfx__group.html">Graphics</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="Color_8h_source.html">Color.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for astu::Color&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classastu_1_1Color__coll__graph.png" border="0" usemap="#astu_1_1Color_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b4505ef24790685a5e22bde22ff5b05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> (double red=0, double green=0, double blue=0, double alpha=1)</td></tr>
-<tr class="separator:a3b4505ef24790685a5e22bde22ff5b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5056ade3f6bf10a72056ffcb3d2e1f42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a5056ade3f6bf10a72056ffcb3d2e1f42">Color</a> (int rgb)</td></tr>
-<tr class="separator:a5056ade3f6bf10a72056ffcb3d2e1f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdc4eaa4609f192757c8cfa6ec51f110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#afdc4eaa4609f192757c8cfa6ec51f110">SetAlpha</a> (double <a class="el" href="classastu_1_1Color.html#a001a2dcf8f1f0d4abb97f8c158bfddec">a</a>)</td></tr>
-<tr class="separator:afdc4eaa4609f192757c8cfa6ec51f110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a709d6f647c38187f1d4028810dfa363e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a709d6f647c38187f1d4028810dfa363e">Set</a> (double red, double green, double blue, double alpha=1)</td></tr>
-<tr class="separator:a709d6f647c38187f1d4028810dfa363e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ad15d1137f9a6243373a687faa101c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa9ad15d1137f9a6243373a687faa101c">ToRgba</a> () const</td></tr>
-<tr class="separator:aa9ad15d1137f9a6243373a687faa101c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a897cfc4a5706a7c3ab8562adb217d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a2a897cfc4a5706a7c3ab8562adb217d8">DistanceWithoutAlpha</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:a2a897cfc4a5706a7c3ab8562adb217d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fc869504fd1f14d4c27d257ac0a121"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a04fc869504fd1f14d4c27d257ac0a121">DistanceSquaredWithoutAlpha</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:a04fc869504fd1f14d4c27d257ac0a121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b134d44a2fba57ed560f00ce55a471"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a53b134d44a2fba57ed560f00ce55a471">Distance</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:a53b134d44a2fba57ed560f00ce55a471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57011227eea623101859b95127e364c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#af57011227eea623101859b95127e364c">DistanceSquared</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:af57011227eea623101859b95127e364c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc0303a14adf0712e12e756bde1b365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a0dc0303a14adf0712e12e756bde1b365">Lerp</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o, double t) const</td></tr>
-<tr class="separator:a0dc0303a14adf0712e12e756bde1b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e8ee28f89245f4e8d96c8c62144854f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a6e8ee28f89245f4e8d96c8c62144854f">GetARGB</a> () const</td></tr>
-<tr class="separator:a6e8ee28f89245f4e8d96c8c62144854f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a612db0af9e13a8c64f1c215964d4d88f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a612db0af9e13a8c64f1c215964d4d88f">Saturate</a> ()</td></tr>
-<tr class="separator:a612db0af9e13a8c64f1c215964d4d88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e246cf7b52ffda0f76a4fa0e7810763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3e246cf7b52ffda0f76a4fa0e7810763">Blend</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o)</td></tr>
-<tr class="separator:a3e246cf7b52ffda0f76a4fa0e7810763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7e48a64d881e1287805f52b81a7066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aca7e48a64d881e1287805f52b81a7066">operator+</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;rhs) const</td></tr>
-<tr class="separator:aca7e48a64d881e1287805f52b81a7066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4c777a4e4cf3a7770d8499c4fa10c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#af4c777a4e4cf3a7770d8499c4fa10c3e">operator+=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o)</td></tr>
-<tr class="separator:af4c777a4e4cf3a7770d8499c4fa10c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b6a108bc2d6581ad97057a00d2008f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ad9b6a108bc2d6581ad97057a00d2008f">operator-</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:ad9b6a108bc2d6581ad97057a00d2008f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80bfd9e234b9caed6900afea9a0ea2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ab80bfd9e234b9caed6900afea9a0ea2e">operator-=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o)</td></tr>
-<tr class="separator:ab80bfd9e234b9caed6900afea9a0ea2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287594eff638030b35765bfe00e76606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a287594eff638030b35765bfe00e76606">operator*</a> (double s) const</td></tr>
-<tr class="separator:a287594eff638030b35765bfe00e76606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf79aa3c1511b986cb7ac14d32524ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#adf79aa3c1511b986cb7ac14d32524ad4">operator*=</a> (double s)</td></tr>
-<tr class="separator:adf79aa3c1511b986cb7ac14d32524ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be3b7a9a3773bc7f82a2cd6ac6badbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a9be3b7a9a3773bc7f82a2cd6ac6badbf">operator/</a> (double s) const</td></tr>
-<tr class="separator:a9be3b7a9a3773bc7f82a2cd6ac6badbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd37b7940911dd15ef36bae5a046033c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#afd37b7940911dd15ef36bae5a046033c">operator/=</a> (double s)</td></tr>
-<tr class="separator:afd37b7940911dd15ef36bae5a046033c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b234404e692bd343d026f03c7b9832"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa1b234404e692bd343d026f03c7b9832">operator==</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:aa1b234404e692bd343d026f03c7b9832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad55ea16978ae52e3feb77109865921bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ad55ea16978ae52e3feb77109865921bd">operator!=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;o) const</td></tr>
-<tr class="separator:ad55ea16978ae52e3feb77109865921bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c1c73e9815bdbae91de67d54f25cb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a23c1c73e9815bdbae91de67d54f25cb8">operator&lt;</a> (const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;rhs) const</td></tr>
-<tr class="separator:a23c1c73e9815bdbae91de67d54f25cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0e2cdad572357375d5b2465ea847b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> (T red=0, T green=0, T blue=0, T alpha=1)</td></tr>
+<tr class="separator:abb0e2cdad572357375d5b2465ea847b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce283cfd9542b85da611fc50a4a9e54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a1ce283cfd9542b85da611fc50a4a9e54">Color</a> (int rgb)</td></tr>
+<tr class="separator:a1ce283cfd9542b85da611fc50a4a9e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcfa896c3a32ae0af1aeec3f4d866fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a0fcfa896c3a32ae0af1aeec3f4d866fe">SetAlpha</a> (T <a class="el" href="classastu_1_1Color.html#ad62b3af3464dea4bf99432bfb6e9d796">a</a>)</td></tr>
+<tr class="separator:a0fcfa896c3a32ae0af1aeec3f4d866fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5aaf54919fed257c37b6b5747bd01c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ad5aaf54919fed257c37b6b5747bd01c8">Set</a> (T red, T green, T blue, T alpha=1)</td></tr>
+<tr class="separator:ad5aaf54919fed257c37b6b5747bd01c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376a9d08b37e917a7040d58aab009bf5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a376a9d08b37e917a7040d58aab009bf5">ToRgba</a> () const</td></tr>
+<tr class="separator:a376a9d08b37e917a7040d58aab009bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4802f8f0d0fcf65ba6853ac17c52b811"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a4802f8f0d0fcf65ba6853ac17c52b811">DistanceWithoutAlpha</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:a4802f8f0d0fcf65ba6853ac17c52b811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35549a6d06ab1fbc8a232508e3041f9d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a35549a6d06ab1fbc8a232508e3041f9d">DistanceSquaredWithoutAlpha</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:a35549a6d06ab1fbc8a232508e3041f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61d12089e02ec0ce02ab877b21c6bcc"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa61d12089e02ec0ce02ab877b21c6bcc">Distance</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:aa61d12089e02ec0ce02ab877b21c6bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b396fa9b0d3612ec9eb372b52de1eac"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a9b396fa9b0d3612ec9eb372b52de1eac">DistanceSquared</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:a9b396fa9b0d3612ec9eb372b52de1eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662946707019ddc5d79612da685be5f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a662946707019ddc5d79612da685be5f8">MultiplyWithoutAlpha</a> (T s) noexcept</td></tr>
+<tr class="separator:a662946707019ddc5d79612da685be5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c679fe7a6c4b11ea163bc1d64fd73b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa7c679fe7a6c4b11ea163bc1d64fd73b">GetARGB</a> () const</td></tr>
+<tr class="separator:aa7c679fe7a6c4b11ea163bc1d64fd73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cf3e00ee1662cc67aae0fa5767df39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a11cf3e00ee1662cc67aae0fa5767df39">GetABGR</a> () const</td></tr>
+<tr class="separator:a11cf3e00ee1662cc67aae0fa5767df39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60780325071ef6c95b113f9f5f9905b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a60780325071ef6c95b113f9f5f9905b4">Saturate</a> () noexcept</td></tr>
+<tr class="separator:a60780325071ef6c95b113f9f5f9905b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b9d43c6d2306ccd7e3071e0e52eb25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a33b9d43c6d2306ccd7e3071e0e52eb25">Blend</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o)</td></tr>
+<tr class="separator:a33b9d43c6d2306ccd7e3071e0e52eb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc63e1fac50adf874fa5b33516186e7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#acc63e1fac50adf874fa5b33516186e7f">Lerp</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o, T t) const</td></tr>
+<tr class="separator:acc63e1fac50adf874fa5b33516186e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1c0093d51c4036f7ab5755d571d6e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a7f1c0093d51c4036f7ab5755d571d6e7">operator+</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;rhs) const</td></tr>
+<tr class="separator:a7f1c0093d51c4036f7ab5755d571d6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4cafbc5cbd4aa28a8feb428107d3985"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ab4cafbc5cbd4aa28a8feb428107d3985">operator+=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="separator:ab4cafbc5cbd4aa28a8feb428107d3985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d512332791d4187ecde51771648cb9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a2d512332791d4187ecde51771648cb9c">operator-</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;rhs) const</td></tr>
+<tr class="separator:a2d512332791d4187ecde51771648cb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add622a013366f3f07eee482493c2c158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#add622a013366f3f07eee482493c2c158">operator-=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;rhs)</td></tr>
+<tr class="separator:add622a013366f3f07eee482493c2c158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fc446d899409058a6e510775ae009d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa1fc446d899409058a6e510775ae009d">operator*</a> (T s) const</td></tr>
+<tr class="separator:aa1fc446d899409058a6e510775ae009d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab097615260001619304f4d128b484359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ab097615260001619304f4d128b484359">operator*=</a> (T s)</td></tr>
+<tr class="separator:ab097615260001619304f4d128b484359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b143f6c4c3b15412293a25f05320b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#af4b143f6c4c3b15412293a25f05320b2">operator/</a> (T s) const</td></tr>
+<tr class="separator:af4b143f6c4c3b15412293a25f05320b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8411cf3d645429dbcdc609a8db010c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a8411cf3d645429dbcdc609a8db010c68">operator/=</a> (T s)</td></tr>
+<tr class="separator:a8411cf3d645429dbcdc609a8db010c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfd5f7a4157b012c4ca1df92289e525"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3cfd5f7a4157b012c4ca1df92289e525">operator==</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:a3cfd5f7a4157b012c4ca1df92289e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03214300c75b0737cd91679f758112c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a03214300c75b0737cd91679f758112c5">operator!=</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;o) const</td></tr>
+<tr class="separator:a03214300c75b0737cd91679f758112c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff28065c93ca64d4806186118eef206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3ff28065c93ca64d4806186118eef206">operator&lt;</a> (const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;rhs) const</td></tr>
+<tr class="separator:a3ff28065c93ca64d4806186118eef206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cec5d96b38d05757c0ead266e591397"><td class="memItemLeft" align="right" valign="top"><a id="a4cec5d96b38d05757c0ead266e591397"></a>
-static <a class="el" href="classastu_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromRgb</b> (int red, int green, int blue, int alpha=255)</td></tr>
-<tr class="separator:a4cec5d96b38d05757c0ead266e591397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02abdb3a0d65626cb6bae8cbad7d6dfd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a02abdb3a0d65626cb6bae8cbad7d6dfd">CreateFromRgb</a> (int red, int green, int blue, int alpha=255)</td></tr>
+<tr class="separator:a02abdb3a0d65626cb6bae8cbad7d6dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae1714e0caca40451f75a6b31648c6fee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ae1714e0caca40451f75a6b31648c6fee">r</a></td></tr>
-<tr class="separator:ae1714e0caca40451f75a6b31648c6fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a513c1a3bd9b8c4268efafba56bda0823"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a513c1a3bd9b8c4268efafba56bda0823">g</a></td></tr>
-<tr class="separator:a513c1a3bd9b8c4268efafba56bda0823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eaf42ee466c2e128373f5ddcb12d34c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3eaf42ee466c2e128373f5ddcb12d34c">b</a></td></tr>
-<tr class="separator:a3eaf42ee466c2e128373f5ddcb12d34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a001a2dcf8f1f0d4abb97f8c158bfddec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a001a2dcf8f1f0d4abb97f8c158bfddec">a</a></td></tr>
-<tr class="separator:a001a2dcf8f1f0d4abb97f8c158bfddec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa670f74822e1db4513844dca52b1eb6a"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#aa670f74822e1db4513844dca52b1eb6a">r</a></td></tr>
+<tr class="separator:aa670f74822e1db4513844dca52b1eb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3134881dda38a8f123387faeff309dff"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a3134881dda38a8f123387faeff309dff">g</a></td></tr>
+<tr class="separator:a3134881dda38a8f123387faeff309dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d075e69ca5e4cea336f3977b04dee2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#a56d075e69ca5e4cea336f3977b04dee2">b</a></td></tr>
+<tr class="separator:a56d075e69ca5e4cea336f3977b04dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62b3af3464dea4bf99432bfb6e9d796"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Color.html#ad62b3af3464dea4bf99432bfb6e9d796">a</a></td></tr>
+<tr class="separator:ad62b3af3464dea4bf99432bfb6e9d796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a color value in RGB color space.</p>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class astu::Color&lt; T &gt;</h3>
+
+<p>Represents a color value in RGB color space.</p>
 <p>A color is described using four color channels: red, green, blue and alpha. The alpha channel represents transparency. The color channels are represents as floating-point values which normally lie within the interval [0, 1]. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3b4505ef24790685a5e22bde22ff5b05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b4505ef24790685a5e22bde22ff5b05">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/2]</span></h2>
+<a id="abb0e2cdad572357375d5b2465ea847b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0e2cdad572357375d5b2465ea847b9">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">astu::Color::Color </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::<a class="el" href="classastu_1_1Color.html">Color</a> </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>red</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>green</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>blue</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -184,6 +200,11 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -198,28 +219,38 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5056ade3f6bf10a72056ffcb3d2e1f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5056ade3f6bf10a72056ffcb3d2e1f42">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/2]</span></h2>
+<a id="a1ce283cfd9542b85da611fc50a4a9e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce283cfd9542b85da611fc50a4a9e54">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">astu::Color::Color </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::<a class="el" href="classastu_1_1Color.html">Color</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>rgb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructor.</p>
 <p>This constructor can be used to create colors using the usual hex-triplet notation which is a six-digit, three-byte hexadecimal number used int HTML, CSS, SVG etc.</p>
 <p><b>Example</b></p>
-<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> mediumAquamarine(0x66cdaa);</div></div><!-- fragment --><p>The enum WebColors defines integer constants according to the color names defined by the W3C standards. These constants can be used to initialize colors using this constructor.</p>
-<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> redColor(<a class="code" href="group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457">WebColors::Red</a>);</div><div class="line"><a class="code" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> PurpleColor(<a class="code" href="group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a01a986e72b737c665011360937fc2e52">WebColors::Purple</a>);</div></div><!-- fragment --><p>This constructor also functions as automatic conversion constructor which allows C++ to automatically convert integers to objects of class <a class="el" href="classastu_1_1Color.html">Color</a>. This makes it particularly easy to use the WebColor constants to initialize colors:</p>
-<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> redColor = <a class="code" href="group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a4f06dbd0c0981a97dd9279788b11a457">WebColors::Red</a>;</div></div><!-- fragment --><p>or even as function arguments of type color</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Color.h&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> SomeFunction(<span class="keyword">const</span> <a class="code" href="classastu_1_1Color.html#a3b4505ef24790685a5e22bde22ff5b05">Color</a> &amp; c) {</div><div class="line"> <span class="comment">// Does something with c...</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main() {</div><div class="line">  SomeFunction(<a class="code" href="group__gfx__group.html#gga6f6f9db1751e96b647084ecaedff2409a3a60a96de57d7343338c0e5b282add56">WebColors::Aqua</a>);</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> mediumAquamarine(0x66cdaa);</div></div><!-- fragment --><p>The enum <a class="el" href="classastu_1_1WebColors.html">WebColors</a> defines integer constants according to the color names defined by the W3C standards. These constants can be used to initialize colors using this constructor.</p>
+<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> redColor(<a class="code" href="classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a56bb31647b5e647e11d2941f54a30781">WebColors::Red</a>);</div><div class="line"><a class="code" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> PurpleColor(<a class="code" href="classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a3d63297abeb7cf60c2ddae0a1ee3e658">WebColors::Purple</a>);</div></div><!-- fragment --><p>This constructor also functions as automatic conversion constructor which allows C++ to automatically convert integers to objects of class <a class="el" href="classastu_1_1Color.html">Color</a>. This makes it particularly easy to use the WebColor constants to initialize colors:</p>
+<div class="fragment"><div class="line"><a class="code" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> redColor = <a class="code" href="classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a56bb31647b5e647e11d2941f54a30781">WebColors::Red</a>;</div></div><!-- fragment --><p>or even as function arguments of type color</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Color.h&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> SomeFunction(<span class="keyword">const</span> <a class="code" href="classastu_1_1Color.html#abb0e2cdad572357375d5b2465ea847b9">Color</a> &amp; c) {</div><div class="line"> <span class="comment">// Does something with c...</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main() {</div><div class="line">  SomeFunction(<a class="code" href="classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a93a4bd8dbcd8c09329c7d866c835571c">WebColors::Aqua</a>);</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rgb</td><td>the rgb color components encoded within in an integer </td></tr>
   </table>
@@ -229,20 +260,30 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3e246cf7b52ffda0f76a4fa0e7810763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e246cf7b52ffda0f76a4fa0e7810763">&#9670;&nbsp;</a></span>Blend()</h2>
+<a id="a33b9d43c6d2306ccd7e3071e0e52eb25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b9d43c6d2306ccd7e3071e0e52eb25">&#9670;&nbsp;</a></span>Blend()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::Blend </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::Blend </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Blends this color with another color respecting the alpha channel.</p>
 <p>This method changes this color and leaves the other color untouched, which is the most common usage of this method.</p>
@@ -252,24 +293,94 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a reference to this color used for method chaining etc. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this color used for method chaining </dd></dl>
 
 </div>
 </div>
-<a id="a53b134d44a2fba57ed560f00ce55a471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b134d44a2fba57ed560f00ce55a471">&#9670;&nbsp;</a></span>Distance()</h2>
+<a id="a02abdb3a0d65626cb6bae8cbad7d6dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02abdb3a0d65626cb6bae8cbad7d6dfd">&#9670;&nbsp;</a></span>CreateFromRgb()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::Distance </td>
+          <td class="memname">static <a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::CreateFromRgb </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>red</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>green</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>255</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a color from RGB integer values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">red</td><td>red color component, value within the range 0 and 255 </td></tr>
+    <tr><td class="paramname">green</td><td>green color component, value within the range 0 and 255 </td></tr>
+    <tr><td class="paramname">blue</td><td>blue color component, value within the range 0 and 255 </td></tr>
+    <tr><td class="paramname">alpha</td><td>transparency, value within the range 0 and 255 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa61d12089e02ec0ce02ab877b21c6bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61d12089e02ec0ce02ab877b21c6bcc">&#9670;&nbsp;</a></span>Distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::Distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Calculates the Euclidean in RGBA color space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -282,20 +393,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af57011227eea623101859b95127e364c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57011227eea623101859b95127e364c">&#9670;&nbsp;</a></span>DistanceSquared()</h2>
+<a id="a9b396fa9b0d3612ec9eb372b52de1eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b396fa9b0d3612ec9eb372b52de1eac">&#9670;&nbsp;</a></span>DistanceSquared()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::DistanceSquared </td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::DistanceSquared </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Calculates the Euclidean squared in RGBA color space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -308,20 +429,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a04fc869504fd1f14d4c27d257ac0a121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04fc869504fd1f14d4c27d257ac0a121">&#9670;&nbsp;</a></span>DistanceSquaredWithoutAlpha()</h2>
+<a id="a35549a6d06ab1fbc8a232508e3041f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35549a6d06ab1fbc8a232508e3041f9d">&#9670;&nbsp;</a></span>DistanceSquaredWithoutAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::DistanceSquaredWithoutAlpha </td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::DistanceSquaredWithoutAlpha </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Calculates the Euclidean squared in RGB color space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -334,20 +465,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a897cfc4a5706a7c3ab8562adb217d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a897cfc4a5706a7c3ab8562adb217d8">&#9670;&nbsp;</a></span>DistanceWithoutAlpha()</h2>
+<a id="a4802f8f0d0fcf65ba6853ac17c52b811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4802f8f0d0fcf65ba6853ac17c52b811">&#9670;&nbsp;</a></span>DistanceWithoutAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::DistanceWithoutAlpha </td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::DistanceWithoutAlpha </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Calculates the Euclidean distance in RGB color space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -360,41 +501,85 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e8ee28f89245f4e8d96c8c62144854f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e8ee28f89245f4e8d96c8c62144854f">&#9670;&nbsp;</a></span>GetARGB()</h2>
+<a id="a11cf3e00ee1662cc67aae0fa5767df39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11cf3e00ee1662cc67aae0fa5767df39">&#9670;&nbsp;</a></span>GetABGR()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int astu::Color::GetARGB </td>
+          <td class="memname">int <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::GetABGR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Converts this color to an integer value.</p>
 <dl class="section return"><dt>Returns</dt><dd>the integer representation of this color </dd></dl>
 
 </div>
 </div>
-<a id="a0dc0303a14adf0712e12e756bde1b365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc0303a14adf0712e12e756bde1b365">&#9670;&nbsp;</a></span>Lerp()</h2>
+<a id="aa7c679fe7a6c4b11ea163bc1d64fd73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c679fe7a6c4b11ea163bc1d64fd73b">&#9670;&nbsp;</a></span>GetARGB()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a> astu::Color::Lerp </td>
+          <td class="memname">int <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::GetARGB </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts this color to an integer value.</p>
+<dl class="section return"><dt>Returns</dt><dd>the integer representation of this color </dd></dl>
+
+</div>
+</div>
+<a id="acc63e1fac50adf874fa5b33516186e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc63e1fac50adf874fa5b33516186e7f">&#9670;&nbsp;</a></span>Lerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::Lerp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>t</em>&#160;</td>
         </tr>
         <tr>
@@ -403,6 +588,11 @@ Public Attributes</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Does a linear interpolation between this and the specified color.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -416,19 +606,57 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad55ea16978ae52e3feb77109865921bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad55ea16978ae52e3feb77109865921bd">&#9670;&nbsp;</a></span>operator!=()</h2>
+<a id="a662946707019ddc5d79612da685be5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a662946707019ddc5d79612da685be5f8">&#9670;&nbsp;</a></span>MultiplyWithoutAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool astu::Color::operator!= </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::MultiplyWithoutAlpha </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Multiplies all color except alpha channel with a scalar.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>the scalar value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this color used for method chaining </dd></dl>
+
+</div>
+</div>
+<a id="a03214300c75b0737cd91679f758112c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03214300c75b0737cd91679f758112c5">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -451,20 +679,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a287594eff638030b35765bfe00e76606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a287594eff638030b35765bfe00e76606">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="aa1fc446d899409058a6e510775ae009d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fc446d899409058a6e510775ae009d">&#9670;&nbsp;</a></span>operator*()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a> astu::Color::operator* </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator* </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary multiplication operator for a color and a scalar value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -477,20 +715,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adf79aa3c1511b986cb7ac14d32524ad4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf79aa3c1511b986cb7ac14d32524ad4">&#9670;&nbsp;</a></span>operator*=()</h2>
+<a id="ab097615260001619304f4d128b484359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab097615260001619304f4d128b484359">&#9670;&nbsp;</a></span>operator*=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::operator*= </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator*= </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Compound assignment and multiplication operator for a color and a scalar value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -503,20 +751,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aca7e48a64d881e1287805f52b81a7066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca7e48a64d881e1287805f52b81a7066">&#9670;&nbsp;</a></span>operator+()</h2>
+<a id="a7f1c0093d51c4036f7ab5755d571d6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1c0093d51c4036f7ab5755d571d6e7">&#9670;&nbsp;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a> astu::Color::operator+ </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator+ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary addition operator for two colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -529,20 +787,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af4c777a4e4cf3a7770d8499c4fa10c3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4c777a4e4cf3a7770d8499c4fa10c3e">&#9670;&nbsp;</a></span>operator+=()</h2>
+<a id="ab4cafbc5cbd4aa28a8feb428107d3985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4cafbc5cbd4aa28a8feb428107d3985">&#9670;&nbsp;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::operator+= </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator+= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Compound assignment and addition operator for two colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -555,20 +823,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9b6a108bc2d6581ad97057a00d2008f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9b6a108bc2d6581ad97057a00d2008f">&#9670;&nbsp;</a></span>operator-()</h2>
+<a id="a2d512332791d4187ecde51771648cb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d512332791d4187ecde51771648cb9c">&#9670;&nbsp;</a></span>operator-()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a> astu::Color::operator- </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary subtraction operator for two colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -581,20 +859,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab80bfd9e234b9caed6900afea9a0ea2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab80bfd9e234b9caed6900afea9a0ea2e">&#9670;&nbsp;</a></span>operator-=()</h2>
+<a id="add622a013366f3f07eee482493c2c158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add622a013366f3f07eee482493c2c158">&#9670;&nbsp;</a></span>operator-=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::operator-= </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator-= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Compound assignment and subtraction operator for two colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -607,20 +895,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9be3b7a9a3773bc7f82a2cd6ac6badbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be3b7a9a3773bc7f82a2cd6ac6badbf">&#9670;&nbsp;</a></span>operator/()</h2>
+<a id="af4b143f6c4c3b15412293a25f05320b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b143f6c4c3b15412293a25f05320b2">&#9670;&nbsp;</a></span>operator/()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a> astu::Color::operator/ </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator/ </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary division operator for a color and a scalar value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -633,20 +931,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afd37b7940911dd15ef36bae5a046033c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd37b7940911dd15ef36bae5a046033c">&#9670;&nbsp;</a></span>operator/=()</h2>
+<a id="a8411cf3d645429dbcdc609a8db010c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8411cf3d645429dbcdc609a8db010c68">&#9670;&nbsp;</a></span>operator/=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::operator/= </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator/= </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Compound assignment and division operator for a color and a scalar value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -659,26 +967,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a23c1c73e9815bdbae91de67d54f25cb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23c1c73e9815bdbae91de67d54f25cb8">&#9670;&nbsp;</a></span>operator<()</h2>
+<a id="a3ff28065c93ca64d4806186118eef206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff28065c93ca64d4806186118eef206">&#9670;&nbsp;</a></span>operator<()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool astu::Color::operator&lt; </td>
+          <td class="memname">bool <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary less-than operator comparing two colors.</p>
 <p>This operator is required to have colors as keys within std::map containers and in order to be able to 'sort' colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">o</td><td>the right-hand side color </td></tr>
+    <tr><td class="paramname">rhs</td><td>the right-hand side color </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,20 +1004,30 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa1b234404e692bd343d026f03c7b9832"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1b234404e692bd343d026f03c7b9832">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a3cfd5f7a4157b012c4ca1df92289e525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfd5f7a4157b012c4ca1df92289e525">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool astu::Color::operator== </td>
+          <td class="memname">bool <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classastu_1_1Color.html">Color</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Binary equality operator comparing two colors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -712,52 +1040,68 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a612db0af9e13a8c64f1c215964d4d88f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a612db0af9e13a8c64f1c215964d4d88f">&#9670;&nbsp;</a></span>Saturate()</h2>
+<a id="a60780325071ef6c95b113f9f5f9905b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60780325071ef6c95b113f9f5f9905b4">&#9670;&nbsp;</a></span>Saturate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void astu::Color::Saturate </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::Saturate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Clamps all color components within the range of 0 to 1. </p>
+<p>Clamps all color components within the range of 0 to 1.</p>
+<dl class="section return"><dt>Returns</dt><dd>a reference to this color used for method chaining </dd></dl>
 
 </div>
 </div>
-<a id="a709d6f647c38187f1d4028810dfa363e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a709d6f647c38187f1d4028810dfa363e">&#9670;&nbsp;</a></span>Set()</h2>
+<a id="ad5aaf54919fed257c37b6b5747bd01c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5aaf54919fed257c37b6b5747bd01c8">&#9670;&nbsp;</a></span>Set()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void astu::Color::Set </td>
+          <td class="memname">void <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::Set </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>red</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>green</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>blue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -766,6 +1110,11 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Assigns a color using RGBA values within the range [0, 1].</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -780,19 +1129,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afdc4eaa4609f192757c8cfa6ec51f110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc4eaa4609f192757c8cfa6ec51f110">&#9670;&nbsp;</a></span>SetAlpha()</h2>
+<a id="a0fcfa896c3a32ae0af1aeec3f4d866fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcfa896c3a32ae0af1aeec3f4d866fe">&#9670;&nbsp;</a></span>SetAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&amp; astu::Color::SetAlpha </td>
+          <td class="memname"><a class="el" href="classastu_1_1Color.html">Color</a>&lt;T&gt;&amp; <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::SetAlpha </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a</em></td><td>)</td>
           <td></td>
         </tr>
@@ -814,17 +1165,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa9ad15d1137f9a6243373a687faa101c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9ad15d1137f9a6243373a687faa101c">&#9670;&nbsp;</a></span>ToRgba()</h2>
+<a id="a376a9d08b37e917a7040d58aab009bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376a9d08b37e917a7040d58aab009bf5">&#9670;&nbsp;</a></span>ToRgba()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int astu::Color::ToRgba </td>
+          <td class="memname">int <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::ToRgba </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -842,14 +1195,16 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a001a2dcf8f1f0d4abb97f8c158bfddec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a001a2dcf8f1f0d4abb97f8c158bfddec">&#9670;&nbsp;</a></span>a</h2>
+<a id="ad62b3af3464dea4bf99432bfb6e9d796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62b3af3464dea4bf99432bfb6e9d796">&#9670;&nbsp;</a></span>a</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::a</td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::a</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -857,14 +1212,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3eaf42ee466c2e128373f5ddcb12d34c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eaf42ee466c2e128373f5ddcb12d34c">&#9670;&nbsp;</a></span>b</h2>
+<a id="a56d075e69ca5e4cea336f3977b04dee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d075e69ca5e4cea336f3977b04dee2">&#9670;&nbsp;</a></span>b</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::b</td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::b</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -872,14 +1229,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a513c1a3bd9b8c4268efafba56bda0823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513c1a3bd9b8c4268efafba56bda0823">&#9670;&nbsp;</a></span>g</h2>
+<a id="a3134881dda38a8f123387faeff309dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3134881dda38a8f123387faeff309dff">&#9670;&nbsp;</a></span>g</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::g</td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::g</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -887,14 +1246,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1714e0caca40451f75a6b31648c6fee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1714e0caca40451f75a6b31648c6fee">&#9670;&nbsp;</a></span>r</h2>
+<a id="aa670f74822e1db4513844dca52b1eb6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa670f74822e1db4513844dca52b1eb6a">&#9670;&nbsp;</a></span>r</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">double astu::Color::r</td>
+          <td class="memname">T <a class="el" href="classastu_1_1Color.html">astu::Color</a>&lt; T &gt;::r</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -903,7 +1264,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="Color_8h_source.html">Color.h</a></li>
+<li>include/Graphics/<a class="el" href="Color_8h_source.html">Color.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

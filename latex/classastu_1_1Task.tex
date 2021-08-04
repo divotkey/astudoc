@@ -1,0 +1,137 @@
+\hypertarget{classastu_1_1Task}{}\section{astu\+:\+:Task Class Reference}
+\label{classastu_1_1Task}\index{astu\+::\+Task@{astu\+::\+Task}}
+
+
+{\ttfamily \#include $<$Task\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classastu_1_1Task__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Task_a32d5264221777690acdab94974aa2e15}{Task} (const std\+::string \&task\+Name=\char`\"{}\char`\"{})
+\item 
+const std\+::string \& \hyperlink{classastu_1_1Task_aa25f996b5c77b60166fe0c7e169b7c8c}{Get\+Name} () const
+\item 
+virtual \hyperlink{classastu_1_1Task_a69df74d5a4c65f313555134404b24f25}{$\sim$\+Task} ()
+\item 
+bool \hyperlink{classastu_1_1Task_a4fc46f40fb4f4b0d7bddb0a417a2be5f}{Is\+Terminated} () const
+\item 
+void \hyperlink{classastu_1_1Task_a6b9160915de23077b54db896943f413f}{Terminate} ()
+\item 
+virtual void \hyperlink{classastu_1_1Task_af68025df1de6ad31882f0ccee5ccb100}{Reset} ()
+\item 
+virtual void \hyperlink{classastu_1_1Task_a2bcec3cc42b46cfcb03422e029577c0a}{Update} (double dt)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1Task_a7f0a9e45de3d302d52ef0ed13278ec94}{On\+Terminate} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1Task_a8bb4b8e223f9d0ede0bba9d70cc24089}\label{classastu_1_1Task_a8bb4b8e223f9d0ede0bba9d70cc24089}} 
+{\footnotesize template$<$typename T $>$ }\\class {\bfseries Task\+Builder}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for tasks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Task_a32d5264221777690acdab94974aa2e15}\label{classastu_1_1Task_a32d5264221777690acdab94974aa2e15}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Task@{Task}}
+\index{Task@{Task}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Task()}{Task()}}
+{\footnotesize\ttfamily astu\+::\+Task\+::\+Task (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{task\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & the name of this task \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Task_a69df74d5a4c65f313555134404b24f25}\label{classastu_1_1Task_a69df74d5a4c65f313555134404b24f25}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!````~Task@{$\sim$\+Task}}
+\index{````~Task@{$\sim$\+Task}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{$\sim$\+Task()}{~Task()}}
+{\footnotesize\ttfamily virtual astu\+::\+Task\+::$\sim$\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Task_aa25f996b5c77b60166fe0c7e169b7c8c}\label{classastu_1_1Task_aa25f996b5c77b60166fe0c7e169b7c8c}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Get\+Name()}{GetName()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::\+Task\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name of this task.
+
+\begin{DoxyReturn}{Returns}
+the name of this task 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Task_a4fc46f40fb4f4b0d7bddb0a417a2be5f}\label{classastu_1_1Task_a4fc46f40fb4f4b0d7bddb0a417a2be5f}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Is\+Terminated@{Is\+Terminated}}
+\index{Is\+Terminated@{Is\+Terminated}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Is\+Terminated()}{IsTerminated()}}
+{\footnotesize\ttfamily bool astu\+::\+Task\+::\+Is\+Terminated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this actions has terminated.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this action has terminated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Task_a7f0a9e45de3d302d52ef0ed13278ec94}\label{classastu_1_1Task_a7f0a9e45de3d302d52ef0ed13278ec94}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!On\+Terminate@{On\+Terminate}}
+\index{On\+Terminate@{On\+Terminate}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{On\+Terminate()}{OnTerminate()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Task\+::\+On\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by this base class before termination. \mbox{\Hypertarget{classastu_1_1Task_af68025df1de6ad31882f0ccee5ccb100}\label{classastu_1_1Task_af68025df1de6ad31882f0ccee5ccb100}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Task\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Resets this task to its initial condition. 
+
+Reimplemented in \hyperlink{classastu_1_1DelegateTask_a8bc7364937a4af2173e066174733e1d1}{astu\+::\+Delegate\+Task}, and \hyperlink{classastu_1_1TimedTask_ac885f7d65aab450125fc4e00eb045a82}{astu\+::\+Timed\+Task}.
+
+\mbox{\Hypertarget{classastu_1_1Task_a6b9160915de23077b54db896943f413f}\label{classastu_1_1Task_a6b9160915de23077b54db896943f413f}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Terminate@{Terminate}}
+\index{Terminate@{Terminate}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Terminate()}{Terminate()}}
+{\footnotesize\ttfamily void astu\+::\+Task\+::\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Terminates this \hyperlink{classastu_1_1Task}{Task}. \mbox{\Hypertarget{classastu_1_1Task_a2bcec3cc42b46cfcb03422e029577c0a}\label{classastu_1_1Task_a2bcec3cc42b46cfcb03422e029577c0a}} 
+\index{astu\+::\+Task@{astu\+::\+Task}!Update@{Update}}
+\index{Update@{Update}!astu\+::\+Task@{astu\+::\+Task}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Task\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Updates this task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since tha last update in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classastu_1_1DelegateTask_a48755ab30194963c37e22ed118423704}{astu\+::\+Delegate\+Task}, and \hyperlink{classastu_1_1TimedTask_a5e850f0352294d2c9b302e1a56c6eb09}{astu\+::\+Timed\+Task}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Task\+Service.\+h\end{DoxyCompactItemize}

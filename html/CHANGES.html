@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -64,7 +64,93 @@ $(function() {
 <div class="title">Version History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Version 0.6.0</h1>
+<div class="textblock"><h1>Version 0.10.0</h1>
+<p><em>Date: 2021-08-02</em></p>
+<p>This version has undergone extensive adjustments. The source code was restructured and many names were changed for better consistency and understanding.</p>
+<ul>
+<li>Added application classes which simplify configuration of services.</li>
+<li>Renamed input events to input signals.</li>
+<li>Added header files to include categories of features.</li>
+<li>Improved documentation.</li>
+<li>Added support for full-screen mode.</li>
+<li>Extended functiuonality `LineRenderer'.</li>
+<li>Polyline scene graph objects can now be closed (e.g., polygons) or open.</li>
+<li>Changed order of include files to mach Unreal Engine requirements.</li>
+</ul>
+<h1>Version 0.9.3</h1>
+<p><em>Date: 2021-07-08</em></p>
+<ul>
+<li>Improved compatibility with GNU C++ Compiler</li>
+<li>Added input mapping service.</li>
+<li>Added task service.</li>
+<li>Added <code>GetRandomBool()</code> function.</li>
+<li>Renamed classed and structures for 2D environments to new naming convention.</li>
+<li>Added service to control 2D cameras with mouse and keyboard (<code>CameraControlService2D</code>).</li>
+<li>Improved 2D scene graph.</li>
+<li>Improved ECS to use component interfaces in order to support derived components as well.</li>
+<li>Started to restructured source code structure.</li>
+<li>Extended random number generator class and made public.</li>
+<li>Added option to pause services.</li>
+<li>Added mathematical utility class <code>Segment1</code>.</li>
+</ul>
+<h1>Version 0.9.2</h1>
+<p><em>Date: 2021-06-06</em></p><ul>
+<li>Added <code>EntityFactoryService</code> and extended <code>Entity</code> and <code>EntityComponent</code> class.</li>
+</ul>
+<h1>Version 0.9.1</h1>
+<p><em>Date: 2021-05-26</em></p>
+<ul>
+<li>Improved service macros.</li>
+<li>Improved Camera2d.</li>
+<li>Added <code>IRenderService</code> interface to set background color.</li>
+<li>Added additional color constants.</li>
+<li>Added signal for mouse movement.</li>
+</ul>
+<h1>Version 0.9.0</h1>
+<p><em>Date: 2021-05-24</em></p>
+<ul>
+<li>Renamed <code>MouseButtonListener</code> alias to <code>IMouseButtonListener</code>.</li>
+<li>Renamed <code>KeystrokeListener</code> alias to <code>IKeystrokeListener</code>.</li>
+<li>Renamed <code>ITimeService</code> to <code>ITimeManager</code>.</li>
+<li>Improved API of <code>ServiceManager</code>.</li>
+<li>Improved configuration of service features by inheritance (experimental).</li>
+<li>Improved <code>Vector2&lt;T&gt;</code> template class.</li>
+<li>Added scene graph for two-dimensional renderings.</li>
+<li>Improved/added <code>MathUtils</code> class.</li>
+<li>Improved signal facility.</li>
+</ul>
+<h1>Version 0.8.0</h1>
+<p><em>Date: 2021-04-07</em></p>
+<ul>
+<li>Added interface <code>ILineRenderer</code> and to graphics module.</li>
+<li>Added SDL-based implementations of <code>ILineRenderer</code> interface.</li>
+<li>Added parameter to <code>SayVersion</code> and <code>SayCopyright</code> to add an empty line after the output.</li>
+</ul>
+<h1>Version 0.7.0</h1>
+<p><em>Date: 2021-03-01</em></p>
+<ul>
+<li>Added <code>GetMicroseconds()</code> in addition to <code>GetMilliseconds()</code>.</li>
+<li>Added functions to query copyright information.</li>
+</ul>
+<h1>Version 0.6.4</h1>
+<p><em>Date: 2021-02-02</em></p>
+<ul>
+<li>Fixed missing <code>#pragma once</code> in <a class="el" href="ImageRenderer_8h_source.html">ImageRenderer.h</a></li>
+</ul>
+<h1>Version 0.6.3</h1>
+<p><em>Date: 2021-01-20</em></p>
+<ul>
+<li>Changed Matrix3 class to be a template and moved it to public include folder.</li>
+<li>Improved <code>Palette</code> class.</li>
+<li>Extended and improved <code>ImageRenderer</code> class.</li>
+<li>The documentation of the Full API has been updated and slightly extended.</li>
+</ul>
+<h1>Version 0.6.1</h1>
+<p><em>Date: 2021-01-14</em></p>
+<ul>
+<li>Added option to specify the maximum recursion depth the the scene quadtree in <code>ImageRenderer</code> class.</li>
+</ul>
+<h1>Version 0.6.0</h1>
 <p><em>Date: 2021-01-13</em></p>
 <ul>
 <li>Removed some warnings emitted by MS compilers.</li>
@@ -89,7 +175,7 @@ $(function() {
 <ul>
 <li>Added convenient function <code>SayError()</code> for easy error output.</li>
 <li>Refactored <code>Vector2</code> class to be a template class.</li>
-<li>Added <code>Vector2d</code> alias for <code>astu::Vector2&lt;double&gt;</code>.</li>
+<li>Added <code>Vector2d</code> alias for <code><a class="el" href="classastu_1_1Vector2.html">astu::Vector2</a>&lt;double&gt;</code>.</li>
 <li>Improved support for SDL-based applications using API-level 0.</li>
 </ul>
 <h1>Version 0.4.0</h1>

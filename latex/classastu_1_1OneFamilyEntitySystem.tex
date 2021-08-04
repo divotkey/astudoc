@@ -1,0 +1,187 @@
+\hypertarget{classastu_1_1OneFamilyEntitySystem}{}\section{astu\+:\+:One\+Family\+Entity\+System Class Reference}
+\label{classastu_1_1OneFamilyEntitySystem}\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+
+
+{\ttfamily \#include $<$Entity\+Systems.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:One\+Family\+Entity\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1OneFamilyEntitySystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:One\+Family\+Entity\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classastu_1_1OneFamilyEntitySystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1OneFamilyEntitySystem_a97f5065181149d2651366867a3ffd884}{One\+Family\+Entity\+System} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family)
+\item 
+\hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View} \& \hyperlink{classastu_1_1OneFamilyEntitySystem_a1d4106716b7298b177615884ffa62f6c}{Get\+Entity\+View} ()
+\item 
+const \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View} \& \hyperlink{classastu_1_1OneFamilyEntitySystem_ae39a5715e61036ef73a18a995c21ab10}{Get\+Entity\+View} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classastu_1_1OneFamilyEntitySystem_a6d2343f720abd99abe1f41f7601776f5}{Process\+Entities} ()
+\item 
+virtual void \hyperlink{classastu_1_1OneFamilyEntitySystem_ad91b51933676ed72e45142e98ca27025}{Process\+Entity} (\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&entity)
+\item 
+\hyperlink{classastu_1_1EntityService}{Entity\+Service} \& \hyperlink{classastu_1_1OneFamilyEntitySystem_a7ad12fc482483a0c895baa8636d49fe0}{Get\+Entity\+Service} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A system which processes one family of entities.
+
+{\bfseries Example One-\/\+Family Entity-\/\+System}
+
+This example shows how to build your own entity system that uses exactly one family of entities
+
+Header file
+
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#pragma once}
+
+
+\textcolor{comment}{// AST Utilities includes}
+\textcolor{preprocessor}{#include <\hyperlink{AstuECS_8h}{AstuECS.h}>}
+
+\textcolor{keyword}{class }MyOnyFamilySystem 
+    : \textcolor{keyword}{public} \hyperlink{classastu_1_1BaseService}{astu::BaseService}
+    , \textcolor{keyword}{private} \hyperlink{classastu_1_1OneFamilyEntitySystem}{astu::OneFamilyEntitySystem}
+\{
+\textcolor{keyword}{public}:
+
+    \textcolor{comment}{// Constructor.}
+    MyOnyFamilySystem();
+
+\textcolor{keyword}{private}:
+    \textcolor{comment}{// The family of entities this system processes}
+    \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classastu_1_1EntityFamily}{astu::EntityFamily} FAMILY;
+
+    \textcolor{comment}{// Inherited via BaseService}
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{OnStartup}() \textcolor{keyword}{override};
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{OnShutdown}() \textcolor{keyword}{override};
+\};
+\end{DoxyCodeInclude}
+
+
+Implementation file 
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#include "MyOnyFamilySystem.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespaceastu}{astu};
+\textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+
+\textcolor{comment}{// TODO add types of entity components to the family e.g.,}
+\textcolor{comment}{// EntityFamily::Create<astu2d::CPose, astu2d::CBody>();}
+
+\textcolor{keyword}{const} \hyperlink{classastu_1_1EntityFamily}{EntityFamily} MyOnyFamilySystem::FAMILY = EntityFamily::Create<>();
+
+MyOnyFamilySystem::MyOnyFamilySystem()
+    : \hyperlink{classastu_1_1BaseService}{BaseService}(\textcolor{stringliteral}{"My One-Family System"})
+    , \hyperlink{classastu_1_1OneFamilyEntitySystem}{OneFamilyEntitySystem}(FAMILY)    
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyOnyFamilySystem::OnStartup()
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyOnyFamilySystem::OnShutdown()
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+\end{DoxyCodeInclude}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_a97f5065181149d2651366867a3ffd884}\label{classastu_1_1OneFamilyEntitySystem_a97f5065181149d2651366867a3ffd884}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!One\+Family\+Entity\+System@{One\+Family\+Entity\+System}}
+\index{One\+Family\+Entity\+System@{One\+Family\+Entity\+System}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{One\+Family\+Entity\+System()}{OneFamilyEntitySystem()}}
+{\footnotesize\ttfamily astu\+::\+One\+Family\+Entity\+System\+::\+One\+Family\+Entity\+System (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em family} & the family of entities this system processes \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_a7ad12fc482483a0c895baa8636d49fe0}\label{classastu_1_1OneFamilyEntitySystem_a7ad12fc482483a0c895baa8636d49fe0}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!Get\+Entity\+Service@{Get\+Entity\+Service}}
+\index{Get\+Entity\+Service@{Get\+Entity\+Service}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{Get\+Entity\+Service()}{GetEntityService()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1EntityService}{Entity\+Service}\& astu\+::\+One\+Family\+Entity\+System\+::\+Get\+Entity\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Convenient method to access the entity service.
+
+\begin{DoxyReturn}{Returns}
+the entity service 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_a1d4106716b7298b177615884ffa62f6c}\label{classastu_1_1OneFamilyEntitySystem_a1d4106716b7298b177615884ffa62f6c}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!Get\+Entity\+View@{Get\+Entity\+View}}
+\index{Get\+Entity\+View@{Get\+Entity\+View}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{Get\+Entity\+View()}{GetEntityView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View}\& astu\+::\+One\+Family\+Entity\+System\+::\+Get\+Entity\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the view to the family of entities this system processes.
+
+\begin{DoxyReturn}{Returns}
+the entity view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_ae39a5715e61036ef73a18a995c21ab10}\label{classastu_1_1OneFamilyEntitySystem_ae39a5715e61036ef73a18a995c21ab10}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!Get\+Entity\+View@{Get\+Entity\+View}}
+\index{Get\+Entity\+View@{Get\+Entity\+View}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{Get\+Entity\+View()}{GetEntityView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View}\& astu\+::\+One\+Family\+Entity\+System\+::\+Get\+Entity\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the view to the family of entities this system processes.
+
+\begin{DoxyReturn}{Returns}
+the entity view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_a6d2343f720abd99abe1f41f7601776f5}\label{classastu_1_1OneFamilyEntitySystem_a6d2343f720abd99abe1f41f7601776f5}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!Process\+Entities@{Process\+Entities}}
+\index{Process\+Entities@{Process\+Entities}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{Process\+Entities()}{ProcessEntities()}}
+{\footnotesize\ttfamily void astu\+::\+One\+Family\+Entity\+System\+::\+Process\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Call {\ttfamily Process\+Entity} for all entities of the processed entity family. \mbox{\Hypertarget{classastu_1_1OneFamilyEntitySystem_ad91b51933676ed72e45142e98ca27025}\label{classastu_1_1OneFamilyEntitySystem_ad91b51933676ed72e45142e98ca27025}} 
+\index{astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}!Process\+Entity@{Process\+Entity}}
+\index{Process\+Entity@{Process\+Entity}!astu\+::\+One\+Family\+Entity\+System@{astu\+::\+One\+Family\+Entity\+System}}
+\subsubsection{\texorpdfstring{Process\+Entity()}{ProcessEntity()}}
+{\footnotesize\ttfamily virtual void astu\+::\+One\+Family\+Entity\+System\+::\+Process\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by \textquotesingle{}Process\+Entities\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to process \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+E\+C\+S/Entity\+Systems.\+h\end{DoxyCompactItemize}

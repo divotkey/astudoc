@@ -1,0 +1,74 @@
+\hypertarget{classastu_1_1TimeService}{}\section{astu\+:\+:Time\+Service Class Reference}
+\label{classastu_1_1TimeService}\index{astu\+::\+Time\+Service@{astu\+::\+Time\+Service}}
+
+
+{\ttfamily \#include $<$Time\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Time\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classastu_1_1TimeService__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1TimeService_aee6102fc58ba56c7b40cceb32b684657}{$\sim$\+Time\+Service} ()
+\item 
+virtual double \hyperlink{classastu_1_1TimeService_af3b4f5f1b64d87e6fd8a2b81c48a2bf4}{Get\+Elapsed\+Time} () const =0
+\item 
+virtual double \hyperlink{classastu_1_1TimeService_a4c2eb07963ed65649f17e331ff20735a}{Get\+Absolute\+Time} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This abstract base class allows to query the current time (absolute and elapsed). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1TimeService_aee6102fc58ba56c7b40cceb32b684657}\label{classastu_1_1TimeService_aee6102fc58ba56c7b40cceb32b684657}} 
+\index{astu\+::\+Time\+Service@{astu\+::\+Time\+Service}!````~Time\+Service@{$\sim$\+Time\+Service}}
+\index{````~Time\+Service@{$\sim$\+Time\+Service}!astu\+::\+Time\+Service@{astu\+::\+Time\+Service}}
+\subsubsection{\texorpdfstring{$\sim$\+Time\+Service()}{~TimeService()}}
+{\footnotesize\ttfamily virtual astu\+::\+Time\+Service\+::$\sim$\+Time\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1TimeService_a4c2eb07963ed65649f17e331ff20735a}\label{classastu_1_1TimeService_a4c2eb07963ed65649f17e331ff20735a}} 
+\index{astu\+::\+Time\+Service@{astu\+::\+Time\+Service}!Get\+Absolute\+Time@{Get\+Absolute\+Time}}
+\index{Get\+Absolute\+Time@{Get\+Absolute\+Time}!astu\+::\+Time\+Service@{astu\+::\+Time\+Service}}
+\subsubsection{\texorpdfstring{Get\+Absolute\+Time()}{GetAbsoluteTime()}}
+{\footnotesize\ttfamily virtual double astu\+::\+Time\+Service\+::\+Get\+Absolute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the absolute time since the service has been started.
+
+\begin{DoxyReturn}{Returns}
+the absolute time 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlTimeService_ab1cd9c0977c8b93cc4cdee22e0107bde}{astu\+::\+Sdl\+Time\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1TimeService_af3b4f5f1b64d87e6fd8a2b81c48a2bf4}\label{classastu_1_1TimeService_af3b4f5f1b64d87e6fd8a2b81c48a2bf4}} 
+\index{astu\+::\+Time\+Service@{astu\+::\+Time\+Service}!Get\+Elapsed\+Time@{Get\+Elapsed\+Time}}
+\index{Get\+Elapsed\+Time@{Get\+Elapsed\+Time}!astu\+::\+Time\+Service@{astu\+::\+Time\+Service}}
+\subsubsection{\texorpdfstring{Get\+Elapsed\+Time()}{GetElapsedTime()}}
+{\footnotesize\ttfamily virtual double astu\+::\+Time\+Service\+::\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the elapsed time since the last update.
+
+\begin{DoxyReturn}{Returns}
+the elapsed time in seconds 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlTimeService_a6652d19cae14e20ec85a1808fc8e87b7}{astu\+::\+Sdl\+Time\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Time\+Service.\+h\end{DoxyCompactItemize}

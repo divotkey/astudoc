@@ -2,31 +2,24 @@
 \label{classastu_1_1MouseButtonEvent}\index{astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}}
 
 
-{\ttfamily \#include $<$Events.\+h$>$}
+{\ttfamily \#include $<$Input\+Signals.\+h$>$}
 
-\subsection*{Public Types}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_ab01204b34a3eeeb6c92cce127feecb8b}\label{classastu_1_1MouseButtonEvent_ab01204b34a3eeeb6c92cce127feecb8b}} 
-enum {\bfseries B\+U\+T\+T\+ON} \{ {\bfseries L\+E\+FT} = 1, 
-{\bfseries M\+I\+D\+D\+LE} = 2, 
-{\bfseries R\+I\+G\+HT} = 3
- \}
-\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_a1f1617862765f08c21e7344ab3fc0389}\label{classastu_1_1MouseButtonEvent_a1f1617862765f08c21e7344ab3fc0389}} 
-{\bfseries Mouse\+Button\+Event} (int \+\_\+button=0, bool \+\_\+pressed=false)
+\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_ae20fcdba87b8c8df8d03eed6cca14629}\label{classastu_1_1MouseButtonEvent_ae20fcdba87b8c8df8d03eed6cca14629}} 
+{\bfseries Mouse\+Button\+Event} (int \hyperlink{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}{button}=0, bool \hyperlink{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}{pressed}=false, int \hyperlink{classastu_1_1MouseButtonEvent_ad4376cb6d3e59773c498d91b99c26997}{x}=0, int \hyperlink{classastu_1_1MouseButtonEvent_a44da3e7038299b1f7b651704a04634f8}{y}=0)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}\label{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}} 
-int {\bfseries button}
+int \hyperlink{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}{button}
 \item 
-\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}\label{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}} 
-bool {\bfseries pressed}
+bool \hyperlink{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}{pressed}
+\item 
+int \hyperlink{classastu_1_1MouseButtonEvent_ad4376cb6d3e59773c498d91b99c26997}{x}
+\item 
+int \hyperlink{classastu_1_1MouseButtonEvent_a44da3e7038299b1f7b651704a04634f8}{y}
 \end{DoxyCompactItemize}
 
 
@@ -35,6 +28,33 @@ This event represents a mouse button event.
 
 This event is supposed to be used in combination with the \hyperlink{classastu_1_1SignalService}{Signal\+Service}. 
 
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}\label{classastu_1_1MouseButtonEvent_a8dfd189ee91334495030426431158d53}} 
+\index{astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}!button@{button}}
+\index{button@{button}!astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}}
+\subsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily int astu\+::\+Mouse\+Button\+Event\+::button}
+
+The button which has been pressed or released. \mbox{\Hypertarget{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}\label{classastu_1_1MouseButtonEvent_ac6af684a515975ad06203d562acf0dcc}} 
+\index{astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}!pressed@{pressed}}
+\index{pressed@{pressed}!astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}}
+\subsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily bool astu\+::\+Mouse\+Button\+Event\+::pressed}
+
+Whether the button has been pressed or released. \mbox{\Hypertarget{classastu_1_1MouseButtonEvent_ad4376cb6d3e59773c498d91b99c26997}\label{classastu_1_1MouseButtonEvent_ad4376cb6d3e59773c498d91b99c26997}} 
+\index{astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}!x@{x}}
+\index{x@{x}!astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int astu\+::\+Mouse\+Button\+Event\+::x}
+
+The x-\/coordinate of the mouse cursor. \mbox{\Hypertarget{classastu_1_1MouseButtonEvent_a44da3e7038299b1f7b651704a04634f8}\label{classastu_1_1MouseButtonEvent_a44da3e7038299b1f7b651704a04634f8}} 
+\index{astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}!y@{y}}
+\index{y@{y}!astu\+::\+Mouse\+Button\+Event@{astu\+::\+Mouse\+Button\+Event}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int astu\+::\+Mouse\+Button\+Event\+::y}
+
+The y-\/coordinate of the mouse cursor. 
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Events.\+h\end{DoxyCompactItemize}
+include/\+Input/Input\+Signals.\+h\end{DoxyCompactItemize}

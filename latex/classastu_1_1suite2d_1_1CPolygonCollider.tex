@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1suite2d_1_1CPolygonCollider}{}\section{astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider Class Reference}
+\label{classastu_1_1suite2d_1_1CPolygonCollider}\index{astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}}
+
+
+{\ttfamily \#include $<$C\+Colliders.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classastu_1_1suite2d_1_1CPolygonCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Polygon\+Collider\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classastu_1_1suite2d_1_1CPolygonCollider__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPolygonCollider_ab2ff37774a48bd159166ac89764aa384}{C\+Polygon\+Collider} ()
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider_ac3f4b3c6885f72270ecde8ec8a8a4ed5}{Set\+Polygon} (std\+::shared\+\_\+ptr$<$ const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f} $>$ poly)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider_ac30165a676e92f89e1a840f858d9a050}{On\+Added\+To\+Entity} (\hyperlink{classastu_1_1Entity}{Entity} \&entity)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f} $>$ \hyperlink{classastu_1_1suite2d_1_1CPolygonCollider_a5fdae8e0614b5810fb2d1add8b7daf87}{polygon}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Polygonal collider. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonCollider_ab2ff37774a48bd159166ac89764aa384}\label{classastu_1_1suite2d_1_1CPolygonCollider_ab2ff37774a48bd159166ac89764aa384}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}!C\+Polygon\+Collider@{C\+Polygon\+Collider}}
+\index{C\+Polygon\+Collider@{C\+Polygon\+Collider}!astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}}
+\subsubsection{\texorpdfstring{C\+Polygon\+Collider()}{CPolygonCollider()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Polygon\+Collider\+::\+C\+Polygon\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonCollider_ac30165a676e92f89e1a840f858d9a050}\label{classastu_1_1suite2d_1_1CPolygonCollider_ac30165a676e92f89e1a840f858d9a050}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}!On\+Added\+To\+Entity@{On\+Added\+To\+Entity}}
+\index{On\+Added\+To\+Entity@{On\+Added\+To\+Entity}!astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}}
+\subsubsection{\texorpdfstring{On\+Added\+To\+Entity()}{OnAddedToEntity()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+C\+Polygon\+Collider\+::\+On\+Added\+To\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Called when added to an entity.
+
+Most components do not need to override this method. Is is used occasionally to register additional interfaces a component implements. Registering implemented interfaces is necessary in order to make a component accessible via this interface and not just by the component type itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity this component has been added to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1EntityComponent_a8736f12dc9d2be7d2569408fc1040480}{astu\+::\+Entity\+Component}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonCollider_ac3f4b3c6885f72270ecde8ec8a8a4ed5}\label{classastu_1_1suite2d_1_1CPolygonCollider_ac3f4b3c6885f72270ecde8ec8a8a4ed5}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}!Set\+Polygon@{Set\+Polygon}}
+\index{Set\+Polygon@{Set\+Polygon}!astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}}
+\subsubsection{\texorpdfstring{Set\+Polygon()}{SetPolygon()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+C\+Polygon\+Collider\+::\+Set\+Polygon (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f} $>$}]{poly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the polygon of this collider.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & the polygon \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPolygonCollider_a5fdae8e0614b5810fb2d1add8b7daf87}\label{classastu_1_1suite2d_1_1CPolygonCollider_a5fdae8e0614b5810fb2d1add8b7daf87}} 
+\index{astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}!polygon@{polygon}}
+\index{polygon@{polygon}!astu\+::suite2d\+::\+C\+Polygon\+Collider@{astu\+::suite2d\+::\+C\+Polygon\+Collider}}
+\subsubsection{\texorpdfstring{polygon}{polygon}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$const \hyperlink{group__math__group_ga39ca0cd425ff5edd2a090d6997ce8c2a}{Polygon2f}$>$ astu\+::suite2d\+::\+C\+Polygon\+Collider\+::polygon\hspace{0.3cm}{\ttfamily [protected]}}
+
+The polygon defining the shape of this collider. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Colliders.\+h\end{DoxyCompactItemize}

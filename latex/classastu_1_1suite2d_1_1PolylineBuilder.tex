@@ -1,0 +1,165 @@
+\hypertarget{classastu_1_1suite2d_1_1PolylineBuilder}{}\section{astu\+:\+:suite2d\+:\+:Polyline\+Builder Class Reference}
+\label{classastu_1_1suite2d_1_1PolylineBuilder}\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Polyline\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classastu_1_1suite2d_1_1PolylineBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Polyline\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classastu_1_1suite2d_1_1PolylineBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_ae83654b1bd5d3720e73c0498d3036bd7}{Polyline\+Builder} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_a82a2c90c19baa65e7744251e3e4bc912}{Color} (const \hyperlink{classastu_1_1Color}{Color4f} c)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_ab18b7920a7899600091809d701a72352}{Vertex\+Buffer} (std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$ vb)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_afde258633587f124e611f1b5da3a8144}{Vertex\+Buffer} (const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} $>$ \&vtx)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_a62ad72073b3642bb70f08c1a7ae99783}{Closed} (bool b)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_a292fa2f729bf07f05b1496bdb854208b}{Reset} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Polyline}{Polyline} $>$ \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_aefeb3a1648e8d9a3279f994c60938d1e}{Build} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This fluent builder is used to build new polyline scene graph elements.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+std::shared\_ptr<Node> node = \hyperlink{group__srv__group_ga42575546f01bf92989d08916564ffc66}{ASTU\_SERVICE}(SceneGraph).GetRoot();
+
+node->AttachChild(\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_ae83654b1bd5d3720e73c0498d3036bd7}{PolylineBuilder}()
+    .\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_a82a2c90c19baa65e7744251e3e4bc912}{Color}(\hyperlink{classastu_1_1RalColors_a18ad55749e0733dc1a412a97b7e40034a5ec8cffcddccd9b34880e5ebcf7b3b40}{RalColors::TrafficWhite})
+    .\hyperlink{classastu_1_1suite2d_1_1SpatialBuilder_a9acc5dba2568c4c5e9ee1b4b04c3e490}{Name}(\textcolor{stringliteral}{"Triangle"})
+    .\hyperlink{classastu_1_1suite2d_1_1SpatialBuilder_a4a39f76b987baf04c79ef1232ca3df7e}{Translation}(100, 100)
+    .\hyperlink{classastu_1_1suite2d_1_1SpatialBuilder_aebb7300a60d30a4bf07723b977718e11}{RotationDeg}(45)
+    .\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_ab18b7920a7899600091809d701a72352}{VertexBuffer}(ShapeGenerator().GenTriangle(100))
+    .\hyperlink{classastu_1_1suite2d_1_1PolylineBuilder_aefeb3a1648e8d9a3279f994c60938d1e}{Build}()
+  );
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_ae83654b1bd5d3720e73c0498d3036bd7}\label{classastu_1_1suite2d_1_1PolylineBuilder_ae83654b1bd5d3720e73c0498d3036bd7}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Polyline\+Builder@{Polyline\+Builder}}
+\index{Polyline\+Builder@{Polyline\+Builder}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Polyline\+Builder()}{PolylineBuilder()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Polyline\+Builder\+::\+Polyline\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_aefeb3a1648e8d9a3279f994c60938d1e}\label{classastu_1_1suite2d_1_1PolylineBuilder_aefeb3a1648e8d9a3279f994c60938d1e}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Polyline}{Polyline}$>$ astu\+::suite2d\+::\+Polyline\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new polyline according to the current configuration.
+
+\begin{DoxyReturn}{Returns}
+the newly created polyline 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_a62ad72073b3642bb70f08c1a7ae99783}\label{classastu_1_1suite2d_1_1PolylineBuilder_a62ad72073b3642bb70f08c1a7ae99783}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Closed@{Closed}}
+\index{Closed@{Closed}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Closed()}{Closed()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder}\& astu\+::suite2d\+::\+Polyline\+Builder\+::\+Closed (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies whether the polyline is rendered as closed shape.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & set to {\ttfamily true} to render the polyline closed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_a82a2c90c19baa65e7744251e3e4bc912}\label{classastu_1_1suite2d_1_1PolylineBuilder_a82a2c90c19baa65e7744251e3e4bc912}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Color@{Color}}
+\index{Color@{Color}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Color()}{Color()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder}\& astu\+::suite2d\+::\+Polyline\+Builder\+::\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4f}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the color used to build the new polyline.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_a292fa2f729bf07f05b1496bdb854208b}\label{classastu_1_1suite2d_1_1PolylineBuilder_a292fa2f729bf07f05b1496bdb854208b}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder}\& astu\+::suite2d\+::\+Polyline\+Builder\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this builder to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_ab18b7920a7899600091809d701a72352}\label{classastu_1_1suite2d_1_1PolylineBuilder_ab18b7920a7899600091809d701a72352}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Vertex\+Buffer@{Vertex\+Buffer}}
+\index{Vertex\+Buffer@{Vertex\+Buffer}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer()}{VertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder}\& astu\+::suite2d\+::\+Polyline\+Builder\+::\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{group__gfx__group_ga081cf45a441eef100dfbb1e0f64c3826}{Vertex\+Buffer2f} $>$}]{vb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the vertex buffer to be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vb} & the vertex buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1PolylineBuilder_afde258633587f124e611f1b5da3a8144}\label{classastu_1_1suite2d_1_1PolylineBuilder_afde258633587f124e611f1b5da3a8144}} 
+\index{astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}!Vertex\+Buffer@{Vertex\+Buffer}}
+\index{Vertex\+Buffer@{Vertex\+Buffer}!astu\+::suite2d\+::\+Polyline\+Builder@{astu\+::suite2d\+::\+Polyline\+Builder}}
+\subsubsection{\texorpdfstring{Vertex\+Buffer()}{VertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1PolylineBuilder}{Polyline\+Builder}\& astu\+::suite2d\+::\+Polyline\+Builder\+::\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} $>$ \&}]{vtx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Specifies the vertices used to create the polyline.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vtx} & the vertices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Scene.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{classastu_1_1Ray2}{}\section{astu\+:\+:Ray2$<$ T $>$ Class Template Reference}
+\label{classastu_1_1Ray2}\index{astu\+::\+Ray2$<$ T $>$@{astu\+::\+Ray2$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Ray2.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Ray2_a55a576b162700640ce6781c4585cd677}{Ray2} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&p, const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&d)
+\item 
+\hyperlink{classastu_1_1Ray2_a01a3a9ea21bf0e02c38c0e4bede6a5c6}{Ray2} (T px, T py, T dx, T dy)
+\item 
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Ray2_a4fd8b77b411f464733cf41a0a8aa930e}{Get\+Start\+Point} () const
+\item 
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1Ray2_a3c51afb5095ba628a0b52e34f1e1e133}{Get\+Direction} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Ray2$<$ T $>$}
+
+A two-\/dimensional ray.
+
+This class is a mathematical utility class representing a ray. A ray is also called a half-\/line. A ray can be defined as a part of a line, that has a fixed starting point but no end point. It can extend infinitely in one direction.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical data type used for this ray \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Ray2_a55a576b162700640ce6781c4585cd677}\label{classastu_1_1Ray2_a55a576b162700640ce6781c4585cd677}} 
+\index{astu\+::\+Ray2@{astu\+::\+Ray2}!Ray2@{Ray2}}
+\index{Ray2@{Ray2}!astu\+::\+Ray2@{astu\+::\+Ray2}}
+\subsubsection{\texorpdfstring{Ray2()}{Ray2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Ray2}{astu\+::\+Ray2}$<$ T $>$\+::\hyperlink{classastu_1_1Ray2}{Ray2} (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{p,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the starting point \\
+\hline
+{\em d} & the direction vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Ray2_a01a3a9ea21bf0e02c38c0e4bede6a5c6}\label{classastu_1_1Ray2_a01a3a9ea21bf0e02c38c0e4bede6a5c6}} 
+\index{astu\+::\+Ray2@{astu\+::\+Ray2}!Ray2@{Ray2}}
+\index{Ray2@{Ray2}!astu\+::\+Ray2@{astu\+::\+Ray2}}
+\subsubsection{\texorpdfstring{Ray2()}{Ray2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1Ray2}{astu\+::\+Ray2}$<$ T $>$\+::\hyperlink{classastu_1_1Ray2}{Ray2} (\begin{DoxyParamCaption}\item[{T}]{px,  }\item[{T}]{py,  }\item[{T}]{dx,  }\item[{T}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em px} & the x-\/coordinate of the starting point \\
+\hline
+{\em py} & the y-\/coordinate of the starting point \\
+\hline
+{\em dx} & the x-\/component of the direction vector \\
+\hline
+{\em dy} & the y-\/component of the direction vector \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Ray2_a3c51afb5095ba628a0b52e34f1e1e133}\label{classastu_1_1Ray2_a3c51afb5095ba628a0b52e34f1e1e133}} 
+\index{astu\+::\+Ray2@{astu\+::\+Ray2}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!astu\+::\+Ray2@{astu\+::\+Ray2}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1Ray2}{astu\+::\+Ray2}$<$ T $>$\+::Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the direction vector of this ray.
+
+\begin{DoxyReturn}{Returns}
+dir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1Ray2_a4fd8b77b411f464733cf41a0a8aa930e}\label{classastu_1_1Ray2_a4fd8b77b411f464733cf41a0a8aa930e}} 
+\index{astu\+::\+Ray2@{astu\+::\+Ray2}!Get\+Start\+Point@{Get\+Start\+Point}}
+\index{Get\+Start\+Point@{Get\+Start\+Point}!astu\+::\+Ray2@{astu\+::\+Ray2}}
+\subsubsection{\texorpdfstring{Get\+Start\+Point()}{GetStartPoint()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1Ray2}{astu\+::\+Ray2}$<$ T $>$\+::Get\+Start\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the start point of this ray.
+
+\begin{DoxyReturn}{Returns}
+the start point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Ray2.\+h\end{DoxyCompactItemize}

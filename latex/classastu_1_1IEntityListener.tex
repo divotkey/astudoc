@@ -4,14 +4,23 @@
 
 {\ttfamily \#include $<$Entity\+Service.\+h$>$}
 
+
+
+Inheritance diagram for astu\+:\+:I\+Entity\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classastu_1_1IEntityListener__inherit__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual \hyperlink{classastu_1_1IEntityListener_ad3e01cd267ff128c2176d06897c8c7b6}{$\sim$\+I\+Entity\+Listener} ()
 \item 
-virtual void \hyperlink{classastu_1_1IEntityListener_a97132aa5a0f0e593c487127b32505447}{On\+Entity\+Added} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ entity)=0
+virtual void \hyperlink{classastu_1_1IEntityListener_afa087302fdf0bd999297b0d35ceb1f61}{On\+Entity\+Added} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$ entity)=0
 \item 
-virtual void \hyperlink{classastu_1_1IEntityListener_a4fbd5c1a239a1c57c1567a630016074b}{On\+Entity\+Removed} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$ entity)=0
+virtual void \hyperlink{classastu_1_1IEntityListener_ab3d5a276da5e42cc4831e747fdf11718}{On\+Entity\+Removed} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$ entity)=0
 \end{DoxyCompactItemize}
 
 
@@ -28,11 +37,11 @@ Interface for entity listeners which get informed when entities get added or rem
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1IEntityListener_a97132aa5a0f0e593c487127b32505447}\label{classastu_1_1IEntityListener_a97132aa5a0f0e593c487127b32505447}} 
+\mbox{\Hypertarget{classastu_1_1IEntityListener_afa087302fdf0bd999297b0d35ceb1f61}\label{classastu_1_1IEntityListener_afa087302fdf0bd999297b0d35ceb1f61}} 
 \index{astu\+::\+I\+Entity\+Listener@{astu\+::\+I\+Entity\+Listener}!On\+Entity\+Added@{On\+Entity\+Added}}
 \index{On\+Entity\+Added@{On\+Entity\+Added}!astu\+::\+I\+Entity\+Listener@{astu\+::\+I\+Entity\+Listener}}
 \subsubsection{\texorpdfstring{On\+Entity\+Added()}{OnEntityAdded()}}
-{\footnotesize\ttfamily virtual void astu\+::\+I\+Entity\+Listener\+::\+On\+Entity\+Added (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Entity\+Listener\+::\+On\+Entity\+Added (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Called when an entity has been added.
 
@@ -41,11 +50,15 @@ Called when an entity has been added.
 {\em entity} & the entity which has been added \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1IEntityListener_a4fbd5c1a239a1c57c1567a630016074b}\label{classastu_1_1IEntityListener_a4fbd5c1a239a1c57c1567a630016074b}} 
+
+
+Implemented in \hyperlink{classastu_1_1EntityListener_a0c123b57dcabc4c2b6cee8f05db545c8}{astu\+::\+Entity\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1IEntityListener_ab3d5a276da5e42cc4831e747fdf11718}\label{classastu_1_1IEntityListener_ab3d5a276da5e42cc4831e747fdf11718}} 
 \index{astu\+::\+I\+Entity\+Listener@{astu\+::\+I\+Entity\+Listener}!On\+Entity\+Removed@{On\+Entity\+Removed}}
 \index{On\+Entity\+Removed@{On\+Entity\+Removed}!astu\+::\+I\+Entity\+Listener@{astu\+::\+I\+Entity\+Listener}}
 \subsubsection{\texorpdfstring{On\+Entity\+Removed()}{OnEntityRemoved()}}
-{\footnotesize\ttfamily virtual void astu\+::\+I\+Entity\+Listener\+::\+On\+Entity\+Removed (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void astu\+::\+I\+Entity\+Listener\+::\+On\+Entity\+Removed (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Called when an entity has been removed.
 
@@ -56,6 +69,10 @@ Called when an entity has been removed.
 \end{DoxyParams}
 
 
+Implemented in \hyperlink{classastu_1_1EntityListener_ae380d941fafd6933a9f290ac50e7f32b}{astu\+::\+Entity\+Listener}.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Entity\+Service.\+h\end{DoxyCompactItemize}
+include/\+E\+C\+S/Entity\+Service.\+h\end{DoxyCompactItemize}

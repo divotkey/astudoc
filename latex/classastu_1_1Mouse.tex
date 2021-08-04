@@ -4,6 +4,18 @@
 
 {\ttfamily \#include $<$Mouse.\+h$>$}
 
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classastu_1_1Mouse_a18205a089111599d94479bfecc5ca7ec}{Button} \{ \newline
+{\bfseries L\+E\+FT} = 1, 
+{\bfseries M\+I\+D\+D\+LE} = 2, 
+{\bfseries R\+I\+G\+HT} = 3, 
+{\bfseries S\+I\+D\+E\+\_\+1} = 4, 
+\newline
+{\bfseries S\+I\+D\+E\+\_\+2} = 5
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,6 +28,8 @@ void \hyperlink{classastu_1_1Mouse_a1aebb61a647f115381eeb2d3528fefe8}{Set\+Curso
 int \hyperlink{classastu_1_1Mouse_a22202c4dec1e13df857a524df45b4fc0}{Get\+CursorX} () const
 \item 
 int \hyperlink{classastu_1_1Mouse_a8f008ad4c4a9cba165ff74e44b0bdb17}{Get\+CursorY} () const
+\item 
+\hyperlink{classastu_1_1Vector2}{Vector2f} \hyperlink{classastu_1_1Mouse_a7b27c582a681a9328c9d36367a62183f}{Get\+Cursor\+In\+Worldspace} (const \hyperlink{classastu_1_1suite2d_1_1Camera}{suite2d\+::\+Camera} \&camera)
 \end{DoxyCompactItemize}
 
 
@@ -24,7 +38,32 @@ Provides access to mouse input.
 
 This class is realized using the Monostate design pattern. 
 
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classastu_1_1Mouse_a18205a089111599d94479bfecc5ca7ec}\label{classastu_1_1Mouse_a18205a089111599d94479bfecc5ca7ec}} 
+\index{astu\+::\+Mouse@{astu\+::\+Mouse}!Button@{Button}}
+\index{Button@{Button}!astu\+::\+Mouse@{astu\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Button}{Button}}
+{\footnotesize\ttfamily enum \hyperlink{classastu_1_1Mouse_a18205a089111599d94479bfecc5ca7ec}{astu\+::\+Mouse\+::\+Button}}
+
+Enum constants for mouse buttons. 
+
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Mouse_a7b27c582a681a9328c9d36367a62183f}\label{classastu_1_1Mouse_a7b27c582a681a9328c9d36367a62183f}} 
+\index{astu\+::\+Mouse@{astu\+::\+Mouse}!Get\+Cursor\+In\+Worldspace@{Get\+Cursor\+In\+Worldspace}}
+\index{Get\+Cursor\+In\+Worldspace@{Get\+Cursor\+In\+Worldspace}!astu\+::\+Mouse@{astu\+::\+Mouse}}
+\subsubsection{\texorpdfstring{Get\+Cursor\+In\+Worldspace()}{GetCursorInWorldspace()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Vector2}{Vector2f} astu\+::\+Mouse\+::\+Get\+Cursor\+In\+Worldspace (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1suite2d_1_1Camera}{suite2d\+::\+Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+Returns the cursor position in world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & the camera used to transform screen space coords \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cursor position in world space 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1Mouse_a22202c4dec1e13df857a524df45b4fc0}\label{classastu_1_1Mouse_a22202c4dec1e13df857a524df45b4fc0}} 
 \index{astu\+::\+Mouse@{astu\+::\+Mouse}!Get\+CursorX@{Get\+CursorX}}
 \index{Get\+CursorX@{Get\+CursorX}!astu\+::\+Mouse@{astu\+::\+Mouse}}
@@ -97,4 +136,4 @@ Sets the position of the mouse cursor.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Mouse.\+h\end{DoxyCompactItemize}
+include/\+Input/Mouse.\+h\end{DoxyCompactItemize}

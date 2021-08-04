@@ -1,0 +1,143 @@
+\hypertarget{classastu_1_1Updatable}{}\section{astu\+:\+:Updatable Class Reference}
+\label{classastu_1_1Updatable}\index{astu\+::\+Updatable@{astu\+::\+Updatable}}
+
+
+{\ttfamily \#include $<$Update\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Updatable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1Updatable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Updatable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classastu_1_1Updatable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Updatable_a5004b9bf883f7961762d0edc6b8329ba}{Updatable} (int priority=Priority\+::\+Normal)
+\item 
+virtual \hyperlink{classastu_1_1Updatable_a754466cfead86f94f366c32807eb118b}{$\sim$\+Updatable} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{On\+Update} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Services can derive from this class to get updated once each main cycle.
+
+{\bfseries Example Header-\/\+File for \hyperlink{classastu_1_1Updatable}{Updatable} Services} 
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#pragma once}
+
+\textcolor{comment}{// AST Utilities includes}
+\textcolor{preprocessor}{#include <\hyperlink{AstuServices_8h}{AstuServices.h}>}
+
+\textcolor{keyword}{class }MyUpdatableService 
+    : \textcolor{keyword}{public} \hyperlink{classastu_1_1BaseService}{astu::BaseService}
+    , \textcolor{keyword}{private} \hyperlink{classastu_1_1Updatable}{astu::Updatable}
+\{
+\textcolor{keyword}{public}:
+    
+    \textcolor{comment}{// Constructor.}
+    MyUpdatableService(\textcolor{keywordtype}{int} updatePriority = astu::Priority::Normal);
+
+\textcolor{keyword}{private}:
+
+    \textcolor{comment}{// Inherited via BaseService}
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{OnStartup}() \textcolor{keyword}{override};
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{OnShutdown}() \textcolor{keyword}{override};
+
+    \textcolor{comment}{// Inherited via Updatable}
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{OnUpdate} () \textcolor{keyword}{override};
+\};
+\end{DoxyCodeInclude}
+
+
+{\bfseries Example Implementation for \hyperlink{classastu_1_1Updatable}{Updatable} Services} 
+\begin{DoxyCodeInclude}
+\textcolor{comment}{// Local includes}
+\textcolor{preprocessor}{#include "MyUpdatableService.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespaceastu}{astu};
+
+MyUpdatableService::MyUpdatableService(\textcolor{keywordtype}{int} updatePriority)
+    : \hyperlink{classastu_1_1BaseService}{BaseService}(\textcolor{stringliteral}{"My Updatable Service"})
+    , \hyperlink{classastu_1_1Updatable}{Updatable}(updatePriority)
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnStartup()
+\{
+    \textcolor{comment}{// Place initialization code here...}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnShutdown()
+\{
+    \textcolor{comment}{// Place cleanup code here...}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnUpdate()
+\{
+    \textcolor{comment}{// Update something.}
+\}
+\end{DoxyCodeInclude}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1Updatable_a5004b9bf883f7961762d0edc6b8329ba}\label{classastu_1_1Updatable_a5004b9bf883f7961762d0edc6b8329ba}} 
+\index{astu\+::\+Updatable@{astu\+::\+Updatable}!Updatable@{Updatable}}
+\index{Updatable@{Updatable}!astu\+::\+Updatable@{astu\+::\+Updatable}}
+\subsubsection{\texorpdfstring{Updatable()}{Updatable()}}
+{\footnotesize\ttfamily astu\+::\+Updatable\+::\+Updatable (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority} & the update priority \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1Updatable_a754466cfead86f94f366c32807eb118b}\label{classastu_1_1Updatable_a754466cfead86f94f366c32807eb118b}} 
+\index{astu\+::\+Updatable@{astu\+::\+Updatable}!````~Updatable@{$\sim$\+Updatable}}
+\index{````~Updatable@{$\sim$\+Updatable}!astu\+::\+Updatable@{astu\+::\+Updatable}}
+\subsubsection{\texorpdfstring{$\sim$\+Updatable()}{~Updatable()}}
+{\footnotesize\ttfamily virtual astu\+::\+Updatable\+::$\sim$\+Updatable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}\label{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}} 
+\index{astu\+::\+Updatable@{astu\+::\+Updatable}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!astu\+::\+Updatable@{astu\+::\+Updatable}}
+\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Updatable\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when an update is due. 
+
+Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+
+
+
+Reimplemented in \hyperlink{classastu_1_1EntityService_a70831a8dc185652c2c9056c4e3cc10e0}{astu\+::\+Entity\+Service}, \hyperlink{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}{astu\+::\+Sdl\+Event\+Service}, \hyperlink{classastu_1_1SdlSceneGraph2D_add3a6e67064379389068659addad0920}{astu\+::\+Sdl\+Scene\+Graph2D}, \hyperlink{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b76302}{astu\+::\+Sdl\+Time\+Service}, and \hyperlink{classastu_1_1suite2d_1_1CameraControlService_ab547e4f6103448db59d1350695bed4e8}{astu\+::suite2d\+::\+Camera\+Control\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Update\+Service.\+h\end{DoxyCompactItemize}

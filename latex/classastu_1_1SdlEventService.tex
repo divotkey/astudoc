@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Sdl\+Event\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{classastu_1_1SdlEventService__inherit__graph}
+\includegraphics[width=262pt]{classastu_1_1SdlEventService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,19 +19,31 @@ Collaboration diagram for astu\+:\+:Sdl\+Event\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=347pt]{classastu_1_1SdlEventService__coll__graph}
+\includegraphics[width=309pt]{classastu_1_1SdlEventService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}{Sdl\+Event\+Service} (int priority=0)
+\hyperlink{classastu_1_1SdlEventService_a09280da649db883caffdb148791864e0}{Sdl\+Event\+Service} (int priority=Priority\+::\+Normal)
 \item 
-\hyperlink{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}{$\sim$\+Sdl\+Event\+Service} ()
+virtual \hyperlink{classastu_1_1SdlEventService_aeaf9a60c44bec12daed28882a5c2fe3f}{$\sim$\+Sdl\+Event\+Service} ()
 \item 
 bool \hyperlink{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}{Is\+Quit} () const
 \item 
 void \hyperlink{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}{Clear\+Quit} ()
+\item 
+void \hyperlink{classastu_1_1SdlEventService_ab279fe046c27bf9b6468dfbd8df5ff20}{Add\+Sdl\+Event\+Listener} (I\+Sdl\+Event\+Listener \&listener)
+\item 
+void \hyperlink{classastu_1_1SdlEventService_ae3deae7488de012e7789662c314fd260}{Remove\+Sdl\+Event\+Listener} (I\+Sdl\+Event\+Listener \&listener)
+\item 
+bool \hyperlink{classastu_1_1SdlEventService_a81cdf292655cea80f022673d276b5375}{Has\+Sdl\+Event\+Listener} (I\+Sdl\+Event\+Listener \&listener) const
+\item 
+void \hyperlink{classastu_1_1SdlEventService_a54a2aba51c214090a484a743ccabf6f5}{Add\+Sdl\+Resize\+Listener} (\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&listener)
+\item 
+void \hyperlink{classastu_1_1SdlEventService_aeba11c482d2f1c7701a44f9dbbf917df}{Remove\+Sdl\+Resize\+Listener} (\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&listener)
+\item 
+bool \hyperlink{classastu_1_1SdlEventService_a0358addd25338f055f38912df3211ffa}{Has\+Sdl\+Resize\+Listener} (\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&listener) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -51,11 +63,11 @@ Initializes the S\+DL event submodule.
 This service processes the S\+DL event queue and distributes the events through the various abstractions layers (input, window-\/handling, etc.). 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}\label{classastu_1_1SdlEventService_ad8da3cc63eb9810ba27a80bfeb68122d}} 
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a09280da649db883caffdb148791864e0}\label{classastu_1_1SdlEventService_a09280da649db883caffdb148791864e0}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Sdl\+Event\+Service@{Sdl\+Event\+Service}}
 \index{Sdl\+Event\+Service@{Sdl\+Event\+Service}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
 \subsubsection{\texorpdfstring{Sdl\+Event\+Service()}{SdlEventService()}}
-{\footnotesize\ttfamily astu\+::\+Sdl\+Event\+Service\+::\+Sdl\+Event\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Event\+Service\+::\+Sdl\+Event\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
 
 Constructor.
 
@@ -64,22 +76,84 @@ Constructor.
 {\em priority} & the priority used to update this service \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}\label{classastu_1_1SdlEventService_a388605cdc2ed3eb6fc70d2a020047552}} 
+\mbox{\Hypertarget{classastu_1_1SdlEventService_aeaf9a60c44bec12daed28882a5c2fe3f}\label{classastu_1_1SdlEventService_aeaf9a60c44bec12daed28882a5c2fe3f}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!````~Sdl\+Event\+Service@{$\sim$\+Sdl\+Event\+Service}}
 \index{````~Sdl\+Event\+Service@{$\sim$\+Sdl\+Event\+Service}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
 \subsubsection{\texorpdfstring{$\sim$\+Sdl\+Event\+Service()}{~SdlEventService()}}
-{\footnotesize\ttfamily astu\+::\+Sdl\+Event\+Service\+::$\sim$\+Sdl\+Event\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Event\+Service\+::$\sim$\+Sdl\+Event\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_ab279fe046c27bf9b6468dfbd8df5ff20}\label{classastu_1_1SdlEventService_ab279fe046c27bf9b6468dfbd8df5ff20}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Add\+Sdl\+Event\+Listener@{Add\+Sdl\+Event\+Listener}}
+\index{Add\+Sdl\+Event\+Listener@{Add\+Sdl\+Event\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Add\+Sdl\+Event\+Listener()}{AddSdlEventListener()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Add\+Sdl\+Event\+Listener (\begin{DoxyParamCaption}\item[{I\+Sdl\+Event\+Listener \&}]{listener }\end{DoxyParamCaption})}
+
+Adds an event listener which listens to raw S\+DL events. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the listener has already been added \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a54a2aba51c214090a484a743ccabf6f5}\label{classastu_1_1SdlEventService_a54a2aba51c214090a484a743ccabf6f5}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Add\+Sdl\+Resize\+Listener@{Add\+Sdl\+Resize\+Listener}}
+\index{Add\+Sdl\+Resize\+Listener@{Add\+Sdl\+Resize\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Add\+Sdl\+Resize\+Listener()}{AddSdlResizeListener()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Add\+Sdl\+Resize\+Listener (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&}]{listener }\end{DoxyParamCaption})}
+
+Adds an resize listener which listens to S\+DL resize events. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the listener has already been added \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}\label{classastu_1_1SdlEventService_afe744162d9089344bfc32f6d65111ff6}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Clear\+Quit@{Clear\+Quit}}
 \index{Clear\+Quit@{Clear\+Quit}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
 \subsubsection{\texorpdfstring{Clear\+Quit()}{ClearQuit()}}
 {\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Clear\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Clears the quit-\/signal if set. \mbox{\Hypertarget{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}\label{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}} 
+Clears the quit-\/signal if set. \mbox{\Hypertarget{classastu_1_1SdlEventService_a81cdf292655cea80f022673d276b5375}\label{classastu_1_1SdlEventService_a81cdf292655cea80f022673d276b5375}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Has\+Sdl\+Event\+Listener@{Has\+Sdl\+Event\+Listener}}
+\index{Has\+Sdl\+Event\+Listener@{Has\+Sdl\+Event\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Has\+Sdl\+Event\+Listener()}{HasSdlEventListener()}}
+{\footnotesize\ttfamily bool astu\+::\+Sdl\+Event\+Service\+::\+Has\+Sdl\+Event\+Listener (\begin{DoxyParamCaption}\item[{I\+Sdl\+Event\+Listener \&}]{listener }\end{DoxyParamCaption}) const}
+
+Tests whether an event listener has already been added. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_a0358addd25338f055f38912df3211ffa}\label{classastu_1_1SdlEventService_a0358addd25338f055f38912df3211ffa}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Has\+Sdl\+Resize\+Listener@{Has\+Sdl\+Resize\+Listener}}
+\index{Has\+Sdl\+Resize\+Listener@{Has\+Sdl\+Resize\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Has\+Sdl\+Resize\+Listener()}{HasSdlResizeListener()}}
+{\footnotesize\ttfamily bool astu\+::\+Sdl\+Event\+Service\+::\+Has\+Sdl\+Resize\+Listener (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&}]{listener }\end{DoxyParamCaption}) const}
+
+Tests whether an resize listener has already been added. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}\label{classastu_1_1SdlEventService_ac7b0eaae46bff34cc0d305a3dc3cea68}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Is\+Quit@{Is\+Quit}}
 \index{Is\+Quit@{Is\+Quit}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
 \subsubsection{\texorpdfstring{Is\+Quit()}{IsQuit()}}
@@ -96,11 +170,11 @@ Return whether a quit-\/signal has been detected.
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlEventService_a71805a124600a23e48158daa5dc57fff}\label{classastu_1_1SdlEventService_a71805a124600a23e48158daa5dc57fff}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!On\+Startup@{On\+Startup}}
@@ -108,11 +182,11 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}\label{classastu_1_1SdlEventService_a67090f42250433506b8bfb4254df9e50}} 
 \index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!On\+Update@{On\+Update}}
@@ -120,12 +194,38 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8
 \subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Event\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called when this updatable gets updated. 
+Called when an update is due. 
 
-Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+Reimplemented from \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}.
 
+\mbox{\Hypertarget{classastu_1_1SdlEventService_ae3deae7488de012e7789662c314fd260}\label{classastu_1_1SdlEventService_ae3deae7488de012e7789662c314fd260}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Remove\+Sdl\+Event\+Listener@{Remove\+Sdl\+Event\+Listener}}
+\index{Remove\+Sdl\+Event\+Listener@{Remove\+Sdl\+Event\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Sdl\+Event\+Listener()}{RemoveSdlEventListener()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Remove\+Sdl\+Event\+Listener (\begin{DoxyParamCaption}\item[{I\+Sdl\+Event\+Listener \&}]{listener }\end{DoxyParamCaption})}
+
+Removes an event listener. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlEventService_aeba11c482d2f1c7701a44f9dbbf917df}\label{classastu_1_1SdlEventService_aeba11c482d2f1c7701a44f9dbbf917df}} 
+\index{astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}!Remove\+Sdl\+Resize\+Listener@{Remove\+Sdl\+Resize\+Listener}}
+\index{Remove\+Sdl\+Resize\+Listener@{Remove\+Sdl\+Resize\+Listener}!astu\+::\+Sdl\+Event\+Service@{astu\+::\+Sdl\+Event\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Sdl\+Resize\+Listener()}{RemoveSdlResizeListener()}}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Event\+Service\+::\+Remove\+Sdl\+Resize\+Listener (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlResizeListener}{I\+Sdl\+Resize\+Listener} \&}]{listener }\end{DoxyParamCaption})}
+
+Removes an resize listener. This method is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & event listener to remove \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Sdl\+Event\+Service.\+h\end{DoxyCompactItemize}
+include/\+Suite\+S\+D\+L/Sdl\+Event\+Service.\+h\end{DoxyCompactItemize}

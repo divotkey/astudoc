@@ -1,0 +1,181 @@
+\hypertarget{classastu_1_1suite2d_1_1CameraControlService}{}\section{astu\+:\+:suite2d\+:\+:Camera\+Control\+Service Class Reference}
+\label{classastu_1_1suite2d_1_1CameraControlService}\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+
+
+{\ttfamily \#include $<$Camera\+Control\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Camera\+Control\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1suite2d_1_1CameraControlService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Camera\+Control\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1suite2d_1_1CameraControlService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CameraControlService_a353fcc63a3b0086216d9096cb43d5d08}{Camera\+Control\+Service} (int update\+Priority=astu\+::\+Priority\+::\+Normal)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CameraControlService_a7965cdf848813b62aed86ecc8c34fcc8}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CameraControlService_aaf485c9ed16494fc52ce3ebe34b1e4d9}{On\+Shutdown} () override
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1CameraControlService_ab547e4f6103448db59d1350695bed4e8}{On\+Update} () override
+\item 
+virtual bool \hyperlink{classastu_1_1suite2d_1_1CameraControlService_aa0a09cd56307bfab4b410ed06ffa5c74}{On\+Key\+Pressed} (int keycode) override
+\item 
+virtual bool \hyperlink{classastu_1_1suite2d_1_1CameraControlService_aecd396dc1d0731e9b21b9dc148e4b96b}{On\+Mouse\+Button\+Pressed} (int button, int x, int y) override
+\item 
+virtual bool \hyperlink{classastu_1_1suite2d_1_1CameraControlService_a4d7ad40d697e2ee2a87303032ca19333}{On\+Mouse\+Button\+Released} (int button, int x, int y) override
+\item 
+virtual bool \hyperlink{classastu_1_1suite2d_1_1CameraControlService_a741757d88bd6f104c71fe8f5f1a7bd69}{On\+Mouse\+Wheel} (int amount) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This service lets the user change the camera mode while the application is running. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_a353fcc63a3b0086216d9096cb43d5d08}\label{classastu_1_1suite2d_1_1CameraControlService_a353fcc63a3b0086216d9096cb43d5d08}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!Camera\+Control\+Service@{Camera\+Control\+Service}}
+\index{Camera\+Control\+Service@{Camera\+Control\+Service}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{Camera\+Control\+Service()}{CameraControlService()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+Camera\+Control\+Service (\begin{DoxyParamCaption}\item[{int}]{update\+Priority = {\ttfamily astu\+:\+:Priority\+:\+:Normal} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+Priority} & the priority used to update this service \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_aa0a09cd56307bfab4b410ed06ffa5c74}\label{classastu_1_1suite2d_1_1CameraControlService_aa0a09cd56307bfab4b410ed06ffa5c74}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Key\+Pressed@{On\+Key\+Pressed}}
+\index{On\+Key\+Pressed@{On\+Key\+Pressed}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Key\+Pressed()}{OnKeyPressed()}}
+{\footnotesize\ttfamily virtual bool astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Key\+Pressed (\begin{DoxyParamCaption}\item[{int}]{keycode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by this base class when a key has been pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & the code of the key \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1KeystrokeListener_ad4bb14ad1fd43fd200411353eeb99b5a}{astu\+::\+Keystroke\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_aecd396dc1d0731e9b21b9dc148e4b96b}\label{classastu_1_1suite2d_1_1CameraControlService_aecd396dc1d0731e9b21b9dc148e4b96b}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Mouse\+Button\+Pressed@{On\+Mouse\+Button\+Pressed}}
+\index{On\+Mouse\+Button\+Pressed@{On\+Mouse\+Button\+Pressed}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Button\+Pressed()}{OnMouseButtonPressed()}}
+{\footnotesize\ttfamily virtual bool astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by this base class when a mouse button has been pressed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button which has been pressed \\
+\hline
+{\em x} & the x-\/coordinate of the mouse course in screen space \\
+\hline
+{\em y} & the y-\/coordinate of the mouse course in screen space \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1MouseButtonListener_abc95fea12cbecf9f8fc1f7ede14860e7}{astu\+::\+Mouse\+Button\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_a4d7ad40d697e2ee2a87303032ca19333}\label{classastu_1_1suite2d_1_1CameraControlService_a4d7ad40d697e2ee2a87303032ca19333}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Mouse\+Button\+Released@{On\+Mouse\+Button\+Released}}
+\index{On\+Mouse\+Button\+Released@{On\+Mouse\+Button\+Released}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Button\+Released()}{OnMouseButtonReleased()}}
+{\footnotesize\ttfamily virtual bool astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Mouse\+Button\+Released (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by this base class when a mouse button has been released.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & the button which has been released \\
+\hline
+{\em x} & the x-\/coordinate of the mouse course in screen space \\
+\hline
+{\em y} & the y-\/coordinate of the mouse course in screen space \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1MouseButtonListener_a14a97354c4f009c5f91f9877e00cef49}{astu\+::\+Mouse\+Button\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_a741757d88bd6f104c71fe8f5f1a7bd69}\label{classastu_1_1suite2d_1_1CameraControlService_a741757d88bd6f104c71fe8f5f1a7bd69}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Mouse\+Wheel@{On\+Mouse\+Wheel}}
+\index{On\+Mouse\+Wheel@{On\+Mouse\+Wheel}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Mouse\+Wheel()}{OnMouseWheel()}}
+{\footnotesize\ttfamily virtual bool astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Mouse\+Wheel (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by this base class when a mouse wheel signals has received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount scrolled \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1MouseWheelListener_ae159bccdfb49aadd58079fb6ce32e914}{astu\+::\+Mouse\+Wheel\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_aaf485c9ed16494fc52ce3ebe34b1e4d9}\label{classastu_1_1suite2d_1_1CameraControlService_aaf485c9ed16494fc52ce3ebe34b1e4d9}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base method on shutdown.
+
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_a7965cdf848813b62aed86ecc8c34fcc8}\label{classastu_1_1suite2d_1_1CameraControlService_a7965cdf848813b62aed86ecc8c34fcc8}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base class on startup.
+
+Derived can override this method for initialization purposes. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CameraControlService_ab547e4f6103448db59d1350695bed4e8}\label{classastu_1_1suite2d_1_1CameraControlService_ab547e4f6103448db59d1350695bed4e8}} 
+\index{astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!astu\+::suite2d\+::\+Camera\+Control\+Service@{astu\+::suite2d\+::\+Camera\+Control\+Service}}
+\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Camera\+Control\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an update is due. 
+
+Reimplemented from \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Camera\+Control\+Service.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\hypertarget{classastu_1_1IteratingEntitySystem}{}\section{astu\+:\+:Iterating\+Entity\+System Class Reference}
+\label{classastu_1_1IteratingEntitySystem}\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+
+
+{\ttfamily \#include $<$Entity\+Systems.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Iterating\+Entity\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classastu_1_1IteratingEntitySystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Iterating\+Entity\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classastu_1_1IteratingEntitySystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1IteratingEntitySystem_a309f14cfea4b5786ca3e41907f3fb41d}{Iterating\+Entity\+System} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family, int priority=Priority\+::\+Normal)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1EntityService}{Entity\+Service} \& \hyperlink{classastu_1_1IteratingEntitySystem_a10b0a3e3be8eb0121b8c864144cb0ff9}{Get\+Entity\+Service} ()
+\item 
+const \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View} \& \hyperlink{classastu_1_1IteratingEntitySystem_ac5eff21df99058f0a4174257460c28e2}{Get\+Entity\+View} () const
+\item 
+virtual void \hyperlink{classastu_1_1IteratingEntitySystem_a76c7d21da428aa7a6435dc3692fbe6f2}{Process\+Entity} (\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&entity)
+\item 
+virtual void \hyperlink{classastu_1_1IteratingEntitySystem_a7534ceb189ea282024bb9917cc244e94}{On\+Update} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A system which iterates over a family of entities.
+
+{\bfseries Example Iterating Entity-\/\+System}
+
+This example shows how to build your own entity system that iterates over a single family of entities.
+
+Header file
+
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#pragma once}
+
+\textcolor{comment}{// AST Utilities includes}
+\textcolor{preprocessor}{#include <\hyperlink{AstuECS_8h}{AstuECS.h}>}
+
+\textcolor{keyword}{class }MyIteratingEntitySystem 
+    : \textcolor{keyword}{public} \hyperlink{classastu_1_1BaseService}{astu::BaseService}
+    , \textcolor{keyword}{private} \hyperlink{classastu_1_1IteratingEntitySystem}{astu::IteratingEntitySystem}
+\{
+\textcolor{keyword}{public}:
+
+    \textcolor{comment}{// Constructor.}
+    MyIteratingEntitySystem(\textcolor{keywordtype}{int} updatePriority = astu::Priority::Normal);
+
+\textcolor{keyword}{private}:
+    \textcolor{comment}{// The family of entities this system processes}
+    \textcolor{keyword}{static} \textcolor{keyword}{const} \hyperlink{classastu_1_1EntityFamily}{astu::EntityFamily} FAMILY;
+
+    \textcolor{comment}{// Inherited via BaseService}
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{OnStartup}() \textcolor{keyword}{override};
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{OnShutdown}() \textcolor{keyword}{override};
+
+    \textcolor{comment}{// Inherited via IteratingEntitySystem}
+    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1IteratingEntitySystem_a76c7d21da428aa7a6435dc3692fbe6f2}{ProcessEntity}(\hyperlink{classastu_1_1Entity}{astu::Entity}& entity) \textcolor{keyword}{override};
+\};
+\end{DoxyCodeInclude}
+
+
+Implementation file 
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#include "MyIteratingEntitySystem.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespaceastu}{astu};
+\textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+
+\textcolor{comment}{// TODO add types of entity components to the family e.g.,}
+\textcolor{comment}{// EntityFamily::Create<astu2d::CPose, astu2d::CBody>();}
+
+\textcolor{keyword}{const} \hyperlink{classastu_1_1EntityFamily}{EntityFamily} MyIteratingEntitySystem::FAMILY = EntityFamily::Create<>();
+
+MyIteratingEntitySystem::MyIteratingEntitySystem(\textcolor{keywordtype}{int} updatePriority)
+    : \hyperlink{classastu_1_1BaseService}{BaseService}(\textcolor{stringliteral}{"My Iterating-Entity System"})
+    , \hyperlink{classastu_1_1IteratingEntitySystem}{IteratingEntitySystem}(FAMILY, updatePriority)    
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyIteratingEntitySystem::OnStartup()
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyIteratingEntitySystem::OnShutdown()
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyIteratingEntitySystem::ProcessEntity(\hyperlink{classastu_1_1Entity}{Entity} & entity)
+\{
+    \textcolor{comment}{// Process entity    }
+\}
+\end{DoxyCodeInclude}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1IteratingEntitySystem_a309f14cfea4b5786ca3e41907f3fb41d}\label{classastu_1_1IteratingEntitySystem_a309f14cfea4b5786ca3e41907f3fb41d}} 
+\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}!Iterating\+Entity\+System@{Iterating\+Entity\+System}}
+\index{Iterating\+Entity\+System@{Iterating\+Entity\+System}!astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+\subsubsection{\texorpdfstring{Iterating\+Entity\+System()}{IteratingEntitySystem()}}
+{\footnotesize\ttfamily astu\+::\+Iterating\+Entity\+System\+::\+Iterating\+Entity\+System (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family,  }\item[{int}]{priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em family} & the family of entities this system processes \\
+\hline
+{\em priority} & the update priority \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1IteratingEntitySystem_a10b0a3e3be8eb0121b8c864144cb0ff9}\label{classastu_1_1IteratingEntitySystem_a10b0a3e3be8eb0121b8c864144cb0ff9}} 
+\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}!Get\+Entity\+Service@{Get\+Entity\+Service}}
+\index{Get\+Entity\+Service@{Get\+Entity\+Service}!astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+\subsubsection{\texorpdfstring{Get\+Entity\+Service()}{GetEntityService()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1EntityService}{Entity\+Service}\& astu\+::\+Iterating\+Entity\+System\+::\+Get\+Entity\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Convenient method to access the entity service.
+
+\begin{DoxyReturn}{Returns}
+the entity service 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1IteratingEntitySystem_ac5eff21df99058f0a4174257460c28e2}\label{classastu_1_1IteratingEntitySystem_ac5eff21df99058f0a4174257460c28e2}} 
+\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}!Get\+Entity\+View@{Get\+Entity\+View}}
+\index{Get\+Entity\+View@{Get\+Entity\+View}!astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+\subsubsection{\texorpdfstring{Get\+Entity\+View()}{GetEntityView()}}
+{\footnotesize\ttfamily const \hyperlink{group__ecs__group_gace2fb790b86c3908a65e4222f7ac2f4e}{Entity\+View}\& astu\+::\+Iterating\+Entity\+System\+::\+Get\+Entity\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the view to the family of entities this system processes.
+
+\begin{DoxyReturn}{Returns}
+the entity view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1IteratingEntitySystem_a7534ceb189ea282024bb9917cc244e94}\label{classastu_1_1IteratingEntitySystem_a7534ceb189ea282024bb9917cc244e94}} 
+\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Iterating\+Entity\+System\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called when an update is due. 
+
+Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+
+\mbox{\Hypertarget{classastu_1_1IteratingEntitySystem_a76c7d21da428aa7a6435dc3692fbe6f2}\label{classastu_1_1IteratingEntitySystem_a76c7d21da428aa7a6435dc3692fbe6f2}} 
+\index{astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}!Process\+Entity@{Process\+Entity}}
+\index{Process\+Entity@{Process\+Entity}!astu\+::\+Iterating\+Entity\+System@{astu\+::\+Iterating\+Entity\+System}}
+\subsubsection{\texorpdfstring{Process\+Entity()}{ProcessEntity()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Iterating\+Entity\+System\+::\+Process\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1Entity}{astu\+::\+Entity} \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by \textquotesingle{}Process\+Entities\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to process \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+E\+C\+S/Entity\+Systems.\+h\end{DoxyCompactItemize}

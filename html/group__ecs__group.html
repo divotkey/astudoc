@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -61,7 +61,8 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Entity component system</div>  </div>
 </div><!--header-->
@@ -72,6 +73,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityFactoryService.html">astu::EntityFactoryService</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityComponent.html">astu::EntityComponent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html">astu::Entity</a></td></tr>
@@ -82,9 +85,37 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityService.html">astu::EntityService</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1OneFamilyEntitySystem.html">astu::OneFamilyEntitySystem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1IteratingEntitySystem.html">astu::IteratingEntitySystem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1EntityListener.html">astu::EntityListener</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gace2fb790b86c3908a65e4222f7ac2f4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ecs__group.html#gace2fb790b86c3908a65e4222f7ac2f4e">astu::EntityView</a> = std::vector&lt; std::shared_ptr&lt; <a class="el" href="classastu_1_1Entity.html">astu::Entity</a> &gt; &gt;</td></tr>
+<tr class="separator:gace2fb790b86c3908a65e4222f7ac2f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module contains templates, classes and functions dedicated to the entity component system (ECS). </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gace2fb790b86c3908a65e4222f7ac2f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace2fb790b86c3908a65e4222f7ac2f4e">&#9670;&nbsp;</a></span>EntityView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__ecs__group.html#gace2fb790b86c3908a65e4222f7ac2f4e">astu::EntityView</a> = typedef std::vector&lt;std::shared_ptr&lt;<a class="el" href="classastu_1_1Entity.html">astu::Entity</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Type alias that represents an entity view.</p>
+<p>An entity view is a vector to (shared) pointers to entities. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

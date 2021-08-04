@@ -8,30 +8,381 @@ This module contains templates, classes and functions dedicated to services.
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classastu_1_1IService}{astu\+::\+I\+Service}
+class \hyperlink{classastu_1_1ActionSignalService}{astu\+::\+Action\+Signal\+Service}
+\item 
+class \hyperlink{classastu_1_1InteractiveApplication}{astu\+::\+Interactive\+Application}
+\item 
+class \hyperlink{classastu_1_1RenderService}{astu\+::\+Render\+Service}
+\item 
+class \hyperlink{classastu_1_1Service}{astu\+::\+Service}
 \item 
 class \hyperlink{classastu_1_1BaseService}{astu\+::\+Base\+Service}
 \item 
-class \hyperlink{classastu_1_1IWindowManager}{astu\+::\+I\+Window\+Manager}
+class \hyperlink{classastu_1_1ServiceManager}{astu\+::\+Service\+Manager}
 \item 
 class \hyperlink{classastu_1_1ISignalListener}{astu\+::\+I\+Signal\+Listener$<$ T $>$}
 \item 
 class \hyperlink{classastu_1_1SignalService}{astu\+::\+Signal\+Service$<$ T $>$}
 \item 
-class \hyperlink{classastu_1_1ServiceManager}{astu\+::\+Service\+Manager}
-\item 
-class \hyperlink{classastu_1_1ITimeService}{astu\+::\+I\+Time\+Service}
+class \hyperlink{classastu_1_1SignalListener}{astu\+::\+Signal\+Listener$<$ T $>$}
 \item 
 class \hyperlink{classastu_1_1StateService}{astu\+::\+State\+Service}
+\item 
+class \hyperlink{classastu_1_1TimedTask}{astu\+::\+Timed\+Task}
+\item 
+class \hyperlink{classastu_1_1DelegateTaskBuilder}{astu\+::\+Delegate\+Task\+Builder}
+\item 
+class \hyperlink{classastu_1_1Task}{astu\+::\+Task}
+\item 
+class \hyperlink{classastu_1_1TaskBuilder}{astu\+::\+Task\+Builder$<$ T $>$}
+\item 
+class \hyperlink{classastu_1_1TaskService}{astu\+::\+Task\+Service}
+\item 
+class \hyperlink{classastu_1_1TimeService}{astu\+::\+Time\+Service}
+\item 
+class \hyperlink{classastu_1_1TimeClient}{astu\+::\+Time\+Client}
 \item 
 class \hyperlink{classastu_1_1IUpdatable}{astu\+::\+I\+Updatable}
 \item 
 class \hyperlink{classastu_1_1UpdateService}{astu\+::\+Update\+Service}
 \item 
-class \hyperlink{classastu_1_1UpdatableBaseService}{astu\+::\+Updatable\+Base\+Service}
+class \hyperlink{classastu_1_1Updatable}{astu\+::\+Updatable}
+\item 
+class \hyperlink{classastu_1_1WindowService}{astu\+::\+Window\+Service}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}()~\hyperlink{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}{astu\+::\+Service\+Manager\+::\+Get\+Instance}()
+\item 
+\#define \hyperlink{group__srv__group_ga42575546f01bf92989d08916564ffc66}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE}(type)~($\ast$\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$())
+\item 
+\#define \hyperlink{group__srv__group_ga42e4ee34b527cd82ba6c0013b5d1441e}{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE}(type)~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$()
+\item 
+\#define \hyperlink{group__srv__group_gadd58983b12766275d79b748307fcd637}{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}(type,  b)~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$(b)
+\item 
+\#define \hyperlink{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}(type)~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$(nullptr)
+\item 
+\#define \hyperlink{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}(type)~(\hyperlink{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}(type) != nullptr)
+\item 
+\#define \hyperlink{group__srv__group_ga640af14a801ce66a6286ca8bc4862473}{A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES}()~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Remove\+All\+Services()
+\item 
+\#define \hyperlink{group__srv__group_gab16fd0e9f158b318812197ee283a8484}{A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES}()~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Startup\+All()
+\item 
+\#define \hyperlink{group__srv__group_ga97369e673940c499b1cd623c76aaafe5}{A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES}()~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Shutdown\+All()
+\item 
+\#define \hyperlink{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}(srv)~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Add\+Service(srv)
+\item 
+\#define \hyperlink{group__srv__group_ga91256015ad12618b8eda42106056a927}{A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}(srv\+Type, ...)~if(!\hyperlink{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}(srv\+Type)) \hyperlink{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}(std\+::make\+\_\+shared$<$srv\+Type$>$(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+) )
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}{astu\+::\+Priority} \{ \newline
+{\bfseries Very\+High} = 0, 
+{\bfseries High} = 500, 
+{\bfseries Normal} = 1000, 
+{\bfseries Low} = 1500, 
+\newline
+{\bfseries Very\+Low} = 2000
+ \}
+\item 
+enum \hyperlink{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}{astu\+::\+Resolution} \{ \newline
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca55a1cd59378161f3d8d162f7ab3c688c}{astu\+::\+Resolution\+::\+S\+V\+GA}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca8d1b2ed4d604a6be96ad2f218592b98e}{astu\+::\+Resolution\+::\+X\+GA}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca521265ba830a9825dd75ac96bffc3c04}{astu\+::\+Resolution\+::\+W\+X\+GA}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0b8f37f43da5e66c4bd58165b40b76f3}{astu\+::\+Resolution\+::\+S\+X\+GA}, 
+\newline
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca5f825911c42fe77eab9de44602f7080e}{astu\+::\+Resolution\+::\+H\+D\+\_\+1}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0019cdc8d430b07dccbbe6453de8f244}{astu\+::\+Resolution\+::\+H\+D\+\_\+2}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca188ce673037fb8cc15ef18b2db6b470b}{astu\+::\+Resolution\+::\+W\+X\+G\+A\+\_\+\+P\+L\+US}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca95c1d10ada9f6c64467275175334744b}{astu\+::\+Resolution\+::\+W\+S\+X\+G\+A\+\_\+\+P\+L\+US}, 
+\newline
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca7ff9eb087b5873e5245422ffc8e6f054}{astu\+::\+Resolution\+::\+F\+HD}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca512db9ef494be9c910409a51fbc9eb9c}{astu\+::\+Resolution\+::\+Q\+HD}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3cab61f857a573f21f72e277339f072402b}{astu\+::\+Resolution\+::\+W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN}, 
+\hyperlink{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca9a4d0ff86f135b89378b858a0d947483}{astu\+::\+Resolution\+::\+U\+H\+D\+\_\+4K}
+ \}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 This module contains templates, classes and functions dedicated to services. 
 
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}\label{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}}
+\index{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}{ASTU\_ADD\_SERVICE}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{srv }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Add\+Service(srv)}
+
+Adds a new service to the service manager.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\hyperlink{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}{ASTU\_ADD\_SERVICE}( std::make\_shared<SignalService<int>>() );
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em srv} & the service to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & in case the service has alerady been added \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{group__srv__group_ga91256015ad12618b8eda42106056a927}\label{group__srv__group_ga91256015ad12618b8eda42106056a927}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}}
+\index{A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}{ASTU\_CREATE\_AND\_ADD\_SERVICE}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+A\+N\+D\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{srv\+Type,  }\item[{}]{... }\end{DoxyParamCaption})~if(!\hyperlink{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}(srv\+Type)) \hyperlink{group__srv__group_ga8c6572c2ee70b67d9dda0b8b0d77a7d2}{A\+S\+T\+U\+\_\+\+A\+D\+D\+\_\+\+S\+E\+R\+V\+I\+CE}(std\+::make\+\_\+shared$<$srv\+Type$>$(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+) )}
+
+Adds a new service to the service manager.
+
+This macro will create a new dynamic instance of the specified service type and adds it to the service manager.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\hyperlink{group__srv__group_ga91256015ad12618b8eda42106056a927}{ASTU\_CREATE\_AND\_ADD\_SERVICE}( SignalService<int> );
+\hyperlink{group__srv__group_ga91256015ad12618b8eda42106056a927}{ASTU\_CREATE\_AND\_ADD\_SERVICE}( CameraControlService, Priority::HIGH ); * 
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em srv\+Type} & the type service to add \\
+\hline
+{\em ...} & the optional constructor parameters for the service \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & in case the service has alerady been added \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{group__srv__group_ga42e4ee34b527cd82ba6c0013b5d1441e}\label{group__srv__group_ga42e4ee34b527cd82ba6c0013b5d1441e}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE}}
+\index{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE}{ASTU\_GET\_SERVICE}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$()}
+
+Returns a (smart-\/) pointer to a service.
+
+Getting a pointer to a service is used to store this pointer for later use. Keeping a pointer of a service is preferable if a service is accessed several times in sequence or, e.\+g., in each cycle of the game loop.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+std::shared\_ptr<TimeService> timeSrv = \hyperlink{group__srv__group_ga42e4ee34b527cd82ba6c0013b5d1441e}{ASTU\_GET\_SERVICE}(TimeService);
+\textcolor{keywordtype}{double} dt = timeSrv->GetElapsedTime();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+the requested service 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the requested service is unknown \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{group__srv__group_gadd58983b12766275d79b748307fcd637}\label{group__srv__group_gadd58983b12766275d79b748307fcd637}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}{ASTU\_GET\_SERVICE\_OR\_DEFAULT}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{b }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$(b)}
+
+Returns a (smart-\/) pointer to a service.
+
+This macro will return a the requested service or the specified default service in case the service does not exist.
+
+\begin{DoxyReturn}{Returns}
+the requested service or the specified default service 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}\label{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}}
+\index{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL@{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}{ASTU\_GET\_SERVICE\_OR\_NULL}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$(nullptr)}
+
+Returns a (smart-\/) pointer to a service.
+
+This macro will return a the requested service or {\ttfamily nullptr} if the service does not exist. In case the existence of a service is optional, it is faster to query the pointer to a service and then if this pointer is {\ttfamily nullptr} or not, than using calling {\ttfamily A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+C\+IE} and then calling {\ttfamily A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+CE}.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+std::shared\_ptr<SignalService<int>> intSignals = \hyperlink{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}{ASTU\_GET\_SERVICE\_OR\_NULL}(
+      SignalService<int>);
+
+\textcolor{keywordflow}{if} (intSignals) \{
+  intSignals->QueueSignal(42);
+
+\}
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+the requested service or {\ttfamily nullptr} if the service does not exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}\label{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}}
+\index{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE}{ASTU\_HAS\_SERVICE}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+H\+A\+S\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~(\hyperlink{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}{A\+S\+T\+U\+\_\+\+G\+E\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+O\+R\+\_\+\+N\+U\+LL}(type) != nullptr)}
+
+Returns whether a certain service exists
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+std::shared\_ptr<SignalService<int>> intSignals = \hyperlink{group__srv__group_ga223765690bb6ade99e1e5f954f096cfb}{ASTU\_GET\_SERVICE\_OR\_NULL}(
+      SignalService<int>);
+
+\textcolor{keywordflow}{if} (\hyperlink{group__srv__group_ga8b3cd4edfd24593b12bc662acf62e9a1}{ASTU\_HAS\_SERVICE}(SignalService<int>)) \{
+  \hyperlink{group__srv__group_ga42575546f01bf92989d08916564ffc66}{ASTU\_SERVICE}(SignalService<int>).QueueSignal(42);
+\}
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the requested service exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__srv__group_ga640af14a801ce66a6286ca8bc4862473}\label{group__srv__group_ga640af14a801ce66a6286ca8bc4862473}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES}}
+\index{A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES}{ASTU\_REMOVE\_ALL\_SERVICES}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+A\+L\+L\+\_\+\+S\+E\+R\+V\+I\+C\+ES(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Remove\+All\+Services()}
+
+Removes all previously added services. \mbox{\Hypertarget{group__srv__group_ga42575546f01bf92989d08916564ffc66}\label{group__srv__group_ga42575546f01bf92989d08916564ffc66}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE}}
+\index{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE@{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE}{ASTU\_SERVICE}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~($\ast$\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Find\+Service$<$type$>$())}
+
+Returns a reference to a service.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{double} dt = \hyperlink{group__srv__group_ga42575546f01bf92989d08916564ffc66}{ASTU\_SERVICE}(TimeService).GetElapsedTime();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+the requested service 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case the requested service is unknown \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}\label{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER@{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}}
+\index{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER@{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}{ASTU\_SERVICE\_MANAGER}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{classastu_1_1ServiceManager_a26941fe98ea3f2792deca62e4124bf15}{astu\+::\+Service\+Manager\+::\+Get\+Instance}()}
+
+Returns the instance of the service manager.
+
+{\bfseries Example}
+
+
+\begin{DoxyCode}
+\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{ASTU\_SERVICE\_MANAGER}.RemoveAllServices();
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+the service manager instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__srv__group_ga97369e673940c499b1cd623c76aaafe5}\label{group__srv__group_ga97369e673940c499b1cd623c76aaafe5}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES}}
+\index{A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES}{ASTU\_SHUTDOWN\_SERVICES}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+S\+H\+U\+T\+D\+O\+W\+N\+\_\+\+S\+E\+R\+V\+I\+C\+ES(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Shutdown\+All()}
+
+Shuts down all services. \mbox{\Hypertarget{group__srv__group_gab16fd0e9f158b318812197ee283a8484}\label{group__srv__group_gab16fd0e9f158b318812197ee283a8484}} 
+\index{Service@{Service}!A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES}}
+\index{A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES@{A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES}!Service@{Service}}
+\subsubsection{\texorpdfstring{A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES}{ASTU\_STARTUP\_SERVICES}}
+{\footnotesize\ttfamily \#define A\+S\+T\+U\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+S\+E\+R\+V\+I\+C\+ES(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\hyperlink{group__srv__group_ga5216c57cf872d6a0c05d0e6f33c66fc7}{A\+S\+T\+U\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+N\+A\+G\+ER}().Startup\+All()}
+
+Starts up all services. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}\label{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}} 
+\index{Service@{Service}!Priority@{Priority}}
+\index{Priority@{Priority}!Service@{Service}}
+\subsubsection{\texorpdfstring{Priority}{Priority}}
+{\footnotesize\ttfamily enum \hyperlink{group__srv__group_gaf164c3f1c393e1f240458ae4fcd484a0}{astu\+::\+Priority}}
+
+Priorities define the seqeuence services get started, updated, etc. \mbox{\Hypertarget{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}\label{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}} 
+\index{Service@{Service}!Resolution@{Resolution}}
+\index{Resolution@{Resolution}!Service@{Service}}
+\subsubsection{\texorpdfstring{Resolution}{Resolution}}
+{\footnotesize\ttfamily enum \hyperlink{group__srv__group_ga68a91c7015964dbdea802829ae5ccb3c}{astu\+::\+Resolution}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Describes common resoutions for application windows. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+V\+GA@{S\+V\+GA}!Service@{Service}}\index{Service@{Service}!S\+V\+GA@{S\+V\+GA}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca55a1cd59378161f3d8d162f7ab3c688c}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca55a1cd59378161f3d8d162f7ab3c688c}} 
+S\+V\+GA&Aspect ratio 4\+:3, pixels 800 x 600. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X\+GA@{X\+GA}!Service@{Service}}\index{Service@{Service}!X\+GA@{X\+GA}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca8d1b2ed4d604a6be96ad2f218592b98e}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca8d1b2ed4d604a6be96ad2f218592b98e}} 
+X\+GA&Aspect ratio 4\+:3, pixels 1024 x 768. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+X\+GA@{W\+X\+GA}!Service@{Service}}\index{Service@{Service}!W\+X\+GA@{W\+X\+GA}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca521265ba830a9825dd75ac96bffc3c04}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca521265ba830a9825dd75ac96bffc3c04}} 
+W\+X\+GA&Aspect ratio 16\+:9, pixels 1280 x 720. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+X\+GA@{S\+X\+GA}!Service@{Service}}\index{Service@{Service}!S\+X\+GA@{S\+X\+GA}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0b8f37f43da5e66c4bd58165b40b76f3}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0b8f37f43da5e66c4bd58165b40b76f3}} 
+S\+X\+GA&Aspect ratio 5\+:4, pixels 1280 x 1024. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+D\+\_\+1@{H\+D\+\_\+1}!Service@{Service}}\index{Service@{Service}!H\+D\+\_\+1@{H\+D\+\_\+1}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca5f825911c42fe77eab9de44602f7080e}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca5f825911c42fe77eab9de44602f7080e}} 
+H\+D\+\_\+1&Aspect ratio $\sim$16\+:9, pixels 1360 x 768. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+D\+\_\+2@{H\+D\+\_\+2}!Service@{Service}}\index{Service@{Service}!H\+D\+\_\+2@{H\+D\+\_\+2}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0019cdc8d430b07dccbbe6453de8f244}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca0019cdc8d430b07dccbbe6453de8f244}} 
+H\+D\+\_\+2&Aspect ratio $\sim$16\+:9, pixels 1366 x 768. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+X\+G\+A\+\_\+\+P\+L\+US@{W\+X\+G\+A\+\_\+\+P\+L\+US}!Service@{Service}}\index{Service@{Service}!W\+X\+G\+A\+\_\+\+P\+L\+US@{W\+X\+G\+A\+\_\+\+P\+L\+US}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca188ce673037fb8cc15ef18b2db6b470b}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca188ce673037fb8cc15ef18b2db6b470b}} 
+W\+X\+G\+A\+\_\+\+P\+L\+US&Aspect ratio 16\+:10, pixels 1440 x 900. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+S\+X\+G\+A\+\_\+\+P\+L\+US@{W\+S\+X\+G\+A\+\_\+\+P\+L\+US}!Service@{Service}}\index{Service@{Service}!W\+S\+X\+G\+A\+\_\+\+P\+L\+US@{W\+S\+X\+G\+A\+\_\+\+P\+L\+US}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca95c1d10ada9f6c64467275175334744b}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca95c1d10ada9f6c64467275175334744b}} 
+W\+S\+X\+G\+A\+\_\+\+P\+L\+US&Aspect ratio 16\+:10, pixels 1680 x 1050. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+HD@{F\+HD}!Service@{Service}}\index{Service@{Service}!F\+HD@{F\+HD}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca7ff9eb087b5873e5245422ffc8e6f054}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca7ff9eb087b5873e5245422ffc8e6f054}} 
+F\+HD&Aspect ratio 16\+:9, pixels 1920 x 1080. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q\+HD@{Q\+HD}!Service@{Service}}\index{Service@{Service}!Q\+HD@{Q\+HD}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca512db9ef494be9c910409a51fbc9eb9c}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca512db9ef494be9c910409a51fbc9eb9c}} 
+Q\+HD&Aspect ratio 16\+:9, pixels 2560 x 1440. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN@{W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN}!Service@{Service}}\index{Service@{Service}!W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN@{W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3cab61f857a573f21f72e277339f072402b}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3cab61f857a573f21f72e277339f072402b}} 
+W\+I\+D\+E\+\_\+\+S\+C\+R\+E\+EN&Aspect ratio 21\+:9, pixels 3440 x 1440. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+H\+D\+\_\+4K@{U\+H\+D\+\_\+4K}!Service@{Service}}\index{Service@{Service}!U\+H\+D\+\_\+4K@{U\+H\+D\+\_\+4K}}}\mbox{\Hypertarget{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca9a4d0ff86f135b89378b858a0d947483}\label{group__srv__group_gga68a91c7015964dbdea802829ae5ccb3ca9a4d0ff86f135b89378b858a0d947483}} 
+U\+H\+D\+\_\+4K&Aspect ratio 16\+:9, pixels 3840 x 2160. \\
+\hline
+
+\end{DoxyEnumFields}

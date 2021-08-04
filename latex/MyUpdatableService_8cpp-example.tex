@@ -1,0 +1,64 @@
+\hypertarget{MyUpdatableService_8cpp-example}{}\section{My\+Updatable\+Service.\+cpp}
+Services can derive from this class to get updated once each main cycle.
+
+{\bfseries Example Header-\/\+File for Updatable Services}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#pragma once}
+
+\textcolor{comment}{// AST Utilities includes}
+\textcolor{preprocessor}{#include <\hyperlink{AstuServices_8h}{AstuServices.h}>}
+
+\textcolor{keyword}{class }MyUpdatableService 
+  : \textcolor{keyword}{public} \hyperlink{classastu_1_1BaseService}{astu::BaseService}
+  , \textcolor{keyword}{public} \hyperlink{classastu_1_1Updatable}{astu::Updatable}
+\{
+  \textcolor{keyword}{public}:
+
+    \textcolor{comment}{// Constructor.}
+    MyUpdatableService();
+
+  \textcolor{keyword}{private}:
+
+  \textcolor{comment}{// Inherited via BaseService}
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{OnStartup}() \textcolor{keyword}{override};
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{OnShutdown}() \textcolor{keyword}{override};
+
+  \textcolor{comment}{// Inherited via Updatable}
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{OnUpdate} () \textcolor{keyword}{override};
+\};
+\end{DoxyCode}
+
+
+{\bfseries Example Implementation for Updatable Services}
+
+
+\begin{DoxyCodeInclude}
+\textcolor{comment}{// Local includes}
+\textcolor{preprocessor}{#include "MyUpdatableService.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespaceastu}{astu};
+
+MyUpdatableService::MyUpdatableService()
+    : \hyperlink{classastu_1_1BaseService}{BaseService}(\textcolor{stringliteral}{"My Updatable Service"})
+\{
+    \textcolor{comment}{// Intentionally left empty.}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnStartup()
+\{
+    \textcolor{comment}{// Place initialization code here...}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnShutdown()
+\{
+    \textcolor{comment}{// Place cleanup code here...}
+\}
+
+\textcolor{keywordtype}{void} MyUpdatableService::OnUpdate()
+\{
+    \textcolor{comment}{// Update something.}
+\}
+\end{DoxyCodeInclude}
+ 

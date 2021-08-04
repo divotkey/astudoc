@@ -1,0 +1,95 @@
+\hypertarget{classastu_1_1EntityListener}{}\section{astu\+:\+:Entity\+Listener Class Reference}
+\label{classastu_1_1EntityListener}\index{astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}}
+
+
+{\ttfamily \#include $<$Entity\+Systems.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Entity\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classastu_1_1EntityListener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Entity\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classastu_1_1EntityListener__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1EntityListener_a16450ccf235ecd96db0f62e6bed7bb07}{Entity\+Listener} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&family)
+\item 
+virtual void \hyperlink{classastu_1_1EntityListener_a0c123b57dcabc4c2b6cee8f05db545c8}{On\+Entity\+Added} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$ entity) override
+\item 
+virtual void \hyperlink{classastu_1_1EntityListener_ae380d941fafd6933a9f290ac50e7f32b}{On\+Entity\+Removed} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$ entity) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Services can derive from this class to get informed when an entity of a certain family is added or remove to the entity service. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1EntityListener_a16450ccf235ecd96db0f62e6bed7bb07}\label{classastu_1_1EntityListener_a16450ccf235ecd96db0f62e6bed7bb07}} 
+\index{astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}!Entity\+Listener@{Entity\+Listener}}
+\index{Entity\+Listener@{Entity\+Listener}!astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}}
+\subsubsection{\texorpdfstring{Entity\+Listener()}{EntityListener()}}
+{\footnotesize\ttfamily astu\+::\+Entity\+Listener\+::\+Entity\+Listener (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&}]{family }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em family} & the family of entities this system processes \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1EntityListener_a0c123b57dcabc4c2b6cee8f05db545c8}\label{classastu_1_1EntityListener_a0c123b57dcabc4c2b6cee8f05db545c8}} 
+\index{astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}!On\+Entity\+Added@{On\+Entity\+Added}}
+\index{On\+Entity\+Added@{On\+Entity\+Added}!astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}}
+\subsubsection{\texorpdfstring{On\+Entity\+Added()}{OnEntityAdded()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Entity\+Listener\+::\+On\+Entity\+Added (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an entity has been added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity which has been added \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1IEntityListener_afa087302fdf0bd999297b0d35ceb1f61}{astu\+::\+I\+Entity\+Listener}.
+
+\mbox{\Hypertarget{classastu_1_1EntityListener_ae380d941fafd6933a9f290ac50e7f32b}\label{classastu_1_1EntityListener_ae380d941fafd6933a9f290ac50e7f32b}} 
+\index{astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}!On\+Entity\+Removed@{On\+Entity\+Removed}}
+\index{On\+Entity\+Removed@{On\+Entity\+Removed}!astu\+::\+Entity\+Listener@{astu\+::\+Entity\+Listener}}
+\subsubsection{\texorpdfstring{On\+Entity\+Removed()}{OnEntityRemoved()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Entity\+Listener\+::\+On\+Entity\+Removed (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1Entity}{astu\+::\+Entity} $>$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an entity has been removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity which has been removed \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1IEntityListener_ab3d5a276da5e42cc4831e747fdf11718}{astu\+::\+I\+Entity\+Listener}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+E\+C\+S/Entity\+Systems.\+h\end{DoxyCompactItemize}

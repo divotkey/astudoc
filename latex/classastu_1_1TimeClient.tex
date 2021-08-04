@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1TimeClient}{}\section{astu\+:\+:Time\+Client Class Reference}
+\label{classastu_1_1TimeClient}\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+
+
+{\ttfamily \#include $<$Time\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Time\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1TimeClient__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Time\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classastu_1_1TimeClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1TimeClient_a500d92c1cf1b0d6832f1388763b5d9b2}{Time\+Client} ()
+\item 
+virtual \hyperlink{classastu_1_1TimeClient_a0b579b8513031078631ead28ad318354}{$\sim$\+Time\+Client} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classastu_1_1TimeClient_a15a3bbc197a690aee256fcf11e7b5cd0}{Get\+Elapsed\+Time} () const
+\item 
+float \hyperlink{classastu_1_1TimeClient_acce492f9b479370a552e7a982019a6ca}{Get\+Elapsed\+TimeF} () const
+\item 
+double \hyperlink{classastu_1_1TimeClient_a856f707a1d320dbc0615a3b072587a9c}{Get\+Absolute\+Time} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Services can derive from this class to have easy access to time service. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1TimeClient_a500d92c1cf1b0d6832f1388763b5d9b2}\label{classastu_1_1TimeClient_a500d92c1cf1b0d6832f1388763b5d9b2}} 
+\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}!Time\+Client@{Time\+Client}}
+\index{Time\+Client@{Time\+Client}!astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+\subsubsection{\texorpdfstring{Time\+Client()}{TimeClient()}}
+{\footnotesize\ttfamily astu\+::\+Time\+Client\+::\+Time\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1TimeClient_a0b579b8513031078631ead28ad318354}\label{classastu_1_1TimeClient_a0b579b8513031078631ead28ad318354}} 
+\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}!````~Time\+Client@{$\sim$\+Time\+Client}}
+\index{````~Time\+Client@{$\sim$\+Time\+Client}!astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+\subsubsection{\texorpdfstring{$\sim$\+Time\+Client()}{~TimeClient()}}
+{\footnotesize\ttfamily virtual astu\+::\+Time\+Client\+::$\sim$\+Time\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1TimeClient_a856f707a1d320dbc0615a3b072587a9c}\label{classastu_1_1TimeClient_a856f707a1d320dbc0615a3b072587a9c}} 
+\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}!Get\+Absolute\+Time@{Get\+Absolute\+Time}}
+\index{Get\+Absolute\+Time@{Get\+Absolute\+Time}!astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+\subsubsection{\texorpdfstring{Get\+Absolute\+Time()}{GetAbsoluteTime()}}
+{\footnotesize\ttfamily double astu\+::\+Time\+Client\+::\+Get\+Absolute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the absolute time since.
+
+\begin{DoxyReturn}{Returns}
+the absolute time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1TimeClient_a15a3bbc197a690aee256fcf11e7b5cd0}\label{classastu_1_1TimeClient_a15a3bbc197a690aee256fcf11e7b5cd0}} 
+\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}!Get\+Elapsed\+Time@{Get\+Elapsed\+Time}}
+\index{Get\+Elapsed\+Time@{Get\+Elapsed\+Time}!astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+\subsubsection{\texorpdfstring{Get\+Elapsed\+Time()}{GetElapsedTime()}}
+{\footnotesize\ttfamily double astu\+::\+Time\+Client\+::\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the elapsed time since the last update.
+
+\begin{DoxyReturn}{Returns}
+the elapsed time in seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1TimeClient_acce492f9b479370a552e7a982019a6ca}\label{classastu_1_1TimeClient_acce492f9b479370a552e7a982019a6ca}} 
+\index{astu\+::\+Time\+Client@{astu\+::\+Time\+Client}!Get\+Elapsed\+TimeF@{Get\+Elapsed\+TimeF}}
+\index{Get\+Elapsed\+TimeF@{Get\+Elapsed\+TimeF}!astu\+::\+Time\+Client@{astu\+::\+Time\+Client}}
+\subsubsection{\texorpdfstring{Get\+Elapsed\+Time\+F()}{GetElapsedTimeF()}}
+{\footnotesize\ttfamily float astu\+::\+Time\+Client\+::\+Get\+Elapsed\+TimeF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the elapsed time since the last update in single precision.
+
+\begin{DoxyReturn}{Returns}
+the elapsed time in seconds 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Time\+Service.\+h\end{DoxyCompactItemize}

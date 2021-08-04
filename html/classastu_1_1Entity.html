@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">AST Utilities
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
    <div id="projectbrief">A collection of utilities for Applied Software Techniques (AST).</div>
   </td>
@@ -66,6 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classastu_1_1Entity-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">astu::Entity Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__ecs__group.html">Entity component system</a></div></div>  </div>
@@ -90,6 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed9aac4a995b5c044c0301302f2bd3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f47f4de88139f9202466b726e61aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#ab8f47f4de88139f9202466b726e61aee">AddComponent</a> (std::shared_ptr&lt; <a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a> &gt; cmp)</td></tr>
 <tr class="separator:ab8f47f4de88139f9202466b726e61aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6d15be60fde34b516546bdc92ff13f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#adc6d15be60fde34b516546bdc92ff13f">AddInterface</a> (<a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a> &amp;cmp, const std::type_index &amp;type)</td></tr>
+<tr class="separator:adc6d15be60fde34b516546bdc92ff13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ee4a4e617de7c40eb252413b9045a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#ad1ee4a4e617de7c40eb252413b9045a1">HasComponent</a> (const std::type_index &amp;type) const</td></tr>
 <tr class="separator:ad1ee4a4e617de7c40eb252413b9045a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9bb583859f1a941fdaad76f5093323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#a3d9bb583859f1a941fdaad76f5093323">GetComponent</a> (const std::type_index &amp;type)</td></tr>
@@ -99,9 +102,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeabb500a719de29039dd0fad4ea553c4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aeabb500a719de29039dd0fad4ea553c4"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#aeabb500a719de29039dd0fad4ea553c4">GetComponent</a> ()</td></tr>
 <tr class="separator:aeabb500a719de29039dd0fad4ea553c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a140865878b65472e3c11fda593ef80ec"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a140865878b65472e3c11fda593ef80ec"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#a140865878b65472e3c11fda593ef80ec">GetComponent</a> () const</td></tr>
+<tr class="separator:a140865878b65472e3c11fda593ef80ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b75df1873d23f79f050bc6a178cd4c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a80b75df1873d23f79f050bc6a178cd4c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#a80b75df1873d23f79f050bc6a178cd4c">HasComponent</a> ()</td></tr>
 <tr class="separator:a80b75df1873d23f79f050bc6a178cd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7dc70da55f0110ffb340c839483debe"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classastu_1_1Entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#af7dc70da55f0110ffb340c839483debe">Clone</a> ()</td></tr>
+<tr class="separator:af7dc70da55f0110ffb340c839483debe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64fa42f507c05701afa182f1c08dc1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classastu_1_1Entity.html#ab64fa42f507c05701afa182f1c08dc1d">GetId</a> () const</td></tr>
+<tr class="separator:ab64fa42f507c05701afa182f1c08dc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a4c3d8b5a7c2dad3d37b2b4af85b8c4ad"><td class="memItemLeft" align="right" valign="top"><a id="a4c3d8b5a7c2dad3d37b2b4af85b8c4ad"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityService</b></td></tr>
+<tr class="separator:a4c3d8b5a7c2dad3d37b2b4af85b8c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An entity is a container for compoments. </p>
@@ -158,8 +174,78 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adc6d15be60fde34b516546bdc92ff13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6d15be60fde34b516546bdc92ff13f">&#9670;&nbsp;</a></span>AddInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void astu::Entity::AddInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classastu_1_1EntityComponent.html">EntityComponent</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::type_index &amp;&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Makes a specific component accessible via an interface.</p>
+<p>Registering an additional interface for a component might be necessary for components which should be accessible not only by its direct type but also by an interface which the component implements. Typically this method is call by a component itself when its</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp</td><td>the component </td></tr>
+    <tr><td class="paramname">type</td><td>the interface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>in case the component is not part of this entity or the interface type has already been registered </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7dc70da55f0110ffb340c839483debe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7dc70da55f0110ffb340c839483debe">&#9670;&nbsp;</a></span>Clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classastu_1_1Entity.html">Entity</a>&gt; astu::Entity::Clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a copy of this entity.</p>
+<dl class="section return"><dt>Returns</dt><dd>the copy of this entity </dd></dl>
+
+</div>
+</div>
 <a id="a3d9bb583859f1a941fdaad76f5093323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d9bb583859f1a941fdaad76f5093323">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9bb583859f1a941fdaad76f5093323">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,9 +260,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the component of a specific type.</p>
-<p>This method is mainly used by the template method <code>getComponent</code>, which is much more convenient to use because no type cast is required.</p>
+<p>This method is mainly used by the template method <code>GetComponent</code>, which is much more convenient to use because no type cast is required.</p>
 <p>A dynamic cast is not necessary because this method ensures to return a component of the required type which can safely be casted using a fast static cast.</p>
-<p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp; pose = <span class="keyword">static_cast&lt;</span>Pose2D &amp;<span class="keyword">&gt;</span>( entity.getComponent( std::type_index( <span class="keyword">typeid</span>(Pose2D) ) ) );</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp; pose = <span class="keyword">static_cast&lt;</span>Pose2D &amp;<span class="keyword">&gt;</span>( entity.GetComponent( std::type_index( <span class="keyword">typeid</span>(Pose2D) ) ) );</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>the component type </td></tr>
   </table>
@@ -193,7 +279,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="affe49f8c35d5b067f06803e27243189a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe49f8c35d5b067f06803e27243189a">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affe49f8c35d5b067f06803e27243189a">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +312,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aeabb500a719de29039dd0fad4ea553c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabb500a719de29039dd0fad4ea553c4">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeabb500a719de29039dd0fad4ea553c4">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,9 +335,9 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieves the component a specifi type from this entity.</p>
+<p>Retrieves the component a specific type from this entity.</p>
 <p>This template method offers a convenient way to retrieve a component by specifying the type of the component to retrieve as template parameter.</p>
-<p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp; pose = entity.getComponent&lt;Pose2D&gt;();</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keyword">auto</span> &amp; pose = entity.GetComponent&lt;Pose2D&gt;();</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type of the component to retrieve </td></tr>
   </table>
@@ -264,6 +350,75 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a140865878b65472e3c11fda593ef80ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140865878b65472e3c11fda593ef80ec">&#9670;&nbsp;</a></span>GetComponent() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const T&amp; astu::Entity::GetComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the component a specific type from this entity.</p>
+<p>This template method offers a convenient way to retrieve a component by specifying the type of the component to retrieve as template parameter.</p>
+<p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> &amp; pose = entity.GetComponent&lt;Pose2D&gt;();</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the type of the component to retrieve </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the requested component </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>in case the requested component does not exist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab64fa42f507c05701afa182f1c08dc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64fa42f507c05701afa182f1c08dc1d">&#9670;&nbsp;</a></span>GetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int astu::Entity::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns an unique identifires of this entity.</p>
+<dl class="section return"><dt>Returns</dt><dd>the unique identifier </dd></dl>
 
 </div>
 </div>
@@ -319,7 +474,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Tests whether a component of a specific type has been added to this entity.</p>
+<p>Tests if a component of a specific type has been added.</p>
 <p>This template method offers a convenient way to test if a certain component type exists in this entity by specifying the type of the component as template parameter.</p>
 <p><b>Usage example:</b> </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> ( entity.hasComponent&lt;Pose2D&gt;() ) {</div><div class="line">    <span class="comment">// do something with Pose2D component</span></div><div class="line">}</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -332,7 +487,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="EntityService_8h_source.html">EntityService.h</a></li>
+<li>include/ECS/<a class="el" href="EntityService_8h_source.html">EntityService.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

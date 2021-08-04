@@ -7,8 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classastu_1_1EntityFamily_a8452fd5df3f194dd8824b9ea88d426bf}\label{classastu_1_1EntityFamily_a8452fd5df3f194dd8824b9ea88d426bf}} 
-bool {\bfseries Is\+Member} (const \hyperlink{classastu_1_1Entity}{Entity} \&entity) const
+bool \hyperlink{classastu_1_1EntityFamily_a8452fd5df3f194dd8824b9ea88d426bf}{Is\+Member} (const \hyperlink{classastu_1_1Entity}{Entity} \&entity) const
 \item 
 bool \hyperlink{classastu_1_1EntityFamily_ac2389d2f9807b3ebdb570f0fd8930957}{operator$<$} (const \hyperlink{classastu_1_1EntityFamily}{Entity\+Family} \&o) const
 \end{DoxyCompactItemize}
@@ -34,7 +33,8 @@ Creates a new entity family. This static factory method is the only way to const
 
 Example usage\+: 
 \begin{DoxyCode}
-EntityFamily myFamily = EntityFamily::create<Transform2D, ShapeVisual2D>();
+EntityFamily myFamily 
+ = EntityFamily::create<Transform2D, ShapeVisual2D>();
 \end{DoxyCode}
 
 
@@ -45,6 +45,22 @@ EntityFamily myFamily = EntityFamily::create<Transform2D, ShapeVisual2D>();
 \end{DoxyTemplParams}
 \begin{DoxyReturn}{Returns}
 the entity family 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1EntityFamily_a8452fd5df3f194dd8824b9ea88d426bf}\label{classastu_1_1EntityFamily_a8452fd5df3f194dd8824b9ea88d426bf}} 
+\index{astu\+::\+Entity\+Family@{astu\+::\+Entity\+Family}!Is\+Member@{Is\+Member}}
+\index{Is\+Member@{Is\+Member}!astu\+::\+Entity\+Family@{astu\+::\+Entity\+Family}}
+\subsubsection{\texorpdfstring{Is\+Member()}{IsMember()}}
+{\footnotesize\ttfamily bool astu\+::\+Entity\+Family\+::\+Is\+Member (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Entity}{Entity} \&}]{entity }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tests whether a certain entity is a member of this family.
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & the entity to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the is a member of this family 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classastu_1_1EntityFamily_ac2389d2f9807b3ebdb570f0fd8930957}\label{classastu_1_1EntityFamily_ac2389d2f9807b3ebdb570f0fd8930957}} 
 \index{astu\+::\+Entity\+Family@{astu\+::\+Entity\+Family}!operator$<$@{operator$<$}}
@@ -68,4 +84,4 @@ This operator is required to work as key in a map container. The less operator i
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Entity\+Service.\+h\end{DoxyCompactItemize}
+include/\+E\+C\+S/Entity\+Service.\+h\end{DoxyCompactItemize}

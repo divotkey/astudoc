@@ -1,0 +1,140 @@
+\hypertarget{classastu_1_1DelegateTaskBuilder}{}\section{astu\+:\+:Delegate\+Task\+Builder Class Reference}
+\label{classastu_1_1DelegateTaskBuilder}\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+
+
+{\ttfamily \#include $<$Tasks.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Delegate\+Task\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classastu_1_1DelegateTaskBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Delegate\+Task\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classastu_1_1DelegateTaskBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1DelegateTaskBuilder_ab157afb8138680c515613b4296a7d665}{Delegate\+Task\+Builder} ()
+\item 
+\hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder} \& \hyperlink{classastu_1_1DelegateTaskBuilder_a40b80e0c6b20c1d6ea04a1c001f34dd2}{Delegate} (\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate\+Task\+::\+Delegate} delegate)
+\item 
+\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate\+Task\+::\+Delegate} \hyperlink{classastu_1_1DelegateTaskBuilder_abcbf0e7dbc8e4eed11a1214a266627ea}{Get\+Delegate} () const
+\item 
+\hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder} \& \hyperlink{classastu_1_1DelegateTaskBuilder_afff9f95d05d896a74935287e087eb2c4}{Delay} (double delay)
+\item 
+double \hyperlink{classastu_1_1DelegateTaskBuilder_a34340f7e709dea5c18aa4f4718e1bc79}{Get\+Delay} () const
+\item 
+\hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder} \& \hyperlink{classastu_1_1DelegateTaskBuilder_ad871e5e55e2d17fae9ae8503c179fc8f}{Reset} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} $>$ \hyperlink{classastu_1_1DelegateTaskBuilder_a381daaf1473172b912ffe84da830c75c}{Build} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Builder for \hyperlink{classastu_1_1DelegateTask}{Delegate\+Task} instances. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_ab157afb8138680c515613b4296a7d665}\label{classastu_1_1DelegateTaskBuilder_ab157afb8138680c515613b4296a7d665}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Delegate\+Task\+Builder@{Delegate\+Task\+Builder}}
+\index{Delegate\+Task\+Builder@{Delegate\+Task\+Builder}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Delegate\+Task\+Builder()}{DelegateTaskBuilder()}}
+{\footnotesize\ttfamily astu\+::\+Delegate\+Task\+Builder\+::\+Delegate\+Task\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_a381daaf1473172b912ffe84da830c75c}\label{classastu_1_1DelegateTaskBuilder_a381daaf1473172b912ffe84da830c75c}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classastu_1_1DelegateTask}{Delegate\+Task}$>$ astu\+::\+Delegate\+Task\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Builds a delegate task according to the current configuration.
+
+\begin{DoxyReturn}{Returns}
+the newly created delegate task 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_afff9f95d05d896a74935287e087eb2c4}\label{classastu_1_1DelegateTaskBuilder_afff9f95d05d896a74935287e087eb2c4}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Delay@{Delay}}
+\index{Delay@{Delay}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Delay()}{Delay()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder}\& astu\+::\+Delegate\+Task\+Builder\+::\+Delay (\begin{DoxyParamCaption}\item[{double}]{delay }\end{DoxyParamCaption})}
+
+Specifies the delay for the delegate task to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & the delay in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_a40b80e0c6b20c1d6ea04a1c001f34dd2}\label{classastu_1_1DelegateTaskBuilder_a40b80e0c6b20c1d6ea04a1c001f34dd2}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Delegate()}{Delegate()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder}\& astu\+::\+Delegate\+Task\+Builder\+::\+Delegate (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate\+Task\+::\+Delegate}}]{delegate }\end{DoxyParamCaption})}
+
+Specifies the delegate to be called by the task to build.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & the delegate function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_a34340f7e709dea5c18aa4f4718e1bc79}\label{classastu_1_1DelegateTaskBuilder_a34340f7e709dea5c18aa4f4718e1bc79}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Get\+Delay@{Get\+Delay}}
+\index{Get\+Delay@{Get\+Delay}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Get\+Delay()}{GetDelay()}}
+{\footnotesize\ttfamily double astu\+::\+Delegate\+Task\+Builder\+::\+Get\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the delay used for the task to build.
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+the delay in seconds 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_abcbf0e7dbc8e4eed11a1214a266627ea}\label{classastu_1_1DelegateTaskBuilder_abcbf0e7dbc8e4eed11a1214a266627ea}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Get\+Delegate@{Get\+Delegate}}
+\index{Get\+Delegate@{Get\+Delegate}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Get\+Delegate()}{GetDelegate()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1DelegateTask_a74c7859178eb0889e884209d1604de4d}{Delegate\+Task\+::\+Delegate} astu\+::\+Delegate\+Task\+Builder\+::\+Get\+Delegate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the delegate used for the task to build.
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+the delegate 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{classastu_1_1DelegateTaskBuilder_ad871e5e55e2d17fae9ae8503c179fc8f}\label{classastu_1_1DelegateTaskBuilder_ad871e5e55e2d17fae9ae8503c179fc8f}} 
+\index{astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Delegate\+Task\+Builder@{astu\+::\+Delegate\+Task\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1DelegateTaskBuilder}{Delegate\+Task\+Builder}\& astu\+::\+Delegate\+Task\+Builder\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this builder to is initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Service/Tasks.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1ActionBinding}{}\section{astu\+:\+:Action\+Binding Class Reference}
+\label{classastu_1_1ActionBinding}\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+
+
+{\ttfamily \#include $<$Input\+Mapping\+Service.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{Delegate} = std\+::function$<$ void(\hyperlink{classastu_1_1ActionBinding}{Action\+Binding} \&)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1ActionBinding_a087e1a63f4ae5394a7bfd8a93789eccd}{Action\+Binding} (const std\+::string \&name)
+\item 
+const std\+::string \& \hyperlink{classastu_1_1ActionBinding_aac38902348ebb25b27677ac2ebd44aed}{Get\+Action} () const
+\item 
+bool \hyperlink{classastu_1_1ActionBinding_ad0c2ee18d3b6a7719de4463973294467}{Is\+Pressed} () const
+\item 
+void \hyperlink{classastu_1_1ActionBinding_a56203b1271283b3befebdfc7c67c7836}{Set\+Delegate} (\hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{Delegate} delegate)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1ActionBinding_a8a886d4dcb7950d2c68f97f528f5ab4c}\label{classastu_1_1ActionBinding_a8a886d4dcb7950d2c68f97f528f5ab4c}} 
+class {\bfseries Input\+Mapping\+Service}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binds an action to a delegate. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}\label{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}} 
+\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+\subsubsection{\texorpdfstring{Delegate}{Delegate}}
+{\footnotesize\ttfamily using \hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{astu\+::\+Action\+Binding\+::\+Delegate} =  std\+::function$<$void (\hyperlink{classastu_1_1ActionBinding}{Action\+Binding} \&)$>$}
+
+Type alias for delegate functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1ActionBinding_a087e1a63f4ae5394a7bfd8a93789eccd}\label{classastu_1_1ActionBinding_a087e1a63f4ae5394a7bfd8a93789eccd}} 
+\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}!Action\+Binding@{Action\+Binding}}
+\index{Action\+Binding@{Action\+Binding}!astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+\subsubsection{\texorpdfstring{Action\+Binding()}{ActionBinding()}}
+{\footnotesize\ttfamily astu\+::\+Action\+Binding\+::\+Action\+Binding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name action of this binding \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1ActionBinding_aac38902348ebb25b27677ac2ebd44aed}\label{classastu_1_1ActionBinding_aac38902348ebb25b27677ac2ebd44aed}} 
+\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}!Get\+Action@{Get\+Action}}
+\index{Get\+Action@{Get\+Action}!astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+\subsubsection{\texorpdfstring{Get\+Action()}{GetAction()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::\+Action\+Binding\+::\+Get\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the name of the action this binding binds to.
+
+\begin{DoxyReturn}{Returns}
+the action name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1ActionBinding_ad0c2ee18d3b6a7719de4463973294467}\label{classastu_1_1ActionBinding_ad0c2ee18d3b6a7719de4463973294467}} 
+\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}!Is\+Pressed@{Is\+Pressed}}
+\index{Is\+Pressed@{Is\+Pressed}!astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+\subsubsection{\texorpdfstring{Is\+Pressed()}{IsPressed()}}
+{\footnotesize\ttfamily bool astu\+::\+Action\+Binding\+::\+Is\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current state of this action binding.
+
+\begin{DoxyReturn}{Returns}
+the current state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1ActionBinding_a56203b1271283b3befebdfc7c67c7836}\label{classastu_1_1ActionBinding_a56203b1271283b3befebdfc7c67c7836}} 
+\index{astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}!Set\+Delegate@{Set\+Delegate}}
+\index{Set\+Delegate@{Set\+Delegate}!astu\+::\+Action\+Binding@{astu\+::\+Action\+Binding}}
+\subsubsection{\texorpdfstring{Set\+Delegate()}{SetDelegate()}}
+{\footnotesize\ttfamily void astu\+::\+Action\+Binding\+::\+Set\+Delegate (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ActionBinding_ab0e27e5c54f264cb2aa36f65ead9e4ae}{Delegate}}]{delegate }\end{DoxyParamCaption})}
+
+Sets the delegate function to be called on state changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & the the delegate function \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Input\+Mapping\+Service.\+h\end{DoxyCompactItemize}

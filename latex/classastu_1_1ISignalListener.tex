@@ -4,12 +4,21 @@
 
 {\ttfamily \#include $<$Signal\+Service.\+h$>$}
 
+
+
+Inheritance diagram for astu\+:\+:I\+Signal\+Listener$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1ISignalListener__inherit__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classastu_1_1ISignalListener_a8656a83d9ac0775640edb97e028c3fd9}{$\sim$\+I\+Signal\+Listener} ()
+virtual \hyperlink{classastu_1_1ISignalListener_ae08b22a5ecb4f1db39336ab0c3139c68}{$\sim$\+I\+Signal\+Listener} ()
 \item 
-virtual void \hyperlink{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0f931b2a5ce}{On\+Signal} (const T \&signal)=0
+virtual bool \hyperlink{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}{On\+Signal} (const T \&signal)=0
 \end{DoxyCompactItemize}
 
 
@@ -33,7 +42,7 @@ Header file\+: {\itshape My\+Listener.\+h}
 \textcolor{keyword}{public}:
 
   \textcolor{comment}{// Inheritred via ISignalListener}
-  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0f931b2a5ce}{OnSignal}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} & signal) \textcolor{keyword}{override};    
+  \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}{OnSignal}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} & signal) \textcolor{keyword}{override};    
 \};
 \end{DoxyCode}
 
@@ -45,7 +54,7 @@ Implementation file\+: {\itshape My\+Listener.\+cpp}
 \textcolor{preprocessor}{#include <iostream>}
 \textcolor{preprocessor}{#include "MyListener.h"}
 
-MyListener::void \hyperlink{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0f931b2a5ce}{OnSignal}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} & signal)
+MyListener::void \hyperlink{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}{OnSignal}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} & signal)
 \{
   std::cout << \textcolor{stringliteral}{"received signal "} << signal << std::endl;
 \}    
@@ -60,32 +69,41 @@ MyListener::void \hyperlink{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classastu_1_1ISignalListener_a8656a83d9ac0775640edb97e028c3fd9}\label{classastu_1_1ISignalListener_a8656a83d9ac0775640edb97e028c3fd9}} 
+\mbox{\Hypertarget{classastu_1_1ISignalListener_ae08b22a5ecb4f1db39336ab0c3139c68}\label{classastu_1_1ISignalListener_ae08b22a5ecb4f1db39336ab0c3139c68}} 
 \index{astu\+::\+I\+Signal\+Listener@{astu\+::\+I\+Signal\+Listener}!````~I\+Signal\+Listener@{$\sim$\+I\+Signal\+Listener}}
 \index{````~I\+Signal\+Listener@{$\sim$\+I\+Signal\+Listener}!astu\+::\+I\+Signal\+Listener@{astu\+::\+I\+Signal\+Listener}}
 \subsubsection{\texorpdfstring{$\sim$\+I\+Signal\+Listener()}{~ISignalListener()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-\hyperlink{classastu_1_1ISignalListener}{astu\+::\+I\+Signal\+Listener}$<$ T $>$\+::$\sim$\hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+virtual \hyperlink{classastu_1_1ISignalListener}{astu\+::\+I\+Signal\+Listener}$<$ T $>$\+::$\sim$\hyperlink{classastu_1_1ISignalListener}{I\+Signal\+Listener} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0f931b2a5ce}\label{classastu_1_1ISignalListener_abc538ead0f63533bc60ba0f931b2a5ce}} 
+\mbox{\Hypertarget{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}\label{classastu_1_1ISignalListener_a2ae8168f23b6daa3416f6e5995fd5d31}} 
 \index{astu\+::\+I\+Signal\+Listener@{astu\+::\+I\+Signal\+Listener}!On\+Signal@{On\+Signal}}
 \index{On\+Signal@{On\+Signal}!astu\+::\+I\+Signal\+Listener@{astu\+::\+I\+Signal\+Listener}}
 \subsubsection{\texorpdfstring{On\+Signal()}{OnSignal()}}
 {\footnotesize\ttfamily template$<$typename T$>$ \\
-virtual void \hyperlink{classastu_1_1ISignalListener}{astu\+::\+I\+Signal\+Listener}$<$ T $>$\+::On\+Signal (\begin{DoxyParamCaption}\item[{const T \&}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+virtual bool \hyperlink{classastu_1_1ISignalListener}{astu\+::\+I\+Signal\+Listener}$<$ T $>$\+::On\+Signal (\begin{DoxyParamCaption}\item[{const T \&}]{signal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 Called when a signal should be processed by this listener.
+
+The return value determines whether the signal has been consumed. A consumed signal will no longer be forwarded to other signal listeners.
 
 
 \begin{DoxyParams}{Parameters}
 {\em signal} & the signal \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the signal has been consumed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}{astu\+::\+Signal\+Listener$<$ T $>$}, and \hyperlink{classastu_1_1SignalListener_afe6b444f1413f98e6ae4982b72a43b5d}{astu\+::\+Signal\+Listener$<$ std\+::string $>$}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Signal\+Service.\+h\end{DoxyCompactItemize}
+include/\+Service/Signal\+Service.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{classastu_1_1suite2d_1_1CScene}{}\section{astu\+:\+:suite2d\+:\+:C\+Scene Class Reference}
+\label{classastu_1_1suite2d_1_1CScene}\index{astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}}
+
+
+{\ttfamily \#include $<$C\+Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1suite2d_1_1CScene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Scene\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1suite2d_1_1CScene__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CScene_afdee9d9f1214ccfd36b44f68d5e351fa}{C\+Scene} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1CScene_af8b497f2d0dac0c1bb4d7d3038280189}{spatial})
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1EntityComponent}{astu\+::\+Entity\+Component} $>$ \hyperlink{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}{Clone} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1CScene_af8b497f2d0dac0c1bb4d7d3038280189}{spatial}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A component containing a spacial 2D scene graph element.
+
+This type of component is typically used for visual representation of entities in two-\/dimensional worlds. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CScene_afdee9d9f1214ccfd36b44f68d5e351fa}\label{classastu_1_1suite2d_1_1CScene_afdee9d9f1214ccfd36b44f68d5e351fa}} 
+\index{astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}!C\+Scene@{C\+Scene}}
+\index{C\+Scene@{C\+Scene}!astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}}
+\subsubsection{\texorpdfstring{C\+Scene()}{CScene()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Scene\+::\+C\+Scene (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$}]{spatial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spatial} & the scene node branch representing the entity \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}\label{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}} 
+\index{astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1EntityComponent}{astu\+::\+Entity\+Component}$>$ astu\+::suite2d\+::\+C\+Scene\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creates a copy of this entity component.
+
+\begin{DoxyReturn}{Returns}
+a copy of this componend 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{astu\+::\+Entity\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CScene_af8b497f2d0dac0c1bb4d7d3038280189}\label{classastu_1_1suite2d_1_1CScene_af8b497f2d0dac0c1bb4d7d3038280189}} 
+\index{astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}!spatial@{spatial}}
+\index{spatial@{spatial}!astu\+::suite2d\+::\+C\+Scene@{astu\+::suite2d\+::\+C\+Scene}}
+\subsubsection{\texorpdfstring{spatial}{spatial}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+C\+Scene\+::spatial}
+
+Branch of the scene graph. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Scene.\+h\end{DoxyCompactItemize}

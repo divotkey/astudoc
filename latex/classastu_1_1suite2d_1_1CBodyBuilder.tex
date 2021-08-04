@@ -1,0 +1,186 @@
+\hypertarget{classastu_1_1suite2d_1_1CBodyBuilder}{}\section{astu\+:\+:suite2d\+:\+:C\+Body\+Builder Class Reference}
+\label{classastu_1_1suite2d_1_1CBodyBuilder}\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+
+
+{\ttfamily \#include $<$C\+Body.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a0ca8f798e66caf8f32fec25698c2a4ef}{C\+Body\+Builder} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CBodyFactory}{C\+Body\+Factory} $>$ body\+Factory=nullptr)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a42f2d0af41647c1617cb948d72d2fe0f}{Type} (\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{C\+Body\+::\+Type} body\+Type)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a15294ce7b267061e70013553cc3c171d}{Linear\+Velocity} (float vx, float vy)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a3b30b6a22dbbace93d0867cb04131b5c}{Linear\+Velocity} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&v)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a7a8919a8033bc348a4aba8b215db8351}{Angular\+Velocity} (float av)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a8228f975cbec219125323d06fc6d0f16}{Angular\+Damping} (float damping)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_af8bac26e1270985e9da41aa7f6eff9a7}{Linear\+Damping} (float damping)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder} \& \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_aa1eba70e75a9b7ac0c915e9b2f2cdf8d}{Reset} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} $>$ \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder_a2a08001660aaa09c683a6b66d7f1a47d}{Build} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Builder for \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} components. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a0ca8f798e66caf8f32fec25698c2a4ef}\label{classastu_1_1suite2d_1_1CBodyBuilder_a0ca8f798e66caf8f32fec25698c2a4ef}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!C\+Body\+Builder@{C\+Body\+Builder}}
+\index{C\+Body\+Builder@{C\+Body\+Builder}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{C\+Body\+Builder()}{CBodyBuilder()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Body\+Builder\+::\+C\+Body\+Builder (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1CBodyFactory}{C\+Body\+Factory} $>$}]{body\+Factory = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructor.
+
+If the specified body factory is null a service which implements the body factory interface will be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em body\+Factory} & the factory for \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} components to be used \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a8228f975cbec219125323d06fc6d0f16}\label{classastu_1_1suite2d_1_1CBodyBuilder_a8228f975cbec219125323d06fc6d0f16}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Angular\+Damping@{Angular\+Damping}}
+\index{Angular\+Damping@{Angular\+Damping}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Angular\+Damping()}{AngularDamping()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Angular\+Damping (\begin{DoxyParamCaption}\item[{float}]{damping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the angular damping of the body to create
+
+
+\begin{DoxyParams}{Parameters}
+{\em damping} & the damping for rotational movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the damping is less than zero \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a7a8919a8033bc348a4aba8b215db8351}\label{classastu_1_1suite2d_1_1CBodyBuilder_a7a8919a8033bc348a4aba8b215db8351}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Angular\+Velocity@{Angular\+Velocity}}
+\index{Angular\+Velocity@{Angular\+Velocity}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Angular\+Velocity()}{AngularVelocity()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{float}]{av }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the angular velocity of the body to create body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em av} & the angular velocity in radians per second \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a2a08001660aaa09c683a6b66d7f1a47d}\label{classastu_1_1suite2d_1_1CBodyBuilder_a2a08001660aaa09c683a6b66d7f1a47d}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Build@{Build}}
+\index{Build@{Build}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body}$>$ astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} instance according to the current configuration.
+
+\begin{DoxyReturn}{Returns}
+the new \hyperlink{classastu_1_1suite2d_1_1CBody}{C\+Body} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_af8bac26e1270985e9da41aa7f6eff9a7}\label{classastu_1_1suite2d_1_1CBodyBuilder_af8bac26e1270985e9da41aa7f6eff9a7}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Linear\+Damping@{Linear\+Damping}}
+\index{Linear\+Damping@{Linear\+Damping}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Linear\+Damping()}{LinearDamping()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Linear\+Damping (\begin{DoxyParamCaption}\item[{float}]{damping }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the linear damping of the body to create
+
+
+\begin{DoxyParams}{Parameters}
+{\em damping} & the damping for linear movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::domain\+\_\+error} & in case the damping is less than zero \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a15294ce7b267061e70013553cc3c171d}\label{classastu_1_1suite2d_1_1CBodyBuilder_a15294ce7b267061e70013553cc3c171d}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Linear\+Velocity@{Linear\+Velocity}}
+\index{Linear\+Velocity@{Linear\+Velocity}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Linear\+Velocity()}{LinearVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{float}]{vx,  }\item[{float}]{vy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the linear velocity of the body to create body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx} & the x-\/component of the linear velocity \\
+\hline
+{\em vy} & the y-\/component of the linear velocity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a3b30b6a22dbbace93d0867cb04131b5c}\label{classastu_1_1suite2d_1_1CBodyBuilder_a3b30b6a22dbbace93d0867cb04131b5c}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Linear\+Velocity@{Linear\+Velocity}}
+\index{Linear\+Velocity@{Linear\+Velocity}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Linear\+Velocity()}{LinearVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the linear velocity of the body to create body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the velocity vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_aa1eba70e75a9b7ac0c915e9b2f2cdf8d}\label{classastu_1_1suite2d_1_1CBodyBuilder_aa1eba70e75a9b7ac0c915e9b2f2cdf8d}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resets this build to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CBodyBuilder_a42f2d0af41647c1617cb948d72d2fe0f}\label{classastu_1_1suite2d_1_1CBodyBuilder_a42f2d0af41647c1617cb948d72d2fe0f}} 
+\index{astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}!Type@{Type}}
+\index{Type@{Type}!astu\+::suite2d\+::\+C\+Body\+Builder@{astu\+::suite2d\+::\+C\+Body\+Builder}}
+\subsubsection{\texorpdfstring{Type()}{Type()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1CBodyBuilder}{C\+Body\+Builder}\& astu\+::suite2d\+::\+C\+Body\+Builder\+::\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1CBody_a5731a8b9f24de5494683e4b7e8016b64}{C\+Body\+::\+Type}}]{body\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the type of the body to create.
+
+
+\begin{DoxyParams}{Parameters}
+{\em body\+Type} & the type of the body \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Body.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\hypertarget{classastu_1_1SdlRenderLayer}{}\section{astu\+:\+:Sdl\+Render\+Layer Class Reference}
+\label{classastu_1_1SdlRenderLayer}\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+
+
+{\ttfamily \#include $<$Sdl\+Render\+Service.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Render\+Layer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classastu_1_1SdlRenderLayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Render\+Layer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classastu_1_1SdlRenderLayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlRenderLayer_ac26ff4f37f843fdc97a27ccb70c8683c}{Sdl\+Render\+Layer} (int render\+Priority)
+\item 
+virtual \hyperlink{classastu_1_1SdlRenderLayer_adefbb130f5d9d21bd90b0022c4b9a11f}{$\sim$\+Sdl\+Render\+Layer} ()
+\item 
+virtual int \hyperlink{classastu_1_1SdlRenderLayer_ad7217b4bf8b8f0c9e801f72a44fe2f49}{Get\+Render\+Priority} () const final override
+\item 
+virtual void \hyperlink{classastu_1_1SdlRenderLayer_af9b0cfe1797705f509bc18db0c8a5320}{On\+Resize} (int width, int height) override
+\item 
+int \hyperlink{classastu_1_1SdlRenderLayer_a0351faee7eb27e3564c9337e0411722f}{Get\+Target\+Width} () const
+\item 
+int \hyperlink{classastu_1_1SdlRenderLayer_abb71d24b4f8bf008a29f7a313abc74ac}{Get\+Target\+Height} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Services can derive from this class to become a S\+DL render layer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_ac26ff4f37f843fdc97a27ccb70c8683c}\label{classastu_1_1SdlRenderLayer_ac26ff4f37f843fdc97a27ccb70c8683c}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!Sdl\+Render\+Layer@{Sdl\+Render\+Layer}}
+\index{Sdl\+Render\+Layer@{Sdl\+Render\+Layer}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{Sdl\+Render\+Layer()}{SdlRenderLayer()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Render\+Layer\+::\+Sdl\+Render\+Layer (\begin{DoxyParamCaption}\item[{int}]{render\+Priority }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+Priority} & the render priority of this layer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_adefbb130f5d9d21bd90b0022c4b9a11f}\label{classastu_1_1SdlRenderLayer_adefbb130f5d9d21bd90b0022c4b9a11f}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!````~Sdl\+Render\+Layer@{$\sim$\+Sdl\+Render\+Layer}}
+\index{````~Sdl\+Render\+Layer@{$\sim$\+Sdl\+Render\+Layer}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{$\sim$\+Sdl\+Render\+Layer()}{~SdlRenderLayer()}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Render\+Layer\+::$\sim$\+Sdl\+Render\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_ad7217b4bf8b8f0c9e801f72a44fe2f49}\label{classastu_1_1SdlRenderLayer_ad7217b4bf8b8f0c9e801f72a44fe2f49}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!Get\+Render\+Priority@{Get\+Render\+Priority}}
+\index{Get\+Render\+Priority@{Get\+Render\+Priority}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{Get\+Render\+Priority()}{GetRenderPriority()}}
+{\footnotesize\ttfamily virtual int astu\+::\+Sdl\+Render\+Layer\+::\+Get\+Render\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the render priority. Lower priorities get rendered before higher priorities.
+
+\begin{DoxyReturn}{Returns}
+the render priority 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1ISdlRenderLayer_a623b411a1afa967bdaa879f5075eec43}{astu\+::\+I\+Sdl\+Render\+Layer}.
+
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_abb71d24b4f8bf008a29f7a313abc74ac}\label{classastu_1_1SdlRenderLayer_abb71d24b4f8bf008a29f7a313abc74ac}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!Get\+Target\+Height@{Get\+Target\+Height}}
+\index{Get\+Target\+Height@{Get\+Target\+Height}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{Get\+Target\+Height()}{GetTargetHeight()}}
+{\footnotesize\ttfamily int astu\+::\+Sdl\+Render\+Layer\+::\+Get\+Target\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the height of the render target.
+
+\begin{DoxyReturn}{Returns}
+the height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_a0351faee7eb27e3564c9337e0411722f}\label{classastu_1_1SdlRenderLayer_a0351faee7eb27e3564c9337e0411722f}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!Get\+Target\+Width@{Get\+Target\+Width}}
+\index{Get\+Target\+Width@{Get\+Target\+Width}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{Get\+Target\+Width()}{GetTargetWidth()}}
+{\footnotesize\ttfamily int astu\+::\+Sdl\+Render\+Layer\+::\+Get\+Target\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the width of the render target.
+
+\begin{DoxyReturn}{Returns}
+the width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1SdlRenderLayer_af9b0cfe1797705f509bc18db0c8a5320}\label{classastu_1_1SdlRenderLayer_af9b0cfe1797705f509bc18db0c8a5320}} 
+\index{astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}!On\+Resize@{On\+Resize}}
+\index{On\+Resize@{On\+Resize}!astu\+::\+Sdl\+Render\+Layer@{astu\+::\+Sdl\+Render\+Layer}}
+\subsubsection{\texorpdfstring{On\+Resize()}{OnResize()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Layer\+::\+On\+Resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when the size of the render target has changed.
+
+It is guaranteed that this method is called at least once before the first call of {\ttfamily On\+Render}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the render target in pixels \\
+\hline
+{\em height} & the height of the render target in pixels \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1ISdlRenderLayer_abcded808a2405e1e59413b5d1f981f13}{astu\+::\+I\+Sdl\+Render\+Layer}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Sdl\+Render\+Service.\+h\end{DoxyCompactItemize}

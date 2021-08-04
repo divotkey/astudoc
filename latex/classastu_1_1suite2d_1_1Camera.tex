@@ -1,0 +1,397 @@
+\hypertarget{classastu_1_1suite2d_1_1Camera}{}\section{astu\+:\+:suite2d\+:\+:Camera Class Reference}
+\label{classastu_1_1suite2d_1_1Camera}\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+
+
+{\ttfamily \#include $<$Camera\+Service.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera_ab0b68d23b81551c747a03d4882a8473a}{Camera} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_aad0053eb029496040349796201ed9d08}{Set\+Position} (float x, float y)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_aada7d3c66378ebe95f7464be6ee516e6}{Set\+Position} (const \hyperlink{classastu_1_1Vector2}{Vector2f} \&p)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a39adef429a83c4e9fdf47ddafbb4b0b9}{Set\+Zoom} (float z)
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Camera_a6866e73e4f7463b281c84f67cc3e7184}{Get\+Zoom} () const
+\item 
+const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} \hyperlink{classastu_1_1suite2d_1_1Camera_abe5d997e84d739243f0e943bb81472dc}{Get\+Position} () const
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a6885dcb17c88b435d7d90d06b60bbcb0}{Set\+Orientation} (float phi)
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Camera_ad48c85024f99c5018ed9e3733ca74301}{Get\+Orientation} () const
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a97ded73b2b33b3dae8465f6afa9f071c}{Set\+Orientation\+Deg} (float phi)
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Camera_aca60878cdd99542be3f42d273104a0c4}{Get\+View\+Width} (bool include\+Zoom=false) const
+\item 
+float \hyperlink{classastu_1_1suite2d_1_1Camera_a0b6bb41b626a34accbebcae80adc7a7b}{Get\+View\+Height} (bool include\+Zoom=false) const
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a9bfad2b33a3dc2f1c3581ae9e9bb177f}{Show\+Screen\+Space} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a54880a7c259cd32f2313a7062118f294}{Show\+Fixed\+Width} (float width)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a8e5b6040037566353c110ca8dcabdb47}{Show\+Fixed\+Height} (float height)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a5c6c40c17d8c21961888541c7aef6baf}{Show\+Fitting} (float width, float height)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a191692f6b99f00380cc0660ce155086a}{Show\+Fitting} (const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} size)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a2d6d21250d02dfa510d4584b32186b25}{Show\+Filling} (float width, float height)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_acf376d632203455b7b9f5ce91b7704fe}{Show\+Filling} (const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} size)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_ad20b708f44ce1ef1ff68214370c823d3}{Show\+Streched} (float width, float height)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_af92dc2a15adcba875cdac653b44b546e}{Show\+Streched} (const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} size)
+\item 
+\hyperlink{classastu_1_1suite2d_1_1Camera}{Camera} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a58db2b6c0e45ed32c5f06d4780940635}{Reset} ()
+\item 
+const \hyperlink{classastu_1_1Matrix3}{Matrix3f} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a55247c21a90994449b512080989e2e1c}{Get\+Matrix} () const
+\item 
+const \hyperlink{classastu_1_1Matrix3}{Matrix3f} \& \hyperlink{classastu_1_1suite2d_1_1Camera_a92019ffd5becbde98ef768a2fc86da41}{Get\+Inverse\+Matrix} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_aac0472369257ab50c0af61e5bc400473}\label{classastu_1_1suite2d_1_1Camera_aac0472369257ab50c0af61e5bc400473}} 
+class {\bfseries Camera\+Service}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A camera object describes the portion of the game world shown on the screen. This camera object ist used for two-\/dimensional game environments, hence the name {\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_ab0b68d23b81551c747a03d4882a8473a}\label{classastu_1_1suite2d_1_1Camera_ab0b68d23b81551c747a03d4882a8473a}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a92019ffd5becbde98ef768a2fc86da41}\label{classastu_1_1suite2d_1_1Camera_a92019ffd5becbde98ef768a2fc86da41}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+Inverse\+Matrix@{Get\+Inverse\+Matrix}}
+\index{Get\+Inverse\+Matrix@{Get\+Inverse\+Matrix}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Inverse\+Matrix()}{GetInverseMatrix()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Matrix3}{Matrix3f}\& astu\+::suite2d\+::\+Camera\+::\+Get\+Inverse\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the inverse transformation matrix.
+
+\begin{DoxyReturn}{Returns}
+the inverse transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a55247c21a90994449b512080989e2e1c}\label{classastu_1_1suite2d_1_1Camera_a55247c21a90994449b512080989e2e1c}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+Matrix@{Get\+Matrix}}
+\index{Get\+Matrix@{Get\+Matrix}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Matrix()}{GetMatrix()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Matrix3}{Matrix3f}\& astu\+::suite2d\+::\+Camera\+::\+Get\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the transformation matrix.
+
+\begin{DoxyReturn}{Returns}
+the transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_ad48c85024f99c5018ed9e3733ca74301}\label{classastu_1_1suite2d_1_1Camera_ad48c85024f99c5018ed9e3733ca74301}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+Orientation@{Get\+Orientation}}
+\index{Get\+Orientation@{Get\+Orientation}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Orientation()}{GetOrientation()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Camera\+::\+Get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current orientation of this camera.
+
+\begin{DoxyReturn}{Returns}
+the orientation in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_abe5d997e84d739243f0e943bb81472dc}\label{classastu_1_1suite2d_1_1Camera_abe5d997e84d739243f0e943bb81472dc}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f} astu\+::suite2d\+::\+Camera\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current position of this camera.
+
+\begin{DoxyReturn}{Returns}
+the current position in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a0b6bb41b626a34accbebcae80adc7a7b}\label{classastu_1_1suite2d_1_1Camera_a0b6bb41b626a34accbebcae80adc7a7b}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+View\+Height@{Get\+View\+Height}}
+\index{Get\+View\+Height@{Get\+View\+Height}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+View\+Height()}{GetViewHeight()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Camera\+::\+Get\+View\+Height (\begin{DoxyParamCaption}\item[{bool}]{include\+Zoom = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+Returns the current visible height in world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Zoom} & whether to consider the current zoom factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visible height in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_aca60878cdd99542be3f42d273104a0c4}\label{classastu_1_1suite2d_1_1Camera_aca60878cdd99542be3f42d273104a0c4}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+View\+Width@{Get\+View\+Width}}
+\index{Get\+View\+Width@{Get\+View\+Width}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+View\+Width()}{GetViewWidth()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Camera\+::\+Get\+View\+Width (\begin{DoxyParamCaption}\item[{bool}]{include\+Zoom = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+Returns the current visible width in world space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em include\+Zoom} & whether to consider the current zoom factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the visible width in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a6866e73e4f7463b281c84f67cc3e7184}\label{classastu_1_1suite2d_1_1Camera_a6866e73e4f7463b281c84f67cc3e7184}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Get\+Zoom@{Get\+Zoom}}
+\index{Get\+Zoom@{Get\+Zoom}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Get\+Zoom()}{GetZoom()}}
+{\footnotesize\ttfamily float astu\+::suite2d\+::\+Camera\+::\+Get\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current zoom factor of this camera.
+
+\begin{DoxyReturn}{Returns}
+the zoom factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a58db2b6c0e45ed32c5f06d4780940635}\label{classastu_1_1suite2d_1_1Camera_a58db2b6c0e45ed32c5f06d4780940635}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this camera to its default configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a6885dcb17c88b435d7d90d06b60bbcb0}\label{classastu_1_1suite2d_1_1Camera_a6885dcb17c88b435d7d90d06b60bbcb0}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Set\+Orientation@{Set\+Orientation}}
+\index{Set\+Orientation@{Set\+Orientation}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Orientation()}{SetOrientation()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Set\+Orientation (\begin{DoxyParamCaption}\item[{float}]{phi }\end{DoxyParamCaption})}
+
+Sets the orientation of this camera
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a97ded73b2b33b3dae8465f6afa9f071c}\label{classastu_1_1suite2d_1_1Camera_a97ded73b2b33b3dae8465f6afa9f071c}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Set\+Orientation\+Deg@{Set\+Orientation\+Deg}}
+\index{Set\+Orientation\+Deg@{Set\+Orientation\+Deg}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Orientation\+Deg()}{SetOrientationDeg()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Set\+Orientation\+Deg (\begin{DoxyParamCaption}\item[{float}]{phi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the orientation of this camera
+
+
+\begin{DoxyParams}{Parameters}
+{\em phi} & the angle in degree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_aad0053eb029496040349796201ed9d08}\label{classastu_1_1suite2d_1_1Camera_aad0053eb029496040349796201ed9d08}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Sets the position of this camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the position in world space \\
+\hline
+{\em y} & the y-\/coordinate of the position in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_aada7d3c66378ebe95f7464be6ee516e6}\label{classastu_1_1suite2d_1_1Camera_aada7d3c66378ebe95f7464be6ee516e6}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2f} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the position of this camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the positoin in world space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a39adef429a83c4e9fdf47ddafbb4b0b9}\label{classastu_1_1suite2d_1_1Camera_a39adef429a83c4e9fdf47ddafbb4b0b9}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Set\+Zoom@{Set\+Zoom}}
+\index{Set\+Zoom@{Set\+Zoom}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Set\+Zoom()}{SetZoom()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Set\+Zoom (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})}
+
+Sets the zoom factor of this camera.
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the zoom factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this camera for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a2d6d21250d02dfa510d4584b32186b25}\label{classastu_1_1suite2d_1_1Camera_a2d6d21250d02dfa510d4584b32186b25}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Filling@{Show\+Filling}}
+\index{Show\+Filling@{Show\+Filling}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Filling()}{ShowFilling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Filling (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+Switches the camera to filling view mode.
+
+The camera will show the specified height of the game world independently from the aspect ratio of the output window.
+
+If the aspect ratio of the output window does not match the aspect ratio of the visible world area, parts of the game world might not be cut off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the visible width in world units \\
+\hline
+{\em height} & the visible height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_acf376d632203455b7b9f5ce91b7704fe}\label{classastu_1_1suite2d_1_1Camera_acf376d632203455b7b9f5ce91b7704fe}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Filling@{Show\+Filling}}
+\index{Show\+Filling@{Show\+Filling}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Filling()}{ShowFilling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Filling (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Switches the camera to filling view mode.
+
+The camera will show the specified height of the game world independently from the aspect ratio of the output window. If the aspect ratio of the output window does not match the aspect ratio of the visible world area, parts of the game world might not be cut off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & vector containing width and height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a5c6c40c17d8c21961888541c7aef6baf}\label{classastu_1_1suite2d_1_1Camera_a5c6c40c17d8c21961888541c7aef6baf}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Fitting@{Show\+Fitting}}
+\index{Show\+Fitting@{Show\+Fitting}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Fitting()}{ShowFitting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Fitting (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+Switches the camera to fitting view mode.
+
+The camera will show the specified height of the game world independently from the aspect ratio of the output window. Empty areas on the top and bottom or on the left and right side of the screen might appear.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the visible width in world units \\
+\hline
+{\em height} & the visible height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a191692f6b99f00380cc0660ce155086a}\label{classastu_1_1suite2d_1_1Camera_a191692f6b99f00380cc0660ce155086a}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Fitting@{Show\+Fitting}}
+\index{Show\+Fitting@{Show\+Fitting}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Fitting()}{ShowFitting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Fitting (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Switches the camera to fitting view mode.
+
+The camera will show the specified height of the game world independently from the aspect ratio of the output window. Empty areas on the top and bottom or on the left and right side of the screen might appear.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & vector containing width and height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a8e5b6040037566353c110ca8dcabdb47}\label{classastu_1_1suite2d_1_1Camera_a8e5b6040037566353c110ca8dcabdb47}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Fixed\+Height@{Show\+Fixed\+Height}}
+\index{Show\+Fixed\+Height@{Show\+Fixed\+Height}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Fixed\+Height()}{ShowFixedHeight()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Fixed\+Height (\begin{DoxyParamCaption}\item[{float}]{height }\end{DoxyParamCaption})}
+
+Switches the camera to fixed height mode.
+
+The camera will show the specified height of the game world independently from the aspect ratio of the output window. Empty areas on the left and right side of the screen might appear.
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & the visible height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a54880a7c259cd32f2313a7062118f294}\label{classastu_1_1suite2d_1_1Camera_a54880a7c259cd32f2313a7062118f294}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Fixed\+Width@{Show\+Fixed\+Width}}
+\index{Show\+Fixed\+Width@{Show\+Fixed\+Width}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Fixed\+Width()}{ShowFixedWidth()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Fixed\+Width (\begin{DoxyParamCaption}\item[{float}]{width }\end{DoxyParamCaption})}
+
+Switches the camera to fixed width mode.
+
+The camera will show the specified width of the game world independently from the aspect ratio of the output window. Empty areas on the top and bottom of the screen might appear.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the visible width in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_a9bfad2b33a3dc2f1c3581ae9e9bb177f}\label{classastu_1_1suite2d_1_1Camera_a9bfad2b33a3dc2f1c3581ae9e9bb177f}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Screen\+Space@{Show\+Screen\+Space}}
+\index{Show\+Screen\+Space@{Show\+Screen\+Space}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Screen\+Space()}{ShowScreenSpace()}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Screen\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Switches the camera to screen space mode.
+
+The camera shows the section of the world that is visible based on the current resolution of the output window. Except for centering the output so that the coordinate origin is in the center of the output window, the camera performs no transformation. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_ad20b708f44ce1ef1ff68214370c823d3}\label{classastu_1_1suite2d_1_1Camera_ad20b708f44ce1ef1ff68214370c823d3}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Streched@{Show\+Streched}}
+\index{Show\+Streched@{Show\+Streched}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Streched()}{ShowStreched()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Streched (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+Switches the camera to streched view mode.
+
+In case aspect ratio of the output window does not match the aspect ratio of the world dimensions, the output will be streched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the visible width in world units \\
+\hline
+{\em height} & the visible height in world units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Camera_af92dc2a15adcba875cdac653b44b546e}\label{classastu_1_1suite2d_1_1Camera_af92dc2a15adcba875cdac653b44b546e}} 
+\index{astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}!Show\+Streched@{Show\+Streched}}
+\index{Show\+Streched@{Show\+Streched}!astu\+::suite2d\+::\+Camera@{astu\+::suite2d\+::\+Camera}}
+\subsubsection{\texorpdfstring{Show\+Streched()}{ShowStreched()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1suite2d_1_1Camera}{Camera}\& astu\+::suite2d\+::\+Camera\+::\+Show\+Streched (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{astu\+::\+Vector2f}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Switches the camera to streched view mode.
+
+In case aspect ratio of the output window does not match the aspect ratio of the world dimensions, the output will be streched.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & vector containing width and height in world units \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Camera\+Service.\+h\end{DoxyCompactItemize}

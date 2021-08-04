@@ -1,0 +1,249 @@
+\hypertarget{classastu_1_1VertexBufferBuilder2}{}\section{astu\+:\+:Vertex\+Buffer\+Builder2$<$ T $>$ Class Template Reference}
+\label{classastu_1_1VertexBufferBuilder2}\index{astu\+::\+Vertex\+Buffer\+Builder2$<$ T $>$@{astu\+::\+Vertex\+Buffer\+Builder2$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Vertex\+Buffer2.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Vertex\+Buffer\+Builder2$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classastu_1_1VertexBufferBuilder2__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2_a811979f1ea54191c4974b122b0e54999}{$\sim$\+Vertex\+Buffer\+Builder2} ()
+\item 
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_ab96f2f382b9f855ead02ed2cd1391147}{Add\+Vertex} (T x, T y)=0
+\item 
+\hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_a7c9aeca470b92d3170c3558f924b79e3}{Add\+Vertex} (const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&vertex)
+\item 
+\hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_ab79d03bea65cb06b7a2af64fc6fd704b}{Add\+Vertices} (const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&vertices)
+\item 
+virtual size\+\_\+t \hyperlink{classastu_1_1VertexBufferBuilder2_ae715cb61f66200f1971b2bd6142b1715}{Get\+Num\+Vertices} () const =0
+\item 
+virtual const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \& \hyperlink{classastu_1_1VertexBufferBuilder2_ae9ecf15e9ddafcdac089ebe61e37a242}{Get\+Vertex} (size\+\_\+t idx) const =0
+\item 
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_a36eb7c96971e245110f9674779323666}{Set\+Vertex} (size\+\_\+t idx, const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&vertex)
+\item 
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_aad6f4a82b30b026ee7140b88edb053b2}{Set\+Vertex} (size\+\_\+t idx, T x, T y)=0
+\item 
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} \& \hyperlink{classastu_1_1VertexBufferBuilder2_a13de4c923fb8e44b99f6cd36430dd369}{Reset} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1VertexBuffer2}{Vertex\+Buffer2}$<$ T $>$ $>$ \hyperlink{classastu_1_1VertexBufferBuilder2_a69ce65106844f82fcc34632bfa0d6450}{Build} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Vertex\+Buffer\+Builder2$<$ T $>$}
+
+Abstract base class for vertex buffer builders.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em t} & the numerical type of this vertex buffer \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_a811979f1ea54191c4974b122b0e54999}\label{classastu_1_1VertexBufferBuilder2_a811979f1ea54191c4974b122b0e54999}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!````~Vertex\+Buffer\+Builder2@{$\sim$\+Vertex\+Buffer\+Builder2}}
+\index{````~Vertex\+Buffer\+Builder2@{$\sim$\+Vertex\+Buffer\+Builder2}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{$\sim$\+Vertex\+Buffer\+Builder2()}{~VertexBufferBuilder2()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::$\sim$\hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_ab96f2f382b9f855ead02ed2cd1391147}\label{classastu_1_1VertexBufferBuilder2_ab96f2f382b9f855ead02ed2cd1391147}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Add\+Vertex@{Add\+Vertex}}
+\index{Add\+Vertex@{Add\+Vertex}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Add\+Vertex()}{AddVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Add\+Vertex (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds the specified vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the vertex \\
+\hline
+{\em y} & the y-\/coordinate of the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_ad0d9a866c9225b95a7b5f7029598f99d}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}, and \hyperlink{classastu_1_1PolygonVertexBufferBuilder_aed81ba280e667b0ed13ca73853f2f426}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}.
+
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_a7c9aeca470b92d3170c3558f924b79e3}\label{classastu_1_1VertexBufferBuilder2_a7c9aeca470b92d3170c3558f924b79e3}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Add\+Vertex@{Add\+Vertex}}
+\index{Add\+Vertex@{Add\+Vertex}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Add\+Vertex()}{AddVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Add\+Vertex (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the specified vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & the vertex to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_ab79d03bea65cb06b7a2af64fc6fd704b}\label{classastu_1_1VertexBufferBuilder2_ab79d03bea65cb06b7a2af64fc6fd704b}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Add\+Vertices@{Add\+Vertices}}
+\index{Add\+Vertices@{Add\+Vertices}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Add\+Vertices()}{AddVertices()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Add\+Vertices (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$$>$ \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the specified vertices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & the vertices to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_a69ce65106844f82fcc34632bfa0d6450}\label{classastu_1_1VertexBufferBuilder2_a69ce65106844f82fcc34632bfa0d6450}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Build@{Build}}
+\index{Build@{Build}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1VertexBuffer2}{Vertex\+Buffer2}$<$T$>$ $>$ \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a new vertex buffer.
+
+\begin{DoxyReturn}{Returns}
+the newly created vertex buffer 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1PolygonVertexBufferBuilder_a4e598b21be17c556a444da88f2388319}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}, and \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_ad1825ce136ba0b4e8ef53fba3266f3af}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}.
+
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_ae715cb61f66200f1971b2bd6142b1715}\label{classastu_1_1VertexBufferBuilder2_ae715cb61f66200f1971b2bd6142b1715}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Get\+Num\+Vertices@{Get\+Num\+Vertices}}
+\index{Get\+Num\+Vertices@{Get\+Num\+Vertices}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Get\+Num\+Vertices()}{GetNumVertices()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual size\+\_\+t \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Get\+Num\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the number of vertices, added to this builder.
+
+\begin{DoxyReturn}{Returns}
+the number of vertices 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_a82b6c9eaeff1583edc3e42e6b1857b70}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}, and \hyperlink{classastu_1_1PolygonVertexBufferBuilder_a4fd022aa954b7f41db8c34349286e3e3}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}.
+
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_ae9ecf15e9ddafcdac089ebe61e37a242}\label{classastu_1_1VertexBufferBuilder2_ae9ecf15e9ddafcdac089ebe61e37a242}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Get\+Vertex@{Get\+Vertex}}
+\index{Get\+Vertex@{Get\+Vertex}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Get\+Vertex()}{GetVertex()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual const \hyperlink{classastu_1_1Vector2}{Vector2}$<$T$>$\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Get\+Vertex (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the vertex with the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the vertex to return\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the specified index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_aaf43c4425363ccb8db57bb8963072a7f}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}, and \hyperlink{classastu_1_1PolygonVertexBufferBuilder_ac8ae6ab6039dde91530a79000ac3da3e}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}.
+
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_a13de4c923fb8e44b99f6cd36430dd369}\label{classastu_1_1VertexBufferBuilder2_a13de4c923fb8e44b99f6cd36430dd369}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Reset@{Reset}}
+\index{Reset@{Reset}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Resets this builder to its initial configuration.
+
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classastu_1_1PolygonVertexBufferBuilder_a1d0b4429c0fefa106f056a6406ba1d89}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}, and \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_a0a9bae699849ddf8ce74f591857e00d9}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}.
+
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_a36eb7c96971e245110f9674779323666}\label{classastu_1_1VertexBufferBuilder2_a36eb7c96971e245110f9674779323666}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Set\+Vertex@{Set\+Vertex}}
+\index{Set\+Vertex@{Set\+Vertex}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Set\+Vertex()}{SetVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Set\+Vertex (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{const \hyperlink{classastu_1_1Vector2}{Vector2}$<$ T $>$ \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Redefines a previously added vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the vertex to redefine \\
+\hline
+{\em vertex} & the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1VertexBufferBuilder2_aad6f4a82b30b026ee7140b88edb053b2}\label{classastu_1_1VertexBufferBuilder2_aad6f4a82b30b026ee7140b88edb053b2}} 
+\index{astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}!Set\+Vertex@{Set\+Vertex}}
+\index{Set\+Vertex@{Set\+Vertex}!astu\+::\+Vertex\+Buffer\+Builder2@{astu\+::\+Vertex\+Buffer\+Builder2}}
+\subsubsection{\texorpdfstring{Set\+Vertex()}{SetVertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classastu_1_1VertexBufferBuilder2}{Vertex\+Buffer\+Builder2}\& \hyperlink{classastu_1_1VertexBufferBuilder2}{astu\+::\+Vertex\+Buffer\+Builder2}$<$ T $>$\+::Set\+Vertex (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Redefines a previously added vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & the index of the vertex to redefine \\
+\hline
+{\em x} & the x-\/coordinate of the vertex \\
+\hline
+{\em y} & the y-\/coordinate of the vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to this builder for method chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & in case the specified index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classastu_1_1SdlVertexBufferBuilderService2D_a1263227c82ffd1ecd6cd53612d1d4b4b}{astu\+::\+Sdl\+Vertex\+Buffer\+Builder\+Service2D}, and \hyperlink{classastu_1_1PolygonVertexBufferBuilder_a64c4253a91903f0650145dc10c4d356b}{astu\+::\+Polygon\+Vertex\+Buffer\+Builder$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Graphics/Vertex\+Buffer2.\+h\end{DoxyCompactItemize}

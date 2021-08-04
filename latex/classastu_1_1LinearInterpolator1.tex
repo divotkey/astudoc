@@ -1,0 +1,109 @@
+\hypertarget{classastu_1_1LinearInterpolator1}{}\section{astu\+:\+:Linear\+Interpolator1$<$ T $>$ Class Template Reference}
+\label{classastu_1_1LinearInterpolator1}\index{astu\+::\+Linear\+Interpolator1$<$ T $>$@{astu\+::\+Linear\+Interpolator1$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Interpolator.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Linear\+Interpolator1$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classastu_1_1LinearInterpolator1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Linear\+Interpolator1$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classastu_1_1LinearInterpolator1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1LinearInterpolator1_a378aee9822733ace3405c81c7062a50a}{Linear\+Interpolator1} (T speed=static\+\_\+cast$<$ T $>$(1), T initial\+Value=static\+\_\+cast$<$ T $>$(0))
+\item 
+void \hyperlink{classastu_1_1LinearInterpolator1_ac4f516f5c77e3e09c32ef92cb1031366}{Set\+Speed} (T new\+Speed)
+\item 
+virtual T \hyperlink{classastu_1_1LinearInterpolator1_a87cd49a1e029c8a4e7ca116c4dfae900}{Update} (T dt) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class astu\+::\+Linear\+Interpolator1$<$ T $>$}
+
+Interpolates between two one-\/dimensional values linearily.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the numerical type used for the values to interpolate \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1LinearInterpolator1_a378aee9822733ace3405c81c7062a50a}\label{classastu_1_1LinearInterpolator1_a378aee9822733ace3405c81c7062a50a}} 
+\index{astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}!Linear\+Interpolator1@{Linear\+Interpolator1}}
+\index{Linear\+Interpolator1@{Linear\+Interpolator1}!astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}}
+\subsubsection{\texorpdfstring{Linear\+Interpolator1()}{LinearInterpolator1()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classastu_1_1LinearInterpolator1}{astu\+::\+Linear\+Interpolator1}$<$ T $>$\+::\hyperlink{classastu_1_1LinearInterpolator1}{Linear\+Interpolator1} (\begin{DoxyParamCaption}\item[{T}]{speed = {\ttfamily static\+\_\+cast$<$T$>$(1)},  }\item[{T}]{initial\+Value = {\ttfamily static\+\_\+cast$<$T$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & the interpolation speed \\
+\hline
+{\em initial\+Value} & the initial value of this interpolator \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1LinearInterpolator1_ac4f516f5c77e3e09c32ef92cb1031366}\label{classastu_1_1LinearInterpolator1_ac4f516f5c77e3e09c32ef92cb1031366}} 
+\index{astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}!Set\+Speed@{Set\+Speed}}
+\index{Set\+Speed@{Set\+Speed}!astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}}
+\subsubsection{\texorpdfstring{Set\+Speed()}{SetSpeed()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classastu_1_1LinearInterpolator1}{astu\+::\+Linear\+Interpolator1}$<$ T $>$\+::Set\+Speed (\begin{DoxyParamCaption}\item[{T}]{new\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the interpolation speed of this interpolator. The interpolation speed determines the speed used to reach the target value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Speed} & the new speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1LinearInterpolator1_a87cd49a1e029c8a4e7ca116c4dfae900}\label{classastu_1_1LinearInterpolator1_a87cd49a1e029c8a4e7ca116c4dfae900}} 
+\index{astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}!Update@{Update}}
+\index{Update@{Update}!astu\+::\+Linear\+Interpolator1@{astu\+::\+Linear\+Interpolator1}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T \hyperlink{classastu_1_1LinearInterpolator1}{astu\+::\+Linear\+Interpolator1}$<$ T $>$\+::Update (\begin{DoxyParamCaption}\item[{T}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the current value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the current value 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1Interpolator1_a3507ba0a1fcb2f38539793f1906d8000}{astu\+::\+Interpolator1$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Math/Interpolator.\+h\end{DoxyCompactItemize}

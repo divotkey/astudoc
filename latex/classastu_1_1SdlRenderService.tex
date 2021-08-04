@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Sdl\+Render\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{classastu_1_1SdlRenderService__inherit__graph}
+\includegraphics[width=350pt]{classastu_1_1SdlRenderService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,30 +19,31 @@ Collaboration diagram for astu\+:\+:Sdl\+Render\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=347pt]{classastu_1_1SdlRenderService__coll__graph}
+\includegraphics[width=350pt]{classastu_1_1SdlRenderService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classastu_1_1SdlRenderService_a8669793d9701f979c90cd802575a2645}{Sdl\+Render\+Service} (int priority=0)
+\hyperlink{classastu_1_1SdlRenderService_a4ec0b0ae88700604b6c6502ba56b8e09}{Sdl\+Render\+Service} (int priority=Priority\+::\+Very\+Low)
 \item 
 virtual \hyperlink{classastu_1_1SdlRenderService_a0ec8c27982cfa6ace6b28e50fba78f2a}{$\sim$\+Sdl\+Render\+Service} ()
 \item 
-void \hyperlink{classastu_1_1SdlRenderService_af025dba6e6ada1f09badaa6de75292d1}{Add\+Layer} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$ layer)
+void \hyperlink{classastu_1_1SdlRenderService_a94b8e424f9e7332cc5c81051196b43f7}{Add\+Layer} (\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&layer)
 \item 
-void \hyperlink{classastu_1_1SdlRenderService_a88ffe81ca6348b12b0185310932bd4ee}{Remove\+Layer} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$ layer)
+void \hyperlink{classastu_1_1SdlRenderService_ae275d41459e82b5e7cf6636b2b2f868a}{Remove\+Layer} (\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&layer)
 \item 
-bool \hyperlink{classastu_1_1SdlRenderService_a45016463f301b52b1ffacfa976eb9849}{Has\+Layer} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$ layer)
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
+bool \hyperlink{classastu_1_1SdlRenderService_afe973840da86bd8cdf1b703cdd642529}{Has\+Layer} (\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&layer)
 \item 
-virtual void \hyperlink{classastu_1_1SdlRenderService_a38abd541e8075e5e4eb702ca99c9b0a5}{On\+Startup} () override
+virtual void \hyperlink{classastu_1_1SdlRenderService_a1b92671271fa91f44e7b3e6c57bebe54}{Set\+Background\+Color} (const \hyperlink{classastu_1_1Color}{Color4f} \&bg) override
 \item 
-virtual void \hyperlink{classastu_1_1SdlRenderService_a4f21478ca10de11d260792c3ccd79eef}{On\+Shutdown} () override
+virtual const \hyperlink{classastu_1_1Color}{Color4f} \& \hyperlink{classastu_1_1SdlRenderService_ae6e14e9be46ab88a1e04fa6ac7c5aa2c}{Get\+Background\+Color} () const override
 \item 
-virtual void \hyperlink{classastu_1_1SdlRenderService_af109517e98ab8bce1e625122a441fb75}{On\+Update} () override
+virtual size\+\_\+t \hyperlink{classastu_1_1SdlRenderService_a45305851abdc94c0d9c8441822a59cd2}{Num\+Render\+Layers} () const override
+\item 
+virtual void \hyperlink{classastu_1_1SdlRenderService_a4887120e1595f4b257e4813e09121e89}{Set\+V\+Sync} (bool vsync) override
+\item 
+virtual bool \hyperlink{classastu_1_1SdlRenderService_a3bcc49339bca8cd388c16caefb18cadf}{Is\+Vsync} () const override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -53,11 +54,11 @@ Initializes and maintains an S\+DL renderer.
 This service has a depencendy to \hyperlink{classastu_1_1SdlVideoService}{Sdl\+Video\+Service} because creating an S\+DL renderer requires access to the S\+DL window. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_a8669793d9701f979c90cd802575a2645}\label{classastu_1_1SdlRenderService_a8669793d9701f979c90cd802575a2645}} 
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a4ec0b0ae88700604b6c6502ba56b8e09}\label{classastu_1_1SdlRenderService_a4ec0b0ae88700604b6c6502ba56b8e09}} 
 \index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Sdl\+Render\+Service@{Sdl\+Render\+Service}}
 \index{Sdl\+Render\+Service@{Sdl\+Render\+Service}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
 \subsubsection{\texorpdfstring{Sdl\+Render\+Service()}{SdlRenderService()}}
-{\footnotesize\ttfamily astu\+::\+Sdl\+Render\+Service\+::\+Sdl\+Render\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Render\+Service\+::\+Sdl\+Render\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily Priority\+:\+:VeryLow} }\end{DoxyParamCaption})}
 
 Constructor.
 
@@ -75,11 +76,11 @@ Constructor.
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_af025dba6e6ada1f09badaa6de75292d1}\label{classastu_1_1SdlRenderService_af025dba6e6ada1f09badaa6de75292d1}} 
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a94b8e424f9e7332cc5c81051196b43f7}\label{classastu_1_1SdlRenderService_a94b8e424f9e7332cc5c81051196b43f7}} 
 \index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Add\+Layer@{Add\+Layer}}
 \index{Add\+Layer@{Add\+Layer}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
 \subsubsection{\texorpdfstring{Add\+Layer()}{AddLayer()}}
-{\footnotesize\ttfamily void astu\+::\+Sdl\+Render\+Service\+::\+Add\+Layer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$}]{layer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Render\+Service\+::\+Add\+Layer (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&}]{layer }\end{DoxyParamCaption})}
 
 Adds a render layer to this service.
 
@@ -88,11 +89,26 @@ Adds a render layer to this service.
 {\em layer} & the render layer to add \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_a45016463f301b52b1ffacfa976eb9849}\label{classastu_1_1SdlRenderService_a45016463f301b52b1ffacfa976eb9849}} 
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_ae6e14e9be46ab88a1e04fa6ac7c5aa2c}\label{classastu_1_1SdlRenderService_ae6e14e9be46ab88a1e04fa6ac7c5aa2c}} 
+\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Get\+Background\+Color@{Get\+Background\+Color}}
+\index{Get\+Background\+Color@{Get\+Background\+Color}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
+\subsubsection{\texorpdfstring{Get\+Background\+Color()}{GetBackgroundColor()}}
+{\footnotesize\ttfamily virtual const \hyperlink{classastu_1_1Color}{Color4f}\& astu\+::\+Sdl\+Render\+Service\+::\+Get\+Background\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the background color.
+
+\begin{DoxyReturn}{Returns}
+the current background color 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1RenderService_a5491abad694b7d662f67b4d4bc858e87}{astu\+::\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_afe973840da86bd8cdf1b703cdd642529}\label{classastu_1_1SdlRenderService_afe973840da86bd8cdf1b703cdd642529}} 
 \index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Has\+Layer@{Has\+Layer}}
 \index{Has\+Layer@{Has\+Layer}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
 \subsubsection{\texorpdfstring{Has\+Layer()}{HasLayer()}}
-{\footnotesize\ttfamily bool astu\+::\+Sdl\+Render\+Service\+::\+Has\+Layer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$}]{layer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool astu\+::\+Sdl\+Render\+Service\+::\+Has\+Layer (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&}]{layer }\end{DoxyParamCaption})}
 
 Tests whether a render layer has already been added.
 
@@ -104,45 +120,41 @@ Tests whether a render layer has already been added.
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the layer has already been added 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_a4f21478ca10de11d260792c3ccd79eef}\label{classastu_1_1SdlRenderService_a4f21478ca10de11d260792c3ccd79eef}} 
-\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!On\+Shutdown@{On\+Shutdown}}
-\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
-\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
-{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a3bcc49339bca8cd388c16caefb18cadf}\label{classastu_1_1SdlRenderService_a3bcc49339bca8cd388c16caefb18cadf}} 
+\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Is\+Vsync@{Is\+Vsync}}
+\index{Is\+Vsync@{Is\+Vsync}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
+\subsubsection{\texorpdfstring{Is\+Vsync()}{IsVsync()}}
+{\footnotesize\ttfamily virtual bool astu\+::\+Sdl\+Render\+Service\+::\+Is\+Vsync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Returns whether vertical synchronization is enabled.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}} method is maintaining the running-\/state of this service. 
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if vertical synchronization is enabled 
+\end{DoxyReturn}
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
 
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_a38abd541e8075e5e4eb702ca99c9b0a5}\label{classastu_1_1SdlRenderService_a38abd541e8075e5e4eb702ca99c9b0a5}} 
-\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!On\+Startup@{On\+Startup}}
-\index{On\+Startup@{On\+Startup}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
-\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
-{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+Implements \hyperlink{classastu_1_1RenderService_a63ee728bf462dcd71821b2104a1d631a}{astu\+::\+Render\+Service}.
 
-Called by this base class on startup.
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a45305851abdc94c0d9c8441822a59cd2}\label{classastu_1_1SdlRenderService_a45305851abdc94c0d9c8441822a59cd2}} 
+\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Num\+Render\+Layers@{Num\+Render\+Layers}}
+\index{Num\+Render\+Layers@{Num\+Render\+Layers}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
+\subsubsection{\texorpdfstring{Num\+Render\+Layers()}{NumRenderLayers()}}
+{\footnotesize\ttfamily virtual size\+\_\+t astu\+::\+Sdl\+Render\+Service\+::\+Num\+Render\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}} method is maintaining the running-\/state of this service. 
+Returns the number of render layers.
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+\begin{DoxyReturn}{Returns}
+the number of render layers 
+\end{DoxyReturn}
 
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_af109517e98ab8bce1e625122a441fb75}\label{classastu_1_1SdlRenderService_af109517e98ab8bce1e625122a441fb75}} 
-\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!On\+Update@{On\+Update}}
-\index{On\+Update@{On\+Update}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
-\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
-{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called when this updatable gets updated. 
+Implements \hyperlink{classastu_1_1RenderService_a2347b2ac2b5f57b79bad63de9b8e6841}{astu\+::\+Render\+Service}.
 
-Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
-
-\mbox{\Hypertarget{classastu_1_1SdlRenderService_a88ffe81ca6348b12b0185310932bd4ee}\label{classastu_1_1SdlRenderService_a88ffe81ca6348b12b0185310932bd4ee}} 
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_ae275d41459e82b5e7cf6636b2b2f868a}\label{classastu_1_1SdlRenderService_ae275d41459e82b5e7cf6636b2b2f868a}} 
 \index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Remove\+Layer@{Remove\+Layer}}
 \index{Remove\+Layer@{Remove\+Layer}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
 \subsubsection{\texorpdfstring{Remove\+Layer()}{RemoveLayer()}}
-{\footnotesize\ttfamily void astu\+::\+Sdl\+Render\+Service\+::\+Remove\+Layer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} $>$}]{layer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void astu\+::\+Sdl\+Render\+Service\+::\+Remove\+Layer (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1ISdlRenderLayer}{I\+Sdl\+Render\+Layer} \&}]{layer }\end{DoxyParamCaption})}
 
 Removes a render layer from this service.
 
@@ -151,8 +163,42 @@ Removes a render layer from this service.
 {\em layer} & the render layer to remove \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a1b92671271fa91f44e7b3e6c57bebe54}\label{classastu_1_1SdlRenderService_a1b92671271fa91f44e7b3e6c57bebe54}} 
+\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Service\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4f} \&}]{bg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the background color of the main application window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bg} & the background color \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1RenderService_acae1a271e76761320a95d5664ce5b134}{astu\+::\+Render\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlRenderService_a4887120e1595f4b257e4813e09121e89}\label{classastu_1_1SdlRenderService_a4887120e1595f4b257e4813e09121e89}} 
+\index{astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}!Set\+V\+Sync@{Set\+V\+Sync}}
+\index{Set\+V\+Sync@{Set\+V\+Sync}!astu\+::\+Sdl\+Render\+Service@{astu\+::\+Sdl\+Render\+Service}}
+\subsubsection{\texorpdfstring{Set\+V\+Sync()}{SetVSync()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Render\+Service\+::\+Set\+V\+Sync (\begin{DoxyParamCaption}\item[{bool}]{vsync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Enables or disables vertical synchronization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vsync} & set to {\ttfamily true} to enable vertical synchronization \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1RenderService_af13a90300b42075e26c998d19332eff6}{astu\+::\+Render\+Service}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Sdl\+Render\+Service.\+h\end{DoxyCompactItemize}
+include/\+Suite\+S\+D\+L/Sdl\+Render\+Service.\+h\end{DoxyCompactItemize}

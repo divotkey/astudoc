@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Sdl\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=196pt]{classastu_1_1SdlService__inherit__graph}
+\includegraphics[width=169pt]{classastu_1_1SdlService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,7 +19,7 @@ Collaboration diagram for astu\+:\+:Sdl\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=310pt]{classastu_1_1SdlService__coll__graph}
+\includegraphics[width=212pt]{classastu_1_1SdlService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -65,11 +65,11 @@ Constructor.
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a7095888244052db294d58738c0d187fb}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlService_a2fcb46537de794ab6e4f5e043b26ff60}\label{classastu_1_1SdlService_a2fcb46537de794ab6e4f5e043b26ff60}} 
 \index{astu\+::\+Sdl\+Service@{astu\+::\+Sdl\+Service}!On\+Startup@{On\+Startup}}
@@ -77,14 +77,14 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1BaseService_a59dade033dcb44dd32155c526a3a58e2}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Sdl\+Service.\+h\end{DoxyCompactItemize}
+include/\+Suite\+S\+D\+L/Sdl\+Service.\+h\end{DoxyCompactItemize}

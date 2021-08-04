@@ -1,0 +1,126 @@
+\hypertarget{classastu_1_1SdlSceneGraph2D}{}\section{astu\+:\+:Sdl\+Scene\+Graph2D Class Reference}
+\label{classastu_1_1SdlSceneGraph2D}\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+
+
+{\ttfamily \#include $<$Sdl\+Scene\+Graph2\+D.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Scene\+Graph2D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlSceneGraph2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Scene\+Graph2D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlSceneGraph2D__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlSceneGraph2D_a35aef61101cffcc9dbefc46837939084}{Sdl\+Scene\+Graph2D} (int render\+Priority=Priority\+::\+Normal, int update\+Priority=Priority\+::\+Low)
+\item 
+virtual \hyperlink{classastu_1_1SdlSceneGraph2D_af9eba7a73ba3e59f567cd43052ec78be}{$\sim$\+Sdl\+Scene\+Graph2D} ()
+\item 
+virtual void \hyperlink{classastu_1_1SdlSceneGraph2D_add3a6e67064379389068659addad0920}{On\+Update} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlSceneGraph2D_a2af5a74277e6478da29ba88d0f11daea}{On\+Render} (S\+D\+L\+\_\+\+Renderer $\ast$renderer) override
+\item 
+virtual void \hyperlink{classastu_1_1SdlSceneGraph2D_a141138f2cbda543b9bcbd0803e0ebd19}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlSceneGraph2D_a9d28b32e69cb7901ec2b05091b750642}{On\+Shutdown} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides a S\+D\+L-\/based implementation of the 2D scene graph. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_a35aef61101cffcc9dbefc46837939084}\label{classastu_1_1SdlSceneGraph2D_a35aef61101cffcc9dbefc46837939084}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!Sdl\+Scene\+Graph2D@{Sdl\+Scene\+Graph2D}}
+\index{Sdl\+Scene\+Graph2D@{Sdl\+Scene\+Graph2D}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{Sdl\+Scene\+Graph2\+D()}{SdlSceneGraph2D()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Scene\+Graph2\+D\+::\+Sdl\+Scene\+Graph2D (\begin{DoxyParamCaption}\item[{int}]{render\+Priority = {\ttfamily Priority\+:\+:Normal},  }\item[{int}]{update\+Priority = {\ttfamily Priority\+:\+:Low} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+Priority} & the priority of this render layer \\
+\hline
+{\em update\+Priority} & the update priority of this scene graph \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_af9eba7a73ba3e59f567cd43052ec78be}\label{classastu_1_1SdlSceneGraph2D_af9eba7a73ba3e59f567cd43052ec78be}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!````~Sdl\+Scene\+Graph2D@{$\sim$\+Sdl\+Scene\+Graph2D}}
+\index{````~Sdl\+Scene\+Graph2D@{$\sim$\+Sdl\+Scene\+Graph2D}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{$\sim$\+Sdl\+Scene\+Graph2\+D()}{~SdlSceneGraph2D()}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Scene\+Graph2\+D\+::$\sim$\+Sdl\+Scene\+Graph2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_a2af5a74277e6478da29ba88d0f11daea}\label{classastu_1_1SdlSceneGraph2D_a2af5a74277e6478da29ba88d0f11daea}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!On\+Render@{On\+Render}}
+\index{On\+Render@{On\+Render}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{On\+Render()}{OnRender()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Scene\+Graph2\+D\+::\+On\+Render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the render service to render this layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the S\+DL renderer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1ISdlRenderLayer_a18af53e17e7f6f945817ad3e8b8ecc87}{astu\+::\+I\+Sdl\+Render\+Layer}.
+
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_a9d28b32e69cb7901ec2b05091b750642}\label{classastu_1_1SdlSceneGraph2D_a9d28b32e69cb7901ec2b05091b750642}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Scene\+Graph2\+D\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base method on shutdown.
+
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_a141138f2cbda543b9bcbd0803e0ebd19}\label{classastu_1_1SdlSceneGraph2D_a141138f2cbda543b9bcbd0803e0ebd19}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Scene\+Graph2\+D\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the service base class on startup.
+
+Derived can override this method for initialization purposes. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlSceneGraph2D_add3a6e67064379389068659addad0920}\label{classastu_1_1SdlSceneGraph2D_add3a6e67064379389068659addad0920}} 
+\index{astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}!On\+Update@{On\+Update}}
+\index{On\+Update@{On\+Update}!astu\+::\+Sdl\+Scene\+Graph2D@{astu\+::\+Sdl\+Scene\+Graph2D}}
+\subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Scene\+Graph2\+D\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when an update is due. 
+
+Reimplemented from \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Sdl\+Scene\+Graph2\+D.\+h\end{DoxyCompactItemize}

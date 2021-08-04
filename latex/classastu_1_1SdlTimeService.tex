@@ -10,7 +10,7 @@ Inheritance diagram for astu\+:\+:Sdl\+Time\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classastu_1_1SdlTimeService__inherit__graph}
+\includegraphics[width=345pt]{classastu_1_1SdlTimeService__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,17 +19,19 @@ Collaboration diagram for astu\+:\+:Sdl\+Time\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classastu_1_1SdlTimeService__coll__graph}
+\includegraphics[width=349pt]{classastu_1_1SdlTimeService__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classastu_1_1SdlTimeService_a66fa9afe98778d34ab4f2a92ba6ded40}{Sdl\+Time\+Service} (int priority=0)
+\hyperlink{classastu_1_1SdlTimeService_acceb8055d799af777b424d78e305ed58}{Sdl\+Time\+Service} (int priority=Priority\+::\+Normal)
 \item 
-\hyperlink{classastu_1_1SdlTimeService_a2e7171a77afc5bf3a051eba2b583ea8a}{$\sim$\+Sdl\+Time\+Service} ()
+virtual \hyperlink{classastu_1_1SdlTimeService_a41d6e3b0011d41a197ea625722e1a6be}{$\sim$\+Sdl\+Time\+Service} ()
 \item 
 virtual double \hyperlink{classastu_1_1SdlTimeService_a6652d19cae14e20ec85a1808fc8e87b7}{Get\+Elapsed\+Time} () const override
+\item 
+virtual double \hyperlink{classastu_1_1SdlTimeService_ab1cd9c0977c8b93cc4cdee22e0107bde}{Get\+Absolute\+Time} () const override
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -47,11 +49,11 @@ virtual void \hyperlink{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b
 Uses the S\+DL high performance timer to measure elapsed time. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classastu_1_1SdlTimeService_a66fa9afe98778d34ab4f2a92ba6ded40}\label{classastu_1_1SdlTimeService_a66fa9afe98778d34ab4f2a92ba6ded40}} 
+\mbox{\Hypertarget{classastu_1_1SdlTimeService_acceb8055d799af777b424d78e305ed58}\label{classastu_1_1SdlTimeService_acceb8055d799af777b424d78e305ed58}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!Sdl\+Time\+Service@{Sdl\+Time\+Service}}
 \index{Sdl\+Time\+Service@{Sdl\+Time\+Service}!astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}}
 \subsubsection{\texorpdfstring{Sdl\+Time\+Service()}{SdlTimeService()}}
-{\footnotesize\ttfamily astu\+::\+Sdl\+Time\+Service\+::\+Sdl\+Time\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Time\+Service\+::\+Sdl\+Time\+Service (\begin{DoxyParamCaption}\item[{int}]{priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
 
 Constructor.
 
@@ -60,15 +62,30 @@ Constructor.
 {\em priority} & the priority used to update this service \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classastu_1_1SdlTimeService_a2e7171a77afc5bf3a051eba2b583ea8a}\label{classastu_1_1SdlTimeService_a2e7171a77afc5bf3a051eba2b583ea8a}} 
+\mbox{\Hypertarget{classastu_1_1SdlTimeService_a41d6e3b0011d41a197ea625722e1a6be}\label{classastu_1_1SdlTimeService_a41d6e3b0011d41a197ea625722e1a6be}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!````~Sdl\+Time\+Service@{$\sim$\+Sdl\+Time\+Service}}
 \index{````~Sdl\+Time\+Service@{$\sim$\+Sdl\+Time\+Service}!astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}}
 \subsubsection{\texorpdfstring{$\sim$\+Sdl\+Time\+Service()}{~SdlTimeService()}}
-{\footnotesize\ttfamily astu\+::\+Sdl\+Time\+Service\+::$\sim$\+Sdl\+Time\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Time\+Service\+::$\sim$\+Sdl\+Time\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Virtual destructor. 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlTimeService_ab1cd9c0977c8b93cc4cdee22e0107bde}\label{classastu_1_1SdlTimeService_ab1cd9c0977c8b93cc4cdee22e0107bde}} 
+\index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!Get\+Absolute\+Time@{Get\+Absolute\+Time}}
+\index{Get\+Absolute\+Time@{Get\+Absolute\+Time}!astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}}
+\subsubsection{\texorpdfstring{Get\+Absolute\+Time()}{GetAbsoluteTime()}}
+{\footnotesize\ttfamily virtual double astu\+::\+Sdl\+Time\+Service\+::\+Get\+Absolute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Return the absolute time since the service has been started.
+
+\begin{DoxyReturn}{Returns}
+the absolute time 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1TimeService_a4c2eb07963ed65649f17e331ff20735a}{astu\+::\+Time\+Service}.
+
 \mbox{\Hypertarget{classastu_1_1SdlTimeService_a6652d19cae14e20ec85a1808fc8e87b7}\label{classastu_1_1SdlTimeService_a6652d19cae14e20ec85a1808fc8e87b7}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!Get\+Elapsed\+Time@{Get\+Elapsed\+Time}}
 \index{Get\+Elapsed\+Time@{Get\+Elapsed\+Time}!astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}}
@@ -77,14 +94,12 @@ Virtual destructor.
 
 Returns the elapsed time since the last update.
 
-
-\begin{DoxyParams}{Parameters}
-{\em double} & the elapsed time in seconds \\
-\hline
-\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the elapsed time in seconds 
+\end{DoxyReturn}
 
 
-Implements \hyperlink{classastu_1_1ITimeService_af38c6c5f4fedc705c14b01f2c61b0afc}{astu\+::\+I\+Time\+Service}.
+Implements \hyperlink{classastu_1_1TimeService_af3b4f5f1b64d87e6fd8a2b81c48a2bf4}{astu\+::\+Time\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlTimeService_a6a1b864beed186413933dd8b97a393a2}\label{classastu_1_1SdlTimeService_a6a1b864beed186413933dd8b97a393a2}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!On\+Shutdown@{On\+Shutdown}}
@@ -92,11 +107,11 @@ Implements \hyperlink{classastu_1_1ITimeService_af38c6c5f4fedc705c14b01f2c61b0af
 \subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Time\+Service\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on shutdown.
+Called by the service base method on shutdown.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a7ad7e0201007878b6014361dd5ba82f9}{Shutdown()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c66942d03}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlTimeService_ac11551691bb14289020028a2a162c7d6}\label{classastu_1_1SdlTimeService_ac11551691bb14289020028a2a162c7d6}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!On\+Startup@{On\+Startup}}
@@ -104,11 +119,11 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_aeb5003f7c5efe5412725ac4c
 \subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Time\+Service\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called by this base class on startup.
+Called by the service base class on startup.
 
-Derived classes should override this method rather than {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}}. The {\ttfamily \hyperlink{classastu_1_1UpdatableBaseService_a47e3725f717cee3cd8983f485b2a0243}{Startup()}} method is maintaining the running-\/state of this service. 
+Derived can override this method for initialization purposes. 
 
-Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8ccfbc5ff}{astu\+::\+Base\+Service}.
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
 
 \mbox{\Hypertarget{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b76302}\label{classastu_1_1SdlTimeService_ada8347f0f665616a2202919e71b76302}} 
 \index{astu\+::\+Sdl\+Time\+Service@{astu\+::\+Sdl\+Time\+Service}!On\+Update@{On\+Update}}
@@ -116,12 +131,12 @@ Reimplemented from \hyperlink{classastu_1_1BaseService_ac8710cd2d6dcc990db65e7c8
 \subsubsection{\texorpdfstring{On\+Update()}{OnUpdate()}}
 {\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Time\+Service\+::\+On\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
-Called when this updatable gets updated. 
+Called when an update is due. 
 
-Implements \hyperlink{classastu_1_1IUpdatable_a76c7c6e2a71b725bbdbdf6808ef4743f}{astu\+::\+I\+Updatable}.
+Reimplemented from \hyperlink{classastu_1_1Updatable_a925566c9770b95895c6c7294f9d51528}{astu\+::\+Updatable}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/Sdl\+Time\+Service.\+h\end{DoxyCompactItemize}
+include/\+Suite\+S\+D\+L/Sdl\+Time\+Service.\+h\end{DoxyCompactItemize}

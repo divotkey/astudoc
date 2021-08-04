@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1suite2d_1_1CPose}{}\section{astu\+:\+:suite2d\+:\+:C\+Pose Class Reference}
+\label{classastu_1_1suite2d_1_1CPose}\index{astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}}
+
+
+{\ttfamily \#include $<$C\+Pose.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:C\+Pose\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classastu_1_1suite2d_1_1CPose__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:C\+Pose\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classastu_1_1suite2d_1_1CPose__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPose_ae43f407c724a21294a886ae9fc0a4d60}{C\+Pose} ()
+\item 
+\hyperlink{classastu_1_1suite2d_1_1CPose_a84da6beb4c3f58a90eee567a649cabf4}{C\+Pose} (float x, float y, float phi=0)
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1EntityComponent}{Entity\+Component} $>$ \hyperlink{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}{Clone} () override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1Transform2}{astu\+::\+Transform2}$<$ float $>$ \hyperlink{classastu_1_1suite2d_1_1CPose_af9c1225512bc213fdaff45008416654c}{transform}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An entity component which describes the position and orientation in two-\/dimensional world space. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPose_ae43f407c724a21294a886ae9fc0a4d60}\label{classastu_1_1suite2d_1_1CPose_ae43f407c724a21294a886ae9fc0a4d60}} 
+\index{astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}!C\+Pose@{C\+Pose}}
+\index{C\+Pose@{C\+Pose}!astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}}
+\subsubsection{\texorpdfstring{C\+Pose()}{CPose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Pose\+::\+C\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. \mbox{\Hypertarget{classastu_1_1suite2d_1_1CPose_a84da6beb4c3f58a90eee567a649cabf4}\label{classastu_1_1suite2d_1_1CPose_a84da6beb4c3f58a90eee567a649cabf4}} 
+\index{astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}!C\+Pose@{C\+Pose}}
+\index{C\+Pose@{C\+Pose}!astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}}
+\subsubsection{\texorpdfstring{C\+Pose()}{CPose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily astu\+::suite2d\+::\+C\+Pose\+::\+C\+Pose (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{phi = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x-\/coordinate of the initial translation \\
+\hline
+{\em y} & the y-\/coordinate of the initial translation \\
+\hline
+{\em phi} & the angle of the initial rotation in radians \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}\label{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}} 
+\index{astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1EntityComponent}{Entity\+Component}$>$ astu\+::suite2d\+::\+C\+Pose\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creates a copy of this entity component.
+
+\begin{DoxyReturn}{Returns}
+a copy of this componend 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{astu\+::\+Entity\+Component}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1CPose_af9c1225512bc213fdaff45008416654c}\label{classastu_1_1suite2d_1_1CPose_af9c1225512bc213fdaff45008416654c}} 
+\index{astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}!transform@{transform}}
+\index{transform@{transform}!astu\+::suite2d\+::\+C\+Pose@{astu\+::suite2d\+::\+C\+Pose}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \hyperlink{classastu_1_1Transform2}{astu\+::\+Transform2}$<$float$>$ astu\+::suite2d\+::\+C\+Pose\+::transform}
+
+The transformation. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/C\+Pose.\+h\end{DoxyCompactItemize}

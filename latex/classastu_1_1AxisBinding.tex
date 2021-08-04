@@ -1,0 +1,99 @@
+\hypertarget{classastu_1_1AxisBinding}{}\section{astu\+:\+:Axis\+Binding Class Reference}
+\label{classastu_1_1AxisBinding}\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+
+
+{\ttfamily \#include $<$Input\+Mapping\+Service.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{Delegate} = std\+::function$<$ void(\hyperlink{classastu_1_1AxisBinding}{Axis\+Binding} \&)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1AxisBinding_a196fdc402dcf64aa507e6d6b9d3757f9}{Axis\+Binding} (const std\+::string \&axis\+Name)
+\item 
+float \hyperlink{classastu_1_1AxisBinding_a94ddec4241c656506512c312251374b6}{Get\+Value} () const
+\item 
+const std\+::string \& \hyperlink{classastu_1_1AxisBinding_acc8029d84009c364c17268af4adf4b59}{Get\+Axis} () const
+\item 
+void \hyperlink{classastu_1_1AxisBinding_a5e7b784a68d99a9ed6fa652e55ecbad4}{Set\+Delegate} (\hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{Delegate} delegate)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classastu_1_1AxisBinding_a8a886d4dcb7950d2c68f97f528f5ab4c}\label{classastu_1_1AxisBinding_a8a886d4dcb7950d2c68f97f528f5ab4c}} 
+class {\bfseries Input\+Mapping\+Service}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binds an axis to a delegate. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}\label{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}} 
+\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}!Delegate@{Delegate}}
+\index{Delegate@{Delegate}!astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+\subsubsection{\texorpdfstring{Delegate}{Delegate}}
+{\footnotesize\ttfamily using \hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{astu\+::\+Axis\+Binding\+::\+Delegate} =  std\+::function$<$void (\hyperlink{classastu_1_1AxisBinding}{Axis\+Binding} \&)$>$}
+
+Type alias for delegate functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1AxisBinding_a196fdc402dcf64aa507e6d6b9d3757f9}\label{classastu_1_1AxisBinding_a196fdc402dcf64aa507e6d6b9d3757f9}} 
+\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}!Axis\+Binding@{Axis\+Binding}}
+\index{Axis\+Binding@{Axis\+Binding}!astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+\subsubsection{\texorpdfstring{Axis\+Binding()}{AxisBinding()}}
+{\footnotesize\ttfamily astu\+::\+Axis\+Binding\+::\+Axis\+Binding (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{axis\+Name }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Name} & the name of the axis to bind \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1AxisBinding_acc8029d84009c364c17268af4adf4b59}\label{classastu_1_1AxisBinding_acc8029d84009c364c17268af4adf4b59}} 
+\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}!Get\+Axis@{Get\+Axis}}
+\index{Get\+Axis@{Get\+Axis}!astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+\subsubsection{\texorpdfstring{Get\+Axis()}{GetAxis()}}
+{\footnotesize\ttfamily const std\+::string\& astu\+::\+Axis\+Binding\+::\+Get\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the name of the axis of this binding.
+
+\begin{DoxyReturn}{Returns}
+the axis name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1AxisBinding_a94ddec4241c656506512c312251374b6}\label{classastu_1_1AxisBinding_a94ddec4241c656506512c312251374b6}} 
+\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}}
+{\footnotesize\ttfamily float astu\+::\+Axis\+Binding\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current value of this axis binding.
+
+\begin{DoxyReturn}{Returns}
+the current axis value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1AxisBinding_a5e7b784a68d99a9ed6fa652e55ecbad4}\label{classastu_1_1AxisBinding_a5e7b784a68d99a9ed6fa652e55ecbad4}} 
+\index{astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}!Set\+Delegate@{Set\+Delegate}}
+\index{Set\+Delegate@{Set\+Delegate}!astu\+::\+Axis\+Binding@{astu\+::\+Axis\+Binding}}
+\subsubsection{\texorpdfstring{Set\+Delegate()}{SetDelegate()}}
+{\footnotesize\ttfamily void astu\+::\+Axis\+Binding\+::\+Set\+Delegate (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1AxisBinding_a38f398d407de503bd52019e244fa9687}{Delegate}}]{delegate }\end{DoxyParamCaption})}
+
+Sets the delegate function to be called on state changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & the the delegate function \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Input/Input\+Mapping\+Service.\+h\end{DoxyCompactItemize}

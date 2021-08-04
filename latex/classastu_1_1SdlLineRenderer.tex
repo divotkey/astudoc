@@ -1,0 +1,161 @@
+\hypertarget{classastu_1_1SdlLineRenderer}{}\section{astu\+:\+:Sdl\+Line\+Renderer Class Reference}
+\label{classastu_1_1SdlLineRenderer}\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+
+
+{\ttfamily \#include $<$Sdl\+Line\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:Sdl\+Line\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlLineRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:Sdl\+Line\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1SdlLineRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classastu_1_1SdlLineRenderer_a06b6b37f054292e1a5bffa2fd095d1da}{Sdl\+Line\+Renderer} (int render\+Priority=Priority\+::\+Normal)
+\item 
+virtual \hyperlink{classastu_1_1SdlLineRenderer_a9fd9f408267d553afeb00886fc1272b2}{$\sim$\+Sdl\+Line\+Renderer} ()
+\item 
+virtual void \hyperlink{classastu_1_1SdlLineRenderer_a8860a2549acc8c633df71c7ceeb68c0d}{On\+Render} (S\+D\+L\+\_\+\+Renderer $\ast$renderer) override
+\item 
+virtual void \hyperlink{classastu_1_1SdlLineRenderer_a1f6c5c142df597e2abc1bf45c2a03bd2}{Draw\+Line} (float x1, float y1, float x2, float X2) override
+\item 
+virtual void \hyperlink{classastu_1_1SdlLineRenderer_aefdce772cba5d63ad8c4608df63879f9}{On\+Set\+Draw\+Color} (const \hyperlink{classastu_1_1Color}{Color4f} \&c) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1SdlLineRenderer_abe90e838b83f67c5e336d1b95cdea8a0}{On\+Startup} () override
+\item 
+virtual void \hyperlink{classastu_1_1SdlLineRenderer_ae34a6e853b012a77bb3377314332d7a5}{On\+Shutdown} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A S\+D\+L-\/based implementation of the I\+Line\+Renderer interface.
+
+This service is a S\+DL render layer and uses the command design pattern to store the render calls and replays them when the render layer should be rendered. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_a06b6b37f054292e1a5bffa2fd095d1da}\label{classastu_1_1SdlLineRenderer_a06b6b37f054292e1a5bffa2fd095d1da}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!Sdl\+Line\+Renderer@{Sdl\+Line\+Renderer}}
+\index{Sdl\+Line\+Renderer@{Sdl\+Line\+Renderer}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{Sdl\+Line\+Renderer()}{SdlLineRenderer()}}
+{\footnotesize\ttfamily astu\+::\+Sdl\+Line\+Renderer\+::\+Sdl\+Line\+Renderer (\begin{DoxyParamCaption}\item[{int}]{render\+Priority = {\ttfamily Priority\+:\+:Normal} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+Priority} & the priority of this render layer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_a9fd9f408267d553afeb00886fc1272b2}\label{classastu_1_1SdlLineRenderer_a9fd9f408267d553afeb00886fc1272b2}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!````~Sdl\+Line\+Renderer@{$\sim$\+Sdl\+Line\+Renderer}}
+\index{````~Sdl\+Line\+Renderer@{$\sim$\+Sdl\+Line\+Renderer}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{$\sim$\+Sdl\+Line\+Renderer()}{~SdlLineRenderer()}}
+{\footnotesize\ttfamily virtual astu\+::\+Sdl\+Line\+Renderer\+::$\sim$\+Sdl\+Line\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_a1f6c5c142df597e2abc1bf45c2a03bd2}\label{classastu_1_1SdlLineRenderer_a1f6c5c142df597e2abc1bf45c2a03bd2}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!Draw\+Line@{Draw\+Line}}
+\index{Draw\+Line@{Draw\+Line}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{Draw\+Line()}{DrawLine()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Line\+Renderer\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draws a line between two points.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & the x-\/coordinate of the first point of the line \\
+\hline
+{\em y1} & the y-\/coordinate of the first point of the line \\
+\hline
+{\em x2} & the x-\/coordinate of the second point of the line \\
+\hline
+{\em y2} & the y-\/coordinate of the second point of the line \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1suite2d_1_1LineRenderer_ac3bad444d792db789293badda13a47a1}{astu\+::suite2d\+::\+Line\+Renderer$<$ float $>$}.
+
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_a8860a2549acc8c633df71c7ceeb68c0d}\label{classastu_1_1SdlLineRenderer_a8860a2549acc8c633df71c7ceeb68c0d}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!On\+Render@{On\+Render}}
+\index{On\+Render@{On\+Render}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Render()}{OnRender()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Line\+Renderer\+::\+On\+Render (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called by the render service to render this layer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the S\+DL renderer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1ISdlRenderLayer_a18af53e17e7f6f945817ad3e8b8ecc87}{astu\+::\+I\+Sdl\+Render\+Layer}.
+
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_aefdce772cba5d63ad8c4608df63879f9}\label{classastu_1_1SdlLineRenderer_aefdce772cba5d63ad8c4608df63879f9}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!On\+Set\+Draw\+Color@{On\+Set\+Draw\+Color}}
+\index{On\+Set\+Draw\+Color@{On\+Set\+Draw\+Color}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Set\+Draw\+Color()}{OnSetDrawColor()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Line\+Renderer\+::\+On\+Set\+Draw\+Color (\begin{DoxyParamCaption}\item[{const \hyperlink{classastu_1_1Color}{Color4f} \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called when a new color is set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the new color \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1suite2d_1_1LineRenderer_a8571273df1940b8d2059e88abc7e4d5a}{astu\+::suite2d\+::\+Line\+Renderer$<$ float $>$}.
+
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_ae34a6e853b012a77bb3377314332d7a5}\label{classastu_1_1SdlLineRenderer_ae34a6e853b012a77bb3377314332d7a5}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!On\+Shutdown@{On\+Shutdown}}
+\index{On\+Shutdown@{On\+Shutdown}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Shutdown()}{OnShutdown()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Line\+Renderer\+::\+On\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by the service base method on shutdown.
+
+Derived can override this method for de-\/initialization purposes, e.\+g., releasing resources, etc. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a1e1dff727df791c57fae782d8a613c5f}{astu\+::\+Service}.
+
+\mbox{\Hypertarget{classastu_1_1SdlLineRenderer_abe90e838b83f67c5e336d1b95cdea8a0}\label{classastu_1_1SdlLineRenderer_abe90e838b83f67c5e336d1b95cdea8a0}} 
+\index{astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}!On\+Startup@{On\+Startup}}
+\index{On\+Startup@{On\+Startup}!astu\+::\+Sdl\+Line\+Renderer@{astu\+::\+Sdl\+Line\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Startup()}{OnStartup()}}
+{\footnotesize\ttfamily virtual void astu\+::\+Sdl\+Line\+Renderer\+::\+On\+Startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Called by the service base class on startup.
+
+Derived can override this method for initialization purposes. 
+
+Reimplemented from \hyperlink{classastu_1_1Service_a357dc663e000b1f086f681ec3c459bfe}{astu\+::\+Service}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite\+S\+D\+L/Sdl\+Line\+Renderer.\+h\end{DoxyCompactItemize}

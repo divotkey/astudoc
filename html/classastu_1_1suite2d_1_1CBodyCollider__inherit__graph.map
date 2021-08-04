@@ -1,0 +1,5 @@
+<map id="astu::suite2d::CBodyCollider" name="astu::suite2d::CBodyCollider">
+<area shape="rect" id="node3" href="$classastu_1_1suite2d_1_1CCircleCollider.html" title="astu::suite2d::CCircleCollider" alt="" coords="5,155,199,181"/>
+<area shape="rect" id="node4" href="$classastu_1_1suite2d_1_1CPolygonCollider.html" title="astu::suite2d::CPolygonCollider" alt="" coords="223,155,429,181"/>
+<area shape="rect" id="node2" href="$classastu_1_1EntityComponent.html" title="astu::EntityComponent" alt="" coords="136,5,292,32"/>
+</map>

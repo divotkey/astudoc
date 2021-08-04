@@ -1,0 +1,215 @@
+\hypertarget{classastu_1_1suite2d_1_1Node}{}\section{astu\+:\+:suite2d\+:\+:Node Class Reference}
+\label{classastu_1_1suite2d_1_1Node}\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+
+
+Inheritance diagram for astu\+:\+:suite2d\+:\+:Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classastu_1_1suite2d_1_1Node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for astu\+:\+:suite2d\+:\+:Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classastu_1_1suite2d_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1Node_aed39b6e4e99794a8d50d66338f34fb0f}{Has\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ child)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Node_af777d19c7573db16c4d70c7dcb198292}{Attach\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ child)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Node_ae6977abb31222cdba974bd683164cc0b}{Detach\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ child)
+\item 
+bool \hyperlink{classastu_1_1suite2d_1_1Node_a72d49c18000140f747dbc22b8972084b}{Detach\+Child} (const std\+::string \&child\+Name)
+\item 
+void \hyperlink{classastu_1_1suite2d_1_1Node_ade5f4ec860f962e34baaf79e50a01a66}{Detach\+All} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1Node_a91a2cf94366c6477e7a16aba676155c3}{Find\+Child\+Or\+Null} (const std\+::string \&child\+Name)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1Node_aab94cc89c131207f17a3d36295340780}{Find\+Child} (const std\+::string \&child\+Name)
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1Node_a01bac6ed4eab4a6c77e1dac7d30d09e6}{Render} (\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&renderer, float \hyperlink{classastu_1_1suite2d_1_1Spatial_a8aedfdadbece638bf283d4ba232c6928}{alpha}) override
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$ \hyperlink{classastu_1_1suite2d_1_1Node_a50803fe4a2182ca7320cd2f161873c51}{Clone} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classastu_1_1suite2d_1_1Node_af3fbe9c9588b3f20a1d58645fd2371e0}{Update\+Transform} (double dt) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A node is a spatial scene graph element that manages children. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_af777d19c7573db16c4d70c7dcb198292}\label{classastu_1_1suite2d_1_1Node_af777d19c7573db16c4d70c7dcb198292}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Attach\+Child@{Attach\+Child}}
+\index{Attach\+Child@{Attach\+Child}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Attach\+Child()}{AttachChild()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Node\+::\+Attach\+Child (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$}]{child }\end{DoxyParamCaption})}
+
+Attaches a child to this node.
+
+The specified child must neither be child of any other node, nor a child of this node, other wise the behaviour is undefied and might result in an exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & the child to attach \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_a50803fe4a2182ca7320cd2f161873c51}\label{classastu_1_1suite2d_1_1Node_a50803fe4a2182ca7320cd2f161873c51}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Clone@{Clone}}
+\index{Clone@{Clone}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+Node\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Creats a copy of this spatial.
+
+\begin{DoxyReturn}{Returns}
+the copy 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classastu_1_1suite2d_1_1Spatial_a5c058079c94b0e8d7590e70ca2159bd1}{astu\+::suite2d\+::\+Spatial}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_ade5f4ec860f962e34baaf79e50a01a66}\label{classastu_1_1suite2d_1_1Node_ade5f4ec860f962e34baaf79e50a01a66}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Detach\+All@{Detach\+All}}
+\index{Detach\+All@{Detach\+All}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Detach\+All()}{DetachAll()}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Node\+::\+Detach\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all attached child nodes. \mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_ae6977abb31222cdba974bd683164cc0b}\label{classastu_1_1suite2d_1_1Node_ae6977abb31222cdba974bd683164cc0b}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Detach\+Child@{Detach\+Child}}
+\index{Detach\+Child@{Detach\+Child}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Detach\+Child()}{DetachChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void astu\+::suite2d\+::\+Node\+::\+Detach\+Child (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$}]{child }\end{DoxyParamCaption})}
+
+Detaches a child from this node.
+
+The specified child node must be a child of this node otherwise the behaviour is undefined and might result in an exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & the child to detach \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_a72d49c18000140f747dbc22b8972084b}\label{classastu_1_1suite2d_1_1Node_a72d49c18000140f747dbc22b8972084b}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Detach\+Child@{Detach\+Child}}
+\index{Detach\+Child@{Detach\+Child}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Detach\+Child()}{DetachChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Node\+::\+Detach\+Child (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{child\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes a child with the specified name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Name} & the name of the child to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if a child with the specified name has been found and removed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_aab94cc89c131207f17a3d36295340780}\label{classastu_1_1suite2d_1_1Node_aab94cc89c131207f17a3d36295340780}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Find\+Child@{Find\+Child}}
+\index{Find\+Child@{Find\+Child}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Find\+Child()}{FindChild()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+Node\+::\+Find\+Child (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{child\+Name }\end{DoxyParamCaption})}
+
+Searches recursively for a child node with a specific name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Name} & the name of the child node to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested child 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & in case no child with the specified name has been found \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_a91a2cf94366c6477e7a16aba676155c3}\label{classastu_1_1suite2d_1_1Node_a91a2cf94366c6477e7a16aba676155c3}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Find\+Child\+Or\+Null@{Find\+Child\+Or\+Null}}
+\index{Find\+Child\+Or\+Null@{Find\+Child\+Or\+Null}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Find\+Child\+Or\+Null()}{FindChildOrNull()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial}$>$ astu\+::suite2d\+::\+Node\+::\+Find\+Child\+Or\+Null (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{child\+Name }\end{DoxyParamCaption})}
+
+Searches recursively for a child node with a specific name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Name} & the name of the child node to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested child or {\ttfamily nullptr} if no child with the specified name has been found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_aed39b6e4e99794a8d50d66338f34fb0f}\label{classastu_1_1suite2d_1_1Node_aed39b6e4e99794a8d50d66338f34fb0f}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Has\+Child@{Has\+Child}}
+\index{Has\+Child@{Has\+Child}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Has\+Child()}{HasChild()}}
+{\footnotesize\ttfamily bool astu\+::suite2d\+::\+Node\+::\+Has\+Child (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classastu_1_1suite2d_1_1Spatial}{Spatial} $>$}]{child }\end{DoxyParamCaption})}
+
+Tests whether the specified spatial has alreaedy been added.
+
+\begin{DoxyReturn}{Returns}
+child the spatial to test 
+
+{\ttfamily true} if the spatial has already been added as child 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_a01bac6ed4eab4a6c77e1dac7d30d09e6}\label{classastu_1_1suite2d_1_1Node_a01bac6ed4eab4a6c77e1dac7d30d09e6}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Render@{Render}}
+\index{Render@{Render}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Node\+::\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{classastu_1_1suite2d_1_1SceneRenderer2D}{Scene\+Renderer2D} \&}]{renderer,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Renders this spacial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the renderer to be used \\
+\hline
+{\em alpha} & the transparancy \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classastu_1_1suite2d_1_1Spatial_afaf7797d00a432012298535ba11348b7}{astu\+::suite2d\+::\+Spatial}.
+
+\mbox{\Hypertarget{classastu_1_1suite2d_1_1Node_af3fbe9c9588b3f20a1d58645fd2371e0}\label{classastu_1_1suite2d_1_1Node_af3fbe9c9588b3f20a1d58645fd2371e0}} 
+\index{astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}!Update\+Transform@{Update\+Transform}}
+\index{Update\+Transform@{Update\+Transform}!astu\+::suite2d\+::\+Node@{astu\+::suite2d\+::\+Node}}
+\subsubsection{\texorpdfstring{Update\+Transform()}{UpdateTransform()}}
+{\footnotesize\ttfamily virtual void astu\+::suite2d\+::\+Node\+::\+Update\+Transform (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Updates the world transformation of this spatial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & the elapsed time since the last update in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classastu_1_1suite2d_1_1Spatial_a9c612ec47fd9d621aca423822b2b6132}{astu\+::suite2d\+::\+Spatial}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Suite2\+D/Scene.\+h\end{DoxyCompactItemize}

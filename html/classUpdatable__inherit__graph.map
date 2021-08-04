@@ -1,0 +1,12 @@
+<map id="Updatable" name="Updatable">
+<area shape="rect" id="node4" href="$classastu_1_1EntityService.html" title="astu::EntityService" alt="" coords="298,5,431,32"/>
+<area shape="rect" id="node5" href="$classastu_1_1SdlEventService.html" title="astu::SdlEventService" alt="" coords="289,56,441,83"/>
+<area shape="rect" id="node6" href="$classastu_1_1SdlRenderService.html" title="astu::SdlRenderService" alt="" coords="285,107,445,133"/>
+<area shape="rect" id="node7" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="283,157,446,184"/>
+<area shape="rect" id="node8" href="$classastu_1_1SdlTimeService.html" title="astu::SdlTimeService" alt="" coords="291,208,438,235"/>
+<area shape="rect" id="node9" href="$classastu_1_1SignalService.html" title="astu::SignalService\&lt; T \&gt;" alt="" coords="281,259,448,285"/>
+<area shape="rect" id="node10" href="$classastu_1_1suite2d_1_1AutoRotateSystem.html" title="astu::suite2d::AutoRotate\lSystem" alt="" coords="279,310,450,351"/>
+<area shape="rect" id="node11" href="$classastu_1_1suite2d_1_1CameraControlService.html" title="astu::suite2d::CameraControl\lService" alt="" coords="268,375,461,417"/>
+<area shape="rect" id="node12" href="$classastu_1_1suite2d_1_1SceneSystem.html" title="astu::suite2d::SceneSystem" alt="" coords="271,441,458,468"/>
+<area shape="rect" id="node13" href="$classastu_1_1TaskService.html" title="astu::TaskService" alt="" coords="301,492,429,519"/>
+</map>
