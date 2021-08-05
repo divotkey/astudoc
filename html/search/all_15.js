@@ -1,7 +1,7 @@
 var searchData=
 [
   ['version_20history',['Version History',['../CHANGES.html',1,'']]],
-  ['v',['v',['../classastu_1_1ColorHsv.html#a05e185fc6498318cb461941a8ca40ec2',1,'astu::ColorHsv::v()'],['../classastu_1_1Keys.html#a8647f855568f315bed96c0cfde5f1aeb',1,'astu::Keys::V()']]],
+  ['v',['V',['../classastu_1_1Keys.html#a8647f855568f315bed96c0cfde5f1aeb',1,'astu::Keys::V()'],['../classastu_1_1ColorHsv.html#a05e185fc6498318cb461941a8ca40ec2',1,'astu::ColorHsv::v()']]],
   ['value',['value',['../classastu_1_1KeyState.html#a8a322e8769c1ab8ae657a05839543bac',1,'astu::KeyState']]],
   ['vector2',['Vector2',['../classastu_1_1Vector2.html',1,'astu::Vector2&lt; T &gt;'],['../classastu_1_1Vector2.html#a021ec0e80fa7ca80921a17172e30fe29',1,'astu::Vector2::Vector2()']]],
   ['vector2_3c_20float_20_3e',['Vector2&lt; float &gt;',['../classastu_1_1Vector2.html',1,'astu']]],

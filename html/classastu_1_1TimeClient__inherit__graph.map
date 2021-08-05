@@ -1,7 +1,8 @@
 <map id="astu::TimeClient" name="astu::TimeClient">
-<area shape="rect" id="node3" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="331,5,493,32"/>
-<area shape="rect" id="node4" href="$classastu_1_1SdlVertexBufferBuilderService2D.html" title="astu::SdlVertexBufferBuilder\lService2D" alt="" coords="319,57,505,98"/>
-<area shape="rect" id="node5" href="$classastu_1_1suite2d_1_1AutoRotateSystem.html" title="astu::suite2d::AutoRotate\lSystem" alt="" coords="327,122,497,163"/>
-<area shape="rect" id="node6" href="$classastu_1_1TaskService.html" title="astu::TaskService" alt="" coords="348,188,476,215"/>
-<area shape="rect" id="node2" href="$classastu_1_1Service.html" title="astu::Service" alt="" coords="5,97,104,124"/>
+<area shape="rect" id="node3" href="$classastu_1_1AutoDestructSystem.html" title="astu::AutoDestructSystem" alt="" coords="323,5,501,32"/>
+<area shape="rect" id="node4" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="331,56,493,83"/>
+<area shape="rect" id="node5" href="$classastu_1_1SdlVertexBufferBuilderService2D.html" title="astu::SdlVertexBufferBuilder\lService2D" alt="" coords="319,107,505,149"/>
+<area shape="rect" id="node6" href="$classastu_1_1suite2d_1_1AutoRotateSystem.html" title="astu::suite2d::AutoRotate\lSystem" alt="" coords="327,173,497,214"/>
+<area shape="rect" id="node7" href="$classastu_1_1TaskService.html" title="astu::TaskService" alt="" coords="348,239,476,265"/>
+<area shape="rect" id="node2" href="$classastu_1_1Service.html" title="astu::Service" alt="" coords="5,115,104,141"/>
 </map>

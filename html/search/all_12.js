@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s',['S',['../classastu_1_1Keys.html#a5e38e7cc0aa32637b6f52ca2a8b2f947',1,'astu::Keys::S()'],['../classastu_1_1ColorHsv.html#a4935b897136129b2ec75bebd437d227e',1,'astu::ColorHsv::s()']]],
+  ['s',['s',['../classastu_1_1ColorHsv.html#a4935b897136129b2ec75bebd437d227e',1,'astu::ColorHsv::s()'],['../classastu_1_1Keys.html#a5e38e7cc0aa32637b6f52ca2a8b2f947',1,'astu::Keys::S()']]],
   ['saddlebrown',['SaddleBrown',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98aacbf3157076c3d964b6c11039c0824eb',1,'astu::WebColors']]],
   ['saffronyellow',['SaffronYellow',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a8e27a03113abc9558f590719cc8625a0',1,'astu::RalColors']]],
   ['salmon',['Salmon',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a781aaa88f28ab8b8cad911f97b436994',1,'astu::WebColors']]],
@@ -157,7 +157,7 @@ var searchData=
   ['snap',['Snap',['../classastu_1_1MathUtils.html#a635ccbb17b8e6ee4333ff8391b328ee0',1,'astu::MathUtils']]],
   ['snow',['Snow',['../classastu_1_1WebColors.html#ac75482e858498b1b3fa521ba93fcda98a0a171195cae509bb300f3b96a14d41eb',1,'astu::WebColors']]],
   ['spacebar',['SpaceBar',['../classastu_1_1Keys.html#a6e3808ecdf4dd838fef03616dcc5b7b2',1,'astu::Keys']]],
-  ['spatial',['Spatial',['../classastu_1_1suite2d_1_1Spatial.html',1,'astu::suite2d::Spatial'],['../classastu_1_1suite2d_1_1Spatial.html#a5b989b593ce75f86c1c12059b22ec350',1,'astu::suite2d::Spatial::Spatial()'],['../classastu_1_1suite2d_1_1Spatial.html#af05646464cc9dcf5add392d13dd55e3a',1,'astu::suite2d::Spatial::Spatial(const Spatial &amp;o)'],['../classastu_1_1suite2d_1_1CScene.html#af8b497f2d0dac0c1bb4d7d3038280189',1,'astu::suite2d::CScene::spatial()']]],
+  ['spatial',['Spatial',['../classastu_1_1suite2d_1_1Spatial.html',1,'astu::suite2d::Spatial'],['../classastu_1_1suite2d_1_1CScene.html#af8b497f2d0dac0c1bb4d7d3038280189',1,'astu::suite2d::CScene::spatial()'],['../classastu_1_1suite2d_1_1Spatial.html#a5b989b593ce75f86c1c12059b22ec350',1,'astu::suite2d::Spatial::Spatial()'],['../classastu_1_1suite2d_1_1Spatial.html#af05646464cc9dcf5add392d13dd55e3a',1,'astu::suite2d::Spatial::Spatial(const Spatial &amp;o)']]],
   ['spatialbuilder',['SpatialBuilder',['../classastu_1_1suite2d_1_1SpatialBuilder.html',1,'astu::suite2d']]],
   ['spatialbuilder_3c_20nodebuilder_20_3e',['SpatialBuilder&lt; NodeBuilder &gt;',['../classastu_1_1suite2d_1_1SpatialBuilder.html',1,'astu::suite2d']]],
   ['spatialbuilder_3c_20polylinebuilder_20_3e',['SpatialBuilder&lt; PolylineBuilder &gt;',['../classastu_1_1suite2d_1_1SpatialBuilder.html',1,'astu::suite2d']]],

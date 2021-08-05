@@ -1,41 +1,42 @@
 <map id="astu::Service" name="astu::Service">
-<area shape="rect" id="node2" href="$classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="186,71,315,98"/>
-<area shape="rect" id="node7" href="$classastu_1_1EntityFactoryService.html" title="astu::EntityFactoryService" alt="" coords="162,983,339,1010"/>
-<area shape="rect" id="node8" href="$classastu_1_1EntityListener.html" title="astu::EntityListener" alt="" coords="183,173,318,199"/>
-<area shape="rect" id="node10" href="$classastu_1_1EntityService.html" title="astu::EntityService" alt="" coords="428,643,561,670"/>
-<area shape="rect" id="node11" href="$classastu_1_1InputMappingService.html" title="astu::InputMappingService" alt="" coords="406,715,583,742"/>
-<area shape="rect" id="node12" href="$classastu_1_1IteratingEntitySystem.html" title="astu::IteratingEntitySystem" alt="" coords="160,1034,341,1061"/>
-<area shape="rect" id="node13" href="$classastu_1_1KeystrokeListener.html" title="astu::KeystrokeListener" alt="" coords="171,223,331,250"/>
-<area shape="rect" id="node14" href="$classastu_1_1MouseButtonListener.html" title="astu::MouseButtonListener" alt="" coords="161,274,340,301"/>
-<area shape="rect" id="node15" href="$classastu_1_1MouseMoveListener.html" title="astu::MouseMoveListener" alt="" coords="165,1085,337,1111"/>
-<area shape="rect" id="node16" href="$classastu_1_1MouseWheelListener.html" title="astu::MouseWheelListener" alt="" coords="162,325,339,351"/>
-<area shape="rect" id="node17" href="$classastu_1_1OneFamilyEntitySystem.html" title="astu::OneFamilyEntitySystem" alt="" coords="152,122,349,149"/>
-<area shape="rect" id="node18" href="$classastu_1_1ResizeListener.html" title="astu::ResizeListener" alt="" coords="179,1186,322,1213"/>
-<area shape="rect" id="node19" href="$classastu_1_1suite2d_1_1CameraService.html" title="astu::suite2d::CameraService" alt="" coords="397,1161,592,1187"/>
-<area shape="rect" id="node20" href="$classastu_1_1SdlAudioService.html" title="astu::SdlAudioService" alt="" coords="175,1237,326,1263"/>
-<area shape="rect" id="node21" href="$classastu_1_1SdlEventService.html" title="astu::SdlEventService" alt="" coords="419,774,571,801"/>
-<area shape="rect" id="node22" href="$classastu_1_1SdlJoystickService.html" title="astu::SdlJoystickService" alt="" coords="167,1287,334,1314"/>
-<area shape="rect" id="node23" href="$classastu_1_1SdlRenderLayer.html" title="astu::SdlRenderLayer" alt="" coords="177,426,325,453"/>
-<area shape="rect" id="node26" href="$classastu_1_1SdlRenderService.html" title="astu::SdlRenderService" alt="" coords="415,829,575,855"/>
-<area shape="rect" id="node27" href="$classastu_1_1SdlService.html" title="astu::SdlService" alt="" coords="191,1338,310,1365"/>
-<area shape="rect" id="node28" href="$classastu_1_1SdlTimeService.html" title="astu::SdlTimeService" alt="" coords="421,881,568,907"/>
-<area shape="rect" id="node29" href="$classastu_1_1SdlVertexBufferBuilderService2D.html" title="astu::SdlVertexBufferBuilder\lService2D" alt="" coords="401,516,588,557"/>
-<area shape="rect" id="node30" href="$classastu_1_1SdlVideoService.html" title="astu::SdlVideoService" alt="" coords="175,1389,326,1415"/>
-<area shape="rect" id="node31" href="$classastu_1_1SignalListener.html" title="astu::SignalListener\&lt; T \&gt;" alt="" coords="166,1439,335,1466"/>
-<area shape="rect" id="node32" href="$classastu_1_1SignalService.html" title="astu::SignalService\&lt; T \&gt;" alt="" coords="411,933,578,959"/>
-<area shape="rect" id="node33" href="$classastu_1_1suite2d_1_1CameraClient.html" title="astu::suite2d::CameraClient" alt="" coords="158,375,343,402"/>
-<area shape="rect" id="node34" href="$classastu_1_1suite2d_1_1CollisionListener.html" title="astu::suite2d::Collision\lListener" alt="" coords="173,1491,328,1532"/>
-<area shape="rect" id="node35" href="$classastu_1_1suite2d_1_1LineRendererClient.html" title="astu::suite2d::LineRenderer\lClient\&lt; T \&gt;" alt="" coords="159,1556,342,1597"/>
-<area shape="rect" id="node36" href="$classastu_1_1TaskService.html" title="astu::TaskService" alt="" coords="431,582,559,609"/>
-<area shape="rect" id="node37" href="$classastu_1_1TimeClient.html" title="astu::TimeClient" alt="" coords="191,477,310,503"/>
-<area shape="rect" id="node38" href="$classastu_1_1Updatable.html" title="astu::Updatable" alt="" coords="193,629,308,655"/>
-<area shape="rect" id="node39" href="$classastu_1_1UpdateService.html" title="astu::UpdateService" alt="" coords="180,1622,321,1649"/>
-<area shape="rect" id="node40" href="$classastu_1_1SignalListener.html" title="astu::SignalListener\l\&lt; std::string \&gt;" alt="" coords="182,5,319,47"/>
-<area shape="rect" id="node3" href="$classastu_1_1ActionSignalService.html" title="astu::ActionSignalService" alt="" coords="409,70,581,97"/>
-<area shape="rect" id="node4" href="$classastu_1_1StateService.html" title="astu::StateService" alt="" coords="429,15,560,42"/>
-<area shape="rect" id="node5" href="$classastu_1_1suite2d_1_1AutoRotateSystem.html" title="astu::suite2d::AutoRotate\lSystem" alt="" coords="409,121,580,163"/>
-<area shape="rect" id="node6" href="$classastu_1_1suite2d_1_1CameraControlService.html" title="astu::suite2d::CameraControl\lService" alt="" coords="398,292,591,333"/>
-<area shape="rect" id="node9" href="$classastu_1_1suite2d_1_1SceneSystem.html" title="astu::suite2d::SceneSystem" alt="" coords="401,187,588,214"/>
-<area shape="rect" id="node24" href="$classastu_1_1SdlLineRenderer.html" title="astu::SdlLineRenderer" alt="" coords="419,414,570,441"/>
-<area shape="rect" id="node25" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="413,465,576,491"/>
+<area shape="rect" id="node2" href="$classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="186,223,315,250"/>
+<area shape="rect" id="node8" href="$classastu_1_1EntityFactoryService.html" title="astu::EntityFactoryService" alt="" coords="162,1034,339,1061"/>
+<area shape="rect" id="node9" href="$classastu_1_1EntityListener.html" title="astu::EntityListener" alt="" coords="183,71,318,98"/>
+<area shape="rect" id="node11" href="$classastu_1_1EntityService.html" title="astu::EntityService" alt="" coords="428,705,561,731"/>
+<area shape="rect" id="node12" href="$classastu_1_1InputMappingService.html" title="astu::InputMappingService" alt="" coords="406,769,583,795"/>
+<area shape="rect" id="node13" href="$classastu_1_1IteratingEntitySystem.html" title="astu::IteratingEntitySystem" alt="" coords="160,173,341,199"/>
+<area shape="rect" id="node14" href="$classastu_1_1KeystrokeListener.html" title="astu::KeystrokeListener" alt="" coords="171,274,331,301"/>
+<area shape="rect" id="node15" href="$classastu_1_1MouseButtonListener.html" title="astu::MouseButtonListener" alt="" coords="161,325,340,351"/>
+<area shape="rect" id="node16" href="$classastu_1_1MouseMoveListener.html" title="astu::MouseMoveListener" alt="" coords="165,1085,337,1111"/>
+<area shape="rect" id="node17" href="$classastu_1_1MouseWheelListener.html" title="astu::MouseWheelListener" alt="" coords="162,375,339,402"/>
+<area shape="rect" id="node18" href="$classastu_1_1OneFamilyEntitySystem.html" title="astu::OneFamilyEntitySystem" alt="" coords="152,122,349,149"/>
+<area shape="rect" id="node19" href="$classastu_1_1ResizeListener.html" title="astu::ResizeListener" alt="" coords="179,1186,322,1213"/>
+<area shape="rect" id="node20" href="$classastu_1_1suite2d_1_1CameraService.html" title="astu::suite2d::CameraService" alt="" coords="397,1161,592,1187"/>
+<area shape="rect" id="node21" href="$classastu_1_1SdlAudioService.html" title="astu::SdlAudioService" alt="" coords="175,1237,326,1263"/>
+<area shape="rect" id="node22" href="$classastu_1_1SdlEventService.html" title="astu::SdlEventService" alt="" coords="419,826,571,853"/>
+<area shape="rect" id="node23" href="$classastu_1_1SdlJoystickService.html" title="astu::SdlJoystickService" alt="" coords="167,1287,334,1314"/>
+<area shape="rect" id="node24" href="$classastu_1_1SdlRenderLayer.html" title="astu::SdlRenderLayer" alt="" coords="177,578,325,605"/>
+<area shape="rect" id="node27" href="$classastu_1_1SdlRenderService.html" title="astu::SdlRenderService" alt="" coords="415,879,575,906"/>
+<area shape="rect" id="node28" href="$classastu_1_1SdlService.html" title="astu::SdlService" alt="" coords="191,1338,310,1365"/>
+<area shape="rect" id="node29" href="$classastu_1_1SdlTimeService.html" title="astu::SdlTimeService" alt="" coords="421,931,568,958"/>
+<area shape="rect" id="node30" href="$classastu_1_1SdlVertexBufferBuilderService2D.html" title="astu::SdlVertexBufferBuilder\lService2D" alt="" coords="401,436,588,477"/>
+<area shape="rect" id="node31" href="$classastu_1_1SdlVideoService.html" title="astu::SdlVideoService" alt="" coords="175,1389,326,1415"/>
+<area shape="rect" id="node32" href="$classastu_1_1SignalListener.html" title="astu::SignalListener\&lt; T \&gt;" alt="" coords="166,1439,335,1466"/>
+<area shape="rect" id="node33" href="$classastu_1_1SignalService.html" title="astu::SignalService\&lt; T \&gt;" alt="" coords="411,983,578,1010"/>
+<area shape="rect" id="node34" href="$classastu_1_1suite2d_1_1CameraClient.html" title="astu::suite2d::CameraClient" alt="" coords="158,477,343,503"/>
+<area shape="rect" id="node35" href="$classastu_1_1suite2d_1_1CollisionListener.html" title="astu::suite2d::Collision\lListener" alt="" coords="173,1491,328,1532"/>
+<area shape="rect" id="node36" href="$classastu_1_1suite2d_1_1LineRendererClient.html" title="astu::suite2d::LineRenderer\lClient\&lt; T \&gt;" alt="" coords="159,1556,342,1597"/>
+<area shape="rect" id="node37" href="$classastu_1_1TaskService.html" title="astu::TaskService" alt="" coords="431,629,559,655"/>
+<area shape="rect" id="node38" href="$classastu_1_1TimeClient.html" title="astu::TimeClient" alt="" coords="191,426,310,453"/>
+<area shape="rect" id="node39" href="$classastu_1_1Updatable.html" title="astu::Updatable" alt="" coords="193,679,308,706"/>
+<area shape="rect" id="node40" href="$classastu_1_1UpdateService.html" title="astu::UpdateService" alt="" coords="180,1622,321,1649"/>
+<area shape="rect" id="node41" href="$classastu_1_1SignalListener.html" title="astu::SignalListener\l\&lt; std::string \&gt;" alt="" coords="182,5,319,47"/>
+<area shape="rect" id="node3" href="$classastu_1_1ActionSignalService.html" title="astu::ActionSignalService" alt="" coords="409,179,581,206"/>
+<area shape="rect" id="node4" href="$classastu_1_1AutoDestructSystem.html" title="astu::AutoDestructSystem" alt="" coords="406,230,583,257"/>
+<area shape="rect" id="node5" href="$classastu_1_1StateService.html" title="astu::StateService" alt="" coords="429,42,560,69"/>
+<area shape="rect" id="node6" href="$classastu_1_1suite2d_1_1AutoRotateSystem.html" title="astu::suite2d::AutoRotate\lSystem" alt="" coords="409,295,580,336"/>
+<area shape="rect" id="node7" href="$classastu_1_1suite2d_1_1CameraControlService.html" title="astu::suite2d::CameraControl\lService" alt="" coords="398,364,591,405"/>
+<area shape="rect" id="node10" href="$classastu_1_1suite2d_1_1SceneSystem.html" title="astu::suite2d::SceneSystem" alt="" coords="401,122,588,149"/>
+<area shape="rect" id="node25" href="$classastu_1_1SdlLineRenderer.html" title="astu::SdlLineRenderer" alt="" coords="419,578,570,605"/>
+<area shape="rect" id="node26" href="$classastu_1_1SdlSceneGraph2D.html" title="astu::SdlSceneGraph2D" alt="" coords="413,515,576,542"/>
 </map>

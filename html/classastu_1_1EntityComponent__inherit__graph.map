@@ -1,9 +1,10 @@
 <map id="astu::EntityComponent" name="astu::EntityComponent">
-<area shape="rect" id="node2" href="$classastu_1_1suite2d_1_1CAutoRotate.html" title="astu::suite2d::CAutoRotate" alt="" coords="213,5,395,32"/>
-<area shape="rect" id="node3" href="$classastu_1_1suite2d_1_1CBody.html" title="astu::suite2d::CBody" alt="" coords="231,56,377,83"/>
-<area shape="rect" id="node4" href="$classastu_1_1suite2d_1_1CBodyCollider.html" title="astu::suite2d::CBodyCollider" alt="" coords="209,107,399,133"/>
-<area shape="rect" id="node7" href="$classastu_1_1suite2d_1_1CPose.html" title="astu::suite2d::CPose" alt="" coords="231,157,377,184"/>
-<area shape="rect" id="node8" href="$classastu_1_1suite2d_1_1CScene.html" title="astu::suite2d::CScene" alt="" coords="228,208,380,235"/>
-<area shape="rect" id="node5" href="$classastu_1_1suite2d_1_1CCircleCollider.html" title="astu::suite2d::CCircleCollider" alt="" coords="453,81,647,108"/>
-<area shape="rect" id="node6" href="$classastu_1_1suite2d_1_1CPolygonCollider.html" title="astu::suite2d::CPolygonCollider" alt="" coords="447,132,653,159"/>
+<area shape="rect" id="node2" href="$classastu_1_1CAutoDestruct.html" title="astu::CAutoDestruct" alt="" coords="233,5,375,32"/>
+<area shape="rect" id="node3" href="$classastu_1_1suite2d_1_1CAutoRotate.html" title="astu::suite2d::CAutoRotate" alt="" coords="213,56,395,83"/>
+<area shape="rect" id="node4" href="$classastu_1_1suite2d_1_1CBody.html" title="astu::suite2d::CBody" alt="" coords="231,107,377,133"/>
+<area shape="rect" id="node5" href="$classastu_1_1suite2d_1_1CBodyCollider.html" title="astu::suite2d::CBodyCollider" alt="" coords="209,157,399,184"/>
+<area shape="rect" id="node8" href="$classastu_1_1suite2d_1_1CPose.html" title="astu::suite2d::CPose" alt="" coords="231,208,377,235"/>
+<area shape="rect" id="node9" href="$classastu_1_1suite2d_1_1CScene.html" title="astu::suite2d::CScene" alt="" coords="228,259,380,285"/>
+<area shape="rect" id="node6" href="$classastu_1_1suite2d_1_1CCircleCollider.html" title="astu::suite2d::CCircleCollider" alt="" coords="453,132,647,159"/>
+<area shape="rect" id="node7" href="$classastu_1_1suite2d_1_1CPolygonCollider.html" title="astu::suite2d::CPolygonCollider" alt="" coords="447,183,653,209"/>
 </map>

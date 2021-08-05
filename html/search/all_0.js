@@ -65,6 +65,7 @@ var searchData=
   ['astusuitesdl_2eh',['AstuSuiteSDL.h',['../AstuSuiteSDL_8h.html',1,'']]],
   ['at',['at',['../classastu_1_1Palette.html#a5cf0b8043184527e3a7ead5c03f1f741',1,'astu::Palette']]],
   ['attachchild',['AttachChild',['../classastu_1_1suite2d_1_1Node.html#af777d19c7573db16c4d70c7dcb198292',1,'astu::suite2d::Node::AttachChild()'],['../classastu_1_1suite2d_1_1NodeBuilder.html#a27c7bef4a7b0206f5b348a966dd1bf65',1,'astu::suite2d::NodeBuilder::AttachChild()']]],
+  ['autodestructsystem',['AutoDestructSystem',['../classastu_1_1AutoDestructSystem.html',1,'astu::AutoDestructSystem'],['../classastu_1_1AutoDestructSystem.html#a01cf2ca0427902e70bc2767cbc00b447',1,'astu::AutoDestructSystem::AutoDestructSystem()']]],
   ['autorotatesystem',['AutoRotateSystem',['../classastu_1_1suite2d_1_1AutoRotateSystem.html',1,'astu::suite2d::AutoRotateSystem'],['../classastu_1_1suite2d_1_1AutoRotateSystem.html#a61d7b59f9cadba07d3a49efd2433e4bc',1,'astu::suite2d::AutoRotateSystem::AutoRotateSystem()']]],
   ['axisbinding',['AxisBinding',['../classastu_1_1AxisBinding.html',1,'astu::AxisBinding'],['../classastu_1_1AxisBinding.html#a196fdc402dcf64aa507e6d6b9d3757f9',1,'astu::AxisBinding::AxisBinding()']]],
   ['axismapping',['AxisMapping',['../classastu_1_1AxisMapping.html',1,'astu::AxisMapping'],['../classastu_1_1AxisMapping.html#a1145f8432af7cea0bc9db96735386d9f',1,'astu::AxisMapping::AxisMapping()']]],

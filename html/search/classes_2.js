@@ -4,6 +4,7 @@ var searchData=
   ['cameraclient',['CameraClient',['../classastu_1_1suite2d_1_1CameraClient.html',1,'astu::suite2d']]],
   ['cameracontrolservice',['CameraControlService',['../classastu_1_1suite2d_1_1CameraControlService.html',1,'astu::suite2d']]],
   ['cameraservice',['CameraService',['../classastu_1_1suite2d_1_1CameraService.html',1,'astu::suite2d']]],
+  ['cautodestruct',['CAutoDestruct',['../classastu_1_1CAutoDestruct.html',1,'astu']]],
   ['cautorotate',['CAutoRotate',['../classastu_1_1suite2d_1_1CAutoRotate.html',1,'astu::suite2d']]],
   ['cbody',['CBody',['../classastu_1_1suite2d_1_1CBody.html',1,'astu::suite2d']]],
   ['cbodybuilder',['CBodyBuilder',['../classastu_1_1suite2d_1_1CBodyBuilder.html',1,'astu::suite2d']]],

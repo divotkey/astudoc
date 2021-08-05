@@ -37,7 +37,7 @@ var searchData=
   ['trafficred',['TrafficRed',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a149912e474efdbc7c0c670ded08fd6de',1,'astu::RalColors']]],
   ['trafficwhite',['TrafficWhite',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a5ec8cffcddccd9b34880e5ebcf7b3b40',1,'astu::RalColors']]],
   ['trafficyellow',['TrafficYellow',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a1682e54918added130d74dbc3b2d662f',1,'astu::RalColors']]],
-  ['transform',['transform',['../classastu_1_1suite2d_1_1CPose.html#af9c1225512bc213fdaff45008416654c',1,'astu::suite2d::CPose::transform()'],['../classastu_1_1Polygon.html#a9bf40bc43bd08d4293583c146bab4d68',1,'astu::Polygon::Transform()']]],
+  ['transform',['Transform',['../classastu_1_1Polygon.html#a9bf40bc43bd08d4293583c146bab4d68',1,'astu::Polygon::Transform()'],['../classastu_1_1suite2d_1_1CPose.html#af9c1225512bc213fdaff45008416654c',1,'astu::suite2d::CPose::transform()']]],
   ['transform2',['Transform2',['../classastu_1_1Transform2.html',1,'astu::Transform2&lt; T &gt;'],['../classastu_1_1Transform2.html#ac4f230cba8e6862ab3348ea19305ef52',1,'astu::Transform2::Transform2()']]],
   ['transform2_3c_20float_20_3e',['Transform2&lt; float &gt;',['../classastu_1_1Transform2.html',1,'astu']]],
   ['transform2d',['Transform2d',['../group__math__group.html#ga65979825a2f2857cba98d2d54a1df913',1,'astu']]],
@@ -53,5 +53,5 @@ var searchData=
   ['turquoiseblue',['TurquoiseBlue',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034a8dc51a21e46112734b0114f33681e40f',1,'astu::RalColors']]],
   ['turquoisegreen',['TurquoiseGreen',['../classastu_1_1RalColors.html#a18ad55749e0733dc1a412a97b7e40034abf8540a70b73f39206054739a13601e0',1,'astu::RalColors']]],
   ['two',['Two',['../classastu_1_1Keys.html#aa198574d6a8732162f329aa5098015f1',1,'astu::Keys']]],
-  ['type',['Type',['../classastu_1_1WindowState.html#ae7ebaae8631a7957bd576aabc3914036',1,'astu::WindowState::Type()'],['../classastu_1_1suite2d_1_1CBody.html#a5731a8b9f24de5494683e4b7e8016b64',1,'astu::suite2d::CBody::Type()'],['../classastu_1_1suite2d_1_1CBodyBuilder.html#a42f2d0af41647c1617cb948d72d2fe0f',1,'astu::suite2d::CBodyBuilder::Type()'],['../classastu_1_1WindowState.html#a41b05b74477652065da5008633249307',1,'astu::WindowState::type()']]]
+  ['type',['type',['../classastu_1_1WindowState.html#a41b05b74477652065da5008633249307',1,'astu::WindowState::type()'],['../classastu_1_1WindowState.html#ae7ebaae8631a7957bd576aabc3914036',1,'astu::WindowState::Type()'],['../classastu_1_1suite2d_1_1CBody.html#a5731a8b9f24de5494683e4b7e8016b64',1,'astu::suite2d::CBody::Type()'],['../classastu_1_1suite2d_1_1CBodyBuilder.html#a42f2d0af41647c1617cb948d72d2fe0f',1,'astu::suite2d::CBodyBuilder::Type()']]]
 ];

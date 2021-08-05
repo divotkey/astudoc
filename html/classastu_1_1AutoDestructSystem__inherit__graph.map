@@ -1,0 +1,7 @@
+<map id="astu::AutoDestructSystem" name="astu::AutoDestructSystem">
+<area shape="rect" id="node2" href="$classastu_1_1BaseService.html" title="astu::BaseService" alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$classastu_1_1Service.html" title="astu::Service" alt="" coords="169,5,267,32"/>
+<area shape="rect" id="node4" href="$classastu_1_1IteratingEntitySystem.html" title="astu::IteratingEntitySystem" alt="" coords="302,80,483,107"/>
+<area shape="rect" id="node6" href="$classastu_1_1TimeClient.html" title="astu::TimeClient" alt="" coords="159,80,277,107"/>
+<area shape="rect" id="node5" href="$classastu_1_1IUpdatable.html" title="astu::IUpdatable" alt="" coords="333,5,452,32"/>
+</map>

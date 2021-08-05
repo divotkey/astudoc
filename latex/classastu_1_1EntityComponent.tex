@@ -6,7 +6,8 @@
 
 
 
-Inheritance diagram for astu\+:\+:Entity\+Component\+:\nopagebreak
+Inheritance diagram for astu\+:\+:Entity\+Component\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -57,7 +58,7 @@ Base class for all entity components.
     \}
 
     \textcolor{comment}{// Inherited via EntityComponent}
-    \textcolor{keyword}{virtual} std::shared\_ptr<EntityComponent> \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{Clone}()\textcolor{keyword}{ override }\{
+    \textcolor{keyword}{virtual} std::shared\_ptr<astu::EntityComponent> \hyperlink{classastu_1_1EntityComponent_afeddb5a899d831255a9a4f07269f3b2d}{Clone}()\textcolor{keyword}{ override }\{
         \textcolor{comment}{// Create copy using copy-constructor.}
         \textcolor{keywordflow}{return} std::make\_shared<CMyComponent>(*this);
     \}    
@@ -94,7 +95,7 @@ a copy of this componend
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}{astu\+::suite2d\+::\+C\+Pose}, \hyperlink{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}{astu\+::suite2d\+::\+C\+Scene}, and \hyperlink{classastu_1_1suite2d_1_1CAutoRotate_af130721018671489c7de3f652ffcc8cf}{astu\+::suite2d\+::\+C\+Auto\+Rotate}.
+Implemented in \hyperlink{classastu_1_1suite2d_1_1CPose_a90d4fb820221ddabf9c95d5a10796359}{astu\+::suite2d\+::\+C\+Pose}, \hyperlink{classastu_1_1suite2d_1_1CScene_ae8dad316175ec4bbfbdb7fff3c736cd3}{astu\+::suite2d\+::\+C\+Scene}, \hyperlink{classastu_1_1suite2d_1_1CAutoRotate_af130721018671489c7de3f652ffcc8cf}{astu\+::suite2d\+::\+C\+Auto\+Rotate}, and \hyperlink{classastu_1_1CAutoDestruct_a25a9d187d42fbc3fd16311f74894b345}{astu\+::\+C\+Auto\+Destruct}.
 
 \mbox{\Hypertarget{classastu_1_1EntityComponent_ae3c2dc735241902588358b933a786603}\label{classastu_1_1EntityComponent_ae3c2dc735241902588358b933a786603}} 
 \index{astu\+::\+Entity\+Component@{astu\+::\+Entity\+Component}!Get\+Parent@{Get\+Parent}}

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s',['S',['../classastu_1_1Keys.html#a5e38e7cc0aa32637b6f52ca2a8b2f947',1,'astu::Keys::S()'],['../classastu_1_1ColorHsv.html#a4935b897136129b2ec75bebd437d227e',1,'astu::ColorHsv::s()']]],
+  ['s',['s',['../classastu_1_1ColorHsv.html#a4935b897136129b2ec75bebd437d227e',1,'astu::ColorHsv::s()'],['../classastu_1_1Keys.html#a5e38e7cc0aa32637b6f52ca2a8b2f947',1,'astu::Keys::S()']]],
   ['seven',['Seven',['../classastu_1_1Keys.html#a4422275f87e13ce9f7b7e86f9ec2a162',1,'astu::Keys']]],
   ['six',['Six',['../classastu_1_1Keys.html#a492c588d8b31b73a1a6094d878642629',1,'astu::Keys']]],
   ['spacebar',['SpaceBar',['../classastu_1_1Keys.html#a6e3808ecdf4dd838fef03616dcc5b7b2',1,'astu::Keys']]],
