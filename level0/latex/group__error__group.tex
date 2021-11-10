@@ -1,172 +1,172 @@
-\hypertarget{group__error__group}{}\section{Error Handling}
+\hypertarget{group__error__group}{}\doxysection{Error Handling}
 \label{group__error__group}\index{Error Handling@{Error Handling}}
 
 
 This module is dedicated to error handling.  
 
 
-\subsection*{Enumerations}
+\doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}{Error\+Code} \{ \newline
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{N\+O\+\_\+\+E\+R\+R\+OR} = 0x0000, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}, 
+enum \mbox{\hyperlink{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}{Error\+Code}} \{ \newline
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{N\+O\+\_\+\+E\+R\+R\+OR}} = 0x0000, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}}, 
 \newline
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}}, 
 \newline
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}{S\+D\+L\+\_\+\+E\+R\+R\+OR}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}{A\+P\+P\+\_\+\+E\+R\+R\+OR}, 
-\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE}
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}{S\+D\+L\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}{A\+P\+P\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE}}
  \}
 \end{DoxyCompactItemize}
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{Get\+Last\+Error} ()
+int \mbox{\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{Get\+Last\+Error}} ()
 \item 
-void \hyperlink{group__error__group_ga042670233cf17b3bfb1412a37e7dfd59}{Set\+Last\+Error} (int error\+Code)
+void \mbox{\hyperlink{group__error__group_ga042670233cf17b3bfb1412a37e7dfd59}{Set\+Last\+Error}} (int error\+Code)
 \item 
-bool \hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{Has\+Error} ()
+bool \mbox{\hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{Has\+Error}} ()
 \item 
-const char $\ast$ \hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{Get\+Error\+Message} (int error\+Code)
+const char $\ast$ \mbox{\hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{Get\+Error\+Message}} (int error\+Code)
 \item 
-const char $\ast$ \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{Get\+Last\+Error\+Message} ()
+const char $\ast$ \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{Get\+Last\+Error\+Message}} ()
 \item 
-const char $\ast$ \hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{Get\+Error\+Details} ()
+const char $\ast$ \mbox{\hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{Get\+Error\+Details}} ()
 \item 
-void \hyperlink{group__error__group_gac4c413604bb98cf7bb6befe53e748b63}{Set\+Error\+Details} (const char $\ast$text)
+void \mbox{\hyperlink{group__error__group_gac4c413604bb98cf7bb6befe53e748b63}{Set\+Error\+Details}} (const char $\ast$text)
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 This module is dedicated to error handling. 
 
-\hypertarget{group__error__group_intro_sect}{}\subsection{Introduction}\label{group__error__group_intro_sect}
+\hypertarget{group__error__group_intro_sect}{}\doxysubsection{Introduction}\label{group__error__group_intro_sect}
 This module offers a error handling concept which does not make use of C++ exceptions and hence can be considered being old-\/syle. The basic concept is that a function returns an error code which is in case of success equal to zero or the enum constant {\ttfamily N\+O\+\_\+\+E\+R\+R\+OR}. However, some functions return some kind of a result and cannot return an error code at the same time. The solution is that all functions which can possible fail assign an error code to a global hidden variable called {\ttfamily last\+\_\+error}. Functions which can return an error code in some way do this additionally to the global error variable.
 
-The application can query this last-\/error by the use of the function {\ttfamily Get\+Last\+Error} and translate the error code to a human readable text message using the function {\ttfamily Get\+Error\+Message}.\hypertarget{group__error__group_usage_sect}{}\subsubsection{Example Usage}\label{group__error__group_usage_sect}
+The application can query this last-\/error by the use of the function {\ttfamily Get\+Last\+Error} and translate the error code to a human readable text message using the function {\ttfamily Get\+Error\+Message}.\hypertarget{group__error__group_usage_sect}{}\doxysubsubsection{Example Usage}\label{group__error__group_usage_sect}
 Here is an example for the basic error handling idiom in case the used function returns an error code and the error condition is unrecoverable and the program has to terminate.
 
 
-\begin{DoxyCode}
-\textcolor{keywordflow}{if} ( DoSomethingWhichCanFail() != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}) \{
-
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}( \hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{GetErrorMessage}( \hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}() ) );
-
-  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( DoSomethingWhichCanFail() != \mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}}) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}( \mbox{\hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{GetErrorMessage}}( \mbox{\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}}() ) );}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-Using the fact that error codes differ from zero and using the convenient methods like {\ttfamily \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{Get\+Last\+Error\+Message()}}, the code can be shortened to following version.
+Using the fact that error codes differ from zero and using the convenient methods like {\ttfamily \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{Get\+Last\+Error\+Message()}}}, the code can be shortened to following version.
 
 
-\begin{DoxyCode}
-\textcolor{keywordflow}{if} ( !DoSomethingWhichCanFail() ) \{
-
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}( \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}() );
-
-  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( !DoSomethingWhichCanFail() ) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}( \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}}() );}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
 In case the function to be used returns some kind of result, the idiom changes like this.
 
 
-\begin{DoxyCode}
-\textcolor{keyword}{auto} result = ReturnSomethingWhichCanFail();
-\textcolor{keywordflow}{if} ( \hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}() != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR} ) \{
-
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}( \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}() );
-
-  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{auto} result = ReturnSomethingWhichCanFail();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( \mbox{\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}}() != \mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}} ) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}( \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}}() );}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-Here is a slightly shorter version using the convenient function {\ttfamily \hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{Has\+Error()}}. 
-\begin{DoxyCode}
-\textcolor{keyword}{auto} result = ReturnSomethingWhichCanFail();
-\textcolor{keywordflow}{if} ( \hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{HasError}() ) \{
-
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}( \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}() );
-
-  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}
-\}
+Here is a slightly shorter version using the convenient function {\ttfamily \mbox{\hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{Has\+Error()}}}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{auto} result = ReturnSomethingWhichCanFail();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( \mbox{\hyperlink{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}{HasError}}() ) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}( \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}}() );}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// TODO clean up e.g., free memory etc. and exit program}}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  
 
-\subsection{Enumeration Type Documentation}
+\doxysubsection{Enumeration Type Documentation}
 \mbox{\Hypertarget{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}\label{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}} 
-\index{Error Handling@{Error Handling}!Error\+Code@{Error\+Code}}
-\index{Error\+Code@{Error\+Code}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Error\+Code}{ErrorCode}}
-{\footnotesize\ttfamily enum \hyperlink{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}{Error\+Code}}
+\index{Error Handling@{Error Handling}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{ErrorCode}{ErrorCode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__error__group_ga59e56af19e754a6aa26a612ebf91d05f}{Error\+Code}}}
 
 These error codes are set by library functions in case the operation could not carried out successfully. \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+\_\+\+E\+R\+R\+OR@{N\+O\+\_\+\+E\+R\+R\+OR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!N\+O\+\_\+\+E\+R\+R\+OR@{N\+O\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ERROR@{NO\_ERROR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!NO\_ERROR@{NO\_ERROR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}} 
 N\+O\+\_\+\+E\+R\+R\+OR&Indicates that no error has occurred. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER@{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER@{I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_PARAMETER@{INVALID\_PARAMETER}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!INVALID\_PARAMETER@{INVALID\_PARAMETER}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0d213a9ce640867b78937ff030c6c76f}} 
 I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER&At least one of the specified parameters is invalid. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNABLE\_TO\_OPEN\_FILE\_FOR\_READING@{UNABLE\_TO\_OPEN\_FILE\_FOR\_READING}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!UNABLE\_TO\_OPEN\_FILE\_FOR\_READING@{UNABLE\_TO\_OPEN\_FILE\_FOR\_READING}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05face1c457724777c90dbb21eb78cde4ced}} 
 U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+R\+E\+A\+D\+I\+NG&A file could not be opened for reading. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNABLE\_TO\_OPEN\_FILE\_FOR\_WRITING@{UNABLE\_TO\_OPEN\_FILE\_FOR\_WRITING}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!UNABLE\_TO\_OPEN\_FILE\_FOR\_WRITING@{UNABLE\_TO\_OPEN\_FILE\_FOR\_WRITING}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05faf97c14c5fb1bc0a6b8b19fb96532b7d6}} 
 U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+L\+E\+\_\+\+F\+O\+R\+\_\+\+W\+R\+I\+T\+I\+NG&A file could not be opened for writing. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNABLE\_TO\_READ\_FILE@{UNABLE\_TO\_READ\_FILE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!UNABLE\_TO\_READ\_FILE@{UNABLE\_TO\_READ\_FILE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa05530b4c73c413c68420467bb3849903}} 
 U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE&A file could not be read correctly. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE@{U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNABLE\_TO\_IMPORT\_FILE@{UNABLE\_TO\_IMPORT\_FILE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!UNABLE\_TO\_IMPORT\_FILE@{UNABLE\_TO\_IMPORT\_FILE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fafc9167af8c15765c886bc48a4812ad57}} 
 U\+N\+A\+B\+L\+E\+\_\+\+T\+O\+\_\+\+I\+M\+P\+O\+R\+T\+\_\+\+F\+I\+LE&A file could not be imported correctly. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_SUPPORTED@{NOT\_SUPPORTED}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!NOT\_SUPPORTED@{NOT\_SUPPORTED}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa9bf1138c8c1f4519e5b814514b750ca3}} 
 N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED&The operation is not supported. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE@{I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_STATE@{INVALID\_STATE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!INVALID\_STATE@{INVALID\_STATE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa3a01eacac22f2ede34b2e254ad6c5f6a}} 
 I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+T\+A\+TE&The current state is invalid for this operation. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+D\+L\+\_\+\+E\+R\+R\+OR@{S\+D\+L\+\_\+\+E\+R\+R\+OR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!S\+D\+L\+\_\+\+E\+R\+R\+OR@{S\+D\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}} 
-S\+D\+L\+\_\+\+E\+R\+R\+OR&An error specifc to Simple Direct Layer. \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SDL\_ERROR@{SDL\_ERROR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!SDL\_ERROR@{SDL\_ERROR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8a98e7877e367accbc17e4c1b333a422}} 
+S\+D\+L\+\_\+\+E\+R\+R\+OR&An error specific to Simple Direct Layer. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR@{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!J\+A\+C\+K\+\_\+\+E\+R\+R\+OR@{J\+A\+C\+K\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}} 
-J\+A\+C\+K\+\_\+\+E\+R\+R\+OR&An error specifc to Simple Direct Layer. \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JACK\_ERROR@{JACK\_ERROR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!JACK\_ERROR@{JACK\_ERROR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa8dec6f40e00f4411723a80830addf416}} 
+J\+A\+C\+K\+\_\+\+E\+R\+R\+OR&An error specific to Simple Direct Layer. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+P\+P\+\_\+\+E\+R\+R\+OR@{A\+P\+P\+\_\+\+E\+R\+R\+OR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!A\+P\+P\+\_\+\+E\+R\+R\+OR@{A\+P\+P\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{APP\_ERROR@{APP\_ERROR}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!APP\_ERROR@{APP\_ERROR}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa0a53212262724ecd8005236640d22c96}} 
 A\+P\+P\+\_\+\+E\+R\+R\+OR&Custom error code set by application. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE@{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE@{U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN\_ERROR\_CODE@{UNKNOWN\_ERROR\_CODE}!Error Handling@{Error Handling}}\index{Error Handling@{Error Handling}!UNKNOWN\_ERROR\_CODE@{UNKNOWN\_ERROR\_CODE}}}\mbox{\Hypertarget{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}\label{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fa4d17e74c73af4c7b64c944c78d07da2a}} 
 U\+N\+K\+N\+O\+W\+N\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+O\+DE&The specified error code is unknown. \\
 \hline
 
 \end{DoxyEnumFields}
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}\label{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}} 
-\index{Error Handling@{Error Handling}!Get\+Error\+Details@{Get\+Error\+Details}}
-\index{Get\+Error\+Details@{Get\+Error\+Details}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Get\+Error\+Details()}{GetErrorDetails()}}
+\index{Error Handling@{Error Handling}!GetErrorDetails@{GetErrorDetails}}
+\index{GetErrorDetails@{GetErrorDetails}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{GetErrorDetails()}{GetErrorDetails()}}
 {\footnotesize\ttfamily const char$\ast$ Get\+Error\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the a more detailed error message of the last-\/error.
@@ -177,9 +177,9 @@ Note\+: not all operations offer a detailed error message in case of a problem a
 detailed error message or an empty string 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__error__group_gac785e42215658e0f7127f3690dd8f788}\label{group__error__group_gac785e42215658e0f7127f3690dd8f788}} 
-\index{Error Handling@{Error Handling}!Get\+Error\+Message@{Get\+Error\+Message}}
-\index{Get\+Error\+Message@{Get\+Error\+Message}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Get\+Error\+Message()}{GetErrorMessage()}}
+\index{Error Handling@{Error Handling}!GetErrorMessage@{GetErrorMessage}}
+\index{GetErrorMessage@{GetErrorMessage}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{GetErrorMessage()}{GetErrorMessage()}}
 {\footnotesize\ttfamily const char$\ast$ Get\+Error\+Message (\begin{DoxyParamCaption}\item[{int}]{error\+Code }\end{DoxyParamCaption})}
 
 Returns the error message for the specified error code.
@@ -190,9 +190,9 @@ Returns the error message for the specified error code.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{group__error__group_ga10b9a284527af83a44533867b0aff0fc}\label{group__error__group_ga10b9a284527af83a44533867b0aff0fc}} 
-\index{Error Handling@{Error Handling}!Get\+Last\+Error@{Get\+Last\+Error}}
-\index{Get\+Last\+Error@{Get\+Last\+Error}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Get\+Last\+Error()}{GetLastError()}}
+\index{Error Handling@{Error Handling}!GetLastError@{GetLastError}}
+\index{GetLastError@{GetLastError}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{GetLastError()}{GetLastError()}}
 {\footnotesize\ttfamily int Get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the last-\/error code.
@@ -201,9 +201,9 @@ Returns the last-\/error code.
 the last-\/error code 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}\label{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}} 
-\index{Error Handling@{Error Handling}!Get\+Last\+Error\+Message@{Get\+Last\+Error\+Message}}
-\index{Get\+Last\+Error\+Message@{Get\+Last\+Error\+Message}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Get\+Last\+Error\+Message()}{GetLastErrorMessage()}}
+\index{Error Handling@{Error Handling}!GetLastErrorMessage@{GetLastErrorMessage}}
+\index{GetLastErrorMessage@{GetLastErrorMessage}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{GetLastErrorMessage()}{GetLastErrorMessage()}}
 {\footnotesize\ttfamily const char$\ast$ Get\+Last\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Convenient function which returns the error message of the last error.
@@ -211,13 +211,13 @@ Convenient function which returns the error message of the last error.
 Calling this method is equivalent to
 
 
-\begin{DoxyCode}
-\hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{GetErrorMessage}( \hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}() );
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__error__group_gac785e42215658e0f7127f3690dd8f788}{GetErrorMessage}}( \mbox{\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}}() );}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}\label{group__error__group_ga9f6d63ccb598465866b249cbd6dd06c7}} 
-\index{Error Handling@{Error Handling}!Has\+Error@{Has\+Error}}
-\index{Has\+Error@{Has\+Error}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Has\+Error()}{HasError()}}
+\index{Error Handling@{Error Handling}!HasError@{HasError}}
+\index{HasError@{HasError}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{HasError()}{HasError()}}
 {\footnotesize\ttfamily bool Has\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Convenient function to test whether an error has occurred.
@@ -225,8 +225,8 @@ Convenient function to test whether an error has occurred.
 Calling this method is equivalent to expression
 
 
-\begin{DoxyCode}
-\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}() != \hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__error__group_ga10b9a284527af83a44533867b0aff0fc}{GetLastError}}() != \mbox{\hyperlink{group__error__group_gga59e56af19e754a6aa26a612ebf91d05fabf350750d0d4fabd8954c0f1e9bbae94}{ErrorCode::NO\_ERROR}}}
 \end{DoxyCode}
 
 
@@ -234,9 +234,9 @@ Calling this method is equivalent to expression
 {\ttfamily true} if an error has occurred 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__error__group_gac4c413604bb98cf7bb6befe53e748b63}\label{group__error__group_gac4c413604bb98cf7bb6befe53e748b63}} 
-\index{Error Handling@{Error Handling}!Set\+Error\+Details@{Set\+Error\+Details}}
-\index{Set\+Error\+Details@{Set\+Error\+Details}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Set\+Error\+Details()}{SetErrorDetails()}}
+\index{Error Handling@{Error Handling}!SetErrorDetails@{SetErrorDetails}}
+\index{SetErrorDetails@{SetErrorDetails}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{SetErrorDetails()}{SetErrorDetails()}}
 {\footnotesize\ttfamily void Set\+Error\+Details (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
 
 Sets detailed error description.
@@ -249,9 +249,9 @@ This function can be used to set a detailed error description by the application
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{group__error__group_ga042670233cf17b3bfb1412a37e7dfd59}\label{group__error__group_ga042670233cf17b3bfb1412a37e7dfd59}} 
-\index{Error Handling@{Error Handling}!Set\+Last\+Error@{Set\+Last\+Error}}
-\index{Set\+Last\+Error@{Set\+Last\+Error}!Error Handling@{Error Handling}}
-\subsubsection{\texorpdfstring{Set\+Last\+Error()}{SetLastError()}}
+\index{Error Handling@{Error Handling}!SetLastError@{SetLastError}}
+\index{SetLastError@{SetLastError}!Error Handling@{Error Handling}}
+\doxysubsubsection{\texorpdfstring{SetLastError()}{SetLastError()}}
 {\footnotesize\ttfamily void Set\+Last\+Error (\begin{DoxyParamCaption}\item[{int}]{error\+Code }\end{DoxyParamCaption})}
 
 Sets the last-\/error code.

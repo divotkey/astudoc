@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector2',['Vector2',['../classastu_1_1Vector2.html#a021ec0e80fa7ca80921a17172e30fe29',1,'astu::Vector2']]]
+  ['todegrees_235',['ToDegrees',['../group__math__group.html#gab6efcc6e24e777db0fe5e0d0955c2b2d',1,'AstUtils0.h']]],
+  ['toradians_236',['ToRadians',['../group__math__group.html#gafdd4eddaf6eadf34406a865e0cf6a30a',1,'AstUtils0.h']]]
 ];

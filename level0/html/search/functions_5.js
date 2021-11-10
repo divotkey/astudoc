@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['haserror',['HasError',['../group__error__group.html#ga9f6d63ccb598465866b249cbd6dd06c7',1,'AstUtils0.h']]]
+  ['getabsolutetime_155',['GetAbsoluteTime',['../group__sdl__group.html#ga9b9387d774c6bc63e5e3c6c91296dedb',1,'SdlApplication0.h']]],
+  ['getcursorx_156',['GetCursorX',['../group__sdl__group.html#ga7c508c83150dcd127156d9c4e2436a8e',1,'SdlApplication0.h']]],
+  ['getcursory_157',['GetCursorY',['../group__sdl__group.html#ga4769e37502d12fbc431ace1a32749bc8',1,'SdlApplication0.h']]],
+  ['getdeltatime_158',['GetDeltaTime',['../group__sdl__group.html#gaf9e3349b29171ad58521f5a7a6238fca',1,'SdlApplication0.h']]],
+  ['geterrordetails_159',['GetErrorDetails',['../group__error__group.html#ga8258f5044a56ed71aeed5633fc8341b6',1,'AstUtils0.h']]],
+  ['geterrormessage_160',['GetErrorMessage',['../group__error__group.html#gac785e42215658e0f7127f3690dd8f788',1,'AstUtils0.h']]],
+  ['getfps_161',['GetFps',['../group__sdl__group.html#gaa48ddc248a57dfa1e4afdd6be2a76531',1,'SdlApplication0.h']]],
+  ['getfpsstring_162',['GetFpsString',['../group__sdl__group.html#ga236d5b80ee4ca0a1abe0ae054f7fbe2f',1,'SdlApplication0.h']]],
+  ['getlasterror_163',['GetLastError',['../group__error__group.html#ga10b9a284527af83a44533867b0aff0fc',1,'AstUtils0.h']]],
+  ['getlasterrormessage_164',['GetLastErrorMessage',['../group__error__group.html#gac9be83c8ac2a5d80a2be46487c596eab',1,'AstUtils0.h']]],
+  ['getmicroseconds_165',['GetMicroseconds',['../group__timer__group.html#gaf7c73a75effd7e7491ffd821e760a139',1,'AstUtils0.h']]],
+  ['getmilliseconds_166',['GetMilliseconds',['../group__timer__group.html#ga0c820f6552d69b3cdaac23e6b4662d7a',1,'AstUtils0.h']]],
+  ['getrandombool_167',['GetRandomBool',['../group__math__group.html#gae5490570b6f02038286bed859628d098',1,'AstUtils0.h']]],
+  ['getrandomdouble_168',['GetRandomDouble',['../group__math__group.html#ga298f9ccec14d3ea06c05ccd1e1e062ac',1,'AstUtils0.h']]],
+  ['getrandomfloat_169',['GetRandomFloat',['../group__math__group.html#ga1b01a5ff9291b711b5d7b40fa645cfdf',1,'AstUtils0.h']]],
+  ['getrandomint_170',['GetRandomInt',['../group__math__group.html#gab82c25b1da5feec79806fe080becf2c3',1,'AstUtils0.h']]],
+  ['getwindowheight_171',['GetWindowHeight',['../group__sdl__group.html#gac27ddd893a70056c55278b33d7bd2c62',1,'SdlApplication0.h']]],
+  ['getwindowwidth_172',['GetWindowWidth',['../group__sdl__group.html#gaa938d3f784d26ccd4ed8c2d83bbc6ab4',1,'SdlApplication0.h']]],
+  ['greatestcommondivisor_173',['GreatestCommonDivisor',['../group__math__group.html#gaaf5732ddb11cda2a05f0f978265a114e',1,'AstUtils0.h']]]
 ];

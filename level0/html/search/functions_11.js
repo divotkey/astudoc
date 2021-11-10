@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writeaudio',['WriteAudio',['../group__audio__group.html#gaf55add952fe04c4b2758d18db17c8c91',1,'AstUtils0.h']]],
-  ['writeimage',['WriteImage',['../group__graphics__group.html#ga7a92adcfb955193d1a9e91891cd390e0',1,'AstUtils0.h']]]
+  ['updateapp_237',['UpdateApp',['../group__sdl__group.html#ga9bf9bfe01e7d336c3a3b13cc923ff850',1,'SdlApplication0.h']]]
 ];

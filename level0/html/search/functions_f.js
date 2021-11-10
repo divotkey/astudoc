@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['updateapp',['UpdateApp',['../group__sdl__group.html#ga9bf9bfe01e7d336c3a3b13cc923ff850',1,'SdlApplication.h']]]
+  ['saycopyright_209',['SayCopyright',['../group__io__group.html#ga084505dc30e2b861c2f077a52ae14f98',1,'AstUtils0.h']]],
+  ['saydouble_210',['SayDouble',['../group__io__group.html#ga6af59270fa536fa4c3e9f8434a8fb4a0',1,'AstUtils0.h']]],
+  ['sayelapsedtime_211',['SayElapsedTime',['../group__io__group.html#ga9988545ab3fddd93e05654323cdb1f4b',1,'AstUtils0.h']]],
+  ['sayerror_212',['SayError',['../group__io__group.html#gaa8fd8044fbf35d58e73087b6399cd82a',1,'AstUtils0.h']]],
+  ['sayhello_213',['SayHello',['../group__io__group.html#ga43fd6e7b7a627ba82ff93795559479f8',1,'AstUtils0.h']]],
+  ['sayint_214',['SayInt',['../group__io__group.html#gaa78da65e44d9ab5e70c79ed77f62b86a',1,'AstUtils0.h']]],
+  ['saytext_215',['SayText',['../group__io__group.html#ga82cdf45375c3b92b2a60c3d9b55d682f',1,'AstUtils0.h']]],
+  ['sayversion_216',['SayVersion',['../group__io__group.html#ga769a16a6dc919153f667b468d81b3af7',1,'AstUtils0.h']]],
+  ['scale_217',['Scale',['../classastu_1_1Vector2.html#a043ad479fa5cd5d91eae37a06e3b8e96',1,'astu::Vector2::Scale(const Vector2&lt; T &gt; &amp;sv)'],['../classastu_1_1Vector2.html#a32500c8d1ebd2b516a6b83f807857d98',1,'astu::Vector2::Scale(T sx, T sy)']]],
+  ['set_218',['Set',['../classastu_1_1Vector2.html#a303494be2ce5f334571f6f284ad13e28',1,'astu::Vector2::Set(const Vector2&lt; T &gt; &amp;o)'],['../classastu_1_1Vector2.html#a0a30422e8f2bcdd161c6a98764e816b2',1,'astu::Vector2::Set(T newX, T newY)']]],
+  ['setbackgroundcolor_219',['SetBackgroundColor',['../group__sdl__group.html#ga540012b7df5eddd0b109543deaa66a22',1,'SetBackgroundColor(int r, int g, int b):&#160;SdlApplication0.h'],['../group__sdl__group.html#gaa80de83a7c03984305662ae0ca5daa05',1,'SetBackgroundColor(int rgb):&#160;SdlApplication0.h']]],
+  ['setbit_220',['SetBit',['../group__math__group.html#ga8c8748fbb1d3e99db79f20fc17d4e63b',1,'AstUtils0.h']]],
+  ['setclearcolor_221',['SetClearColor',['../group__graphics__group.html#ga3bb72e859437ed28549062ac7be27d8d',1,'AstUtils0.h']]],
+  ['setdrawcolor_222',['SetDrawColor',['../group__graphics__group.html#ga1173670691ccdb478d5a23e4e40e9370',1,'AstUtils0.h']]],
+  ['seterrordetails_223',['SetErrorDetails',['../group__error__group.html#gac4c413604bb98cf7bb6befe53e748b63',1,'AstUtils0.h']]],
+  ['setlasterror_224',['SetLastError',['../group__error__group.html#ga042670233cf17b3bfb1412a37e7dfd59',1,'AstUtils0.h']]],
+  ['setlength_225',['SetLength',['../classastu_1_1Vector2.html#afeae7c216e2c0846f576a11563a6404c',1,'astu::Vector2']]],
+  ['setrandomseed_226',['SetRandomSeed',['../group__math__group.html#gab62eb7c4d19d31b0e0ac5f89a126b199',1,'AstUtils0.h']]],
+  ['setrendercolor_227',['SetRenderColor',['../group__sdl__group.html#gab01fa8f79d94269a5b9a1cb7d2e51843',1,'SetRenderColor(int r, int g, int b, int a=255):&#160;SdlApplication0.h'],['../group__sdl__group.html#gaa5ac5769b86fd14f41fc2421e8e029bc',1,'SetRenderColor(int rgba):&#160;SdlApplication0.h']]],
+  ['setwindowtitle_228',['SetWindowTitle',['../group__sdl__group.html#ga6dfd8bbc85eeeee6922576be9ae65e29',1,'SdlApplication0.h']]],
+  ['setx_229',['SetX',['../classastu_1_1Vector2.html#ad3bb5d95529930813f270b6425741364',1,'astu::Vector2']]],
+  ['sety_230',['SetY',['../classastu_1_1Vector2.html#a3241be81f52b56f822bb71def51f4075',1,'astu::Vector2']]],
+  ['setzero_231',['SetZero',['../classastu_1_1Vector2.html#a70eb8d4b44d3f973c5065a0ed5f9c01c',1,'astu::Vector2']]],
+  ['shuffle_232',['Shuffle',['../group__math__group.html#ga9dffb844db4ac8823c6c957448576ed8',1,'AstUtils0.h']]],
+  ['starttimer_233',['StartTimer',['../group__timer__group.html#ga66509b494102a5c28ba6c8be3eab7733',1,'AstUtils0.h']]],
+  ['stoptimer_234',['StopTimer',['../group__timer__group.html#gaf3619f34a9bc0184b4578e5337069856',1,'AstUtils0.h']]]
 ];

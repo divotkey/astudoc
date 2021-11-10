@@ -1,47 +1,49 @@
-\hypertarget{group__io__group}{}\section{I/O Functions}
-\label{group__io__group}\index{I/\+O Functions@{I/\+O Functions}}
+\hypertarget{group__io__group}{}\doxysection{I/O Functions}
+\label{group__io__group}\index{I/O Functions@{I/O Functions}}
 
 
 The functions defined in this group are dedicated to basic input output operations.  
 
 
-\subsection*{Functions}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}{Say\+Hello} ()
+void \mbox{\hyperlink{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}{Say\+Hello}} ()
 \item 
-void \hyperlink{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}{Say\+Error} ()
+void \mbox{\hyperlink{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}{Say\+Error}} ()
 \item 
-void \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{Say\+Text} (const char $\ast$text=nullptr, bool eol=true)
+void \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{Say\+Text}} (const char $\ast$text=nullptr, bool eol=true)
 \item 
-void \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{Say\+Int} (int value, bool eol=true)
+void \mbox{\hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{Say\+Int}} (int value, bool eol=true)
 \item 
-void \hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{Say\+Double} (double value, bool eol=true)
+void \mbox{\hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{Say\+Double}} (double value, bool eol=true)
 \item 
-void \hyperlink{group__io__group_gaccd19a10653fad0734fe384cd6d7ba53}{Say\+Version} ()
+void \mbox{\hyperlink{group__io__group_ga769a16a6dc919153f667b468d81b3af7}{Say\+Version}} (bool newline=false)
 \item 
-void \hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{Say\+Elapsed\+Time} (const char $\ast$text=nullptr)
+void \mbox{\hyperlink{group__io__group_ga084505dc30e2b861c2f077a52ae14f98}{Say\+Copyright}} (bool newline=false)
 \item 
-int \hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{Ask\+Int} (const char $\ast$text=nullptr)
+void \mbox{\hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{Say\+Elapsed\+Time}} (const char $\ast$text=nullptr)
 \item 
-double \hyperlink{group__io__group_ga2ecfe90c9b28dec6725b8df1a0013d0d}{Ask\+Double} (const char $\ast$text=nullptr)
+int \mbox{\hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{Ask\+Int}} (const char $\ast$text=nullptr)
 \item 
-float \hyperlink{group__io__group_ga973515b754711fc89a018ce64f980c74}{Ask\+Float} (const char $\ast$text=nullptr)
+double \mbox{\hyperlink{group__io__group_ga2ecfe90c9b28dec6725b8df1a0013d0d}{Ask\+Double}} (const char $\ast$text=nullptr)
 \item 
-const char $\ast$ \hyperlink{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}{Ask\+String} (const char $\ast$text=nullptr)
+float \mbox{\hyperlink{group__io__group_ga973515b754711fc89a018ce64f980c74}{Ask\+Float}} (const char $\ast$text=nullptr)
+\item 
+const char $\ast$ \mbox{\hyperlink{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}{Ask\+String}} (const char $\ast$text=nullptr)
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 The functions defined in this group are dedicated to basic input output operations. 
 
 
 
-\subsection{Function Documentation}
+\doxysubsection{Function Documentation}
 \mbox{\Hypertarget{group__io__group_ga2ecfe90c9b28dec6725b8df1a0013d0d}\label{group__io__group_ga2ecfe90c9b28dec6725b8df1a0013d0d}} 
-\index{I/\+O Functions@{I/\+O Functions}!Ask\+Double@{Ask\+Double}}
-\index{Ask\+Double@{Ask\+Double}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Ask\+Double()}{AskDouble()}}
+\index{I/O Functions@{I/O Functions}!AskDouble@{AskDouble}}
+\index{AskDouble@{AskDouble}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{AskDouble()}{AskDouble()}}
 {\footnotesize\ttfamily double Ask\+Double (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Reads an double value from the standard input stream.
@@ -54,74 +56,76 @@ Reads an double value from the standard input stream.
 \begin{DoxyReturn}{Returns}
 the double value entered by the user
 \end{DoxyReturn}
-{\bfseries Example} 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{void} main()
-\{
-  \textcolor{keywordtype}{double} x;
-
-  x = \hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{AskInt}(\textcolor{stringliteral}{"Please enter a real number:"});
-  Say(\textcolor{stringliteral}{"You have entered the following number"});
-  \hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{SayDouble}(x);
-
-  \textcolor{keywordflow}{return} 0;
-\}
-\end{DoxyCode}
- Possible output\+: 
-\begin{DoxyCode}
-Please enter a number: 17.3
-You entered the following number
-17.3
+{\bfseries{Example}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{double} x;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  x = \mbox{\hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{AskInt}}(\textcolor{stringliteral}{"Please enter a real number:"});}
+\DoxyCodeLine{  Say(\textcolor{stringliteral}{"You have entered the following number"});}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{SayDouble}}(x);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+Possible output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Please enter a number: 17.3}
+\DoxyCodeLine{You entered the following number}
+\DoxyCodeLine{17.3}
+\end{DoxyCode}
+
+
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{double} x;
-
-  std::cout << \textcolor{stringliteral}{"Please have enter a real number: "};
-  std::cin >> x;
-  std::cout << \textcolor{stringliteral}{"You have entered the following number"} << std::endl;
-  std::cout << x << std::endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{double} x;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"Please have enter a real number: "};}
+\DoxyCodeLine{  std::cin >> x;}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"You have entered the following number"} << std::endl;}
+\DoxyCodeLine{  std::cout << x << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
 Using C++ streams also offers the option to avoid unnecessary line breaks and to write code in a more compact form, especially when including the namespace form the C++ Standard Library to avoid writing {\ttfamily std}.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{double} x;
-
-  cout << \textcolor{stringliteral}{"Please have enter a real number: "};
-  cin >> x;
-  cout << \textcolor{stringliteral}{"You have entered the number "} << x << endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{double} x;}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  cout << \textcolor{stringliteral}{"Please have enter a real number: "};}
+\DoxyCodeLine{  cin >> x;}
+\DoxyCodeLine{  cout << \textcolor{stringliteral}{"You have entered the number "} << x << endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga973515b754711fc89a018ce64f980c74}\label{group__io__group_ga973515b754711fc89a018ce64f980c74}} 
-\index{I/\+O Functions@{I/\+O Functions}!Ask\+Float@{Ask\+Float}}
-\index{Ask\+Float@{Ask\+Float}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Ask\+Float()}{AskFloat()}}
+\index{I/O Functions@{I/O Functions}!AskFloat@{AskFloat}}
+\index{AskFloat@{AskFloat}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{AskFloat()}{AskFloat()}}
 {\footnotesize\ttfamily float Ask\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Reads an float value from the standard input stream.
@@ -135,9 +139,9 @@ Reads an float value from the standard input stream.
 the float value entered by the user 
 \end{DoxyReturn}
 \mbox{\Hypertarget{group__io__group_gae3d41902eb45488b04016096918d605c}\label{group__io__group_gae3d41902eb45488b04016096918d605c}} 
-\index{I/\+O Functions@{I/\+O Functions}!Ask\+Int@{Ask\+Int}}
-\index{Ask\+Int@{Ask\+Int}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Ask\+Int()}{AskInt()}}
+\index{I/O Functions@{I/O Functions}!AskInt@{AskInt}}
+\index{AskInt@{AskInt}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{AskInt()}{AskInt()}}
 {\footnotesize\ttfamily int Ask\+Int (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Reads an integer value from the standard input stream.
@@ -150,51 +154,53 @@ Reads an integer value from the standard input stream.
 \begin{DoxyReturn}{Returns}
 the integer value entered by the user
 \end{DoxyReturn}
-{\bfseries Example} 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{void} main()
-\{
-  \textcolor{keywordtype}{int} x;
-
-  x = \hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{AskInt}(\textcolor{stringliteral}{"Please enter a number:"});
-  Say(\textcolor{stringliteral}{"You have entered the following number "}, \textcolor{keyword}{false});
-  \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}(x);
-
-  \textcolor{keywordflow}{return} 0;
-\}
-\end{DoxyCode}
- Possible output\+: 
-\begin{DoxyCode}
-Please enter a number: 42
-You entered the following number 42
+{\bfseries{Example}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  x = \mbox{\hyperlink{group__io__group_gae3d41902eb45488b04016096918d605c}{AskInt}}(\textcolor{stringliteral}{"Please enter a number:"});}
+\DoxyCodeLine{  Say(\textcolor{stringliteral}{"You have entered the following number "}, \textcolor{keyword}{false});}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}}(x);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+Possible output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Please enter a number: 42}
+\DoxyCodeLine{You entered the following number 42}
+\end{DoxyCode}
+
+
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{int} x;
-
-  std::cout << \textcolor{stringliteral}{"Please have enter a number: "};
-  std::cin >> x;
-  std::cout << \textcolor{stringliteral}{"You have entered the following number "} << x << std::endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} x;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"Please have enter a number: "};}
+\DoxyCodeLine{  std::cin >> x;}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"You have entered the following number "} << x << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}\label{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}} 
-\index{I/\+O Functions@{I/\+O Functions}!Ask\+String@{Ask\+String}}
-\index{Ask\+String@{Ask\+String}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Ask\+String()}{AskString()}}
+\index{I/O Functions@{I/O Functions}!AskString@{AskString}}
+\index{AskString@{AskString}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{AskString()}{AskString()}}
 {\footnotesize\ttfamily const char$\ast$ Ask\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Reads a string from the standard input stream.
@@ -207,50 +213,84 @@ Reads a string from the standard input stream.
 \begin{DoxyReturn}{Returns}
 the string entered by the user
 \end{DoxyReturn}
-{\bfseries Example} 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{void} main()
-\{
-  \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = \hyperlink{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}{AskString}(\textcolor{stringliteral}{"Please enter your name:"});
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(\textcolor{stringliteral}{"Your name is "}, \textcolor{keyword}{false});
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(name);
-
-  \textcolor{keywordflow}{return} 0;
-\}
-\end{DoxyCode}
- Possible output\+: 
-\begin{DoxyCode}
-Please enter a number: Batman
-Your name is Batman
+{\bfseries{Example}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keyword}{const} \textcolor{keywordtype}{char}* name = \mbox{\hyperlink{group__io__group_ga89af41351370788f6b9d33fd0bd89d91}{AskString}}(\textcolor{stringliteral}{"Please enter your name:"});}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}(\textcolor{stringliteral}{"Your name is "}, \textcolor{keyword}{false});}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}(name);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+Possible output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Please enter a number: Batman}
+\DoxyCodeLine{Your name is Batman}
+\end{DoxyCode}
+
+
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-\textcolor{preprocessor}{#include <string>}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  std::string name;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"Please have enter your name: "};}
+\DoxyCodeLine{  std::getline(std::cin, name);}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"Your name is "} << name << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{group__io__group_ga084505dc30e2b861c2f077a52ae14f98}\label{group__io__group_ga084505dc30e2b861c2f077a52ae14f98}} 
+\index{I/O Functions@{I/O Functions}!SayCopyright@{SayCopyright}}
+\index{SayCopyright@{SayCopyright}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayCopyright()}{SayCopyright()}}
+{\footnotesize\ttfamily void Say\+Copyright (\begin{DoxyParamCaption}\item[{bool}]{newline = {\ttfamily false} }\end{DoxyParamCaption})}
 
-\textcolor{keywordtype}{int} main()
-\{
-  std::string name;
+Outputs copyright information about this library.
 
-  std::cout << \textcolor{stringliteral}{"Please have enter your name: "};
-  std::getline(std::cin, name);
-  std::cout << \textcolor{stringliteral}{"Your name is "} << name << std::endl;
 
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyParams}{Parameters}
+{\em newline} & whether an empty line should be added after the output\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga084505dc30e2b861c2f077a52ae14f98}{SayCopyright}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Possible output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{AST Utilities Version 1.0.0 (64 bit address space) [build: Aug 13 2020, 16:04:50]}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}\label{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Double@{Say\+Double}}
-\index{Say\+Double@{Say\+Double}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Double()}{SayDouble()}}
+\index{I/O Functions@{I/O Functions}!SayDouble@{SayDouble}}
+\index{SayDouble@{SayDouble}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayDouble()}{SayDouble()}}
 {\footnotesize\ttfamily void Say\+Double (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{bool}]{eol = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Outputs the specified double value using the standard output stream.
@@ -262,42 +302,42 @@ Outputs the specified double value using the standard output stream.
 {\em eol} & whether \textquotesingle{}end-\/of-\/line\textquotesingle{} should be added\\
 \hline
 \end{DoxyParams}
-{\bfseries Example}
+{\bfseries{Example}}
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{double} x = 17.3;
-  \hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{SayDouble}(x);
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{double} x = 17.3;}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga6af59270fa536fa4c3e9f8434a8fb4a0}{SayDouble}}(x);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{double} x = 17.3;
-  std::cout << x << std::endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{double} x = 17.3;}
+\DoxyCodeLine{  std::cout << x << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}\label{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Elapsed\+Time@{Say\+Elapsed\+Time}}
-\index{Say\+Elapsed\+Time@{Say\+Elapsed\+Time}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Elapsed\+Time()}{SayElapsedTime()}}
+\index{I/O Functions@{I/O Functions}!SayElapsedTime@{SayElapsedTime}}
+\index{SayElapsedTime@{SayElapsedTime}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayElapsedTime()}{SayElapsedTime()}}
 {\footnotesize\ttfamily void Say\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 Outputs the elapsed time in a nice human readable way.
@@ -308,75 +348,77 @@ Outputs the elapsed time in a nice human readable way.
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
-\hyperlink{group__timer__group}{Timer}
+\mbox{\hyperlink{group__timer__group}{Timer}}
 \end{DoxySeeAlso}
-{\bfseries Example} 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{comment}{// Measure required time to calculate something.}
-  \hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{StartTimer}();
-  CalculateSomething();
-  \hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{StopTimer}();
-
-  \textcolor{comment}{// Output required time.}
-  \hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{SayElapsedTime}(\textcolor{stringliteral}{"Required Time"});
-
-  \textcolor{keywordflow}{return} 0;
-\}
+{\bfseries{Example}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{comment}{// Measure required time to calculate something.}}
+\DoxyCodeLine{  \mbox{\hyperlink{group__timer__group_ga66509b494102a5c28ba6c8be3eab7733}{StartTimer}}();}
+\DoxyCodeLine{  CalculateSomething();}
+\DoxyCodeLine{  \mbox{\hyperlink{group__timer__group_gaf3619f34a9bc0184b4578e5337069856}{StopTimer}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// Output required time.}}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga9988545ab3fddd93e05654323cdb1f4b}{SayElapsedTime}}(\textcolor{stringliteral}{"Required Time"});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
- Possible output\+: 
-\begin{DoxyCode}
-Required Time 2 min 55 sec 84 ms
+
+
+Possible output\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Required Time 2 min 55 sec 84 ms}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}\label{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Error@{Say\+Error}}
-\index{Say\+Error@{Say\+Error}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Error()}{SayError()}}
+\index{I/O Functions@{I/O Functions}!SayError@{SayError}}
+\index{SayError@{SayError}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayError()}{SayError()}}
 {\footnotesize\ttfamily void Say\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Outputs the last error message including error details.
 
-This is only a convenience function for error output. The same result could also be achieved with the method for error retrieval and the Standard C++ library. An implementation of this function could look like this\+:
+This is only a convenience function for error output. The same result could also be achieved with the method for error retrieval and the C++ Standard library. An implementation of this function could look like this\+:
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{void} \hyperlink{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}{SayError}()
-\{
-  std::cout << \textcolor{stringliteral}{"An error has occurred: "} << \hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}() << std::endl;
-  std::cout << \hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{GetErrorDetails}() << std::endl;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{group__io__group_gaa8fd8044fbf35d58e73087b6399cd82a}{SayError}}()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"An error has occurred: "} << \mbox{\hyperlink{group__error__group_gac9be83c8ac2a5d80a2be46487c596eab}{GetLastErrorMessage}}() << std::endl;}
+\DoxyCodeLine{  std::cout << \mbox{\hyperlink{group__error__group_ga8258f5044a56ed71aeed5633fc8341b6}{GetErrorDetails}}() << std::endl;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}\label{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Hello@{Say\+Hello}}
-\index{Say\+Hello@{Say\+Hello}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Hello()}{SayHello()}}
+\index{I/O Functions@{I/O Functions}!SayHello@{SayHello}}
+\index{SayHello@{SayHello}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayHello()}{SayHello()}}
 {\footnotesize\ttfamily void Say\+Hello (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Outputs some simple text to standard output stream. This function is mostly used to test if the compiler tool chain is working.
 
-{\bfseries Example}
+{\bfseries{Example}}
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \hyperlink{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}{SayHello}();
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga43fd6e7b7a627ba82ff93795559479f8}{SayHello}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}\label{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Int@{Say\+Int}}
-\index{Say\+Int@{Say\+Int}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Int()}{SayInt()}}
+\index{I/O Functions@{I/O Functions}!SayInt@{SayInt}}
+\index{SayInt@{SayInt}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayInt()}{SayInt()}}
 {\footnotesize\ttfamily void Say\+Int (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{bool}]{eol = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Outputs the specified integer value using the standard output stream.
@@ -388,42 +430,42 @@ Outputs the specified integer value using the standard output stream.
 {\em eol} & whether \textquotesingle{}end-\/of-\/line\textquotesingle{} should be added\\
 \hline
 \end{DoxyParams}
-{\bfseries Example}
+{\bfseries{Example}}
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{int} x = 42;
-  \hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}(x);
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} x = 42;}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_gaa78da65e44d9ab5e70c79ed77f62b86a}{SayInt}}(x);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \textcolor{keywordtype}{int} x = 42;
-  std::cout << x << std::endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} x = 42;}
+\DoxyCodeLine{  std::cout << x << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
  \mbox{\Hypertarget{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}\label{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Text@{Say\+Text}}
-\index{Say\+Text@{Say\+Text}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Text()}{SayText()}}
+\index{I/O Functions@{I/O Functions}!SayText@{SayText}}
+\index{SayText@{SayText}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayText()}{SayText()}}
 {\footnotesize\ttfamily void Say\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text = {\ttfamily nullptr},  }\item[{bool}]{eol = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Outputs the specified text using the standard output stream. If {\ttfamily text} is a {\ttfamily nullptr} an empty line will be printed.
@@ -435,61 +477,66 @@ Outputs the specified text using the standard output stream. If {\ttfamily text}
 {\em eol} & whether \textquotesingle{}end-\/of-\/line\textquotesingle{} should be added\\
 \hline
 \end{DoxyParams}
-{\bfseries Example}
+{\bfseries{Example}}
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}(\textcolor{stringliteral}{"Hello world"});
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga82cdf45375c3b92b2a60c3d9b55d682f}{SayText}}(\textcolor{stringliteral}{"Hello world"});}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
-{\bfseries Using the C++ Standard Library}
+{\bfseries{Using the C++ Standard Library}}
 
 The same result can be achieved without A\+S\+TU using the stream-\/based input/output functionality of the C++ Standard Library.
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <iostream>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  std::cout << \textcolor{stringliteral}{"Hello World"} << std::endl;
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  std::cout << \textcolor{stringliteral}{"Hello World"} << std::endl;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
- \mbox{\Hypertarget{group__io__group_gaccd19a10653fad0734fe384cd6d7ba53}\label{group__io__group_gaccd19a10653fad0734fe384cd6d7ba53}} 
-\index{I/\+O Functions@{I/\+O Functions}!Say\+Version@{Say\+Version}}
-\index{Say\+Version@{Say\+Version}!I/\+O Functions@{I/\+O Functions}}
-\subsubsection{\texorpdfstring{Say\+Version()}{SayVersion()}}
-{\footnotesize\ttfamily void Say\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+ \mbox{\Hypertarget{group__io__group_ga769a16a6dc919153f667b468d81b3af7}\label{group__io__group_ga769a16a6dc919153f667b468d81b3af7}} 
+\index{I/O Functions@{I/O Functions}!SayVersion@{SayVersion}}
+\index{SayVersion@{SayVersion}!I/O Functions@{I/O Functions}}
+\doxysubsubsection{\texorpdfstring{SayVersion()}{SayVersion()}}
+{\footnotesize\ttfamily void Say\+Version (\begin{DoxyParamCaption}\item[{bool}]{newline = {\ttfamily false} }\end{DoxyParamCaption})}
 
 Outputs version information about this library.
 
-{\bfseries Example}
+
+\begin{DoxyParams}{Parameters}
+{\em newline} & whether an empty line should be added after the output\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example}}
 
 
-\begin{DoxyCode}
-\textcolor{preprocessor}{#include <AstUtils.h>}
-
-\textcolor{keywordtype}{int} main()
-\{
-  \hyperlink{group__io__group_gaccd19a10653fad0734fe384cd6d7ba53}{SayVersion}();
-
-  \textcolor{keywordflow}{return} 0;
-\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <AstUtils.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \mbox{\hyperlink{group__io__group_ga769a16a6dc919153f667b468d81b3af7}{SayVersion}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
 \end{DoxyCode}
 
 
 Possible output\+: 
-\begin{DoxyCode}
-AST Utilities Version 1.0.0 (64 bit address space) [build: Aug 13 2020, 16:04:50]
+\begin{DoxyCode}{0}
+\DoxyCodeLine{AST Utilities Version 1.0.0 (64 bit address space) [build: Aug 13 2020, 16:04:50]}
 \end{DoxyCode}
  

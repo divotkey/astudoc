@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../classastu_1_1Vector2.html#a6718f5a7005c38830dbd31283a87f5c9',1,'astu::Vector2']]]
+  ['x_130',['x',['../classastu_1_1Vector2.html#aa60c30b27742255fbe7053b07a7e76ba',1,'astu::Vector2']]]
 ];

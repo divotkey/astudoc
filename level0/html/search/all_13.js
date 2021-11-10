@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writeaudio',['WriteAudio',['../group__audio__group.html#gaf55add952fe04c4b2758d18db17c8c91',1,'AstUtils0.h']]],
-  ['writeimage',['WriteImage',['../group__graphics__group.html#ga7a92adcfb955193d1a9e91891cd390e0',1,'AstUtils0.h']]]
+  ['version_20history_126',['Version History',['../CHANGES.html',1,'']]],
+  ['vector2_127',['Vector2',['../classastu_1_1Vector2.html',1,'astu::Vector2&lt; T &gt;'],['../classastu_1_1Vector2.html#a021ec0e80fa7ca80921a17172e30fe29',1,'astu::Vector2::Vector2()']]]
 ];
